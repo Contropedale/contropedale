@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contropedale – Diari di un Gibernauta</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  background: #1a1a1a;
+  color: #f0ece4;
+  min-height: 100vh;
+}
+
+a { color: inherit; text-decoration: none; }
+
+/* ── HERO ── */
+.hero {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+}
+
+/* Lato sinistro: testo */
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5rem 4rem 5rem 5rem;
+  background: #1a1a1a;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-text::after {
+  content: '';
+  position: absolute;
+  right: -1px;
+  top: 10%;
+  height: 80%;
+  width: 1px;
+  background: linear-gradient(to bottom, transparent, #c0392b 30%, #c0392b 70%, transparent);
+}
+
+.kicker {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #c0392b;
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-size: clamp(3rem, 5vw, 4.5rem);
+  font-weight: normal;
+  line-height: 1.05;
+  color: #f5f0e8;
+  letter-spacing: -1px;
+  margin-bottom: 0.6rem;
+}
+
+.title span { color: #c0392b; }
+
+.subtitle {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #999;
+  margin-bottom: 2.5rem;
+  font-weight: normal;
+}
+
+.years-badge {
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  color: #c0392b;
+  border: 1px solid #c0392b;
+  padding: 0.3rem 0.8rem;
+  margin-bottom: 2.5rem;
+}
+
+.definition-box {
+  border-left: 3px solid #c0392b;
+  padding: 1.2rem 1.5rem;
+  background: rgba(192, 57, 43, 0.07);
+  margin-bottom: 2rem;
+}
+
+.definition-box .def-word {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #c0392b;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.definition-box p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #ccc;
+  font-style: italic;
+}
+
+.funny-desc {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: #aaa;
+  margin-bottom: 2.5rem;
+}
+
+.funny-desc strong {
+  color: #f0ece4;
+  font-weight: normal;
+}
+
+.cta-row {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  display: inline-block;
+  background: #c0392b;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  padding: 0.8rem 2rem;
+  transition: background 0.2s;
+}
+
+.btn-primary:hover { background: #a93226; }
+
+.btn-secondary {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.85rem;
+  color: #888;
+  border-bottom: 1px solid #555;
+  padding-bottom: 2px;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.btn-secondary:hover { color: #ccc; border-color: #ccc; }
+
+.stats-row {
+  display: flex;
+  gap: 2rem;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #2a2a2a;
+}
+
+.stat-item {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.stat-item .num {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #f5f0e8;
+  line-height: 1;
+}
+
+.stat-item .label {
+  display: block;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #666;
+  margin-top: 0.3rem;
+}
+
+/* Lato destro: immagine */
+.hero-image {
+  position: relative;
+  overflow: hidden;
+  background: #111;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.75;
+  display: block;
+}
+
+.hero-image::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, #1a1a1a 0%, transparent 20%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.image-caption {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 1px;
+  color: #555;
+  z-index: 2;
+  text-align: right;
+  line-height: 1.5;
+}
+
+/* ── FOOTER ── */
+footer {
+  background: #111;
+  padding: 1.5rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #222;
+}
+
+footer p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.75rem;
+  color: #555;
+  letter-spacing: 1px;
+}
+
+footer a {
+  color: #777;
+  transition: color 0.2s;
+}
+
+footer a:hover { color: #ccc; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 800px) {
+  .hero { grid-template-columns: 1fr; }
+  .hero-text { padding: 3rem 2rem; }
+  .hero-text::after { display: none; }
+  .hero-image { min-height: 300px; }
+  .stats-row { gap: 1.5rem; }
+  footer { padding: 1.5rem 2rem; flex-direction: column; gap: 0.5rem; text-align: center; }
+}
+</style>
+</head>
+<body>
+
+<main class="hero">
+
+  <!-- TESTO -->
+  <div class="hero-text">
+    <span class="kicker">Blog &mdash; 2005 / 2018</span>
+
+    <h1 class="title">
+      <span>C</span>ontro<br>pedale
+    </h1>
+    <p class="subtitle">Diari di un Gibernauta</p>
+    <div class="years-badge">2005 &ndash; 2018</div>
+
+    <div class="definition-box">
+      <span class="def-word">Gibernauta /n./</span>
+      <p>
+        Sedicente atleta la cui robusta sagoma pare celare,
+        sotto l&rsquo;aderente maglietta di lycra, una cintura
+        di giberne. In realt&agrave; non di giberne si tratta,
+        ma di una strategica scorta lipidica &mdash;
+        che per&ograve; resta sempre tale.
+      </p>
+    </div>
+
+    <p class="funny-desc">
+      C&rsquo;&egrave; chi scala l&rsquo;Everest. Chi corre per giorni intorno al Monte Bianco.
+      Il Gibernauta scala il <strong>Passo Bondone</strong> imprecando sottovoce,
+      corre il lungonaviglio all&rsquo;alba con <strong>amici impietosi</strong>,
+      e porta le sue giberne su e gi&ugrave; per la Pianura Padana
+      con la stoica fierezza di chi sa che
+      <em>il bar al passo sar&agrave; aperto.</em>
+      Tredici anni di pedalate, forature, grandinate,
+      cani randagi, salami in Oltrepo&rsquo; e incontri con Cancellara e Sciapuscì
+      &mdash; raccontati come solo un vero gibernauta sa fare.
+    </p>
+
+    <div class="cta-row">
+      <a href="indice.html" class="btn-primary">Leggi tutti gli articoli &rarr;</a>
+      <a href="https://contropedale.blogspot.com" target="_blank" class="btn-secondary">
+        Blog originale &#8599;
+      </a>
+    </div>
+
+    <div class="stats-row">
+      <div class="stat-item">
+        <span class="num">223</span>
+        <span class="label">Articoli</span>
+      </div>
+      <div class="stat-item">
+        <span class="num">13</span>
+        <span class="label">Anni</span>
+      </div>
+      <div class="stat-item">
+        <span class="num">&infin;</span>
+        <span class="label">Giberne</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- IMMAGINE -->
+  <div class="hero-image">
+    <img src="giberne_foto.jpg" alt="Giberne militari">
+    <p class="image-caption">
+      Giberne da campo &mdash; armeria storica<br>
+      Eredit&agrave; del Gibernauta
+    </p>
+  </div>
+
+</main>
+
+<footer>
+  <p>Contropedale &mdash; Diari di un Gibernauta &copy; 2005&ndash;2018</p>
+  <p>
+    <a href="indice.html">Indice articoli</a>
+    &nbsp;&middot;&nbsp;
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </p>
+</footer>
+
+</body>
+</html>

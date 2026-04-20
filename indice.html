@@ -1,0 +1,1483 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contropedale – Diari di un Gibernauta</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta &mdash; 2005&ndash;2018</p>
+  <nav>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="search-wrap">
+  <input type="search" id="search" placeholder="🔍  Cerca per titolo, testo o anno...">
+</div>
+
+<div class="stats">
+  <span id="visible-count">211 articoli</span>
+  &mdash; usa la barra di ricerca per filtrare
+</div>
+
+<div class="container">
+  <div class="year-section" data-year="2005">
+<div class="year-header">2005 <span style="font-size:1rem;color:#999;font-weight:normal;">(2 articoli)</span></div>
+<div class="cards">
+<div class="card" onclick="location.href='articoli/20050926_000.html'"
+     data-title="Milano centro: ore 13.30, tempo limpido e temperatura mite." data-year="2005" data-snippet="Milano centro: ore 13.30, tempo limpido e temperatura mite. È il momento di un buon allenamento. Dopo due rapide stirate mi avvio verso la zona di partenza, e intanto penso, oggi c…">
+  <div class="card-date">26 settembre 2005</div>
+  <div class="card-title">Milano centro: ore 13.30, tempo limpido e temperatura mite.</div>
+  <div class="card-snippet">Milano centro: ore 13.30, tempo limpido e temperatura mite. È il momento di un buon allenamento. Dopo due rapide stirate mi avvio verso la zona di partenza, e intanto penso, oggi c…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20051109_001.html'"
+     data-title="La lunga Blue Line ---------------------------------------------------…" data-year="2005" data-snippet="La lunga Blue Line ------------------------------------------------------------------------ Quanti sanno che il percorso della maratona di New York e&#39; tutto indicato da una linea b…">
+  <div class="card-date">9 novembre 2005</div>
+  <div class="card-title">La lunga Blue Line ---------------------------------------------------…</div>
+  <div class="card-snippet">La lunga Blue Line ------------------------------------------------------------------------ Quanti sanno che il percorso della maratona di New York e' tutto indicato da una linea b…</div>
+</div>
+</div>
+</div>
+<div class="year-section" data-year="2006">
+<div class="year-header">2006 <span style="font-size:1rem;color:#999;font-weight:normal;">(4 articoli)</span></div>
+<div class="cards">
+<div class="card" onclick="location.href='articoli/20061016_002.html'"
+     data-title="Amene localita&#39; Quanto a bellezza e varieta&#39; ciclistica, Il Naviglio o…" data-year="2006" data-snippet="Amene localita&#39; Quanto a bellezza e varieta&#39; ciclistica, Il Naviglio o l&#39;Oltrepo&#39; impallidiscono di fronte a certi itinerari trentini. Parlo dell&#39;alto Garda o basso Sarca. Partendo…">
+  <div class="card-date">16 ottobre 2006</div>
+  <div class="card-title">Amene localita' Quanto a bellezza e varieta' ciclistica, Il Naviglio o…</div>
+  <div class="card-snippet">Amene localita' Quanto a bellezza e varieta' ciclistica, Il Naviglio o l'Oltrepo' impallidiscono di fronte a certi itinerari trentini. Parlo dell'alto Garda o basso Sarca. Partendo…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20061017_003.html'"
+     data-title="Una pazzia?" data-year="2006" data-snippet="Una pazzia? mah...forse.. Difficile dirlo oggi.Certo a leggere i resoconti di chi ci ha partecipato lo scorso anno puo&#39; sembrare una vera impresa. Sara&#39; alla mia portata di modesto…">
+  <div class="card-date">17 ottobre 2006</div>
+  <div class="card-title">Una pazzia?</div>
+  <div class="card-snippet">Una pazzia? mah...forse.. Difficile dirlo oggi.Certo a leggere i resoconti di chi ci ha partecipato lo scorso anno puo' sembrare una vera impresa. Sara' alla mia portata di modesto…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20061017_004.html'"
+     data-title="Sempre in salita...sempre su due ruote." data-year="2006" data-snippet="Sempre in salita...sempre su due ruote. La zona del Mottarone e dell&#39;Alto Vergante e&#39; un altro bellissimo ambiente in cui cimentarsi in arrampicate su due ruote (anche e soprattutt…">
+  <div class="card-date">17 ottobre 2006</div>
+  <div class="card-title">Sempre in salita...sempre su due ruote.</div>
+  <div class="card-snippet">Sempre in salita...sempre su due ruote. La zona del Mottarone e dell'Alto Vergante e' un altro bellissimo ambiente in cui cimentarsi in arrampicate su due ruote (anche e soprattutt…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20061101_005.html'"
+     data-title="Il Naviglio verso Bereguardo Questa mattina approfitto della vacanza p…" data-year="2006" data-snippet="Il Naviglio verso Bereguardo Questa mattina approfitto della vacanza per un bel giro in bici lungo il Naviglio. Ma questa volta cambia la meta : non ci si dirige piu&#39; verso OVEST,…">
+  <div class="card-date">1 novembre 2006</div>
+  <div class="card-title">Il Naviglio verso Bereguardo Questa mattina approfitto della vacanza p…</div>
+  <div class="card-snippet">Il Naviglio verso Bereguardo Questa mattina approfitto della vacanza per un bel giro in bici lungo il Naviglio. Ma questa volta cambia la meta : non ci si dirige piu' verso OVEST,…</div>
+</div>
+</div>
+</div>
+<div class="year-section" data-year="2007">
+<div class="year-header">2007 <span style="font-size:1rem;color:#999;font-weight:normal;">(9 articoli)</span></div>
+<div class="cards">
+<div class="card" onclick="location.href='articoli/20070430_006.html'"
+     data-title="Un altro bel giro in bici Travo Aglio Albareto Mercatello Bobbio Travo…" data-year="2007" data-snippet="Un altro bel giro in bici Travo Aglio Albareto Mercatello Bobbio Travo in bici E questa e&#39; la mappa .">
+  <div class="card-date">30 aprile 2007</div>
+  <div class="card-title">Un altro bel giro in bici Travo Aglio Albareto Mercatello Bobbio Travo…</div>
+  <div class="card-snippet">Un altro bel giro in bici Travo Aglio Albareto Mercatello Bobbio Travo in bici E questa e' la mappa .</div>
+</div>
+<div class="card" onclick="location.href='articoli/20070506_007.html'"
+     data-title="UN BEL GIRO IN BICI CON UN PO&#39; DI SALITE...." data-year="2007" data-snippet="UN BEL GIRO IN BICI CON UN PO&#39; DI SALITE.... Stavolta abbiamo fatto sul serio. La Salita Valcava e&#39; davvero impegnativa con alcuni strappi che sono veri tagliagambe : in alcuni pun…">
+  <div class="card-date">6 maggio 2007</div>
+  <div class="card-title">UN BEL GIRO IN BICI CON UN PO' DI SALITE....</div>
+  <div class="card-snippet">UN BEL GIRO IN BICI CON UN PO' DI SALITE.... Stavolta abbiamo fatto sul serio. La Salita Valcava e' davvero impegnativa con alcuni strappi che sono veri tagliagambe : in alcuni pun…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20070509_008.html'"
+     data-title="Il mattino ha l&#39;oro in bocca Questa volta il solito giretto mattutino…" data-year="2007" data-snippet="Il mattino ha l&#39;oro in bocca Questa volta il solito giretto mattutino sul Naviglio si e&#39; trasformato in una specie di cronosquadre. Basta dare un&#39;occhiata al grafico della velocita…">
+  <div class="card-date">9 maggio 2007</div>
+  <div class="card-title">Il mattino ha l'oro in bocca Questa volta il solito giretto mattutino…</div>
+  <div class="card-snippet">Il mattino ha l'oro in bocca Questa volta il solito giretto mattutino sul Naviglio si e' trasformato in una specie di cronosquadre. Basta dare un'occhiata al grafico della velocita…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20070514_009.html'"
+     data-title="Sulle strade di Coppi Mai sfidare Coppi, ma, soprattutto , mai sfidarl…" data-year="2007" data-snippet="Sulle strade di Coppi Mai sfidare Coppi, ma, soprattutto , mai sfidarlo sulle sue strade! E io invece ieri ho fatto proprio questo.Alessandro mi ha guidato (nel senso che mi aspett…">
+  <div class="card-date">14 maggio 2007</div>
+  <div class="card-title">Sulle strade di Coppi Mai sfidare Coppi, ma, soprattutto , mai sfidarl…</div>
+  <div class="card-snippet">Sulle strade di Coppi Mai sfidare Coppi, ma, soprattutto , mai sfidarlo sulle sue strade! E io invece ieri ho fatto proprio questo.Alessandro mi ha guidato (nel senso che mi aspett…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20070518_010.html'"
+     data-title="Orgoglio di padre : Alessandria maggio 2007" data-year="2007" data-snippet="Orgoglio di padre : Alessandria maggio 2007">
+  <div class="card-date">18 maggio 2007</div>
+  <div class="card-title">Orgoglio di padre : Alessandria maggio 2007</div>
+  <div class="card-snippet">Orgoglio di padre : Alessandria maggio 2007</div>
+</div>
+<div class="card" onclick="location.href='articoli/20070521_011.html'"
+     data-title="La Nove Colli Domenica 20 maggio gita a Cesenatico per la Nove Colli." data-year="2007" data-snippet="La Nove Colli Domenica 20 maggio gita a Cesenatico per la Nove Colli. 11.000 iscritti non sono uno scherzo e in queste condizioni e’ fondamentale poter partire un po’ “avanti”. Inv…">
+  <div class="card-date">21 maggio 2007</div>
+  <div class="card-title">La Nove Colli Domenica 20 maggio gita a Cesenatico per la Nove Colli.</div>
+  <div class="card-snippet">La Nove Colli Domenica 20 maggio gita a Cesenatico per la Nove Colli. 11.000 iscritti non sono uno scherzo e in queste condizioni e’ fondamentale poter partire un po’ “avanti”. Inv…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20070528_012.html'"
+     data-title="Lungo il Naviglio verso Turbigo 100 km sotto le nuvole e 30 km sotto l…" data-year="2007" data-snippet="Lungo il Naviglio verso Turbigo 100 km sotto le nuvole e 30 km sotto l&#39;acqua Domenica 100 km lungo il Naviglio. Siamo partiti con cielo &quot;misto&quot;. Ma dopo pochi km ha iniziato a piov…">
+  <div class="card-date">28 maggio 2007</div>
+  <div class="card-title">Lungo il Naviglio verso Turbigo 100 km sotto le nuvole e 30 km sotto l…</div>
+  <div class="card-snippet">Lungo il Naviglio verso Turbigo 100 km sotto le nuvole e 30 km sotto l'acqua Domenica 100 km lungo il Naviglio. Siamo partiti con cielo "misto". Ma dopo pochi km ha iniziato a piov…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20070701_013.html'"
+     data-title="Il Tour Transalp : da Oberammergau a Riva del Garda - 856 km, 18 passi…" data-year="2007" data-snippet="Il Tour Transalp : da Oberammergau a Riva del Garda - 856 km, 18 passi alpini e 18mila metri di dislivello in 7 giorni , in bici Cominciando dalla fine : ce l&#39;abbiamo fatta La Tran…">
+  <div class="card-date">1 luglio 2007</div>
+  <div class="card-title">Il Tour Transalp : da Oberammergau a Riva del Garda - 856 km, 18 passi…</div>
+  <div class="card-snippet">Il Tour Transalp : da Oberammergau a Riva del Garda - 856 km, 18 passi alpini e 18mila metri di dislivello in 7 giorni , in bici Cominciando dalla fine : ce l'abbiamo fatta La Tran…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20070904_014.html'"
+     data-title="Il Buongiorno si vede dal mattino Appunto.....stamattina alle 6 in pie…" data-year="2007" data-snippet="Il Buongiorno si vede dal mattino Appunto.....stamattina alle 6 in piedi per il solito giretto in bici. Appuntamento alle 6.30 sul Naviglio. Si va. Ma dopo 2 km : PAM! ....ffffffff…">
+  <div class="card-date">4 settembre 2007</div>
+  <div class="card-title">Il Buongiorno si vede dal mattino Appunto.....stamattina alle 6 in pie…</div>
+  <div class="card-snippet">Il Buongiorno si vede dal mattino Appunto.....stamattina alle 6 in piedi per il solito giretto in bici. Appuntamento alle 6.30 sul Naviglio. Si va. Ma dopo 2 km : PAM! ....ffffffff…</div>
+</div>
+</div>
+</div>
+<div class="year-section" data-year="2008">
+<div class="year-header">2008 <span style="font-size:1rem;color:#999;font-weight:normal;">(19 articoli)</span></div>
+<div class="cards">
+<div class="card" onclick="location.href='articoli/20080428_015.html'"
+     data-title="Le paesane se la ridono Sabato ho fatto un bel giretto in bici con mio…" data-year="2008" data-snippet="Le paesane se la ridono Sabato ho fatto un bel giretto in bici con mio fratello in zona trentina. Partiti da Riva abbiamo scalato il Passo Bordala e poi , discesi verso la metropol…">
+  <div class="card-date">28 aprile 2008</div>
+  <div class="card-title">Le paesane se la ridono Sabato ho fatto un bel giretto in bici con mio…</div>
+  <div class="card-snippet">Le paesane se la ridono Sabato ho fatto un bel giretto in bici con mio fratello in zona trentina. Partiti da Riva abbiamo scalato il Passo Bordala e poi , discesi verso la metropol…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20080505_016.html'"
+     data-title="IL BORDANDONE (anello in bici con Passo BORDALA e Monte BONDONE) Sabat…" data-year="2008" data-snippet="IL BORDANDONE (anello in bici con Passo BORDALA e Monte BONDONE) Sabato bel giro con Renato . Prima il Passo Bordala (una salita che il libro della Ediciclo del 1985 definisce &quot;mol…">
+  <div class="card-date">5 maggio 2008</div>
+  <div class="card-title">IL BORDANDONE (anello in bici con Passo BORDALA e Monte BONDONE) Sabat…</div>
+  <div class="card-snippet">IL BORDANDONE (anello in bici con Passo BORDALA e Monte BONDONE) Sabato bel giro con Renato . Prima il Passo Bordala (una salita che il libro della Ediciclo del 1985 definisce "mol…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20080508_017.html'"
+     data-title="Purtroppo a volte succede, greggi e capitomboli Stamattina alle 630 si…" data-year="2008" data-snippet="Purtroppo a volte succede, greggi e capitomboli Stamattina alle 630 siamo partiti in 5 per un giretto in bici nelle solite zone a Sud di Milano. Dopo una trentina di km lungo il Na…">
+  <div class="card-date">8 maggio 2008</div>
+  <div class="card-title">Purtroppo a volte succede, greggi e capitomboli Stamattina alle 630 si…</div>
+  <div class="card-snippet">Purtroppo a volte succede, greggi e capitomboli Stamattina alle 630 siamo partiti in 5 per un giretto in bici nelle solite zone a Sud di Milano. Dopo una trentina di km lungo il Na…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20080511_018.html'"
+     data-title="Valcanniversario Avevamo deciso di festeggiare degnamente l&#39;anniversar…" data-year="2008" data-snippet="Valcanniversario Avevamo deciso di festeggiare degnamente l&#39;anniversario della Valcava 2007 tornando sulle strade della Brianza verso la Val Imagna. E quindi eccoci qui. Della orig…">
+  <div class="card-date">11 maggio 2008</div>
+  <div class="card-title">Valcanniversario Avevamo deciso di festeggiare degnamente l'anniversar…</div>
+  <div class="card-snippet">Valcanniversario Avevamo deciso di festeggiare degnamente l'anniversario della Valcava 2007 tornando sulle strade della Brianza verso la Val Imagna. E quindi eccoci qui. Della orig…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20080526_019.html'"
+     data-title="LA SALITA AL RIFUGIO GRAZIANI Sabato le previsioni meteo non erano inc…" data-year="2008" data-snippet="LA SALITA AL RIFUGIO GRAZIANI Sabato le previsioni meteo non erano incoraggianti, ma abbiamo deciso di partire lo stesso per un giro in bici on un po&#39; di salita. La meta : Rifugio…">
+  <div class="card-date">26 maggio 2008</div>
+  <div class="card-title">LA SALITA AL RIFUGIO GRAZIANI Sabato le previsioni meteo non erano inc…</div>
+  <div class="card-snippet">LA SALITA AL RIFUGIO GRAZIANI Sabato le previsioni meteo non erano incoraggianti, ma abbiamo deciso di partire lo stesso per un giro in bici on un po' di salita. La meta : Rifugio…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20080526_020.html'"
+     data-title="BRAILA E CAVEDINE Domenica, non contenti per la sfacchinata del giorno…" data-year="2008" data-snippet="BRAILA E CAVEDINE Domenica, non contenti per la sfacchinata del giorno prima, ci siamo cimentati in un breve ma impegnativo giretto. Da Arco siamo saliti a Braila lungo la arcigna…">
+  <div class="card-date">26 maggio 2008</div>
+  <div class="card-title">BRAILA E CAVEDINE Domenica, non contenti per la sfacchinata del giorno…</div>
+  <div class="card-snippet">BRAILA E CAVEDINE Domenica, non contenti per la sfacchinata del giorno prima, ci siamo cimentati in un breve ma impegnativo giretto. Da Arco siamo saliti a Braila lungo la arcigna…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20080603_021.html'"
+     data-title="Ballino, Durone, Zeller, Durone : una combinazione impegnativa." data-year="2008" data-snippet="Ballino, Durone, Zeller, Durone : una combinazione impegnativa. Il lungo week end di inizio giugno e&#39; stato inaugurato con una novita&#39; : la salita a Zeller da Tione. La salita prev…">
+  <div class="card-date">3 giugno 2008</div>
+  <div class="card-title">Ballino, Durone, Zeller, Durone : una combinazione impegnativa.</div>
+  <div class="card-snippet">Ballino, Durone, Zeller, Durone : una combinazione impegnativa. Il lungo week end di inizio giugno e' stato inaugurato con una novita' : la salita a Zeller da Tione. La salita prev…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20080603_022.html'"
+     data-title="L&#39;accoppiata Santa Barbara Bordala Sabato ci siamo rilassati con un be…" data-year="2008" data-snippet="L&#39;accoppiata Santa Barbara Bordala Sabato ci siamo rilassati con un bel giretto con piu&#39; di 2900 m di dislivello, quindi quale idea migliore di una bella pedalata in salita il lune…">
+  <div class="card-date">3 giugno 2008</div>
+  <div class="card-title">L'accoppiata Santa Barbara Bordala Sabato ci siamo rilassati con un be…</div>
+  <div class="card-snippet">L'accoppiata Santa Barbara Bordala Sabato ci siamo rilassati con un bel giretto con piu' di 2900 m di dislivello, quindi quale idea migliore di una bella pedalata in salita il lune…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20080608_023.html'"
+     data-title="Un giro in Valtrebbia fuggendo i temporali La giornata non prometteva…" data-year="2008" data-snippet="Un giro in Valtrebbia fuggendo i temporali La giornata non prometteva nulla di buono ma .....l&#39;allenamento si impone. E quindi ho deciso di aggregarmi al gruppo degli sherpa di Tra…">
+  <div class="card-date">8 giugno 2008</div>
+  <div class="card-title">Un giro in Valtrebbia fuggendo i temporali La giornata non prometteva…</div>
+  <div class="card-snippet">Un giro in Valtrebbia fuggendo i temporali La giornata non prometteva nulla di buono ma .....l'allenamento si impone. E quindi ho deciso di aggregarmi al gruppo degli sherpa di Tra…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20080614_024.html'"
+     data-title="FORTUNA AUDACES JUVAT Quando siamo scesi dalla macchina a Casatenovo,…" data-year="2008" data-snippet="FORTUNA AUDACES JUVAT Quando siamo scesi dalla macchina a Casatenovo, Alessandro ed io ci siamo guardati intorno sconsolati : panorama invernale,pioggerellina sottile, strade fradi…">
+  <div class="card-date">14 giugno 2008</div>
+  <div class="card-title">FORTUNA AUDACES JUVAT Quando siamo scesi dalla macchina a Casatenovo,…</div>
+  <div class="card-snippet">FORTUNA AUDACES JUVAT Quando siamo scesi dalla macchina a Casatenovo, Alessandro ed io ci siamo guardati intorno sconsolati : panorama invernale,pioggerellina sottile, strade fradi…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20080622_025.html'"
+     data-title="IL BONDARDALA (MONTE BONDONE E PASSO BORDALA) Dopo il mitico Bordandon…" data-year="2008" data-snippet="IL BONDARDALA (MONTE BONDONE E PASSO BORDALA) Dopo il mitico Bordandone (Passo Bordala e Monte Bondone, non potevamo certo lasciarci sfuggire l&#39;occasione di rifare il percorso in s…">
+  <div class="card-date">22 giugno 2008</div>
+  <div class="card-title">IL BONDARDALA (MONTE BONDONE E PASSO BORDALA) Dopo il mitico Bordandon…</div>
+  <div class="card-snippet">IL BONDARDALA (MONTE BONDONE E PASSO BORDALA) Dopo il mitico Bordandone (Passo Bordala e Monte Bondone, non potevamo certo lasciarci sfuggire l'occasione di rifare il percorso in s…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20080702_026.html'"
+     data-title="Caldarola e Santa Bastarda ovvero : la crisi del cronista kazako Avevo…" data-year="2008" data-snippet="Caldarola e Santa Bastarda ovvero : la crisi del cronista kazako Avevo studiato un giro in Val Trebbia molto ambizioso. Passo Caldarola, Santa Barbara, Prato Barbieri e poi il Cerr…">
+  <div class="card-date">2 luglio 2008</div>
+  <div class="card-title">Caldarola e Santa Bastarda ovvero : la crisi del cronista kazako Avevo…</div>
+  <div class="card-snippet">Caldarola e Santa Bastarda ovvero : la crisi del cronista kazako Avevo studiato un giro in Val Trebbia molto ambizioso. Passo Caldarola, Santa Barbara, Prato Barbieri e poi il Cerr…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20080715_027.html'"
+     data-title="TOUR TRANSALP 2008 : ANCHE QUEST&#39;ANNO CE L&#39;ABBIAMO FATTA." data-year="2008" data-snippet="TOUR TRANSALP 2008 : ANCHE QUEST&#39;ANNO CE L&#39;ABBIAMO FATTA. L&#39;organizzazione e&#39; sempre ottima molto puntuale nella assistenza e nel controllo percorso e consegne borse. L&#39;arcobaleno…">
+  <div class="card-date">15 luglio 2008</div>
+  <div class="card-title">TOUR TRANSALP 2008 : ANCHE QUEST'ANNO CE L'ABBIAMO FATTA.</div>
+  <div class="card-snippet">TOUR TRANSALP 2008 : ANCHE QUEST'ANNO CE L'ABBIAMO FATTA. L'organizzazione e' sempre ottima molto puntuale nella assistenza e nel controllo percorso e consegne borse. L'arcobaleno…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20080914_028.html'"
+     data-title="E COME OGNI ANNO .........." data-year="2008" data-snippet="E COME OGNI ANNO .......... Anche quest&#39;anno appuntamento in Oltrepo&#39;">
+  <div class="card-date">14 settembre 2008</div>
+  <div class="card-title">E COME OGNI ANNO ..........</div>
+  <div class="card-snippet">E COME OGNI ANNO .......... Anche quest'anno appuntamento in Oltrepo'</div>
+</div>
+<div class="card" onclick="location.href='articoli/20080921_029.html'"
+     data-title="Il Ghisallo, Bellagio Nesso e i Piani del Tivano La stagione ciclistic…" data-year="2008" data-snippet="Il Ghisallo, Bellagio Nesso e i Piani del Tivano La stagione ciclistica e&#39; entrata nella sua ultima fase ma le belle giornate autunnali sono ideali per un bel giro. Cosi&#39; sabato si…">
+  <div class="card-date">21 settembre 2008</div>
+  <div class="card-title">Il Ghisallo, Bellagio Nesso e i Piani del Tivano La stagione ciclistic…</div>
+  <div class="card-snippet">Il Ghisallo, Bellagio Nesso e i Piani del Tivano La stagione ciclistica e' entrata nella sua ultima fase ma le belle giornate autunnali sono ideali per un bel giro. Cosi' sabato si…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20080928_030.html'"
+     data-title="Ancora sulle rampe del Tivano, ma da Erba Tempo bello, cielo limpido,…" data-year="2008" data-snippet="Ancora sulle rampe del Tivano, ma da Erba Tempo bello, cielo limpido, aria fresca : clima ideale per la bici. Stavolta siamo partiti nella tarda mattinata di domenica, da Erba. Dec…">
+  <div class="card-date">28 settembre 2008</div>
+  <div class="card-title">Ancora sulle rampe del Tivano, ma da Erba Tempo bello, cielo limpido,…</div>
+  <div class="card-snippet">Ancora sulle rampe del Tivano, ma da Erba Tempo bello, cielo limpido, aria fresca : clima ideale per la bici. Stavolta siamo partiti nella tarda mattinata di domenica, da Erba. Dec…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20081005_031.html'"
+     data-title="Oltreconfine e ritorno : la strada piu&#39; lunga per il Bisbino..." data-year="2008" data-snippet="Oltreconfine e ritorno : la strada piu&#39; lunga per il Bisbino... La Brianza puo&#39; essere un paradiso per il ciclista, ma sa ben proteggere le proprie perle. Cosi&#39; e&#39; fondamentale con…">
+  <div class="card-date">5 ottobre 2008</div>
+  <div class="card-title">Oltreconfine e ritorno : la strada piu' lunga per il Bisbino...</div>
+  <div class="card-snippet">Oltreconfine e ritorno : la strada piu' lunga per il Bisbino... La Brianza puo' essere un paradiso per il ciclista, ma sa ben proteggere le proprie perle. Cosi' e' fondamentale con…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20081012_032.html'"
+     data-title="Da Milano al Ghisallo e ritorno Temperatura mite e sole ci hanno accom…" data-year="2008" data-snippet="Da Milano al Ghisallo e ritorno Temperatura mite e sole ci hanno accompagnato da Milano al Ghisallo. Con Annibale e Paolo (coraggiosamente armato di una Peugeot anni 70 dotata di r…">
+  <div class="card-date">12 ottobre 2008</div>
+  <div class="card-title">Da Milano al Ghisallo e ritorno Temperatura mite e sole ci hanno accom…</div>
+  <div class="card-snippet">Da Milano al Ghisallo e ritorno Temperatura mite e sole ci hanno accompagnato da Milano al Ghisallo. Con Annibale e Paolo (coraggiosamente armato di una Peugeot anni 70 dotata di r…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20081013_033.html'"
+     data-title="ONORE AL CAMPIONE DEL 2008 : LE SUE GOMME BRU CIANO L&#39;ASFALTO SUL MOTT…" data-year="2008" data-snippet="ONORE AL CAMPIONE DEL 2008 : LE SUE GOMME BRU CIANO L&#39;ASFALTO SUL MOTTARONE E ORA ANCHE IN OLTREPO&#39;">
+  <div class="card-date">13 ottobre 2008</div>
+  <div class="card-title">ONORE AL CAMPIONE DEL 2008 : LE SUE GOMME BRU CIANO L'ASFALTO SUL MOTT…</div>
+  <div class="card-snippet">ONORE AL CAMPIONE DEL 2008 : LE SUE GOMME BRU CIANO L'ASFALTO SUL MOTTARONE E ORA ANCHE IN OLTREPO'</div>
+</div>
+</div>
+</div>
+<div class="year-section" data-year="2009">
+<div class="year-header">2009 <span style="font-size:1rem;color:#999;font-weight:normal;">(18 articoli)</span></div>
+<div class="cards">
+<div class="card" onclick="location.href='articoli/20090102_034.html'"
+     data-title="E dopo una lunga attesa................." data-year="2009" data-snippet="E dopo una lunga attesa................. Finalmente ho la mia nuova Tommasini tecno. Un telaio in acciaio (Columbus Nemo) su misura, congiunzioni in microfusione Tommasini cromate…">
+  <div class="card-date">2 gennaio 2009</div>
+  <div class="card-title">E dopo una lunga attesa.................</div>
+  <div class="card-snippet">E dopo una lunga attesa................. Finalmente ho la mia nuova Tommasini tecno. Un telaio in acciaio (Columbus Nemo) su misura, congiunzioni in microfusione Tommasini cromate…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20090302_035.html'"
+     data-title="200 km del Parco del Ticino : 7 ore sotto l&#39;acqua..." data-year="2009" data-snippet="200 km del Parco del Ticino : 7 ore sotto l&#39;acqua... All&#39;inizio mi sembrava un&#39;idea divertente : accompagnare Annibale nella prima meta&#39; di questa randonnèè inaugurale della stagio…">
+  <div class="card-date">2 marzo 2009</div>
+  <div class="card-title">200 km del Parco del Ticino : 7 ore sotto l'acqua...</div>
+  <div class="card-snippet">200 km del Parco del Ticino : 7 ore sotto l'acqua... All'inizio mi sembrava un'idea divertente : accompagnare Annibale nella prima meta' di questa randonnèè inaugurale della stagio…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20090322_036.html'"
+     data-title="Un&#39;altra Randonnee : la 200 km di Cascina Costa ; stavolta ci sono anc…" data-year="2009" data-snippet="Un&#39;altra Randonnee : la 200 km di Cascina Costa ; stavolta ci sono anche le salite! Dopo la felice (ma bagnata) esperienza della 200km del parco del Ticino mi sono lasciato facilme…">
+  <div class="card-date">22 marzo 2009</div>
+  <div class="card-title">Un'altra Randonnee : la 200 km di Cascina Costa ; stavolta ci sono anc…</div>
+  <div class="card-snippet">Un'altra Randonnee : la 200 km di Cascina Costa ; stavolta ci sono anche le salite! Dopo la felice (ma bagnata) esperienza della 200km del parco del Ticino mi sono lasciato facilme…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20090329_037.html'"
+     data-title="Sfidando Giove Pluvio sui colli Tortonesi Le previsioni erano pessime…" data-year="2009" data-snippet="Sfidando Giove Pluvio sui colli Tortonesi Le previsioni erano pessime : pioggia per l&#39;intero weekend. Ma Alessandro, abilissimo scrutatore dei vari siti meteo, ha scovato una fines…">
+  <div class="card-date">29 marzo 2009</div>
+  <div class="card-title">Sfidando Giove Pluvio sui colli Tortonesi Le previsioni erano pessime…</div>
+  <div class="card-snippet">Sfidando Giove Pluvio sui colli Tortonesi Le previsioni erano pessime : pioggia per l'intero weekend. Ma Alessandro, abilissimo scrutatore dei vari siti meteo, ha scovato una fines…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20090405_038.html'"
+     data-title="Una gran tirata Previsioni molto incerte ma tendenti al brutto piu&#39; im…" data-year="2009" data-snippet="Una gran tirata Previsioni molto incerte ma tendenti al brutto piu&#39; impegn i improrogabili in tarda mattinata = pedalata da solo nella pianurazza del parco del Ticino. Parto alle 8…">
+  <div class="card-date">5 aprile 2009</div>
+  <div class="card-title">Una gran tirata Previsioni molto incerte ma tendenti al brutto piu' im…</div>
+  <div class="card-snippet">Una gran tirata Previsioni molto incerte ma tendenti al brutto piu' impegn i improrogabili in tarda mattinata = pedalata da solo nella pianurazza del parco del Ticino. Parto alle 8…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20090504_039.html'"
+     data-title="Due uscite in Val Trebbia Dopo un lungo periodo di pioggia il meteo fi…" data-year="2009" data-snippet="Due uscite in Val Trebbia Dopo un lungo periodo di pioggia il meteo finalmente clemente ha offerto l&#39;opportunita&#39; per un paio di giretti in bici. Venerdi&#39; Enrico ed io partiamo da…">
+  <div class="card-date">4 maggio 2009</div>
+  <div class="card-title">Due uscite in Val Trebbia Dopo un lungo periodo di pioggia il meteo fi…</div>
+  <div class="card-snippet">Due uscite in Val Trebbia Dopo un lungo periodo di pioggia il meteo finalmente clemente ha offerto l'opportunita' per un paio di giretti in bici. Venerdi' Enrico ed io partiamo da…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20090511_040.html'"
+     data-title="ALLA CONQUISTA DEL SALAME Milano e&#39; in piena pianura padana ma basta p…" data-year="2009" data-snippet="ALLA CONQUISTA DEL SALAME Milano e&#39; in piena pianura padana ma basta poco piu&#39; di un&#39;ora in macchina per trovare strade mai piatte. Partiamo in 3 (Renato, Giorgio ed io) da Milano…">
+  <div class="card-date">11 maggio 2009</div>
+  <div class="card-title">ALLA CONQUISTA DEL SALAME Milano e' in piena pianura padana ma basta p…</div>
+  <div class="card-snippet">ALLA CONQUISTA DEL SALAME Milano e' in piena pianura padana ma basta poco piu' di un'ora in macchina per trovare strade mai piatte. Partiamo in 3 (Renato, Giorgio ed io) da Milano…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20090517_041.html'"
+     data-title="E dopo il salame......" data-year="2009" data-snippet="E dopo il salame...... il pinot nero. Cosa fare quando la meteo e&#39; incerta? Come uscire dall&#39;impasse dell&#39;indecisione : piove, non piove? Basta conoscere Alessandro The weatherman…">
+  <div class="card-date">17 maggio 2009</div>
+  <div class="card-title">E dopo il salame......</div>
+  <div class="card-snippet">E dopo il salame...... il pinot nero. Cosa fare quando la meteo e' incerta? Come uscire dall'impasse dell'indecisione : piove, non piove? Basta conoscere Alessandro The weatherman…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20090524_042.html'"
+     data-title="PEDALANDO NEL FORNO Appello dalla protezione civile : pericolo di onda…" data-year="2009" data-snippet="PEDALANDO NEL FORNO Appello dalla protezione civile : pericolo di ondate di calore. Soprattutto nelle zone centrali della pianura padana sono previste nel corso del weekend tempera…">
+  <div class="card-date">24 maggio 2009</div>
+  <div class="card-title">PEDALANDO NEL FORNO Appello dalla protezione civile : pericolo di onda…</div>
+  <div class="card-snippet">PEDALANDO NEL FORNO Appello dalla protezione civile : pericolo di ondate di calore. Soprattutto nelle zone centrali della pianura padana sono previste nel corso del weekend tempera…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20090601_043.html'"
+     data-title="L’incubo del gibernauta." data-year="2009" data-snippet="L’incubo del gibernauta. I gibernauti (categoria della quale faccio ormai parte) sono sedicenti atleti che affrontano le proprie imprese armati di piu’ o meno robuste giberne lipid…">
+  <div class="card-date">1 giugno 2009</div>
+  <div class="card-title">L’incubo del gibernauta.</div>
+  <div class="card-snippet">L’incubo del gibernauta. I gibernauti (categoria della quale faccio ormai parte) sono sedicenti atleti che affrontano le proprie imprese armati di piu’ o meno robuste giberne lipid…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20090625_044.html'"
+     data-title="Dreilander 2009 : pedalando tra le montagne di tre nazioni." data-year="2009" data-snippet="Dreilander 2009 : pedalando tra le montagne di tre nazioni. L sintesi di questi 4 giorni di pedale tra Svizzera, Tirolo e Italia tra il 18 e il 22 giugno 2009. La mappa del giro L&#39;…">
+  <div class="card-date">25 giugno 2009</div>
+  <div class="card-title">Dreilander 2009 : pedalando tra le montagne di tre nazioni.</div>
+  <div class="card-snippet">Dreilander 2009 : pedalando tra le montagne di tre nazioni. L sintesi di questi 4 giorni di pedale tra Svizzera, Tirolo e Italia tra il 18 e il 22 giugno 2009. La mappa del giro L'…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20090625_045.html'"
+     data-title="Dreilander 2009 : p rima tappa – Scuol - Nauders : L a Kau n ertal Dev…" data-year="2009" data-snippet="Dreilander 2009 : p rima tappa – Scuol - Nauders : L a Kau n ertal Devo ammettere che mi sentivo un po’ Fantozzi : dopo settimane di tempo bello stabile e secco, proprio nel weeken…">
+  <div class="card-date">25 giugno 2009</div>
+  <div class="card-title">Dreilander 2009 : p rima tappa – Scuol - Nauders : L a Kau n ertal Dev…</div>
+  <div class="card-snippet">Dreilander 2009 : p rima tappa – Scuol - Nauders : L a Kau n ertal Devo ammettere che mi sentivo un po’ Fantozzi : dopo settimane di tempo bello stabile e secco, proprio nel weeken…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20090627_046.html'"
+     data-title="Dreilander 2009 : seconda tappa : Nauders -Sta Maria : Pas so Resia, S…" data-year="2009" data-snippet="Dreilander 2009 : seconda tappa : Nauders -Sta Maria : Pas so Resia, Solda, Passo Stelvio Alle 7 siamo li’ che scrutiamo con ansia il cielo, alla ricerca di qualche sprazzo di azzu…">
+  <div class="card-date">27 giugno 2009</div>
+  <div class="card-title">Dreilander 2009 : seconda tappa : Nauders -Sta Maria : Pas so Resia, S…</div>
+  <div class="card-snippet">Dreilander 2009 : seconda tappa : Nauders -Sta Maria : Pas so Resia, Solda, Passo Stelvio Alle 7 siamo li’ che scrutiamo con ansia il cielo, alla ricerca di qualche sprazzo di azzu…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20090627_047.html'"
+     data-title="Dreilander 2009 , terza tappa : Sta Maria - Livigno." data-year="2009" data-snippet="Dreilander 2009 , terza tappa : Sta Maria - Livigno. Umbrail, Gavia, Foscagno, Eira. Nella sala colazione dell&#39;Hotel Stelvio fervono i preparativi metabolici per la giornata di bic…">
+  <div class="card-date">27 giugno 2009</div>
+  <div class="card-title">Dreilander 2009 , terza tappa : Sta Maria - Livigno.</div>
+  <div class="card-snippet">Dreilander 2009 , terza tappa : Sta Maria - Livigno. Umbrail, Gavia, Foscagno, Eira. Nella sala colazione dell'Hotel Stelvio fervono i preparativi metabolici per la giornata di bic…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20090628_048.html'"
+     data-title="Dreilander 2009 quarta tappa : Livigno - Scuol / Forcola e Passo Berni…" data-year="2009" data-snippet="Dreilander 2009 quarta tappa : Livigno - Scuol / Forcola e Passo Bernina. Freddo : la mattina a Livigino fa davvero freddo. Durante la sibaritica colazione all&#39;hotel Lac Salin, nel…">
+  <div class="card-date">28 giugno 2009</div>
+  <div class="card-title">Dreilander 2009 quarta tappa : Livigno - Scuol / Forcola e Passo Berni…</div>
+  <div class="card-snippet">Dreilander 2009 quarta tappa : Livigno - Scuol / Forcola e Passo Bernina. Freddo : la mattina a Livigino fa davvero freddo. Durante la sibaritica colazione all'hotel Lac Salin, nel…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20090712_049.html'"
+     data-title="La salita alla baita d&#39;Orimento Domenica con Renato volevamo pedalare…" data-year="2009" data-snippet="La salita alla baita d&#39;Orimento Domenica con Renato volevamo pedalare un po&#39; in salita, ma senza doverci sobbarcare una lunga trasferta in auto. E cosi&#39; mi e&#39; subito venuta in ment…">
+  <div class="card-date">12 luglio 2009</div>
+  <div class="card-title">La salita alla baita d'Orimento Domenica con Renato volevamo pedalare…</div>
+  <div class="card-snippet">La salita alla baita d'Orimento Domenica con Renato volevamo pedalare un po' in salita, ma senza doverci sobbarcare una lunga trasferta in auto. E cosi' mi e' subito venuta in ment…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20090821_050.html'"
+     data-title="La salita ai Prati di Nago : 34X28 e dimenticarsi gli altri rapporti S…" data-year="2009" data-snippet="La salita ai Prati di Nago : 34X28 e dimenticarsi gli altri rapporti Sabato mattina sono partito da Riva del Garda con l&#39;intenzione di concentrare in pochi chilometri un po&#39; di sal…">
+  <div class="card-date">21 agosto 2009</div>
+  <div class="card-title">La salita ai Prati di Nago : 34X28 e dimenticarsi gli altri rapporti S…</div>
+  <div class="card-snippet">La salita ai Prati di Nago : 34X28 e dimenticarsi gli altri rapporti Sabato mattina sono partito da Riva del Garda con l'intenzione di concentrare in pochi chilometri un po' di sal…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20090914_051.html'"
+     data-title="Intorno al Mottarone Una bella domenica di sole ci ha spinto verso Nor…" data-year="2009" data-snippet="Intorno al Mottarone Una bella domenica di sole ci ha spinto verso Nord Ovest, a cavallo fra le provincie di e Verbania/Cusio/Ossola e Novara per la scalata ad una delle salite piu…">
+  <div class="card-date">14 settembre 2009</div>
+  <div class="card-title">Intorno al Mottarone Una bella domenica di sole ci ha spinto verso Nor…</div>
+  <div class="card-snippet">Intorno al Mottarone Una bella domenica di sole ci ha spinto verso Nord Ovest, a cavallo fra le provincie di e Verbania/Cusio/Ossola e Novara per la scalata ad una delle salite piu…</div>
+</div>
+</div>
+</div>
+<div class="year-section" data-year="2010">
+<div class="year-header">2010 <span style="font-size:1rem;color:#999;font-weight:normal;">(21 articoli)</span></div>
+<div class="cards">
+<div class="card" onclick="location.href='articoli/20100306_052.html'"
+     data-title="PRIMA USCITA CON SALITA NEL 2010: DA STRADELLA A PASSO CARMINE E RITOR…" data-year="2010" data-snippet="PRIMA USCITA CON SALITA NEL 2010: DA STRADELLA A PASSO CARMINE E RITORNO Dopo un po&#39; di pedalate rigorosamente e noiosamente pianeggianti era ora di riportare un po&#39; le ruote in pe…">
+  <div class="card-date">6 marzo 2010</div>
+  <div class="card-title">PRIMA USCITA CON SALITA NEL 2010: DA STRADELLA A PASSO CARMINE E RITOR…</div>
+  <div class="card-snippet">PRIMA USCITA CON SALITA NEL 2010: DA STRADELLA A PASSO CARMINE E RITORNO Dopo un po' di pedalate rigorosamente e noiosamente pianeggianti era ora di riportare un po' le ruote in pe…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20100313_053.html'"
+     data-title="Di nuovo sui colli dell&#39;Oltrepo&#39; coperti di neve (il 13 marzo!) Anche…" data-year="2010" data-snippet="Di nuovo sui colli dell&#39;Oltrepo&#39; coperti di neve (il 13 marzo!) Anche questo sabato poco dopo le 9 sono a Stradella per attaccare un altro giretto sui colli verso l&#39;Emilia. E&#39; meno…">
+  <div class="card-date">13 marzo 2010</div>
+  <div class="card-title">Di nuovo sui colli dell'Oltrepo' coperti di neve (il 13 marzo!) Anche…</div>
+  <div class="card-snippet">Di nuovo sui colli dell'Oltrepo' coperti di neve (il 13 marzo!) Anche questo sabato poco dopo le 9 sono a Stradella per attaccare un altro giretto sui colli verso l'Emilia. E' meno…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20100322_054.html'"
+     data-title="La mia Mezza maratona di Vigevano : legno e farina Ieri approfittando…" data-year="2010" data-snippet="La mia Mezza maratona di Vigevano : legno e farina Ieri approfittando del ritorno della primavera e del sorridente clima quasi estivo ho deciso di ritornare a battere i campi di ga…">
+  <div class="card-date">22 marzo 2010</div>
+  <div class="card-title">La mia Mezza maratona di Vigevano : legno e farina Ieri approfittando…</div>
+  <div class="card-snippet">La mia Mezza maratona di Vigevano : legno e farina Ieri approfittando del ritorno della primavera e del sorridente clima quasi estivo ho deciso di ritornare a battere i campi di ga…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20100326_055.html'"
+     data-title="La nuova creatura Un telaio Colnago C-50 che commuove, gruppo Dura Ace…" data-year="2010" data-snippet="La nuova creatura Un telaio Colnago C-50 che commuove, gruppo Dura Ace 2009 completo e ruote Dura Ace profilo basso alu-carbonio. Meno di 7kg di splendore italico firmato dal grand…">
+  <div class="card-date">26 marzo 2010</div>
+  <div class="card-title">La nuova creatura Un telaio Colnago C-50 che commuove, gruppo Dura Ace…</div>
+  <div class="card-snippet">La nuova creatura Un telaio Colnago C-50 che commuove, gruppo Dura Ace 2009 completo e ruote Dura Ace profilo basso alu-carbonio. Meno di 7kg di splendore italico firmato dal grand…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20100328_056.html'"
+     data-title="Qualche dettaglio in piu&#39;" data-year="2010" data-snippet="Qualche dettaglio in piu&#39;">
+  <div class="card-date">28 marzo 2010</div>
+  <div class="card-title">Qualche dettaglio in piu'</div>
+  <div class="card-snippet">Qualche dettaglio in piu'</div>
+</div>
+<div class="card" onclick="location.href='articoli/20100405_057.html'"
+     data-title="Il sentiero Torbole-Busatte-Tempesta : una volta tanto la bici resta a…" data-year="2010" data-snippet="Il sentiero Torbole-Busatte-Tempesta : una volta tanto la bici resta a casa. Mio fratello me lo aveva detto : &quot;prima o poi devi venire a fare una corsetta su questo sentiero, e&#39; ma…">
+  <div class="card-date">5 aprile 2010</div>
+  <div class="card-title">Il sentiero Torbole-Busatte-Tempesta : una volta tanto la bici resta a…</div>
+  <div class="card-snippet">Il sentiero Torbole-Busatte-Tempesta : una volta tanto la bici resta a casa. Mio fratello me lo aveva detto : "prima o poi devi venire a fare una corsetta su questo sentiero, e' ma…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20100405_058.html'"
+     data-title="Due sorelle in sosta Cosa c&#39;e&#39; di piu&#39; bello del primo giro con la bic…" data-year="2010" data-snippet="Due sorelle in sosta Cosa c&#39;e&#39; di piu&#39; bello del primo giro con la bici nuova? Davvero nulla. O forse ......un giro con un compagno di pedale che ha una bici uguale alla tua e che…">
+  <div class="card-date">5 aprile 2010</div>
+  <div class="card-title">Due sorelle in sosta Cosa c'e' di piu' bello del primo giro con la bic…</div>
+  <div class="card-snippet">Due sorelle in sosta Cosa c'e' di piu' bello del primo giro con la bici nuova? Davvero nulla. O forse ......un giro con un compagno di pedale che ha una bici uguale alla tua e che…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20100411_059.html'"
+     data-title="L&#39;altimetria di 100 km e 1700 m di dislivello : da Stradella al Penice…" data-year="2010" data-snippet="L&#39;altimetria di 100 km e 1700 m di dislivello : da Stradella al Penice e ritorno U na appetitosa &quot;normale&quot; barretta Primavera in Oltrepo&#39; : doping e crostatine In mezzo ai fiori sb…">
+  <div class="card-date">11 aprile 2010</div>
+  <div class="card-title">L'altimetria di 100 km e 1700 m di dislivello : da Stradella al Penice…</div>
+  <div class="card-snippet">L'altimetria di 100 km e 1700 m di dislivello : da Stradella al Penice e ritorno U na appetitosa "normale" barretta Primavera in Oltrepo' : doping e crostatine In mezzo ai fiori sb…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20100417_060.html'"
+     data-title="Intorno al Mottarone Previsioni meteo incerte, nuvolosita&#39; irregolare,…" data-year="2010" data-snippet="Intorno al Mottarone Previsioni meteo incerte, nuvolosita&#39; irregolare, scarsa conoscenza dei luoghi, nube vulcanica incombente : la situazione ideale per affidarsi alla Moroni Adve…">
+  <div class="card-date">17 aprile 2010</div>
+  <div class="card-title">Intorno al Mottarone Previsioni meteo incerte, nuvolosita' irregolare,…</div>
+  <div class="card-snippet">Intorno al Mottarone Previsioni meteo incerte, nuvolosita' irregolare, scarsa conoscenza dei luoghi, nube vulcanica incombente : la situazione ideale per affidarsi alla Moroni Adve…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20100425_061.html'"
+     data-title="VALCAVA ovvero IL GIBERNAUTA CHE NON TI ASPETTI Il primo strappo Prova…" data-year="2010" data-snippet="VALCAVA ovvero IL GIBERNAUTA CHE NON TI ASPETTI Il primo strappo Provate a chiedere ad un gibernauta (sedicente atleta dotato di massicce giberne incorporate) quale e&#39; il tipo di p…">
+  <div class="card-date">25 aprile 2010</div>
+  <div class="card-title">VALCAVA ovvero IL GIBERNAUTA CHE NON TI ASPETTI Il primo strappo Prova…</div>
+  <div class="card-snippet">VALCAVA ovvero IL GIBERNAUTA CHE NON TI ASPETTI Il primo strappo Provate a chiedere ad un gibernauta (sedicente atleta dotato di massicce giberne incorporate) quale e' il tipo di p…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20100502_062.html'"
+     data-title="Varzi = Penice x 2+Brallo Partendo da Milano alla ricerca di Salite pe…" data-year="2010" data-snippet="Varzi = Penice x 2+Brallo Partendo da Milano alla ricerca di Salite pedalabili si sono due alternative : Sud o Nord. La settimana scorsa abbiamo puntato a Nord (Est) e quindi quest…">
+  <div class="card-date">2 maggio 2010</div>
+  <div class="card-title">Varzi = Penice x 2+Brallo Partendo da Milano alla ricerca di Salite pe…</div>
+  <div class="card-snippet">Varzi = Penice x 2+Brallo Partendo da Milano alla ricerca di Salite pedalabili si sono due alternative : Sud o Nord. La settimana scorsa abbiamo puntato a Nord (Est) e quindi quest…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20100509_063.html'"
+     data-title="Le Capanne di Marcarolo, respinti a meta&#39; dell&#39;opera." data-year="2010" data-snippet="Le Capanne di Marcarolo, respinti a meta&#39; dell&#39;opera. Certo le previsioni non erano molto promettenti. E siamo pure partiti da Milano con la pioggia. Pero&#39; l&#39;avvicinamento a Novi c…">
+  <div class="card-date">9 maggio 2010</div>
+  <div class="card-title">Le Capanne di Marcarolo, respinti a meta' dell'opera.</div>
+  <div class="card-snippet">Le Capanne di Marcarolo, respinti a meta' dell'opera. Certo le previsioni non erano molto promettenti. E siamo pure partiti da Milano con la pioggia. Pero' l'avvicinamento a Novi c…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20100516_064.html'"
+     data-title="La rognosissima salita alle Capannette di Pey Il Penice e le Capannett…" data-year="2010" data-snippet="La rognosissima salita alle Capannette di Pey Il Penice e le Capannette di Pey : ascolta il &quot;vecio&quot; Dopo una settimana di pioggia continua finalmente si profila una domenica con un…">
+  <div class="card-date">16 maggio 2010</div>
+  <div class="card-title">La rognosissima salita alle Capannette di Pey Il Penice e le Capannett…</div>
+  <div class="card-snippet">La rognosissima salita alle Capannette di Pey Il Penice e le Capannette di Pey : ascolta il "vecio" Dopo una settimana di pioggia continua finalmente si profila una domenica con un…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20100523_065.html'"
+     data-title="Le Capanne di Cosola da Novi ovvero &quot;il calvario del gibernauta&quot;." data-year="2010" data-snippet="Le Capanne di Cosola da Novi ovvero &quot;il calvario del gibernauta&quot;. Altimetria della sofferenza A dire il vero lo sospettavo. Nelle ultime uscite ero andato davvero bene. Soprattutto…">
+  <div class="card-date">23 maggio 2010</div>
+  <div class="card-title">Le Capanne di Cosola da Novi ovvero "il calvario del gibernauta".</div>
+  <div class="card-snippet">Le Capanne di Cosola da Novi ovvero "il calvario del gibernauta". Altimetria della sofferenza A dire il vero lo sospettavo. Nelle ultime uscite ero andato davvero bene. Soprattutto…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20100606_066.html'"
+     data-title="Da Santa Maria (della Versa) a Santa Maria (al Penice)." data-year="2010" data-snippet="Da Santa Maria (della Versa) a Santa Maria (al Penice). Dopo la crisi delle capanne di Cosola non avevo piu&#39; avuto l&#39;animo di rimettermi in sella per pedalare in salita. Si&#39;, ho fa…">
+  <div class="card-date">6 giugno 2010</div>
+  <div class="card-title">Da Santa Maria (della Versa) a Santa Maria (al Penice).</div>
+  <div class="card-snippet">Da Santa Maria (della Versa) a Santa Maria (al Penice). Dopo la crisi delle capanne di Cosola non avevo piu' avuto l'animo di rimettermi in sella per pedalare in salita. Si', ho fa…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20100628_067.html'"
+     data-title="Cannellona : giretto tra mitiche trattorie ed un primo piatto decisame…" data-year="2010" data-snippet="Cannellona : giretto tra mitiche trattorie ed un primo piatto decisamente pesante Quando un amico ti accompagna lungo il suo itinerario preferito e prima di partire ti chiede : &quot;c&#39;…">
+  <div class="card-date">28 giugno 2010</div>
+  <div class="card-title">Cannellona : giretto tra mitiche trattorie ed un primo piatto decisame…</div>
+  <div class="card-snippet">Cannellona : giretto tra mitiche trattorie ed un primo piatto decisamente pesante Quando un amico ti accompagna lungo il suo itinerario preferito e prima di partire ti chiede : "c'…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20100704_068.html'"
+     data-title="Sulle tracce della Linea Cadorna" data-year="2010" data-snippet="SULLE TRACCE DELLA LINEA CADORNA Quando il caldo non da&#39; tregua non e&#39; facile nemmeno pedalare. Bisogna quindi trovare percorsi che , per quanto si puo&#39;, espongano il meno possibil…">
+  <div class="card-date">4 luglio 2010</div>
+  <div class="card-title">Sulle tracce della Linea Cadorna</div>
+  <div class="card-snippet">SULLE TRACCE DELLA LINEA CADORNA Quando il caldo non da' tregua non e' facile nemmeno pedalare. Bisogna quindi trovare percorsi che , per quanto si puo', espongano il meno possibil…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20100710_069.html'"
+     data-title="IL PESTIFERO CORNIZZOLO Si sa, i brianzoli non scherzano, non sono spa…" data-year="2010" data-snippet="IL PESTIFERO CORNIZZOLO Si sa, i brianzoli non scherzano, non sono spacconi : di poche parole e parchi anche nell&#39;esprimersi e nel manifestare entusiasmi. Cosi&#39; leggendo il mitico…">
+  <div class="card-date">10 luglio 2010</div>
+  <div class="card-title">IL PESTIFERO CORNIZZOLO Si sa, i brianzoli non scherzano, non sono spa…</div>
+  <div class="card-snippet">IL PESTIFERO CORNIZZOLO Si sa, i brianzoli non scherzano, non sono spacconi : di poche parole e parchi anche nell'esprimersi e nel manifestare entusiasmi. Cosi' leggendo il mitico…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20100905_070.html'"
+     data-title="Ritorno In Val Trebbia Fino a non molti anni fa i miei weekend ciclist…" data-year="2010" data-snippet="Ritorno In Val Trebbia Fino a non molti anni fa i miei weekend ciclistici erano strettamente legati alla Val Trebbia. Un gruppo di amici e percorsi impegnativi ma incantevoli erano…">
+  <div class="card-date">5 settembre 2010</div>
+  <div class="card-title">Ritorno In Val Trebbia Fino a non molti anni fa i miei weekend ciclist…</div>
+  <div class="card-snippet">Ritorno In Val Trebbia Fino a non molti anni fa i miei weekend ciclistici erano strettamente legati alla Val Trebbia. Un gruppo di amici e percorsi impegnativi ma incantevoli erano…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20101003_071.html'"
+     data-title="Clodiò et le Sgibernotà" data-year="2010" data-snippet="&quot;Ma chi e&#39; quel ciclista tonico e capellone che pedala a fianco del Gibernauta?&quot;..questo si chiedevano nei pressi di Angera in questo umido sabato mattina di ottobre. Ma forse, no.…">
+  <div class="card-date">3 ottobre 2010</div>
+  <div class="card-title">Clodiò et le Sgibernotà</div>
+  <div class="card-snippet">"Ma chi e' quel ciclista tonico e capellone che pedala a fianco del Gibernauta?"..questo si chiedevano nei pressi di Angera in questo umido sabato mattina di ottobre. Ma forse, no.…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20101010_072.html'"
+     data-title="A spasso in Oltrepo&#39;" data-year="2010" data-snippet="L&#39;idea di partenza non era male. Il &quot;Milani Group&quot;, guidato dal Diablo, si sarebbe trovato in zona Borgo Priolo (per la precisione in localita&#39; Torrazzetta) per una pedalata di una…">
+  <div class="card-date">10 ottobre 2010</div>
+  <div class="card-title">A spasso in Oltrepo&#39;</div>
+  <div class="card-snippet">L'idea di partenza non era male. Il "Milani Group", guidato dal Diablo, si sarebbe trovato in zona Borgo Priolo (per la precisione in localita' Torrazzetta) per una pedalata di una…</div>
+</div>
+</div>
+</div>
+<div class="year-section" data-year="2011">
+<div class="year-header">2011 <span style="font-size:1rem;color:#999;font-weight:normal;">(16 articoli)</span></div>
+<div class="cards">
+<div class="card" onclick="location.href='articoli/20110116_073.html'"
+     data-title="Ma allora il sole esiste ancora!" data-year="2011" data-snippet="LA PRIMA USCITA DEL 2011 Quando mercoledi&#39; ho ricevuto la mail da Daniele (coach &quot;in sella&quot; del gruppo Milani, il team di amici ispirato da Claudio con il quale avevo pedalato in o…">
+  <div class="card-date">16 gennaio 2011</div>
+  <div class="card-title">Ma allora il sole esiste ancora!</div>
+  <div class="card-snippet">LA PRIMA USCITA DEL 2011 Quando mercoledi' ho ricevuto la mail da Daniele (coach "in sella" del gruppo Milani, il team di amici ispirato da Claudio con il quale avevo pedalato in o…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20110212_074.html'"
+     data-title="Mattina lodigiana" data-year="2011" data-snippet="Questa mattina, guidando verso est..">
+  <div class="card-date">12 febbraio 2011</div>
+  <div class="card-title">Mattina lodigiana</div>
+  <div class="card-snippet">Questa mattina, guidando verso est..</div>
+</div>
+<div class="card" onclick="location.href='articoli/20110816_075.html'"
+     data-title="La salita a Beechhill a Derry : arrampicandosi in mezzo ai prati" data-year="2011" data-snippet="La salita a Beechhill a Derry : arrampicandosi in mezzo ai prati">
+  <div class="card-date">16 agosto 2011</div>
+  <div class="card-title">La salita a Beechhill a Derry : arrampicandosi in mezzo ai prati</div>
+  <div class="card-snippet">La salita a Beechhill a Derry : arrampicandosi in mezzo ai prati</div>
+</div>
+<div class="card" onclick="location.href='articoli/20110816_076.html'"
+     data-title="Di corsa sulla costa Atlantica" data-year="2011" data-snippet="La spiaggia di Rossnowlough : di corsa sulla costa Atlantica">
+  <div class="card-date">16 agosto 2011</div>
+  <div class="card-title">Di corsa sulla costa Atlantica</div>
+  <div class="card-snippet">La spiaggia di Rossnowlough : di corsa sulla costa Atlantica</div>
+</div>
+<div class="card" onclick="location.href='articoli/20110816_077.html'"
+     data-title="Sera estiva" data-year="2011" data-snippet="Sera estiva">
+  <div class="card-date">16 agosto 2011</div>
+  <div class="card-title">Sera estiva</div>
+  <div class="card-snippet">Sera estiva</div>
+</div>
+<div class="card" onclick="location.href='articoli/20111010_078.html'"
+     data-title="A spasso a Feltre" data-year="2011" data-snippet="A spasso intorno a Feltre (con la salita...) Mi ero proprio dimenticato che intorno a Feltre non c&#39;e&#39; molta pianura. Alla fine son venuti fuori poco meno di 21km a 5&#39;10&quot; di media.…">
+  <div class="card-date">10 ottobre 2011</div>
+  <div class="card-title">A spasso a Feltre</div>
+  <div class="card-snippet">A spasso intorno a Feltre (con la salita...) Mi ero proprio dimenticato che intorno a Feltre non c'e' molta pianura. Alla fine son venuti fuori poco meno di 21km a 5'10" di media.…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20111016_079.html'"
+     data-title="Il torrone del Torrazzo : il gibernauta torna sulle strade di Cremona" data-year="2011" data-snippet="Era da piu&#39; due anni che non mi iscrivevo ad una gara podistica. Dai tempi della mezza di Vigevano : corsa, per un terzo, con le gambe di palissandro. A dire il vero in questi due…">
+  <div class="card-date">16 ottobre 2011</div>
+  <div class="card-title">Il torrone del Torrazzo : il gibernauta torna sulle strade di Cremona</div>
+  <div class="card-snippet">Era da piu' due anni che non mi iscrivevo ad una gara podistica. Dai tempi della mezza di Vigevano : corsa, per un terzo, con le gambe di palissandro. A dire il vero in questi due…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20111108_080.html'"
+     data-title="La linea BLU" data-year="2011" data-snippet="LA LINEA BLU Domenica ho assistito affascinato alla lunga galoppata di Mutai a New York e ho fatto il tifo, via web, per mio fratello : anche lui volava sulle ali dell&#39;entusiasmo c…">
+  <div class="card-date">8 novembre 2011</div>
+  <div class="card-title">La linea BLU</div>
+  <div class="card-snippet">LA LINEA BLU Domenica ho assistito affascinato alla lunga galoppata di Mutai a New York e ho fatto il tifo, via web, per mio fratello : anche lui volava sulle ali dell'entusiasmo c…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20111113_081.html'"
+     data-title="Da Bereguardo in Oltrepo" data-year="2011" data-snippet="Da Bereguardo in Oltrepò Sabato di meta&#39; novembre, la temuta nebbia non si vede (non perche&#39; c&#39;e&#39; ma perche&#39; non c&#39;e&#39;) si decide quindi per un&#39;uscita un po&#39; piu&#39; lunga del normale.…">
+  <div class="card-date">13 novembre 2011</div>
+  <div class="card-title">Da Bereguardo in Oltrepo</div>
+  <div class="card-snippet">Da Bereguardo in Oltrepò Sabato di meta' novembre, la temuta nebbia non si vede (non perche' c'e' ma perche' non c'e') si decide quindi per un'uscita un po' piu' lunga del normale.…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20111114_082.html'"
+     data-title="Defaticamento..." data-year="2011" data-snippet="Dopo la fatica di sabato un domenica mattina di &quot;defaticamento&quot; (si fa per dire..). Si fa per dire : con Pino, Renato e Stefano (per l&#39;occasione in tenuta multi fluo : calze &quot;conte…">
+  <div class="card-date">14 novembre 2011</div>
+  <div class="card-title">Defaticamento...</div>
+  <div class="card-snippet">Dopo la fatica di sabato un domenica mattina di "defaticamento" (si fa per dire..). Si fa per dire : con Pino, Renato e Stefano (per l'occasione in tenuta multi fluo : calze "conte…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20111120_083.html'"
+     data-title="Il bello della corsa" data-year="2011" data-snippet="Il bello della corsa No, non mi sto riferendo al Gibernauta. Il bello della corsa e&#39; quando arrivano quelle giornate invernali da pianurona lombarda, col &quot;nebiùn&quot; che si appiccica…">
+  <div class="card-date">20 novembre 2011</div>
+  <div class="card-title">Il bello della corsa</div>
+  <div class="card-snippet">Il bello della corsa No, non mi sto riferendo al Gibernauta. Il bello della corsa e' quando arrivano quelle giornate invernali da pianurona lombarda, col "nebiùn" che si appiccica…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20111127_084.html'"
+     data-title="weekend nebbioso" data-year="2011" data-snippet="UN WEEKEND NEBBIOSO Cominciamo da sabato. Appuntamento per una corsa mattutina partendo dalla Canottieri. Presente il nucleo scelto della truppa : Renato lo smilzo veloce , Pino as…">
+  <div class="card-date">27 novembre 2011</div>
+  <div class="card-title">weekend nebbioso</div>
+  <div class="card-snippet">UN WEEKEND NEBBIOSO Cominciamo da sabato. Appuntamento per una corsa mattutina partendo dalla Canottieri. Presente il nucleo scelto della truppa : Renato lo smilzo veloce , Pino as…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20111203_085.html'"
+     data-title="Il bello della bici" data-year="2011" data-snippet="Il bello della bici Anche in questo caso non mi riferisco al gibernauta. Mi riferisco invece a quei gruppetti di ciclisti stagionati che spesso si vedono in giro sulle strade lomba…">
+  <div class="card-date">3 dicembre 2011</div>
+  <div class="card-title">Il bello della bici</div>
+  <div class="card-snippet">Il bello della bici Anche in questo caso non mi riferisco al gibernauta. Mi riferisco invece a quei gruppetti di ciclisti stagionati che spesso si vedono in giro sulle strade lomba…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20111204_086.html'"
+     data-title="Le giberne" data-year="2011" data-snippet="Vari tipi di giberne dell&#39;esercito austroungarico Il mondo e&#39; bello perche&#39; e&#39; vario : ovvero ognuno ha le giberne che si merita. E chi se lo merita le giberne non le ha. Uno che p…">
+  <div class="card-date">4 dicembre 2011</div>
+  <div class="card-title">Le giberne</div>
+  <div class="card-snippet">Vari tipi di giberne dell'esercito austroungarico Il mondo e' bello perche' e' vario : ovvero ognuno ha le giberne che si merita. E chi se lo merita le giberne non le ha. Uno che p…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20111211_087.html'"
+     data-title="Varie specie di gibernauti" data-year="2011" data-snippet="Varie specie di gibernauti. Il naviglio di fronte alla Canottieri la domenica mattina Come accade spesso in natura, anche il gibernauta si presenta sotto varie possibili forme. Ma…">
+  <div class="card-date">11 dicembre 2011</div>
+  <div class="card-title">Varie specie di gibernauti</div>
+  <div class="card-snippet">Varie specie di gibernauti. Il naviglio di fronte alla Canottieri la domenica mattina Come accade spesso in natura, anche il gibernauta si presenta sotto varie possibili forme. Ma…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20111218_088.html'"
+     data-title="Weekend impegnativo" data-year="2011" data-snippet="UN WEEKEND IMPEGNATIVO Il &quot;combinato&quot; di sabato SABATO Ci sono amicizie pericolose. Lo sapevo che di Stefano Ironman non c&#39;era da fidarsi. Insomma uno che suona il basso e compone…">
+  <div class="card-date">18 dicembre 2011</div>
+  <div class="card-title">Weekend impegnativo</div>
+  <div class="card-snippet">UN WEEKEND IMPEGNATIVO Il "combinato" di sabato SABATO Ci sono amicizie pericolose. Lo sapevo che di Stefano Ironman non c'era da fidarsi. Insomma uno che suona il basso e compone…</div>
+</div>
+</div>
+</div>
+<div class="year-section" data-year="2012">
+<div class="year-header">2012 <span style="font-size:1rem;color:#999;font-weight:normal;">(24 articoli)</span></div>
+<div class="cards">
+<div class="card" onclick="location.href='articoli/20120107_089.html'"
+     data-title="Pedalando in Lombardia.." data-year="2012" data-snippet="Pedalando in Lombardia Dal crinale tra Montalto Pavese e Bellaria : aria limpida Il primo lungo weekend del 2012 prevede cieli tersi e sole. C&#39;e&#39; da chiedersi quindi come mai ci ri…">
+  <div class="card-date">7 gennaio 2012</div>
+  <div class="card-title">Pedalando in Lombardia..</div>
+  <div class="card-snippet">Pedalando in Lombardia Dal crinale tra Montalto Pavese e Bellaria : aria limpida Il primo lungo weekend del 2012 prevede cieli tersi e sole. C'e' da chiedersi quindi come mai ci ri…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20120115_090.html'"
+     data-title="LA GALAVERNA" data-year="2012" data-snippet="Gaggiano nel nebiùn Sabato avevo poco tempo per la bici . Con mio fratello Renato (lo smilzo veloce) abbiamo optato per il solito giro nel Parco Agricolo Milano Sud. Sarebbero una…">
+  <div class="card-date">15 gennaio 2012</div>
+  <div class="card-title">LA GALAVERNA</div>
+  <div class="card-snippet">Gaggiano nel nebiùn Sabato avevo poco tempo per la bici . Con mio fratello Renato (lo smilzo veloce) abbiamo optato per il solito giro nel Parco Agricolo Milano Sud. Sarebbero una…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20120210_091.html'"
+     data-title="Mezzi alternativi" data-year="2012" data-snippet="Mezzi alternativi 2 parole : fascite plantare. Suona male no? Sì, suona molto male.E soprattutto fa male alla pianta del piede. Quindi di correre non se ne parla. Anzi. L&#39;ortopedic…">
+  <div class="card-date">10 febbraio 2012</div>
+  <div class="card-title">Mezzi alternativi</div>
+  <div class="card-snippet">Mezzi alternativi 2 parole : fascite plantare. Suona male no? Sì, suona molto male.E soprattutto fa male alla pianta del piede. Quindi di correre non se ne parla. Anzi. L'ortopedic…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20120219_092.html'"
+     data-title="Si ritorna in pista...." data-year="2012" data-snippet="Prima la fascite plantare, poi il raffreddorone micidiale con strascico. Insomma erano ormai circa 3 settimane di quasi stop. Fortunato, a dire il vero, dato che il clima micidiale…">
+  <div class="card-date">19 febbraio 2012</div>
+  <div class="card-title">Si ritorna in pista....</div>
+  <div class="card-snippet">Prima la fascite plantare, poi il raffreddorone micidiale con strascico. Insomma erano ormai circa 3 settimane di quasi stop. Fortunato, a dire il vero, dato che il clima micidiale…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20120226_093.html'"
+     data-title="Il famigerato COMBINATO" data-year="2012" data-snippet="Ero un pochino preoccupato mentre la mattina di sabato pedalavo verso la Canottieri. Appuntamento alle 9 con Sabrina Steelwoman per un giro in bici con corsa a piedi a seguire. Ins…">
+  <div class="card-date">26 febbraio 2012</div>
+  <div class="card-title">Il famigerato COMBINATO</div>
+  <div class="card-snippet">Ero un pochino preoccupato mentre la mattina di sabato pedalavo verso la Canottieri. Appuntamento alle 9 con Sabrina Steelwoman per un giro in bici con corsa a piedi a seguire. Ins…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20120501_094.html'"
+     data-title="In salita si fatica e si prendono lezioni di &quot;umiltè&quot; (come direbbe Arrigo Sacchi)" data-year="2012" data-snippet="La salita al passo Santa Barbara Non salivo in sella da qualche settimana. E poi dall&#39;inizio dell&#39;anno l&#39;allenamento sulle due ruote era veramente scarso. Non solo avevo percorso p…">
+  <div class="card-date">1 maggio 2012</div>
+  <div class="card-title">In salita si fatica e si prendono lezioni di "umiltè" (come direbbe Arrigo Sacchi)</div>
+  <div class="card-snippet">La salita al passo Santa Barbara Non salivo in sella da qualche settimana. E poi dall'inizio dell'anno l'allenamento sulle due ruote era veramente scarso. Non solo avevo percorso p…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20120617_095.html'"
+     data-title="Su strade conosciute" data-year="2012" data-snippet="E finalmente si torna in sella. Dopo un lungo intervallo inframmezzato da qualche uscita &quot;mordi e fuggi&quot; del tipo &quot;sali e fuggi&quot; nel weekend, sono tornato sulle tracce del percorso…">
+  <div class="card-date">17 giugno 2012</div>
+  <div class="card-title">Su strade conosciute</div>
+  <div class="card-snippet">E finalmente si torna in sella. Dopo un lungo intervallo inframmezzato da qualche uscita "mordi e fuggi" del tipo "sali e fuggi" nel weekend, sono tornato sulle tracce del percorso…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20120627_096.html'"
+     data-title="Ombre pedalanti" data-year="2012" data-snippet="Ombre lunghe la mattina Alle 630 a San Cristoforo : un appuntamento classico. Siamo in 5. Sgambata svelta verso Trezzano, poi pronti per girare a sinistra. Qualche scatto per &quot;romp…">
+  <div class="card-date">27 giugno 2012</div>
+  <div class="card-title">Ombre pedalanti</div>
+  <div class="card-snippet">Ombre lunghe la mattina Alle 630 a San Cristoforo : un appuntamento classico. Siamo in 5. Sgambata svelta verso Trezzano, poi pronti per girare a sinistra. Qualche scatto per "romp…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20120629_097.html'"
+     data-title="Soddisfazioni.." data-year="2012" data-snippet="">
+  <div class="card-date">29 giugno 2012</div>
+  <div class="card-title">Soddisfazioni..</div>
+  <div class="card-snippet"></div>
+</div>
+<div class="card" onclick="location.href='articoli/20120703_098.html'"
+     data-title="Stile Juve" data-year="2012" data-snippet="Giovedì il sig. Marotta con grande signorilità compare subito in TV per appropriarsi senza ritegno della vittoria della nazionale sulla Germania grazie alla Juventus. Domenica sera…">
+  <div class="card-date">3 luglio 2012</div>
+  <div class="card-title">Stile Juve</div>
+  <div class="card-snippet">Giovedì il sig. Marotta con grande signorilità compare subito in TV per appropriarsi senza ritegno della vittoria della nazionale sulla Germania grazie alla Juventus. Domenica sera…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20120705_099.html'"
+     data-title="Il nebiùn che non ti aspetti" data-year="2012" data-snippet="Eh..sì. Quando salti in sella in una mattina di luglio proprio non ti aspetti di trovarti, dopo pochi chilometri, a pedalare in una bruma lattiginosa. E invece eccoci qua : in 4 (A…">
+  <div class="card-date">5 luglio 2012</div>
+  <div class="card-title">Il nebiùn che non ti aspetti</div>
+  <div class="card-snippet">Eh..sì. Quando salti in sella in una mattina di luglio proprio non ti aspetti di trovarti, dopo pochi chilometri, a pedalare in una bruma lattiginosa. E invece eccoci qua : in 4 (A…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20120711_100.html'"
+     data-title="Quando il gatto non c&#39;e&#39;..." data-year="2012" data-snippet="In scia : Renato tira, dietro Annibale e davanti a me Enrico.Andavamo a 36 e la foto è , ovviamente, un po&#39; mossa. ....i topi ballano. Eh..sì. Approfittando della vacanza di AleLoc…">
+  <div class="card-date">11 luglio 2012</div>
+  <div class="card-title">Quando il gatto non c'e'...</div>
+  <div class="card-snippet">In scia : Renato tira, dietro Annibale e davanti a me Enrico.Andavamo a 36 e la foto è , ovviamente, un po' mossa. ....i topi ballano. Eh..sì. Approfittando della vacanza di AleLoc…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20120730_101.html'"
+     data-title="Vacanze nel SINIS" data-year="2012" data-snippet="Mare vero. E dietro una campagna che non ti aspetti. Correre nella salina la mattina presto aspettando i fenicotteri riconcilia col mondo.">
+  <div class="card-date">30 luglio 2012</div>
+  <div class="card-title">Vacanze nel SINIS</div>
+  <div class="card-snippet">Mare vero. E dietro una campagna che non ti aspetti. Correre nella salina la mattina presto aspettando i fenicotteri riconcilia col mondo.</div>
+</div>
+<div class="card" onclick="location.href='articoli/20120808_102.html'"
+     data-title="Cigni vetri e gambe di legno (all&#39;alba)" data-year="2012" data-snippet="Il cigno sul ciglio del Naviglio Capitano cose strane in agosto. Capita di trovarsi la mattina per una pedalata antelucana e capita di imbattersi in un cigno che lemme lemme se la…">
+  <div class="card-date">8 agosto 2012</div>
+  <div class="card-title">Cigni vetri e gambe di legno (all'alba)</div>
+  <div class="card-snippet">Il cigno sul ciglio del Naviglio Capitano cose strane in agosto. Capita di trovarsi la mattina per una pedalata antelucana e capita di imbattersi in un cigno che lemme lemme se la…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20120815_103.html'"
+     data-title="Il riposo di Ferragosto" data-year="2012" data-snippet="Il &quot;riposo&quot; di ferragosto Il brutto delle vacanze a luglio e&#39;....agosto. E&#39; proprio con Frank (&#39;autore di questa sintesi magica del calendario vacanze che di solito adotto anch&#39;io)…">
+  <div class="card-date">15 agosto 2012</div>
+  <div class="card-title">Il riposo di Ferragosto</div>
+  <div class="card-snippet">Il "riposo" di ferragosto Il brutto delle vacanze a luglio e'....agosto. E' proprio con Frank ('autore di questa sintesi magica del calendario vacanze che di solito adotto anch'io)…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20120818_104.html'"
+     data-title="In salita si fatica; al caldo : di più" data-year="2012" data-snippet="Anche il ciclista di pianura prima o poi deve fare un po&#39; di salita, no? E quindi con Francesco (Ironman, UTTMB man, CroMagnon Man - non nel senso che è primitivo ma nel senso che…">
+  <div class="card-date">18 agosto 2012</div>
+  <div class="card-title">In salita si fatica; al caldo : di più</div>
+  <div class="card-snippet">Anche il ciclista di pianura prima o poi deve fare un po' di salita, no? E quindi con Francesco (Ironman, UTTMB man, CroMagnon Man - non nel senso che è primitivo ma nel senso che…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20120819_105.html'"
+     data-title="Defaticamento..defaticache?" data-year="2012" data-snippet="Il solito giretto Dopo la strapazzata al caldo di ieri avevo quasi quasi deciso di prendermi un giorno di vacanza. Ma poi mi son detto : e se facessi un&#39;uscita di defaticamento? Me…">
+  <div class="card-date">19 agosto 2012</div>
+  <div class="card-title">Defaticamento..defaticache?</div>
+  <div class="card-snippet">Il solito giretto Dopo la strapazzata al caldo di ieri avevo quasi quasi deciso di prendermi un giorno di vacanza. Ma poi mi son detto : e se facessi un'uscita di defaticamento? Me…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20120826_106.html'"
+     data-title="Il mitico Udaldone" data-year="2012" data-snippet="Sono ormai lontani gli anni ruggenti del Bondardala (Passo Bondone + Passo Bordala) o del Bordandone (passo Bordala + passo Bondone). Erano giretti da quasi 3mila metri di dislivel…">
+  <div class="card-date">26 agosto 2012</div>
+  <div class="card-title">Il mitico Udaldone</div>
+  <div class="card-snippet">Sono ormai lontani gli anni ruggenti del Bondardala (Passo Bondone + Passo Bordala) o del Bordandone (passo Bordala + passo Bondone). Erano giretti da quasi 3mila metri di dislivel…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20120830_107.html'"
+     data-title="Alba in risaia" data-year="2012" data-snippet="Si accorciano le giornate. Ci siamo trovati come al solito alle 630 per la pedalata in mezzo alle risaie : cominciava timidamente ad albeggiare. Luce radente, qualche nuvola alta,…">
+  <div class="card-date">30 agosto 2012</div>
+  <div class="card-title">Alba in risaia</div>
+  <div class="card-snippet">Si accorciano le giornate. Ci siamo trovati come al solito alle 630 per la pedalata in mezzo alle risaie : cominciava timidamente ad albeggiare. Luce radente, qualche nuvola alta,…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20120906_108.html'"
+     data-title="Pedalando con quelli forti...." data-year="2012" data-snippet="Pedalando con quelli forti ....si fatica. Solito giretto mattutino (ma ormai alle 630 è ancora buio) nelle risaie a sud ovest di Milano. Gruppo tosto : AleLokomotiv, TriEnrico e il…">
+  <div class="card-date">6 settembre 2012</div>
+  <div class="card-title">Pedalando con quelli forti....</div>
+  <div class="card-snippet">Pedalando con quelli forti ....si fatica. Solito giretto mattutino (ma ormai alle 630 è ancora buio) nelle risaie a sud ovest di Milano. Gruppo tosto : AleLokomotiv, TriEnrico e il…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20120909_109.html'"
+     data-title="Coi giovani puledri" data-year="2012" data-snippet="I vecchi ronzini non dovrebbero mescolarsi coi giovani puledri : questo pensavamo io e Annibale guardandoci tristemente negli occhi mentre arrancavamo a oltre 35 kmh lungo la via d…">
+  <div class="card-date">9 settembre 2012</div>
+  <div class="card-title">Coi giovani puledri</div>
+  <div class="card-snippet">I vecchi ronzini non dovrebbero mescolarsi coi giovani puledri : questo pensavamo io e Annibale guardandoci tristemente negli occhi mentre arrancavamo a oltre 35 kmh lungo la via d…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20121007_110.html'"
+     data-title="ARRIVA L&#39;AUTUNNO : VOLANO GLI AIRONI E NUOTANO LE NUTRIE" data-year="2012" data-snippet="Colori autunnali tra le risaie Inauguriamo questo primo weekend di ottobre con una veloce puntatina ciclistica tra le risaie del Parco Agricolo Milano Sud. Sabato mattina, temperat…">
+  <div class="card-date">7 ottobre 2012</div>
+  <div class="card-title">ARRIVA L'AUTUNNO : VOLANO GLI AIRONI E NUOTANO LE NUTRIE</div>
+  <div class="card-snippet">Colori autunnali tra le risaie Inauguriamo questo primo weekend di ottobre con una veloce puntatina ciclistica tra le risaie del Parco Agricolo Milano Sud. Sabato mattina, temperat…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20121118_111.html'"
+     data-title="Autunno" data-year="2012" data-snippet="E&#39; ormai la quarta settimana di tecarterapia : niente corsa, per ora. Ci sarebbe la bici, ma Giove Pluvio è diventato di una precisione chirurgica : le prime nuvole si avvicinano i…">
+  <div class="card-date">18 novembre 2012</div>
+  <div class="card-title">Autunno</div>
+  <div class="card-snippet">E' ormai la quarta settimana di tecarterapia : niente corsa, per ora. Ci sarebbe la bici, ma Giove Pluvio è diventato di una precisione chirurgica : le prime nuvole si avvicinano i…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20121125_112.html'"
+     data-title="Foschia" data-year="2012" data-snippet="Altro weekend milanese e altra uscita a Sud di Milano. Solito giro, mai noioso. Stavolta mi fa compagnia Renato Renato bello coperto La luce dorata sul mare di stoppie di riso nel&#39;…">
+  <div class="card-date">25 novembre 2012</div>
+  <div class="card-title">Foschia</div>
+  <div class="card-snippet">Altro weekend milanese e altra uscita a Sud di Milano. Solito giro, mai noioso. Stavolta mi fa compagnia Renato Renato bello coperto La luce dorata sul mare di stoppie di riso nel'…</div>
+</div>
+</div>
+</div>
+<div class="year-section" data-year="2013">
+<div class="year-header">2013 <span style="font-size:1rem;color:#999;font-weight:normal;">(40 articoli)</span></div>
+<div class="cards">
+<div class="card" onclick="location.href='articoli/20130115_113.html'"
+     data-title="Ciao ciao bambina...." data-year="2013" data-snippet="Se per caso vedete in giro Una bici come questa: Bene, mi è stata rubata sabato sera di fronte al cinema Eliseo in via Torino. Siccome a Milano non ce ne erano molte, vi sarei grat…">
+  <div class="card-date">15 gennaio 2013</div>
+  <div class="card-title">Ciao ciao bambina....</div>
+  <div class="card-snippet">Se per caso vedete in giro Una bici come questa: Bene, mi è stata rubata sabato sera di fronte al cinema Eliseo in via Torino. Siccome a Milano non ce ne erano molte, vi sarei grat…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20130424_114.html'"
+     data-title="Inchiodato dalla scienza" data-year="2013" data-snippet="Dopo settimane martoriate dal brutto tempo , finalmente si apre una finestra meteo favorevole. Ovviamente non è nel weekend (troppa grazia) ma bisogna cogliere l’attimo e quindi ci…">
+  <div class="card-date">24 aprile 2013</div>
+  <div class="card-title">Inchiodato dalla scienza</div>
+  <div class="card-snippet">Dopo settimane martoriate dal brutto tempo , finalmente si apre una finestra meteo favorevole. Ovviamente non è nel weekend (troppa grazia) ma bisogna cogliere l’attimo e quindi ci…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20130501_115.html'"
+     data-title="Primo Maggio in sella" data-year="2013" data-snippet="Era ora. Dopo numerose ripetizioni del giro dell’Airone (che, per quanto bello, dopo un po’ stufa), oggi ci troviamo alle 830 per una giretto un filo più lungo. Niente di che, s’in…">
+  <div class="card-date">1 maggio 2013</div>
+  <div class="card-title">Primo Maggio in sella</div>
+  <div class="card-snippet">Era ora. Dopo numerose ripetizioni del giro dell’Airone (che, per quanto bello, dopo un po’ stufa), oggi ci troviamo alle 830 per una giretto un filo più lungo. Niente di che, s’in…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20130505_116.html'"
+     data-title="A volte capita...." data-year="2013" data-snippet="Capita , a volte, di non avere proprio voglia di fare fatica. Capita, a volte, di non aver proprio voglia di sbuffare scrutando il cardio e il contachilomteri. Capita a volte, di a…">
+  <div class="card-date">5 maggio 2013</div>
+  <div class="card-title">A volte capita....</div>
+  <div class="card-snippet">Capita , a volte, di non avere proprio voglia di fare fatica. Capita, a volte, di non aver proprio voglia di sbuffare scrutando il cardio e il contachilomteri. Capita a volte, di a…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20130527_117.html'"
+     data-title="Tre mari che in realtà son due.  Della serie : cominciamo bene." data-year="2013" data-snippet="La macchina organizzativa è in moto. Si lubrificano i deragliatori. Si scelgono gli integratori di sali e maltodestrine. Si testano i fondelli dei calzoncini e le mantelline antive…">
+  <div class="card-date">27 maggio 2013</div>
+  <div class="card-title">Tre mari che in realtà son due.  Della serie : cominciamo bene.</div>
+  <div class="card-snippet">La macchina organizzativa è in moto. Si lubrificano i deragliatori. Si scelgono gli integratori di sali e maltodestrine. Si testano i fondelli dei calzoncini e le mantelline antive…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20130531_118.html'"
+     data-title="Le Tappe (non signore basse di statura, pero&#39;)" data-year="2013" data-snippet="Grazie a Giordano">
+  <div class="card-date">31 maggio 2013</div>
+  <div class="card-title">Le Tappe (non signore basse di statura, pero&#39;)</div>
+  <div class="card-snippet">Grazie a Giordano</div>
+</div>
+<div class="card" onclick="location.href='articoli/20130604_119.html'"
+     data-title="Carico bici" data-year="2013" data-snippet="Le ragazze (in acciaio e carbonio) partono per il loro viaggetto. Le raggiungeremo a Maratea.">
+  <div class="card-date">4 giugno 2013</div>
+  <div class="card-title">Carico bici</div>
+  <div class="card-snippet">Le ragazze (in acciaio e carbonio) partono per il loro viaggetto. Le raggiungeremo a Maratea.</div>
+</div>
+<div class="card" onclick="location.href='articoli/20130605_120.html'"
+     data-title="Prima tappa : Maratea - Mezzana Salice" data-year="2013" data-snippet="Cominciamo con le foto di rito abbigliati con la divisa ufficiale. Alcuni esprimono moderata perplessità per il motto stampato sul retro delle maglie &quot;investire è semplice&quot;. Più ch…">
+  <div class="card-date">5 giugno 2013</div>
+  <div class="card-title">Prima tappa : Maratea - Mezzana Salice</div>
+  <div class="card-snippet">Cominciamo con le foto di rito abbigliati con la divisa ufficiale. Alcuni esprimono moderata perplessità per il motto stampato sul retro delle maglie "investire è semplice". Più ch…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20130606_121.html'"
+     data-title="Seconda tappa: Mezzana Salice - Altomonte" data-year="2013" data-snippet="Partire da un posto come &#39;sta Mezzana Salice un po&#39; dispiace. Incastonato nel bel mezzo delle foreste verdissime del parco del Pollino sembra davvero un posto perso in mezzo alla n…">
+  <div class="card-date">6 giugno 2013</div>
+  <div class="card-title">Seconda tappa: Mezzana Salice - Altomonte</div>
+  <div class="card-snippet">Partire da un posto come 'sta Mezzana Salice un po' dispiace. Incastonato nel bel mezzo delle foreste verdissime del parco del Pollino sembra davvero un posto perso in mezzo alla n…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20130607_122.html'"
+     data-title="Terza tappa : Altomonte - Rossano" data-year="2013" data-snippet="Tappa tranquilla, oggi. Almeno sulla carta. Giordano si presenta con una tutina sponsorizzata dal prosciutto Pertus. Una roba inguardabile, si capisce perché la prosciutto Pertus n…">
+  <div class="card-date">7 giugno 2013</div>
+  <div class="card-title">Terza tappa : Altomonte - Rossano</div>
+  <div class="card-snippet">Tappa tranquilla, oggi. Almeno sulla carta. Giordano si presenta con una tutina sponsorizzata dal prosciutto Pertus. Una roba inguardabile, si capisce perché la prosciutto Pertus n…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20130608_123.html'"
+     data-title="Quarta tappa : Rossano - Camigliatello Silano" data-year="2013" data-snippet="E arriva il giorno della grande tappa di salita. L&#39;incontro per la colazione è indicativo : diffusa la preoccupazione del &quot;trasportatore involontario di derrate alimentari&quot;. Cioè c…">
+  <div class="card-date">8 giugno 2013</div>
+  <div class="card-title">Quarta tappa : Rossano - Camigliatello Silano</div>
+  <div class="card-snippet">E arriva il giorno della grande tappa di salita. L'incontro per la colazione è indicativo : diffusa la preoccupazione del "trasportatore involontario di derrate alimentari". Cioè c…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20130609_124.html'"
+     data-title="Quinta tappa : Camigliatello - Lago Ampollino" data-year="2013" data-snippet="I Ultima pedalata del giro. Oggi si prevede tappa relativamente breve ma scenografica con scollinamento a 1900m. Raggiungiamo &quot;Downtown - Camigliatello&quot; e ci dirigiamo verso il val…">
+  <div class="card-date">9 giugno 2013</div>
+  <div class="card-title">Quinta tappa : Camigliatello - Lago Ampollino</div>
+  <div class="card-snippet">I Ultima pedalata del giro. Oggi si prevede tappa relativamente breve ma scenografica con scollinamento a 1900m. Raggiungiamo "Downtown - Camigliatello" e ci dirigiamo verso il val…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20130610_125.html'"
+     data-title="Spigolature e backstage" data-year="2013" data-snippet="Furgone carico Marco apprezza la birra Davide perplesso Roberto affamato Bici Capre Tentativi di suicidio falliti causa traffico auto insufficiente La dieta vegana ha un impatto su…">
+  <div class="card-date">10 giugno 2013</div>
+  <div class="card-title">Spigolature e backstage</div>
+  <div class="card-snippet">Furgone carico Marco apprezza la birra Davide perplesso Roberto affamato Bici Capre Tentativi di suicidio falliti causa traffico auto insufficiente La dieta vegana ha un impatto su…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20130715_126.html'"
+     data-title="Apuane" data-year="2013" data-snippet="Verso Pedona Weekend di relax in Versilia. Buona occasione per un paio di pedalate tra le valli strette che risalgono verso le Apuane. Pieve a Elci Da Montemagno Cappella Michelang…">
+  <div class="card-date">15 luglio 2013</div>
+  <div class="card-title">Apuane</div>
+  <div class="card-snippet">Verso Pedona Weekend di relax in Versilia. Buona occasione per un paio di pedalate tra le valli strette che risalgono verso le Apuane. Pieve a Elci Da Montemagno Cappella Michelang…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20130716_127.html'"
+     data-title="Mattinata a strappi" data-year="2013" data-snippet="Ritrovo a San Cristoforo. Arriviamo alla spicciolata e siamo tanti: Ema, Enrico,Carlo,Matteo,Andrea,Annibale,Giordano ed io. Al gruppo di aggiunge Casey giovane pedale d&#39;oltreatlan…">
+  <div class="card-date">16 luglio 2013</div>
+  <div class="card-title">Mattinata a strappi</div>
+  <div class="card-snippet">Ritrovo a San Cristoforo. Arriviamo alla spicciolata e siamo tanti: Ema, Enrico,Carlo,Matteo,Andrea,Annibale,Giordano ed io. Al gruppo di aggiunge Casey giovane pedale d'oltreatlan…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20130719_128.html'"
+     data-title="Airone veloce" data-year="2013" data-snippet="Il ponte di San Cristoforo Solito posto solita ora. Partiamo in 6. Andrea subito davanti a tirare, si sgancia a Trezzano: è già in sella da un bel po&#39; : ora di rientrare per lui. G…">
+  <div class="card-date">19 luglio 2013</div>
+  <div class="card-title">Airone veloce</div>
+  <div class="card-snippet">Il ponte di San Cristoforo Solito posto solita ora. Partiamo in 6. Andrea subito davanti a tirare, si sgancia a Trezzano: è già in sella da un bel po' : ora di rientrare per lui. G…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20130722_129.html'"
+     data-title="Gli stambecchi e il tapirone" data-year="2013" data-snippet="Weekend a Riva del Garda. Domenica mattina parto per una corsetta. Dopo un paio di km decido di deviare su una stradina che risale le pendici del Monte Brione, una collina tagliata…">
+  <div class="card-date">22 luglio 2013</div>
+  <div class="card-title">Gli stambecchi e il tapirone</div>
+  <div class="card-snippet">Weekend a Riva del Garda. Domenica mattina parto per una corsetta. Dopo un paio di km decido di deviare su una stradina che risale le pendici del Monte Brione, una collina tagliata…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20130723_130.html'"
+     data-title="In sei dopo le sei.." data-year="2013" data-snippet="Sveglia! Solite 630, solito Ponte di San Cristoforo. Stavolta siamo in 6 : Ale, Carlo; Casey, Martin, Matteo ed io. Ale, reduce dalla vacanza a Levanzo, parte a ritmo allegro. Opti…">
+  <div class="card-date">23 luglio 2013</div>
+  <div class="card-title">In sei dopo le sei..</div>
+  <div class="card-snippet">Sveglia! Solite 630, solito Ponte di San Cristoforo. Stavolta siamo in 6 : Ale, Carlo; Casey, Martin, Matteo ed io. Ale, reduce dalla vacanza a Levanzo, parte a ritmo allegro. Opti…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20130725_131.html'"
+     data-title="Foto, velocità e cambio gomme." data-year="2013" data-snippet="Stesso posto, stesso giro. Stavolta partiamo in 5 : Annibale, Luca (triathleta con preoccupante bici da crono),Martin, Paolo (triathleta) ed io. Solita partenza sorniona ma dopo 2…">
+  <div class="card-date">25 luglio 2013</div>
+  <div class="card-title">Foto, velocità e cambio gomme.</div>
+  <div class="card-snippet">Stesso posto, stesso giro. Stavolta partiamo in 5 : Annibale, Luca (triathleta con preoccupante bici da crono),Martin, Paolo (triathleta) ed io. Solita partenza sorniona ma dopo 2…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20130728_132.html'"
+     data-title="Weekend bollente" data-year="2013" data-snippet="Chiusa a Pavia verso il Ticino Niente di piccante. Solo un weekend con un po&#39; d&#39;ore in sella nonostante il caldo africano. Sabato : sveglia antelucana per fregare Caronte. In progr…">
+  <div class="card-date">28 luglio 2013</div>
+  <div class="card-title">Weekend bollente</div>
+  <div class="card-snippet">Chiusa a Pavia verso il Ticino Niente di piccante. Solo un weekend con un po' d'ore in sella nonostante il caldo africano. Sabato : sveglia antelucana per fregare Caronte. In progr…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20130731_133.html'"
+     data-title="A+A= Chiacchiere e Relax (e pensare che stavo per starmene a letto..)" data-year="2013" data-snippet="Serata attardata. Domattina quasi quasi bigio. Poi, chissà com&#39;è, alle 550 l&#39;occhio si appalla da solo. Due alternative : mi giro e ripiombo nel sonno, oppure colgo quell&#39;attimo er…">
+  <div class="card-date">31 luglio 2013</div>
+  <div class="card-title">A+A= Chiacchiere e Relax (e pensare che stavo per starmene a letto..)</div>
+  <div class="card-snippet">Serata attardata. Domattina quasi quasi bigio. Poi, chissà com'è, alle 550 l'occhio si appalla da solo. Due alternative : mi giro e ripiombo nel sonno, oppure colgo quell'attimo er…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20130801_134.html'"
+     data-title="Meglio tardi che mai" data-year="2013" data-snippet="Capita di non svegliarsi, no? E capita di non avere voglia di buttarsi giù dal letto.E di trovarsi in ritardo rispetto ai soliti orari. Stamattina salire in sella è stato un po&#39; pi…">
+  <div class="card-date">1 agosto 2013</div>
+  <div class="card-title">Meglio tardi che mai</div>
+  <div class="card-snippet">Capita di non svegliarsi, no? E capita di non avere voglia di buttarsi giù dal letto.E di trovarsi in ritardo rispetto ai soliti orari. Stamattina salire in sella è stato un po' pi…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20130805_135.html'"
+     data-title="La memoria selettiva" data-year="2013" data-snippet="E&#39; proprio vero che la memoria è selettiva : tende a depurare i ricordi dalle componenti spiacevoli. Avrei dovuto ricordarmelo quando domenica, partito dalla Versilia, ho infilato…">
+  <div class="card-date">5 agosto 2013</div>
+  <div class="card-title">La memoria selettiva</div>
+  <div class="card-snippet">E' proprio vero che la memoria è selettiva : tende a depurare i ricordi dalle componenti spiacevoli. Avrei dovuto ricordarmelo quando domenica, partito dalla Versilia, ho infilato…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20130806_136.html'"
+     data-title="Con Ale al caldo" data-year="2013" data-snippet="Bosco di Morimondo Pochi sopravvissuti a Milano. Caldo umido. Ma con Ale decidiamo di sfidare Stige e cercare un po&#39; di fresco dalle parti di Morimondo.Solita partenza, solito luog…">
+  <div class="card-date">6 agosto 2013</div>
+  <div class="card-title">Con Ale al caldo</div>
+  <div class="card-snippet">Bosco di Morimondo Pochi sopravvissuti a Milano. Caldo umido. Ma con Ale decidiamo di sfidare Stige e cercare un po' di fresco dalle parti di Morimondo.Solita partenza, solito luog…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20130812_137.html'"
+     data-title="Campo Cecina" data-year="2013" data-snippet="La Versilia è una manna per il ciclista. Non c&#39;e&#39; solo il lungomare per testare le proprie doti di cronoman. Ci sono, per fortuna, le Apuane che offrono una ampia gamma di percorsi…">
+  <div class="card-date">12 agosto 2013</div>
+  <div class="card-title">Campo Cecina</div>
+  <div class="card-snippet">La Versilia è una manna per il ciclista. Non c'e' solo il lungomare per testare le proprie doti di cronoman. Ci sono, per fortuna, le Apuane che offrono una ampia gamma di percorsi…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20130821_138.html'"
+     data-title="Dalla Versilia al Bleggio" data-year="2013" data-snippet="Un lungo weekend in Versilia va sfruttato. Ciclisticamente parlando, si intende. Due uscite, quindi, entrambe accomunate dalla prima parte della salita del Cipollaio. Salendo verso…">
+  <div class="card-date">21 agosto 2013</div>
+  <div class="card-title">Dalla Versilia al Bleggio</div>
+  <div class="card-snippet">Un lungo weekend in Versilia va sfruttato. Ciclisticamente parlando, si intende. Due uscite, quindi, entrambe accomunate dalla prima parte della salita del Cipollaio. Salendo verso…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20130828_139.html'"
+     data-title="34x28 fisso : la salita ai Prati di Nago" data-year="2013" data-snippet="Voglia di salita? Ho una ricetta per togliersela rapidamente : salire ai prati di Nago da Riva del Garda, in un giro di 37km si concentrano poco meno di 1500m di dislivello in sali…">
+  <div class="card-date">28 agosto 2013</div>
+  <div class="card-title">34x28 fisso : la salita ai Prati di Nago</div>
+  <div class="card-snippet">Voglia di salita? Ho una ricetta per togliersela rapidamente : salire ai prati di Nago da Riva del Garda, in un giro di 37km si concentrano poco meno di 1500m di dislivello in sali…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20130901_140.html'"
+     data-title="Lungo la valle del Sarca" data-year="2013" data-snippet="Da pochi mesi è stato aperto un tratto di ciclabile che consente di evitare le gallerie della statale che scende da Ponte Arche. Si può così percorrere un anello che parte da Riva,…">
+  <div class="card-date">1 settembre 2013</div>
+  <div class="card-title">Lungo la valle del Sarca</div>
+  <div class="card-snippet">Da pochi mesi è stato aperto un tratto di ciclabile che consente di evitare le gallerie della statale che scende da Ponte Arche. Si può così percorrere un anello che parte da Riva,…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20130903_141.html'"
+     data-title="Ancora, o forse già, buio" data-year="2013" data-snippet="Prima uscita mattutina dopo le vacanze. Appuntamento alle 630. Il solito. Esco di casa alle 615 : è BUIO! Cioè è ancora buio, o meglio è già buio. Insomma, tra poco per uscire a qu…">
+  <div class="card-date">3 settembre 2013</div>
+  <div class="card-title">Ancora, o forse già, buio</div>
+  <div class="card-snippet">Prima uscita mattutina dopo le vacanze. Appuntamento alle 630. Il solito. Esco di casa alle 615 : è BUIO! Cioè è ancora buio, o meglio è già buio. Insomma, tra poco per uscire a qu…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20130906_142.html'"
+     data-title="Autunno, cadono le foglie, tornano le auto.." data-year="2013" data-snippet="Ore 6:40 di fronte alla chiesa di San Cristoforo. Due ciclisti emergono dalla penombra : Annibale ed io pedaliamo di buona lena diretti verso sud-est. Manca ancora qualcosa all&#39;alb…">
+  <div class="card-date">6 settembre 2013</div>
+  <div class="card-title">Autunno, cadono le foglie, tornano le auto..</div>
+  <div class="card-snippet">Ore 6:40 di fronte alla chiesa di San Cristoforo. Due ciclisti emergono dalla penombra : Annibale ed io pedaliamo di buona lena diretti verso sud-est. Manca ancora qualcosa all'alb…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20130907_143.html'"
+     data-title="La Crocetta ci crocifigge." data-year="2013" data-snippet="Dopo annieannieannieanni mi ritrovo al parcheggio di Travo per una pedalata in Val Trebbia. Formazione d&#39;assalto : Nicoletta, Andrea, Giorgio, Giovanni ed io. Andrea e davanti Gior…">
+  <div class="card-date">7 settembre 2013</div>
+  <div class="card-title">La Crocetta ci crocifigge.</div>
+  <div class="card-snippet">Dopo annieannieannieanni mi ritrovo al parcheggio di Travo per una pedalata in Val Trebbia. Formazione d'assalto : Nicoletta, Andrea, Giorgio, Giovanni ed io. Andrea e davanti Gior…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20130908_144.html'"
+     data-title="Prima pioggia in Val Trebbia" data-year="2013" data-snippet="Stavolta al Parcheggio di Travo siamo in 6 : Giovanni e Paola, Andrea e Nicoletta, Giorgio ed io (nessuna relazione tra le prime due coppie e l&#39;accoppiata tra me e Giorgio..). Il c…">
+  <div class="card-date">8 settembre 2013</div>
+  <div class="card-title">Prima pioggia in Val Trebbia</div>
+  <div class="card-snippet">Stavolta al Parcheggio di Travo siamo in 6 : Giovanni e Paola, Andrea e Nicoletta, Giorgio ed io (nessuna relazione tra le prime due coppie e l'accoppiata tra me e Giorgio..). Il c…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20130919_145.html'"
+     data-title="Foschia mattutina e appuntamenti" data-year="2013" data-snippet="Pesca nella DArsena Una delle ultime uscite antelucane del 2013.Partiamo in 3 da San Cristoforo : mancan 10 minuti alle sette. Prima non si puo&#39; : anche adesso è ancora buio. Arriv…">
+  <div class="card-date">19 settembre 2013</div>
+  <div class="card-title">Foschia mattutina e appuntamenti</div>
+  <div class="card-snippet">Pesca nella DArsena Una delle ultime uscite antelucane del 2013.Partiamo in 3 da San Cristoforo : mancan 10 minuti alle sette. Prima non si puo' : anche adesso è ancora buio. Arriv…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20130922_146.html'"
+     data-title="Vendemmia in Oltrepo, ovvero l&#39;apoteosi del succhiaruota." data-year="2013" data-snippet="Un bel giretto, visto che siamo a MIlano. Questo era il programma previsto da aleLokomotiv quando ci siamo sentiti venerdì sera. Alla conca fallata ci ritroviamo in 4 alle 830 di s…">
+  <div class="card-date">22 settembre 2013</div>
+  <div class="card-title">Vendemmia in Oltrepo, ovvero l'apoteosi del succhiaruota.</div>
+  <div class="card-snippet">Un bel giretto, visto che siamo a MIlano. Questo era il programma previsto da aleLokomotiv quando ci siamo sentiti venerdì sera. Alla conca fallata ci ritroviamo in 4 alle 830 di s…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20130929_147.html'"
+     data-title="Sul Mottarone ci ho lasciato un polmone..." data-year="2013" data-snippet="E&#39; ormai un appuntamento fisso della stagione ciclistica internazionale : il mitico trofeo Mottarone organizzato magistralmente da Alberto, Gianfranco e Marco. Una parte del gruppo…">
+  <div class="card-date">29 settembre 2013</div>
+  <div class="card-title">Sul Mottarone ci ho lasciato un polmone...</div>
+  <div class="card-snippet">E' ormai un appuntamento fisso della stagione ciclistica internazionale : il mitico trofeo Mottarone organizzato magistralmente da Alberto, Gianfranco e Marco. Una parte del gruppo…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20131020_148.html'"
+     data-title="Ritorno sul Motarùn...." data-year="2013" data-snippet="Previsioni per sabato : coperto ma senza precipitazioni. Vai, si va in bici. Venerdì scatta quindi un vortice di email, sms, messaggi con piccione : alla fine pero&#39; tutti questi sc…">
+  <div class="card-date">20 ottobre 2013</div>
+  <div class="card-title">Ritorno sul Motarùn....</div>
+  <div class="card-snippet">Previsioni per sabato : coperto ma senza precipitazioni. Vai, si va in bici. Venerdì scatta quindi un vortice di email, sms, messaggi con piccione : alla fine pero' tutti questi sc…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20131027_149.html'"
+     data-title="Autunno tra Piemonte e Lombardia..." data-year="2013" data-snippet="Dopo una settimana di foschia uggiosa si rivede il sole. Ottimo. Sabato : abbiamo un invito a colazione da Alessandra a Somma Lombardo. Ovviamente io che faccio? ci vado in bici! C…">
+  <div class="card-date">27 ottobre 2013</div>
+  <div class="card-title">Autunno tra Piemonte e Lombardia...</div>
+  <div class="card-snippet">Dopo una settimana di foschia uggiosa si rivede il sole. Ottimo. Sabato : abbiamo un invito a colazione da Alessandra a Somma Lombardo. Ovviamente io che faccio? ci vado in bici! C…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20131103_150.html'"
+     data-title="Novembre" data-year="2013" data-snippet="Domenica 2 novembre, pioviggina, nubi basse. La tentazione di starmene rintanato in casa è forte. Poi, pero&#39;, a poco a poco la pioggia si fa più sottile e infine scompare. Resta un…">
+  <div class="card-date">3 novembre 2013</div>
+  <div class="card-title">Novembre</div>
+  <div class="card-snippet">Domenica 2 novembre, pioviggina, nubi basse. La tentazione di starmene rintanato in casa è forte. Poi, pero', a poco a poco la pioggia si fa più sottile e infine scompare. Resta un…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20131110_151.html'"
+     data-title="La fortuna aiuta gli audaci...." data-year="2013" data-snippet="Pensavo a questo quando sono salito in sella sabato mattina. Programma : un weekend a casa di amici in Monferrato. Esecuzione : &quot;bello! io arrivo in bici!&quot; - &quot; ma guarda che sabato…">
+  <div class="card-date">10 novembre 2013</div>
+  <div class="card-title">La fortuna aiuta gli audaci....</div>
+  <div class="card-snippet">Pensavo a questo quando sono salito in sella sabato mattina. Programma : un weekend a casa di amici in Monferrato. Esecuzione : "bello! io arrivo in bici!" - " ma guarda che sabato…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20131116_152.html'"
+     data-title="Che ci faccio qui?" data-year="2013" data-snippet="No non è il titolo del libro di Bruce Chatwin. E&#39; quello che mi domandavo ai primi colpi di pedale quando ho realizzato che da Bereguardo eravamo partiti in 3 : Andrea, Alessandro…">
+  <div class="card-date">16 novembre 2013</div>
+  <div class="card-title">Che ci faccio qui?</div>
+  <div class="card-snippet">No non è il titolo del libro di Bruce Chatwin. E' quello che mi domandavo ai primi colpi di pedale quando ho realizzato che da Bereguardo eravamo partiti in 3 : Andrea, Alessandro…</div>
+</div>
+</div>
+</div>
+<div class="year-section" data-year="2014">
+<div class="year-header">2014 <span style="font-size:1rem;color:#999;font-weight:normal;">(41 articoli)</span></div>
+<div class="cards">
+<div class="card" onclick="location.href='articoli/20140113_153.html'"
+     data-title="Cogliere l&#39;attimo (nel senso : la nebbia ora c&#39;e&#39;, ora non c&#39;e&#39;, ora c&#39;e&#39; di nuovo)" data-year="2014" data-snippet="Le ginocchia doloranti dopo la corsetta di venerdì mi avevano convinto a programmare una uscitina in bici per domenica mattina. Ma una nebbiona d&#39;altri tempi mi ha dissuaso.Mi mett…">
+  <div class="card-date">13 gennaio 2014</div>
+  <div class="card-title">Cogliere l'attimo (nel senso : la nebbia ora c'e', ora non c'e', ora c'e' di nuovo)</div>
+  <div class="card-snippet">Le ginocchia doloranti dopo la corsetta di venerdì mi avevano convinto a programmare una uscitina in bici per domenica mattina. Ma una nebbiona d'altri tempi mi ha dissuaso.Mi mett…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20140126_154.html'"
+     data-title="Illusione e disillusione" data-year="2014" data-snippet="Feriolo Mai illudersi, la bici ti riporta subito alla dura realtà. L&#39;ho imparato a mie spese in questo weekend di tempo splendido. Programma : sabato in Oltrepo e domenica in Alto…">
+  <div class="card-date">26 gennaio 2014</div>
+  <div class="card-title">Illusione e disillusione</div>
+  <div class="card-snippet">Feriolo Mai illudersi, la bici ti riporta subito alla dura realtà. L'ho imparato a mie spese in questo weekend di tempo splendido. Programma : sabato in Oltrepo e domenica in Alto…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20140305_155.html'"
+     data-title="Prima uscita mattutina dell&#39;anno" data-year="2014" data-snippet="Ieri quando Enrico mi ha proposto un&#39;uscita mattutina in bici ero davvero perplesso. Settimane di pioggia uggiosa hanno depresso lo spirito ciclistico e dall&#39;inizio anno i KM pedal…">
+  <div class="card-date">5 marzo 2014</div>
+  <div class="card-title">Prima uscita mattutina dell'anno</div>
+  <div class="card-snippet">Ieri quando Enrico mi ha proposto un'uscita mattutina in bici ero davvero perplesso. Settimane di pioggia uggiosa hanno depresso lo spirito ciclistico e dall'inizio anno i KM pedal…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20140309_156.html'"
+     data-title="Largo alle giovani leve" data-year="2014" data-snippet="Salendo da Santa Maria la Versa Un giornata primaverile non si può&#39; sprecare. Ed eccomi infatti in sella alle 9 a Stradella in direzione di Santa Maria la Versa. Programma di giorn…">
+  <div class="card-date">9 marzo 2014</div>
+  <div class="card-title">Largo alle giovani leve</div>
+  <div class="card-snippet">Salendo da Santa Maria la Versa Un giornata primaverile non si può' sprecare. Ed eccomi infatti in sella alle 9 a Stradella in direzione di Santa Maria la Versa. Programma di giorn…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20140311_157.html'"
+     data-title="L&#39;ideale compagno di pedale..." data-year="2014" data-snippet="Uscita mattutina programmata : ritrovo 0645 in San Cristoforo. Convocati da Martin : Emanuele, Enrico e il sottoscritto gibernauta. E&#39; da settembre che ho a casa un casco di Martin…">
+  <div class="card-date">11 marzo 2014</div>
+  <div class="card-title">L'ideale compagno di pedale...</div>
+  <div class="card-snippet">Uscita mattutina programmata : ritrovo 0645 in San Cristoforo. Convocati da Martin : Emanuele, Enrico e il sottoscritto gibernauta. E' da settembre che ho a casa un casco di Martin…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20140320_158.html'"
+     data-title="&quot;no..dai che vi rallento..&quot;" data-year="2014" data-snippet="Ancora pochi giorni prima dell&#39;ora legale : poi alle 630 tornerà il buio e per un po&#39; non si potrà uscire. Ne approfittiamo quindi per il solito giretto mattutino prima della pausa…">
+  <div class="card-date">20 marzo 2014</div>
+  <div class="card-title">"no..dai che vi rallento.."</div>
+  <div class="card-snippet">Ancora pochi giorni prima dell'ora legale : poi alle 630 tornerà il buio e per un po' non si potrà uscire. Ne approfittiamo quindi per il solito giretto mattutino prima della pausa…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20140329_159.html'"
+     data-title="Tre puledri e un vecchio ronzino" data-year="2014" data-snippet="Quando proponi un bel giro in bici e uno ti risponde :&quot;Bello! ci troviamo alle 830 al cimitero di Broni!&quot; , tu che fai? Bè è chiaro che c&#39;è un messaggio (poi mica tanto nascosto) n…">
+  <div class="card-date">29 marzo 2014</div>
+  <div class="card-title">Tre puledri e un vecchio ronzino</div>
+  <div class="card-snippet">Quando proponi un bel giro in bici e uno ti risponde :"Bello! ci troviamo alle 830 al cimitero di Broni!" , tu che fai? Bè è chiaro che c'è un messaggio (poi mica tanto nascosto) n…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20140330_160.html'"
+     data-title="Lungo la via francigena" data-year="2014" data-snippet="L&#39;itinerario : Da Pavia fino a San Zenone Po ho seguito la Via Francigena Dopo la faticata di ieri non era necessario un nuovo certamen ciclistico e così ho optato per un programmi…">
+  <div class="card-date">30 marzo 2014</div>
+  <div class="card-title">Lungo la via francigena</div>
+  <div class="card-snippet">L'itinerario : Da Pavia fino a San Zenone Po ho seguito la Via Francigena Dopo la faticata di ieri non era necessario un nuovo certamen ciclistico e così ho optato per un programmi…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20140405_161.html'"
+     data-title="Tra Val Trebbia e Val Tidone" data-year="2014" data-snippet="Stavolta ci avvicineremo al Penice dalla destra orografica della Val Tidone, partendo dalla Val Trebbia. In questa impresa mi affido alle esperte mani della Moroni Adventures che m…">
+  <div class="card-date">5 aprile 2014</div>
+  <div class="card-title">Tra Val Trebbia e Val Tidone</div>
+  <div class="card-snippet">Stavolta ci avvicineremo al Penice dalla destra orografica della Val Tidone, partendo dalla Val Trebbia. In questa impresa mi affido alle esperte mani della Moroni Adventures che m…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20140406_162.html'"
+     data-title="El Motarùn presenta il conto." data-year="2014" data-snippet="A Milano si corre la maratona, bisogna quindi essere lesti a sgusciare prima della chiusura del traffico. Alle 9 siamo già a Gignese pronti a partire in due : Renato, mio fratello…">
+  <div class="card-date">6 aprile 2014</div>
+  <div class="card-title">El Motarùn presenta il conto.</div>
+  <div class="card-snippet">A Milano si corre la maratona, bisogna quindi essere lesti a sgusciare prima della chiusura del traffico. Alle 9 siamo già a Gignese pronti a partire in due : Renato, mio fratello…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20140413_163.html'"
+     data-title="In compagnia intorno al Caldarola : cacciatori e prede..." data-year="2014" data-snippet="Pausa caffè ad Agazzano Sono quasi le 9 quando lascio la macchina a Pianello ValTidone e mi avvio lungo la salita verso Piozzano. Il programma di giornata prevede la scalata del pa…">
+  <div class="card-date">13 aprile 2014</div>
+  <div class="card-title">In compagnia intorno al Caldarola : cacciatori e prede...</div>
+  <div class="card-snippet">Pausa caffè ad Agazzano Sono quasi le 9 quando lascio la macchina a Pianello ValTidone e mi avvio lungo la salita verso Piozzano. Il programma di giornata prevede la scalata del pa…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20140420_164.html'"
+     data-title="Natale con i tuoi e….vigilia di Pasqua con lo smilzo veloce" data-year="2014" data-snippet="Be&#39; lo sapevo che le vacanze di Pasqua possono essere impegnative. Così quando mi sono trovato a Torbole la mattina alle 8 di sabato per una &quot;breve corsetta&quot; con mio fratello Renat…">
+  <div class="card-date">20 aprile 2014</div>
+  <div class="card-title">Natale con i tuoi e….vigilia di Pasqua con lo smilzo veloce</div>
+  <div class="card-snippet">Be' lo sapevo che le vacanze di Pasqua possono essere impegnative. Così quando mi sono trovato a Torbole la mattina alle 8 di sabato per una "breve corsetta" con mio fratello Renat…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20140420_165.html'"
+     data-title="Uovo con sorpresa" data-year="2014" data-snippet="Lo sapevo. Avrei dovuto restarmene a dormire. Ma quando ti svegli e vedi il cielo azzurro terso e le cime delle montagne innovate come fai a resistere? Salendo verso Tenno E quindi…">
+  <div class="card-date">20 aprile 2014</div>
+  <div class="card-title">Uovo con sorpresa</div>
+  <div class="card-snippet">Lo sapevo. Avrei dovuto restarmene a dormire. Ma quando ti svegli e vedi il cielo azzurro terso e le cime delle montagne innovate come fai a resistere? Salendo verso Tenno E quindi…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20140424_166.html'"
+     data-title="Bici e Alto Garda : prof e gibernauti (appunti fotografici)" data-year="2014" data-snippet="Qualche appunto fotografico degli ultimi due giorni a Riva del Garda : la partenza del giro del Trentino con la cronosquadre e la salita al Passo Santa Barbara (Monte Velo). Sky al…">
+  <div class="card-date">24 aprile 2014</div>
+  <div class="card-title">Bici e Alto Garda : prof e gibernauti (appunti fotografici)</div>
+  <div class="card-snippet">Qualche appunto fotografico degli ultimi due giorni a Riva del Garda : la partenza del giro del Trentino con la cronosquadre e la salita al Passo Santa Barbara (Monte Velo). Sky al…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20140425_167.html'"
+     data-title="Fiori e piccolo Stelvio : un bel 25 aprile" data-year="2014" data-snippet="A Santa Maria della Versa : come invidiavo il calessino! Sono le 9 e siamo appena saliti in sella. Santa Maria della Versa : un gibernauta e uno smilzo veloce partono per un giro t…">
+  <div class="card-date">25 aprile 2014</div>
+  <div class="card-title">Fiori e piccolo Stelvio : un bel 25 aprile</div>
+  <div class="card-snippet">A Santa Maria della Versa : come invidiavo il calessino! Sono le 9 e siamo appena saliti in sella. Santa Maria della Versa : un gibernauta e uno smilzo veloce partono per un giro t…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20140427_168.html'"
+     data-title="In Val Trebbia fuggendo il temporale (senza riuscirci)" data-year="2014" data-snippet="Splendida mattinata a Travo In effetti arrivando in auto in Val Trebbia avevo sentito che le previsioni meteo segnalavano il rischio di temporali nel pomeriggio sui rilievi al cent…">
+  <div class="card-date">27 aprile 2014</div>
+  <div class="card-title">In Val Trebbia fuggendo il temporale (senza riuscirci)</div>
+  <div class="card-snippet">Splendida mattinata a Travo In effetti arrivando in auto in Val Trebbia avevo sentito che le previsioni meteo segnalavano il rischio di temporali nel pomeriggio sui rilievi al cent…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20140501_169.html'"
+     data-title="La legge dello smilzo" data-year="2014" data-snippet="Primo maggio : festa del lavoro. Sarà per questo che decido di festeggiarla lavorando come un mulo per tenere dietro alle ruote veloci in salita? Chissà. Fatto sta che alle 9 siamo…">
+  <div class="card-date">1 maggio 2014</div>
+  <div class="card-title">La legge dello smilzo</div>
+  <div class="card-snippet">Primo maggio : festa del lavoro. Sarà per questo che decido di festeggiarla lavorando come un mulo per tenere dietro alle ruote veloci in salita? Chissà. Fatto sta che alle 9 siamo…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20140503_170.html'"
+     data-title="La bassa l&#39;e&#39; sempre la bassa.." data-year="2014" data-snippet="Gaggiano magrittiano Previsioni incerte, pioggia sicura (dicono) in oltrepo. Tempo per un giro nella bassa. Riflessi Renato Itinerario noto : Abbiategrasso, abbazia di Morimondo, B…">
+  <div class="card-date">3 maggio 2014</div>
+  <div class="card-title">La bassa l'e' sempre la bassa..</div>
+  <div class="card-snippet">Gaggiano magrittiano Previsioni incerte, pioggia sicura (dicono) in oltrepo. Tempo per un giro nella bassa. Riflessi Renato Itinerario noto : Abbiategrasso, abbazia di Morimondo, B…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20140504_171.html'"
+     data-title="Le parole non servono...(Con Andrea alla Sella dei generali)" data-year="2014" data-snippet="Da Travo a Perino..il tempo si mette al bello A volte le parole sono superflue. Le immagini parlano da sole. E questa è una di quelle volte. Potrei usarne molte, di parole, per des…">
+  <div class="card-date">4 maggio 2014</div>
+  <div class="card-title">Le parole non servono...(Con Andrea alla Sella dei generali)</div>
+  <div class="card-snippet">Da Travo a Perino..il tempo si mette al bello A volte le parole sono superflue. Le immagini parlano da sole. E questa è una di quelle volte. Potrei usarne molte, di parole, per des…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20140506_172.html'"
+     data-title="Giro mattutino intermodale : bici-treno" data-year="2014" data-snippet="6 e mezza a San Cristoforo, in ordine di apparizione : Emanuele, io, Ottaviano e Martin. 2 ore a disposizione : giro Italia 90 (ma che è? lo scopriro&#39; dopo) Partenza relativamente…">
+  <div class="card-date">6 maggio 2014</div>
+  <div class="card-title">Giro mattutino intermodale : bici-treno</div>
+  <div class="card-snippet">6 e mezza a San Cristoforo, in ordine di apparizione : Emanuele, io, Ottaviano e Martin. 2 ore a disposizione : giro Italia 90 (ma che è? lo scopriro' dopo) Partenza relativamente…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20140509_173.html'"
+     data-title="Treni e trenini" data-year="2014" data-snippet="Darsena mattutina Solite 630, solito San Cristoforo : stamattina siamo in 6. Ai 4 di martedì si sono aggiunti Leonardo e Giovanni. Primi colpi di pedale morbidi lungo il Naviglio,…">
+  <div class="card-date">9 maggio 2014</div>
+  <div class="card-title">Treni e trenini</div>
+  <div class="card-snippet">Darsena mattutina Solite 630, solito San Cristoforo : stamattina siamo in 6. Ai 4 di martedì si sono aggiunti Leonardo e Giovanni. Primi colpi di pedale morbidi lungo il Naviglio,…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20140510_174.html'"
+     data-title="Su e giu&#39; dal Passo Caldarola" data-year="2014" data-snippet="Domenica programma tosto, sabato quindi opto per un giro meno impegnativo. Su e giù dal Passo Caldarola partendo da Pianello Val Tidone Salita abbastanza bastarda, questa del Calda…">
+  <div class="card-date">10 maggio 2014</div>
+  <div class="card-title">Su e giu' dal Passo Caldarola</div>
+  <div class="card-snippet">Domenica programma tosto, sabato quindi opto per un giro meno impegnativo. Su e giù dal Passo Caldarola partendo da Pianello Val Tidone Salita abbastanza bastarda, questa del Calda…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20140511_175.html'"
+     data-title="Fregando Giove Pluvio" data-year="2014" data-snippet="Coli Quando ci siamo trovati al parcheggio di Bobbio gran parte dell&#39;entusiasmo della mattina era svanito. Vento a forti raffiche dal mare, nuvoloni neri che correvano in cielo. In…">
+  <div class="card-date">11 maggio 2014</div>
+  <div class="card-title">Fregando Giove Pluvio</div>
+  <div class="card-snippet">Coli Quando ci siamo trovati al parcheggio di Bobbio gran parte dell'entusiasmo della mattina era svanito. Vento a forti raffiche dal mare, nuvoloni neri che correvano in cielo. In…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20140513_176.html'"
+     data-title="Tanto per cominciare....." data-year="2014" data-snippet="E poi , breve, leggero, ma divertente : Gli uomini di pensiero tornano alla bicicletta">
+  <div class="card-date">13 maggio 2014</div>
+  <div class="card-title">Tanto per cominciare.....</div>
+  <div class="card-snippet">E poi , breve, leggero, ma divertente : Gli uomini di pensiero tornano alla bicicletta</div>
+</div>
+<div class="card" onclick="location.href='articoli/20140518_177.html'"
+     data-title="Repetita iuvant" data-year="2014" data-snippet="Sì i due tracciati sembrano molto simili. Ed in effetti non può essere altrimenti visto che sabato e domenica ho percorso più o meno le stesse strade tra Val Tidone e Val Trebbia.…">
+  <div class="card-date">18 maggio 2014</div>
+  <div class="card-title">Repetita iuvant</div>
+  <div class="card-snippet">Sì i due tracciati sembrano molto simili. Ed in effetti non può essere altrimenti visto che sabato e domenica ho percorso più o meno le stesse strade tra Val Tidone e Val Trebbia.…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20140525_178.html'"
+     data-title="Ned Ludd forse non aveva tutti i torti, ovvero : dell&#39;inutilità del cambio (se hai la gamba, però..)." data-year="2014" data-snippet="La corsa della tecnologia non si ferma, nemmeno per la bici. Cioè, no : a volte si ferma, di colpo e senza preavviso. E uno si trova in mutande di lycra e scarpe da papera e deve t…">
+  <div class="card-date">25 maggio 2014</div>
+  <div class="card-title">Ned Ludd forse non aveva tutti i torti, ovvero : dell'inutilità del cambio (se hai la gamba, però..).</div>
+  <div class="card-snippet">La corsa della tecnologia non si ferma, nemmeno per la bici. Cioè, no : a volte si ferma, di colpo e senza preavviso. E uno si trova in mutande di lycra e scarpe da papera e deve t…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20140530_179.html'"
+     data-title="Partenza dall&#39;Araba Fenice" data-year="2014" data-snippet="In effetti forse le previsioni di pioggia erano un pochino pessimiste ....c&#39;è il sole Peccato che noi dovremo pedalare verso monte : A colazione il barone Roberto si presenta con b…">
+  <div class="card-date">30 maggio 2014</div>
+  <div class="card-title">Partenza dall&#39;Araba Fenice</div>
+  <div class="card-snippet">In effetti forse le previsioni di pioggia erano un pochino pessimiste ....c'è il sole Peccato che noi dovremo pedalare verso monte : A colazione il barone Roberto si presenta con b…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20140530_180.html'"
+     data-title="Prima tappa : fino a Rofrano sfuggendo la pioggia" data-year="2014" data-snippet="Claudio e barone Roberto aspettano il tram Pronti via si sale. Non l&#39;ideale come primi chilometri...dopo qualche chiacchiera il gruppo inevitabilmente su sgrana e si zittisce. Dopo…">
+  <div class="card-date">30 maggio 2014</div>
+  <div class="card-title">Prima tappa : fino a Rofrano sfuggendo la pioggia</div>
+  <div class="card-snippet">Claudio e barone Roberto aspettano il tram Pronti via si sale. Non l'ideale come primi chilometri...dopo qualche chiacchiera il gruppo inevitabilmente su sgrana e si zittisce. Dopo…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20140530_181.html'"
+     data-title="Da Cono" data-year="2014" data-snippet="Musica maestro Sazio e stracco">
+  <div class="card-date">30 maggio 2014</div>
+  <div class="card-title">Da Cono</div>
+  <div class="card-snippet">Musica maestro Sazio e stracco</div>
+</div>
+<div class="card" onclick="location.href='articoli/20140601_182.html'"
+     data-title="Stop forzato" data-year="2014" data-snippet="sguardo ebete.... Finisce così per me al secondo giorno il bellissimo giro in Cilento (e la stagione 2014). Clavicola e scapola rotte, impongono una giusta pausa. Il casco rotto ma…">
+  <div class="card-date">1 giugno 2014</div>
+  <div class="card-title">Stop forzato</div>
+  <div class="card-snippet">sguardo ebete.... Finisce così per me al secondo giorno il bellissimo giro in Cilento (e la stagione 2014). Clavicola e scapola rotte, impongono una giusta pausa. Il casco rotto ma…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20140603_183.html'"
+     data-title="La prossima volta invece della bici vado col Suv, altro che cadute..." data-year="2014" data-snippet="http://www.rai.tv/dl/RaiTV/programmi/media/ContentItem-c9d5f3e8-73f9-470e-86cc-2bd4148c0c80.html">
+  <div class="card-date">3 giugno 2014</div>
+  <div class="card-title">La prossima volta invece della bici vado col Suv, altro che cadute...</div>
+  <div class="card-snippet">http://www.rai.tv/dl/RaiTV/programmi/media/ContentItem-c9d5f3e8-73f9-470e-86cc-2bd4148c0c80.html</div>
+</div>
+<div class="card" onclick="location.href='articoli/20140804_184.html'"
+     data-title="Di nuovo in sella.." data-year="2014" data-snippet="Sono passati poco più di due mesi dal fatidico 31 maggio quando ho lasciato scapola e clavicola sinistra su un tornante sopra Palinuro. Operazione, placca viti cerchiaggi e spalla…">
+  <div class="card-date">4 agosto 2014</div>
+  <div class="card-title">Di nuovo in sella..</div>
+  <div class="card-snippet">Sono passati poco più di due mesi dal fatidico 31 maggio quando ho lasciato scapola e clavicola sinistra su un tornante sopra Palinuro. Operazione, placca viti cerchiaggi e spalla…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20140811_185.html'"
+     data-title="Poca fantasia, ma molto divertimento" data-year="2014" data-snippet="Sarà che dopo due mesi di &quot;fermo ai box per manutenzione&quot; , la voglia di rimettersi in sella era tanta. Sarà che le previsioni meteo avevano un&#39;unica certezza : prima o poi oggi pi…">
+  <div class="card-date">11 agosto 2014</div>
+  <div class="card-title">Poca fantasia, ma molto divertimento</div>
+  <div class="card-snippet">Sarà che dopo due mesi di "fermo ai box per manutenzione" , la voglia di rimettersi in sella era tanta. Sarà che le previsioni meteo avevano un'unica certezza : prima o poi oggi pi…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20140902_186.html'"
+     data-title="Maccaroni e bici elettriche." data-year="2014" data-snippet="Prima uscita mattutina dopo l&#39;infortunio. Temeraria, visto che i compagni di pedale, mentre io mi crogiolavo nella assoluta inattività imposta dall&#39;accoppiata scapola-clavicola, ha…">
+  <div class="card-date">2 settembre 2014</div>
+  <div class="card-title">Maccaroni e bici elettriche.</div>
+  <div class="card-snippet">Prima uscita mattutina dopo l'infortunio. Temeraria, visto che i compagni di pedale, mentre io mi crogiolavo nella assoluta inattività imposta dall'accoppiata scapola-clavicola, ha…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20140905_187.html'"
+     data-title="Ci vuole un po&#39; di forza di volontà.." data-year="2014" data-snippet="Eh..sì. Ci vuole un po&#39; di forza di volontà per buttarsi giù dal letto alle 6 quando è ancora scuro e il cielo è nuvoloso, con l&#39;obbiettivo di una sgambata in bici nella bassa mila…">
+  <div class="card-date">5 settembre 2014</div>
+  <div class="card-title">Ci vuole un po' di forza di volontà..</div>
+  <div class="card-snippet">Eh..sì. Ci vuole un po' di forza di volontà per buttarsi giù dal letto alle 6 quando è ancora scuro e il cielo è nuvoloso, con l'obbiettivo di una sgambata in bici nella bassa mila…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20140907_188.html'"
+     data-title="L&#39;aspirapolvere e la bici di Heisedal." data-year="2014" data-snippet="Giorgio Andrea e Paola Primo giro &quot;serio&quot; dopo l&#39;infortunio. Alcuni (Martin, Ben, Ottaviano...) si sono cimentati nella GF Scott che partiva da Piacenza proprio oggi. Per quanto mi…">
+  <div class="card-date">7 settembre 2014</div>
+  <div class="card-title">L'aspirapolvere e la bici di Heisedal.</div>
+  <div class="card-snippet">Giorgio Andrea e Paola Primo giro "serio" dopo l'infortunio. Alcuni (Martin, Ben, Ottaviano...) si sono cimentati nella GF Scott che partiva da Piacenza proprio oggi. Per quanto mi…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20140914_189.html'"
+     data-title="Weekend in val Trebbia" data-year="2014" data-snippet="Sabato Finalmente arriva settembre. Quello vero però. Basta con quella cappa umida : cielo terso e aria frizzante. La tramontana ha spazzato le nuvole e abbassato la temperatura, p…">
+  <div class="card-date">14 settembre 2014</div>
+  <div class="card-title">Weekend in val Trebbia</div>
+  <div class="card-snippet">Sabato Finalmente arriva settembre. Quello vero però. Basta con quella cappa umida : cielo terso e aria frizzante. La tramontana ha spazzato le nuvole e abbassato la temperatura, p…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20140921_190.html'"
+     data-title="Cometa sul Bisbino" data-year="2014" data-snippet="Giorgio e Francesco in discesa Oggi solo una salita. Una, ma lunghetta. Il monte Bisbino, salito in compagnia per raccogliere fondi per l&#39;associazione Cometa . Partenza &quot;alla franc…">
+  <div class="card-date">21 settembre 2014</div>
+  <div class="card-title">Cometa sul Bisbino</div>
+  <div class="card-snippet">Giorgio e Francesco in discesa Oggi solo una salita. Una, ma lunghetta. Il monte Bisbino, salito in compagnia per raccogliere fondi per l'associazione Cometa . Partenza "alla franc…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20141018_191.html'"
+     data-title="Di nuovo chiuso per turno" data-year="2014" data-snippet="Ebbene sì : sono sono riuscito a rompere la piastra che fissava la clavicola e quindi ...tutto da rifare. Sono passati poco più di 4 mesi dall&#39;operazione ma l&#39;osso non era ancora a…">
+  <div class="card-date">18 ottobre 2014</div>
+  <div class="card-title">Di nuovo chiuso per turno</div>
+  <div class="card-snippet">Ebbene sì : sono sono riuscito a rompere la piastra che fissava la clavicola e quindi ...tutto da rifare. Sono passati poco più di 4 mesi dall'operazione ma l'osso non era ancora a…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20141119_192.html'"
+     data-title="Guardare ma non toccare...." data-year="2014" data-snippet="Ieri ho ritirato la nuova belva. Ormai un paio di settimane fa, nel pieno del mio sconforto per la ri-frattura della clavicola con annesse buie prospettive di doppio intervento, mi…">
+  <div class="card-date">19 novembre 2014</div>
+  <div class="card-title">Guardare ma non toccare....</div>
+  <div class="card-snippet">Ieri ho ritirato la nuova belva. Ormai un paio di settimane fa, nel pieno del mio sconforto per la ri-frattura della clavicola con annesse buie prospettive di doppio intervento, mi…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20141124_193.html'"
+     data-title="Rettifica importante (post per ciclomaniaci)" data-year="2014" data-snippet="Una fondamentale rettifica all&#39;elenco dei componenti della mia nuova Cannondale. Le ruote non sono le Ksyrium SLS qui sotto : ma le moooooolto più aggressive Ksyrium SLE. La fondam…">
+  <div class="card-date">24 novembre 2014</div>
+  <div class="card-title">Rettifica importante (post per ciclomaniaci)</div>
+  <div class="card-snippet">Una fondamentale rettifica all'elenco dei componenti della mia nuova Cannondale. Le ruote non sono le Ksyrium SLS qui sotto : ma le moooooolto più aggressive Ksyrium SLE. La fondam…</div>
+</div>
+</div>
+</div>
+<div class="year-section" data-year="2015">
+<div class="year-header">2015 <span style="font-size:1rem;color:#999;font-weight:normal;">(2 articoli)</span></div>
+<div class="cards">
+<div class="card" onclick="location.href='articoli/20150830_194.html'"
+     data-title="La dura legge del recupero (con riassunto delle puntate precedenti) : il ritorno del GIBERNAUTA" data-year="2015" data-snippet="Ci eravamo lasciati praticamente qui. Dopo il capitombolo di fine maggio 2014 e l&#39;intervento chirurgico, in un breve intervallo avevo avuto il tempo di risalire in sella per un pai…">
+  <div class="card-date">30 agosto 2015</div>
+  <div class="card-title">La dura legge del recupero (con riassunto delle puntate precedenti) : il ritorno del GIBERNAUTA</div>
+  <div class="card-snippet">Ci eravamo lasciati praticamente qui. Dopo il capitombolo di fine maggio 2014 e l'intervento chirurgico, in un breve intervallo avevo avuto il tempo di risalire in sella per un pai…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20150919_195.html'"
+     data-title="Val Trebbia e Mottarone : accoppiata con pausa" data-year="2015" data-snippet="Il piano di ritorno in sella, dopo le uscite trentine, non poteva fare a meno di due classici di stagione : la Val Trebbia e il Mottarone. Cominciamo con la Val Trebbia il 6 settem…">
+  <div class="card-date">19 settembre 2015</div>
+  <div class="card-title">Val Trebbia e Mottarone : accoppiata con pausa</div>
+  <div class="card-snippet">Il piano di ritorno in sella, dopo le uscite trentine, non poteva fare a meno di due classici di stagione : la Val Trebbia e il Mottarone. Cominciamo con la Val Trebbia il 6 settem…</div>
+</div>
+</div>
+</div>
+<div class="year-section" data-year="2016">
+<div class="year-header">2016 <span style="font-size:1rem;color:#999;font-weight:normal;">(9 articoli)</span></div>
+<div class="cards">
+<div class="card" onclick="location.href='articoli/20160618_196.html'"
+     data-title="A volte ritornano (i gibernauti)...." data-year="2016" data-snippet="Insomma 9 mesi di astinenza da bici non sono pochi. Le articolazioni si incatramano un po&#39;, le chiappe si ammorbidiscono, la schiena si irrigidisce. E così quando si risale in sell…">
+  <div class="card-date">18 giugno 2016</div>
+  <div class="card-title">A volte ritornano (i gibernauti)....</div>
+  <div class="card-snippet">Insomma 9 mesi di astinenza da bici non sono pochi. Le articolazioni si incatramano un po', le chiappe si ammorbidiscono, la schiena si irrigidisce. E così quando si risale in sell…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20160619_197.html'"
+     data-title="A volte ri-ritornano....(i gibernauti)" data-year="2016" data-snippet="A volte ritornano sì, anzi tornano il giorno dopo. Ed infatti stamattina in una domenica che iniziava bigia bigia, mi son rimesso in sella. Le chiappe hanno protestato per un po&#39;,…">
+  <div class="card-date">19 giugno 2016</div>
+  <div class="card-title">A volte ri-ritornano....(i gibernauti)</div>
+  <div class="card-snippet">A volte ritornano sì, anzi tornano il giorno dopo. Ed infatti stamattina in una domenica che iniziava bigia bigia, mi son rimesso in sella. Le chiappe hanno protestato per un po',…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20160626_198.html'"
+     data-title="Audaces fortuna iuvat..." data-year="2016" data-snippet="Il Lago di Tenno L&#39;idea era di trovarci la mattina alle 730 per una puntata al Passo Ballino. Chi? Io e lo Smilzo veloce, ovviamente. Dopo ben due uscite di 50 km in pianura ho pen…">
+  <div class="card-date">26 giugno 2016</div>
+  <div class="card-title">Audaces fortuna iuvat...</div>
+  <div class="card-snippet">Il Lago di Tenno L'idea era di trovarci la mattina alle 730 per una puntata al Passo Ballino. Chi? Io e lo Smilzo veloce, ovviamente. Dopo ben due uscite di 50 km in pianura ho pen…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20160628_199.html'"
+     data-title="Minimo sindacale" data-year="2016" data-snippet="Quando proprio non hai tempo e, comunque, non vuoi uscire a ore antelucane, c&#39;è una sola alternativa : un giretto avanti e indietro tra la Darsena e Abbiategrasso. Sono 40km in tut…">
+  <div class="card-date">28 giugno 2016</div>
+  <div class="card-title">Minimo sindacale</div>
+  <div class="card-snippet">Quando proprio non hai tempo e, comunque, non vuoi uscire a ore antelucane, c'è una sola alternativa : un giretto avanti e indietro tra la Darsena e Abbiategrasso. Sono 40km in tut…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20160717_200.html'"
+     data-title="Le vualà le Tour de Bleggiò...e apres aussì le Velò avec la velò!" data-year="2016" data-snippet="Weekend a Riva del Garda = Giro in bici, possibilmente nel Bleggio. Anzi, vista la contemporanea partenza del Tour de France : si va di Tour de Bleggio&#39;. Ed eccomi qui che salgo le…">
+  <div class="card-date">17 luglio 2016</div>
+  <div class="card-title">Le vualà le Tour de Bleggiò...e apres aussì le Velò avec la velò!</div>
+  <div class="card-snippet">Weekend a Riva del Garda = Giro in bici, possibilmente nel Bleggio. Anzi, vista la contemporanea partenza del Tour de France : si va di Tour de Bleggio'. Ed eccomi qui che salgo le…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20160725_201.html'"
+     data-title="Passo Bordala, la fatica che non ti aspetti; reincarnazioni e false percezioni" data-year="2016" data-snippet="Non me la ricordavo proprio così. La salita al Passo Bordala, intendo. Sarà che la strada è molto larga e con curve a raggio molto ampio. Sarà che non ci sono rettilinei da cui ave…">
+  <div class="card-date">25 luglio 2016</div>
+  <div class="card-title">Passo Bordala, la fatica che non ti aspetti; reincarnazioni e false percezioni</div>
+  <div class="card-snippet">Non me la ricordavo proprio così. La salita al Passo Bordala, intendo. Sarà che la strada è molto larga e con curve a raggio molto ampio. Sarà che non ci sono rettilinei da cui ave…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20160725_202.html'"
+     data-title="Passo Bordala, la fatica che non ti aspetti; reincarnazioni e false percezioni" data-year="2016" data-snippet="Non me la ricordavo proprio così. La salita al Passo Bordala, intendo. Sarà che la strada è molto larga e con curve a raggio molto ampio. Sarà che non ci sono rettilinei da cui ave…">
+  <div class="card-date">25 luglio 2016</div>
+  <div class="card-title">Passo Bordala, la fatica che non ti aspetti; reincarnazioni e false percezioni</div>
+  <div class="card-snippet">Non me la ricordavo proprio così. La salita al Passo Bordala, intendo. Sarà che la strada è molto larga e con curve a raggio molto ampio. Sarà che non ci sono rettilinei da cui ave…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20160801_203.html'"
+     data-title="I prati di Nago, tanta fatica per....." data-year="2016" data-snippet=".....tanta fatica per arrivare in questo anonimo parcheggio? Ma che senso ha? Ma andiamo con ordine. Ritrovo mattutino a casa dello Smilzo. Da qui partiamo senza una meta precisa,…">
+  <div class="card-date">1 agosto 2016</div>
+  <div class="card-title">I prati di Nago, tanta fatica per.....</div>
+  <div class="card-snippet">.....tanta fatica per arrivare in questo anonimo parcheggio? Ma che senso ha? Ma andiamo con ordine. Ritrovo mattutino a casa dello Smilzo. Da qui partiamo senza una meta precisa,…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20161101_204.html'"
+     data-title="Spettacolo d&#39;autunno" data-year="2016" data-snippet="Lo spettacolo di una natura dai colori sgargianti si puo&#39; godere anche a fine ottobre. E la bicicletta, come sempre, è il mezzo migliore per cogliere scorci mozzafiato. Basta poco…">
+  <div class="card-date">1 novembre 2016</div>
+  <div class="card-title">Spettacolo d'autunno</div>
+  <div class="card-snippet">Lo spettacolo di una natura dai colori sgargianti si puo' godere anche a fine ottobre. E la bicicletta, come sempre, è il mezzo migliore per cogliere scorci mozzafiato. Basta poco…</div>
+</div>
+</div>
+</div>
+<div class="year-section" data-year="2017">
+<div class="year-header">2017 <span style="font-size:1rem;color:#999;font-weight:normal;">(4 articoli)</span></div>
+<div class="cards">
+<div class="card" onclick="location.href='articoli/20170124_205.html'"
+     data-title="ABC del PODISTA" data-year="2017" data-snippet="ABC del podista A llenamento : componente essenziale della vita del podista : richiede una adeguata calibrazione in quanto ha la caratteristica di essere sempre al tempo stesso ins…">
+  <div class="card-date">24 gennaio 2017</div>
+  <div class="card-title">ABC del PODISTA</div>
+  <div class="card-snippet">ABC del podista A llenamento : componente essenziale della vita del podista : richiede una adeguata calibrazione in quanto ha la caratteristica di essere sempre al tempo stesso ins…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20170409_206.html'"
+     data-title="Quattro amici al bar...di Bettola" data-year="2017" data-snippet="Era un anno che non pedalavo sulle strade della Val Trebbia. Ed eccomi qua, alla piscina di Travo, pronto per un giretto di quelli che, un tempo, avremmo derubricato come &quot;defatica…">
+  <div class="card-date">9 aprile 2017</div>
+  <div class="card-title">Quattro amici al bar...di Bettola</div>
+  <div class="card-snippet">Era un anno che non pedalavo sulle strade della Val Trebbia. Ed eccomi qua, alla piscina di Travo, pronto per un giretto di quelli che, un tempo, avremmo derubricato come "defatica…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20170604_207.html'"
+     data-title="Accoppiata classica e fine psicologia" data-year="2017" data-snippet="Un weekend lungo a Riva del Garda significa due cose. Relax ma, soprattutto, di nuovo in sella con lo Smilzo Veloce. E quindi eccomi qui da Mecki (mitico bar ciclistico di Torbole,…">
+  <div class="card-date">4 giugno 2017</div>
+  <div class="card-title">Accoppiata classica e fine psicologia</div>
+  <div class="card-snippet">Un weekend lungo a Riva del Garda significa due cose. Relax ma, soprattutto, di nuovo in sella con lo Smilzo Veloce. E quindi eccomi qui da Mecki (mitico bar ciclistico di Torbole,…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20170923_208.html'"
+     data-title="La cronoscalta più bella che ci sia." data-year="2017" data-snippet="La salita al Mottarone è già da sola una bellissima scalata. Ma, come dice Marco, la cronoscalata al Mottarone (che si ripete puntuale ogni anno da ormai 19 anni) è di più : è una…">
+  <div class="card-date">23 settembre 2017</div>
+  <div class="card-title">La cronoscalta più bella che ci sia.</div>
+  <div class="card-snippet">La salita al Mottarone è già da sola una bellissima scalata. Ma, come dice Marco, la cronoscalata al Mottarone (che si ripete puntuale ogni anno da ormai 19 anni) è di più : è una…</div>
+</div>
+</div>
+</div>
+<div class="year-section" data-year="2018">
+<div class="year-header">2018 <span style="font-size:1rem;color:#999;font-weight:normal;">(2 articoli)</span></div>
+<div class="cards">
+<div class="card" onclick="location.href='articoli/20180614_209.html'"
+     data-title="Pedalando tra Gallipoli, cognati,  trulli e piccole Dolomiti" data-year="2018" data-snippet="La Jordy adventures è una dinamica agenzia di viaggi specializzata nella organizzazione di percorsi ciclistici con supporto logistico. Ne conosco l’affidabile management e quindi h…">
+  <div class="card-date">14 giugno 2018</div>
+  <div class="card-title">Pedalando tra Gallipoli, cognati,  trulli e piccole Dolomiti</div>
+  <div class="card-snippet">La Jordy adventures è una dinamica agenzia di viaggi specializzata nella organizzazione di percorsi ciclistici con supporto logistico. Ne conosco l’affidabile management e quindi h…</div>
+</div>
+<div class="card" onclick="location.href='articoli/20181001_210.html'"
+     data-title="Dagli amici mi guardi Dio......diceva Tucidide (ovvero : &quot;fenomenologia di Mottarone.org)" data-year="2018" data-snippet="Dice Marco Farina -anfitrione del Mottarone, nonché animatore della premiazione più lunga della storia (roba che schianterebbe un monaco zen)- : “il Mottarone è una metafora della…">
+  <div class="card-date">1 ottobre 2018</div>
+  <div class="card-title">Dagli amici mi guardi Dio......diceva Tucidide (ovvero : "fenomenologia di Mottarone.org)</div>
+  <div class="card-snippet">Dice Marco Farina -anfitrione del Mottarone, nonché animatore della premiazione più lunga della storia (roba che schianterebbe un monaco zen)- : “il Mottarone è una metafora della…</div>
+</div>
+</div>
+</div>
+
+  <div id="no-results">Nessun articolo trovato per questa ricerca.</div>
+</div>
+
+<script>
+const searchInput = document.getElementById('search');
+const cards       = document.querySelectorAll('.card');
+const noResults   = document.getElementById('no-results');
+const countEl     = document.getElementById('visible-count');
+const yearSections = document.querySelectorAll('.year-section');
+
+function doSearch() {
+  const q = searchInput.value.toLowerCase().trim();
+  let visible = 0;
+
+  cards.forEach(card => {
+    const title   = card.dataset.title.toLowerCase();
+    const snippet = card.dataset.snippet.toLowerCase();
+    const year    = card.dataset.year;
+    const match   = !q || title.includes(q) || snippet.includes(q) || year.includes(q);
+    card.classList.toggle('hidden', !match);
+    if (match) visible++;
+  });
+
+  // Nascondi sezioni anno vuote
+  yearSections.forEach(sec => {
+    const hasVisible = sec.querySelectorAll('.card:not(.hidden)').length > 0;
+    sec.style.display = hasVisible ? '' : 'none';
+  });
+
+  noResults.style.display = visible === 0 ? 'block' : 'none';
+  countEl.textContent = q ? `${visible} articoli trovati` : `${cards.length} articoli`;
+}
+
+searchInput.addEventListener('input', doSearch);
+
+// Focus automatico sulla barra di ricerca
+searchInput.focus();
+</script>
+</body>
+</html>
