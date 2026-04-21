@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Val Trebbia e Mottarone : accoppiata con pausa – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2015 &rsaquo; 19 settembre 2015
+  </p>
+  <h1 class="article-title">Val Trebbia e Mottarone : accoppiata con pausa</h1>
+  <p class="article-meta">19 settembre 2015</p>
+  <div class="article-body">
+    <div class="separator" style="clear: both; text-align: center;">
+</div>
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhP992UAoKx-ncmk_-3Iyjm340eEq7bT3rQKUWOStF6heZz4wVMcpK1QPiomD9dv3ZHsIYk66K6S2mkpx-byJSJ3-PyiW-4Urjl_YptD2_c7ZaFeRdQWMkdD_XTYezriaDpLcp_/s800/IMG_1994.JPG" width="640" /></div>
+<div class="separator" style="clear: both; text-align: justify;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: justify;">
+Il piano di ritorno in sella, dopo le uscite trentine, non poteva fare a meno di due classici di stagione : la Val Trebbia e il Mottarone.</div>
+<div class="separator" style="clear: both; text-align: justify;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: justify;">
+Cominciamo con la Val Trebbia il 6 settembre : ci si trova al solito parcheggio di Travo. Mi aspettano Nicoletta, Andrea, Giorgio e Giovanni per un programma che più classico non si può, anzi ormai lo si definirebbe "iconico": Passo Cerro e Passo Cappelleta in sequenza.</div>
+<div class="separator" style="clear: both; text-align: justify;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: justify;">
+Giornata fresca e limpida, ideale per il pedale, e compagni di fatica tonici e allegri (buona la seconda cosa per me, meno buona la prima dato che significa che dovrò come solito faticare per stare in gruppo).</div>
+<div class="separator" style="clear: both; text-align: justify;">
+<br /></div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQqzkwCIP4dyp4X0qra7aMhp_YTLvry_9_uNWGjlAfUGsITg4yHnubIRbt2TUBPHiyCysoyymObCh5ggiqI6RnwhTCkkLopxNdXaXFjMH2lZDsCPIskVJm_T-NNFbnGa8qXIV4/s800/IMG_1935.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Andrea tra i colli di Travo</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdyIZEC9rVGwmKe_jg-c7T9anWYHJwSvCZEZIxBfUHHq_LTYHzPLXxyQfHO9z4p7iCFyBCerLLc3JzFlsc6hTNfawq4nwWcgK4rRqoQn4HWNbSNkw9zhQENtRaGCgqzUzR3ui-/s800/IMG_1936.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Formazione classica</td></tr>
+</tbody></table>
+&nbsp;Da Perino il passo del Cerro è l'ideale per cominciare la giornata. Una salita abbastanza pedalabile che ha solo un tratto rognoso per fortuna breve e poco prima di una parte più dolce. Saliamo chiacchierando e Giovanni approfitta del ritmo blando per lanciarsi nella prima fuga di giornata.<br />
+<br />
+Tutto tranquillo fino a quando un tizio magro e alto ci passa a velocità tripla. Lo si può' lasciar andare via? Certo che sì, visto come va, ma almeno acceleriamo e cerchiamo di riacchiappare il leader di tappa.<br />
+<br />
+Arriva lo strappetto della fattoria : curva a destra e poi ZAC una bella rampa al 12% che, piazzata in mezzo a pendenze molto più morbide è l'ideale per spezzare ogni ardore agonistico. Vado su abbastanza bene, e mi sembra che la nuova Cannondale sia molto ma molto più leggera della Colnago.<br />
+<br />
+Dopo un po' di fuorisella si rifiata e fino al passo è un lungo falsopiano in salita : lo affronto bello spedito, insomma quanto basta per farmi capire, dopo non molto, che se non mollo un po' mi spegnerò inesorabilmente prima del cartello del Passo.<br />
+<br />
+Ma riesco a tenere e finalmente la strada spiana del tutto. Classicissima pausa manicotti al passo e poi giu' per la discesa verso Bettole.<br />
+<br />
+La strada è molto rovinata (non voglio pensare cosa sarà oggi dopo il diluvio e l'alluvione del 15 settembre).<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWyEShI-jUeoJ4utztt5duXYCeEX1DwO_9iZUYJQ6LOkAvT4J_ppiMDmAdoUQE6GgUojzZ9S1uHrZpQsmU6J12Dhn9PclB4G2cilxBDna-f251N7VTvSWKOmjD3CGiFXGbB1ex/s800/IMG_1943.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Bettola</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_iDl51-b0CN6XM03F3Kftl-rz1b6JYJB9b6eghhoi742lfTZRaGdBr1wt29ZBfQ-Cav-nOGyzgVon28nxZIVbPnZ4ARWXerFojEVSUu-Zdojse6LNtWSmWFrHRpaCsDD5AdmR/s800/IMG_1944.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Bettola sosta acqua</td></tr>
+</tbody></table>
+Dopo la pausa caffè e acqua a Bettola puntiamo su Farini per la seconda ascesa di giornata : Il passo Cappelletta.<br />
+<br />
+Da FArini la salita parte già più robusta rispetto al Cerro e il gruppo si sgrana. Io mi lancio in un attacco suicida spingendo un rapporto non adatto, ma l'entusiasmo di essere di nuovo in sella va assecondato anche se il cervello dice "vai piano....vai piano....".<br />
+<br />
+Si sale in mezzo a prati verdissimi nonostante l'estate bollente e il Nure occhieggia in basso. Dopo un tratto centrale più ostico la pendenza si addolcisce fino al tratto prossimo al passo in una foresta di larici di stampo alpino.<br />
+<br />
+Sono al passo, e mi pare di essere il primo. Possibile? Arriva Giorgio e mi smonta subito : "ma perché non ti sei fermato alla fontana? noi abbiamo fatto una pausa lì e anche riempito le borracce". Ecco perché : se gli altri si fermano per una pausa tecnico-sociale è molto probabile che se uno continua a pedalare (anche piano piano come me), arriva prima.Svelato l'arcano e ricostituite le giuste gerarchie.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_R0ECoWdkHYOwoGyImJTQJU5Ebs6tV3aqi342X8pnBzuf4XmCChnB10OtN029dE7S28Cg_0YJ2SlLfD5w01pEsAY8en7V5m__P9R2d-alIcXVXpgW_NjG4mnpFie7FfrQRprF/s800/IMG_1945.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Al passo</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEho5r3_9VWhaVOOjX0jqJtzdX7IJJ_WFfGrWjWY1otVTr0qs-UWLihIa2rm3Hs9Tyc7nc7tWpWhNSVC11tUJYIXP25V87hu_6oAu4Ahv2dS7n1T-eU8n9Z9ptofDhiFHkFEqoeQ/s800/IMG_1947.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Giorgio al passo</td></tr>
+</tbody></table>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhp7cgYSlpXLC-mujRjdfnb_J8SX7nyvxRg9vYcvQ9-lVIJCZJC-kwOII8pf2lVVuDnINi7q5VcaDDD3KIQbfBrUHxz_dDQNBXQ9WG38tleAvjHw6HJh-ZBhKkKbyYELOAmNt7Q/s800/IMG_1949.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Giovanni macho</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgeZ66nZuSPuMCVxsMfSynR4klXmsD9wGkJOtJFT7CZpkP8XT7vejVZAw9rgtTuOBEZ8BDjNNpu4v_czsKbjUy33uu3i6LIaYk136yoWCNTUEoYIGE8nZ_BLxh_1pEqlIEydyl0/s800/IMG_1950.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Andrea</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgs6geEmd_RZOjpNoyyGhwa8M3OrvtlhFHHTiSd-52vYE7L0eyi9axSN1nAAJmvR-gQZ9svjLKxQw1n09j7H17TZm03Qd7t3QCCMlRomVOoePlH2jc4Xdy6qbUH1byTrknuYYtu/s800/IMG_1952.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Giorgio e Nicoletta</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjtiCsotiFEmI9zSkc64oojTanqOm5pOxaCDqs96dWgyzJGF-dXNzYGL7lM69aZxYC1U6JktY3bddRddZtC0-P5D0I9XrXG00d7pT71TalctH6NJYc7iYpOewINhttmgVDtMAU2/s800/IMG_1954.jpg" width="640" /></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg427u3VdXDZFHl85rWIx2RJAwIgOADLL4UY6NwXmr4AjYZxTlnmbR1Z94OZkSsfeVw_7U-FZ6NARq0Y3w4SlGHLrNVne5sq-w7VpWpJtvDE2b44XlXTEtLokgoAjWby9Ds2I_e/s800/IMG_1955.jpg" width="640" /></div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgtln5ZUcecPPj1IOn1BiQUJDYpd5DcPZkkxPVoBuPqs1AURHJVRup7QNFO_kbwjAVjqzF9plgf_IU5x6zKn0ikXz5Wy2TVvzxjUxcoMQVfOOpjSfgMSpGjLCr8bLB0TSoG7hsZ/s800/IMG_1957.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Andrea</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_TgQXO-OGLmPdtxHuogPPw5sQ1h2EwE8lYbybnaDy6h_G_MKX_qKeSAiBxwmGtZ17FAcCVoy2w_9UeeyEZBhZTpj4XBaIaSSdp9FpfeqtNnI-11cWtqOC_7LHJL9G7a33xv8w/s800/IMG_1961.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Nicoletta</td></tr>
+</tbody></table>
+<div class="separator" style="clear: both; text-align: justify;">
+Dal Cappelleta è quasi tutta discesa fino a Perino e da lì il ritorno a Travo è agevolato dalla gentile concessione della Moroni-Locomotive.</div>
+<div class="separator" style="clear: both; text-align: justify;">
+<br /></div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="416" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinptu7qfe_AYciHmwFXCPwm7hXNODg16ATi4UHDr1i2MBZiI1M31uwBkl4PbJEe2eJEsbarA7anIPIzY7Ht5ObQ0gFAjaVd7Z7QgbcJ9bH1vH1dfPrO3XMQ9vlfSdj8m4s0o_4/s800/Schermata+2015-09-19+alle+18.48.34.png" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Il giro : 74 km e 1590m di salita</td></tr>
+</tbody></table>
+Buona la prima, comunque! La Val Trebbia mi è mancata, e tornarci così, mi convince sempre più che questo è davvero un piccolo paradiso del ciclista.<br />
+<div>
+<br /></div>
+<div>
+<br /></div>
+<div>
+Due settimane di pausa e poi tocca alla bestia nera : il Mottarone.</div>
+<div>
+<br /></div>
+<div>
+Partiamo da Ghevio con in programma l'ascesa alla cima e poi il giro dal lato di Armeno. La compagnia stavolta è decisamente aggressiva e motivata, dato che l'uscita di oggi servirà come preparazione per la mitica cronoscalata della prossima settimana.</div>
+<div>
+<br /></div>
+<div>
+Si fa sul serio e lo capisco subito perché il lungolago verso Baveno, che di solito serve a "scaldare la gamba", ce lo divoriamo a 35/40 kmh. Io resto attaccato coi denti al treno e finalmente vedo l'imbarcadero di Baveno. Ok, io sarei anche pronto per tornare alla macchina : la gamba non è calda, è già fusa.</div>
+<div>
+<br /></div>
+<div>
+Ma la logistica mi impone di tenere fede al programma originario e così mi accodo al gruppo in salita. Marco fa da Cicerone e indica la zona di partenza della scalata. Da qui, si dice , "oggi saliamo in amicizia". Eccola lì. La salita in amicizia è persino peggio del "saliamo regolari!". In pratica significa : non si fanno prigionieri.</div>
+<div>
+<br /></div>
+<div>
+Io mi costituisco subito all'autorità di giornata con la mia bandierina bianca e mi accomodo nelle posizioni di rincalzo. Insomma, mi dico, &nbsp;cerchiamo di arrivare almeno fino a Levo!.</div>
+<div>
+<br /></div>
+<div>
+E qui ci arrivo, sperando in una pausa (piccola, ma pausa). Niente. Marco snocciola dati e informazioni sulla salita e non si sogna minimamente di fermarsi. Nel frattempo Giorgio, Ottaviano e i più forti sono già svaniti all'orizzonte.</div>
+<div>
+<br /></div>
+<div>
+Io chino il crapone e mi preparo al tratto più impegnativo prima della botta finale.</div>
+<div>
+Ora, va bene che Marco la salita la conosce bene, ma dove trova l'energia per parlare e indicare e raccontare mentre si va su?</div>
+<div>
+<br /></div>
+<div>
+Io cerco di stare attaccato al gruppetto almeno fino alla sbarra.</div>
+<div>
+<br /></div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhzHoG0bPky3sDWtyfYNBwajyRp1lwxIcfLThXdQ8qKdjgGTdzVxrpeAdnTdkpYur5krXaAXxUSygc3wHI0GF1Ra90T6b3LiTJMuBd6wZ2xyk084TrVb89bYsxTO_oAMGkVxjSC/s800/IMG_1999.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Scendendo dalla vetta, Verbania sullo sfondo</td></tr>
+</tbody></table>
+<br />
+<br />
+E ci arrivo. Da qui in avanti, dopo il breve tratto in discesa, comincia il vero Mottarone. Salgo con Marco e Uberto. E Marco continua inesorabile : "ecco da qui sono ancora solo 5 km"..." Io sommessamente noto che mancano ancora 500 m di salita il che vuol dire una bella tirata al 10% e più. E la fatica comincia a farsi sentire, proprio quando invece avresti bisogno di pendenze un pochino più dolci. Ma il Motarùn non ci sente e ci propina gli inesorabili tornanti che non spianano.<br />
+<br />
+Non so come ma riesco a tenere e a poco a poco arrivo al bivio prima del famigerato drittone finale : quello largo e dritto, quello che sembra piatto ma in realtà tira al 9% e dà l'ultima mazzata alle mie gambe già belle legnose.<br />
+<br />
+Una fatica davvero improba per me che sono alle prime uscite stagionali, ma il panorama dalla vetta ci ripaga in pieno : la giornata è limpida e, anche se il Rosa si nasconde tra le nuvole, si riescono a vedere con chiarezza tutti i laghi intorno al massiccio. Uno spettacolo unico.<br />
+<br />
+C'è tempo per una cocacola rinfrancante e poi giù verso Armeno per gli ultimi km di mangia-e-bevi &nbsp;(poco bevi e molto mangia) che ci riportano alle macchine.<br />
+<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivTrTlg-hpj0Dyj0S5nLwRq6_40ECgo0l8y4Zjv3OUWblhXaiWiJakELKHXcpJLZ-0925F6qMLsB5na7KZ20f-lcZJCLuUP9qyX40OBXBkniDXzKy0N6q5q_v1stEyaPXtqvOC/s800/IMG_1998.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Ghigno affaticato</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr1jYiGaChiw958BO8ol3sytcGp6DS5gJHy4k1TynhPIL9tJE63IRv0AG7K7P9nRXZyehPnrDqBwKfQ5UORNiAwOCTalZJkNE7TwTtnThCpW6Q22soQwFel394lhsKJsXc_1BZ/s800/IMG_1996.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Il lago di Varese, laggiù</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbYehAQjMdq1oeCWKchzagngQEIByukCtwXVh9kulBTz4BmB7z6ShpRYatX3-g0Z_pm7z5mJ5UKC5Lf8HfogsiYfHphHCUT9aAs1_1ujiVtZbVi8X-9foI175FkfN__ovi70Iu/s800/IMG_1994.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Verbania e il lago verso Locarno</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8LyQz-R02cEvTph7RfzNONWh-HEs3ItApGO0g3v0-XkOON_9iID0p8uf9Isu3LKDFte6E20Y-k45BCw6zAMQsgL9nJrrKElZkDdzmhX2ETVE6xsQ18sad0hV_5hyZtOnYOZ0O/s800/IMG_1992.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">In vetta</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJcWPHvmRwQaev46M16tuCkA3Dgovi2Ixz1BMGJ5jVf2MQzNwf4NISkcnUZ2nGyWqH6Eu4_lDL5NVEcCr6BRyU77apIGgrymsls9FRyKOveuclon3MX_LK30kPSgzjOPk-ECjb/s800/IMG_1993.JPG" width="640" /></div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTBylnh-Ujzwx16hhqONDwZmxPZzrbSEKWAIkxXs1hs-wr3RWFhwEZiM8rj84_hxvPnQrTbrbSQUeWUbanuv10i0wXMWAALFoBqDkuyXF7wBuhsET7kjmsIpImLRYPdyMDGuT9/s800/IMG_1991.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Ottaviano Uberto e Giorgio<br />
+<br /></td></tr>
+</tbody></table>
+Alla fine saranno più di 70 km con circa 1600 m di dislivello. Gambe di legno ma grande soddisfazione. Caro Motarùn, ci rivediamo tra una settimana.<br />
+<div>
+<br /></div>
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" height="570" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2TZhQzSNXD11LDTCc9Oh0ANASdx5_OjLDfsqsuHcN0yZyMOQXs5MFJMoXDG1ySPeOZd1fqEZ_jhagBawOoEEsWBN9slMNLZsxUjELSwdasc22MRlifWSm51IxklJVlEWycmOI/s800/Schermata+2015-09-19+alle+22.24.50.png" width="640" /></div>
+<div>
+<br />
+<br />
+<br />
+<br />
+<div>
+<br />
+<div>
+<br />
+<div class="separator" style="clear: both; text-align: justify;">
+<br /></div>
+</div>
+</div>
+</div>
+
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20150830_206.html">La dura legge del recupero (con riassunto delle pu</a>
+    <a class="next" href="20160618_208.html">A volte ritornano (i gibernauti)....</a>
+  </div>
+</div>
+
+</body>
+</html>

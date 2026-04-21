@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ci vuole un po' di forza di volontà.. – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2014 &rsaquo; 5 settembre 2014
+  </p>
+  <h1 class="article-title">Ci vuole un po' di forza di volontà..</h1>
+  <p class="article-meta">5 settembre 2014</p>
+  <div class="article-body">
+    <div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjaxCfsxkI82URoesNJegWCJ9ZEX1_0MmVue9KtHkbue44n8IW57Ls40TuAGLp2bC9wLlEB0mGMGfHIeJT2BFr4UHpmqPlqSBtiAMPAMEexoenTEmg5cYQ_3hX7TUd_8LAmvwkK/s800/IMAG0151.jpg" height="640" width="362" /></div>
+<br />
+Eh..sì. Ci vuole un po' di forza di volontà per buttarsi giù dal letto alle 6 quando è ancora scuro e il cielo è nuvoloso, con l'obbiettivo di una sgambata in bici nella bassa milanese.<br />
+<br />
+Mentre preparo la bici e mi vesto l'aria si rischiara e compare un cielo grigio plumbeo : devo resistere alla tentazione di rimettermi a letto.<br />
+<br />
+Poi, un'oretta più tardi, mentre pedalo tranquillo chiacchierando con Annibale lungo la ciclabile verso Bereguardo, penso che quel piccolo atto eroico di prima mattina viene sempre ben più che ripagato.<br />
+<br />
+Oddio, qualcuno che vuole mettersi d'impegno a rovinarci la giornata si trova comunque. Tornando lungo il Naviglio ci piomba addosso da dietro un SUV che strombazza con violenza e ci supera imprecando. Sgomma, sfumazza e se ne va. Mi consola sapere che dopo pochi minuti sarà colpito da un attacco fulminante di violentissima diarrea, proprio lì, dentro il suo SUV con gli interni in vellutino che poi pulirli è una tale fatica. E la gente che salirà nel suo bellissimo SUV, da allora in poi, storcerà un po' il naso scrutandosi preoccupata la suola delle scarpe...<br />
+<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhsolEH371lSbM8X0Ipmc31_FaKdTyy9XF75bOuwCCvGsVULn_OLlIvP8GneGzHRDPtfY0HMLS3irGk3r7MUyJucImOq1-c8GFYbTEw3GXeLLrttCWSun-Sv_fNBapT80W2UTe2/s800/IMAG0156.jpg" height="362" width="640" /></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQel7Bchyx2PkUX-4YP7GI6yKgw4FXQrRgtjBPVzbPmPSPDcQXC0nPar891SObXhOXUPbxoxh4R5ocMpYGH3nvdj40QMkkEeRDUO0i0zsKs9Hf9AXe7Y99D5BrnUYGUAkdB64h/s800/IMAG0157.jpg" height="362" width="640" /></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3HSD3tKRwnL0mHgzveGFo8aWuHIzyz1F3XJIpf3hhZ3WbmKHepp26_qAjbDyjaGiN0uKr5gTdfskkKTNt27Ey2iJUeL9YhWn9q9lQG5Go0lGsQ9IHjo5xrTbj7RCvcwMVpytl/s800/IMAG0159.jpg" height="362" width="640" /></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSZjbELU6_uo-llSLkbGyMKLnbozarNTVuOncKrZGEEwcaHsq0aBHdkrpkocApPdGa8-OGlMHniA4UfpMsfzJNrXEh7NuJCuo2WGgpCC7Yl1OPlTBDi9VM2coAk15M5ntV-NKK/s800/IMAG0166.jpg" height="362" width="640" /></div>
+<br />
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20140902_186.html">Maccaroni e bici elettriche.</a>
+    <a class="next" href="20140907_188.html">L'aspirapolvere e la bici di Heisedal.</a>
+  </div>
+</div>
+
+</body>
+</html>

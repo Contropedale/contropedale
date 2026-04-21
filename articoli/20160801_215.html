@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>I prati di Nago, tanta fatica per..... – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2016 &rsaquo; 1 agosto 2016
+  </p>
+  <h1 class="article-title">I prati di Nago, tanta fatica per.....</h1>
+  <p class="article-meta">1 agosto 2016</p>
+  <div class="article-body">
+    <div class="separator" style="clear: both; text-align: center;">
+</div>
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi50wSJqOLmH3Ryy-NUzyuL18NPeBheTGbgOkSlA-zyltVSwnTLtFZYA2MM3_cxyOevwazy7egy-5NrY7iR_RQZTpPs-mDsC_5kCKDyVzoQc_2RItYp9hT1QnPCFwDABubZ5ZT_/s800/IMG_3800.jpg" width="640" /></div>
+<br />
+<br />
+.....tanta fatica per arrivare in questo anonimo parcheggio? Ma che senso ha?<br />
+<br />
+Ma andiamo con ordine. Ritrovo mattutino a casa dello Smilzo. Da qui partiamo senza una meta precisa, sceglieremo strada facendo.<br />
+<br />
+Ecco, la casa dello Smilzo ha una caratteristica particolare (e qui si capiscono molte cose). Si trova a metà di una strada in salita lunga un paio di km con pendenza media di circa il 10%. Un buon 50% dei giri che si fanno da queste parti (a Nord del Lago di Garda) prevedono la scalata al primo muretto di giornata. Così, d'amblè, un bel riscaldamentino tanto per gradire.<br />
+<br />
+Poi ci si chiede come uno diventa forte in salita. Froome rispetto agli inizi di carriera ha perso 10 kg e si è allenato specificamente per la salita. Lo Smilzo di kg da perdere non ne ha (anzi è ormai in una forma radiografica, non c'è un grammo in più del necessario : tutto quello che serve a portare la bici in salita c'è - muscoli, tendini, ossa, vene. Ma del resto non c'è nulla), e l'allenamento non se lo fa certo mancare.<br />
+<br />
+Insomma ci vuole molto a capire che questa prima salitina è una bella staffilata nella gambe del povero Gibernauta?<br />
+<br />
+Tant'è. Fatto sta che arrivo in cima alla prima fatica di giornata con le mie brave giberne d'ordinanza ma con il cervello un po' annebbiato, tanto che quando Renato mi propone "dai facciamo la prati di Nago che è una salita che dà tante soddisfazioni...." (una salita "remunerativa" dice lui, citando una delle numerose perle dei libri della Ediciclo - Passi e valli in bcicletta - anche noti come cento e un modi per stendere un gibernauta) rispondo allegramente "............".<br />
+<br />
+Subito interpretato come un ok.<br />
+<br />
+La salita attacca dolcemente come si vede dal cartello qui sotto :<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinH36SdDvt-3BMnv_CbQaRC1_XXY8t5_yCCxYSCNto8nT5P4mE2rSpR9WT1zxDgRCwy9kr8AmiccY1f87rE6XBl4C4eYU-XCz4uonM9tozojpD2qK2eQ0lP62Jh3DRmBggDA1H/s800/tumblr_inline_ms8tz3DrP41s8vqwn.jpg" width="478" /></div>
+<br />
+<br />
+Come si puo' immaginare non è che io mi sia preoccupato molto del limite di velocità a 20km/h, visto che se avessi rallentato un po' avrei avuto bisogno delle rotelle per non cadere.<br />
+<br />
+Si sale prima in mezzo agli ulivi e poi, a poco a poco ci si ritrova in mezzo al bosco. Ombra, quindi, che è davvero benedetta dato che si suda copiosamente anche così, immaginarsi col sole.<br />
+<br />
+Allora : si tratta di una salita di 13 km. I primi 2 km sono diciamo "pedalabili". Ma poi il gioco si fa duro e cominciano i km con pendenze costanti sopra il 10%.<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" height="320" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiR9fjOZLdwdVdHows05Lut3UGpUEtnFxmU1GDU_DvqrXWzMdzfwzceIOzyQ_V5BI0A1prTkwkuBmqqsxBSLHjz0Y8L0ZV9hSPqAxl7BsRmJroEQPLJxv8Gdk_7L9ZeCy9nL8nF/s800/4013.gif" width="640" /></div>
+Il tratto &nbsp;in mezzo al bosco e rappresenta una lunga tregua nella battaglia tra la salita e il giebrnauta. Tregua si fa per dire dato che anche qui le pendenze non sono mai inferiori al 7/8%. Ma dopo gli strappi iniziali il sollievo si sente, eccome. E così si continua fino agli ultimi due km.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDVGoC3rtzhqLwm0K2Tbi26NpTFlQvxyb1tYIK3MIhErmtiC07A-Du4K-cV3105IE7t8kFvw81RmZulsURP4BQvCQqt_Mv-1vspg_JBPG31ATkw7OxT4IRsCt_hXRcMQuMDVL4/s800/IMG_3806.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Gibernauta e prati: sullo sfondo il Lago. Siamo a 1500m</td></tr>
+</tbody></table>
+&nbsp;Qui l'ambiente è ormai tipicamente alpino, siamo ben sopra i 1000m di quota finalmente si raggiungo i mitici "prati". Cosa abbia spinto gli abitanti di Nago a venire fin quassù per falciare i "prati" e costruire qualche casetta, bè per me resta un mistero. Cioè, il panorama è mozzafiato, ma se per caso una balletta di fieno si mette a rotolare arriva a valle in un istante.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEji3QParGHjkH6yuOMaRGfxAE3Mo8oeF5svZwVNXTTsIhOkXZVcaGQPszcU_pjxcgwko1jWGGanwZHFiKNqvqAjL_7nyJ7n9WDkPg1y38rBcizm6Vvn6LL3dzeZ8chgqaraUpwm/s800/IMG_3807.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Renato e prati, sempre a 1500m</td></tr>
+</tbody></table>
+Ma veniamo agli gli ultimi 2km. Di solito il gibernauta arriva a questo punto della salita forte di un ingiustificato ottimismo nei propri mezzi. In fondo il primo tratto duro è alle spalle, e gli ultimi km hanno dato al nostro l'impressione di una potenza e agilità che sono invece merito di pendenze più abbordabili.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh6jFZmLC-fkkKI-HViZstSr8VnK9_PgcMj6LDsr3FIXDrHbXNIPglY8FYuqGdVU8tvO8TZCUHAAUWSV303irTLVtL9gtiD7e7swU_yanQsuUlLvssWW0CWrDgOBZjocxr6l6Pd/s800/IMG_3809.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Panorami in discesa</td></tr>
+</tbody></table>
+Ma basta dare un'occhiata alla altimetria qui sopra per rendersi conto di cosa significano questi ultimi due km. Ci sono tratti in cui la pendenza è molto superiore al 15% : pezzi in cui è &nbsp;impossibile pedalare seduti e in fuorisella, è necessario aggrapparsi al manubrio e tirare con decisione altrimenti non si va su. Un vero calvario.<br />
+Difficile rendere l'idea con una foto : l'obbiettivo di solito schiaccia le pendenze, ma forse questo tornante puo' dare l'idea :<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMJCXVIlOxhwob_CBeMkJ62Vj52w_7qkfO1O5lwMtfIemfO9IUhvjhrO-x9wDOhG1hNxhoHCOK2GK0WDzUQEwbRQ9547HxudeXgcJTwgQOgYSVqPtGof-keU0fsbaeKQZXCUGQ/s800/IMG_3803.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Tornante malefico, oltre il 15%</td></tr>
+</tbody></table>
+<br />
+E i nostri eroi? Lo Smilzo ovviamente sale in souplesse, e, anche se fatica pure lui (e vorrei vedere!) va su del suo passo che è ben diverso da quello del Gibernauta. Il quale pero' non si arrende e con passo da lumaca riesce pero' a domare gli ultimi strappi cattivi per raggiungere la meta : un parcheggio dove la strada finisce e comincia la sterrata che sale al Baldo. Siamo a 1560m e davvero sarebbe una vigliaccata se &nbsp;tutta sta fatica avesse un così misero premio.<br />
+<br />
+Ma non è così : in discesa ecco i panorami mozzafiato sul lago che erano rimasti nascosti dalla fatica della salita.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh6LXTUyRF3Mj7zxTuWzIUO7ZA4bAB3WN1_uW0QQkwaLpeUf2qTj0U6UL6yOfXdln0Jbu1KsLw0t7hrl5qBfhk1ZK4FKRyFlLNLA8F5NG8-sLH2yNzN-CKxK64lg6bGFs6_2V1H/s800/IMG_3811.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Mezzo gibernauta</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjolhLGYVNImdWRt6mOAu5TNq31UhCpCGNXhKsvcfzwmvsHAyicszvdBgAKtfGIeAHPmZlFKe9-5GCDf9xFteicaDBbL4J5ddRv_FiUWo_HojIm2OvotdAuRifxHGS-YHgV5bfj/s800/IMG_3812.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">C50 e Riva del Garda</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibLrNwdRaGN1WuueqV8JrSnjBircZ9uSXh2NLDcrUYI46gJctD7b6eFdtTqxSIThfgea9vR4MCwJQSsMYc8uhiBEEObJKbyfNYSM50B1ij1dLRiZUK2qbgDTCne5ucZ_uwXH3e/s800/IMG_3814.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Due pazzi e Riva del Garda<br /></td></tr>
+</tbody></table>
+Alla fine 30 km per poco meno di 1350 m di dislivello : insomma, un impegno davvero concentrato.<div>
+<br /></div>
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" height="376" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgPy0unu9AxdtGOOxeqo85yBSwZVaimu83p9xQ5t_iWx8Zgbp3SBRKkbslEnuG3mdUpfmRTGERXsMpdgE6v-Fu5WEcYDKYmOzJUBzTLSPaujctUFG-OmppoxsGPcvmiByqQiXeO/s800/Picture.png" width="640" /></div>
+<div>
+<br /><br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+</div>
+
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20160725_214.html">Passo Bordala, la fatica che non ti aspetti; reinc</a>
+    <a class="next" href="20161101_216.html">Spettacolo d'autunno</a>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Di nuovo in sella.. – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2014 &rsaquo; 4 agosto 2014
+  </p>
+  <h1 class="article-title">Di nuovo in sella..</h1>
+  <p class="article-meta">4 agosto 2014</p>
+  <div class="article-body">
+    <div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhz5a3k0wvE2EynNycJVJ0VvOW6LwGf-YHjFm3LdJ1aW0wH5dedfq050iflb0wRjVUcrVTYOGbURwiGwDycVTql8NlXnNiSgUdaBkwEG0wSsWOKjMYALTAzDv3y-n0oH2Ne-sZC/s800/blogger-image-111586697.jpg"></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">Sono passati poco più di due mesi dal fatidico 31 maggio quando ho lasciato scapola e clavicola sinistra su un tornante sopra Palinuro. Operazione, placca viti cerchiaggi e spalla bloccata per un mese. Poi un mesetto di fisioterapia.</div><div class="separator" style="clear: both;">Due mesi di stop assoluto, né bici nè corsa. Insomma il paradiso delle giberne.</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">Quindi con qualche chilo in più e molte energie in meno risalgo in sella per cercare di recuperare un po' della forma perduta.</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">E lo faccio partendo dal paradiso del ciclista : Riva del Garda. Da casa c'è solo l'imbarazzo della scelta, salite di ogni genere e soprattutto panorami sempre entusiasmanti. Riesco a beccare una finestra di sereno e, dopo due uscite di test sabato e domenica fino al Lago di Tenno (per la cronaca 20 km e 500 m di salita &nbsp;giusti giusti per ricominciare con gradualità ) stamattina parto alla volta del&nbsp;<span style="font-family: 'Helvetica Neue Light', HelveticaNeue-Light, helvetica, arial, sans-serif;">Passo Durone.</span></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZi4KOpEGc4nOAEUs4DRIM07f5joa49EOU8NO77RLQGKtl9maJ-hhluvbOf1H3LX041xqK3PmaWVv5cl-d6-gj-lswkZht6AvROGRMHcW7u6cQXWnzOE0WU1QOt_6quE_TqRgk/s800/blogger-image--1120493777.jpg"></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">Nonostante il nome si tratta di una salita molto graduale e facile. Si comincia con la scalata al passo Ballino, dopo il lago di Tenno : 12 km al 5-6% senza strappi, salendo con bellissime prospettive sul lago.</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiI6OTL5FhQ5W4qu80fR3zgD2cGbw4ys0U9qeBxfHJa-HfAA0Q5zCtqXtO2SQjkpvaVybrcXUpmg4weZi-9w2FdQ9A3ohI-WUEgYzWh42s0oK1vlZk8iXYWLjk3eDTxvQ2ALCqx/s800/blogger-image--143747572.jpg"></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">Da qui si scende sulla piana di Fiavè , per attaccare l'ultimo tratto di salita al passo Durone. Anche in questo caso le pendenze sono dolci e il panorama alleggerisce lo spirito e allevia la fatica.</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgiNcJv7NAd1X71QmHg6S-qV2SUNnfZhFUzvo7XaulFOxRKh0O3mUC458sGoUCEzrUffUfg8URyHnnhYhUm8w-cifmFXlw0RSx-IQOQAL1bCGVszLCzfxymuQGZXrglaKt6pjaW/s800/blogger-image-1115377767.jpg"></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">Fiavè&nbsp;</div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipdfDErOyQNUlpDv8rciKrkp__ypOIY7TDaBWHm1nUWqHOC7BnyGdT3E5UHZeAk0uybsRXEEoifYhNsMgnJB2I_LUY8wp5t3JSZXxgsLDjJ9b3yyFPyn2NqSqVIwwp0D9RBmvA/s800/blogger-image--1570458853.jpg"></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">Dal passo si potrebbe scendere su Tione e rientrare dalla valle del Sarca ma son troppi km per una &nbsp;uscita di assaggio. Quindi mi limito girare la bici e cominciare la discesa di nuovo verso Riva.</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjW7C5t4fPk7CvY9L3lt1YOAbB2ZcFAMIZbBWTSJEfsJk-CTT3ZFUUFjIVwco21AL3t8bRI-76l6qaYA64euBfPKXxXLAcwBMl7lYV8RvZKtHoArrqDYZ7pS5ZPd0z8toSCAc5c/s800/blogger-image--1521896416.jpg"></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">E qui comincia la vera sofferenza. Ad ogni tornante verso sinistra rallento clamorosamente e proprio nn ce &nbsp;la faccio a mollare i freni finché la bici non torna perfettamente verticale. Insomma, discesa a chiappe strettissime.</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">Il lago di Tenno</div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggU0zyN4O_9ia5GeG4Jw4b-4R63m2otbPY9FrsoyWlLMI7Hv1xLV91fZ58rOAIslI0PUmw5As-UeF2-zCJuSrvzHQZWbMDzPiVjv4WyfhgWsiZSBbhqIYrbir-elo4KSJxucoq/s800/blogger-image--1922330963.jpg"></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">Dopo un po' riesco sciogliermi un filino e a stringere il manubrio un po' più dolcemente, senza rischiare di lasciarci sopra i segni degli artigli anchilosati dalla strizza (è un Fsa in carbonio che costa un botto!).</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">Torno a Riva dopo poco più di 55 km e poco meno di 1300 m di dislivello macinati a ritmo da bradipo.</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">Ci vorrà un po' per tornare a pedalare rilassato, soprattutto in discesa. Ma in fondo non è poi un gran male, visto che son caduto solo per colpa mia. Per intanto mi sono davvero goduto questa prima uscita "vera" post incidente, anche se in salita mi superavano davvero tutti e in discesa, di più ! Ma chissenefrega, l'importante è essere di nuovo in sella.</div></div></div></div></div></div></div><br></div><div class="separator" style="clear: both;"><br></div>
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20140603_183.html">La prossima volta invece della bici vado col Suv, </a>
+    <a class="next" href="20140811_185.html">Poca fantasia, ma molto divertimento</a>
+  </div>
+</div>
+
+</body>
+</html>

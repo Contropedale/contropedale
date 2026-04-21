@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Repetita iuvant – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2014 &rsaquo; 18 maggio 2014
+  </p>
+  <h1 class="article-title">Repetita iuvant</h1>
+  <p class="article-meta">18 maggio 2014</p>
+  <div class="article-body">
+    <div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbWCtHKVNVMW6ID9z0FoteZ3AkFVHjpOT7Ek92Oi1hmDj4xXTfWRtHNHjct-rEP08OyfA-_Uj_7uCytN7LSqciS4EpRVj8V5UHobDInyS72i6jXIJg8TWcaXlY7-VGJE4mUS18/s800/DSC00132.JPG" height="480" width="640" /></div>
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFX5-PPlvbeiPdBiwKRX1VoEtup1AFCMJFOP7hi-PyJFwvcvBx0IhF108KWs2kTswiYIeblbq4ZTjz1eRsRHPCQIdqxHXn74-atgyUl33E69Q4AN9GMDJ5npTCq_fWpf6AYyd1/s800/Schermata+2014-05-18+alle+18.32.03.png" height="306" width="640" /></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiK1gfAPI3nj2YyY_15kymfaPmVCLvW1wUzzGWEABGOUU7mtGNgEWqJlbwe4a7SJrpMagBPFiBtJqcwxUFEedoK_QK3hsUJ2lI6o08l1sVMvXZioWNw9d3cauw96eV4BgbIhqQP/s800/Schermata+2014-05-18+alle+18.32.38.png" height="300" width="640" /></div>
+<br />
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: left;">
+Sì i due tracciati sembrano molto simili.&nbsp;</div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: left;">
+Ed in effetti non può essere altrimenti visto che sabato e domenica ho percorso più o meno le stesse strade tra Val Tidone e Val Trebbia.</div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: left;">
+In entrambi i casi lo start è a Pianello Val Tidone. Ebbene sì sono un tipo abitudinario. Quando trovo un itinerario che mi piace mi ci affeziono : ho un senso dell'orientamento paragonabile a quello di una talpa ubriaca e quindi conoscere il percorso è essenziale per essere più o meno sicuro di riuscire a tornare al punto di partenza.</div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: left;">
+Quindi, partenza da Pianello (ritengo accettabile lo scostamento di qualche decina di metri dovuto a esigenze di parcheggio) e da qui su per le rampe verso il passo Caldarola.</div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: left;">
+Sabato ho raggiunto a Travo il megagruppone degli amici di Andrea pronti a partire per la cronoscalata, momento clou in apertura della &nbsp;stagione ciclistica che si concluderà poi con l'altro clou : il cronomotarùn.</div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: left;">
+Accompagno il gruppo fino a Mezzano Scotti e qui le nostre strade si dividono : loro vanno verso Bobbio, io riprendo a salire vesso il Caldarola, ma stavolta dal lato Val Trebbia.</div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: left;">
+Domenica più o meno lo stesso. Stavolta AndreaNica&amp; un gruppo di "elite" sopravvissuti alla cronoscalata &nbsp;mi agganciano a Mezzano Scotti e insieme scaliamo il passo. Poi, dopo un po' di tornanti verso Agazzano li lascio e torno sui miei passi.</div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: left;">
+Bene : alcune spigolature da questo weekend che dal punto di vista cartografico non ha riservato grandi sorpresoni.</div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: left;">
+Il megagruppo della festa in sella Di Nica&amp;andrea è davvero impressionante. Poi con numeri e cronometraggio ufficiale (Giorgio CEO lamenta qualche imprecisione nei suoi tempi che ritiene debbano essere ridotti di alcune decine di minuti..) ha ormai l'aspetto di una minigranfondo.Complimenti all'organizzazione!</div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: left;">
+Andrea ha preferito evitare nel giorno della cronoscalata il cascobidè. Peccato, sarebbe stato un ottimo momento promozionale.</div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: left;">
+Dai racconti del giorno dopo mi par di capire che la cronoscalata si è svolta nel solito clima di vera amicizia : ognuno aveva uno o più amici da, metaforicamente s'intende, massacrare.</div>
+<div class="separator" style="clear: both; text-align: left;">
+Giovanni e Gianfranco hanno rischiato il colpo apoplettico pur di non lasciare la ruota dell'altro davanti. Giorgio ha scoperto che il suo cardio può' in circostanze estreme salire anche oltre 175 : e non si trattava di un primo approccio di Sharon Stone. Andrea sornione ha lasciato sfogare i giovani puledri e poi li ha infilzati tutti come polli .....bè...a parte i primi tre.</div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: left;">
+Domenica salendo le prime rampe da Pianello avevo deciso di provare a tirare un po'. E allora giù il crapone e via. Dopo un paio di tornanti si presenta un lungo rettilineo fisso oltre il 12-13%. Sono lì che agonizzo e intanto sento come il rumore di una sorta di Apecar che arranca dietro di me. Tra me e me dico : "eccolo là, guarda come vado bene oggi, riesco a andare anche più forte di un Apecar in salita...eddai....". Poi il rumore si avvicina e all'improvviso mi affiancano due ragazzi di 16/17 anni belli tonici e elastici. Io li guardo basito (ma come? E' possibile andare più forte di come sto andando io ADESSO? e senza motore?) e loro gentilissimi mi salutano e mi fanno "Ehilà!" e poi op-op-op si allontanano lassù. Li segue un signore su un motorino (ecco cos'era, non un'Apecar!) con ruota da bici di scorta e borracce appese al manubrio che evidentemente stava allenando i due virgulti : mi guarda e mi fa "dai su, che è quasi finita!"</div>
+<div class="separator" style="clear: both; text-align: left;">
+Temo si riferisse alla mia carriera di ciclista.</div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: left;">
+Beata gioventù.</div>
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUUrrelscCc9C-1v1FNPKIdXDZ7qbMBq7tVs936hs06UOKDsLzh-hXs3hCliLkpLGTxQaqps00aXass6AyRnEnVGjMt3If53gbqlqL3aYxvIqG1S2NQA6PkH5mRTZiDec39iLQ/s800/Schermata+2014-05-18+alle+18.33.31.png" height="420" width="640" /></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRt-EO3Emjlsd20Fjt87YltfYtF1tOSB_JCmo-P_ShE8PFpVe_y_AEJ19jbEyExU5vljv74hcqHHy9H7ZnBK6QwAwciuDuaqu4XOO15yI0E3ckMfVzE9lfsVWt7KTT4YgCd8j_/s800/DSC00099.JPG" height="480" width="640" /></div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDVGTaohyphenhyphenPAnOR6TQfHItpG_mXSZIi5yV6E4giRfm00ZcfovR7lJMiltQ648r2ORbwEKBPNREvYxgej7OATMqemngNB9wSKXg5lueEn4JOmHmFwXIp_y9HLnCOBGxAiGZpdUjk/s800/DSC00100.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Pietra Parcellara</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTMwOBSZlyHpkjTFUuFfZMwCR-UVfwF4Oz0C-xDPKJNNUQvCFxUKhevyGib5cQNyonVNLugHeJIzN0-zgpt88E6_UxKBLJFLQ-JBTorKvFtG6b-cHqNQY4Pi_XtEOF_p94blMb/s800/DSC00102.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Val Trebbia</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnoTK415mwjCvqMHc4v6YfVsf3o6SZqpjkLyh2u5nsk5moJUFEB71Eefvlzxep9JPEOkcpKrI0D86a828keLETWG4OV7AnkgC-CDcO8I7ZdPiJsH3pklHvrySQf7WLeB4-zxkX/s800/DSC00106.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Alla partenza&nbsp;</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMGrsatAy9KxKMlfU1DsFDHbZZo-tm5VjaOQkPyHWHGISQbeshrElQsrXo5ghM2xnLdEa_QgM9eGkrlSAmE0Qat7164pv-sHLBzXS1jsqd53_-GJp15qHJe4lnwjVZJl-fKAxO/s800/DSC00107.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Andrea briefing</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-PzXwONQiXbSaFhiOjb654aPUr5nkk0lWbdCXkqnkNq0ni4cj_h3Mj3itCQmD4bhU0VS4if9m7kzAeqy2AfZ2V5ijqsfypIwD5YtP7hgBJyMMXakNe9PWsdrbl0kxOE0HUxJD/s800/DSC00111.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Parte del gruppo in trasferimento verso la partenza della cronoscalata : sono ancora "amici"...ancora per poco</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-UzXzf5LYmIgs75Al_ASAuAcRN7THe4A1M2oS7MWoCgy0LYa_otHva40TXVSAV5c9nhxzbjPa7bRpsDFJ-qcsC9ic6tmuVxTdQ9SEzBNaCdeYGEpOEXWUNDqsJYQRQuba9io6/s800/DSC00115.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Cielo limpido sopra la pianura Padana.</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgynh4ED26dmTxwb9O2MAAF6szTiFvxMFDD_q6IA9KwsUCQVcOKfSs9cds6RpNSCLGrX5hkqsi8RjJocjETmAmPkA-U7RU5Kn-jZwZb3JY3oJo5Y7j5fag-y61wQ-C6JgM3bAZg/s800/DSC00116.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Salendo al Caldarola</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUOH3ABBDP1_NTP3krpOBlJ6zUS9DyXFHJ8cc4Kh7QzW5hv1fjyUDPnad1Mv990lOX9tK4YahICw1uQ_0fIozfLP6UZToUw41F_EgdNyZqAQihRbjrlHnvinja-nPqm5w8UEcw/s800/DSC00117.JPG" height="480" width="640" /></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhved2_eyK6XYW9fTuCBK4tET1JeoBqIu0-fegSVynHhO6ZjRsXFlGP8j4UAgO9Mip-OpfAn-RR1dliZyay1GpnVCrG64quPtGgC-q8-Oj-SZPj85Ea1TbOgccTHYiqZb0XhNpx/s800/DSC00119.JPG" height="480" width="640" /></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh6hHTpN_W6Hxp0dp5-MRUFXXWepP_zZ7P9vSmrre7PpAYCgK6mBZo7-6ISOuNxbduioagD-MvCQ9OKkskAN7voa_EI1vAdjsg4IOzkGle4X3l6GjlsmWu-V-5MAaVbvKMHO5DD/s800/DSC00123.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Cavallo al passo al Passo</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFmFJjLhrwP3v7uu7bZtwH_rv63c2KYfYTSNq_ybPZSt2xpM_9G8e2mZ0KjXpx-rRhYigGNKfXY_to7papM0BvmXG_3yv_pT2Yj0WY9s3JrtRNaXHf0ZLhAV7aW8CGcuMcvQ-q/s800/DSC00125.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Al passo la Pietra sullo sfondo. Davanti : giberne.</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwthKzh8_XDwHcJir-82uyU1N5COmNfJfDBsX2LuY5UdSSdyZe1b9Q1G-NOM5EYleGdPwFt0VN-mTCRD6iYQ3qfJ-LvGSO-AFrDhwguij42mRMVyLx1-0tuTLKsPZZHOUf_5yk/s800/DSC00127.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Il gruppo "elite" di domenica</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoEsH-OhHo-Omg8huW_0_OwsEbh26TlHoHFJRGD49af3dfmYvouHHANgzKb4xywTUrBFqNoHzXofH1pv77BX1_35FulUVfmhyphenhyphencA65HgDmQKEYzOl4SLgeucguXsejEY32oGWar/s800/DSC00128.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Elite</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcXz2oTeiH9Br-tPiHZXxZ_E9qPkJMh8l5TeJZd3BCVH51ia_H2vCGsh-sOtFR-2wO6DJ28_v8ELOilBkEJYA3yhSJ_PFuJAkdupcc85cU_UXBYQmgbTJTptyDbjQp3hXbHeOB/s800/DSC00129.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Andrea senza cascobidè</td></tr>
+</tbody></table>
+<br />
+<br />
+Ed infine tre immagini di una natura straripante.<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCfVGIZQ8bv6m92ZS6cpdP-7dEBm92DftUPbI0nrXB7qoTTP6b-1DA9Hj9OmwaBmvHAm8OMtXAUJXRW-B4VO1E9rBv71J2vK8lDsj88oA8zg48PiWhXZAf1Ymxvx3SRWDKYD4m/s800/DSC00132.JPG" height="480" width="640" /></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEia14s8Roie6y5LCnHsGX0gsILOwF7Cqrj6M88hzZheXdbnc5wnz_JTgc4aFUF16OpA_u7Bdtm4_XvOj-R_3JD7Wpmdf3Q4q72gqkHIiwKlKxQwZEnbKorVlHVgSBcCuIKP2_Pm/s800/DSC00133.JPG" height="480" width="640" /></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiErJm9U78EEuzao2r9lQuel0O9081wGFppTuR5ZakEG0woIdSuB0i6iPUVzziYPqxbaY5e9gMuBqMwSrC4NVud80GpyGRSOpwRNftFyXFRhA8aErW0FbPkwR_EI5BjUSIxD45i/s800/DSC00136.JPG" height="480" width="640" /></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmSrE6iN46vJh5rh0gkxXmAZWo0AP2CvAWVJ_VMZhzR0O7A6XP7phoDsabc2ya9VyD-w-sa1U7pYsMdv-0-GTRQoKBaCLFeSVjzIqInQgBI6MSkfF8CNpAmQtOrF-1Tuli3Xjp/s800/IMG_6312.JPG" height="480" width="640" /></div>
+<br />
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20140513_188.html">Tanto per cominciare.....</a>
+    <a class="next" href="20140525_190.html">Ned Ludd forse non aveva tutti i torti, ovvero : d</a>
+  </div>
+</div>
+
+</body>
+</html>

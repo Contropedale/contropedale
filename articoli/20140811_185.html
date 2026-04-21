@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Poca fantasia, ma molto divertimento – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2014 &rsaquo; 11 agosto 2014
+  </p>
+  <h1 class="article-title">Poca fantasia, ma molto divertimento</h1>
+  <p class="article-meta">11 agosto 2014</p>
+  <div class="article-body">
+    <div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjz3AlgFhF6y0Hsh_qEYEjOA9fAmZmGWZPlC0b3c9RJo6YzZUb1hvV4xxPaEtqle_qGhQ_oEdhi0WRcDgiZVMz0-BHJbP3TWIpjon1CRhfTKKvkVEViTJR14xTyxe7n79jUR6aL/s800/foto+5.JPG" height="480" width="640" /></div>
+<br />
+Sarà che dopo due mesi di "fermo ai box per manutenzione" , la voglia di rimettersi in sella era tanta.<br />
+Sarà che le previsioni meteo avevano un'unica certezza : prima o poi oggi pioverà.<br />
+Sarà che a Riva del Garda basta dare quattro colpi di pedale per trovarsi subito fuori dal traffico.<br />
+Sarà che mi diverto soprattutto in salita.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMVEWoP4jU14M4H_6ONcV_Ae5cGwslWNSE41p3D43Nt8Gpw2cDUt8uMKqSuUirdVpgv1I4Vsa5d7eT7kcbs1rIOhij98ZqJvIQnjSi40dIKNamlG93MjnWzZQSFb6-TKME7CoS/s800/foto+2.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">salendo verso Tenno</td></tr>
+</tbody></table>
+<br />
+Insomma, saranno tutte queste cose &nbsp;insieme, fatto sta che in questa settimana di vacanza trentina ho inforcato la bici 5 volte e tutte e 5 le volte ho percorso più o meno la stessa strada : da Riva al lago di Tenno, attraverso il passo Ballino all'altopiano di Fiavè, e da qui la salita la passo Durone e ritorno.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhTdDbhQIJRgPtlqEW6MwIMehEppKMB-saSTwSsFun9cVTz_LYvRMs2SsafqGbUemECfuj5Coy4KSR8NEKhEMr30zzTAcaejr0pOaRXgXGMR0cla_yqT3TqWodvOdhyphenhyphenLfpdxWwp/s800/foto+2.JPG" height="640" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Ballino</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJj9ug6cj2YnH3AsfS07jjp9PpXj0AoPBaVhJsWZ4jT67KWEtD5j8opoikJZ6f-mPvV0bGVaYaHLgVFgTKeDUPbwWhVoj2WDWQWJ_XDEW2PAJhGlGgSscApk-ebAXI6atwetR8/s800/foto+2.JPG" height="640" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Cavrasto : il paese dipinto. In basso il papiro dice : "L'è ben vera che me alontano dal Paes, ma no dal Cor"</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjY5wb6hEGuaI4cJYUK5_LQ-V2Rd01_PVXKnujiggWrRqsjiC6Ugj7Cfys62ZRumCEmkvD6Ia49op9ujioInipGNc44HobHbaIl8RfAb6kgT02o_vVjdaKpCA_5Pr2HifzKQQAI/s800/foto+3.JPG" height="640" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Cavrasto</td></tr>
+</tbody></table>
+<br />
+Sono circa 57 km e 1300 m di dislivello (la versione "lunga") e 20 km e 510 m di dislivello (la versione "corta" con dietro-front dal lago di Tenno).<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEieWy55kPIHSwbx7mjK-CLYAQzdtCfjBW7Y5vpiH9KGA97tvHYR-KOOao_YesnmyylA1qDs-SzM-eqqi-jKtOz5NmCAGbSOYQiBmdSYb1g6q1UsDIgNgCyYo-CXTw1JdUZl-Jvy/s800/foto+3.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Ovvia produzione locale</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHG-rzqkEpcjB0KCN1FuN-UMPiMc_gMTiCvvlHUNyvlHb8KXWveDrooXEJNQ5bZ8zcY7CcWXkzFGiz9iUGQ5JZeCIDxXzs5V4slMsz0BLufVJfd5v42LkVSKISGwhWOUWGCw7B/s800/foto+4.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Il Bleggio</td></tr>
+</tbody></table>
+<br />
+<br />
+Dal cancello di casa in meno di 1 km si esce dal centro abitato e si comincia la salita. Strada perfetta, fondo ideale (e per me che adesso sono un pochino traumatizzato dal botto in discesa questo è un aspetto fondamentale), panorami rilassanti ed entusiasmanti, pendenze dolci adatte ad una ripresa morbida.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiiq3sChZHazLXxMPbRgVrsRSM1ifSx_h-g8cb6MZmJOrDYxxXx37lP1QouXcMD6ThcU_n66kDNh7Vv3Cqw-4HK5UC20JsO1B71a_1tKSKn54jPUkuzsgQ0TqdnR_UdxsS-Zhh6/s800/foto+1.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Ballino</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgtM4sf7IPv3daVHew5stI6fB2MOU-dTKthGRxH03y_pMlFTZpbJzN0xKH2WnxuYN7qqqUkxnwU6VmDAO8rKegEU-QvofrE-VCja-FexLn29GSA5PuWf5Kx7Z-u8hQRVAolFfDi/s800/foto+5.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Discesa sul Lago</td></tr>
+</tbody></table>
+<br />
+Si spiega così la poca fantasia. Ma si spiega così anche il grande divertimento. Ed è davvero un bel modo di ricominciare a pedalare.<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVuko6vcD1bmqVq88gPrgwp8d0fDBOqrX8ol15uZsWnFgRHTMBQj_a_MqLDMCkXg22mpggzFYptV0kxufPrNL17yg5OiKhP4WuOQdGvSoPfeX8kfeeGTFHmNkyNvJrRYNzb_eA/s800/foto+4.JPG" height="480" width="640" /></div>
+<br />
+<br />
+<br />
+<br />
+<br />
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20140804_184.html">Di nuovo in sella..</a>
+    <a class="next" href="20140902_186.html">Maccaroni e bici elettriche.</a>
+  </div>
+</div>
+
+</body>
+</html>

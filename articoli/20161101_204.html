@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spettacolo d'autunno – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2016 &rsaquo; 1 novembre 2016
+  </p>
+  <h1 class="article-title">Spettacolo d'autunno</h1>
+  <p class="article-meta">1 novembre 2016</p>
+  <div class="article-body">
+    <div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: left;">
+Lo spettacolo di una natura dai colori sgargianti si puo' godere anche a fine ottobre. E la bicicletta, come sempre, è il mezzo migliore per cogliere scorci mozzafiato.</div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: left;">
+Basta poco : due/tre giri tra i monti dell'alto Garda. Partendo dal Lago e salendo dolcemente fino ai primi passi : Passo Durone, Passo Ballino, Passo Sant'Udalrico. I boschi multicolore si specchiano nei laghetti di Tenno e Cavedine, lontano le dolomiti di Brenta sono già imbiancate, il cielo è di un azzurro brillante.</div>
+<div class="separator" style="clear: both; text-align: left;">
+Magnifico. La mia Colnago C50 mi accompagna senza storie e asseconda un passo tranquillo che consente di godere di questi spettacoli.</div>
+<div class="separator" style="clear: both; text-align: left;">
+Anche lo Smilzo è magnanimo e non mi tira il collo, anzi, chiacchiera proprio quando io in salita ho i polmoni diciamo ..."impegnati" in altra attività.</div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: left;">
+Insomma, son tornato da questo weekend lungo col cuore più leggero.</div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: left;">
+Pace e bici a tutti.</div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGTJC_nbz0POgXbQEM4wqFjGLOrCy8XmClxEiMRdgWMG7MeoTH1anIt6_XCeK7w5-10m1IMa7Fh7JoN0ipFoQ1P2k8HNTc_B4qRhpnXmKD3Eq1-u0ZlFeTmk6eydSQfcU-fEXN/s800/IMG_4811.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">LAgo di Cavedine</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKUlAaxOcYJI48KLnSrtL7YdUz6m6vhSOLmq0xhe29-BooRy2H33jYRYlCd_nae2O-CA1jPUmQwf29kD6iWxYjdpsHeidplHUZV8yZ27ppXU63thUTU7iHSvAdiFV5Kis_bDhb/s800/IMG_4810.JPG" width="640" /></div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjOq7uWpi0D1FYhRRsDicICflgZdLnDEaXaoGbNOgIWUWVk0RVXNdzkL5ewSv1Z9EqaNd0h_qlC-GEEh5PSo6g2Sn3yv8kJViBfM9uG6y-TzQR9QgtjITPIRVxg3EmS_ehjdenn/s800/IMG_4809.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Sopra la valle di Cavedine</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhA2dDXFUyeJ534sdv1dE6FTAirk_EDWKl0JR8FsBctSgEqY6wTOduxGQiRRE2z9GXZf4Vun15IljqZE1B0UY_lG1o9MyaNqeulK3Ly17tz6s5MXxYjd8sMcVuiBo3k8sQQUYJ2/s800/IMG_4808.JPG" width="640" /></div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkNAt2-Xy6ZwYlfdr1Rj4VlNkW3GS02tc_gxGhFy6HAPjH90W5ewlusf_wIBTGfqRhdDx_1yIRsCApdjHA3t0r6wV0C_KoxqKZYXAlqYHtfUUtjKWfGXsF6ziqffRxwEm3PCUw/s800/IMG_4806.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Drena : vigne, castagni e il castello sullo sfondo a sinistra</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFqy-fXfdEJo9I_vFmNnffXZ1SExmbXLWRGoYvdENFNFuw4stWi38IXmbtMsmPkBWOrhIj9H_Yp9dJWXpolNdc-0b9Um6DS380tGwxiPATK4SFQNYwA3O37mp7RqdF1THdneoa/s800/IMG_4804.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Lo Smilzo magnanimo</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNzkwTdKybR8cEzcOg8NYDwkSt9IM1c-xdPT5j6zMeuzmWD8bzEPXr0USmrNrGYhooslYUXwvv08I5nieYXepT01nsqYTKeQj6wbAnfQNoqeRPxYj00h91bu6T4sOuNQuuLq2j/s800/IMG_4802.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">La valle di Arco sopra Dro</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihv8dcP8ecNLEjG3nbDb1tCPikoJNfPM5nA9KGhepigL1QM5tMSlkMEVWhCekZ9Ew1GINP4w4O6QYheMeeKeA3bkXfW96LHF6eyaPlgsw3ee7cJIgq9Uwmket23iyzd6r_VHgl/s800/IMG_4799.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Partenza di Optimist dal lido di Arco</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghHWSRcHb0WXgc7QpEGmR5G9ZylSRI9rkZPj8PlBgayQRk90P0qizjhdVOmyvETXNggbKFbSA2KS94x0mLRL7bpmOLMQSxOiW8H4XxCmeDMyJyzoMy5eT416vBf-UOuUUkR38u/s800/IMG_4798.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Andando verso Torbole</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" height="478" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFcGeA5HbQBZdSnXZF2orR00Ian-j2d2_IVJDNLGdX5tz0Vlnuxv0OukUYEATj8sRYHWtTS3_1wNCcBxgeCnFGfCJySiba_hNzfToWwX-0A9KP7L79q9WFj-GiSu3_EFDSAJpu/s800/IMG_4797.JPG" width="640" /></div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQMZBVmZO2-YPnxV5tnPqBAQt4tIy9SU6BYgrNttlsviEzTnJfeyJHZ63_TQbWCeaDnnozuI6HAaSkIFd4uDYcdSlyyv8zxbhrwR_SJCOiocqcs7-nGH8avQggUPh_GUUGpnNa/s800/IMG_4788.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Gibernauta e Optimist</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg1Xwt6_a0tVCL4kpyQDdSWmFz3A4WHwdG_w_1pC46bE-QVO2DXcV-QVXph8KTqJlu4ZACEiD9NItsz78G799Uoof0vkSbUCbsGCsBri37cCkC68qrHItSsvykez14KoJIoyT2L/s800/IMG_4786.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Optimist in uscita dalla Fraglia di Riva del Garda</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbWcC74uBjUNnCZ31iZ9kVNNyp-XWSjW8lfuXzH_HdonzxLWSShU2b5CNWtuFpJxxpxE7i-Ui_3kD8q-2-uI7Vh7qUDEaNvcwKum5ILVhOhkz6yu9w2a_L9WiNLpAcrnWnixM8/s800/IMG_4768.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Il Bleggio</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1lssEU8Xm1TZTQOOG968uMsEN3u9PpXvAZKEM1c3CGfg5Tyt1xsJtN2tkm0STcbEsVPIH8TUyIaCmoRc-kxF6g1eQXMbzqNDlMK90W5Ommhh0f8nreQNI6oH5e49rHGeC_Gjx/s800/IMG_4766.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Colori autunnali al Passo Durone</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5l-hh9q9JS8u0GhU09dc92cS3YSHyJiRmBIQRYnluvyKVNN48Dh721GblQJ88zMInNFpp4dKqxjyP3ehcEjGD9nA5VXAY1iibvRzceu1UAbIaAqfX9GElTOYxW9LKSq0-qv1Q/s800/IMG_4765.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Gibernauta dopo il Passo Ballino</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEQeLDptjPWj8btT1neQQVPOb8rlL4Jni-wR_u8CMoQUDTNDWLrOC2edxssUmu0A2QzFGoGOss1z1sBIf19iLBVQHIGLJn9bnNcVK1SoS2IHHWTWcwjSND2B_Q0r2aEkh94BRo/s800/IMG_4763.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Altopiano di Fiavè</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiA1MOtzUzFh6RfuMbbvB6hmq-UOId5zp7orlt61GUWUmBWRRO7GmUjRk-cLYIS_CCrHNrBXw4mC540w1FC6LbJ04bHyfdVURvmToS7as9ZOIQj3P-E0tY5-MtPOjsdc-PRYHzW/s800/IMG_4762.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Lago di Tenno</td></tr>
+</tbody></table>
+<br />
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20160801_203.html">I prati di Nago, tanta fatica per.....</a>
+    <a class="next" href="20170124_205.html">ABC del PODISTA</a>
+  </div>
+</div>
+
+</body>
+</html>

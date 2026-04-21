@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Accoppiata classica e fine psicologia – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2017 &rsaquo; 4 giugno 2017
+  </p>
+  <h1 class="article-title">Accoppiata classica e fine psicologia</h1>
+  <p class="article-meta">4 giugno 2017</p>
+  <div class="article-body">
+    <div class="separator" style="clear: both; text-align: center;">
+</div>
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" data-original-height="1200" data-original-width="1600" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgvDAto0Wc5eqXkx9aPilXK-xwhSAIXonOH9LZC8Ema0H8opXkpGm_BUxGjC72TiIq7As-pDSfgdlzhe_AgrXOxNwVEiO8aTRjtNMhP6CE5VXRQlLIppsVyJNEzxRIt8yzwSr8/s800/IMG_6650.JPG" width="640" /></div>
+<br />
+Un weekend lungo a Riva del Garda significa due cose. Relax ma, soprattutto, di nuovo in sella con lo Smilzo Veloce.<br />
+E quindi eccomi qui da Mecki (mitico bar ciclistico di Torbole, fondato da Ivan Beltrami olimpico su pista) pronto a partire per un classico della zona : il Passo Bordala da Ronzo Chienis.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" data-original-height="355" data-original-width="598" height="378" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgXsO_ph1V5HB1Mrx6ajgAo42UKCBMSned2lV5quQ4KVvmGnr03JpYq29uUhrM6s5iDzZzgpGZ0lSgXlV-xL4iZyjXPvTk1B6cIZvz-u97IjHEXN_0_MfkRl826OGnsN3WQvt_t/s800/Dintorni_09.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Mitico Mecki</td></tr>
+</tbody></table>
+Si attacca prima la Nago vecchia : uno strappo di circa 1,2 km al 10% con punte oltre il 12%..<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" data-original-height="914" data-original-width="1045" height="558" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiYbQEAcXEmgruzDG9_e9e46Ioa95E4E67T7H-5oOkEdSm99vvE3YTXue1WtIb36LJ39hXZBY-gWF68Uk40HMJmA3lhTmu7QnWHQJSQbKilIOwAos-hJKIVOa9rAcHvJwHaABy/s800/15-IMG_2622.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">La Nago Vecchia</td></tr>
+</tbody></table>
+Ottimo per iniziare con un tranquillo riscaldamento.<br />
+Dopo questo antipasto un po' pesante si passa attraverso i vigneti di Nago pa avvicinarsi, dopo il lago di Loppio, all'attacco della salita verso il Passo Bordala.<br />
+<br />
+Si tratta di una salita lunga (sono in tutto 15 km di salita per 1000 m di dislivello dai 220 di Loppio ai 1250 del Passo), con una pendenza media di poco meno del 7% che si snoda fra i campi verso la Val di Gresta.<br />
+<br />
+Io la soffro. Non so perchè, ma la soffro molto. Sarà perchè la strada è larga e non dà l'idea di una pendenza importante (invece nei tratti più impegnativi supera abbondantemente l'8%), sarà perchè ci sono un paio di rettilinei bastardi. Fatto sta che lo Smilzo (questo è il suo terreno di caccia) va su che è un piacere chiacchierando, mentre io arranco senza fiato.<br />
+<br />
+E' una salita che si divide in tre parti : la prima fino alla fontana di Valle San Felice (punto di sosta obbligato), poi si sale più o meno con lo stesso ritmo fino a Ronzo Chienis; infine arriva la mazzata finale : gli ultimi 250m di dislivello fino al passo Bordala che sono i più duri.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" data-original-height="1200" data-original-width="1600" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDiLZO4I8JgA6nS1eEkP-McqYTDK3QBSKlv6Nh9wbF4_Zz3GsEa0WQU3BzsGE08GFC-GhaMvOVzIiwHbTmdGpK2brRhXJjZIoGWQ2yHHsmLyW7nVZjDgp4S-JpmoH6BkKmFv0e/s800/IMG_6640.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Salendo verso Ronzo&nbsp;</td></tr>
+</tbody></table>
+<br />
+In un modo o nell'altro arrivo fino alla fontana, che è vicino alla chiesa di Valle San Felice. Resisto con fatica alla tentazione di stravaccarmi sulle panche (che immagino fresche e tranquille) dentro la chiesetta per godermi il meritato riposo (eterno) e, spronato dallo smilzo energetico come non mai, risalgo in sella.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" data-original-height="960" data-original-width="1280" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5HxiAgNboYblVJWv5s7zGmlppZBJAs3VDcU1MXhhiYqr-YgnV2fPxPRKJmgvmdGazSIicD2AwO16DGngYMQ3jcsl1MoP6fgjGmCZJqlx_QKLk4z3PTTR51mTsQym0LVPg2Ql3/s800/IMG_6639.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Da Valle San Felice, io non sono molto felice...</td></tr>
+</tbody></table>
+<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" data-original-height="1200" data-original-width="1600" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinVbrx1RcxhZ0XeaZkcPskU6JhytS1NGkm6UOFibl_IyRduuKEw4-7S0xSFpcTSja9gAmdPE-2YYTplU9b71VZv5JB7H5aMw_2nrA1F4Ba8kHzLvlHffcWi2TXro6hMB8vEUqL/s800/IMG_6636.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Smilzo all'abbeverata</td></tr>
+</tbody></table>
+<br />Da qui a Ronzo Chienis va un pochino meglio: lo Smilzo resta a tiro e, anche se non posso partecipare attivamente alla chiacchierata, resto agganciato alla sua ruota. Ma poi scoprirò che era solo un inganno. Infatti, arrivati in paese, e in procinto di affrontare il pezzo più duro, commetto l'errore di dirgli "tu vai pure..io salgo col mio passo". Nella mia arroganza mi aspettavo un classico "ma dove vuoi che vada? stiamo salendo già molto forte!" E invece lui cosa mi risponde? "ah...ok grazie allora ci vediamo al Passo". Si alza sui pedali e scompare rapidamente oltre il primo strappo subito dopo Ronzo.<br />
+<br />
+Insomma una bella botta psicologica. A questo punto non ho alternative : chino il capoccione sul manubrio e mi preparo per il mio personale Golgota. Questi ultimi km sono davvero pesanti. Bellissimi dal punto di vista paesaggistico ma io il paesaggio qui non me lo sono mai goduto : odio i paesaggi verticali.<br />
+Supero a fatica gli ultimi tornanti in mezzo al bosco e finalmente la strada spiana verso le ultime curva per arrivare al Passo.<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" data-original-height="960" data-original-width="1280" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOYmZ-kzy79WyL-w-D9_atk6q7NovhF7GJA8DW_uGU_P5pHQvtb-ow8loszmDImnNCVBPrL_JrCaRn429cG0j8SrwqwMojK2Le6a-ibkY_5hZPO9fDwrKayrviOuTeHTK2VXMy/s800/IMG_6642.JPG" width="640" /></div>
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+<br />
+Intanto lo Smilzo ha già ordinato al bar e, anzi, si prende il tempo anche per una telefonata di lavoro. Tanto, che problema c'è? Mica stiamo facendo fatica no?<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" data-original-height="1200" data-original-width="1600" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgg-PkVCuY1FVhT7WulIOPWYliN57g7JTyLn8_T2A1St5Z-vr2AKHhDd220cBDNDTITbxY_XLtxWoFmv5IHn7xil9MDVNnt1PLBmONaeWJcaifPCIWxnYHNgDV6GtSnYrGI4kzF/s800/IMG_6648.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Smilzo lavorativo al passo Bordala</td></tr>
+</tbody></table>
+<br />
+Per fortuna da qui si scende e la salita per oggi è finita. Ci aspetta una lunga planata verso il lago per chiudere questo giro di poco meno di 50km con 1270 m di dislivello...<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" data-original-height="1200" data-original-width="1600" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiv_hrF3FFDQxVNC2rP3aXQRiDOW_V_skHwovtkW7yE5E0vaUVjLkeUIDOT7gOGGZK5Eob8TvDChdbyY1Y7xZjTE-kSmcPd_zMUrLzWWaWK9xQbUW0fMAOkwMRwdwrPFe_DMieI/s800/IMG_6641.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">LA discesa verso Torbole e la fida C50</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" data-original-height="1600" data-original-width="1200" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj62aprmaYShdSHD1qT293PnSVL0RNNe6V3EGBxwrx0YKVT82eOVDdVJmWLbeipIPTmVU8l9YZxXtWOn69ExTpt-vIVqBYhf4leqVUxbiNKs_EdWprqvaQfxt2UzorqvDKckfRY/s800/IMG_6649.JPG" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Vigneti di Nago</td></tr>
+</tbody></table>
+<br />La mappa:<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" data-original-height="397" data-original-width="867" height="292" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhubWhTvaIArDqXsZ-eciPAYKLWOKwMbNla8qy3KHHtP0izK-6hqe_Vd4-hqBk3nUa55lSMqQJgTFVPx3pcNUe68MqL8ghzsrAFrOAY0eL7_yImjMvh7CeuQwax0GTE2T2scFcP/s800/Schermata+2017-06-04+alle+15.36.51.png" width="640" /></div>
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+<br />
+Il giorno successivo lo Smilzo mi convoca per le ore 7 (sette!) dal mitico Mecki. Ho un'ottima scusa per declinare l'invito. A quell'ora io di solito dormo ancora della grossa. E così decido di farmi un'altra classica salita della zona : la meno impegnativa scalata al Passo Ballino. Che sia meno impegnativa si vede già dal nome : una salita che passa da un paese che si chiama Ronzo non puo' che essere cattiva....<br />
+<br />
+Invece qui si parte da Riva e salendo con dolci tornanti verso Tenno si arriva a Ballino. Insomma : uno bellino e l'altro stronzo. Voi che salita preferireste?<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" data-original-height="1600" data-original-width="1200" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir5BaIQqynhlz9Xy4BYMbNLTnZGpY8plEJYPTdzxecxSd_z05vMdKym7hm2HB97BgB50OO1iSBLB_aS_trCCZ-Hvja2yTdpwAv2o86Xb7E_8o4fzdUmSthaThEKHlzzu7cRQUo/s800/IMG_6658.JPG" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">La valle di Ballino<br /></td></tr>
+</tbody></table>
+Io non ho dubbi e quindi ad un più potabile orario (830) parto per il passo. La strada sale dolcemente (siamo al 5-6% di pendenza) su agevoli tornanti in mezzo agli ulivi. Dopo una decina di km e circa 550 m di dislivello di arriva al lago di Tenno.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" data-original-height="1200" data-original-width="1600" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhaX_onfLOWDZxO9IN2Qje-t0bb-AygL2f8OhrIOu-PVk6nz94IzZS88-W9X7ZwFT5msi_VoH68MNVxsOFRGMXoFC85Afhv42iVj11LOFRAFEJkrwn8eVl0NdT8EMhfdc55Q4DI/s800/IMG_6661.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Lago di Tenno</td></tr>
+</tbody></table>
+<br />
+Qui : sosta fontana e poi via per l'ultimo strappo verso il passo.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" data-original-height="1600" data-original-width="1200" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLQ62E-37KaUHQlSVQ6DqtTDx8QBtwkBTKQZJbbCUNoM-Rx9xD9Vh8ocyAnxY9GcASfEJxsNIXQXM46J8RkUOLiofuIvq4jXU0qS-a-ZWO_lxPNtv93dczrR9yWOvP-J4xRhLt/s800/IMG_6655.JPG" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Il passo.</td></tr>
+</tbody></table>
+&nbsp;Alla fontana vengo superato da un ciclista che sale abbastanza allegro. IO che faccio? ovvio : mi accodo. Poco a poco gli rosicchio metri e alla fine lo affianco e lo passo su un tratto in falsopiano. Arriva il primo strappetto prima di Ballino e lui mi ripassa in tromba. Orpo! Avevo davvero calcolato male la concorrenza. Ma dopo il sorpasso vedo che resta sempre lì. A poco a poco lo riprendo e lui....ZAC! mi ripassa in tromba proprio prima dell'ultimo strappo. Qui le pendenze sono &nbsp;rognose :'è un rettilineo al 10% che punisce l'incauto ottimista (e io sono sempre stato ottimista e pure incauto). Ma questa volta anche il mio compagno è stato ottimista e infatti vedo che realizza con disdoro di essere stato anche un po' incauto. Io, che conosco il pezzetto e so cosa posso pretendere dalle mie scarse qualità, decido di buttare il cuore di là dall'ostacolo e mi metto a spingere culo in sella. Lo affianco e lo passo facendo una fatica bestia per girarmi sorridendo apparentemente senza sforzo.<br />
+<br />
+E' la mazzata definitiva! Sento che ha subito il contraccolpo psicologico. Questa sì è vera e fine tattica psicologica. Ora basta solo tenere questo ritmo per i prossimo 500m e è fatta. Sì : riuscirci....Smetto di guardare il cardio (che fa beeep come un pazzo) e cerco di tenere il ritmo molto superiore alle mie possibilità. Alla fine pero' il cartello di Ballino arriva e...sono ancora vivo!<br />
+<br />
+Da qui c'è solo il falsopiano fino al passo, il mio terreno. La soddisfazione di raggiungere il passo da solo è direttamente proporzionale alla assoluta inutilità di questa competizione tra scarsi. Ma si sa: il ciclismo, vedere i paesaggi, godersela tranquillamente, lo slow movement etc etc.....poi uno ti affianca e scatta l'effetto volata alla Sanremo.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" data-original-height="1200" data-original-width="1600" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigasAYmDwspwgOZX2O1H8PbCD4PBX2pBj7aHgDs7V_6zE1l9PsvBJDHe8doeS85OSB8ZaiJCgZ_So75Wse2O90LCoLAQIJNl3sYlta8ZFG6lEfKOR3A2dhhZsadihZEQF33kLa/s800/IMG_6659.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Ballino. Bellino no?</td></tr>
+</tbody></table>
+Il Trentino è famoso per la cura meticolosa degli aspetti paesaggistici e di tutto quanto ha a che vedere col turismo. Ora, la strada che sale a Ballino non si puo' certo dire molto importante, anzi. Facendo la statale si puo' arrivare molto più in fretta stando a fondovalle. Ma non importa: ogni strada va tenuta come un biliardo : e quindi anche questa strada secondaria è stata completamente riasfaltata. E così scendere verso il lago su questo liscio terreno è davvero il massimo.<br />
+Il giusto coronamento per un breve giro di 30km con 700m di dislivello. Ma proprio niente pianura.<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" data-original-height="1094" data-original-width="979" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqqrYmvY_gv7TT-ybtBdkYnGo6lqpD4KuukxvRW2rAo2UuF34ihCNpZG1PxPOAm2lxlHONs6BCElTCZqRSd5AS8Ygp4b9K8z0lyBr_wXQpBoO7M3QO3E-gWydDyqmOf00jHYkA/s800/Schermata+2017-06-04+alle+16.05.17.png" width="571" /></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20170409_206.html">Quattro amici al bar...di Bettola</a>
+    <a class="next" href="20170923_208.html">La cronoscalta più bella che ci sia.</a>
+  </div>
+</div>
+
+</body>
+</html>

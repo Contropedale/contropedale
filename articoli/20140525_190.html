@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ned Ludd forse non aveva tutti i torti, ovvero : dell'inutilità del cambio (se hai la gamba, però..). – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2014 &rsaquo; 25 maggio 2014
+  </p>
+  <h1 class="article-title">Ned Ludd forse non aveva tutti i torti, ovvero : dell'inutilità del cambio (se hai la gamba, però..).</h1>
+  <p class="article-meta">25 maggio 2014</p>
+  <div class="article-body">
+    <div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZdhTJ5vreZtlSIv59N_T7RVSjt18rfKh7PtNXuxpusyrkxlZe-z2LgxRfrodZPCP6RPaHGHUWkC0hikNa5gxuh9Q8D9uYYfL_PxvYQozOXWeD7NS5tr3ajrK1NPB-b3nuLSrI/s800/IMG_6330.JPG" height="140" width="640" /></div>
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: left;">
+La corsa &nbsp;della tecnologia non si ferma, nemmeno per la bici. Cioè, no : a volte si ferma, di colpo e senza preavviso. E uno si trova in mutande di lycra e scarpe da papera e deve tornare a casa.E pensa che Ned Ludd forse non aveva tutti i torti quando distrusse a mazzate uno dei primi telai meccanici per cotone... chissà cosa avrebbe fatto se fossero stati &nbsp;elettronici!</div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: left;">
+Andiamo con ordine : concentramento alla piscina di Travo per un appuntamento "hors categorie" della Moroni Adventures : la scalata al passo Albareto e al passo Crociglia. Convocata la "creme" della Moroni Adventures (si segnala la assenza giustificata di Andrea e Nica) : Ben, Giovanni, Rodolfo, Amedeo, Carlo, Martin, Emanuele (the train of the low female - detto anche il Treno della bassa), Renato, io e le mie giberne e , ovviamente, il CEO Giorgio.</div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: left;">
+Partiamo poco dopo le 9 e puntiamo subito verso Donceto e i piccoli saliscendi scaldagamba prima di planare su Perino.</div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: left;">
+Ma dopo poche decine di metri Rodolfo ha un dubbio : i casi sono due, o mi è entrato un grillo nel cambio o l'elettronico DuraAce ha deciso di scioperare. Ci vuol poco a capire che la risposta giusta è la numero due.&nbsp;</div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: left;">
+Il CEO convoca la truppa al capezzale della specialissima, ma nemmeno Emanuele the train (peraltro visto da me "rimboccarsi" da solo la catena dopo uno scarrucolamento senza scendere si sella e fermarsi) riesce a capire bene quali siano le rimostranze del grillo : tutti guardiamo un po' intimoriti lo stolido cambio elettronico che si limita a frinire in modo irritante senza dar segno di voler far dil suo lavoro.&nbsp;</div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: left;">
+Ora, chiunque in questa situazione avrebbe girato la bici e se ne sarebbe tornato a casa con le pive nel sacco. O meglio, quasi chiunque. Infatti Rodolfo (anche convinto da Carlo - che peraltro ci mollerà a metà giro) decide di continuare : si limiterà ad usare solo due rapporti : uno per il piano e uno per la salita, fermandosi a cambiare con una solida manata al cambio. Impresa certo ambiziosa. Si riparte con la certezza che ormai le gerarchie sono definite : contan poco gli scatti in salita e le trenate in pianura o i volatoni ai cartelli, se Rodolfo arriva in fondo in queste condizioni è sicuro dominatore della tappa.</div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: left;">
+Tra Travo e Perino, Emanuele ci istruisce sulla evoluzione della bici, l'introduzione della ruota libera e &nbsp;del cambio. Pare che nei primi anni del Tour i ciclisti si rifiutassero di usare la ruota libera sostenendo che in quei tapponi di 300km anche in discesa bisognava pedalare, altrimenti sarebbe stato un tradimento dello spirito della bici. Temo che Rodolfo avrebbe volentieri tradito lo spirito della bici seccando il grillo nel cambio col diserbante, pur di tornare ad avere almeno 5 rapporti.</div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8Um4hrfXz4G2KY0Rs0WHeWeRmcuPhsniYxJqmv7qGaRgmV5vAJe2U6H8BBaP5Ss7iekz3VfhYQUIPRjVC5-Z1dPW9Giwk_TlxP4NSh8R6wDQRzIAMzMuyZvj5ztMvRDQe9Qp1/s800/DSC00153.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Locomotiva Ema</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhwR_vU0bEYjZIf8j_xLuIdUHGGQYBuVQK0uCx_WI2ITQvhsz4LwiP9Lm1NFs023spWhMOgDK_UJ4Ejb70GPscNI33DVp4h3Vt_nOQUeXs7C-t1HoDEbt8pWqDxAz64jwEy-OWo/s800/DSC00155.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Ema+Renato</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCHaRT-6YnQ6pPEQrr6OOGf099uFIWXkO4e4Dfop7tsuEQIbDH2bsddCCKHLICqxDdJlyYw2qenX-8jTgIRB76uTvDIKfO59onSQYHcn4c_aElQpxAgU1rmgTiro_VtOSYk-Sg/s800/DSC00157.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">MArtin</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjV66frvBtogwR4goO4EsxWHMr_NkJHftBilZK8U4jtXogereoJJwvL2_izp_bMXpJF9V6lPQNWxcLYt9DE862IUTRCFx0UvedEsjie2yqY0yYbZYLUUrEPZIPCchuzMYPhM0K-/s800/DSC00159.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Salendo verso Donceto</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7RC7pFtlx-ejFR_D1ejgwVvHpBtAVXJ2N-iTcdZmxzXRNb9o4D6H8HnuVyjwXI9QJB8qOI37UUT3ITPt8wSgRhmNmh-PhZelQ0qgoiUJSW_5um0IBFBDUobVuyyy7CkTIO30U/s800/DSC00164.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Il Trebbia</td></tr>
+</tbody></table>
+<div class="separator" style="clear: both;">
+<br /></div>
+<div class="separator" style="clear: both;">
+Da Perino si comincia a salire gradualmente per puntare verso Aglio e Pradovera. Il gruppo procede a ranghi compatti fino al bivio per Aglio dove la strada comincia a salire per davvero. Aria limpida e sole che comincia a scaldare, si va su come sempre "in amicizia". Il che significa che Renato lo smilzo mette subito alla frusta il gruppo e allunga con determinazione seguito da Martin. A metà salita compare su lato strada la testa di un tasso (morto, chiaramente, ma la testa era perfettamente conservata) : Martin osserva che , in quelle condizioni, non poteva che trattarsi di tasso fisso.</div>
+<div class="separator" style="clear: both;">
+<br /></div>
+<div class="separator" style="clear: both;">
+Si vede che la vena comica coincide con la vena ciclistica, perchè dopo la battuta Martin accusa un chiaro cedimento, forse anche frutto della sua tattica suicida di sfida allo smilzo veloce. Il gruppo è ormai sfilacciato e giungiamo alla spicciolata al bivio per Pradovera poco sotto quota 1000. Prima sosta e punto tappa : Gugolmaps Ben istruisce il gruppo su indicazioni del CEO che sta recuperando fiato a seguito dell'arrivo in volata con Ema-the train proprio sull'ultima rampa più rognosa.</div>
+<div>
+<br /></div>
+<div>
+<br /></div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0q5KodV_RnAoOthbDnAnI2uKSfSMtpblUUZJn_ZFePZatMFviPermka-FlURK8hH1X9vNwzU9FsKlOF4UODve6aM4W6ni-XNQQN_lDKDp1lL3Vpg6oXWYJby1TQObVXs5VmlH/s800/DSC00167.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Gruppo in scalata verso Aglio : da sx Amedeo, Carlo, Ben e Rodolfo col suo unico "rapporto salita"</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvv2LfmPg4kEdjzILiP6ht9BxYfvLvbNMybmPLskukwLTJVWKkIcKxutmgxxK3xWefD3at6ZoyOGiuxfOMAEr07IrYn8nI_QxXzMZqVY-nvjKgnS7QMZ2pEQzzHMAAEBaty2nv/s800/DSC00168.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Martin, Renato e Emanuele, dietro : il gruppo&nbsp;</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiRJjYBmc5QIpZSeBX58bPrpFGC-cz95DGm00iFZZy3j48sD4cEZUIFXhJdSzdpVBS-wi2naEEItKifFmZBy9rqT9RRUcAj_kLKovxZp2yOPYK1ts7z1c8HGSO0QEaiGyJnF-GB/s800/DSC00171.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Sotto Pradovera</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjL7DRbuD2YJ83WC7hpShJUmPdyg4TJm7pA0gh4Z-OaXPItEHlgMakcFmq3RgwdztpXtkmTXy8j7kp55gZ_9UkGkrv3uIFIxc0xEnyjrmAkTYE8IMv67xWhmfz4k5Gw-HcWeJsz/s800/DSC00172.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Due lettere sostituite (RI-GN) e la religione si trasforma in crapula</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZaCvsqwshD02np6tKk2ppFfj4XQ59UqKVCLZGejUaKcMJnBS1a9qBGJqnnM4bWMabwit9QWBkKas8xFOB9wCMZnPepq6SHLxNrryeO_INLaW3AusLzPesRD1gGa2Xm47iGh4x/s800/DSC00176.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Emanuele e il CEO Giorgio in volata&nbsp;</td></tr>
+</tbody></table>
+<div class="separator" style="clear: both;">
+<br /></div>
+<div class="separator" style="clear: both;">
+Dopo un breve tratto in discesa prendiamo a destra e saliamo verso una sella che ci porterà a scendere su Mareto. Qui Carlo ci lascia e rientra verso Travo. La truppa riparte macerata da un senso di rimpianto invidioso : lui aveva solo discesa prima di arrivare alla macchina.Che culo....</div>
+<div class="separator" style="clear: both;">
+<br /></div>
+<div class="separator" style="clear: both;">
+Non è una salita regolare, anzi, per di più il fondo stradale è spesso molto rovinato : ma ogni tanto si aprono ampi scorci su una valle di boschi a perdita d'occhio.</div>
+<div class="separator" style="clear: both;">
+Da Mareto attacchiamo la salita verso il passo Albareto. Ben il saggio ci avvisa : occhio che il bello arriva alla fine. Ma non importa : ricominciamo subito a salire i"n amicizia", il che vuol dire scoprire nuove vette di FC sugli stupiti cardiofrequenzimetri.&nbsp;</div>
+<div class="separator" style="clear: both;">
+<br /></div>
+<div class="separator" style="clear: both;">
+Io decido di gettar il cuore di là dall'ostacolo e provo ad &nbsp;allungare tenendo la ruota di Renato smilzo-veloce per l'occasione in tenuta swiss. Mi affianca Ema-the train che pedala bello composto quasi fosse su una còte delle Fiandre. Si va su belli spediti in mezzo ai prati, poi, all'improvviso, Ema si alza sui pedali e &nbsp;allunga come se non ci fosse un domani. Fatto sta che il domani c'era , ed era anche quello che aveva previsto Ben il Saggio : 2 km con punte fino al 15%. Lo smilzo procede, Ema si pianta e io decido che oltre al cuore di là dall'ostacolo butto anche il polmone destro per tenere lo smilzo a vista. Dopo l'ultimo aspro strappo arriva il passo. Di fronte a noi si apre un panorama ancora più selvaggio : foreste e boschi più in giù sotto gli alpeggi.</div>
+<div class="separator" style="clear: both;">
+<br /></div>
+<div class="separator" style="clear: both;">
+<br /></div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfDfR8P3WNvQsPMJIZHkLTKvo0D9NDM3MPj3_SAzGr6NxD8cYjlCjJeLU_AC6Ah96nNPa4wVfjBlaaZsr2OxFWiH149uPgq1JxaTwnIyiYKcN9q-m_XFHHWQJBzojYCqjkk-BD/s800/DSC00178.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Emanuele, Giorgio e Renato</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjokPj2ceHlyZTmM78sGDXUa_uu7h9jhAxkr8rOoQ_0Igp9645Iq0W8l-pJMcmXawJcweb_oJWegSpBKUNW5EbsqjbjGc8Ni03DOD47-V_YQ7Ox4_vXNZRkn8W2wrTOL4t1pJe5/s800/DSC00180.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Sopra Mareto</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhRZ8Id13_SyB2UDygG64vVCA5zctaLJHI-9LinD4MVXCYNLh4LNIqailjSHnK63s1TzEbi3b1NaXipruLLt-YB7kRPmrDdzY0uLdyxjgWNAemGjrFc0My1xYT7vNz2tu1rqcj/s800/DSC00181.jpg" height="640" width="480" /></div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi42fk0_le8rqK55Rhs6FEowpwm_YwnA_90V34daPQm-rEtvPeMeSomIPLXllDKJBI9WWHAuEpN4XpmOhToy1HjAAB8A7MS8PBVAKa0aypvG6-x9u_CkerIS4fuZ_rD2aevGM6y/s800/DSC00185.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Emanuele salendo verso il bivio per Mareto</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiL7AFX0mTpC9pc4YdLwn9HhzJtjnM9S5zinQNJJmCuSQHnVvM-6ZJqOxG9IDo4fv-PdHqVHzZ-x0iREL0BhMRLak03pzlJmQ3MBvB4PHgiJ85Y57TzyK29eq4fmA5Lhzl_wCRU/s800/DSC00188.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Sopra Mareto &nbsp;il gruppo : (da sx) Renato, Ema, Giorgio, Martin, Ben, Rodolfo, Amedeo e Giovanni</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLA6uvyisQ2-ybP-Ra-RHIVU7ZiHWrx3glGkAeePrFgwS0-7Mt_uysj2IGTVVdBzc2-BDOkQLNVdoFTuRlsOU6zJ76unhH-Q58m-k2iUL3_oq5LJ-In4HVorMYQaa6eDwduR7N/s800/DSC00190.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Autoscatto (perché dire "selfie"?) a &nbsp;Passo Albareto (incomprensibile e idiota sorriso del gibernauta)</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDknmpO75HFHFsxlSdR7hXkvPtRAH0trd1NLrIhW7406wgihNW4cwwCCT9vfw8sUdLSew7pC0pCIOvkdrpQeJVQ1knMO2PCGKgYhHjiZ_mso-xb9vFWGPaTgi1GGm7nqy4hsHv/s800/DSC00191.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Auto? pochine....</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_EyG4Rxq7SwVDI-Q_DbH-oPJ0Lr0tcrtKoo_KmI5bry7GVdx1gWfPOflx5aARakkn1jkGV6d416dLmzcO0x6zsAeGtzvpBosK9oZr8v_Ih0TIg4_tluMxWmq0cEqagLHMxytB/s800/DSC00192.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Renato, Giorgio e Martin tutti provati dopo l'ultima arcigna rampa del passo Albareto</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEif78bvCEmdW3W1v5W8muP3ZEAaijnYeR2ktO5NLxoXWjl5PkMUlcRwqE6EsAyQU3ZbLgaZ__zE6V5vvil2OCWjRkTB-psW0FsjrnV3rgWMEs9gI9KG9tsv-ijf8a_sx1PUM77P/s800/DSC00199.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Autoscatto scendendo verso Ferriere</td></tr>
+</tbody></table>
+<div class="separator" style="clear: both;">
+<br /></div>
+<div class="separator" style="clear: both;">
+Da qui inizia la prima discesa seria della giornata : si scende fino a Ferriere per una decina di km. Prima in mezzo ai pascoli, poi la strada si snoda tra i boschi e infine si apre sotto di noi la conca verdissima di &nbsp;Ferriere a cavallo tra Val Nure e Val d'Aveto.</div>
+<div class="separator" style="clear: both;">
+Ferriere, come suggerisce il nome, era posto di miniere : wikipedia dice che :"La scarsità del ferro che si riscontrava in tutta Europa verso il XII secolo, indusse i governanti a sfruttare le miniere in considerazione anche dell'immensa estensione boschiva della zona indispensabile al funzionamento degli alti-forni." E in effetti le foreste hanno resistito agli attacchi secolari e tuttora si estendono fin dove arriva lo sguardo.</div>
+<div class="separator" style="clear: both;">
+Ferriere è la base per l'ascesa al passo più duro della giornata, il Crociglia, che arriva oltre i 1450m. Ci vuole quindi una strategica sosta panino. Si sa che i minatori son gente dura e infatti Ferriere non è che si distingua per la rutilante offerta commerciale di bar/ristoranti/pasticcerie. Invadiamo senza vergogna l'unico bar in vista &nbsp;e diamo fondo alle scorte di focaccia-coppa-cotto-cocacola-chinotto dell'esercizio commerciale. Probabile il bar abbia chiuso i battenti per turno/ferie non appena siamo ripartiti.</div>
+<div class="separator" style="clear: both;">
+<br /></div>
+<div class="separator" style="clear: both;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgeF7_fFMMVuEhXn_x3UNqEbuUX6ifo0ru4DYbrDmacreT7eF8BOYawJvamMSx9ViIeOZsPU2UjnY8wYPlSJaqPJ66H3WufdWiXn-GeisnYM_Wtm0aOFrv1injAKoo0TmvMBxDD/s800/DSC00205.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Ferriere</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxGO4xOE5A9GwWYU5-J3YvcOFs7_NLAAvYxL1awJSTCPUDMdL95jpwTFyof_97yLTMP4feZWQvoTfdSQFXcTaCBIcHne3WQkjBOyYJmUn-HHm5hva7SMEWPNRDIjhuvtpNygja/s800/DSC00210.JPG" height="480" width="640" /></div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiQAKfFfDdrma0mVLJ6eM1ockoZYmGJZSnwGjyj1W7agkevaiNnNN3E2CdQhu5HCzyvtIx93vwZui2SCQXYcWbLcjhroMyRYL_1UpDcwYe6w5odAYx8qhc1JerXd88MguuTPoJZ/s800/DSC00211.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Martin studia la geografia del luogo....</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFSNogOugQd946RrxZ5pTjeoJLGDT5ZMpqOF45K-ILz3udL29dA14_7wmCj2xT_Jvax7sYwzdkD223T31-ORMqmHoisFVU6_kY6rBm34YDr_YykfYuVu4TFZxR3UghUODQIlqk/s800/DSC00212.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Involontario accostamento scultoreo blasfemo....</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYG2E9cYIOTxTiGRVVutzAwkXp3KNfc5lgvF7tZOxTmJMyj7SuKkrxv__dzfw8IGQEOqoEeAEEPoLbYqFVQHTwjGRnTcKhDZOPnNA_b80cWI62xagyh7FGFrCBIMoZsKvzLJl2/s800/DSC00214.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Messaggio commerciale in cui il doppio senso è più chiaro del senso.</td></tr>
+</tbody></table>
+<div class="separator" style="clear: both;">
+Si riparte rifocillati verso Selva e la successiva scalata al passo. La salita verso Selva è di quelle "pedalabili" e infatti si va su belli allegri a 16/17 kmh. Ogni tanto a lato strada si aprono delle piazzole su cui, come per dar ragione a wikipedia, &nbsp;compaiono estese cataste di legna : un chiaro messaggio in vista della progressiva lignificazione delle nostre gambe.</div>
+<div class="separator" style="clear: both;">
+<br /></div>
+<div class="separator" style="clear: both;">
+&nbsp;Da Selva pero' si comincia a far sul serio ,sono 3 km a più del 10%: e qui uno scopre se dal bar è partito rifocillato o impiombato. Io ho optato per un modesto toast (ultimo della personale riserva speciale della barista) che in questi momenti di pendenze ben oltre il 10% decide di ripresentarsi per contribuire allo sforzo. Dopo una breve lotta col bastardo armato di sottiletta, riesco ad avere la meglio e con un borborigmo selvaggio riprendo a salire agganciando lo smilzo che nel frattempo si era messo come sempre tirare.</div>
+<div class="separator" style="clear: both;">
+<br /></div>
+<div class="separator" style="clear: both;">
+<br /></div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGSoMHcxmA2aQHn6cF6UZQ3CaRwRGdZCPyjdu6mHVZk333NNqurHE0WkAakQiz565rXBNO3TzcctIuPR-XsohZ5eHayqFjIDQPmLf5CjHax-sFe2bdeEitzzm0OV-vD0cos8XR/s800/DSC00215.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Residuati ciclistici</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgCSwKHWFcvOPs-_JJEJJXinlkJIVWYtnbVUnRhlj5gL0Vb86Q9tQvKrnp-ZUyr51596hjxRluJMhg1b4q21M8eks_FF1BtBVI48D_lJyiNWG46t5d-mW3Go8lP-jzEIsI_yRz/s800/DSC00216.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Salendo in amicizia</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYGqjJ7Dys6P4QiN7hEzSjBwKRWfXBmJpW7fZi-4yE8RtoA2ZgAUnhhX14lRDg3-gQIGkDFJhl2AM6lU0UMenj7w6gU3hYvuapPG4y7zx-_Dp8X5CeUwOgSsRInTMknUcxDFdL/s800/DSC00220.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Si sale verso Selva</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4zc6CMnr5ng0dNrEiSM9pIkU1LG40Mv7sYgRSZqyUdoajNIp6NoeJICyt8LjCUU3cXxZXPvF95xjqk8xJ11UcTMqoMQtPSDmvVoksf7C62j_ixG5vH5Kkwam1QqUABHx_lEgL/s800/DSC00221.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Si avvicinano le rampe finali del Crociglia</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYtO6ibU3E390pdIoU-or9nzU7iT3UQM-Lw3KWueZn8sRIUodO2c6lBKV8aj4RNZvy5wNR-0EWiS71lPRTvsWhqqcOIp50wbDcUV3H6RhgyiP4Fh0jsU9gF9wMGndDcCdFEoWW/s800/DSC00224.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Panorami spettacolari salendo</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghMvWT902QrfONBwEB5KchWH5JIHFDdR-LFXhc5WQNTD9ZYov83gMBMy4zJvb_-sdL-wPo-ggOm5pB6ez5y4fthoDfHXTpd1jINsDJZtJfvYisA-8W5gFn3Ys7K0dBUHuvSuZx/s800/DSC00226.JPG" height="548" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">12%? di più..di più....</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSejTGb1OPdNQCvKGEefhz3A4V-5G2IbdKXRuW8vL1EyzAW1A-XHE4rEY3Y1ULSzmAjQO5xkzXDLT6hfPprYxwFVnmRheWhfTY5SkepzJNYbcx0OfwWQmJJKYbjEKxhcOzWpJC/s800/DSC00227.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Aggancio lo smilzo</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIb2HxgVeDR6unuVYbhLOEN9UhKu1r4vRXGxs5AkqgDu2lHS6Q53615I91I_h6CI18zOiQER6uxMsvr-J0jyHdVaJgFN47VQg7PEmX3Y6F9obucDQgu6U1EPchL-Q2dx9Le33C/s800/DSC00231.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Autoscatto sul Crociglia, Emanuele lì dietro sta lottando con &nbsp;il focaccione, io lo ho appena sconfitto</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUO3Pw0EoiUU1g8HuoEBR7363zq_2pTwpgw1UREIo6TroLpoXKqyYjOh-Ghdjvo4ihaSGdh2gNNyut_XUhRFperhzBKmVX-HVCZbZzdA0PxSHyPGVPYfvt-olECjASg5Tuzbt_/s800/DSC00232.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Non ti mollo.......</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1f7mzV0202Zlf40iiLDr4kDwBB3GZoUGymOSNIlrpCVJLEyvE1xhmZqqpxhbS2bZYD5HeSBa2nz7D6bxNzOscR9p3L5Sx91NOFhd-Kzb9jCXYNq9zguM5VW875bVxcBMiMIPh/s800/DSC00237.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Panorama a Passo Crociglia : la Ciapa Liscia&nbsp;</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiztjXjp1IzTURXoiy97Y8xkxjLok7DY9YBRy6tgDLfQOVuLgdS2F_kBeb2bacbEdsWlKTYcJc8sH_3q4k48GhdA3VsJAMB6DMyt25S5zW2o3316bShmWKcPPHTu_-W5YVX-Dsw/s800/DSC00241.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Il CEO e BEN si complimentano con Rodolfo che ha scalato il Crociglia con il 25 (e col grillo parlante nel cambio)&nbsp;</td></tr>
+</tbody></table>
+<div class="separator" style="clear: both;">
+Arriviamo in cima e anche qui il premio è un panorama spettacolare. Il CEO, che arriva in grande spinta dopo Martin, annuncia con gioia che da qui è solo discesa! Aspettiamo di ricompattare il gruppo e puntiamo la prua verso Torrio 400 m più in basso dove ci sarà l'ultima sosta fontana.</div>
+<div class="separator" style="clear: both;">
+<br /></div>
+<div class="separator" style="clear: both;">
+Altra discesona in mezzo al bosco e dopo aver passato Boschi (nomen omen) agganciamo la strada che sul fondovalle corre a fianco dell'Aveto e ci riporterà verso Bobbio e Travo. Da qui a Travo sarà una lunga trenatona a tutta manetta (bè, una manetta proprio cortina dato che le gambe sono ormai belle che spompate) : il CEO Giorgio sente la responsabilità dell'organizzatore e, come buon cane pastore ,si prende carico dei suoi clienti e li scarrozza negli ultimi km guidando il gruppo a quasi 40 all'ora. Diffuso senso di gratitudine nei confronti del CEO che si spolmona pur di difender il buon nome della ditta. Siamo di nuovo alla macchina dopo poco meno di 7 ore di salite, discese, soste e volate.</div>
+<div class="separator" style="clear: both;">
+<br /></div>
+<div class="separator" style="clear: both;">
+Ma Rodolfo? Ebbene lui e il grillo nel cambio alla fine hanno tenuto benissimo il gruppo, con buona pace di quanti, sulle rampe più dure del Crociglia, &nbsp;rimpiangevano di non avere come rapporto posteriore il 40, altro che il 25 su cui era costretto lui! Non vorrei essere pero' al posto del suo meccanico, quando lunedì si vedrà arrivare il DuraAce con grillo frinente incorporato..</div>
+<div class="separator" style="clear: both;">
+<br /></div>
+<div class="separator" style="clear: both;">
+Alla fine 115 km e circa 2400 m di dislivello macinati a 23 di media. Salite solitarie, foreste a perdita d'occhio, le gole dell'Aveto : la Moroni adventures non tradisce mai.</div>
+<div class="separator" style="clear: both;">
+<br /></div>
+<div class="separator" style="clear: both;">
+<br /></div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhX9eHhF4wgr6oI4nMeCQoeJ_7i07sz5qz5gjFWUHnX6AX_DOZxhtwewoOMaL0xMt9QZAsBOaxHFEVTwJql6y0ojdi02OJxMOmt9D2E8zKJCUqjMJ0szHBbhXUmsdMa2DG0mDgO/s800/DSC00242.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Val d'Aveto</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCTbJjtye5d0bEApQImqL0bp7XUpz66BpqzaZn79Onyol8SpA3X5Ok90WA6S5D_iuj3X6Mw_yqtXW_GlOnTrVQrVnGybs_i8pWXyn4NOD_JRmdxZEsOGAvkyhWDtdfkXilotMI/s800/DSC00245.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Scendendo verso Torrio</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiE_tqVbf1obw2TS9FRkZV9mh73rCPFk4bprwCRNppD9tO399i_cKSP1ks7TRXSBB2PbiHF6mQMwPBqJ4A5E-uke4iRvRG1DdbEdp_OEwBHMcEluHVkKjm8nR-48sVn8EZP0yK7/s800/DSC00248.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Lassù c'era il passo Crociglia</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-tZmv6556iUrsH0NxqJWFjsmzqP36iNago2u4mDWhd02do6pBiK6nbORlDIenTD0D8fVXwpm5Qjj3NgAaGXyHRm83M9jgT6laiqCK9QpmZpWORW6ONLJi_bA02jBqPElYOh_8/s800/DSC00250.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">In mezzo ai boschi : Torrio</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2FPIocCHebh575MfDc6T_PBvSEUIJW4y92kVZtMDTlGS1Bch3cxaWb0hW41jOGXR6ziH0QiDkZupF87yt98yWDAZ1m5XBp7vB7DiQFPdiBsvzLW6hmrbV6xDAJLF_RmiJjCQ_/s800/DSC00252.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Martin studia la possibilità di eventuali offerte votive in vista della sua discesa suicida fino a Bobbio</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3m_wSu4s-DszbBGMWV-rFsSWljSW8c2Zx2KFMfNpaORb3_swewpP_OSK6jUR_wqlDs0WIi0zgf0GEr94QdmEhVeDmQCpbx7xgFmC-wswQh3U0ap41mNwtiqH8irFfdg5X2s03/s800/DSC00254.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Torrio : un paese in salita</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrLOI2nT4prcZNY9Jd6NUfVNQ3hjgTk0aoq3fxO5CtbqVA_lZMiUPoXuB6_jeBngtkf2wX04K5C1RDnpcZMsarpjI0GGQERlrhh7Ce38-OhPL4xZbVhpOo-OMqy0jhyEeTs1M3/s800/DSC00255.jpg" height="640" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Vista rinfrescante vicino alla fontana di Torrio</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhf2h0YFB0pQd_ZnHchZRouZWPtBOHIdEIQCe4i-21bnDQp6KDFmTtQGVB2bKfTOOVV3dAnq0yxIs9GhKO3ctZUuWZ7ev5e4jcNT3w3gXECyE-3ryX9vjWfYc2Er1jo2rugF1fz/s800/DSC00256.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Boschi</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhu-AoYT2B2TkOLjSYpZkN30fefG1Uddk-JToudD4R12vcM-wXVHzHKbIHzbjXI9fOm4sVsEtnUPOu7WI6dnakxt60El-cu_9l8LnBsRWNDZbOb8W4a1tx802gQY1KzRV3do3DX/s800/DSC00257.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Tuffo verso la statale della Val d'Aveto</td></tr>
+</tbody></table>
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2LUwV2S4kDTHFSdGmAVcjpAYeMCt_2-14taChzoHF9_jVgD1ulAf3Yz53vwm94lRyeNRmDhpsMhyvAqqrcL0bBSdPkw2w_XmGfXHAqjEItfGcu8EcU_SHNz_nloiSzDmCEjt4/s800/Schermata+2014-05-25+alle+08.25.06.png" height="296" width="640" /></div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgPdeaATjlbL9b59teK8GKjf2HZWuZQNv7REmkqyxV9bmDByvQRE2VfPPY0m6mIaOrdstHT6g1XID1bBWU8uRb_PQmjg_xfDtVOeWm9bDc1cKUH7NKlbYxgDyiTj2HklgVc4vyO/s800/Schermata+2014-05-25+alle+08.32.24.png" height="394" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">La salita Aglio/Pradovera da Perino (al km 5 il tasso fisso)</td></tr>
+</tbody></table>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhpvgO-rnkB-u0tMSDalMzBG7UZ9uRH2gC9eiUg56BXvBh2a6G3TJ-xEXe2qBmF_4ncbavG2ZFT7GWG93QZZimQmKcsUNQmDMyVeME49YdRK6966YeH1kq05UbczAPgnfIzZDT-/s800/Albareto.png" height="516" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Ultima parte della salita a Passo Albareto</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjF9GtHpkI-smbusles-I0nwg0nUHNecBaXLbb7z6FPsnFIdfNeIZJCwPM8Btgvquw2C9IbE75PLT3-cOACWhgxX-2O3gTL_15kk3QjCPJytQhJqSvrDaE3zLqUF1u6_ithhdSO/s800/Schermata+2014-05-25+alle+11.00.18.png" height="308" width="640" /></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigYgzFoknqhus4SGZLHE5TDCUurXSXPcBs07zyU3ef_kHECr1K4lV1CD6RYGpVUgwodxnBcY1FS9GQWenXCqVFj4JKXQhwu9x1Qwpi3WvaSC6WvfpyzS-H7UFioBV2VcEcSbOv/s800/Schermata+2014-05-25+alle+11.01.02.png" height="416" width="640" /></div>
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20140518_189.html">Repetita iuvant</a>
+    <a class="next" href="20140530_191.html">Partenza dall&#39;Araba Fenice</a>
+  </div>
+</div>
+
+</body>
+</html>

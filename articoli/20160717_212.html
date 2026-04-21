@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Le vualà le Tour de Bleggiò...e apres aussì le Velò avec la velò! – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2016 &rsaquo; 17 luglio 2016
+  </p>
+  <h1 class="article-title">Le vualà le Tour de Bleggiò...e apres aussì le Velò avec la velò!</h1>
+  <p class="article-meta">17 luglio 2016</p>
+  <div class="article-body">
+    <div class="separator" style="clear: both; text-align: center;">
+<img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghv-1MRzJJYntIjfn7wVm8WholDj_1ZF03FcWM8KANND57jAg0DenGyoiB1yF52oWms1NDX8-mK-seWHl0tjJsd529cQjXF4NuD5rkfe6hxXPInnnOz1wtgf1_oanq6pkHgLMz/s800/IMG_3641.JPG" width="640" /></div>
+<br />
+Weekend a Riva del Garda = Giro in bici, possibilmente nel Bleggio. Anzi, vista la contemporanea partenza del Tour de France : si va di Tour de Bleggio'.<br />
+<br />
+Ed eccomi qui che salgo le docili pendenze della strada che porta al lago di Tenno. A fianco a me Le Smilzò "Tres Vite" pedala in scioltezza e chiacchiera. Io mi godo quel che si definisce, con british understatement, il mio bel "respiro impegnato".<br />
+<br />
+A forza di respiri impegnati scollino il passo Ballino e , dopo la breve planata su Fiavè, attacchiamo il Passo Duron. Il ritorno dal Passo è veloce e allegro, ma le nuvole dell'andata ci regalano un violento scroscio di pioggia che ci accompagnerà fino a Riva.<br />
+<br />
+Altopiano del Bleggio, roba che i francesi ci invidiano, altro che Tour!<br />
+<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiOOe-YLK1KBROKuyfQCA6M8JYGf1WIYfcsIE3WT0rQ3GJjoxUyIqHfQqUZ7AbtDAQoUoXYlXgMuchr035BOUjW-2jZ13WVVartO3rQglbXlsLB0-0t7LQ2YhJdfU200otXqk07/s800/IMG_3638.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Le Smilzò</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqfrlu1s4U3rgag8gO_l8sbnkDuuu4YI2nYL9c2O5_tttrsGoXxzdJbaF_gXFdNayPLuU9xNrEQlJ6_WCGVLHd3jJ7HeW6oxk3g5Q02XM4zyNgizj8b6p0r312YXv_vGPyuOVA/s800/IMG_3640.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Le Smilzò avec le Sgibernotà</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiasppXMbdzGE4xfWKWZa7IAlhQx0KzdiSO_lIOxrq5cTVRDjWsiA0dBcLUyHuDjoOr3ZXdE3LuZU6mab4VU7U7C7g_KOEJpq6WzSBQf8KorVizhheBowNIrLvmZe1kp_Lmo0ED/s800/IMG_3643.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">La velò del Sgibernotà</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBCp3JOMrkHosX2-1LL0d-eRek5i8WVBQvlodLeW65AFtlO9yUhDPkLN1Zoqu55ZUlOGrEMuh9_t4xUSVPfmYuPEp6olJ5ef7PQq7RPJY0zMa9LZLA-E1yu1MPVgiXqxVuwY03/s800/IMG_3647.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Sgibernotà&nbsp;</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKcc1SR0QrMlBT0VFBThWJsNqMc6GKbh8d_8glUTYrLNNE4R0_tN81VYbyDJC2lCKTAoSeu-geBCsCAqZgyn5PLdIGbcErNRs50T1SdFSaghkbZW1XkG1goDAu6Q5SGpP5qIj-/s800/IMG_3648.jpg" width="480" /></div>
+<br />
+Il giorno dopo sono solo, ho poco tempo e poche gambe. L'ideale per un "Tenno Veloce" : un giro rapido che prevede la salita al lago di Tenno e la discesa dal lato di Tenno. Insomma : proprio il minimo sindacale, ma, anche in questo caso i panorami sono davvero magnifici, col lago presenza costante laggiù a valle.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSPeyFXMM49N65LGtZYPDIwS314sGhVUn0ZSfEAV-mW7ql8c6ZPto7yFiX_MyXkGWSMphmY0_QO9kZA_Pq7R4Qii-gkeP0vX1ZpTRFstzYhIPSRpWQig4Peof7XxZ4xuqkB5Lm/s800/IMG_3650.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Scendendo da Tenno : il lago sullo sfondo</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8PBWA_y3lO45Cmd04bnW7kNw0iTMGIyPhazTVqDozLCZOPhaKWi-QRmv2YUylfAgbVeMC9h-rR9U7viaWCMEnneJO5DgVg-EfJHF0YnmhEHZTMkEOD5I92E_wwFfafIlz3cNj/s800/IMG_3652.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Il Lago sullo sfondo e un gibernauta in primo mezzo piano</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbYuC89TbxBAdtYtWPQyw-J8cWEz-9tBRZdTuwV-hIPSe5AudL5a7KXHq5CwkBZGTNOmkszuuy076dHXJRXueBW9bAcLJkUrCAt71ab9qfWgo543hKomRn6KQc4c3oMvnelxKc/s800/IMG_3654.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Castello di Tenno</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBMuBh0j1iLgHpTZURbeRv5iy0HIOWqs4IKhoMNGKs9HTHH4A9tMyrhUBaBjBvczp5l_rRy6muQPkVLtRACYooZ-46JjH1BZCLCMCOCJTz9YPM2o3E0dGj5hP3k8tBNIw9sXk3/s800/Schermata+2016-07-17+alle+22.00.15.png" width="602" /></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvh9oQcJAdtSpyP7kMJVSTPonQAbNq8t6jIFVZACgQrkx2bdzFD-fi3DogajMCTWgtY8dvIMVv6tlMFBCwcN8mp8BOYdrQwoV6-Yi4WRfdA9_Ew9klD0nPZo7_4CfI7M4Cuw2x/s800/Schermata+2016-07-17+alle+22.00.40.png" width="618" /></div>
+<br />
+<br />
+Una settimana dopo è il momento del test : il passo Santa Barbara da Bolognano. Una salita che è stata catalogata tra i classici delle salite del trentino : 1000m di dislivello a poco meno del 9% di pendenza media. Roba per gambe allenate e e mie gambe, modestamente, non lo sono.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgnbPuHUMxWy7oNDn6asL7-mZs5y9gVIpMBQtHXSLqWvKf_nn7nweJr5_t9oD_iM9-XFfimwsgReOwIP6XXJG-kRszVkRUkj05PAhAeEVW_yIFYxAkgyIbynTJmnvVJCUSuLYh8/s800/IMG_3714.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Nomen-Omen</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEip-w6krhmbsv1sNNnq5NtWvxXIBtGii83h5GpBJLygzNewYDM8Q1s3P9WIGzSsekKLGg3GTChX4c3dSc7LifOvU6Xq7ij62kw30MP5jDm911a7Ry4DoUl6R15kLv11GRQDNTvW/s800/IMG_3716.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Il lago da metà salita</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOIP8_OgIMJsFTiUEuc77LkkPPnnKKJ8HPuHbcKGyoChLyakgjyof8AENPUwzJTRRVMYF2ZhlvzpEeQYJASkDFRWvX9tenPvzxxa6s3sUMRHKJxdeMafZMrlBhO8PV-BVH6o-B/s800/IMG_3719.jpg" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Smilzo in fuga</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhc2G4AME_bODYalgVH7ivmJ0EBjtdA5-IKK6BDU1WqBtjv3eRz93s2NN2_wQccQ3X8u0R_-g5PrbeY9l2ppwqZkMbc106MhHjUA5DAvcajaVml5EbF5wKvP-jACO4ggZl2mPfH/s800/IMG_3720.jpg" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Dolomiti di Brenta</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLOk3R7dcNjbHd7MntFgUczRLVyAMjqbeGhT14sGzK8P-8xtvtT9gD0mI9ARQn0vCIbYVN83Gf2MRjWB_b1HdhKxxgIXmXq80lZWYULzhLY1xuvfsecQTRgZ8glvS-3ZzYcwZY/s800/IMG_3731.jpg" width="640" /></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhaqHiWusJCRk0-cyevXbKlDYYnWbH3ndSCXiSLZgPmAmaRFKiBOn-FtWEghg43UPBIIa4dS5G1fwUuNb5bWA7J6xRS8l0M_LxkSjg9sX8OFP3lt6RafrksZSjVfXfldhwAHVEi/s800/IMG_3726.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Un pazzo si è inserito nel mio selfie!</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhpS_bjIkQ4Hh8AkBlzJSYnkOeNuDtb3yTSaSYswCKFXwz-VEL3BqAEMkvOBUALVNFdDoQFOKw8Ol3QfKP6NPqeqhZP15k9NEpO_ZKJCf7jgOiKoWo-yPzx-9jdTtmUL1owfisW/s800/IMG_3724.jpg" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Smilzo, e chi se no?</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhAM3ce3ehxtTMWK40_Ijnw9Z0o1_66wXdyFptPIoSrm9SOuDP7bPN2HN-gbGMw1XS1nYPkUG2jOmyBWv-IOBU2x8sdjafncwoAR-Vg8nbFh1xvqG6Ma_1FlGvI0hC7g4Ud0t5o/s800/IMG_3722.jpg" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Giber-Brenta</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhpuMWqvgzuvHIUR_U5DECplemXuXYBhspJFsIMQlPADO9KIaELOFusS2GAr9jGpV4yJcA4sHyWtqY1-ou4-xBsZU28ONeyxo7ajX54jpEMPa2Fvx7NTkAoa-FSrmYHLj4uPXPU/s800/IMG_3735.jpg" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Gibernauta con la preda</td></tr>
+</tbody></table>
+Alla fine come è andata? Bene, direi, soprattutto perchè non sono stramazzato sulle prime rampe velenose del Monte Velo , quelle della località Gazzi (vostri, che salite a pedali).<br />
+<br />
+Ecco qui il resoconto della signorina Strava.<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgttlrEyVuisiHx9zRo9puag3qUiMk8tVI3YHjjVJHWX_5lEL3CB4ZEsB-SVwEwDhKVRGzZpi22vfJdu6-yYgOIUmnSJGbs6trHqkRv7WsLsl8mtDR06v0_OE1HDGJO4uGco2oT/s800/Schermata+2016-07-17+alle+21.53.18.png" width="604" /></div>
+<br />
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20160628_211.html">Minimo sindacale</a>
+    <a class="next" href="20160725_213.html">Passo Bordala, la fatica che non ti aspetti; reinc</a>
+  </div>
+</div>
+
+</body>
+</html>

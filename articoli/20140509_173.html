@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Treni e trenini – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2014 &rsaquo; 9 maggio 2014
+  </p>
+  <h1 class="article-title">Treni e trenini</h1>
+  <p class="article-meta">9 maggio 2014</p>
+  <div class="article-body">
+    <table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgU5y_2jk1dnobPGFrRN6Djq1VxjhID8XY9PMyGpUkrjmD2NeesUdyelcz-698cmigd_9MKuXyHdIDmLFqp_afU0UCIon74RKzpeSYH12Sa8CKabKrvJQcUVKEG6jRPWxZdxIq8/s800/IMG_6283.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Darsena mattutina</td></tr>
+</tbody></table>
+&nbsp;Solite 630, solito San Cristoforo : stamattina siamo in 6. Ai 4 di martedì si sono aggiunti Leonardo e Giovanni.<br />
+Primi colpi di pedale morbidi lungo il Naviglio, ciacolate da comari fin che si puo' : ma fino a quando si puo'? Come direbbe il compianto Boskov : &nbsp;"ciacola è fin quando Emanuele fischia".<br />
+<br />
+Emanuele, il treno della bassa, ad un certo punto, anche senza fischio preventivo, si mette davanti e va. Semplicemente va. Dietro di lui cala il silenzio. Solo Martin, ogni tanto, si esibisce in strappi missile con cadenza esagerata (veri e propri momenti froomici) che hanno l'unico effetto di infastidire leggermente la locomotiva che si vede costretta a rompere il regolare ritmo dei 37/38 kmh.<br />
+<br />
+Leonardo, in uno dei rari momenti di pausa (temporanea distrazione della locomotiva) mi spiega il perchè di Italia 90 : il sottopassaggio dietro Gaggiano che stiamo attraversando è una vera e propria cattedrale nel deserto nata in occasione dei mondiali. Un ardito svincolo sotterraneo di magnifica e stentorea inutilità.<br />
+<br />
+Ma..ocio, Emanuele ha riacceso i vapori. In carrozza! Come sempre la prima classe è in coda treno ed io è proprio lì che me ne sto acquattato.<br />
+<br />
+A Robecco (d'ora in poi Robecco-scalo) ci dividiamo in due gruppi : Emanuele, Martin e Leonardo continuano alla volta di Abbiategrasso; Giovanni Ottaviano ed io decidiamo di rientrare.<br />
+Così da una parte se ne fila via un Italo-treno di sola prima classe, mentre noi cerchiamo di organizzarci &nbsp;in un più modesto Rivarossi.<br />
+<br />
+Da Robecco sono 25 km caratterizzati , in sostanza, da una sola curva a angolo retto. Ideale per le trenate. Peccato che la Locomotiva stesse in quel momento bruciando le rotaie verso le vallette dietro Abbiategrasso e si sa, un treno di soli vagoni non va mica tanto lontano.<br />
+Eppure, anche con questa seconda metà senza testa-treno, riusciamo a rientrare in stazione dopo 53km alla più che rispettabile media di 33 kmh.<br />
+<br />
+Intanto, qualche km più indietro : &nbsp;Chissà se Emanuele-Italo ha fatto tappa da Besuschio, o se , attraversando il passaggio a livello di Abbiategrasso non ha imboccato la strada ferrata optando per il percorso a lui davvero più congeniale per trovarsi coi suoi simili?<br />
+<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgfRXc2yL9h6EnfqADcv_P7W4q52dMrfe_VhyCamL646jbUdKvV3XBM1doWcD5C0kMsnedwcqhxxQ4_6Z9fDLEMeM67q0Y5iT5NRqdfdJs-NFvgy9K5VSJG0yUkkEr1gf2Ju8ym/s800/IMG_6286.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Naviglio e gommoni</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjkzZvKD2Fwclg3ogsEnoSu0x72_ZjEfD36ptlafIX9YV7Q6-YvHaNTLforeioo6vpOgQqBe03i5kU2OJmX1oyuvy5WSmCHKKfeXdWpkmav1eh_hR5VL2u91aMxKX0u34y386BM/s800/IMG_6287.JPG" height="640" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Gozzi-gommoni (gozzoni? gommozzi?) sul Naviglio</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhAaUq6cE5ceuA5tAsxzolBI2zX50_q3D0IK6v4CwChrU518GvU7l6gGrf72NOc-ETil9lgmnSH58XHHtzvEToIt4TavPfaM0ZQ3tND0TgAjd6RoXmvH5CS3trW6ClD_qBQWj1O/s800/IMG_6288.JPG" height="640" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Retro San Cristoforo</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjT7WcdNK2GFZ2yA_8reZ_VRi9d4vj11hSjFoKVDtQwDfD-4Pz2UNwZguX2_G__75V6wdACT0YiLQUxk2g5opZ30LfxFlu41R2fLh3-jsWNmb2UIvw5MJshPO18hs36Gz7vjmGV/s800/IMG_6289.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">San Cristoforo pungente</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEKpH0nmP3WnQqvQe-MlV7dtBbwiN9JqKSQYWLKrnj5vdoVYqz5vo-HCPS3pivQMZigBAEocRYFDvhhuLBK5N7pmmQVhZiPYMpIkeY07g9Ij2RAGkwuPRZOiMdaGaHu7AuzwMP/s800/IMG_6291.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Leonardo e Ottaviano</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg7qu09VGWTcnPWjOfDSOkeE1STFRlrHSe47RXup-vZcmSQbTeFh2Kq9ILDXAx2_nFcv6Adbvv9pgG7cVFYjl29wgnQgH1JwpKPK8t7_ue3uVnT5WAVlUcqe3AFhRU0RLxbMHQJ/s800/IMG_6293.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Emanuele, Martin e Giovanni</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZzdzbb-tm6Nhda8VPyTYhIhkZcEVLO4YUsCecWGmyJAC_9m4Waw1JmWkxtHTbFzVsp9iVZUQ3NI55jMfyhTaEbIH2RwgvudJNvRds1zCznyylTI7trsdOlFepCm2CdNXGAowJ/s800/Italia+90+ridotto+++Ride+++Strava.png" height="240" width="640" /></div>
+<br />
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20140506_172.html">Giro mattutino intermodale : bici-treno</a>
+    <a class="next" href="20140510_174.html">Su e giu' dal Passo Caldarola</a>
+  </div>
+</div>
+
+</body>
+</html>

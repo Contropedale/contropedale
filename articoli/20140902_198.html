@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maccaroni e bici elettriche. – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2014 &rsaquo; 2 settembre 2014
+  </p>
+  <h1 class="article-title">Maccaroni e bici elettriche.</h1>
+  <p class="article-meta">2 settembre 2014</p>
+  <div class="article-body">
+    <div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0B7jY9cRJkBCO3e8ULfqzVTzze6HYUbQv05z0a-8J7fTHIdDkckbJVwe1RGoAhEsClY1kTALbFxNWvjUgFPa0E-P3ymqAwy8yxdPAqVAeg3Wgd2BSyIIiSETm_xiK9fnIddug/s800/Mattinata+al+fresco..con+Emanuele,Martin+e+Ottaviano+++Ciclismo+++Strava.png" height="346" width="640" /></div>
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: left;">
+Prima uscita mattutina dopo l'infortunio. Temeraria, visto che i compagni di pedale, mentre io mi crogiolavo nella assoluta inattività imposta dall'accoppiata scapola-clavicola, hanno macinato centinaia di chilometri e migliaia di metri di dislivello.</div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: left;">
+Il divario di forma è quindi colossale, ma conto sul buon cuore di Emanuele, Martin e Ottaviano.</div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNgwFqUdCJ3xLjpuNr3myLV33qfdJ8ZFPZNoFW7VUE5l92cAIdXdtRVwUti3QabIW2YyrDc7WqcbqKZRkB8lm25x4CG8WeyUQFvEvAdzpjELWWQWXTsOpJLOxJZQoloA7plXXK/s800/10611052_533322580100809_1029989179_n.jpg" height="640" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Martin, io, Emanuele</td></tr>
+</tbody></table>
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: left;">
+645, aria fresca e frizzante : Emanuele ha i manicotti e devo dire che lo invidiamo un pò tutti.</div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhTGYXepQ7YcBViivATrY4otgbWgR-SEoFEKPKAUvcawBPhPXPW1fHJlamvCRs1zihjFIbkSovVal6uBYn6wtwiIrXOciBVHp5pZCugPQ71uG-ed8TR6t7-AY_DiWW51mOuAbQ/s800/IMAG0121.jpg" height="362" width="640" /></div>
+<br />
+<br />
+<div class="separator" style="clear: both;">
+Mentre ci avviamo verso Abbiategrasso c'e' tempo per una serie di rapidi resoconti dei giri estivi (loro) tra Dolomiti, alpi francesi, Toscana, e con l'ultima nel Piemonte Walser. Io ho poco da raccontare, a parte il primo giorno di bici in Cilento (peraltro bellissimo). Quindi ascolto con attenzione (e preoccupazione per quello che mi aspetta).</div>
+<div>
+<br /></div>
+<div>
+<br /></div>
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgy-PosCN80OGLBIyBhLEfLcgMiyaoPNA_z7wfz_V6Qwb4Mw3MfjojdSsSiQ6EWQak9Gpp_uhuEYZFkstkDEN1tCn74sDVpRJkYpEre4Ji7H1KMQiYhK471BEd5-PqaMc45Zjco/s800/IMAG0124.jpg" height="362" width="640" /></div>
+<br />
+<table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-Fmm4oHuFNPg74p6zwvR9R7T1yvenwA_UtcUK0u011pCDjEOzpF8cJJQdG-M6lm3fqNwGzOqTFgB92mFVABFyYShlJ0vtCi1aME0vevSJKjitOG_nVMOTjvbjyZ-mBoxWZW2h/s800/IMAG0129.jpg" height="362" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Emanuele sempre di buon umore, soprattutto se c'è da pedalare.</td></tr>
+</tbody></table>
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiq1RAmpgwAJiqoVTcrmb-uFpg1T43tcwubRai19-1SbcpDdJwow9Y1d7bVtaCbUxMFrCpJ9BGQU49cnjwNFvViyFsTOC-5stISmR3FZES3ue4NBQBmgUmbRCVJbt952bCrFhwa/s800/20140902_070904.jpg" height="360" width="640" /></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+Basta poco per ritrovarsi in mezzo ai campi di riso dorati dall'alba. Le piogge dei giorni scorsi hanno lasciato l'aria pulita e limpida : il Rosa sembra a portata di mano e i colori sono sgargianti.<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIG-cE-X4o0R-q9JvJHPTX8fHi31ng7NyfkeFJrOpEUyTNzaFaew32gd8AN80T-WlB4zvL6d4N7sBZUMMu_h27Qb9m_F5ua0PCYANyMDW1y4uS6Tzj0rljI0y1oJJW6V86X73k/s800/IMAG0132.jpg" height="362" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Alba dorata</td></tr>
+</tbody></table>
+Scivoliamo chiacchierando tra le curve geometriche prima di Rosate e l'andatura è da chi si vuol godere la pedalata : e qui siamo in quattro a volerlo fare.<br />
+<br />
+Poi arriva il piccolo tratto di statale : quanto basta per scatenare Emanuele che si allunga sul telaio e ci tira a 38-40. Io me ne sto nascosto a ruota e, anzi, già fatico per non farmi staccare.<br />
+Abbandonata la statale il ritmo ritorna più abbordabile, salvo qualche scatto malefico di Martin lungo la deviazione intorno all'abbazia di Morimondo.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhM8S-9lw8X_Q0feFF4JqEvoP29dNVPJqXz-wCkIex2PcNKRROBQ9_RFnUbCECpoEibXNklffFSXSggRNspE82XTPhlwwL80BMAcI8tw_PHcegSS7Kvt4_gGiGiVvF7vaKWvajw/s800/IMAG0133.jpg" height="362" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Martin con aria mefistofelica..</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiza7kdbk3hkORi49_Xa9fuVROJBzrX7R_wgCRVu503QEsvdRnTA0s_qSB5mcW91HymXEjxiw28zDsLFUGlFXglg8t7Q8zdxHWEWOiTo-Sfxh-BqvvMg1h6R8j2eIlnoIVjwrs4/s800/IMAG0138.jpg" height="362" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Col casco nuovo : l'altro è onorevolmente deceduto nella caduta di Palinuro.</td></tr>
+</tbody></table>
+<br />
+Rientrando, lungo il Naviglio, si pedala chiacchierando.<br />
+<br />
+<br />
+D'un tratto veniamo superati in tromba da un tizio in sella ad una enorme bici elettrica : il tizio pedalava pure e spingeva il marchingegno ben oltre i 35 kmh.<br />
+Io sono a fianco di Emanuele e vedo che gli brilla l'occhiolino. Giù la capa e parte. Ci accodiamo sbanfando mentre lui accelera inesorabilmente. Dopo poco affianchiamo il ciclista elettrico e lo passiamo in allegria a 45 kmh. Emanuele continua a tirare e l'elettriciclista alla fine si stacca. Dopo un po', quando il ritmo torna abbordabile e l'elettrico è ormai un puntolino dietro di noi, affianco Emanuele che mi cita il grande Albertone "bè scusa, "maccarone, m'hai provocato? e io me te magno!"<br />
+<br />
+Ciclisti elettrici, siete avvisati! <br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLJiz9NKnOrexy2ja5hyajXt4Jv2NfPHLmn4OXU5hyphenhyphenVThd5s1SWlIv83FXsdzjRuGOvcUGhSg-WpmZdCk8jywk1GSXc7LzG_p6wGL6buzsNf3FLNNNTUTx3jFIzWYz0fWqTati/s800/Sordi.jpg" height="274" width="400" /></div>
+<br />
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20140811_197.html">Poca fantasia, ma molto divertimento</a>
+    <a class="next" href="20140905_199.html">Ci vuole un po' di forza di volontà..</a>
+  </div>
+</div>
+
+</body>
+</html>

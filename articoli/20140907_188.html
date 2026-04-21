@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>L'aspirapolvere e la bici di Heisedal. – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2014 &rsaquo; 7 settembre 2014
+  </p>
+  <h1 class="article-title">L'aspirapolvere e la bici di Heisedal.</h1>
+  <p class="article-meta">7 settembre 2014</p>
+  <div class="article-body">
+    <div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-EteskoMoUsnCkHzz0KIrmH-iWtYtp1DAjGvd_eXRjucy1rZzyl_aHs-c1AJ1HUYqrC8akXuMPFF-GXzzazt7UCmFIt8YUBLO9QbSqtrRQfvtTeMpI7aVhNEpTTdQRsbutAZS/s800/IMAG0177.jpg" height="362" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Giorgio Andrea e Paola</td></tr>
+</tbody></table>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: left;">
+Primo giro "serio" dopo l'infortunio. Alcuni (Martin, Ben, Ottaviano...) si sono cimentati nella GF Scott che partiva da Piacenza proprio oggi. Per quanto mi riguarda non ho avuto alcun dubbio : troppo lunga e troppo veloce per pensare anche solo di poter partecipare.&nbsp;</div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: left;">
+Ed eccomi qui a Travo, quindi, per affrontare il Penice da Bobbio con Nica, Paola, Giorgio, Andrea e Giannetto (molto tirato e in gran forma, prontissimo per l'accoppiata Bisbino Mottarone).</div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: left;">
+Insomma devo cercare di riprendere un po' il ritmo e per questo la val Trebbia in compagnia è l'ideale.</div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjv2RhrsT70HgB4voqx6CPNYQNK4ZgiqgHmYu22Ek8NZcs6wdERiQNKqgNFOrsqdQImKBTQ0SeFOa-8yGvMJmWJMmq2Q69Q-0teA6pSEMXr-BXJ2kAluxwVACUhaIm7_MlhJmG6/s800/IMAG0176.jpg" height="362" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Giannetto in gran forma</td></tr>
+</tbody></table>
+&nbsp;Pero' sono un po' preoccupato, non pedalo su una salita seria da un bel po' e il Penice è proprio serio : lungo (circa 13km) e impegnativo, specie nel tratto centrale.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGXQoP1ezwXyutzgEs6xOhoCUGCBx2ePJVxRO_t8Wrh6tYr9uQ10z30OHqWtKf5RET2ump3lY64yFxrUB49cPmqR_H7rfufcOw3AE66I-65paQ7oTqmp_Zknsw57dJXBuRa8ye/s800/IMAG0178.jpg" height="362" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Io rido...per ora</td></tr>
+</tbody></table>
+&nbsp;I primi colpi di pedale sono come sempre i più divertenti : si chiacchiera, l'aria è fresca e la salita deve ancora arrivare. Il gruppetto si allunga sui saliscendi verso Perino. E' il momento migliore della giornata, e lo si vede dal numero di foto e dal mio sorriso un po' ebete (certo incosciente).<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkiWXcbWEKqtHfc8iFQiiUA5S5h723wQ93Ap9qqMRYBn5UZzDoGTZrqw2o-T8CiVnroR7QkRmlz-IwjsTh6c4qPND0ZmRVzQmaKpizLkjPuqQsPkNeQk1UKezDMqlRKV46IBYM/s800/IMAG0181.jpg" height="362" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Andrea sale facile...</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhj_KkV29yz4e9cDbPBN9L4g5kHzJjvD-3lVaB-9sYRT2O8puaziyaKNc08EYjbMB5hA0qIWlc-FNnkUy3X-1tJGm5AwVeR0Sib4PBlAaUO0zY3lSs8F1gcvYdJJyuyDTtaMyGw/s800/IMAG0184.jpg" height="362" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Gruppo verso Perino</td></tr>
+</tbody></table>
+&nbsp;Raggiunto Mezzano Scotti prendiamo la deviazione per Lagobisione : una strada rognosetta che si inerpica a balzi e sorprende ad ogni tornantino con strappi imprevedibili. Io sono partito con un saggio "andare piano, soprattutto all'inizio, che poi la salita per il Penice è lunga...ma lunga...."<br />
+<br />
+Bastano 5 minuti e il saggio proposito rimane tale : solo un proposito. Andrea va su bello leggero e io decido di accompagnarlo. Sorprendentemente riesco a tenere il suo passo (scopriro' poi che stava salendo di gran conserva) e a poco a poco ci troviamo lui ed io. Lui parla (ha l'elemento necessario alla bisogna : il fiato - cosa che a me manca) e io ascolto attentamente.<br />
+<br />
+Pero' salgo e salgo bene, mi pare. Ostrega! non me lo aspettavo. Vuoi vedere che alla fine non ho poi perso del tutto la forma? Ecco, poi ho visto che : sì ho perso del tutto la forma. Ma in quel momento non lo sapevo ancora.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh53yIzi_v_puSn0q9Heq6QEvf9cT4PQTyKpaF8R-flN6uSAPoB1dnAW4_idKRKoyo_znGbEKhUPwMghEKWllFbL3GCCsspuPUs4H6YGVearqFgI8ERH9CBCmqFWQt_oILXHnCj/s800/IMAG0186.jpg" height="640" width="362" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Andrea</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiz9PcVqpEdGBnyXgVqvu8jMXglOKx-rcyNmab9rlO3AH0cg9NgLFb8OscchlTthSoXy9tVeARXY9vhsWljVFveJmJFKwdAxNOvgFXCoz_52qVA1TU2AYsDBLzRrRjVCkkXsymV/s800/IMAG0188.jpg" height="362" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Arriva Giorgio</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjm2E1H9UlSo3jiu6ZLnxXw0XB8BlsmxYNpiCmnOHAiRzNfhQ4Er84I77vhfpwfBMVEBlLJ6sKtVKiEWaU03okQ0IDweAynuKziMkwv3wcSdtJqFHkM-cbk9aTJJm9RgoLZt0Xq/s800/IMAG0189.jpg" height="362" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Eccoci....</td></tr>
+</tbody></table>
+Ci fermiamo al bivio di Lagobisioni per ricompattare il gruppo e poi ripartiamo in discesa verso Bobbio. Qui Giannetto e Paola ci salutano per improrogabili impegni famigliari (peccato non ne avessi anch'io) e noi (Andrea, Giorgio, Nica ed io) ci avviamo verso il passo.<br />
+&nbsp;<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6vVZVVIUhlNysO7s8sw-vofMcQ4d_NTQnMA3nV9d-CY3UYPPgIMBKEcieLkOCa5zpnh987q_WeopAEibm5J5n-FSYnq4duhhK4r8nQqQgpxxF1B8ckC4MbHfP9Rm-1KaqLo4N/s800/IMAG0190.jpg" height="362" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Dal Passo Penice</td></tr>
+</tbody></table>
+&nbsp;Andrea gran signore scorta la sua bella e ci dà la sua benedizione : "Voi ragazzi andate che io e Nica saliamo col nostro passo". Giorgio non aspettava altro e comincia una leggera progressione. Io cerco di stargli attaccato. E ci riesco! Dopo circa 3-4 km di salita sono ancora lì, alla sua ruota. Ogni tanto lui si alza sui pedali, io non ci riesco perchè la clavicola "impiastrata" mi richiama all'ordine non appena carico il peso sul manubrio. Ma anche salendo in sella riesco a recuperare ogni suo allungo.<br />
+Grande! Giorgio va e io arranco un pochino &nbsp;ma sono sempre lì. Salgo bene, e la gamba è affaticata ma non troppo : mi sembra di avere un pò un motorino nel tubo piantone, tipo Heisedal alla <a href="http://video.gazzetta.it/vuelta-hesjedal-avevi-motorino/725d2ff8-3411-11e4-844e-344640d73fc7" target="_blank">Vuelta</a>&nbsp;.<br />
+<br />
+Poi Giorgio si gira e mi fa "bè adesso ti ricordi che al bivio di Vaccarezza comincia il tratto più duro, no?" e io "sì...certo", ma pensavo "ma come più duro? più duro di così?".<br />
+<br />
+Ecco il bivio ed ecco che la pendenza si fa più dura ed ecco che Giorgio attacca una progressione inesorabile.<br />
+<br />
+E io? Bè devo stargli attaccato e ce la metto tutta. Poi, dopo meno di un km di sofferenza, con Giorgio ormai lontano ...plof. &nbsp;Mi sento le gambe di piombo e comincio a scivolare sempre più indietro, a velocità al limite della caduta per eccessiva lentezza. E il motorino? Boh...la sensazione è quella, purtroppo a me ben nota, di un aspirapolvere acceso che viene tirato troppo lontano dalla presa e TAC! , il filo si stacca e l'aspirapolvere si affloscia.<br />
+<br />
+Da qui al Passo è una fatica improba : ed era ovvio! Il mio saggio proposito era saggio, e ora, incazzato perchè ignorato, mi presenta il conto.<br />
+<br />
+Ad un certo punto Giorgio mi incrocia : è arrivato in cima e, preoccupato perchè tardavo troppo, ha deciso di venirmi incontro.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhAVEr2Byp2My5m_03hRKB5kIjj9919RmH051abmqU7XSz8hgi-ls9LwCu0wv5pHcQ8cgYbEVrfFlq7Q_-2ij3zTVrxWk-VIEsKKeBogIAz7vQBy6gD8AmsVnzyq1WbWusCmxy0/s800/IMAG0191.jpg" height="362" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Giorgio smilzo : il Penice a tutta e non sentirlo...</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7G3sv9GvW0iccltB7wgWnewEhlfAveY_WrAG_lw_x1Xk1AlD1PIXlEmvU4-d5UoBMmzMRM6N31bPBgAgbNd91U7gDlJvxIcWQs1PR8tARyJ1X9-X4pQQltoHWvtbOLDZi6tjs/s800/IMAG0192.jpg" height="362" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Preparativi per la discesa</td></tr>
+</tbody></table>
+<br />
+Dopo poco al passo arrivano anche Andrea e Nica (in grandissima forma, lei) e ci prepariamo per la lunga discesa. Una volta le discese me le godevo tutte, pennellando le curve. Ma adesso ad ogni curva a sinistra sento le chiappe che stringono inesorabilmente il sellino e le dita arpionano i freni. una vera faticata!<br />
+<br />
+Finalmente si arriva a Bobbio e da li' prendiamo la strada che costeggia la statale. Bellissima, corre alta lungo il Trebbia, peccato che non sia più mantenuta e le buche e i sassi la fanno da padroni. Ad un certo punto siamo addirittura costretti a scendere di sella perchè un passaggio su una frana era davvero molto impegnativo e non lasciava margini di errore , a meno di non voler fare un bel tuffo di qualche decina di metri nel fiume.<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+&nbsp;<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgiYrxwShuK1UaEb_K4nzNwwndflJ-Znwh_HKOMi9rEkzDQB50ZRlHADV5JRoDXGPbpFMgMKo8NLdjwM5hrVmxj5_XVHi6QNifUZSPyi6ax1YRCpHP4z4As85b7ECF_D_QQh29Q/s800/IMAG0199.jpg" height="362" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Giorgio e Nica chiacchierano</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEioUkpKbdFw1s3qR8OXrdOEROrVpTSVX4mu5IyLzHGvDiLa73b9rWWrdgVFucgVwG_ukmOwOdCIjORO6s15hxJssTzd3GFSYiX6Z20Z1_L3_Qsp53IarJptKXGzxGDS_XW4QIM0/s800/IMAG0202.jpg" height="362" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Frana</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRO5ElNbx59aAuHBSXcZ9NFnbsiJYJ-ZLFnf6Fbaaft-4PhDDuIwv2P92xffOC55D7aTiYucl8tbYPQK0R7UVi6HILe-2N2cuf0tQK8a6o0jfAfyckVVufCJw-OsxWfeq-KjW8/s800/IMAG0203.jpg" height="640" width="362" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Frana 2</td></tr>
+</tbody></table>
+Siamo di nuovo a Travo dopo circa 70km e 1400 m di dislivello. Bel giro, come sempre del resto quando sono da queste parti in compagnia. Certo io alla fine sono proprio alla frutta e basterebbe un cavalcavia per farmi piantare. Ma riesco a arrivare alla macchina.<br />
+<br />
+Bella giornata. Molto bella. Ma mi sa che la prossima volta nella bici metto un motorino a batteria, come quello di Heisedal; mica con la spina e il filo da infilare nella presa di casa. O perlomeno cercherò di mettere un filo moooooolto lungo.<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEioNlywxHlq8J7fFvNLZKn7EuIrL1W74_CDd7p7HYPxce2epSYsqa9tmQLDNrdKqI2aAbkWZxfM87vKXLvu_0jvVnjSA_vzMudzfJcV4UC21oipcx2CXatd5IMLaSDb-DOnO23Y/s800/Schermata+2014-09-07+alle+16.50.55.png" height="348" width="640" /></div>
+<br />
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20140905_187.html">Ci vuole un po' di forza di volontà..</a>
+    <a class="next" href="20140914_189.html">Weekend in val Trebbia</a>
+  </div>
+</div>
+
+</body>
+</html>

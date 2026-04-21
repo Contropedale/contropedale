@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quattro amici al bar...di Bettola – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2017 &rsaquo; 9 aprile 2017
+  </p>
+  <h1 class="article-title">Quattro amici al bar...di Bettola</h1>
+  <p class="article-meta">9 aprile 2017</p>
+  <div class="article-body">
+    <div class="separator" style="clear: both; text-align: center;">
+</div>
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGn42c01WQPujq6CfBWfNWVbU2Onm7WUxCeHQ8wZVoSZIjjLojzgzooDvVaTfCznlJtQLat-DJvI2KAZXEuRwzCwB47CjSqAB7nN9SznTjUI1JmoDPqntaC1gznaTTqVrE9aEt/s800/IMG_6312.JPG" width="640" /></div>
+<br />
+<br />
+Era un anno che non pedalavo sulle strade della Val Trebbia.<br />
+Ed eccomi qua, alla piscina di Travo, pronto per un giretto di quelli che, un tempo, avremmo derubricato come "defaticante".<br />
+<br />
+Ma il mio stato di forma è molto precario e gli amici hanno compassione : oggi Passo del Cerro e rientro da Spettine. Poco più di 50km e una sola vera salita, quella del Cerro.<br />
+<br />
+Siamo in 4 . Andrea, Beniamino, Giovanni ed io.<br />
+<br />
+Andrea sfoggia una nuova Trek rossa fiammante che pesa poco più del contachilometri che ci ha montato sopra.<br />
+Anche Ben pedala su un nuovo cavallo Specialized. Giovanni cavalca la sua fida Colnago e io me la godo con la Tommasini : 10 kg di eleganza (anche se sarebbero meglio un pochini di meno).<br />
+<br />
+Il clima è ideale, il percorso altrettanto, la compagnia divertente : insomma tutto perfetto.<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" height="338" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhU5LF9PakH8i4CXX2Fbr5n1b96azPOyYJOHIJP0TuHhkMyvM-jTJRh5aNMvG1KKoEBFZvvy3LMxmfLWdFh11Cshf7g3Hejao0DL2v9koYxnmX59AqojwqcvQyqdjJq8KnPr8M9/s800/Schermata+2017-04-09+alle+17.42.20.png" width="640" /></div>
+<br />
+Salita al Cerro chiacchierata fino allo strappo prima del falsopiano finale : lì si fa sul serio soprattutto perchè si è aggregato un gruppetto di coetanei della Val Tidone.<br />
+<br />
+Discesa freschissima su Bettola e qui pausa al bar per il caffè di rito. Qui mi viene in mente che al ritorno a Travo potrei comprare un salame da portare a casa. Andrea propone di comprarlo lì e portarlo a Travo infilato nelle braghette. Cortesemente declino, anche pensando alla sorte dei miei futuri commensali.<br />
+<br />
+Discesa verso Ponte all'olio e, prima, svolta &nbsp;a sinistra verso Spettine. E' una salita un po' rognosetta ma breve, che pero' ripaga con dei passaggi in costa spettacolari. Qui davvero sembra di essere in Toscana, anche se laggiù si intravede la Pietra Parcellara.<br />
+<br />
+Discesa su Travo per concludere 50km con poco più di 1000 m di salita. Bello.<br />
+<br />
+E il salame? Sì lo ho comprato a Travo. E a casa lo ho pure inaugurato con un panino innaffiato da un buon prosecco.<br />
+<br />
+Piaceri della vita.<br />
+<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjE-oCD-MlT6YszW1zcS8-t0nITeXygBFJUxFKqCDNr6P_4CUXi34NSu3cO3yMRkZy03Ml5yMC8PLu47SG2NdQfk4NFIKFD72VwchHnKBGpHYwF3L_QucHTNNP3yqcDDpbi-8pq/s800/IMG_6293.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Andrea sempre positivo..</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdHhQH-Rkx8Y3FNFfL0v2NM14D0tGmMwH5d132xtlef2IsYBZrbt4vHymrX918Id_uYWLAwnqmxfmWTWPCXKXhNQQ156LBYdxJO5qa5i0GvawuLnBsw58eDqBhECR6U7_sT9kF/s800/IMG_6311.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Crete senesi? No : Val trebbia</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgl54uYiLtVI-cq1om-RERhgwnuHXhHeShGqZGTbADeervP-pFbpGjTOsphacD2mAxTcWujdudKtGI0Ua__IY2_DUB5Mpuatk1yxL4Rk0cM8upWuqCrdi8aWtOWDgzmUit1v4N5/s800/IMG_6310.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">4 amici....sopra Travo</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJJNKnxmWavFm_zonugbFEYni9eYKbjZSEkMaAF07inkyehXTPkfp3vXhd5-CgUWR255Q8D3iowCAf7JMHaIiyjBNHh7N9ffxUzwHmJgEKveRkJNMyu8GP_vBS2kxVIsRIaAwh/s800/IMG_6309.JPG" width="640" /></div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEirkDn0ULCYY_7nVQoWGu8umTTcoz2nV4zE_2_GKq7strbhd1NGfFDZ1VAefhdmsOQvhbFHy79eRvzZBGv88e2Nipvb1PLmZeG_kILgF94TyrCV-rq_g-8AFQI85BFGGl21hVh8/s800/IMG_6307.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Cavallo a riposo</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNLMXf4Eu8C1f33glvG7p45fi3YeXYWyKBSwCDs6uVvGhKIPUwHkkBXBRCGhA640WNkPYXJkLR-nf-ll7QqUF5P9ZWrM-9poCu_yJzFYsqV7Uqtzh9vWmFsq8LSd5RcESHVv-j/s800/IMG_6299.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Il gruppetto della Val Tidone, regolato in cima al Cerro</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiC6Nb_Ucy5-AEQx4u3ngxf9F7ZUvA3tZRJUx4WJNQDC_Jmgmup22akrpqF677ts5iPyYPMN5n_lo3MN-wTGX-ppoz4HSPrVfh6r_kplvty4bF5lJ2gCKf-BD4p7vWjnWvRB8As/s800/IMG_6300.JPG" width="640" /></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi44qqGZV-wmK1s978m11CuLB-8vvxosZx4dsYtS2SKD_KCLwBHwMpAtHMR8QPqAKzX2AGbw09zeA178nSkiDPaJ8vJsW6eAubBzY-b0dPQfr0_4eMaLGl60DhtqkyMo-4r2JNx/s800/IMG_6301.JPG" width="640" /></div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiV8t16nkQJBgraRiiJOi6vPVTcy9ZrsD40_xpsdzNCC8hu6mjtcC6P3vYQmr3BbKDCXkIuHnUSddQ8rFPPOlj7PrDkoMqR4NB8nPQWUCO0rU6tlMzjOmY9AV_9hiDN5cD_-ne/s800/IMG_6302.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Beniamino contemplativo..</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmqE0c4VurR5hp3UKwoWQHWhu2HKxn1FPbJ6pA4HA9T9C0YlOV3YD9axS5AyicEE6CWfDByxbs7mfYfxjL1cFkDOal0rubRMBYCEl1RF1s1DxPRJY4GrNY1g4yAI870tH3zuYm/s800/IMG_6305.JPG" width="640" /></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrybDAbNAzwBOgx38lunr3UiCzNPRmVwiFUJb3QayDjUS5SGIEkNi-E_aSPAsDvhQVRlwdaCwyPRp56qoRMWMJid1NcfIH-3gqEvg5bk0IiFsm67aUPaBR067vFA_CUNSh283E/s800/IMG_6297.JPG" width="640" /></div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgtP45QonfKht0cwqcZZ8CnYGn73YNzOnQSxfh8PPkpfTHL143b3H-CHnuZ4HqYpTUWW6l8RUi0F_ZgdfP01C6auaIb_a-hmJXyt-Yq55OEt_ZWGfDTOtlRLY0RnXFI9plXgAZu/s800/IMG_6296.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">I primi chilometri</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQIsrHdW7oeVS-Em-X56ms9Xa_55OAcx1Ezq4exbGMGSX8ZyB5-7USSzJjdVP6Iz2fZI-ebpuH7qO9DCMptZT2KvQOo1_wVqC_xqhQ4kbIk0VRu4TBDcMeKhxmafy8-k4BGIcV/s800/IMG_6294.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Beniamino mattutino</td></tr>
+</tbody></table>
+<br />
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20170124_205.html">ABC del PODISTA</a>
+    <a class="next" href="20170604_207.html">Accoppiata classica e fine psicologia</a>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Su e giu' dal Passo Caldarola – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2014 &rsaquo; 10 maggio 2014
+  </p>
+  <h1 class="article-title">Su e giu' dal Passo Caldarola</h1>
+  <p class="article-meta">10 maggio 2014</p>
+  <div class="article-body">
+    <div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdsgQcSLKKnEts1hehghxokvuFmcTmdWXiq8OT4wmb20fO1Nz3CS-wxVuMLtB00-Gb6U6ANHYrCxShIrCGLcc1HkFJuYMwwOBXXFt0RMj4TtMPFZ6MvmU4iY6scVrk9ySE-vxo/s800/Schermata+2014-05-10+alle+19.10.32.png" height="306" width="640" /></div>
+<br />
+<br />
+Domenica programma tosto, sabato quindi opto per un giro meno impegnativo. Su e giù dal Passo Caldarola partendo da Pianello Val Tidone<br />
+<br />
+Salita abbastanza bastarda, questa del Caldarola da Pianello. &nbsp;Subito parte con pendenze ben sopra il 10% e lì sta per un bel 2 chilometri e mezzo. Ho ancora nelle gambe la treninata di ieri mattina : mi pare di essere all'ultimo chilometro di una tappa di montagna del Giro, altro che Caldarola.<br />
+<br />
+Dopo 3 km la salita si fa più agevole e le gambe la smettono di cercare di convincermi che la discesa è meglio : lo so anch'io che è meglio, &nbsp;ma prima bisogna arrivare al passo, a 740m (manco fosse lo Stelvio...).<br />
+<br />
+Scollinato, mi precipito su Mezzano Scotti e poi, con un allungo in pianura, verso Perino aggancio il nutrito drappello che era appena partito da Travo : Nica, Lorena, Giorgio, ben, Giovani e capitan Andrea.<br />
+<br />
+Andrea sfoggia un casco nuovo della Giro che sarà anche aerodinamico ma pare prodotto dalla Ideal Standard, quella dei bidè. Ma, conoscendo il fiuto estetico del nostro, il cascobidè farà certo tendenza nei prossimi mesi. Per il 2016 conviene cominciare a prepararsi a caschi design-water (con leva? catenella? asse in carbonio?).<br />
+<br />
+Saliamo belli allegrotti verso il Caldarola ripercorrendo la strada che ho appena disceso. Giovanni opta per SFR - Salite forza resistenza spingendo un rapporto davvero improbabile con grugniti soffocati. Roba da vero Hulk. Giorgio fa le solite domandine sarcastiche : "ma che rapporto usi?" "ma sei sicuro di star bene?" "ma non è che ti impianti?"etc etc ...Gran motivatore il CEO.<br />
+<br />
+Al Passo le ragazze rientrano e noi scendiamo verso Agazzano, a metà io prendo a sinistra e dopo uno slalom sulle pendenze arcigne stavolta amiche mi ritrovo in breve alla macchina. poco più di 60 km e 1200 m di salita.<br />
+<br />
+Speriamo di non ritrovarmeli tutti nelle gambe domani. Vabbè, semmai se vado in crisi mi faccio motivare dal CEO.<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhssr_5NaEStn55UC9GrKIy9SYRjOL6rQRBCoaOJ0dZL1OHyMpkjo4L3kJoNcKjwrw7i_4PkG8P8cyvvDDp9-_C0LcPIPkGj9DVVtmiAxxkJgtGeSb9T-yzh1PxkyN927J28ReL/s800/Schermata+2014-05-10+alle+19.11.03.png" height="412" width="640" /></div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPQCWo3Gn-pIUjlpqA1c3afHQGi8NbUUG1HSqPQu_7RvJCC-UESkdwr7kxnItiFpymG_XYGE57ocT3mxaS8o3v-dHxnCAc5gnQiBUyoaE7OSt8r6acGcCVhkqZ5axpJqi5VCGf/s800/DSC00013.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Val Tidone</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizWZzD76SzZKr_HHFHmpx4vRXY0cnlyz8cLCb8f1uIgeGxT6pznETN0uiLMgxUHa0WYty81fZz6HVgSsyZHqnkxjK7JJnJSUosG0AaeNn8AkvvOHE21OSCdh0eckOrtZS_NoB0/s800/DSC00014.jpg" height="640" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Salendo</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdiZJY3Ea_g5p-7-VuP3Ua8PmUpqiRN7zMeL24YOH_ygDPehWvU60lcN3xN2Axjzh42I7x-DzEXtkxtRHAsYbgEH7a6yygD2Qs_zRY6lOU0udOw_v_Lsah2verDAPFBQYrmcdE/s800/DSC00015.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Salendo al passo al sole</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi02-UPViSpYrvyob4uCxyNwnef7a-V3IHujGS4bqZvem9zry8aDVBg4AsEyxVP4uZz2aXqEqX2iRrpZ3cNytkC9nhI34ScZ1KTqtbKVee5xYZeM3QpxYF1M8IW6L6A6sqZJVen/s800/DSC00016.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Val Tidone again</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIFIKaaUNamCuJHFTPyodTjm2zXNyhcbNnQT1Lw98Y8a-0iZHTthQC98yee_ia6Ye2Os2K12_lDmzRsupiEMP5NJkFiouwPUR_H32MknG4f6UBFnjgGuxODNKKtZNt8T_9oz-s/s800/DSC00019.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Per fortuna che non si vede la velocità imbarazzante...</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-GoAL3e81FQmObIGkE10QXH_y-igo6ujdWx_EJ41M0huLyKxhiOyvGKfl2a_GGlz17VlnUF82LLI7ArP4bAjc0Tk81hIZN5sASViDgWmZQ2OGo7JTlmhpKa5KzLySP68lIs6G/s800/DSC00020.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Sono rogne....</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHyEaYgGo-pRWSdTE5F0YCPCLdieMduUqSfb0wVfJBRS9ojYp8THZ8ZoaMKoLD1W7bF-8OzuhCtqP1J_U76x8moB8Fhat1O4jExygbPxznutnlkxyX_LNW93weY6bbU6iebqtM/s800/DSC00021.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Val Tidone : grano stile sfondo-windows</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiyAYfDDZmyB6SKrye4-nBDU9E8A5sljVpiQwMBJZWAxGv5sjr3iY-0ei3-eaEJt73IOrhyLLEySFChvYZTklJcgWTWN-LZlbseLxPvz3MwAKdsK4DLeTN5Jmwt-xBTg6Lc13Tw/s800/DSC00025.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Aggiungi didascalia</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjrJccIeR9iQx3JFdY79WPEFdgXjPn1uFOKvNgcdHdJ7K5PPkiRQKbfslGEqz4aCwIRHW45VLZP-_pYgDc6lZwZsAEC-i2Uprwbs6Z2tCZxy2taknvLKzc-ZAaAgvUWmYx6qWp7/s800/DSC00026.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Poco prima del passo</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWrnyM23geM217nfUVps2u0aFoKaHwXuiUrfXDJJuK2xB49LzmVwW5HpqarzfSAWObznsj2R4BcoDXr6WY-MdN9nfpn8HVdRIUcmAs2zV4vZKd_EcNrOU6u-1BznY49s7AJS7U/s800/DSC00029.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Sempre lì</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNnZdH45n1zxzZPSJHMnGrSlSgXDjS2MB4rYnoVdgWr5EJncB9vVlyrc9IBnR4hiR5JI6HmL0kKoBlxZirMDkEXw74X_XFK6Fpl_qP4tOUMA38_s4Z6XJSZ0Md6l4RFRxUVtOJ/s800/DSC00030.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Val Trebbia&nbsp;</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSZH0TYLCR3FNAmQRGTtPUzz222CifCFbCpFf01nwK_621hhLF0l8ljAFQZWlMZe6Y_FyKyfO9MS-lHaSDE2DNuJc7midmiiIT7mvvbuMnTOyTFd6zZsViSJXKrOGUoSQIFu8l/s800/DSC00031.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Laggiù il Trebbia fangoso per le frane</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpjM_dV5PFR3RdhB77G7M2fGqN0csBoeNXzFjgUBPyxvpqNOWDaYx578vDQu5xJQcZic9yJ3VVMZS5k22Z-OEGWZm7ErOZRxUCWTBxwgbWFPDlV7bCwQoThzC1Oi428-S8GBh4/s800/DSC00032.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Giorgio, Ben e Giovanni</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhq-LGNgrFA4ifC61fz7nftkeJAtF9kWv5HwOGJ_DJCBWrrD2Z8BuFzEujxYvjeSQ_NCfXMvQ14RsXTWeD7Rw3nRyo7LsFQXjDZ2gxUDkyd_1p-6QqVxn8bVqDQUe7l1Vaak6T8/s800/DSC00035.jpg" height="640" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Gio+Gio</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhltnt5thfk1WBRJ-uON4WntERktDiSnyPMIRuzoL45ujFMWN0PLA4IO9iwBb1gC2ydP5HtGzSF_cIgIxBNSIAVGqX6Fu3d-XDDQRL51nv8Zt_16m_Qmum9GGjKgVFo0YA0dHm7/s800/DSC00036.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Lorena e capitan Andrea</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJQl8NeR2eIn_6J1aM88K2IUXAmDw-fqdmbCv878_TG0hQsHVJSqpANik_3d66mn4LfiLAwqgB_WFj0ZiSg6an1qDioeGvqPNwe3vNz2Hb3ojXFT631iFXNB-Da_N10lMLcFnM/s800/DSC00040.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Giovanni banana contro il razzismo (e per recuperare forse dopo le SFR)</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLRTpcs2bSsT7E1MpXZgH-b1pwlS_HC1jelho2fci9EOkWCbfIpeXGwX7v7BuByAv4HMkGYSbStqBZz1GNLTh2zBlsef91X9_9fyHu9KpMdtcxWYHa4UHVhTQ8b68s6fEC92Vj/s800/DSC00041.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Ben si attrezza per la discesa</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_hHiOy5J4G5XIPSTIVLIXTuwcexUcHftRcC23py42keLUx1bIZeXyJyFSOjTlHkCOffe56Q6aDKdBnGZXR-d5atgUUdPFsljeO1-be5XTsJBGig1MV8-rLQKtBTBzPG2YGn4I/s800/DSC00042.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">cascobidè</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3BbEDhCLKEbF9wzYSqzkEI-rZsdIZTTz3UxiUpECHRrtZTieLqzZ1xeY_HTTH9gksfqxbkDSx06w5a6iVm2iHHZBwaA0hPP4BBUG0ohIyh1Z7B8aItlt1hynO9ZukcGoDxK3v/s800/WP_20140510_003.jpg" height="360" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Giovanni dopo le SFR : con la forza ci siamo, sulla resistenza bisogna ancora lavorare (foto cortesia della Moroni Motivational team)</td></tr>
+</tbody></table>
+<br />
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20140509_185.html">Treni e trenini</a>
+    <a class="next" href="20140511_187.html">Fregando Giove Pluvio</a>
+  </div>
+</div>
+
+</body>
+</html>

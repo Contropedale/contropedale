@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ABC del PODISTA – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2017 &rsaquo; 24 gennaio 2017
+  </p>
+  <h1 class="article-title">ABC del PODISTA</h1>
+  <p class="article-meta">24 gennaio 2017</p>
+  <div class="article-body">
+    <div align="center" class="MsoNormal" style="margin-right: 18.6pt; tab-stops: 27.0cm; text-align: center;">
+<b><span style="color: red; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 18.0pt;">ABC del
+podista<o:p></o:p></span></b></div>
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMCNOMOtd9avm4_RkfdSu1puHOS_UbTcVfBTsAwJd5OmjeEl26IYVu5repgO88hIIWWLQi_29-kbhPGjaA-_AHqtViN__9CRbM8HgHYPXYcpGhNRdgcmSrX6N_o23p-ftt3A4r/s800/images.png" /></div>
+<div align="center" class="MsoNormal" style="margin-right: 18.6pt; tab-stops: 27.0cm; text-align: center;">
+<b><span style="color: red; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 18.0pt;"><br /></span></b></div>
+<div class="MsoNormal" style="margin-right: 18.6pt; tab-stops: 27.0cm;">
+<b><span style="color: red; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 16.0pt;">A</span></b><b><span style="font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 12.0pt;">llenamento
+: componente essenziale della vita del podista : richiede una adeguata calibrazione
+in quanto ha la caratteristica di essere sempre al tempo stesso insufficiente
+per gli obbiettivi prescelti ma eccessivo per le esigenze&nbsp; del proprio coniuge e del proprio apparato
+muscolo-articolare.<o:p></o:p></span></b></div>
+<div class="MsoNormal" style="margin-right: 18.6pt; tab-stops: 27.0cm;">
+<br /></div>
+<div class="MsoNormal" style="margin-right: 18.6pt; tab-stops: 27.0cm;">
+<b><span style="color: red; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 16.0pt;">B</span></b><b><span style="font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 12.0pt;">endelletta
+ileo tibiale : sede del primo infortunio del podista principiante, che accoglie
+con gioia il primo dolore quasi come un rito di passaggio : finalmente
+anch’egli avra’ un argomento di cui parlare con altri podisti. Dopo poco tempo
+il podista realizza che una sindrome della bendelletta ileo tibiale trattata
+senza pazienza e con superficialita’ arriva a causare, attraverso una
+inesorabile catena sequenziale : scompensi articolari iliaci (per la corsa
+“zoppa”), dolori muscolari addominali (per compensare la corsa “zoppa”),
+periartrite alla spalla (per il ripetuto massaggio al ginocchio dolente), fino
+a obesità - alitosi – forfora per i disequilibri causati da un alimentazione
+improvvisamente smodata e insana indotta dallo stato depressivo del podista
+infortunato.<o:p></o:p></span></b></div>
+<div class="MsoNormal" style="margin-right: 18.6pt; tab-stops: 27.0cm;">
+<br /></div>
+<div class="MsoNormal" style="margin-right: 18.6pt; tab-stops: 27.0cm;">
+<b><span style="color: red; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 16.0pt;">C</span></b><b><span style="font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 12.0pt;">ardiofrequenzimetro
+: complesso e sofisticato strumento di misurazione da polso che il podista
+impara finalmente ad utilizzare il giorno prima che la batteria del sensore si
+scarichi. La suddetta batteria va cambiata inviando il sensore alla casa
+produttrice che lo restituirà dopo un intervallo di tempo sufficiente per
+consentire al podista di avere dimenticato completamente il funzionamento dello
+strumento. Il ciclo carica/apprendimento puo’ ripetersi piu’ volte prima che il
+podista decida di abbandonare lo strumento. In caso di carica prolungata o di
+anormale rapidita’ di apprendimento il podista solitamente utilizza lo
+strumento in gara ove la ripetuta invadente presenza dell’allarme per
+superamento della soglia superiore è causa di ansia e conseguente innalzamento
+della frequenza cardiaca del podista e dei vicini entro il raggio di un paio di
+metri.<o:p></o:p></span></b></div>
+<div class="MsoNormal" style="margin-right: 18.6pt; tab-stops: 27.0cm;">
+<br /></div>
+<div class="MsoNormal" style="margin-right: 18.6pt; tab-stops: 27.0cm;">
+<b><span style="color: red; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 16.0pt;">D</span></b><b><span style="font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 12.0pt;">oping
+: testimonianza pratica della esistenza effettiva di imbecilli a tutto tondo :
+coloro i quali riescono a applicare con costanza la propria imbecillità in ogni
+tipo di attività che compiono nella vita : dal lavoro al divertimento.<o:p></o:p></span></b></div>
+<div class="MsoNormal" style="margin-right: 18.6pt; tab-stops: 27.0cm;">
+<br /></div>
+<div class="MsoNormal" style="margin-right: 18.6pt; tab-stops: 27.0cm;">
+<b><span style="color: red; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 16.0pt;">E</span></b><b><span style="font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 12.0pt;">roe o
+</span></b><b><span style="color: red; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 16.0pt;">E</span></b><b><span style="font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 12.0pt;">bete
+? : quello che pensano i non podisti del podista che vedono correre felice in
+mutandoni a 10 gradi sottozero.<o:p></o:p></span></b></div>
+<div class="MsoNormal" style="margin-right: 18.6pt; tab-stops: 27.0cm;">
+<b><span style="font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 12.0pt;"><br /></span></b></div>
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" height="320" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgHv2R89EpbyL4j-DQwe8MA9-nH52iJfGcuf2wx5CFgxDsbfT_42iO0VKfxVxhxDPhrDH2ACMAErmkzjXe7-jDOACj3A3tK9kzNxDQj_wZpIHlKIHzy7YO0IgxfxKNkUrK8ndg/s800/runner-cartoonrdquo-widthrdquo500prime-heightrdquo400prime-gt-exhausted-runner--400334.jpeg" width="183" /></div>
+<div class="MsoNormal" style="margin-right: 18.6pt; tab-stops: 27.0cm;">
+<b><span style="font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 12.0pt;"><br /></span></b></div>
+<div class="MsoNormal" style="margin-right: 18.6pt; tab-stops: 27.0cm;">
+<br /></div>
+<div class="MsoNormal" style="margin-right: 18.6pt; tab-stops: 27.0cm;">
+<b><span style="color: red; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 16.0pt;">F</span></b><b><span style="font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 12.0pt;">artlek
+: particolare tipo di allenamento (vedi sopra) che stimola, tra l’altro, la
+peristalsi intestinale. Agevola la corsa Zen dei compagni di corsa del momento.<o:p></o:p></span></b></div>
+<div class="MsoNormal" style="margin-right: 18.6pt; tab-stops: 27.0cm;">
+<br /></div>
+<div class="MsoNormal" style="margin-right: 18.6pt; tab-stops: 27.0cm;">
+<b><span style="color: red; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 16.0pt;">G</span></b><b><span style="font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 12.0pt;">ara :
+tutti la fanno solo per partecipare. Resta da chiarire perché tutti si&nbsp; schiantano i polmoni negli ultimi cento metri
+per evitare di essere superati dall’abituale compagno di allenamenti. <o:p></o:p></span></b></div>
+<div class="MsoNormal" style="margin-right: 18.6pt; tab-stops: 27.0cm;">
+<br /></div>
+<div class="MsoNormal" style="margin-right: 18.6pt; tab-stops: 27.0cm;">
+<b><span style="color: red; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 16.0pt;">H</span></b><b><span style="font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 12.0pt;">ubris
+: colpisce prima o poi tutti i podisti (“vedi che stavolta faccio davvero il
+personale…”) costretti in breve tempo a subire le conseguenze della propria
+arroganza.<o:p></o:p></span></b></div>
+<div class="MsoNormal" style="margin-right: 18.6pt; tab-stops: 27.0cm;">
+<br /></div>
+<div class="MsoNormal" style="margin-right: 18.6pt; tab-stops: 27.0cm;">
+<b><span style="color: red; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 16.0pt;">I</span></b><b><span style="font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 12.0pt;">nfortunio:
+Tra podisti : D:“ma Mario non c’è oggi? è un po’ che non lo si vede” ; R: “ ma
+come, non lo sai? – sottovoce-&nbsp; E’
+infortunato.”. “Ah….” (da pronunciare con aria di circostanza : sguardo
+contrito e mani artiglianti le parti basse.)<o:p></o:p></span></b></div>
+<div class="MsoNormal" style="margin-right: 18.6pt; tab-stops: 27.0cm;">
+<br /></div>
+<div class="MsoNormal" style="margin-right: 18.6pt; tab-stops: 27.0cm;">
+<b><span style="color: red; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 16.0pt;">L</span></b><b><span style="font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 12.0pt;">unghissimo
+: molti ritengono che non serve. In realtà non lo ammetterebbero mai,&nbsp; ma lo vorrebbero avere. Chi lo ha sa invece
+che, comunque, anche se non serve, in molti casi &nbsp;fa la sua figura.<o:p></o:p></span></b></div>
+<div class="MsoNormal" style="margin-right: 18.6pt; tab-stops: 27.0cm;">
+<br /></div>
+<div class="MsoNormal" style="margin-right: 18.6pt; tab-stops: 27.0cm;">
+<b><span style="font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 12.0pt;">&nbsp;</span></b><b><span style="color: red; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 16.0pt;">M</span></b><b><span style="font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 12.0pt;">aratona
+: tutti quelli che cominciano a correre sanno che prima o poi la faranno. Ma,
+quando cominciano, non sanno “come” la faranno. Se lo sapessero, (e se
+potessero vedere la propria faccia al passaggio del 35^ km della prima
+maratona) molti non comincerebbero nemmeno a correre.<o:p></o:p></span></b></div>
+<div class="MsoNormal" style="margin-right: 18.6pt; tab-stops: 27.0cm;">
+<b><span style="font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 12.0pt;"><br /></span></b></div>
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6s-aYEhw8tz5B07YqH7Og6FsRCsHgKx2aT326zAO0P5pogcEHbmSDgWRWslFEoVnlSShKHtv6OLjBJahk1n9kObLTu3v_pAiO3nC6ypKUilXIOI_sBA8jnxWuWZd0YTDMc7v5/s800/tired-runner-303x222.jpg" /></div>
+<div class="MsoNormal" style="margin-right: 18.6pt; tab-stops: 27.0cm;">
+<b><span style="font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 12.0pt;"><br /></span></b></div>
+<div class="MsoNormal" style="margin-right: 18.6pt; tab-stops: 27.0cm;">
+<br /></div>
+<div class="MsoNormal" style="margin-right: 18.6pt; tab-stops: 27.0cm;">
+<b><span style="color: red; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 16.0pt;">N</span></b><b><span style="font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 12.0pt;">ew
+York : unica città al mondo in cui si corre una maratona, secondo il non
+podista. Conseguente oggetto della prima domanda del non podista al podista :
+“Hai fatto new York?”. Ogni risposta diversa da “ Sì in meno di 2 ore e 30”
+genera un sorriso di compiaciuto compatimento nel non podista.<o:p></o:p></span></b></div>
+<div class="MsoNormal" style="margin-right: 18.6pt; tab-stops: 27.0cm;">
+<br /></div>
+<div class="MsoNormal" style="margin-right: 18.6pt; tab-stops: 27.0cm;">
+<b><span style="color: red; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 16.0pt;">O</span></b><b><span style="font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 12.0pt;">rario
+: quello delle gare non va mai bene. Se è la mattina presto: “io la mattina ho
+la pressione bassa, non rendo mai bene in gara”. Se è nel pomeriggio : “quando
+fa caldo io non rendo al massimo, preferisco la mattina presto”. Se è la sera o
+di notte : “quando è buio non rendo bene, ho paura di inciampare, preferisco la
+mattina o nel pomeriggio”.<o:p></o:p></span></b></div>
+<div class="MsoNormal" style="margin-right: 18.6pt; tab-stops: 27.0cm;">
+<br /></div>
+<div class="MsoNormal" style="margin-right: 18.6pt; tab-stops: 27.0cm;">
+<b><span style="color: red; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 16.0pt;">P</span></b><b><span style="font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 12.0pt;">rogressivo
+:&nbsp; così si definisce quel tipo di
+allenamento che, una volta realizzato in pratica, diventa regressivo (cfr.)<o:p></o:p></span></b></div>
+<div class="MsoNormal" style="margin-right: 18.6pt; tab-stops: 27.0cm;">
+<br /></div>
+<div class="MsoNormal" style="margin-right: 18.6pt; tab-stops: 27.0cm;">
+<b><span style="color: red; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 16.0pt;">Q</span></b><b><span style="font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 12.0pt;">uasi
+: è la differenza che passa tra ottenere il risultato sperato e non ottenerlo
+“oggi finalmente ho fatto il personale sulla mezza….quasi”<o:p></o:p></span></b></div>
+<div class="MsoNormal" style="margin-right: 18.6pt; tab-stops: 27.0cm;">
+<br /></div>
+<div class="MsoNormal" style="margin-right: 18.6pt; tab-stops: 27.0cm;">
+<b><span style="color: red; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 16.0pt;">R</span></b><b><span style="font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 12.0pt;">egressivo
+: risultato pratico di un progettato allenamento progressivo,&nbsp; riassunto anche nella tattica (cfr) “parto
+piano per poi rallentare”<o:p></o:p></span></b></div>
+<div class="MsoNormal" style="margin-right: 18.6pt; tab-stops: 27.0cm;">
+<br /></div>
+<div class="MsoNormal" style="margin-right: 18.6pt; tab-stops: 27.0cm;">
+<b><span style="color: red; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 16.0pt;">S</span></b><b><span style="font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 12.0pt;">tretching
+: performance artistica moderna che prevede la realizzazione di complesse
+figure corporee con lo scopo di massimizzare il dolore del praticante al fine
+di ottimizzarne l’espressività. Praticato in gruppo richiede pudore, praticato
+in solitario richiede un bagno di dimensioni adeguate (cd. “bagno sardo”).<o:p></o:p></span></b></div>
+<div class="MsoNormal" style="margin-right: 18.6pt; tab-stops: 27.0cm;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" height="320" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinGkMxNMfn2mtl2yv9fPWSaSAMpNhQXnkqV5hHgXzhBmzYmDUCV078Q0kyjmYNCblfeJNg1bZ0h5eQsMIlYu1VZZmTa9eSIP-uMp-uYa8qCBfQBonjIBp0Hfy2nm2Xa5NxJbd6/s800/tired-runner-clip-art-482437.jpg" width="306" /></div>
+<div class="MsoNormal" style="margin-right: 18.6pt; tab-stops: 27.0cm;">
+<b><span style="font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 12.0pt;"><br /></span></b></div>
+<div class="MsoNormal" style="margin-right: 18.6pt; tab-stops: 27.0cm;">
+<b><span style="color: red; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 16.0pt;">T</span></b><b><span style="font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 12.0pt;">attica
+di gara : complessa sequenza di tempi e velocità che viene solitamente
+elaborata a tavolino. All’atto pratico è eccessiva anche PER runners del calibro
+di Paul Tergat (categ. talenti naturali)&nbsp;
+ma ciononostante viene spesso adottata dal podista medio (categ. lenti
+naturali). Con conseguenze immaginabili. Definiz alternativa : tutto quello che
+viene fatto durante la gara. Solitamente questo insieme di eventi-comportamenti
+coincide con tutto quello che, prima della gara, il podista giura che non
+fara’. Assolutamente.<o:p></o:p></span></b></div>
+<div class="MsoNormal" style="margin-right: 18.6pt; tab-stops: 27.0cm;">
+<br /></div>
+<div class="MsoNormal" style="margin-right: 18.6pt; tab-stops: 27.0cm;">
+<b><span style="color: red; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 16.0pt;">U</span></b><b><span style="font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 12.0pt;">tilità
+: prima o poi il podista si chiede l’utilità di quanto sta facendo. Soprattutto
+quando si confronta con fastidiosi infortuni (vedi sopra) e complesse
+organizzazioni di dinamiche famigliari.<o:p></o:p></span></b></div>
+<div class="MsoNormal" style="margin-right: 18.6pt; tab-stops: 27.0cm;">
+<br /></div>
+<div class="MsoNormal" style="margin-right: 18.6pt; tab-stops: 27.0cm;">
+<b><span style="color: red; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 16.0pt;">V</span></b><b><span style="font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 12.0pt;">elocita’
+: specifico elemento distintivo della peculiare “anomalia invertita” che identifica
+il podista esperto. Il neofita misura la velocità in km/ora, il podista esperto
+in Minuti/Km. Nota bene : si parla sempre di “velocità” (per fortuna) e mai di
+“lentezza” .(es. la domanda : “A che velocità vai?” anche rivolta a chi procede
+normalmente a piu’ di 8 min/km). L’incontro e lo scambio di esperienze tra
+podisti europei (min/km) e podisti americani (min/miglio) puo’ solitamente
+essere fonte di divertenti malintesi e sguardi increduli degli uni verso gli
+altri.<o:p></o:p></span></b></div>
+<div class="MsoNormal" style="margin-right: 18.6pt; tab-stops: 27.0cm;">
+<br /></div>
+<br />
+<div class="MsoNormal" style="margin-right: 18.6pt; tab-stops: 27.0cm;">
+<b><span style="color: red; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 16.0pt;">Z</span></b><b><span style="font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; font-size: 12.0pt;">ona :
+particolare regime dietetico che garantisce il dimagrimento in quanto basato su
+mattoni. Il risultato è garantito in quanto i mattoni, come noto,&nbsp; sono poco nutrienti e, soprattutto,
+scarsamente appetibili anche se adeguatamente conditi..<o:p></o:p></span></b></div>
+
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20161101_204.html">Spettacolo d'autunno</a>
+    <a class="next" href="20170409_206.html">Quattro amici al bar...di Bettola</a>
+  </div>
+</div>
+
+</body>
+</html>
