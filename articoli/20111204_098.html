@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Le giberne – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2011 &rsaquo; 4 dicembre 2011
+  </p>
+  <h1 class="article-title">Le giberne</h1>
+  <p class="article-meta">4 dicembre 2011</p>
+  <div class="article-body">
+    <table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMIxctI5jDIpCBk1z2pg9FpWp1TXPWy3O60logBwUapNuzhZ0zt_xTAz6bXown8DDJLJEysnAxDzp12dXY9OYoBCT6l24DDw167NIgLI8n9f9AkfLGQ2kQHqTrh2Sk_YcJvD2I/s800/giberne.gif" height="267" width="400" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Vari tipi di giberne dell'esercito austroungarico</td></tr>
+</tbody></table>
+<b>Il mondo e' bello perche' e' vario : ovvero ognuno ha le giberne che si merita.</b><br />
+E chi se lo merita le giberne non le ha.<br />
+Uno che proprio le giberne non sa cosa siano e' Mario : alpinista secco e tenace e' agli antipodi del classico gibernauta morbidoso. Ma Mario e' gentile e cosi' non si fa pregare quando si stratta di accompagnare due gibernauti in una corsa domenicale.<br />
+Si parte alle canoniche 830 dalla canonica canottieri : Pino Aspirante gibernauta, Mario e, ovviamente, lo scrivente &nbsp;gibernauta. Mario asseconda di buon grado il ritmo tranquillo imposto dai due podisti dotati di giberne incorporate.<br />
+Anzi, decide che e' il caso di togliere i due dall'impaccio di dover ogni tanto interloquire nella chiacchierata : cosi' parla praticamente senza interruzioni dal primo al sedicesimo km. &nbsp;Ovvio che i due gibernauti accolgono di buon grado questa specie di corsa con l'autoradio.Per cambiare canale basta intervenire brevemente dicendo : "be' hai visto la manovra di MOnti?" E parte un talk show (talk uno solo : Mario) di politica interna; oppure "avere figli e' una responsabilita'.. " E parte un servizio speciale sulla scuola in Lombardia. Anzi, ci ha anche raccontato un lungo episodio su un suo conflitto (con minaccia di passare alle vie di fatto) sul campo da tennis. Insomma, fortuna che Mario c'e' perche' quando si ascolta (o si finge di chiacchierare) i km passano in fretta e correre e' sempre divertente. E poi non conosco persona piu' ricca di aneddoti sorprendentemente buffi : tipo quello sul segno che in Grecia significa "vaffan.." . Insomma una benedizione per noi gibernauti.<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhO9B0OHQ7eOA73jMIQi7a61PxSgVrSlmPcPsR65bxDUdowebJ-mXtv396P_ZsVToJ9p56qa1QHHEFT_2-ARhDL1DE-iSzyVfH6fDa-73UQ4oKUDsyc_EQxbQH1VjscJZ7y8MPr/s800/Schermata+12-2455900+alle+12.00.54.png" height="307" width="640" /></div>
+<br />
+<br />
+Purtroppo al sedicesimo km mario fa : "io allungherei un filino". Pino opta per un diplomatico "vai tranquillo io vado in progressione..".Il gibernauta invece lancia il cuore oltre l'ostacolo "Mario aspetta vengo con te!". Mentre il gibernauta lasciava pezzi di polmone sull'asfalto della ciclabile correndo gli ultimi km in 4'17 e 4'07, Mario allunga senza apparente fatica e appioppa al gibernauta un bel distacco di circa 150m: piu' di mezzo minuto in 2 km. Il gibernauta se ne sta piegato in due alla fine dell'inutile sprint quando arriva Pino che si produce in un allungo notevole con gli ultimi km tutti in progressione (come aveva detto).<br />
+Insomma 18 km in circa 1h30' e la netta sensazione che il mondo si divide in due : chi ha le giberne e chi non le ha. Io, purtroppo, le ho.
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20111203_097.html">Il bello della bici</a>
+    <a class="next" href="20111211_099.html">Varie specie di gibernauti</a>
+  </div>
+</div>
+
+</body>
+</html>

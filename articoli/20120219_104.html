@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Si ritorna in pista.... – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2012 &rsaquo; 19 febbraio 2012
+  </p>
+  <h1 class="article-title">Si ritorna in pista....</h1>
+  <p class="article-meta">19 febbraio 2012</p>
+  <div class="article-body">
+    <div class="separator" style="clear: both; text-align: center;">
+<img border="0" height="237" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEin8w5qpEep7CL0nYxtHP6lnmz2hqJbbLqgOKMhmJDVJXJP0KGKXQCcZiY_xFw-8WX_18y2zvp_2P1oTgjv-Mp87VaajPLGvYur6Ww93QYQjkKa9jWSUyc8bhXO71fhUkuhrYnA/s800/Schermata+02-2455977+alle+16.02.21.png" width="400" /></div>
+<br />
+Prima la fascite plantare, poi il raffreddorone micidiale con strascico. Insomma erano ormai circa 3 settimane di quasi stop. Fortunato, a dire il vero, dato che il clima micidiale impediva ogni uscita.<br />
+Ma sabato : di nuovo in sella.<br />
+<br />
+Ritrovo alle 9 alla solita Canottieri per un giro pianeggiante. Siamo in 5 : Sabrina, Stefano (che di secondo nome fa Annibale) , &nbsp;Annibale (che di secondo nome non fa Stefano) , Giovanni ed io. Si aggrega al volo Luca (mi pare) medico con la passione per il pedale che ci aggancia poco prima della partenza.<br />
+<br />
+Clima ottimo e strada abbastanza asciutta : insomma tutto bene. Ed infatti non faccio in tempo a rallegrarmi della gamba abbastanza tonica che ...fffffffffffff : buco l'anteriore.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQGvMWjOOKutNzFPjxmaExuq4VNDzTUBIMcnSzkyRILYbGjNz3fAOGXnhmq08JS4uDJZTT9c8f1AuZcphht-KOouAfWTKDXOfW6VZbv08_lrZT82PAzD7xkX6eBS18BFbnM2qf/s800/bicycle-repair-shop-flat-tyre-small-15358.jpg" width="409" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Magari aver visto questa indicazione sabato...</td></tr>
+</tbody></table>
+<br />
+<br />
+Ora, non che io sia un meccanico della Colnago ma modestamente in quanto a cambio gomme me la cavo mica male. Chiedere ad Annibale del doppio cambio in occasione della Randonneee di Cascina Costa.<br />
+<br />
+Invece questa volta non ne va una giusta. Comincio con lo staccarmi meta' unghia del pollice contro un raggio. Poi ho una camera d'aria con la valvola non adatta alle ruote. Poi ricomincia a sanguinare copiosamente un taglio che avevo sul medio della mano destra. Insomma : ad un certo punto, mossi da pieta' e dalla comprensibile voglia di rientrare entro sera, i compagni di pedale mi fanno accomodare e in un batter d'occhio mi sostituiscono la camera d'aria.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="240" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYjDEplvUhgSGVu3RLPasvWjh7a5tlmOQoap6ncaxnG5nbP5pnVKFvmz5nV7OaSII47xLxk2YqwguEkx1VaJ1hps_AcTDaYktdqtCQKuErEe4AefocbEbwsJFfkOJuGtJe7Ppf/s800/bloody-thumb.jpg" width="320" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Incidenti del mestiere</td></tr>
+</tbody></table>
+<br />
+Da segnalare : la camera d'aria di Stefano, la pompa iperpotente (niente doppi sensi please) di Giovanni, lo spirito da crocerossina di Sabrina di fronte al ferito grondante sangue, il sostegno psicologico filosofico di Annibale.<br />
+<br />
+Si riparte alla volta di Bereguardo. Io , come sempre succede in questi casi, ho la sindrome del buco fantasma. Quello che succede ad uno che ha appena forato : continua a scrutare la ruota con preoccupazione, in attesa di sentire i primi sintomi della seconda foratura. Clima umido e un po' di nebbiolina, nonche' l'impegno per tenere dietro alla bici da Crono di Stefano, consigliano attenzione.<br />
+<br />
+Invece nulla. per fortuna. La camera d'aria tiene. Da Bereguardo puntiamo verso Pavia dove, dopo un po' di giri in zona periferica, troviamo la ciclabile del Naviglio che ci riporta a Milano.<br />
+<br />
+Poco piu' di 80 km ad una media di poco inferiore ai 30. Non male come prima uscita dopo lo stop.<br />
+<br />
+<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="382" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3tkS3nnHnzXtkbf8I-wcRDXYvG9ZYl_L9IrkJRkvDEnZazX4_Q6w6Ds2YRBuee6T7gcDOeLS8zwITsKE7MMCleC4FHfciV78OibiqWdELlPUf8qixIC7_k7jC530nMsSNB5cy/s800/Schermata+02-2455977+alle+16.07.58.png" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">&nbsp;Si vede il ritorno con le variazioni di ritmo sui 500<br /></td></tr>
+</tbody></table>
+Domenica invece si corre. Ci troviamo in due (Pino ed io) abbondanti gibernauti , alle 830 in Canottieri. Programma : 14 km. L'andata chiacchierando scorre via facilmente a 5'15" circa. C'e' anche il tempo, avvicinandosi al 7mo km, di notare che vicino al mitico ristorante "El Negher" e' partito un minisviluppo immobiliare. Miracoli nel marketing dei nomi azzeccati.<br />
+<br />
+Visto che le gambe tengono, con Pino decidiamo di movimentare un po' il ritorno alternando un 500 veloce con uno di recupero. E' vero che in questo modo si riesce a tenere un ritmo medio che altrimenti sarebbe piu' faticoso tenere ad andatura costante : i 500 m veloci non sono mai troppo lunghi e i 500 m di recupero non sono mai troppo brevi. Certo se uno non avesse bisogno del recupero tutto sarebbe di maggior soddisfazione : ma per il momento accontentiamoci cosi'. Alla fine saranno 14.6 km in 1h12' e due gibernauti si complimentano per la notevole prestazione!<br />
+<br />
+Insomma : siamo di nuovo "up and running"!<br />
+<br />
+<br />
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20120210_103.html">Mezzi alternativi</a>
+    <a class="next" href="20120226_105.html">Il famigerato COMBINATO</a>
+  </div>
+</div>
+
+</body>
+</html>

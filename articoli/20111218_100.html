@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Weekend impegnativo – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2011 &rsaquo; 18 dicembre 2011
+  </p>
+  <h1 class="article-title">Weekend impegnativo</h1>
+  <p class="article-meta">18 dicembre 2011</p>
+  <div class="article-body">
+    <span style="font-size: large;"><b><u>UN WEEKEND IMPEGNATIVO</u></b></span><br />
+<span style="font-size: large;"><b><u><br /></u></b></span>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmR5wOvuQ7B2W79g1YU64bPvZbKcFTiAO93gdgl4UwWeqXygjznE32933O4rhxHIcPlVVz1GITM6hL-ynRtONrXFTgO_TWG-vhMl4_iZreqaKzUM0R4w5DhMTrcmQz8MK3Ofw0/s800/Schermata+12-2455914+alle+17.37.08.png" height="600" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Il "combinato" di sabato</td></tr>
+</tbody></table>
+<b>SABATO</b><br />
+Ci sono amicizie pericolose. Lo sapevo che di Stefano Ironman non c'era da fidarsi. Insomma uno che suona il basso e compone blues e funky non può essere molto pericoloso quando si tratta di sport, no? Certo il fatto che abbia giocato in serie A in pallanuoto avrebbe dovuto mettermi sul chi vive, ma soprattutto avrei dovuto ricordarmi che era da poco reduce da un tappa del circuito ironman particolarmente impegnativa, in Galles.<br />
+<br />
+Così non ci ho pensato molto su quando ha lanciato un giro di inviti via mail venerdi' per un "combinato". Ok, ci sono! Certo avrei dovuto sospettare qualcosa quando ho visto che si accumulavano i forfait con le scuse più disparate: chi doveva fare lo shopping natalizio, chi aveva la febbre, chi doveva farsi lo sciampo. Insomma a poco a poco tutti si son defilati e siamo rimasti in due (oltre al suddetto Stefano) : Sabrina (trentenne architetto triathleta, una ventata di gioventù entusiasta) e il sottoscritto.<br />
+<br />
+Ci si trova alle 10 sabato mattina in Canottieri in bici e armati di zainetto con tenuta da running. Depositati scarpe e canotta si parte per la frazione di bici.<br />
+<br />
+Giornata splendida, come d'inverno ogni tanto capitano : aria freddina ma limpida e simpatico vento contrario.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifPS4b-Fezz6z1HuDOvITpIoeM60284DCxHQYI5nWk-zyWrVKYIdPshoj_bbXem9TjZCJqw06kw5-KctWF4Ed5qRmtViHZMVT7b8coGOZdgmdT0FaWRO_5Cq-GVGanpoKtWKm4/s800/IMG_2001.jpg" height="478" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Aria tersa e fredda : le Alpi innevate sullo sfondo : stiamo pedalando verso Morimondo<br />
+<br /></td></tr>
+</tbody></table>
+Stefano tira davanti e Sabrina tiene ottimamente il ritmo. Il sottoscritto gibernauta ansima cercando di non perdere le ruote. Sono stradine di campagna che sembrano tracciate da un criceto esaltato: ogni cento metri c'e' una curva a 90 gradi : ciononostante il vento rimane ostinatamente contrario.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEyKizYmFUN3vtJTa7EnN3i1Ygrj0hs7be5cxDki4eBw2WMVkfhl7lbtN9PaXHc4moLC_moQmMU9KCWsgWhdPznH5cPKaF5xiYIyiS2KiExb1CgFMYTYnLMWFO1LOzDvnF7pK2/s800/IMG_1994.jpg" height="478" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Stefano Ironman, Sabrina Steelgirl e il Gibernauta (che esibisce un inspiegabile e inopportunamente ottimista sorriso)</td></tr>
+</tbody></table>
+Stefano è un atleta disciplinato, come le gare di resistenza impongono.&nbsp;Dopo un'ora e mezza di bici si deve mangiare e quindi non ci si lascia sfuggire l'occasione di una sosta in pasticceria : io apprezzo l'opportunita' di riposare e rimpolpo le giberne con un bel cornetto alla marmellata. Foto di rito e via per la seconda parte della pedalata.<br />
+<br />
+La campagna brulla e invernale non riscalda il cuore come il verde lussureggiante delle risaie primaverili, ma l'aria tersa e i colori brillanti sotto il sole ci fanno sentire fortunati : una splendida giornata per un giro in bici.<br />
+La velocita' resta intorno ai 29-30, quella che per Stefano è bruciagrassi mentre per me è sfiancapolmoni, pero' ognuno ha la velocita' che si merita.<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmM97InA-Zyn5huJhRxrRPhXpuwssx1cbZLWRp6bWUoqebN1QiJXryNYZV7EjaevGy0ptgxOrwnAYsLGij1WBr2XCIv2KngzAy_SOltFyo-Gm5OcVG9R6fGJkgli-G37m16OMy/s800/IMG_1998.jpg" height="478" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Sabrina e Stefano : foto by gibernauta mentre pedalava : acrobata!</td></tr>
+</tbody></table>
+Attraversata la valletta di Morimondo puntiamo la prua verso Milano e maciniamo gli ultimi km. Piu' la meta si avvicinava più percepivo una certa inquietudine all'idea che smontati dalla bici ci attendevano 40' di corsa. Fortunatamente Stefano ha le idee chiare : a piedi non serve spingere, bisogna andare a 5'15"-5'30" serve solo stare sulle gambe e bruciare grassi. Tutti sti grassi da bruciare lui non e' che ne abbia, io invece che ne avrei bisogno apprezzo il programma.<br />
+<br />
+Arrivati in Canottieri c'e' giusto il tempo per cambiarsi e salutare un po' degli amici runner che stan partendo per l'allenamento e siamo già di corsa. Come succede sempre si parte più veloci del previsto : al primo km siamo già intorno ai 5'. &nbsp;Purtroppo Sabrina ha un dolore continuo all'anca e decide di rientrare al terzo km. La accompagniamo , ovviamente, soprattutto adesso che la zona della ciclabile prima di Corsico &nbsp;e' stata teatro di episodi davvero poco divertenti. Il ritorno in favore di vento e' ancora più veloce e ormai siamo sempre intorno ai 4'45". Gli ultimi due km per Stefano sono l'occasione di un allungo imperioso. Io non mi sogno di resistergli ma cerco perlomeno di non farmi staccare vergognosamente : chiudo con un onorevole ultimo km in 4'30".<br />
+<br />
+Sono soddisfatto, le gambe sono legnosette ma hanno tenuto e sono arrivato in fondo. Tutto sommato posso essere contento : si tratta infatti di 68 km in bici seguito da 8km a piedi.E sono ancora vivo. Io e le mie resistentissime giberne.<br />
+<br />
+<b>DOMENICA</b><br />
+Stefano me lo aveva detto : guarda che domani sentirai l'effetto della fatica di oggi, quindi fai qualcosa di leggero. Io sono un atleta disciplinato e quindi seguo il suo consiglio : mi trovo alle 830 in Canottieri con, Renato, Armando e Pino. Programma : 20 km. Fa più freddo di ieri e i primi km si parla un po' balbettando. Stranamente Pino (aspirante gibernauta) è silenzioso. Di solito lui diventa più riflessivo dopo il 15mo km ma all'inizio, come me, è molto ciarliero. Ci informa di essere reduce da una cena di Natale che è durata un pò troppo; sgombra subito il campo da equivoci : niente fagioli neri venezuelani. Sospiro di sollievo del gruppo.<br />
+Ma non c'e' niente da fare, al quarto km l'intesPino (intestino di Pino) ha la meglio sul suo padrone e lo richiama prontamente verso l'auto. A nulla serve l'esortazione di Al Harmnd Krktr : "e dai...alleggerisciti qui in un prato, ho anche i fazzolettini!" Si sa gli uomini degli altipiani non si formalizzano : insomma quando scappa scappa, e in mezzo al deserto mica ci sono i water. Ma Pino e' gibernauta timido e discreto : ringrazia e si avvia rapido sulla strada del ritorno. Lo vediamo svanire in lontananza in mezzo a strani borbottii.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhu44xAELtuHch5uq6bR5P4CX49KSPlogt_d3zXtNEOSs7te-qI2f7tGcnO3DttU1W3T7FndDVTNaQcskqU7GLXDF94ZTpr08LANYH9rexIea5XBjSFjToRFzgoCDBL3v6wj44n/s800/Schermata+12-2455914+alle+19.11.26.png" height="276" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">La corsa di domenica : notare l'ultimo km in spinta!</td></tr>
+</tbody></table>
+Sono bastati pochi secondi di incertezza con Pino per far sì che Al Harmnd prendesse circa 20 metri di vantaggio su di noi. Be' il bello di correre insieme è proprio che non si corre da soli. Cioè si chiacchiera. Ed infatti il gazzellone degli altipiani invece di aspettarci se ne sta li' davanti a 30m di distanza e ogni tanto ci fa cenno con la manina tipo "dai su accelerate un pochino e venite qui". Morale: si è fatto tutti i 16 km rimanenti solo soletto davanti a noi due che chiacchieravamo, anzi ad un certo punto ha anche accelerato scomparendo in lontananza. Bello invitare Al Harmnd a correre. Gia' non è che chiacchieri molto, ma poi ogni tanto gli scappa lo stimolo asociale e .......via! Fatto sta che chiude molto davanti a noi. E il gibernauta? Be' poteva andare peggio, sono riuscito anche a sprintare nell'ultimo km chiudendo ad una media di 5'07" con il finale a 4'20". Bene!.<br />
+Sulla via del ritorno scrutavamo i dintorni per identificare eventuali segni di deflagrazione di Pino. Fortunatamente al traguardo non c'era la macchina, ma nemmeno suoi brandelli : segno che Pino da qui era riuscito a partire. Si è poi saputo che è rientrato sano e salvo a casa. Nei 5 minuti immediatamente seguenti il suo impellente ingresso il nostro pare abbia provato una sensazione di sollievo assoluto. In coincidenza si segnalano alcune telefonate preoccupate al centro di sismologia di Garbagnate.<br />
+<br />
+<span style="font-size: large;"><b><u><br /></u></b></span>
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20111211_099.html">Varie specie di gibernauti</a>
+    <a class="next" href="20120107_101.html">Pedalando in Lombardia..</a>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Il bello della bici – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2011 &rsaquo; 3 dicembre 2011
+  </p>
+  <h1 class="article-title">Il bello della bici</h1>
+  <p class="article-meta">3 dicembre 2011</p>
+  <div class="article-body">
+    <div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3gTVP7cZ-bXRxE_Xn9Ud6qGBrITqazBbFE01ciCy8QYftDBngR1mvKkd9rQRLwTXf87fV31v2_Ui66XELvUbB1_82YmZ-7uZD0bciSmp-9-4l_k8SrgkNzCAv-E-VLe0EPL5X/s800/012+-+arriviamo+al+ponte+di+barche.jpg" height="298" width="400" /></div>
+<br />
+<b>Il bello della bici</b><br />
+Anche in questo caso non mi riferisco al gibernauta. Mi riferisco invece a quei gruppetti di ciclisti stagionati che spesso si vedono in giro sulle strade lombarde. Ecco, oggi, durante il nostro giro mattutino siamo stati agganciati da una coppia di ciclisti che si sono aggregati al nostro gruppetto. Bene : uno dei due aveva la gamba piu' tonica, si vedeva, e si muoveva con notevole esperienza. Chi va in bici da tempo si riconosce subito : ha quegli automatismi e movimenti che si acquisiscono dopo anni passati a scansare i pericoli della strada seduti su un sellino. Ma cominciamo dall'inizio, appunto.<br />
+<br />
+Ci si trova alle 10 (per evitare la possibile pioggia) in canottieri Milano : Alessandro, Fabrizio, Stefano Edoardo e la giovane Sabrina. Buon ultimo il gibernauta. Partiamo alla volta di Bereguardo con l'idea di fare un giretto di una 80na di km. Non c'e' nebbia, solo una leggera foschia ma il fondo e' umido e scivoloso : massima attenzione dunque.<br />
+<br />
+Poco prima di Gaggiano incrociamo due amici di Fabrizio che si uniscono a noi. Notevole : erano in mountain bike con tanto di ruote tassellate e a bassa pressione e indossavano scarpe da running senza tacchette. Ciononostante tenevano agevolmente la velocita' con il tipico rumore "wwwuuuuuuuuuu" che fanno le ruote grasse sull'asfalto.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjtZzjtUeyW1TZ9I1ZbJov0z4u5TeR0Kq8fn1RjLXKgqP0p1TfRRpF09T18CJWZkKiiFi9HPVQxgWFhcueXe2p66nigWB9OQRBFAjt0X0_FmRFPLH_DHyuVO1nYxxhpKNrpNJse/s800/Schermata+12-2455899+alle+17.10.21.png" height="640" width="531" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">La mappa del giro</td></tr>
+</tbody></table>
+Il gibernauta invece teneva con fatica la velocita', con il tipico rumore "anf....pant....anf...." che fanno i poveracci quando stanno per esalare l'ultimo respiro.<br />
+<div>
+<br /></div>
+<div>
+Alessandro tira il gruppo e ad un incrocio veniamo appunto agganciati dai due ciclisti. Si piazzano in fondo e ad un certo punto dopo una buca improvvisa uno dei due grida "oh! ma fate i segni no, la' davanti!" I segni sugli eventuali problemi della strada sono un obbligo per chi pedala in gruppo. Fanno la differenza tra procedere veloci e scorrevoli e ritrovarsi invece aggrovigliati per terra.&nbsp;</div>
+<div>
+<br /></div>
+<div>
+Infatti lungo un rettilineo in cui Ale tirava a 35-37 il gibernauta prende in pieno una buca e PAM! parte la borraccia. Roba che quelli dietro possono facilmente cadere. Fortunatamente restiamo tutti in piedi ma il gibernata perde il gruppo. Si lancia quindi in un inseguimento destinato a misera sorte se non fosse che dopo pochi km trova i due amici in MTB e gli altri due aggregati che lo hanno aspettato. A Bereguardo ci si ritrova : certo che e' bello avere degli amici che non appena c'e' un problema ti mollano li' come un pirla! Fortunatamente c'erano gli altri amici di giornata altrimenti ero ancora li' a vagare.&nbsp;</div>
+<div>
+<br /></div>
+<div>
+Tra l'altro avevano anche mollato Sabrina che evidentemente si era distratta un attimo e una volta persa la ruota....E si' che e' una che va, eccome se va. Carina veloce multisportiva e determinata. Insomma il contrario del gibernauta. Pedalando lungo il Ticino e poi verso Milano abbiamo scoperto che uno dei due amici aggregati, quello che mostrava maggiore esperienza, aveva 77 anni. Si' : 77. Un tipetto che si sciroppa 14mila km l'anno. Ci ha lasciato (nel senso che ha girato verso casa, non in senso funebre) alle porte di Milano, non senza aver dato ogni tanto una trenatina oltre i 35 all'ora.<br />
+<div>
+Ecco : questo e' il bello della bici : vedere che anche a 77 anni ci si puo' divertire in sella. E dare filo da torcere a chiunque se ci si allena con costanza. Il Gibernauta, poveraccio, lui al massimo potra' mirare ad un'onesta sopravvivenza ciclistica, dato che piu' che allenarsi con costanza, lui si allena con giberne.</div>
+<div>
+Alla fine piu' di 80 km a poco meno di 30 di media.<br />
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+<br /></div>
+</div>
+
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20111127_084.html">weekend nebbioso</a>
+    <a class="next" href="20111204_086.html">Le giberne</a>
+  </div>
+</div>
+
+</body>
+</html>

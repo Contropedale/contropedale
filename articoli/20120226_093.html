@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Il famigerato COMBINATO – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2012 &rsaquo; 26 febbraio 2012
+  </p>
+  <h1 class="article-title">Il famigerato COMBINATO</h1>
+  <p class="article-meta">26 febbraio 2012</p>
+  <div class="article-body">
+    Ero un pochino preoccupato mentre la mattina di sabato pedalavo verso la Canottieri. Appuntamento alle 9 con Sabrina Steelwoman per un giro in bici con corsa a piedi a seguire. Insomma, il raffreddore con tosse non era passato e io cosa avevo escogitato? Proporre di mia iniziativa un bel COMBINATO, cioè' un allenamento in cui a 3 ore di bici seguono immediatamente un po' di km di corsa a piedi. L'ideale se uno non e' al top e tossisce come il diesel smarmittato di un peschereccio turco, no? &nbsp;Poi avevo pensato bene di proporlo a Sabrina, della quale tutto si può' dire ma non che non abbia una volontà' di ferro e una resistenza di pari portata.<br />
+<div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="476" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRsrqVqh8p_AqRo9NFXoSHeeaTCcjx3DocBE23AJBl9ool8DRWjPRigbPPXRJvL4kV32qLwhgKOsWCNIm37cSIAPHWVZkPo5acdLhzrnwqsjvz6j9QoH1XUn1nidWIuxMzAeMw/s800/foto-1.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Belve in attesa di scalpitare....</td></tr>
+</tbody></table>
+<div>
+Quindi ero preoccupato.&nbsp;</div>
+<div>
+<div>
+Facile quindi immaginare come mi sono sentito quando lei mi ha annunciato serafica che aveva invitato anche una sua compagna di squadra, e questa si e' presentata in compagnia di un amico entrambi scalpitanti e giovani triathleti.&nbsp;</div>
+<div>
+Un gibernauta &nbsp;nelle mie condizioni avrebbe preso le giberne e se ne sarebbe tornato a casa, invece io no. Aspetto che tutti siano in sella e mi lancio come entusiasta guida ciclistica alle bellezze del parco agricolo Milano Sud.</div>
+<div>
+<br /></div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="376" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGnl4X4lJvu8W4R2gE5SAhHialU2S_R5SJHsiEWXZr7a15aE3U0em5sExvR1b_dpcLzG3k_pqqssPbFuh1qmlj79r-tXkKe9FXCEb6cp2vmkWNoVMaafLanlM0D0lIR_O5furZ/s800/Schermata+02-2455984+alle+16.52.53.png" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">La parte in bici...</td></tr>
+</tbody></table>
+<div>
+<br /></div>
+<div>
+Si va : il programma prevede una ottantina di km in bici e a seguire 8 a piedi. Io mi metto alla guida del quartetto : pedalando verso Abbiategrasso siamo pure controvento e si fa (faccio) una fatica bestia. Per di più' il Naviglio e' in secca e non c'e' nemmeno da consolarsi con lo sciabordio dell'acqua. Testa bassa e pedalare.Nel frattempo sento che dietro chiacchierano amabilmente, e ci credo : hanno venti anni di eta' in meno e venti anni di allenamento in più'! Fortunatamente la virata verso Corbetta mi toglie dal vento in faccia e quelle due o tre curve del percorso servono anche a rompere il ritmo della fatica che altrimenti diventa anche noiosa. La giornata e' limpida e tiepida, l'ideale per la bici.&nbsp;</div>
+<div>
+<br /></div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="478" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgXvnxZimLeXDi7pFrTDXzbhaL_eDX3XmzAHcxTNhhw9Aes89GZAxWgSw7FVk__DAhFdDoF-H7noOPDm91mJcHD1_Nu05amitz2D4RTOma-ci-neU9_Hucukv_mNpA17GBn0Y1z/s800/foto-2.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Gibernauta tra triathleti padovani</td></tr>
+</tbody></table>
+<div>
+Dopo il ponte vecchio di Magenta, alla boa del 40m km ci fermiamo per un caffè', e io ne approfitto per ordinare coca e panino. Così' almeno ci si ferma di più' e io posso rifiatare. Per allungare il recupero avevo anche pensato di ordinare un risotto espresso (tempo di attesa 25 minuti) &nbsp;ma poi ho temuto che mi avrebbero sgamato.</div>
+<div>
+<br /></div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjtkBtWEBAo3A6JToBUFR_Yu4zSESRNSbX9gSBV20pux4_gvbj0CbS4urZfNKQg3WZ2bpOV6_Ns9Pa7mZActv5uhyjH0V3jkpLfbbJVOpW_zfqhgsEdMgVIm3fGTwK7g3ADyK84/s800/IMG_2287.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Atleti veri (ed infatti non c'e' traccia del gibernauta)</td></tr>
+</tbody></table>
+<div>
+<br /></div>
+<div>
+C'e' tempo per 2 3 foto sul ponte e per osservare che nei brevi tratti di acqua del Naviglio in secca si è rifugiata l'intera popolazione ittica del canale che, fortunatamente, non e' insidiata da pescatori poco sportivi.</div>
+<div>
+<br /></div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhuuzM6z6EgZYrwYZo3yObVHBhCQOo-HAwGV3qKPgaL3D1tMdiV0FH1tTvar7Ytf970M38DfpFswr8FWsiD0ZA24ao36XjGjxBs2FoVXJN8OeXK7LCZ8vmXhHNMDHe2Y5V8WQCM/s800/IMG_2292.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Pesci un po' stipati nella poca acqua rimasta</td></tr>
+</tbody></table>
+<div>
+Il ritorno verso Abbiategrasso e' decisamente più' piacevole visto che il vento ora invece di frenare spinge. All'improvviso un gruppo di persone sembra bloccare la carreggiata. Stiamo passando di fronte al cimitero di Magenta ed un corteo sta entrando al seguito di un feretro. Un vigile urbano ci intima un imperioso "ALT! FERMI LI'" e prima di lasciarci ripartire saluta col saluto militare la bara che se ne va. Ripartiamo ed io, rinfrancato dalla sosta e dalla forzata meditazione sulla caducità' dell'esistenza, grazie al vento a favore, con malcelata soddisfazione tiro il gruppetto a 35 o giù' di li'.<br />
+Insomma, facciamogli vedere che il vecchi gibernauta ha ancora la catena leggera, no?<br />
+<br /></div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0hyAhRDxN7iBE_07iZATIDNjB-poU5DLbQlHCzbJV2vs30AV05wi59j-fgGTP1Il3K_GuHCnBmCzfd3sdSIYNwKu6mFJC4tx2uN4oR2Dhfa5Vzfm2MQ_RHhKBULJpWXw-WDZH/s800/IMG_2289.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Castelletto : sempre bello, ma mancano ancora 40 km di bici e poi la corsa!</td></tr>
+</tbody></table>
+<div>
+<br /></div>
+<div>
+&nbsp;Ma il gibernauta non ha mai tempo per autocompiacersi : c'e' sempre qualche episodio che lo riporterà' alla dura realta'. Ed infatti ad un certo punto Sandra (l'amica di Sabrina) mi affianca e mi fa : "dai tiro un pochino io altrimenti fati tutto tu..." E va beata a 37-38. Presa bassa, busto parallelo all'asfalto, pedalata bella rotonda e via. Insomma, una vera lezione di stile potenza.Per fortuna il suo amico mosso a pietà' evita di darle il cambio infierendo ulteriormente su di me magari tirandoci con nonchalance a 40km. Ma il gibernauta in questi casi puo' lasciar cadere il guanto della sfida? No, Mai! Così' al primo semaforo (che purtroppo arriva dannatamente presto) riprendo il mio posto in prima fila e mi metto a tirare con decisione. Dentro di me ricordavo le parole di Ironman Stefano in una situazione simile : "calma..calma che dopo non e' mica finita, c'e' da correre"......ma, le ho ignorate. Insomma, per intanto faccio la mia porca figura tirando, poi, a piedi, si vedrà'. Sono così' concentrato che non mi accorgo che Sabrina, che solo 15 giorni fa faticava a tenere ritmo sopra i 32-34, pedala agile e senza sforzo e anzi, prende anche l'iniziativa e tira per un po' ben oltre i 37.</div>
+<div>
+<br /></div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="498" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggAKU55wAZdhNwcXFRBJdmxlIiVgU-pIXmykyL8YRfMo8gWwP_pH8EBmPNIgPRc9EUGomqsNGpOu66j4VhCyFUoIRKQ29HP-SNq36T551OXwLqhxVjeLE-hU4-C8ekLOKmssVp/s800/Schermata+02-2455984+alle+17.05.19.png" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">E questa e' la corsa : occhio alle curve..</td></tr>
+</tbody></table>
+<div>
+Insomma e' facile immaginare le condizioni del gibernauta quando si ritrova alla macchina per il cambio scarpette e la partenza per la corsa. Le giberne ci sono ancora, ma l'energia e' davvero al lumicino. Grazie ad un'ottimo tempo cambio (inferiore ai 15'..) Sabrina e io partiamo in anticipo. Fa caldo e anche se ho la maglia a maniche corte sudo come un tocco di bollito. Dopo 200m ci affianca leggiadro Mauri (l'amico di Sandra triathleta padovano) e fa : " scusate ma io vado perché' finisco prima.." che poi e' un bella tautologia un po' offensiva no? Bello molleggiato ci mette pochi minuti a scomparire all'orizzonte. Intanto anche Sabrina mi ha a poco a poco staccato.Insomma finirò ultimissimo anche stavolta?<br />
+<br /></div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="380" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiq795O6kglC5b8TH0qAEsy42EjGYb9ou5OOjzt06_2BiDF6P7u0Oxdc3JeVzKmheu6g8SdLzjRVQBSjlC2oGF2OEA-Ocq9ZNOslImCLrTwLL4TJtOQQg5ii8Jizo81qlYS5f2W/s800/Schermata+02-2455984+alle+17.05.47.png" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">La cronaca degli ultimi 40' di fatica...</td></tr>
+</tbody></table>
+<div>
+<br /></div>
+<div>
+Il gibernauta pero' ne ha pensata una. Sabina non sa esattamente dove sia segnato il 4' km, punto del dietro front. E infatti quando la vedo che supera tranquilla il ponte di Corsico (limite appunto dei 4 km) aspetto un bel po' prima di chiamarla:" Sabrina! si torna indietro!" Io , ovviamente mi giro e via, mi ritrovo in vantaggio. Sordido gibernauta. Peccato che dopo un po' provo la stessa sensazione che prova un aspirapolvere quando lo trainano oltre la lunghezza del suo cavo di alimentazione e la presa si stacca : plof..mi spengo. Sabrina mi passa tranquilla e rimpicciolisce verso il traguardo.Gli ultimi due km sembrano 20 (anche come durata, a dire il vero..) ma alla fine arrivo anch'io.</div>
+<div>
+<br /></div>
+<div>
+Come si dice : bello aver finito, gran soddisfazione, ma al prossimo allenamento di questo tipo, giuro, mi do malato.</div>
+</div>
+</div>
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20120219_092.html">Si ritorna in pista....</a>
+    <a class="next" href="20120501_094.html">In salita si fatica e si prendono lezioni di "umil</a>
+  </div>
+</div>
+
+</body>
+</html>
