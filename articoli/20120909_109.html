@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coi giovani puledri – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2012 &rsaquo; 9 settembre 2012
+  </p>
+  <h1 class="article-title">Coi giovani puledri</h1>
+  <p class="article-meta">9 settembre 2012</p>
+  <div class="article-body">
+    <div class="separator" style="clear: both; text-align: center;">
+<img border="0" height="394" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNweCedL06FzgeafFhyphenhyphenNP_QGe617YcPE-FsTu8giSBJ4bDWBRl-Vwl3q8xlMOQJ8jKq-dDvl_kZytByHH4-gZhCrDFT-oC_OniD5KjFWQj6rUTrRkmU0yXbsa-44YuovJ6RvOy/s800/Schermata+09-2456180+alle+15.50.01.png" width="640" /></div>
+<br />
+I vecchi ronzini non dovrebbero mescolarsi coi giovani puledri : questo pensavamo io e Annibale guardandoci tristemente negli occhi mentre arrancavamo a oltre 35 kmh lungo la via del rientro di un giro lungo e , ciononostante, molto veloce. Ma ormai eravamo lì e, anzi, era fondamentale non mollare le ruote veloci per scroccare il passaggio fino a casa.<br />
+Ma andiamo con ordine.<br />
+Ci si trova all'inizio della ciclabile del naviglio pavese per un giro in Oltrepo. Ecco : 'sta storia del giro in Oltrepo che inizia a Milano mi ha rotto. In Oltrepo ci si va in macchina! Auto! Car! Coche! al massimo minibus, al meglio patermobile! Poi, una volta lì, si fanno dei bei giretti in saliscendi e, alla fine, si rimonta in auto-car-coche o patermobile e belli belli si ritorna a casa. Mica che alla fine delle salite comincia lo strazio del ritorno a 35 e piu' kmh al caldo!<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="402" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiSELPyGo7YQU0Vnuhz2-j8Ts7gjK1A9tpcW-dSOewZPKNV96yZ3BB0mSRO-ksZ-DTcRppMiXdw5Y-OSrsrsJxowqDkA0rRDWGH5jonTRQRHVEPSaiHE5xFw-k5tNYe8U9KqgB/s800/Schermata+09-2456180+alle+18.41.24.png" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Il giro di oggi</td></tr>
+</tbody></table>
+<br />
+Vabbe', lo &nbsp;aveva proposto AleLokomotiv e quindi mi sono aggregato. Gia' all'appuntamento della mattina io e Annibale ci siamo guardati un po' sconsolati : tutti giovani e scalpitanti. Per la cronaca : abbiamo due Alessandri , due Mattei, Marco, Alberto (con la bici più rumorosa del mondo), Enrico, Annibale e il sottoscritto gibernauta. Solo Annibale ed io abbiamo superato il mezzo secolo. In inglese direbbero : Things that make you go :"hmmmm".<br />
+<br />
+Partiamo con il programma di raccogliere Frankcellara alls rotonda di Binasco. Andatura allegrotta ma niente di che, chiacchiere e la sensazione che sarà una giornata divertente e rilassante. Poi arriviamo alla rotonda. Frank è in ritardo perchè ha trovato la ruota bucata e la ha riparata a tempo di record. Purtroppo questo lo convince di essere responsabile di un nostro ritardo sul ruolino di marcia (evidentemente) e quindi si mette davanti a tirare come una locomotiva. Gli altri che fanno? Be' come al solito in questi casi quando non ci si conosce la prima regola è "fagli vedere chi sei". Così comincia una forsennata trenata a 37-40-42-45...quando ho visto sul povero garmin (che pigolava impazzito visto che queste velocità in pianura non le ha registrate mai) apparire 52 km/h ho capito che buttava male. E gli altri si divertivano pure!<br />
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihKhNyB5n3Cq15wSwUu224uZ7Nsdonugh9iEyWFoIKJx0-RjpiVDjfT0CVhLf740ufUsrHWI0lbLtAwHhQnE8dgDYt46JkXOVKps485pKfOjvUAYlAel3QQDy3QNnYmB8pLQV8/s800/Schermata+09-2456180+alle+15.53.14.png" width="540" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Il giretto in Oltrepo</td></tr>
+</tbody></table>
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+Allora decido di prendere l'unica iniziativa che mi rimaneva : andare davanti a fare il tappo (non nel senso di Renato Rascel ma nel senso di bloccare gli ardori velocistici dei compari). E cosi' faccio, dopo una penosa risalita del gruppetto che intanto se la menava ben oltre i 40. Alla fine riesco a scalare la vetta e arrivo in cima : ok adesso pian piano si rallenta..ecco...pian piano......ecco c'è un rotonda (ottimo così rallento ancora di più) ...ma ALT! Franco! -mi gridano- ..hai sbagliato! di la'! (e me li vedo sfilare dietro). Ah : bene. Ora mi tocca pure faticare come un mulo per recuperare il gruppo che nel frattempo , in mancanza di tappo, ha esuberantemente ripreso il proprio ritmo da "non c'è un domani" (almeno per me).<br />
+<br />
+La cosa buona (l'unica!) di questa strapazzata è che a Pavia e poi a Broni si arriva in un attimo. E infatti finalmente la strada stessa si occupa di raffreddare i bollenti spiriti dei velocisti. La salita verso Canneto Pavese non è niente di che ma insomma : non la si puo' mica fare a 40 all'ora! E qui finalmente riesco a tenere il ritmo del gruppo senza rischiare la sincope.<br />
+<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjG3whH4Lr71l0Z8RrjQenmy8TnOnMoKOtgYofh4xgUNohpkKVAKEJxkYDut-XSKISnIKShXAbEqkibvkYbpG2s0s_PX4eGe5cfECELUnnfstC5wvqnf5sP8kOwJdeemDNOVuS3/s800/IMG_2979.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Alessandri, Mattei, Annibale, Enrico e altri in cima alla prima salita di giornata.</td></tr>
+</tbody></table>
+<br />
+Decidiamo di procedere fino a Carmine nel saliscendi delle colline e da lì rientrare a Broni. Alessandro (AleLokomotiv) si piazza davanti e su ogni strappo se ne va, la sua gamba e' tornata quella di prima. Dietro di lui il gruppo si sgrana e l'idea è di aspettarci ad ogni scollinamento o bivio. Fortunatamente ce ne sono molti (così ho molte pause di riposo..ehehehe).<br />
+Il clima è caldo ma non troppo e le vigne sono cariche di grappoloni davvero invitanti. Me li ha fatti notare TriEnrico mentre mi affiancava in salita. Cercava di fare anche conversazione, lui. Insomma era animato di buone intenzioni ma il mio fiato era monopolizzato dai polmoni, zero per le corde vocali, &nbsp;e quindi ho potuto solo rispondere "eh siìfffffff......."<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><br />
+<br />
+<img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjV_3uTcIibLI-c0XbmPIQyoq7aH5nU1HIVIxof5DY4NI20_Bqrdh6UQZg0zEsfakTPpuuxam5i4n8Nsw_yi5ItiOIO8BPVM-d4L6GGTFHP9xKiKK3A43nfWvrD-ItDpaiuFPF/s800/IMG_2980.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Da Canneto Pavese</td></tr>
+</tbody></table>
+Queste strade le conosco anche se il mio scarso senso dell'orientamento mi consentirebbe di perdermi anche qui. Dopo un po' riconosco il falsopianone che porta al Carmine (Cima Coppi di giornata) e decido di (provare a) tenere il passo di Alessandro. Con grande stupore mio e soprattutto delle odiate giberne riesco a non farmi staccare del tutto e arrivo in cima non molto dopo di lui. Son soddisfazioni!<br />
+<br />
+Ma non c'e' molto tempo per crogiolarsi in autocompiacimenti, almeno per me. Bisogna puntare il muso verso Milano e lì mi aspetta il supplizio della pianura. Ma fermo! Prima c'e' la bellissima discesa da Rocca de Giorgi : premio Nobel al geometra responsabile dela manutenzione strade del comune. 'Sto geometra deve essere uno che odia i ciclisti. La discesa è di per sè bella con tornanti e un pendenza mai esagerata , ma il fondo stradale è da assassini. E' rugosissimo (non posso immaginare cosa accade a chi ci scivola sopra), pieno di sassi e a metà di ogni curva c'e' una spaccatura diagonale nell'asfalto : l'ideale per cascar per terra.<br />
+<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg4yCLxFyOouKFmPYOq90GzUKs0Oh9s7jIAhKy8ETtCl_k3Z1SVnvsp8psNFkL75-kJS5-Kq5n6ZZs53D2jvBesbpniEMccSLlIh-YD7xyI8cyleURIiYq4erIklaqudfavAJmU/s800/IMG_2982.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Marco si spara una pesca, Ale se la ride e dietro Enrico magna pure lui.</td></tr>
+</tbody></table>
+Miracolosamente arriviamo in fondo. Attacca il falsopiano in leggera discesa verso Broni : si va tra i 35 e i 40 e io, chiacchierando con Alessandro2 decido di fare un interessante deviazione nel canalino di scolo dell'acqua piovana che costeggia la strada. E' pure fondo! Lì per lì non ho capito cosa dovevo fare : ho continuato a pedalare sperando che prima o poi ri presentase l'opportunità di saltarne fuori. Non so come ho fatto a stare in piedi ma soprattutto ho dato ad Ale una evidente dimostrazione della qualità delle mie mitiche ruote cinesi all carbon per copertoncino. Han tenuto alla grande la botta e &nbsp;la gita involontaria nel ghiaino e sassi, nonchè il successivo botto per risalire sull'asfalto.<br />
+<br />
+Ma poi arriva Broni e Pavia cominciano i dolori. A dire il vero facciamo un po' di km sulla ciclabile e lì la velocità è contingentata nei pressi dei 32-35, ma poi qualche malcapitato decide di ributtarsi sulla statale. L'idea dei compari è di rimettersi a 35-40 all'ora "tanto ormai è tutta dritta". Per me potrebbe essere dritta o a tortiglione, ma io a quei ritmi, dopo 90 km e poco meno di 900m di salita "gnaa' fò". Lo comunico al gruppo che , con pietà, rallenta. Fino al primo stop. Poi : rilancio e via! L'unico che ha capito che nelle retrovie qualcuno (il gibernauta, guarda un po'..) rischiava la salute è Alessandro (non AleLokomotiv, Alessandro S.) che, dotato di un fisico massiccio e molto alto, in pianura va come una moto (per davvero) : in più, come dice lui "se ti metti dietro di me oltre a stare coperto mi dicono che c'e' anche un po' di risucchio - effetto camion". Io ringrazio e mi incollo alla sua ruota. Io e Annibale ci dividiamo il traino del nostro Tom Boonen di giornata e ce ne stiamo acquattati in fondo al gruppo. Per fortuna ci sono i semafori. Purtroppo sono sempre verdi. L'unico rosso che becchiamo diventa verde non appena arriviamo io e Annibale. Gli altri ripartono rilanciando a palla di cannone : io e Annibale ci guardiamo : anch'io devo avere la sua stessa espressione triste e rassegnata e soprattutto l'interrogativo : "ma chi me l'ha fatto fare...".<br />
+Ma, come si dice : "ehh...sò ragazzi.."<br />
+<br />
+Alla fine saranno 144 km con 900 m di dislivello conclusi alla rispettabile (rispettabile? MOSTRUOSA!) media di 30,9 (senza pause 26,7!).<br />
+<br />
+<a href="https://docs.google.com/open?id=0B_dYRJNUzhRpbWJtTHl3OVpKRjQ">QUI</a>&nbsp;c'è il file GoogleEarth<br />
+<br />
+<br />
+<br />
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20120906_108.html">Pedalando con quelli forti....</a>
+    <a class="next" href="20121007_110.html">ARRIVA L'AUTUNNO : VOLANO GLI AIRONI E NUOTANO LE </a>
+  </div>
+</div>
+
+</body>
+</html>

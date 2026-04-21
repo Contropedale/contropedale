@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>In salita si fatica; al caldo : di più – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2012 &rsaquo; 18 agosto 2012
+  </p>
+  <h1 class="article-title">In salita si fatica; al caldo : di più</h1>
+  <p class="article-meta">18 agosto 2012</p>
+  <div class="article-body">
+    <div class="separator" style="clear: both; text-align: center;">
+<img border="0" height="388" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvtLJOcGDpGLrg9Y8ITsE1Sg0xrWOp6dPlhq7iRiBexDkN8E4r3GXJgy_D25mHGYqFuYXQtLunS_5AdPpLMLabgDwALJv_9fh0A8YX_TcpObV1CuF6muKDs_LnRUbMelhl2U5m/s800/Schermata+08-2456158+alle+19.17.36.png" width="640" /></div>
+<br />
+Anche il ciclista di pianura prima o poi deve fare un po' di salita, no? E quindi con Francesco (Ironman, UTTMB man, CroMagnon Man - non nel senso che è primitivo ma nel senso che ha fatto una gara di ultratrail che si chiama Cro Magnon) ci diamo appuntamento a Santa Maria La versa per un classico del l'Oltrepo : S.Maria La Versa - Passo del Carmine - Passo Penice e ritorno.<br />
+<br />
+Partiamo alle 830 ma già si sente che sta montando un bel caldone. Frank è il classico passista da pianura, il Cancellarone da 50 kmh, e dice (lui) di soffrire le salite. Dice. Lui. E io mi fido e infatti, memore della strapazzata che mi ha rifilato a ferragosto (quando son tornato a casa solo perchè lui mi ci ha riportato) ho scelto io il percorso che è caratterizzato dalla assenza pressocchè totale di tratti pianeggianti nei quali Frank possa esprimere al meglio le sue doti.<br />
+<br />
+Speravo, così facendo, di riuscire a tenergli dietro. Già i primi gradini della salita a Crocetta pero' mi preoccupano. Frank va su bello agile e superiamo in scioltezza una combriccoletta di altri appassionati delle salite al caldo.<br />
+<br />
+Poi troviamo un buon ritmo che consente ad entrambi di chiacchierare e in men che non si dica arriva il Passo Carmine. Fa ancora fresco (meglio dire non caldo) e si va davvero meglio di come temevo. La discesa del Carmine è tecnicissima perchè l'asfalto è davvero pessimo e le curve vanno più che pennellate martellate con decisione.<br />
+<br />
+Da Moline comincia il lungo avvicinamento al Penice. A Romagnese in coincidenza con il drittone dopo il paese la strada comincia a inclinarsi. Superiamo una coppia di altri ciclisti : uno dei due pelato senza casco è &nbsp;bello tonico e non mi pareva stesse faticando.<br />
+<br />
+Mi metto al mio ritmo : tengo d'occhio il cardio e la cadenza (75 rpm). Dopo un po' il pelato-tonico mi affianca bello leggero. Sento che Frank è lì a ruota. Per darmi un tono cerco di iniziare una conversazione col pelato e con grande abilità riesco a impostarla in modo tale che lui parli e io possa limitarmi a interloquire molto raramente con monosillabi. Scopro così che ha un personale di 2h40 (URCA!) in maratona e questo mi spiega la sua aria bella riposata mentre io sono quasi al gancio. Alla fontana prima dell'ultimo tratto mi saluta e si ferma per decidere col suo compagno se tornare o salire. Io salgo. Mi ricordavo l'ultimo tratto della salita : puo' essere fastidioso perche' il fondo è pessimo e c'e' poca ombra. Invece devo dire che salgo meno peggio di come temevo : &nbsp;in fondo siamo oltre gli 800 m e il caldo è meno pesante.<br />
+<br />
+Arrivo al Passo e poco dopo sbuca Frank dalla parte opposta rispetto alla mia. Al bivio della fontana ha preso a sinistra e si è sciroppato l'ultimo pezzo della salita da Bobbio che è proprio rognoso.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhjNIgu87jKCCIFG3N-a1Ddll6itT4fE2fdI-wxNvW-O9ocA3SjOya27vkKH0snvJmE5FDwrco4Qm0OT_N660MK_mDX4Pr6_1tzTNgd8uoDDyaKxH30KQNs_Q6VorzTV3mfcoCE/s800/IMG_2844.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Dal Passo : come temevo impianti chiusi a causa della poca neve.</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHeD68KQHu8XWO_SujMjTGO1KsOc1M9T5a0I7V036NVvX8fibef4ovcJqGeRSWClnC1Q9PdtawCDg543fNNENQmx-ZL-brskL80B4jjZiugvGL0vJeTLYhGMXGOzJPRzXAxEBC/s800/IMG_2845.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Frankcellara &nbsp;e Gibernauta (giberne in bella vista)</td></tr>
+</tbody></table>
+<br />
+C'e' tempo per riempire le borracce e poi bisogna decidere se salire in vetta : con mio grande sollievo Frank è d'accordo sul risparmiarci quel piccolo pezzo di Mortirolo che è il tratto dal Passo alla vetta. Tra l'altro il caldo.....(scusa sempre buona, anche in inverno).<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8ggskpOtTCICNcKGayxoqoI18Fsc6Zsdmk39MFT76NFiKrGh48D4-gs6HEq9bgmCvgfHEN4HIfAbqb3b1CMPoP5fJdhN8nJnXSnESpH11mPQZ5vDQkdtS6nWFq8TSvk_GTqdl/s800/camera1_Clean.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Reported reporter (Frankcellara copyright)</td></tr>
+</tbody></table>
+<br />
+<br />
+Quindi giriamo le bici e giu' verso quello che già si preannuncia come la parte tosta della giornata : il CArmine in salita sotto il sole di Caligola-Lucifero o che dir si voglia (l'anticiclone subsahariano).<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1MNy0rs9QfkG_BoGV3BjX3k-RelNtixSwRAjGHFCH2NxSruinit46-lxl6t48SCzuB1GoKlywR5-molU0AryXvsZBros3alaq7sBwf-zFvzaQewv7KiMC6s3wktMJUg562bRz/s800/IMG_2846.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">FrankCellara in discesa verso Romagnese : si ripresenta un curioso effetto ectoplasma dovuto forse al clima fresco e riposante.</td></tr>
+</tbody></table>
+<br />
+<br />
+A metà discesa prendo una bella buca con la ruota posteriore e ..pffffffffffffffffff. Bucato. Pit stop con sostituzione rapida della camera d'aria.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsmYJUxGB43nrHye_M3dWG-sURxDVZBFpA0jwnGz97TdK9ZFe0jXeckQKqoL_LMNZ0w8VSIqeUbzeN8Ajw_pqBSFB1vNvROImHJkIUBpR9lHX99d1Ssw5y1Mzo7NQGF-x6MwVa/s800/CameraZOOM-20120818110757112_Antonio_Green_Dirt+%25281%2529.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Meccanici con giberne al lavoro.</td></tr>
+</tbody></table>
+<br />
+C'e' tempo per riposarsi un po' e per ricaricare le batterie per il Bastàrmine che ci aspetta. Fino a Moline tutto bene anche se ad ogni tratto piano Frankcellara parte come un frecciarossa. A Moline molliamo la provinciale &nbsp;e ZAC, a sinistra parte il Bastàrmine. Io la prendo tranquilla perchè so che sarà dura. Frank invece continua come se fosse ancora in pianura e dopo un po' scompare oltre un tornante. Occavolo! Vabè non ci posso fare granchè perchè più di così non vado. Mi aspetterà in cima. Si sale sotto il sole che qui picchia. I maledetti pantaloncini neri della Assos sono benedetti per il fondello ma tremendi per il colore che attira il caldo : mi pare di pedalare con il sedere in un forno.<br />
+Dopo un po' rivedo il Frank davanti che si è messo ad un ritmo più umano. Gli faccio : "ma ti ha punto qualcosa?" " no, voglio che duri poco!" Eccolo là : l'animo del Pantadattilo!<br />
+<br />
+Saliamo insieme e raccogliamo anche un paio di altri ciclisti che non avevano la stessa nostra voglia di "farla durare poco". Dal Carmine mi ricordavo praticamente tuta discesa fino a S.Maria la Versa. ERRORE! Ci sono un sacco di tratti in falsopiano e qualche strappetto in salita : abbastanza perchè Frankcellara dia vapore ai quadricipiti e spingendo dei bei 50x11 mi costringa a faticare come un mulo solo per non perdere la sua ruota.<br />
+<br />
+Alla fine la discesa da Crocetta a S.Maria La Versa è benedetta. Mentre ci avviciniamo al paese Frank mi fa : "ecco, io da qua andrei tranquillo a Milano, è questo il mio terreno". Eh lo so! Ma non certo il mio. Per me oggi basta e avanza così. Sono infine circa 80km e 1500 di dislivello macinati a 22,6 di media e a ben più di 30 gradi. Alla faccia di &nbsp;Lucifero!<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20120815_115.html">Il riposo di Ferragosto</a>
+    <a class="next" href="20120819_117.html">Defaticamento..defaticache?</a>
+  </div>
+</div>
+
+</body>
+</html>

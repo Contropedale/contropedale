@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Terza tappa : Altomonte - Rossano – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2013 &rsaquo; 7 giugno 2013
+  </p>
+  <h1 class="article-title">Terza tappa : Altomonte - Rossano</h1>
+  <p class="article-meta">7 giugno 2013</p>
+  <div class="article-body">
+    <div>Tappa tranquilla, oggi. Almeno sulla carta.</div><div>Giordano si presenta con una tutina sponsorizzata dal prosciutto Pertus. Una roba inguardabile, si capisce perché la prosciutto Pertus non ha trovato nemmeno una squadra da sponsorizzare al Giro.</div><div><br></div><div><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBX6lsPeuVoJYXuHyn8u-Im09EW_FpvLntm67xDImT56dXIyKRqSndDvgiTXy0rCUtm5835Dmoe-Fkkgn-EoMbwR0IDw4Kj39cYtD2GIDz6JcBf2-iVX45EOaeBjCJq5I9BCkDrQ/s800/blogger-image-86735686.jpg"></div>Giordy prosciutto Pertus.</div><div><br><div><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEih8HaFXbIckktNr3jX76boH2Vu1mfI3Ln1UgGucKqp0x1lZxtpJQ2CPsQ6cnFf5BgGtXZwUIaSVqJIfVORDLdwrTNe6Uopoiup_SaGgWz3OagfKYgHCcWF4rp-JYLBzhTKgJtWwQ/s800/blogger-image--767026551.jpg"></div><div class="separator" style="clear: both;">Il mitico ristoro viaggiante Dragan</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">Bastano 150m per capire che abbiamo perso Davide e Daniele. Stooooop. Fermi in attesa che qualcuno risponda al telefono.</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-e0-U-lOEB0RKD75v6Wvr1RxIMY6hjAKdlDZYGdpR620w6msI-r4lTtOjg63Pu3P90vGG08ZrV1MJ0ZxkPOHiX_Wqg05A27DvaoBzuT86XX_PDQQzabqeo7hzfaaPjN5DtqO3FQ/s800/blogger-image-490771206.jpg"></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEglfla0jspaMJDHfx9I4L1M42_unDC2IMElCHLlIEoTHXghgsSis0Rm0aVffebXgy7ngpwFnbNZi7qbwq8QVzowkMeCX0HtkQEAGFdB7E7m0uQV5DyequVGQwLj8qeOi2zjHxEedA/s800/blogger-image--253211073.jpg"></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhk15O2wV5iGLewexo5gt5Pu0hYKwJU7Ik1myKmrw4tlQCevFx6dh6KEhPgsugXOZeKWZo8x0nJzqkyraN9fDAk1op8E8bvsEEvAdwHNBqAJeBkssj6iN6YnXByVqxLuN7rFMc2uw/s800/blogger-image-1053955304.jpg"></div><div class="separator" style="clear: both;">In attesa.</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">Alcuni propongono una prima sosta panino. Dato che abbiamo lasciato l'albergo da 10' forse è un po' prestino. Alla fine ci si ricompatta e ci si butta in discesa. Strada rovinata e drammaticamente ripida: cerchi bollenti e mani anchilosate sui freni .</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA_g3y_RtRtWwaEEeR0XwSXRTblZOV1gwGbMV1MbSj2xeAXgPW6DfTy9ao4j4P8hltJJmo9j0h0DTJaMUbXePUTfnzLbLYlZ-S29XPgp31_f5Pvhcla5FSrUp_-X8_CQh9jLrN0Q/s800/blogger-image-1471229694.jpg"></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">Ripartiamo alla volta di Roggiano Gravina che sta in cima alla prima salita di giornata. Il paesaggio della piana di Sibari è ancora verde, frutteti vigneti e ulivi. È poi si pedala in pianura, che dopo le salite dei primi due giorni è una gran soddisfazione.</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhR4v55TYdSHVa4edkBLLNvwyz3IHupqBxyhHG9DGDQET54BCP2rrLo7UdSTCMzo8UZAMLdCkM-94kxA7zQF6mPcYFhXpGsVL2_pnAK05jVeeUhrSWqp9druKyW439f-1NxO4ZKMQ/s800/blogger-image-1551704372.jpg"></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicN5eetJYlxmRl4x8qobq-loCbG4obIGglPyCdtuGGKjlp02Sef5y63-VIk8v9PUOkmi9cBhQahkuAzH7vYoxp9gCFqZG8Iu-ulYr0S_zxMAos9H2t_Bu1KSDBtwu0kYcHgzDgIQ/s800/blogger-image--451847990.jpg"></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">Allungando e accorciando il gruppo raggiungiamo Tarsia, come sempre il nostro arrivo rumoroso attira l'attenzione.</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiT-JYlAjQ4z2Z9j57bqkSBKIQSlHKj6qNlgNcki7Wd1re-KqENFTJ3lz-6IPEwIRj69yhWyhc3wTWOR78Zqt42IMOE9mG3iMNVcykzXIo3r7n7tlH-_lyDyrXIuhjDvYnKgmaa4A/s800/blogger-image-216199569.jpg"></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdutV2rLKVc5aS1UibdbK8XGDLN2UFQlGUIpXvwwyiN6PhYC8LAi5aCl0cyO9IqKBWpiSFJdxjC3Sm7H9mPH00xse_ka_11IZEUx1bvcnwip-kt1d-zm6j4Yt9Djt-ALwO-M7Eww/s800/blogger-image--1848706158.jpg"></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">Dopo un paio di strappetti molto rognosi (si segnalano ripetuti assalti al furgone di Dragan) si compone un gruppo compatto che pedala di buona lena e grande collaborazione verso Rossano.&nbsp;</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiaonWCoyP6cSvs8CY65HhcmLdOJTxoxSwsqg9tfy_Nq3IKrFxPvyNWTr3fLKfJpq5_SYB6ERammepnL8ygXZp5OdT-I1pdN9NpsydsTvzL3AwWpxILqwGs6MBr_9MOhoyKzyDptg/s800/blogger-image--25031488.jpg"></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">Tutto ciò dura circa 1,2 km. Poi il gruppo ordinato esplode in scatti e allunghi e maledizioni di chi resta indietro magari per un salto di catena. Alla fine il mare si avvicina, nonostante i ripetuti tentativi di depistaggio di Giordano che intende risospingerci verso i monti.&nbsp;</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">Dopo meno di 55km raggiungiamo la costa a Schiavonea. Mancano solo 20 km ma la tentazione del ristorante sulla spiaggia &nbsp;è irresistibile...insomma si tratta solo di un po' d'acqua e magari qualche bruschettina.&nbsp;</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhPnPEas6W2JgvT9x_kz75B-XW6Lqht80WV1N60h3n586HxvQI5HqDUbIJiQul97AeDnl5ruqXuz499dXaBhUUXiABFaCTut-nBKA7YCfmDWt6-0eoJ80lyfxDGDJFrf3lZrlqkWg/s800/blogger-image-1689716399.jpg"></div><div class="separator" style="clear: both;">Solo una bruschettina...</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghs_1JF8BALd5Zg7Rtu-JI-sS8r24-ZpmQMz4rZ4DZi313nzAUsc6q6ea8D4sOPStqL2qgBG8vh1XFBj5Df0QxdNZq6gxFbkagzGDZS7cncd2Ea9n1enoQmoNhvMo9p6FqHeYMsQ/s800/blogger-image-521851773.jpg"></div><div class="separator" style="clear: both;">Mitiche alici al peperoncino.</div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhRUs9iQylHW_VGsS9hTRW5oYYS1UqltM7ISyPVazYcHvRc0TG8Afe6Lw-ZAk8aES9WadSRfJKFbDCFAApCSoHIrbxS1RPJQ5DBwjrgK9OMUIsMDejUut_di0ktopi4G1jOuV9aQ/s800/blogger-image--1145270249.jpg"></div>Pier apprezza le alici</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi01n2mX_QFNSr5xYJT1gbgWANwfxP-s_ETOJpkS-SjkebLWigT4Kbvm7yS9MXdIHmXtaqUseATvHSUWheW2XXVvtKGbk3w8voj8bdCbt1qM_Ow7wfCN92e8v1icGXVTDKETt3z4A/s800/blogger-image--1915667531.jpg"></div><div class="separator" style="clear: both;">Il professore medita sulla scuola filosofica di Tarsia</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjYotyeDcQf34mcMSPmXnZLcRbb50yuElFn8PkpNvk2ZPlTpJeQ_nsVpEOgZDCWWYjDGnvgKJgy7bKkbzSO_QI3Bdupu-aD7dWsO6hejWuCREPbORIa52R8oe8K1tB7eqzky0b3kg/s800/blogger-image-1758668135.jpg"></div><div class="separator" style="clear: both;">Anche CancellaraLello medita</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">Dopo un leggero ristoro da atleti (bruschette con alici, pomodoro e peperoncini, alici al peperoncino, spaghetti con le alici e birra in quantità , alla fine pure un goccetto di liquore alla liquirizia) è consigliabile una fase di riflessione.</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEht7G15AUR9UlrKRRK_Ki9VkxS0qP4uDp8eJmPR3o7PwcIJravMFKcNn1BPua08CPvOnNjGTFSD4siLkTzr4Ppgnbj_ebXcBCgVpMql_J34M4DDUnZ5yNCHeyzI__uK95xPtpT65w/s800/blogger-image--1631866725.jpg"></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiAiuPHwH6ZGGpWTRehBcm4BJkW3gIFVH4JHsZLt7zpXNj3L2Y_le5jxEqlebjCJ4WHJBszfPLypgnLEet32HwiFA23utPcb7kyxCJuC4L8XQGWoKMRuue8EO5-0igxSrPhjO-b4Q/s800/blogger-image-2060493465.jpg"></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">Dopo il leggero spuntino è difficile immaginare la velocità media degli ultimi 20km per Rossano? No, non è difficile.&nbsp;</div><div class="separator" style="clear: both;">Lungo la strada incontriamo interessanti esperimenti di riutilizzo fantasioso di articoli tecno/meccanici.</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxXhnrc8N7M6Ww8rmLT_Aj8eniF0XjAjNfEbkTT82izLGep8T4BJx5520O62tU41hlwxIFVBJ9ilt7bCEhXbwYg7nFYssO-nDy4Mo5SNbwiaG8Y_Eqi4pXjF_Lkw1J7Do5VFQgKw/s800/blogger-image-786919682.jpg"></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">Volkswagen maggiolino- forno. Ci fanno il pane, per davvero!</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">La giornata su due ruote si chiude (con un non molto lusinghiero 85km e 450m di dislivello) a Rossano sparapanzati a bordo piscina piluccando ciliegie e albicocche fresche.Alberto declama serio: "che bello non fare un cacchio". Mormorii di generale approvazione.</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">E domani di torna a salire: obbiettivo Sila. Il gruppo ha motivo per dormire preoccupato</div><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHUqVDBZ0PlmBpGjkSg_BUTzgtegHJTBubxfo2F1vrBiuF7C4v9HFIIJF-akLbOLQ_KLbX3xZYFKhJXkPobx0xFoz3-00k0UOLd-TpmUWXmZMkvff4wTMMBqUMLC9wrRBrOGkVPA/s800/blogger-image-1153010297.jpg"></div><div class="separator" style="clear: both;">Rossano</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjYcOOzPQPXgPL5BmY7_vCvFEK6aHw7BV7btIUQZr3bLfgvjz0TdIBPyh2mYkH03gxFKUl3zIeMq290ktZ_TK6QzttSryZzlcFUZdZ1lIHd53NXMLdhoBND8OjFfhWcJKk7fZiYqQ/s800/blogger-image--670133975.jpg"></div><div class="separator" style="clear: both;">Il golfo di Corigliano dalla croce di Rossano&nbsp;</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1xrS9Dl7GW6tCnTkwff9VKZIW4Mvozfo6UdtryWZAo1PdZYTEvBNrU-ipKAZxlk53jdkoftNIFY3RA047vShFlk-dkLvgEhqCrNHmFoIeSmER-Y_EUDu16WU-FQO0w5ucoiZD-A/s800/blogger-image--1691142505.jpg"></div>Rossano fede e tecnologia</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNrWYBajGM_9P2En3I8zhEAfxCGFUx4-fAU5fk0pu6FW5Nj-8TBWTaDaZ11pgRCsm9ZKWwH2p8E2xsnTrDXIu80AAm8xevjqbF0SekMev3yptjX2F_5JAcgb45B9XMSm5EzEjFmQ/s800/blogger-image-2049724163.jpg"></div><div class="separator" style="clear: both;">Rossano&nbsp;</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjebFLfo9EgTQtY-8h5R0ZBZ2K8WpgkAfpdO9K9Sfb2HzPU9tu_6Hz4omeUGm34ROU4808YHLbuU2O0k1c1t8-GNwxkhSLHYely9KEMi0WjpGr1alg7E3Pr0rpoVJnxTVi9sMdnFA/s800/blogger-image-1192447572.jpg"></div><div class="separator" style="clear: both;">Bici a riposo in attesa delle salite di domani</div><br></div><br></div><br></div><br></div><br></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><br></div><br></div><br></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><br></div><br></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><br></div><br></div><br></div><br></div><br></div><br></div><br></div><br></div><br></div><br></div><br></div><br></div><br></div><br></div><br></div></div>
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20130606_121.html">Seconda tappa: Mezzana Salice - Altomonte</a>
+    <a class="next" href="20130608_123.html">Quarta tappa : Rossano - Camigliatello Silano</a>
+  </div>
+</div>
+
+</body>
+</html>

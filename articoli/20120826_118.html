@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Il mitico Udaldone – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2012 &rsaquo; 26 agosto 2012
+  </p>
+  <h1 class="article-title">Il mitico Udaldone</h1>
+  <p class="article-meta">26 agosto 2012</p>
+  <div class="article-body">
+    <div class="separator" style="clear: both; text-align: center;">
+<img border="0" height="376" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjo1kJlOoR89kc7Dmp1Itq0giS6EZF6d9YLXf91zslGtMG1eHhWVdJOfHLQ2k-N7DOYBwRxZX6nup5OG3YGpm7b-vn9joihYtfaqEuj1TQTpxYQObqFaDdgbKW8zogYTpkxAxOU/s800/Schermata+08-2456166+alle+18.09.20.png" width="640" /></div>
+<br />
+<br />
+Sono ormai lontani gli anni ruggenti del Bondardala (Passo Bondone + Passo Bordala) o del Bordandone (passo Bordala + passo Bondone). Erano giretti da quasi 3mila metri di dislivello e piu' di 100 km. Ma allora il gibernauta era in gran forma e trasportava le sue allegre giberne su e giu' per i monti senza sforzo apparente (be'...insomma...).<br />
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBeejdC9LZepMZeAKMFGXPckdMxAjajyqDh2zaWqKm1zDWe6ZTswooyJE66OzW-G98_9YpvwO7U9De-uBnnWNvjga3oWpqHQ7LGResTdG3OKs2UhrW-dABDpXqavdcT2kPOwh_/s800/IMG_2863.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Il Sarca verso Arco</td></tr>
+</tbody></table>
+&nbsp;Oggi invece lo stato di forma è approssimativo e le ambizioni vanno quindi ridimensionate : opto quindi per un piu' modesto Udaldone (Passo Sant'Udalrico e Passo Bondone) : prevedo circa 90-95 km e 1700 m dislivello.<br />
+<br />
+A dire il vero l'Udaldone, pur cosi' altisonante, è un pezzo degli altri due giri che quindi farebbero di nome completo &nbsp;Udalbondardala e Bordandonrico : due nomi che pero' suonano male.<br />
+<br />
+Insomma, parto con Renato lo smilzo veloce che è in piena preparazione per la maratona di Berlino e quindi mi accompagnerà solo per un pezzo, fino al mitico Sant'Udalrico; domenica deve correre un lungo e questa è la fase critica della preparazione, meglio non esagerare.<br />
+<div>
+<br /></div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9OUpCg5jyTLZSAJXQmCIQeBu7TgOPAweaRz4iwXUZGVGt5CY3XzR0M-c_nSaULefHAh6VIrsPdkOlR6eB4Y5i90ppEMHhfHAy0eIe43c1ivZjyj6UjHzFBRzEn7O5XONXjCdT/s800/IMG_2866.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Ancora la ciclabile verso Dro e la valle del Sarca verso Nord</td></tr>
+</tbody></table>
+E' presto e il clima è ancora fresco, la ciclabile lungo il Sarca è davvero piacevole, altro che ciclabile del Naviglio. Arrivati a Dro ci si immette sulla strada verso Drena che porterà al primo passo di giornata.La salita attacca graduale ma a poco a poco le pendenze si fanno un po' piu' impegnative. Saliamo di buon passo ma senza strafare : Renato non vuole mettere in crisi il lavoro pre-maratona e io so di avere un bel po' di strada da fare oggi, per di piu' da solo.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjs9RThqQFTVuQEd_SJ0Cy4kN1EbATWNdBP4fAwCy78XnOTqhQ9BwySmx3GY7-awUjI9pO1ThEJA0CYF9n-Z7ldrOHH-fSs4GY1nqTBqTLZ8XM1z6ldquMSkuhrUolQYUZtRJV7/s800/IMG_2868.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Due bei puledri in un momento di relax</td></tr>
+</tbody></table>
+&nbsp;Arriviamo al passo che il sole comincia a scaldare: c'e' tempo per un rifornimento borraccia alla fontanella, una foto al cartello dal nome intimidatorio e un'altra foto alle due gazzelle del Sciùr Ernesto. Poi il gibernauta saluta lo smilzo veloce e si avvia mesto mesto verso la sua punizione di giornata.<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-xPfcBgPG-sATSXeQ8IcAi-yJ6sKeSOOGpfrnEmFp0nuRO1g78LrEmt9_CNM0GCxK1OCJAkJvOw-mEYqqcdO6xquxbhjPrPz3jeNgsGHg6X8Ex0-888fDHrNQEllu64WDK2iT/s800/IMG_2869.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Nome impegnativo, quota non altrettanto</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg5RzHkUFIRakt4b_wDhOep_6UsirTwVu76ok_C6ArTnGhG7gGA2jEywwPIfnOk1kUGZhu-7GNvkGSE9Pn1d04SYveTv76VcB6AVkMCVR7WEEdnDgUDVivR21-4JJBCXWOlPwUu/s800/IMG_2870.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">La chiesetta al Passo</td></tr>
+</tbody></table>
+A dire il vero il tratto da Sant'Udalrico a Lasino (attacco della salita al Bondone) e' una bella discesona larga larga che porta da 584 a 450 m circa in un po' di chilometri. La bici va da sola, spinta dalla potenza gravitazionale delle giberne.Purtroppo so bene che ogni metro che ora mi godo in relax sarà penoso da rifare al ritorno in salita con ormai piu' di 1600 m di dislivello nelle gambe.<br />
+A Lasino stretta deviazione a sinistra e si comincia la vera salita. Chino il crapone sul manubrio e mi preparo per una lunga processione : bisogna arrivare a 1566m, ce n'è di strada da fare!<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjv0ttIHkkg2VR7Hhlw9YhvgYb8noeuchvSY44FqLzecT1og6tpJlIC3AVZvocQ1mr1vUOCCWvfRu1iWc2oEn4j2u2ng10R6PrOYLHs5jViz68k1PfdRSpGYBK8FREfgrA2TqB1/s800/IMG_2871.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Siamo quasi al Passo Bondone</td></tr>
+</tbody></table>
+&nbsp;Fortunatamente la salita è molto dolce e quasi tutta all'ombra, l'unico problema è proprio la lunghezza. A meta' il paesino di Lagolo mi invita aduna pausa, ma io resisto al canto della sirena del Bar Il Bosco, richino il crapone sudato sul manubrio e trascino le giberne verso la vetta.<br />
+Dopo un'ora che si pedala in salita le prospettive cambiano soprattutto se si è da soli e accompagnati da floride giberne: ci si fanno domande esistenziali, si invidiano insetti e animali del bosco, si ripensa ai familiari lontani e al suolo natio, si maledice il pesante usbergo celato sotto la vezzosa magliettina di nylon.Insomma, ci si diverte un sacco.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjnz1q_cloz6ahyphenhyphen3vwUg_s3lUQDDvuFrHhkIaU4R7z7UvdpO0u0lMDz7lQPXDkFvt6mVBqcARvqCWlndcpTiP1yOHy8K4IyynAwC1FdU6fwgq_8CPL0xsKQ6q41RUtm33BIH0mm/s800/IMG_2875.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">I grandi prati alle Viote (1566)</td></tr>
+</tbody></table>
+Fortunatamente prima o poi (nel mio caso : poi, molto poi) la salit finisce e si apre il bellissimo panorama dei prati dell'altopiano delle Viote, poco prima del passo.<br />
+Arrivo al bar al passo Bondone e ordino una lattina di coca e una bottiglietta d'acqua che mi scolo in sequenza. Sto un po' lì seduto a godermi la sensazione di appagamento che si prova quando si finisce un'impresa durante la quale si è pensato più volte di molare il colpo.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQ6xVliCOu7WxxM-m3kWGHCO0Kr3gURNPu3ZtWAS6-HQ4otgi-KC7pC3zlrUKTvAU3ibtsb5CXuk_6zRwWPm1rM4mJupZTGmNtGjKXSIuoCHVQxUT-j8vXxpTaIqS3gHcI8hfK/s800/IMG_2878.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Viote</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhuzDCOTZvowuIAQ4uBrbfokX4u2Qq2b96ORAZHTfGTyMznOxp-uQoSyvKjoepr-2lgkxtP7lbXGUkja2AIeh-nVi5Ue-dNStDjF6Ch19t4ddmRAUCJtZ1gP7orEo2QgTJEwtfj/s800/IMG_2881.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Dal Bondone verso Nord</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7X8jMn_hrFqkf87FxmGNTlJwft8WV7WlNKJgXSn4yBXQMzhMr_e0B7l2VUd0nTP6zxmIPI2oQy4GJONsVNXaG85ATNRa1uKe9GcVfxMCgSkNF1CY18WeDI6YaZHgOPRlLG7Bi/s800/IMG_2883.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Altopiano delel Viote e lassu' la cima del Monte Bondone</td></tr>
+</tbody></table>
+Ma non posso rilassarmi troppo, mi attende la bellissima discesa e , dopo, il rognoso tratto di falsopiano in salita per tornare a Sant'Udalrico.<br />
+La discesa è una vera goduria : asfalto perfetto, strada larghissima zero macchine. Le giberne mi spingono quasi a 75 km/h : quasi record gibernautico. Arrivo così molto in fretta a Lasino e li', dopo il bivio, attacca il falsopiano. C'e' il sole, ormai e fa caldo, per fortuna, poi , sono anche controvento. C'era bisogno di chiederselo? Anche qui crapone sul manubrio, giberne rimboccate e vai di pedale. E' davvero dura ma mi consola sapere che sono solo 140m di dislivello. Certo 140m fatti al fresco e riposati son un conto, fatti al sole, controvento e bolliti sono un'altra cosa. Pero' faccio finta di non saperlo e pedalo.Finalmente arriva il passo. Da qui è tutta discesa fino a casa.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUkoEOAgRzcSbO97tiCW-fM1o4JhLAAS3-dsdcFrPOrJ0CKsWBJanBNOtEF3wRjKl-opx7oIkseQoaK6emho_L4yGqG9e1b-n8qXN0u32e3vjsn7i-Rnyozkgfzibx1L7t3ZQS/s800/IMG_2885.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Il castello di Drena</td></tr>
+</tbody></table>
+&nbsp;Si passa prima da Drena e poi si scende verso Dro e Arco tra i tornanti in mezzo allo sfasciume morenico delle Morocche di Dro : un paesaggio davvero suggestivo.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhw7hIT7316WJm63er12IOW2ZuQzQ3zQUogsaEvDYULm50j717mU5sddva3kM27iKyY5ZFBZ4akKUWTi3O_h_91O2Ew9j1Cu60jFZjO3bGm2oLQU2Kkh99UtaHfSLRR1c1VGEjn/s800/IMG_2886.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">La di scesa verso Arco tra i macigni delle Morocche di Dro&nbsp;</td></tr>
+</tbody></table>
+Gli ultimi chilometri lungo la ciclabile sono anche questi controvento : la benedetta Ora del Garda. Ma qui le giberne fanno leva sulla pur minima pendenza e aggiungono quel po' di potere gravitazionale di cui ho tanto bisogno per tornare a casa.<br />
+Alla fine 95 km e 1737m di dislivello : la salita da solo al Bondone è impegnativa, se non altro mentalmente. Arrivato a casa controllo speranzoso : chissà che le giberne non mi abbiamo, perlomeno parzialmente abbandonato? Invece no : sono li' belle sornione: portate a spasso su e giù per le valli del basso Trentino ringraziano sentitamente.
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20120819_117.html">Defaticamento..defaticache?</a>
+    <a class="next" href="20120830_119.html">Alba in risaia</a>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Airone veloce – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2013 &rsaquo; 19 luglio 2013
+  </p>
+  <h1 class="article-title">Airone veloce</h1>
+  <p class="article-meta">19 luglio 2013</p>
+  <div class="article-body">
+    <div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiTp-QWAL5hg5ItBYwT08aigv7envAKjEVR9Xw0K_bQx3XysFDC_fnCz3AMH92h_xbQNUByJx2pjgjsEhOiSBf1T_0rglKkaDKzvro0kJPiTZMVvQVHcZMuKgHDeivstYlndHB0/s800/blogger-image-1453124495.jpg"></div><div class="separator" style="clear: both;">Il ponte di San Cristoforo</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">Solito posto solita ora. Partiamo in 6. Andrea subito davanti a tirare, si sgancia a Trezzano: è già in sella da un bel po' : ora di rientrare per lui. Giovanni e il suo amico interista optano per un classico giro dell'Airone. Restiamo in tre: Emanuele, Carlo ed io .&nbsp;</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAmb94dtWglMIAZURW_HwH-G37PBUyMOTdxtWjNZ8mk9zk23uCgdhArzEm5DlK68m6mSTmCOm7k20pMsb-f7vn4nFM6Cd-J2DchygB1kys4-iu2kxE-oZ009wMjwTRkBagHb6q/s800/blogger-image-763314129.jpg"></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">Io e Carlo ci guardiamo: butta male siamo rimasti nel treno sbagliato. Cioè quello con la locomotiva del frecciarossa, peccato che noi due siamo vagoni da littorina e quindi arranchiamo non poco alle velocità del giovin Emanuele.</div><div class="separator" style="clear: both;">Ma fa fresco e si va , stando al coperto anche la brezza contraria non dà fastidio (;-)).Direzione Abbiategrasso per un giro&nbsp;</div><div class="separator" style="clear: both;">Airone al contrario.</div><div class="separator" style="clear: both;">A metà giro incrociamo Il duo di Giovanni che procede in senso opposto.</div><div class="separator" style="clear: both;">Poco tempo per i saluti e subito crapa sul manubrio per non farsi scappare Emanuele.</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">Alla fine rientriamo molto prima del previsto : effetto delle medie elevate.</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7I8eGO_xmxS_0D9b4IpBjdeO62J4EFL_0G6irZD0jjhkpvd7PxS_HDcm_b9_unyV-gm_bM-wrPrBMYG6Qtm1ORJklZ6i4am7poltyBZNEUaxngO7tihT_fGm0C0wtNTKp9aM7/s800/blogger-image--1988297424.jpg"></div><div class="separator" style="clear: both;">Filosofia da Naviglio</div><br></div><br></div>
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20130716_127.html">Mattinata a strappi</a>
+    <a class="next" href="20130722_129.html">Gli stambecchi e il tapirone</a>
+  </div>
+</div>
+
+</body>
+</html>

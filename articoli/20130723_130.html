@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>In sei dopo le sei.. – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2013 &rsaquo; 23 luglio 2013
+  </p>
+  <h1 class="article-title">In sei dopo le sei..</h1>
+  <p class="article-meta">23 luglio 2013</p>
+  <div class="article-body">
+    <div class="separator" style="clear: both; text-align: center;">
+</div>
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgG0siH0U-YGRjW0wSTwfj-J4I6EDGN-Au9APuwMhLohBKFMqRUqF2prWD98KjNtv8nwCK7BZ_24Z1vLzyb1MLuF4Fxr8LpwnN_-KHfJ-2z6ATBRvMO80l8nkPYpmMmt_2jLnzm/s800/foto+(1).JPG" height="480" width="640"></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Sveglia!</td></tr>
+</tbody></table>
+Solite 630, solito Ponte di San Cristoforo. Stavolta siamo in 6 : Ale, Carlo; Casey, Martin, Matteo ed io.<br>
+Ale, reduce dalla vacanza a Levanzo, parte a ritmo allegro. Optiamo per il giro con la variante Morimondo (da non confondersi, come giustamente notava Matteo , con la Variante Luneburg) e il rientro via Rosate sull'Airone al contrario. Roba da palati fini.<br>
+<br>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHuDATIa5J7BeSL5me-ypAqzR0Wp4cjZsQ2wLkM9c46ehafTvoUjw05pjaOmhwuIc3SlIXwa9NYgvuqLDbufAJ9laTfAg6MYKBTWwMH6D7ryH6PQyUGth982forH4TVsxihqio/s800/foto+(9).JPG" height="480" width="640"></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Ale con abbronzatura levanzina.</td></tr>
+</tbody></table>
+Sono una sessantina di km che si snodano tra campi, risaie, qualche bosco. E' un giro in cui i rilanci sono continui (certo, se quello davanti poi è un po' bastardo la cosa diventa davvero fastidiosa) e che prevede ogni tanto quel piccolo dislivello che sega la gambina. Lì davanti si mettono Ale e Martin che si alternano nel ruolo di locomotive.<br>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWzqM5o83ltYd8gdy72I1bhWS_jNCfNypOhv3ZBBHwsiWEX2mn5CKeC_fZZNMEhyfh0cuzS2i7CEagqABdayyaojywciAyiik7K2QZJkMR-TXHiio7WwBOzJ5Np5rFYp1E6Ndc/s800/Martin.jpg" height="640" width="476"></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Martin , sempre davanti, anche col cellulare...</td></tr>
+</tbody></table>
+<div>
+<br></div>
+<div>
+Dietro si chiacchiera poco.C'e' anche un po' d'aria in faccia, giusto quel che basta per cercare di stare sempre ben coperti.</div>
+<div>
+Il passaggio tra Fallavecchia e &nbsp;Rosate, dopo il rognoso &nbsp;strappetto in salita alla fine della variante Morimondo, è l'occasione per recuperare ad una media un po' più turistica.</div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSht942hgWktC746ohwRXj2E-qOnwqb4m-jwFlWJs00ycR-Tayj3CRFAtx-mgZviYQDyCxglXkKnhPlxzLpbFJ1WoVDyUDCJSdJTzvWzNsNObB7BXu_v1wxdD7cH52xw0WZyGw/s800/Ale+Carlo+Matteo.jpg" height="640" width="480"></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Da sx : Ale, Carlo, Matteo</td></tr>
+</tbody></table>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEidaVXz7XfIKHZW59wITdmEGjTayLi0TpjG35ALJ_H89tf85t9WBNNe1JcYHB9pf_yim34Il3plHGPPQ6qDRSqpa6_eGDeZEbFZ7Oo6XLqG2w1qGWbHdBN-4oRUTeGBqsgKHU6J/s800/Ale+e+Casey.jpg" height="640" width="480"></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Casey Ale e gli altri</td></tr>
+</tbody></table>
+Dai campi sbuca una lepre che attraversa la strada di gran carriera. Le risaie hanno un colore brillante.Si respira.<br>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6ACvRxhb9RIbFBEmGmLBF_BdPYiyfPy9o05zdyBQRmiMeVGGq2avLiPbvPg-5BhcXN6wEKJLBU9LDNRgoVeEmwCkpOPpu4ANNNrf9CaJkc2YnJ1myrZsKTjneBE0jH3BmlLku/s800/foto+%25287%2529.JPG" height="480" width="640"></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">2xC = Casey+Carlo</td></tr>
+</tbody></table>
+<div>
+<br></div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrWYM4_MlJ_Oux1n7D_c7lX2bOCsKMlOjq6r56w281d_aK7dz1oSyReZ-H2R9doqTDj1MWVsVVUlA9Q7G3a4yBF1Cyda61asgpg-9-VFxxbD3wL2sh804RcboUAf8sJoKu7b0G/s800/io+a+meta'.jpg" height="640" width="480"></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">due e mezzo</td></tr>
+</tbody></table>
+Gli ultimi km verso la Canottieri sono un festival di scatti e controscatti (ad un certo punto sul Garmin ho visto comparire per un secondo anche la cifra 51 e non eravamo in discesa..). Alessandro, profeta dell'"andatura regolare" scuote il crapone. Ma si sa : son ragazzi...<br>
+<div>
+<br></div><div><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVd0vGJaPZz88uK8JmuKWW3yEgkT79xhimbDQrNK8j69VBvufjeD56LFVnKWqEH_pcpdcaMyOgebs_m0UZbAy59aUf-2imhNkMNGme_3HblqmNXJsr41zElIJ9fuaPwrJn9oDm/s800/blogger-image-1706734878.jpg"></div>Carlo e il gibernauta di bianco vestito</div><div><br></div><div><br></div>
+<div>
+Alla fine poco meno di 60 km a poco meno di 32 di media (media sì, ma che varianza!)</div>
+<div>
+<br></div>
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhonJsf0hnxlLYUAtn7m-8Ndhe6fKL9u1MQXqdwIBN7kQCzbLehkoahvCD21PtWTPcdrvbS5cjXLFwJ4u0DmBOKZLucgyhsIeZTEUvT6vs9UQTxxMtrWuHe3x34aay993-OKarX/s800/Giretto+a+Morimondo+by+fpatern+at+Garmin+Connect+-+Details.png" height="432" width="640"></div>
+<div class="separator" style="clear: both; text-align: center;">
+<br></div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEha2wpPQZRrkZZuynqeo0rZrARb23mtne8ymIgBxMiqYgZvpYCjHuRkcBOJCMjXGyGe39emg9Ew47mFfyv1Sfl1MDlM7K6s74pe3Z93FE2mjUyB-V0mPN7zsO5yPTDz29juBrcB/s800/Giretto+a+Morimondo+by+fpatern+at+Garmin+Connect+-+Details2.png" height="226" width="640"></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">La varianza......</td></tr>
+</tbody></table>
+<div class="separator" style="clear: both; text-align: center;">
+<br></div>
+<div>
+<br>
+<br>
+<div>
+<br>
+<div>
+<div>
+<br>
+<div>
+<br></div>
+<div>
+<br>
+<div>
+<br></div>
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<div>
+<br>
+<div>
+<br>
+<br></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20130722_129.html">Gli stambecchi e il tapirone</a>
+    <a class="next" href="20130725_131.html">Foto, velocità e cambio gomme.</a>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inchiodato dalla scienza – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2013 &rsaquo; 24 aprile 2013
+  </p>
+  <h1 class="article-title">Inchiodato dalla scienza</h1>
+  <p class="article-meta">24 aprile 2013</p>
+  <div class="article-body">
+    <b id="docs-internal-guid--5fb4fde-3bfc-1aca-70c3-06eb3215584d" style="font-weight: normal;"></b><br />
+<div dir="ltr" style="line-height: 1.15; margin-bottom: 0pt; margin-top: 0pt;">
+<b id="docs-internal-guid--5fb4fde-3bfc-1aca-70c3-06eb3215584d" style="font-weight: normal;"><b id="docs-internal-guid--5fb4fde-3bfc-1aca-70c3-06eb3215584d" style="font-weight: normal;"><img height="338px;" src="https://lh3.googleusercontent.com/f5q8LjDmqBZlZok-JA2bhLryR8go0g3QyIeOR7VpX3O45m6IW4tVoSyn2Iy7Hp9qqi1c4fBe7qI5W4nAv8VDRYF4J59nlc3E5Qxy1m31WFQ3pn7o447tzBfrdg" width="481px;" /></b></b></div>
+<b id="docs-internal-guid--5fb4fde-3bfc-1aca-70c3-06eb3215584d" style="font-weight: normal;"><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;"></span><div dir="ltr" style="line-height: 1.15; margin-bottom: 0pt; margin-top: 0pt;">
+<span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;">Dopo settimane martoriate dal brutto tempo , finalmente si apre una finestra meteo favorevole. Ovviamente non è nel weekend (troppa grazia) ma bisogna cogliere l’attimo e quindi ci troviamo alle 630 lungo il Naviglio Grande per il classico giro mattutino dell’Airone.</span></div>
+<br /><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;"></span><div dir="ltr" style="line-height: 1.15; margin-bottom: 0pt; margin-top: 0pt;">
+<span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;">Questo 2013 è partito davvero male in termini ciclistici. In passato a questo punto dell’anno potevo già contare su un robusto patrimonio di uscite pianeggianti e un altrettanto ricco carnet di pedalate in salita. Quest’anno non ho ancora fatto salite (se si eccettua qualche cavalcavia) e anche il kilometraggio pianeggiante è davvero scarsissimo. Qualche uscita di una sessantina di km e un’uscita di una 90na di KM. Pochissimo!</span></div>
+<div dir="ltr" style="line-height: 1.15; margin-bottom: 0pt; margin-top: 0pt;">
+<span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;"> </span></div>
+<div dir="ltr" style="line-height: 1.15; margin-bottom: 0pt; margin-top: 0pt;">
+<span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;">Quindi affronto la pedalata mattutina con Enrico (che invece di km e di metri di dislivello ne ha nelle gambe già un bel po’) con una proiezione di indice “IEC” (Ingiustificato Entusiasamo Ciclistico) &nbsp;al massimo. L’indice IEC è calcolabile con la seguente formula:</span></div>
+<br /><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;"></span><div dir="ltr" style="line-height: 1.15; margin-bottom: 0pt; margin-top: 0pt;">
+<span style="font-family: Arial; font-size: 15px; font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">IEC = &nbsp;&nbsp;AVGKMh5 / AVGKMh(Y-1) - TOTKMYTD / TOTKM(Y-1)</span></div>
+<br /><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;"></span><div dir="ltr" style="line-height: 1.15; margin-bottom: 0pt; margin-top: 0pt;">
+<span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;">Dove : </span></div>
+<div dir="ltr" style="line-height: 1.15; margin-bottom: 0pt; margin-top: 0pt;">
+<span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;">IEC = Ingiustificato Entusiasamo Ciclistico</span></div>
+<div dir="ltr" style="line-height: 1.15; margin-bottom: 0pt; margin-top: 0pt;">
+<span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;">AVGKMh5 = velocità media dei primi 5 km del giro</span></div>
+<div dir="ltr" style="line-height: 1.15; margin-bottom: 0pt; margin-top: 0pt;">
+<span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;">AVGKMh(Y-1) = velocità media tenuta l’anno precedente</span></div>
+<div dir="ltr" style="line-height: 1.15; margin-bottom: 0pt; margin-top: 0pt;">
+<span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;">TOTKMYTD = KM totali pedalati nell’anno</span></div>
+<div dir="ltr" style="line-height: 1.15; margin-bottom: 0pt; margin-top: 0pt;">
+<span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;">TOTKM(Y-1)= KM totali pedalati nell’anno precedente.</span></div>
+<br /><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;"></span><div dir="ltr" style="line-height: 1.15; margin-bottom: 0pt; margin-top: 0pt;">
+<span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;">In pratica : quando uno è fermo da un bel pò ha una grande voglia di pedalare e quindi parte in tromba sparando i primi km a manetta (a causa del livello elevato dell’indice ECR (Entusiasmo Ciclista Represso) indice notoriamente collegato all’indice di piovosità degli ultimi 6 mesi della località di residenza del ciclista) , salvo poi pagare molto se il suo stato di forma è basso (cioè se è indietro con l’allenamento rispetto alle proprie abitudini). Il “conto” viene presentato al “ciclista represso” già dopo i primi km.</span></div>
+<br /><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;"></span><br /><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;"></span><div dir="ltr" style="line-height: 1.15; margin-bottom: 0pt; margin-top: 0pt;">
+<span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;">Di solito un valore alto di IEC (sopra lo 0,8) determina un valore elevato &nbsp;del temibile indice SPOMP (Scadimento Potenza Oltre Modo Progressivo). La formula dell’indice di SPOMP è :</span></div>
+<br /><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;"></span><div dir="ltr" style="line-height: 1.15; margin-bottom: 0pt; margin-top: 0pt;">
+<span style="font-family: Arial; font-size: 15px; font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">SPOMP = AVGKMhULT5 / AVGKMh5</span></div>
+<br /><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;"></span><div dir="ltr" style="line-height: 1.15; margin-bottom: 0pt; margin-top: 0pt;">
+<span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;">Dove AVGKMhULT = velocità media degli ultimi 5 km del giro.</span></div>
+<div dir="ltr" style="line-height: 1.15; margin-bottom: 0pt; margin-top: 0pt;">
+<span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;">In letteratura un indice SPOMP è ritenuto elevato quando superiore a 1,1.</span></div>
+<br /><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;"></span><div dir="ltr" style="line-height: 1.15; margin-bottom: 0pt; margin-top: 0pt;">
+<span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;">Torniamo al giro. &nbsp;Clima ottimo anche se un po’ umido. Certo fa impressione uscire con i manicotti alla fine di aprile.</span></div>
+<div dir="ltr" style="line-height: 1.15; margin-bottom: 0pt; margin-top: 0pt;">
+<span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;">Basta qualche km per ritrovarsi in un ambiente che conforta l’umore :</span></div>
+<br /><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;"></span><img height="370px;" src="https://lh6.googleusercontent.com/gq-ib7rHFLIUNHJNgVy2VBk9ryBg7DyOTNzCRTvj-FLCCcum7yarr4BQf6zH64WZjRmeYMALs7Gsb9V7n1q9DeCWOYGFi6y3mNlhFTCynm-mTC5AtVCoz1I9Mw" width="550px;" /><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;"></span><br /><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;"></span><br /><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;"></span><br /><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;"></span><div dir="ltr" style="line-height: 1.15; margin-bottom: 0pt; margin-top: 0pt;">
+<span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;">Enrico pedala sciolto e rilassato, io, dopo i primi 5 km sparati oltre le mie possibilità, cerco di contenere i danni, come si dice. Vabbè, per un pochino cerco di chiacchierare, poi il fiato mi consiglia di accomodarmi in scia limitandomi a qualche breve intercalare.</span></div>
+<br /><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;"></span><br /><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;"></span><img height="310px;" src="https://lh3.googleusercontent.com/IEe2ebCwALAb_mo3YUUoDm4Oo_j-aTKg7XQk9YGLPRG9kVsING6FYQlFeN_QS4p7wEoGIUCJjIMBv5w_QLqinlIpOcP3AqC6db_f9vMjbRNjB12-uB3MV5uKOA" width="418px;" /><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;"></span><br /><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;"></span><br /><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;"></span><div dir="ltr" style="line-height: 1.15; margin-bottom: 0pt; margin-top: 0pt;">
+<span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;">Ovviamente trovo il tempo per fare qualche foto (perlomeno ho l’occasione per rifiatare) , soprattutto nei punti più suggestivi del percorso. Il Naviglio è di nuovo bello carico d’acqua (e vorrei anche vedere dopo le settimane di diluvio..) e pedalare sugli argini è davvero un piacere.</span></div>
+<br /><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;"></span><img height="328px;" src="https://lh6.googleusercontent.com/OtgBMNKRwhLZJxyHjQ5X3akxi9fnG2lJC5WalNbsdjk7zFanZvW9j29e3OOXlYe3EisAOAw9sQvaH8I3IirnXlI3hXx3Bl_ndqGBgC16wEZ0kOg_fMNp4LKJyw" width="459px;" /><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;"></span><br /><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;"></span><br /><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;"></span><div dir="ltr" style="line-height: 1.15; margin-bottom: 0pt; margin-top: 0pt;">
+<span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;">Il rientro in direzione di Milano di solito vede salire un po’ la velocità media : un po’ è l’effetto “cavallo verso la scuderia” un po’ si cerca di abbreviare il tratto meno bello del giro.</span></div>
+<br /><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;"></span><div dir="ltr" style="line-height: 1.15; margin-bottom: 0pt; margin-top: 0pt;">
+<span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;">Purtroppo la scienza è scienza : mi sono presentato al giretto con un ECR elevatissimo e &nbsp;ho registrato subito un IEC esagerato &nbsp;( superiore a 1,2 : in letteratura si riscontrano alcuni rari casi di IEC&gt;1,2, solitamente IEC è inferiore a 1 : un IEC “normale” a inizio stagione è prossimo a 0,7).</span></div>
+<div dir="ltr" style="line-height: 1.15; margin-bottom: 0pt; margin-top: 0pt;">
+<span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;">Chiaramente con un IEC&gt;1,2 non potevo che attendermi un valore elevatissimo in proiezione dell’indice SPOMP (addirittura superiore a 1,5!) : e infatti così sarebbe stato se non fosse che Enrico si è messo a tirare davanti, &nbsp;con me che faticavo come un mulo a non perdere la ruota.</span></div>
+<br /><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;"></span><div dir="ltr" style="line-height: 1.15; margin-bottom: 0pt; margin-top: 0pt;">
+<span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;">Insomma alla fine ho portato a casa la pellaccia anche stavolta, anche se inchiodato dall’inesorabile solidità della scienza ciclistica e dell’indice SPOMP.</span></div>
+<br /><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;"></span><div dir="ltr" style="line-height: 1.15; margin-bottom: 0pt; margin-top: 0pt;">
+<span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;">A tirarmi su il morale ci ha pensato un gruppetto di giovani esploratori (14!) incontrati presso la Darsena :</span></div>
+<br /><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;"></span><img height="338px;" src="https://lh3.googleusercontent.com/qmLbvW_3igMRAd43pRcLy6O1KK3ZRBbU85QiW2YEJZFli-5LxtBes695Cot0SjxOZImbIOtcBH6g_RopaHtCFAFWmJEtUpRlBC-tG96tml2miUB3jddQPeKOQg" width="478px;" /><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;"></span><br /><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;"></span><br /><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;"></span></b>
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20130115_125.html">Ciao ciao bambina....</a>
+    <a class="next" href="20130501_127.html">Primo Maggio in sella</a>
+  </div>
+</div>
+
+</body>
+</html>

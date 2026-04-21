@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ARRIVA L'AUTUNNO : VOLANO GLI AIRONI E NUOTANO LE NUTRIE – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2012 &rsaquo; 7 ottobre 2012
+  </p>
+  <h1 class="article-title">ARRIVA L'AUTUNNO : VOLANO GLI AIRONI E NUOTANO LE NUTRIE</h1>
+  <p class="article-meta">7 ottobre 2012</p>
+  <div class="article-body">
+    <br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjY7cL29CkjLKKfVhgZz-AzId9qnPSUpZWgam0FXzbyhIYI7YPUMxGI_qpxHSYpMegHZrVogRcvxp-qeBT5Kj4S2HG-Bvxmjxiw2v620hjTnhE8yDoxPx5TGOPCy1OJbslNR4Nu/s800/IMG_3059.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Colori autunnali tra le risaie</td></tr>
+</tbody></table>
+Inauguriamo &nbsp;questo primo weekend di ottobre con una veloce puntatina ciclistica tra le risaie del Parco Agricolo Milano Sud. Sabato mattina, temperatura mite e qualche nuvola. Le risaie sono ormai passate dal verde smeraldo al giallo dorato, reso brillante dalla luce radente del primo sole.<br />
+Con Renato reduce dalla maratona di Berlino si chiacchiera amabilmente e i km scorrono tranquilli. Improvvisamente da un campo si alza in volo uno stormo di aironi . Quindici grandi paia di ali cinerine si sono avviate placidamente verso SUD.<br />
+<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg1rnDldMxBV9_fjN3368_zvb2uTxmMuC4M_KnxOW-Xz60UUPKRI0Yc5OwkRzxIHoUDic-o448SmDWvJPdyVQLHNiRPKsPihQ05F1F8YBQGPcb3kmtKn0SA-duPRrwsUQHGrbt1/s800/IMG_3057.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Renato reduce da Berlino</td></tr>
+</tbody></table>
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<div style="text-align: start;">
+Poi, visto che non siamo mica qui a perder tempo, c'e' anche spazio per un allungo deciso nella decina di chilometri tra Abbiategrasso e Gaggiano.E la pedalata del sabato è archiviata.</div>
+<div style="text-align: start;">
+<br /></div>
+<div style="text-align: start;">
+Domenica è la volta della corsa &nbsp;a piedi. Ci troviamo come al solito in Canottieri : Pino (l'apprendista gibernauta) Renato (lo smilzo maratoneta tedesco) ed io. Avevo preparato un bel programmino per tutti noi che prevedeva, dopo i canonici 2 km di riscaldamento, delle belle variazioni di ritmo sui 500. Il tutto per una quattordicina di km.&nbsp;</div>
+<div style="text-align: start;">
+<br /></div>
+<div style="text-align: start;">
+Si parte. Dopo i primi passi Renato ci annuncia con malcelata preoccupazione che ieri ha imparato una lezione. Di ritorno dalla pedalata mattutina, in preda ai morsi della fame ha aperto il frigo e ha messo le mani (e le ganasce) sulla prima cosa che gli è capitata a tiro. Ebbene: una zuppiera di minestrone di legumi freddo non si è rivelata il massimo come integratore pro-recupero. Anzi : lo ha costretto a delle frequenti ripetute lanciate verso il bagno. Parte quindi per la corsetta domenicale in mezzo a sospetti borborigmi e sciabordii, adeguatamente attrezzato con un bel pacchetto di carta da emergenza.</div>
+<div style="text-align: start;">
+<br /></div>
+<div style="text-align: start;">
+Non so se sia stato questo, o se sia stata tutta una cospirazione dell'aspirante gibernauta Pino, fatto sta che alla fine del secondo km, quando si doveva partire per il primo 500 veloce c'e' stato un ammutinamento generalizzato. All'insegna del "vai vai pure tu che noi andiamo bene così" i miei compagni di passeggiata mi hanno abbandonato al mio destino. Così mi è toccato fare i 500 veloci da solo e poi tornare a riprenderli per accompagnarli nel 500 di (mio) recupero.&nbsp;</div>
+<div style="text-align: start;">
+Non avevo nemmeno la consolazione della bella vista del Naviglio : sta infatti cominciando la secca stagionale e l'acqua era bassa e un po' limacciosa.&nbsp;</div>
+<div style="text-align: start;">
+<br /></div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQtKOvj0L7AXl3CKfFF-3M1ZidFEmgM4qw8UVkwc9vOyAU2yHRh7Kx1pnMUcXG60GQCXNdzfwRp6XpFwu4fQt_s_dpgmFa1wdNr7Ukd97t6QM7xOsaI9sz3PRj2ZORc_lvQavj/s800/ridgefield_NWR_nutria_swimming_head_2007.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">L'improvvisato compagno di corsa del mattino (foto d'archivio, mica corro con il cellulare, io..)</td></tr>
+</tbody></table>
+<div style="text-align: start;">
+Chissà se c'entra la secca, fatto sta che all'improvviso si sente uno sciabordio più forte del normale. Subito penso : "Ahia... abbiamo perso Renato.."<br />
+Invece Pino dietro di me esclama : "la nutria!" E infatti eccola lì che sbuca con la testa fuori dall'acqua da' due zampate e si immerge altrettanto velocemente.<br />
+Insomma finalmente abbiamo visto una nutria in attività e non ridotta a sole due dimensioni sull'asfalto.</div>
+<br />
+Ma non c'e' tempo (per me) per discutere dell'avvistamento : devo partire per il 500 veloce.<br />
+Intanto dietro di me Pino e Renato se la contano amabilmente. Ma io non posso partecipare granchè visto che mi devo interrompere ogni 2-3 minuti per l'allungo. A meta' lungo la strada del ritorno &nbsp;Renato (che si era palesemente rotto si sentire me che ogni volta che li riaffiancavo li interrompevo " allora cosa stavate dicendo..?") &nbsp;mi fa : "va pure costante tu, così chiudi regolare e noi arriviamo con comodo" E così ho fatto. Gli ultimi 4 km sono stati quindi una progressione solitaria e faticosa.<br />
+<br />
+Alla fine me li vedo arrivare belli allegri e riposati che ridacchiano pure. Io sono stracco morto e le ginocchia mi fan vedere le stelle. Loro hanno l'aria di chi si è proprio divertito.<br />
+<br />
+Oh..! la prossima volta me la prendo comoda anch'io. <br />
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="370" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjh4Nnok_pQCmeMeMXZV4Pra3DQXQp9US397Nqco6_j-VPqk8RmIW02rLCJakSQiZFSqaldwFMEiz2ZpT72qM2pKKVbENkzS-qkDk2wwgd4plLFyRCzW3fjWrPbZp6PPz5BHDQC/s800/Schermata+2012-10-07+alle+17.00.25.png" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Si vede che facevo variazioni di ritmo? (alla fine progressioncina costante)</td></tr>
+</tbody></table>
+
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20120909_109.html">Coi giovani puledri</a>
+    <a class="next" href="20121118_111.html">Autunno</a>
+  </div>
+</div>
+
+</body>
+</html>

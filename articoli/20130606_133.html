@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Seconda tappa: Mezzana Salice - Altomonte – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2013 &rsaquo; 6 giugno 2013
+  </p>
+  <h1 class="article-title">Seconda tappa: Mezzana Salice - Altomonte</h1>
+  <p class="article-meta">6 giugno 2013</p>
+  <div class="article-body">
+    <div><br></div><div><br></div>Partire da un posto come 'sta Mezzana Salice un po' dispiace. Incastonato nel bel mezzo delle foreste verdissime del parco del Pollino sembra davvero un posto perso in mezzo alla natura più selvaggia.&nbsp;<div><br></div><div><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOhSKhP5UIyht3M2VAvDrLP4ciT1b-Ah3iP1HpvgK2qztM11YkxuwOwrm0EMt61RpDI9-_lmwGfkgp_5B55CTpcz4sJvWUsSixNG_sk1NenfG29EORUe8bZ-mG8fv3H6nwDWZeww/s800/blogger-image--143713255.jpg"></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihhQtDOSDmiWr98QxQL5ecWt68GIHboBcwZ6it3PyZxYh95dzc5NqVDHbZSA9OnJ_wc_za53hYnEFoL_ojtIF5ya9txJbyLSWH3TZKvp_LXp6HIXwGXnKOqlUjJygRyiap6D4nKw/s800/blogger-image--197031381.jpg"></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFKsTVs5zu3JUT6YHXS9hMs8kpj-iV6XtCaPARcl54Evf76FoN2fS-j2N5aNDrHUm2gWG2IbH06keZF_zpLL81nfQP-EK3g2XliZBExrgo5m7QzY4XxCkkwg0PY22EXW8KJGrajQ/s800/blogger-image-720286216.jpg"></div><br></div>Il gestore si rammarica della scarsa organizzazione dell'ente parco che non fornisce nemmeno le cartine. D'altro canto, dice, come stupirsi: il presidente è un calabrese.</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9SDx4EvZyHFapJSo9ZxclmxMhb-JQU-pMx-VPSY5YQiql6Y80FehoSP7kjFpW5NqO7DVL-apvBj4qcmOX09QBQ_kuT0xidmBr7aPmhOAYxKSuYKYRRQVvWdg2TNsE-Z2WAb13rw/s800/blogger-image-1489176192.jpg"></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhsgc4zXDtQ_pq35PHczSDcYCGrc4qTC2K_-maqBHb4M4kpwW0agU5vC1FZOZjO0YE0nsnz4iw00Hsi15rPBGw-PZ9t1rvTZUd443qPrs6Q-sFTc68CbSsBQudQyjABP6QDGzxHoA/s800/blogger-image--1191520226.jpg"></div><br></div><br></div><div class="separator" style="clear: both;">&nbsp;Partiamo alla spicciolata per una tappa che si presenta meno rognosa di quella di ieri, in fondo c'è solo da salire un po' all'inizio e poi fare un pezzo in costa e scendere. A dire il vero c'è anche un ultimo dentino sulla tabella altimetrica. Ma è poca roba perché preoccuparsi ?</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZeQlz9rbg8VQQQYxlXcULcFkjNjjcdJU727L_UsbteZcocWOxJ8bW5fw3qoGN_tPwQWNt4P3NrjD06ezp6NLxHXp3Rx1dl3WL79L6f2kebV5JpAyulOgfmZDGoy2l2M-CFmOwQg/s800/blogger-image--1066702291.jpg"></div><div class="separator" style="clear: both;">Professor Ugo un uomo solo al comando&nbsp;</div><br></div><div class="separator" style="clear: both;">Le prime pedalate in salita sono subito entusiasmanti (be' ...tanto quanto lo possono essere pedalate in salita). Il panorama è tipicamente alpino e dal pianoro a 1500 m si vedono picchi ancora innevati.</div><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjcQQ5a8aB48frzvBxqcr8v6SiwvT8wrLMUTgOwWnuojCFS0Cp09e8tHr1yQ7qzl7fd5UbgaOMWoN5wDNUQW2GuCtCZLHlCfyAtq3RFA50CsSFen53kux27vtj1Ud3uajJ9Bx7nHg/s800/blogger-image-292330496.jpg"></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhVz5_oisAUL8R_5wgC8p7LL8B60BLtQxuv5zCdz-jFmw1J9IZHhqWKQp9gGCh_qNs0AK87UbkIeJujzd0J-gvJIrAHXyX3-RpQbvDMGFyjsy3b8WjZ1XwU0Atm0JfZ0CZbkgw2EQ/s800/blogger-image--506611964.jpg"></div><div class="separator" style="clear: both;">CancellaraLello fotografa</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9h8JxTjqYZFd8CEcctUt5wsQWZjTa-MmNkw2ysGlZioU2O4VpYGBKVpcMoF5Ktqi2oNif8B2qo96pgT1a8Q7w6xRB_8r7FsBKZqUM6IJXQ60mD6T6YbmSt_ZRqFXUdg1tiiXQaw/s800/blogger-image-477698484.jpg"></div>GoProDavide filma</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">Dopo gli alpeggi una breve discesa ci riporta in mezzo a boschi di faggi (notata anche la presenza del pino loricato immediatamente rinominato in pino coricato). Grande e condivisa è la riconoscenza per Alberto e Daniele che hanno scelto i luoghi e per Giordano che ha disegnato il percorso.</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVEjXC0tTG8v-uGPyuVjT-v__OFFYYKbUrMbMVY7mqDYP_ASIjfFKr17W_sVjBvR41kYcBGwKGu0kDgpsshQNFll39GvYjNqsmZd4_ZfVya-uj-4g9DeD36e9_WmgxiTn3kQTYag/s800/blogger-image-925067077.jpg"></div><div class="separator" style="clear: both;">Pit stop...un po' bastardo ..</div><br></div>Ogni tanto la strada ci ricorda che siamo qui per pedalare e spara una lama che si inerpica al 15%. Grandi e condivisi sono gli improperi che sono indirizzati alla volta dei succitati signori. Ma si sa la gratitudine non è di questo mondo e se lo è ha vita breve.</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgl8TMvvy4ltJkqWDBTmMIfXRsXeymbwZb3OPOGwUphLGQKgS0HKSgHuyfHckmt9BPqZjitJNspkA7Gqf8u-c3BHjZa0DJcaRX2nWdh-qql6wDhmjcEdvMYzKTRrXcKphXwd_gh8Q/s800/blogger-image--269864206.jpg"></div><div class="separator" style="clear: both;">Boschi e cavalli</div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEix57x1IArAqMqun_UQ-EQR9VoOQQN2bRD5czbOYt8yIVmIm3pcFOy2bZiFnGBhwa1BLLmj6mePzKEObIe2SdTdpEWDNQTSyZpS36QDH8LEihtlME-CSgD3od0ECytZv2emXI1tZw/s800/blogger-image-671744206.jpg"></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3pSTeO7NMhYaTILcoSzFmyAJpsEkJGD6L0JLc3_va1Ymtf9TQfwwyho52S4DvUhAlyL4SXrhyOkUMA0uIGoUkyMia_QMfsUO_uOmcQOZedPaKuMUgnMyAD4fphWAJ2CWpDv1vIQ/s800/blogger-image--106034130.jpg"></div><div class="separator" style="clear: both;">Bici e cavalli&nbsp;</div><br></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi20lkT7AAT6E0v-5_H-O7Fdd32TDsfmmf5ere_x-MRHutrpyLC8fJsmUM6KMpfov4Ib-IfRqCRrUVsyCEo-1g42ksxRoWlGnUWrOWsa_vTSS3-PnAbHEYk_f0kzxQ5HbIcG8g71A/s800/blogger-image-1842695925.jpg"></div><div class="separator" style="clear: both;">Bella la discesa eh?</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">Dopo un pausa panino su una terrazza panoramica si riparte nella convinzione che tanto ormai il più sia fatto: in fondo il Garmin segnala già 1000m di ascesa cumulata.</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJVeQdkgCGbFZMfd6iAzLaLms8nOQxHt5Un-uNftfDyGm8xpVqWANDfVENRjhxvMsAAirdjflqo20c9YH-utNBdSuHeCUiYa-foh5oLXn28wcWFznZNbzAIVxC-aJ1zpguG80Mqg/s800/blogger-image--1856764829.jpg"></div><div class="separator" style="clear: both;">VoltarenFabio in attesa della pausa panino</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikjfJ1RJ-x_GIDwGCX0Y8XDbchkG2ncoFxn-Ely71GbXChgS6VQ-6qc8lnXcmq1OV13snNEHjzoxtSz1dTrua73GfYapUDdtrMDlT24f1KwlMJSx7f4OS8g42SaefHk_j4ydbuhA/s800/blogger-image-1960971663.jpg"></div>Pier , Michele e Marco</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">Si scende su una strada purtroppo molto rovinata che richiede estrema attenzione. Alla fine del primo tratto di discesa si presenta un bivio. Qui il gruppo si divide in 2 : il gruppo dei saggi e il gruppo degli incoscienti . I saggi optano per un percorso breve ( si fa per dire..90 km e 1400 di dislivello). Gli incoscienti si fiondano allegri in discesa verso la loro giusta punizione :più di 100km &nbsp;e "un po' più di salita".&nbsp;</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYkSLqYxuuE47JMZf_WOhfbjy78Cz0NhRxan54i8vl3Fjyt1OnCYCn-lxiXyRba0xezYXfB_miPcK_afxG3lvLvFIWsyDy1FmSfEt0aujuDoaQtKZqHgsuEGQroxmU6Y29Q5_jCg/s800/blogger-image--376513687.jpg"></div><br></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">Il menù prevede dei cosiddetti mangiaebevi che altro non sono che salite alternate da non-salite e qualche salita (mangiaemangia). Per il momento si sale a buon ritmo e si punta verso Morano calabro che raggiungiamo dopo un lungo tratto di falsopiano ventoso davvero faticoso. Qui l'interesse allegro per il paesaggio comincia un po' a scemare e il ciclista tende a chiudersi un po' in se stesso.</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgn65gvzD0smPV0csG5bM7DFq6XNXjRmkh5BC8-c5U0BirHxALZJ1oJYpQPCjjiVg3ce6aDyexKm6ypshtmbmX17ZRPL_CKzC7Y-Ah7QvYmipVyYnvgqEf1X0XEkYtVycZrJ3IBjQ/s800/blogger-image--945540016.jpg"></div><br></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">La breve salita verso Morano dà un'altra bella piallata alle gambe che cominciano a farsi ben legnose. A Morano siamo accolti da un gentile signore che di fronte a nostre richieste di indicazioni si qualifica come dipendente comunale e ci chiede:"quanti siete e da dove venite? Ah, bene 14 da Milano. Ecco mi serve per il nostro censimento. Lo scorso anno abbiamo avuto 5000 turisti". Miracoli della gestione delle statistiche del turismo calabrese.</div><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6sHS3hNRoKnxP6aEhMqvE1leqDVw1XwUalgOBMRjOfY297R_cNAdDqqLxbzpCCTT5FBYI1Dkz5F9A_OrL6gjIMUd6MCqk0iBipPCZFNg7-RMT1CcZJr5zQVSvx8TIbMFpq_FIFg/s800/blogger-image-1068694752.jpg"></div><div class="separator" style="clear: both;">Castello normanno di Morano</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjD9S0b3AGCqY_ePGzT5OMbqodaVLllKd7KIbgds83KBAPuxZxiA2pvqkKbRJ1QJkorxID9M_1V9BFLcjf6_CjLvl5BwGdpHHweWtE2rZxz247bfJlG5oyNJNTCHNNMRyjA6K_UDQ/s800/blogger-image-1786169264.jpg"></div></div>Morano</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">Ci lasciano alle spalle Morano e puntiamo verso l'albergo. Quello che era fino a poco fa un sospetto diventa una certezza: mancano ancora 30km e 500m di salita: i saggi hanno avuto ragione.</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">Il gruppo degli incoscienti si sfilaccia un po' e anche Dragan che fa un po' come i pastori che corrono avanti e indietro al gregge per recuperare chi sta indietro deve fare la sua bella fatica perché basta mancare un bivio per trovarsi in direzione Salerno: e non é quella giusta.</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">Gli ultimi km sono davvero duri e quando ormai il Garmin segna 95 siamo ai piedi del colle in cima al quale sta Altomonte. Ecco il nome già avrebbe dovuto dire qualcosa : in quei momenti davvero ci si chiede ma non potevano trovare un albergo in un posto che si chiama Bassavalle o Fondodiscesa o roba così ?</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">Ultimi duri tornanti per chiudere con più di 100km e 2150m di dislivello.&nbsp;</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEil_G1-PUK-Xf8n9cppFo1lBBDWmzCec7AsloXlorjanAZl1DbKiaW06w0OlfyOA4SLq18Smu4vX5lTP_0I0tmHPWZ64mEyNqmrLnhpHzEBtvG1EVZrJjP2vFkOmqbzll_Kbw4N5w/s800/blogger-image-161418262.jpg"></div><br></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">Anche oggi però panorami spettacolari e emozionanti. &nbsp;Domani tappa di riposo, in teoria. Meglio diffidare.</div><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiArD9_txLfhZx3MC5GyC2hBdtXNTKjU_2vwncehwVEthzNHgQJ9ljEPw_D_dhYr6Qa4eiOdrfbL2iHtmfxB6Mr55b6W-Z29vcpi8vov3q1N31Sq9QOl-c7g0ID0cWRyza6dtzMWA/s800/blogger-image--100764190.jpg"></div><div class="separator" style="clear: both;">Altomonte</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlHI8CeuIIRgFfr8ye6KgO_YNBhgqriCVoOok0hmi0IzHITAT1xrgHhAaTenrDoUkI6pP0S5iqmtqWvllxAR9i9dL3TM9IQ7lqcUDOMXvC8G-EpuQyQddAGZpARoC2Dp2qzE9rXQ/s800/blogger-image-1991056053.jpg"></div><div class="separator" style="clear: both;">La piana di Sibari da Altomonte</div><br></div><br></div><br></div><div class="separator" style="clear: both;"><br></div><br></div><div class="separator" style="clear: both;"><br></div><br></div><br></div>
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20130605_132.html">Prima tappa : Maratea - Mezzana Salice</a>
+    <a class="next" href="20130607_134.html">Terza tappa : Altomonte - Rossano</a>
+  </div>
+</div>
+
+</body>
+</html>

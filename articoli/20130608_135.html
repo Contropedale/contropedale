@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quarta tappa : Rossano - Camigliatello Silano – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2013 &rsaquo; 8 giugno 2013
+  </p>
+  <h1 class="article-title">Quarta tappa : Rossano - Camigliatello Silano</h1>
+  <p class="article-meta">8 giugno 2013</p>
+  <div class="article-body">
+    <div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3_rsXPz1ePUpBNkWlSIGXNPGWWqb-Y3TFnllLx-CKvcNdZUY59mvV_7fsYPtWhNMn582yJGyqzomb05A5LXAMD3qlw6N7YrKpu0DxmmifKGVQeUJjxWg35AUfBCR9uaamjSl6Mw/s800/blogger-image--1001644177.jpg"></div>E arriva il giorno della grande tappa di salita. L'incontro per la colazione è indicativo : diffusa la preoccupazione del "trasportatore involontario di derrate alimentari". Cioè ci si chiede : ma tutta la roba che ho mangiato ieri sera a Rossano oggi la devo portare in cima alla Sila? La risposta ovviamente è sì (al netto di un fisiologico parziale consumo e scarico). E quindi si diffonde un po' il timore di non poter completare l'opera.&nbsp;<div><br></div><div>Ma si parte comunque, come è ovvio, in direzione Paludi.&nbsp;</div><div><br></div><div><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3wMGWJS9sUEjMz53fJdgUrm_1HQp3bkYOqzFsCmGCPfv2BgzNw8oZB8NezWTW_KnJ_eguhp1rylGF6Ng17ziC4aUhoBPz_-EcOcbr49arPZeLGIhVI17Bh_c4AoVkxMg1zJCPTw/s800/blogger-image-1438782286.jpg"></div><div class="separator" style="clear: both;">La salita verso Paludi mostra il golfo di Corigliano</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">Fa caldo ma c'è un po' di brezza. I soliti borbottii di disapprovazione sono diretti a Giordano durante il guado del letto secco di un fiume. Qualcuno sospetta che stavolta il nostro abbia proprio cannato mappa, ma più tardi Giordy prosciutto Pertus avrà la sua clamorosa rivincita.</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEidYfPUCTioegVa02Tty19N5SNu_Q8pH-t1MDD9nFguDDi_90sjKmHuZ7RzH8ObE4S9RRTgDd4-Nrwaygg_QguhRpMilIq5JCu1o4A6QRkxKLSHP6VxmPWGXtWNhwKL2mTLtjHM0A/s800/blogger-image--989103040.jpg"></div><div class="separator" style="clear: both;">Torrente verso Paludi</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">Si sale tranquillamente , la strada non è mai troppo ripida e su snoda tra campi, uliveti, frutteti macchie di lecci su una terra rossa più secca rispetto al Pollino. in breve raggiungiamo Paludi.</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqLdnB5Tb80UKpqn_frC507ZS_n_kaGq4lnAmwQ9hO35SbRuiC8P_D-rUld51ib8Eftm_ypcozC1Wn6tZkO96AkJvkpQY3UnO8xX8nSpzHqrsBVr-LDSvJvAivOKZNG0CVzPdrOQ/s800/blogger-image-1306736915.jpg"></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">È un primo stop di giornata, siamo già saliti di 250 m ma la strada sale dolcemente e davvero non si sono sentiti.&nbsp;</div><div class="separator" style="clear: both;">Una breve discesa e un falsopiano in leggera salita ci portano a Cropalati.&nbsp;</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNla5xyBKjmHIUkSsK3rXNHQVWEoNVyE-udpOPte8HpbFaBrh8D7wHoOfxm0HI9q_GTztiWRsJ19pHEgX82WRZDClNcVGKv28z7xXdzZ1er0KpKOa-3ImLPmcLHrpxyXPgzhjoMQ/s800/blogger-image-1879061360.jpg"></div></div>Il letto del fiume Trionto da Cropalati</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">Ci fermiamo in prossimità del massimo elemento di richiamo del paese : la (come dice il cartello) "sfera litica precristiana scoperta dal rag Emilio Faluro " (che altro non è che una palla di pietra che stava nel giardino del citato rag.).&nbsp;</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7qwPkPNIVPSOp6WiDvCCJovxfg8utQTpGaqaiHf5svoyvjgIt-dPNZrFhpNiXd-fDi-crxjM661YMKdpl0YFTHCH4osg4b9D01_UNdAaXkIJnlkmGI0WE-7CuKfJf878JGc5QJQ/s800/blogger-image--2000234850.jpg"></div><div class="separator" style="clear: both;">Le mire espansionistiche del nostro non conoscono limiti: anche una tabaccheria a Paludi.</div><br></div><div class="separator" style="clear: both;">Su indicazione di Antonello (ciclista locale) ci muoviamo verso Longobucco da cui partirà la salita &nbsp;che ci porterà in cima alla Sila.&nbsp;</div><div class="separator" style="clear: both;">La strada sale a fianco del letto del fiume. &nbsp;In basso vediamo una strada costruita proprio lì, &nbsp;di fatto un doppione di quella che stiamo percorrendo noi; peraltro pare chiusa. Misteri della viabilistica calabra.</div><br></div><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgPsz7uw9u7QAiQiont_i9zvvBWcT7YAGuVZb_cplI_M8g4P-szQa7JyNa1LDCZzLq5jcEoZXlvAMaWGyNMh7s_6hcJRWxVV-gmq0XmTlzTCv6SJVRa0T9DOa7NT_m_d_2nYR22Ww/s800/blogger-image--659633522.jpg"></div><div class="separator" style="clear: both;">La strada doppia verso Longobucco.</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">In una decina di km arriviamo a Longobucco abbarbicato su un costone e avvitato intorno alla piazza della basilica .</div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhuCYlRyx_R5rR5wNbDFKR9baSFpYWtoR8OdC50x_JZFd9dolyjc_2FioC_e2aOxFgl0w_DWlg2ndNKB86dkShMeyaGOHtpE0xOP9GVB8-ui-9Ufz3UZcRmfDWhTydadbLkHH4tHQ/s800/blogger-image--2064314507.jpg"></div><div class="separator" style="clear: both;">Longobucco dall'alto , si vede a sinistra il campanile della basilica.</div><br></div><div class="separator" style="clear: both;">Anche qui incontriamo un ciclista locale, però meno affidabile di Antonello, che ci fa: "oh, dopoh il paese non prendeteh a destrah che lì la salitah sale al novantah-centoppeccentoh" ( parlata aspirata calabra). URCA!&nbsp;</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEI5VXyxxm8VtNqsOTEXe6ZCw_AAhDdfwj4oUmBKfAIgyzw1gk0rzod_5BcGrSdLH3yvJFLWXm30bNy-AgbcSwAW4vtRuUAqKGvTB3ch8cU4xp0Lihx_dgBqHMLCDE5UJxrTpW2g/s800/blogger-image--1521452208.jpg"></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">Stiamo quindi MOLTO attenti a non prendere la salita 100% e dopo il pericoloso bivio (abbeverata a fresca fonte) cominciamo a salire verso il passo.&nbsp;</div><div class="separator" style="clear: both;">Sappiamo che oggi la salita è lunga e quindi il ritmo è di chi affronta l'impresa come si dice "con gran rispetto". La strada è splendida, sale in mezzo ad un bosco di castagni e faggi.</div><div class="separator" style="clear: both;">L'aria fresca, la pendenza dolce, il profumo del bosco, insomma tutto rende la salita davvero piacevole. La quota sale con costanza e scolliniamo a 1600m dopo poco meno di 20km di salita.</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjb-CwRveJFcRcnDakmlN8zdUPWelLDJR2U_gIGFl5DJy0-lecdnz9nBf14Ux0luzYh3IisjF0dQvYfNda4EyYNrdbbvmTWQgRhP9tOdmwuklVqlohyeMZqIMdvzKmfcQ6hxFd_Wg/s800/blogger-image-559499462.jpg"></div><div class="separator" style="clear: both;">DavidesenzaGoPro e CancellaraLello al passo.</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">Panorama decisamente alpino. Boschi di conifere e enormi faggi, prati &nbsp;macchiati di margherite e viole.</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiftMgDovZJpo9PnsOEJncp7vHZZlXM1gzch0SpqKKhf4_R0_GF8aTGk8JFu6Ziqq60J2PTILutsBCgldvYB2UWgB5MFWR_V1E2ttfWqXEpoSMIkjGlQufIUzRbUzsCYYg6wKqesQ/s800/blogger-image-794305789.jpg"></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEieQ-gmY4mEpZXZUHDeOfwg7mDy_F-K4ZJ0vLIWLSzSXWn0BzsD-USZ1R8_gwCucwSNT271_cXvGAiujiL9LkegJzrCpsOXp-2iig5qpGXlm0IzXZtcDIFhITWI1nB3kMdg-cBpOg/s800/blogger-image-194297923.jpg"></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5-vfxhmyuDZKdr96LwmYLfz_KvYSyFZ8Ev_BArHtPKr3-3PzQjZYf5YADVbrSCxm89dLbMcOjO139lOZueesNamMioHH3geX4PebhXZrvKcTKvpeMMJCvy29lVCQQuNHxtK8OgA/s800/blogger-image-1790325024.jpg"></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSfhAkDgMx7iND1kLXM09pE5eEOilCtVI1_o1EM1bha9h4wkrJ5eMvU0CZnQ04MwYzYH6O2Dh4arWs8K_RZ2S0Q1fRhgteTEW34JlU-cEJ_aoc21agDoKFITYXPqS1ey7-bvgO1g/s800/blogger-image--58247414.jpg"></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">Il piacere è doppio: non solo l'ambiente è magnifico ma abbiamo pure finito la salita! Alla fine siamo partiti dal livello del mare e ci siamo ritrovati a 1600m con un bel 1800m di ascesa totale in carniere.&nbsp;</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">Da qui discesa. E qui Giordano (che peraltro grazie alla spettacolare salita ha già guadagnato punti) avrà la sua rivincita.&nbsp;</div><div class="separator" style="clear: both;">&nbsp;Infatti dopo un po' di tornanti in discesa nel bosco ci si apre davanti un panorama incredibile: colli ricoperti di ginestre incorniciano il lago in basso circondato dai boschi di larici.</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1dCBsDujQuo1RSonoO9adg-zXW9lJ9Bf-vXIU57rNwpcp9Q-_WQ5gbrZYlfnkD3l4ogS16Q24-20MRq8SPmVeF4lyNaa2EVfButjUUElnW-aGPbwratoLKOrJQsffkU0X6Cu3XA/s800/blogger-image--220458612.jpg"></div></div>Incredibile panorama</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiOTFfhM9O9A8A2-74MF5ISGlHkOKA60wrrXhTRbjW4bJ7ZWpj-k8wfw5-STlRdIHtO0lCJ9QaoyBzSbt35Q8PYULxvBI9KwgTUWU8gFnuhLssca1JXEW6ybhVZHfgsLgKtYuBbSw/s800/blogger-image--1447719359.jpg"></div><div class="separator" style="clear: both;">Ginestre.</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">È uno spettacolo emozionante planare dolcemente verso il lago in una natura così straripante.</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEip_1uIXdMgkOF59jziNLThMiubibaQSRsKLXP6irZnoclIbVp9_AemXppHzE2FFmCE0iMLOtSzZSJUpyG7q09XuNslHqCKHBD4cYXR_OUppafM9c9MK9FmcqkzWPfQBmj9ETK3gQ/s800/blogger-image--481955162.jpg"></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiXj1ayK8jMvOvBtGcGSnOFmO7JpM-j7izTwilLhW_v7jlKGsOHNX_Q1T_9Ulc1K3_3hbyUymPBEX1VOoAbjIyhzHUyVNMmnGlCcSrMsuDi1fvUOg1Y39G4rGiABTGVKcvQhGww3g/s800/blogger-image-484695682.jpg"></div><div class="separator" style="clear: both;">Ontario ? Quebec ? No Sila.</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">Pedaliamo su un altopiano a 1200 m che sembra un po' Bretagna, un po' Svizzera e un po' Quebec. Eppure siamo in Calabria.&nbsp;</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiStY7Xri7LzlQ4uMw33P-NjQcr3Nl7nuUcX-_vSNycjin9PEYRekVneC8Vlpio7C_3bIoz3CFd3U-1jfTxUWVcSyp0RqdyqxjUVFDA4tg0-EPnSaHE7Y_-XeMgKhhmCsllyd1uzg/s800/blogger-image-666098572.jpg"></div><div class="separator" style="clear: both;">Foto appesa in albergo:siamo nel posto giusto</div><div class="separator" style="clear: both;"><br></div>Gli ultimi colpi di pedale ci portano in albergo dove raggiungiamo il Nirvana del ciclista : dopo un lungo giro in panorami spettacolari sedersi tranquilli di fronte ad un vassoio di focaccia alle olive con un boccale di birra fresca.&nbsp;</div><div class="separator" style="clear: both;">Giornata ciclistica grandiosa. Lello filosofeggia &nbsp;"l'unica roba negativa della tappa di oggi è che domani è l'ultima" . Difficile dargli torto.</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2ZVb_gMYGd7anp4uY-A6UZCmhZ4q1s_q0LlkpplREww70VucBWDj6ZaVbTUlWtkrczDGzBK7E5BeNZKW85faCbhvNR25-SpD5BGXzrT3QU7_Yb9Qdj81rIDvcCthhZFzGKi15Sw/s800/blogger-image--20591357.jpg"></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><br></div><br></div><br></div><br></div><br></div><br></div><br></div><br></div><br></div><br></div><br></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><br></div><br></div><br></div>
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20130607_134.html">Terza tappa : Altomonte - Rossano</a>
+    <a class="next" href="20130609_136.html">Quinta tappa : Camigliatello - Lago Ampollino</a>
+  </div>
+</div>
+
+</body>
+</html>
