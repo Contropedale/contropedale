@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cogliere l'attimo (nel senso : la nebbia ora c'e', ora non c'e', ora c'e' di nuovo) – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2014 &rsaquo; 13 gennaio 2014
+  </p>
+  <h1 class="article-title">Cogliere l'attimo (nel senso : la nebbia ora c'e', ora non c'e', ora c'e' di nuovo)</h1>
+  <p class="article-meta">13 gennaio 2014</p>
+  <div class="article-body">
+    <div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKqzJTWiPALgyjdsNFxTOYveYjVsTAqtRswuT7waxeNUF0M3IZ41WlRihxRoFLZ6EhLiAk76VYyEiX4FZP-SSZpK908dGicfPze-kaKBveRcEDcyck9IYiBdCFkaVIqdsfkk-N/s800/foto+2.JPG" height="480" width="640" /></div>
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: left;">
+Le ginocchia doloranti dopo la corsetta di venerdì mi avevano convinto a programmare una uscitina in bici per domenica mattina.</div>
+<div class="separator" style="clear: both; text-align: left;">
+Ma una nebbiona d'altri tempi mi ha dissuaso.Mi metto in modalità "domenica tranquilla di riposo" che prevede : giornale e colazione in tutto relax, passeggiatina con cani, pranzone e abbioccata postprandiale.</div>
+<div class="separator" style="clear: both; text-align: left;">
+Ma proprio poco prima di sedermi a tavola mi chiama Andrea che mi fa : "io sto uscendo adesso, c'e' il sole, tu che fai?".</div>
+<div class="separator" style="clear: both; text-align: left;">
+Che faccio? Be', gli dico : mi siedo, pranzo e poi mi abbiocco."Ok, ciao!" fa lui.</div>
+<div class="separator" style="clear: both; text-align: left;">
+Uhmmmmmm.....</div>
+<div class="separator" style="clear: both; text-align: left;">
+Uhmmmmmm.....</div>
+<div class="separator" style="clear: both; text-align: left;">
+Uhmmmmmm.....</div>
+<div class="separator" style="clear: both; text-align: left;">
+Dopo meno di 20 minuti sono in sella e sto pedalando davanti alla Cano diretto verso Abbiategrasso.</div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: left;">
+C'e' il sole e la temperatura è primaverile.&nbsp;</div>
+<div class="separator" style="clear: both; text-align: left;">
+Ormai Andrea non lo becco più : mi toccherà girare in solitudine, ma il clima è fenomenale.</div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhpXG5y4e765lgO1nBb7o4C4aNsloqYng9Mds_kwuXFJHDBEKGxGOnqvJYqF632XheNBZXDuhKUCZi_VARsDm9ImWSv1HvKU1bqzRnj1-ISNP6k0QldqvOwvX0E5peXIwCRXVFP/s800/foto+1.JPG" height="640" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Poco dopo Abbiategrasso</td></tr>
+</tbody></table>
+<br />All'inizio la gamba è davvero impastata ma a poco a poco il ritmo diventa accettabile.<div>
+Dalle parti di Cassinetta di Lugagnano il sole è quasi primaverile.</div>
+<div>
+<br /></div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkIIwFwgz_iS5uh-RF4bjpq4giak7-YJnE4GRIZzYJhbWyEx6Lv46uxMFUqqadr7nYOGV6EDIDEitTaQATpCZGJJ5CcoQY0mFPSidVod8kRYLJjaH9gr_MAHbk5JOE_HgWZ9Yx/s800/foto+3.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Pecore al pascolo dalle parti di Corbetta</td></tr>
+</tbody></table>
+<div>
+Solito anello di Corbetta e al 32mo km sto già rientrando. Il sole si sta abbassando ma il cielo è ancora bello limpido.</div>
+<div>
+Fino a Gaggiano : poco prima del paese pluf! mi immergo all'improvviso in un batuffolone di nebbia densissima. Accendo il provvidenziale faretto posteriore e allungo il passo. Di colpo la temperatura scende e le lenti degli occhiali si appannano. Ma ormai manca poco.</div>
+<div>
+<br /></div>
+<div>
+Finisco dopo poco più di un paio d'ore e 64 km. Non molti, ma più che sufficienti per stamparmi il sorriso sulla faccia per il resto della giornata.&nbsp;</div>
+<div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+</div>
+
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20131116_152.html">Che ci faccio qui?</a>
+    <a class="next" href="20140126_154.html">Illusione e disillusione</a>
+  </div>
+</div>
+
+</body>
+</html>

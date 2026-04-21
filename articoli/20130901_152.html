@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lungo la valle del Sarca – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2013 &rsaquo; 1 settembre 2013
+  </p>
+  <h1 class="article-title">Lungo la valle del Sarca</h1>
+  <p class="article-meta">1 settembre 2013</p>
+  <div class="article-body">
+    <div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7RuXJs0F-s1H9n6X-vzhXtXC6CPwwXbXyfwSWdsmtzFRtGSU5EIw1uY-Cn2p9Q1sz6xkOtW10Ot-ptpb4MXQzSBrrJLpWwqAQ_4bBzWs0Ojd_47j1ZS8bS1ynLJVlSUEpXM1N/s800/blogger-image-2109152637.jpg"></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">Da pochi mesi è stato aperto un tratto di ciclabile che consente di evitare le gallerie della statale che scende da Ponte Arche.&nbsp;</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhf5vi6SIiCt1QhskHt97_9br34aRSkaexwvmWKamurq-ClwLwBnrbo-oZ6Hfs1MmgZYEjFbM3kuV8lLGoHJ0CoMU3w6NicIUh4kC-DoKS83vNW9aAjq4zZn9W44Wt3Br1sXivM/s800/blogger-image-509136058.jpg"></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">Si può così percorrere un anello che parte da Riva, sale lungo la sponda del Sarca in mezzo ai vigneti e continua nel canyon spettacolare verso Comano.&nbsp;</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIijhIaQVXRjGgE_IMUN4gATPPYDccusyBbiij4dygpDi8WidwI7382eICyuWYq6z00pSb8osIzw-0g3teAFd3LQmJbLOeEYdlL1zshIFziaqWPa7wGztyJyiTyvA9WIsnmoVx/s800/blogger-image--1245909364.jpg"></div>&nbsp; &nbsp; &nbsp; &nbsp; Renato</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">Raggiunto Ponte Arche di sale verso Fiave e, scollinando al passo Ballino, si plana di nuovo su Riva. Poco più di 60km e poco meno di 1000m di dislivello : panorami magnifici.</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3G04UnaApyk6V8nBWfe7eKWguyxoMLhbtws9t2Dz-2gW-n7Crdx0f07BOZzDMc66nQbfQf6iJj8a-0A1uKuM99ETyQPeBgkMr3wiH6aaLcFTYhYs_14bY7a-UUsGGH6XFKkCB/s800/blogger-image--280775736.jpg"></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">Renato ed io pedaliamo rilassati in mezzo ai vigneti. Una volta nelle gole del Sarca ci fermiamo spesso solo per guardare intorno a noi.&nbsp;</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4YLsW-7s33LhNaKHY-IyRQ6BZFMHMVpCEtDc46UIBN83B_3xUdrzR0KM_LpY0aZIlibCEpTazmtEVEg87C2kKJ20ArGTAJCHPqlyMYfHtOzLxMDxys5fyRr0AhD0_Ynb57VfL/s800/blogger-image--1802408513.jpg"></div>Ma quando lungo la salita verso Fiave vediamo di fronte a noi tre ciclisti, be' , ci viene voglia di provare a prenderli. Così acceleriamo sensibilmente &nbsp;e li passiamo dissimulando lo sforzo . Ma non basta : bisogna continuare a spingere per lasciarli sul posto.</div>Dopo qualche chilometro c'è una fontana: su suggerimento di sant'Ilario protettore del ciclista ordinario che ci compare in visione algida ci fermiamo per il rifornimento (anche per evitare il colpo apoplettico). Ci guardiamo e scoppiamo a ridere : piccole &nbsp;insulse soddisfazioni del ciclista della domenica.&nbsp;</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhohuCl2QsOtV1T6s4K5e8dZYkuyu_hOrfD1bD5oyRci7PX1jB8cC_qsSZouyDqlxuqxImvd5sS5wSfafEL4vQ1MZBy5uXZvTADNPQs53QiJRBqjLDRgonrSPWPOdfIzhO4dc-w/s800/blogger-image-153256240.jpg"></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdKn_ovuy_0ebUPg5motKcYaVyZGPi3IiHL24-LSSK1Sl2QkjKZMQgMynu5eFicPxlFkktqA5Aq0Mf7_s9b9h2swMH52g_z2F414N7LDEBcukNsfvyGaGmgZ8e482MP4Mz5zb9/s800/blogger-image--299171195.jpg"></div><br></div><br></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><br></div><br></div>
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20130828_151.html">34x28 fisso : la salita ai Prati di Nago</a>
+    <a class="next" href="20130903_153.html">Ancora, o forse già, buio</a>
+  </div>
+</div>
+
+</body>
+</html>

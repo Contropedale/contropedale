@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La bassa l'e' sempre la bassa.. – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2014 &rsaquo; 3 maggio 2014
+  </p>
+  <h1 class="article-title">La bassa l'e' sempre la bassa..</h1>
+  <p class="article-meta">3 maggio 2014</p>
+  <div class="article-body">
+    <table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgI5XMff1Gg62SxxEiw1HwGstCfNMBXBB7WwpLfeeSFEqUEUTuSoexOiI8SjyOyEkL5Yr419TTOAIj-XcJ3jaV1NRpxlFimuoNJ0xckS7_0kPphUPwOmFGQtsTGroSjQumx-WtV/s800/IMG_6134.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Gaggiano magrittiano</td></tr>
+</tbody></table>
+&nbsp;Previsioni incerte, pioggia sicura (dicono) in oltrepo. Tempo per un giro nella bassa.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEomXXE8bDDuEjqakR70Ptn12gr71K8YVMV5D0PGx0fpiMB77DHGQaGC0omCLOqMIl3KQpm1dKJiT_RuVz5II_JN084AxY030HhmvCGpPlF1nSloz-pOvJEuANQRKQz4RzuSq0/s800/IMG_6135.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Riflessi</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjW9cqbherWpqnKxgFy_Mct7MyNYj-p2-plo_l_vtoCbBL-PMiZ3h0EYWauG3dmP4DOvNRM8vAnW-M8k9YnkyvSo4R5zFqUWaby71ymH_0QtVjLwVXXtcg3BMmOv7cpFNJYLnuw/s800/IMG_6136.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Renato</td></tr>
+</tbody></table>
+&nbsp;Itinerario noto : Abbiategrasso, abbazia di Morimondo, Bereguardo Pavia e rientro.<br />
+<br />
+Pedaliamo tranquilli sotto &nbsp;un cielo magrittiano tra i riflessi delle risaie appena allagate e il verde brillante dei campi.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivsZGLzaM3QdHPfb27ylFTmAyoCQR6a4qoLyX-p3Pa7SAuxxkhbc13DYJG18svC7GgdmtjfHgWhqZ4Jc_mIo05AELAtb_4KxwfuRCNBTlrUd2JKSJR-EgafreTf3ar2kfkE0Cy/s800/IMG_6140.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Cielo incerto</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjBvfq04qlZ1a6HFpApXztemk67uERdDIwZ4Tq7g2ziSnYEasLEiSRJXF5PLtXESz4EsYE8XDnqthEpTqyxeBJsx07Yt-Psr2BrABfJPiW0cPQbpRcLICGmUBCUhmZTA2oggOP/s800/IMG_6141.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Pedalando verso l'abbazia di Morimondo</td></tr>
+</tbody></table>
+&nbsp;Dopo la breve deviazione per Morimondo tiriamo dritti invece di girare sulla statale. E' un bello sterrato pulito che ci porta verso Sud-Est. Non so la strada , procediamo per inerzia, guidati solo dalla curiosità di vedere dove capitiamo. Aria fresca per essere in maggio : maglia e manicotti non guastano.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimzjtYVpePId_SXAQAlIKEK01-Ewk9X0r859p1dWHLK2Uq2z5yZdfSca0X1QvgrjlcrX-dCz2wreMc-fqVrLN4AyjUUr3iOJZLs4jFmTsGzGVc2eWNojp9HvNaX0M1WEWxo0R_/s800/IMG_6143.jpg" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Smilzo a ruota</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijxPloCIvH7K5JS_ApWeWYeof9GnoleC0mVxnerMPfWduC7HCb8V_VD9e3Y18IwIh1N2B_IsxgscfI-k28BvVgkLNSN62-F75vmqBTva8g0vs1MGVsA1agiTW-7wnO1AvofYz9/s800/IMG_6144.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Grano</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijbp-8JNCfT1pafgG00RenVYt-KgbZlXr-GYus5pxorQlZUGfmLKxxYr2cdqFpEKHRzjo2uiTfP2jWrsL7EtLCDSlfAk7D7RmNUpPUeBKtAwFIwj6gE1wZbr_woVtgG3OevKmo/s800/IMG_6145.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Cascina caremma</td></tr>
+</tbody></table>
+&nbsp;Dopo Cascina Caremma sbuchiamo a Besate e invece di tirare un po' dritto sulla statale ci buttiamo su un tratturo in mezzo ai campi per incrociare la ciclabile del Naviglio.<br />
+<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEglhUGpmccurIxeH9mE1fwgw_rSKcucMDobAJCMg_e6wCJ8YTLgg9jyCze6Fs8tv8_lN-8jP7IbH9V_bgqxF-nBmNFFApuK5b5APXMBs9vqpkjJn0VfMafS3RRU2deIAa_Kup5y/s800/IMG_6148.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Sterrato divertente</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr0muV2GPiWGtew7htoat0WNmBz-DQDedFxxu0PloWD2nVuVXdU-K8_3LIMx05zG2_Bp9DqfZwoSCcNM2X4-3vZ6T1BADQunakSjk21LxBhxMjMfDoh0AJzQB67c1Va1MDMXKF/s800/IMG_6150.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Ma come si fa a trasformarli in prosciutti?</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjS5ptgsKhxCUA9yRCShgPedHpSer9jBPdVK6XfOLcCwoNuPoQ6NLz_YHyXzYYbyUH8M3VrOgCpJw-h3FJeo82Gb15hGSZ-cyXQjqTE66DZf1qAJ8sfkpJVb3xFCv4h-5mHEMd1/s800/IMG_6151.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Verso Besate</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhwWaI7YcfLyHPET3EQ6Rc5aC07Qc2tuswfwhX0LZesNWb5OXnvkwLJJdA7meWPkionKUflsUiEYUDiZoSHTnSVA1ZShJKu-a12niq9K_9gqx_1k1QuAZSwbT8V0Ze78v8A8qu4/s800/IMG_6154.jpg" height="480" width="640" /></div>
+<br />
+<br />
+Lo sterrato a poco &nbsp;a poco diventa fanghiglia e ad ogni colpo di pedale rischiamo di impantanarci. Ma ci divertiamo : buttarsi nelle pozzanghere con la bici ha un sapore antico. Ci vorrebbe una girandola sul manubrio o una cartolina tra i raggi.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZJ6nujaotyoSA5qYfX7uiQcaYuKxNlqXDXNjVj9VLGElEqSTrnIaPSVptjDGlebKXXUZWS8olce2a_rkWYTsSkg137vu3Nr8KPfHivTuUm7-FE9Vgado9Lp2BvKal1z755egW/s800/IMG_6157.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Va bene lo sterrato ma adesso si esagera.....</td></tr>
+</tbody></table>
+&nbsp;Dopo un paio di km di fango e ghiaia siamo di nuovo sulla ciclabile e da qui è un lungo segmento rettilineo fino a Bereguardo. Caffettino e brioche al bar e poi via verso Pavia passando da Torre d'Isola.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgr5hesZxk8iJeloBp6QixZjtmVp581niToCCND4TCFtJuQYmZEqQt9JpLxvH6cqw7O1k_hOxmPv9XXtC3EbauppML2vYFhd4SoPdfhc6c3nVVUf6BTY1TZ2GZ0DFvgfatrY4zb/s800/IMG_6159.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Senza mutande sì, ma senza maglia no. Un minimo di educazione</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCr2v96OufgvLpsaeTLfhyphenhyphenBIQQpDTRrZRa4QyhemzpfG630gdgerxFZvgAHD_eN5gZMjcxthagmZrMxpCm4Yi96-BnaMOZvZQZ70H6DTeH4u53sPOZ0jIN-eWzO3jWMN2xfD5j/s800/IMG_6160.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Mi porto a casa un mezzo ettaro di terriccio</td></tr>
+</tbody></table>
+&nbsp;Entriamo in città da Ovest e puntiamo verso il Ticino : ponte coperto, castello Visconteo e riagganciamo il naviglio (pavese, questa volta) che ci riporta a Milano.<br />
+<br />
+Nel frattempo il sole che sbucava timido si è fatto più convinto e il cielo si è pulito.<br />
+<br />
+Certo avremmo potuto tentare la sortita in oltrepo : colline e vigne. Invece poca salita ma campi e risaie in abbondanza : e ce la siamo goduta comunque per poco più di 100km.<br />
+<br />
+La bicicletta è la migliore invenzione dopo la ruota.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyuU7_LbgIdBZgVhIc246N9SjOwm-vFBgS6sBlVk1FQijipp4QbByVAO462Pihj_LbUeBY03nvScbHpnhtVvKKXgSNfR4GGIgar7RscrfKn9gTrfad3aseLvHozDES8otTqIzk/s800/IMG_6162.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Archeologia industriale lungo il Naviglio Pavese</td></tr>
+</tbody></table>
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipG1GRp-QswQ5q5f3c5VTmR5U4-WhargyPwsP1EqO91MG-7n1QDJYqyS8IfmP9eTt4tb34Mhy4gB3dlVp9KAxeKhtbbTkFtn4RpmotvVO6VnOuV_PVqkeyiT_9VtHCENVum1ob/s800/IMG_6164.JPG" height="480" width="640" /></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMR2LWMof-KpQVUoi5rtkaF83fGeXFBXwIurKzjAs01B1gTOvF49D59WeT4RQMf3igJ6gC_Xq-BUXOYBdzwFiiVdSfYM7W4Uu_o-TGVHvBLtWMN9mLeKaEaJT0ceOwGs_Muyvu/s800/Schermata+2014-05-03+alle+16.10.42.png" height="406" width="640" /></div>
+<br />
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20140501_169.html">La legge dello smilzo</a>
+    <a class="next" href="20140504_171.html">Le parole non servono...(Con Andrea alla Sella dei</a>
+  </div>
+</div>
+
+</body>
+</html>

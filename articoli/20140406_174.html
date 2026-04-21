@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>El Motarùn presenta il conto. – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2014 &rsaquo; 6 aprile 2014
+  </p>
+  <h1 class="article-title">El Motarùn presenta il conto.</h1>
+  <p class="article-meta">6 aprile 2014</p>
+  <div class="article-body">
+    <div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhN-NRuMvO0Y7vPw_0yUTvUgJus6T8OaZxHzU-2jt1aAHIjgLSjgKxxt3bBBFLb3sT94fOLUB7vacuTPAL9aYnZcpKJjZyElHui3MgdnOUGnrz_8F4JSxhNxdo3AR2NKG2Gxo4e/s800/IMG_5688.JPG" height="480" width="640" /></div>
+<br />
+<br />
+A Milano si corre la maratona, bisogna quindi essere lesti a sgusciare prima della chiusura del traffico. Alle 9 siamo già a &nbsp;Gignese pronti a partire in due : Renato, mio fratello smilzo e veloce, ed io, gibernauta in fase di allenamento irrazionale.<br />
+<br />
+Eh sì perché programmare l'ascesa al Mottarone dopo i 1700m e 90 km di ieri (dei quali un buon quarto giunto come piacevole imprevisto) richiede proprio poco raziocinio.<br />
+<br />
+Ma è una giornata così bella e in cima rischiamo di trovar ancora la neve.<br />
+<br />
+Da Gignese planiamo su Stresa e come sempre il panorama in discesa è mozzafiato.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjc2aRa50d7g6UOn6JEUiYcZON22Up48mo0eJ4W-VFoOV27M7u6SX3zuMeUzSEiUkdAzAsC70engOIKjGHlnM1V37834HxsjmBnc1Hys-qiVWqXtNNoN2dIzLZ2nJBr9LsCPFoP/s800/IMG_5681.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Scendendo da Gignese su Stresa</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8fmo5V_dB-mWpKKvUUkgyfaCRUXzwIW-kfcctZXq0htF8ONh3DhLYsTXKNUz-0TGxCGVDE3M4O-94QqT_rZjvuedLwdNqkGSy0TL5WPEj0BEWs5DV8pPOiRawZsL4059KvpLd/s800/IMG_5682.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Isola dei Pescatori</td></tr>
+</tbody></table>
+<br />
+Da Stresa sono pochi km di lungolago fino a Baveno, ideali per un po' di riscaldamento. Io devo dire che avrei bisogno di defaticamento, invece, dato che sento le gambe lignificate dall'uscita di ieri.<br />
+<br />
+Da Baveno finisce il gioco e comincia la partita. Sono infatti 20 km di salita vera, interrotta da due tratti in &nbsp;falsopiano e in leggera discesa, ma con gli ultimi 6 km che non lasciano tregua.<br />
+<br />
+Siccome la conosco mi risulta immediatamente chiaro sin dai primi tornanti sopra Stresa che oggi non c'è trippa per gatti, anzi, non c'è nemmeno polmone per cani e neanche finanziera per topi. Semplicemente mi rendo conto che la salita è molto più dura se la si fa con una incudine nelle braghe.<br />
+Questa è la sensazione che provo mentre pedalo lemme lemme.<br />
+<br />
+Renato invece è tutto energetico e brillante. &nbsp;Ad un certo punto, sentiamo un ansare rumoroso. Ci affianca un tizio con due polpacci come due prosciutti tirati a lucido, una bici con due ruote in carbonio da mutuo e aria molto cattiva. Lo salutiamo : ci ignora.<br />
+<br />
+Io faccio quel che è meglio fare in queste circostanze : lo ignoro anch'io e lo lascio andare su del suo passo bello veloce (bè...non è che avessi molte alternative se non quella di gridargli dietro "pirla, saluta!" prima che scomparisse dietro un tornante).<br />
+<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdBD_gLnGwM9y2-CipVXxUxxKjoQ2tu394I7AHcMmGAPoa_NQ4hlw5Oo12bmJr_5H3VUJFJFUv8_uBLZTl6x9oi_q-_BFf5745ExmQle7MdwAd5o1wnhKcvhGFDSM5f5isMOQe/s800/IMG_5685.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Nel bosco comincia la parte dura</td></tr>
+</tbody></table>
+<br />
+<br />
+Invece Renato si alza sui pedali e poco a poco lo va a prendere. Mi dirà poi che : lo ha acchiappato dopo un po', lo ha affiancato e gli ha detto "caldo eh...." il tizio ha risposto "nghnghnghnffffffff" che significa " sì fa molto caldo ma le chiederei cortesemente di non interrompere il mio allenamento perché sto avendo un colpo apoplettico molto scenografico e vorrei morire qui, in sella pedalando in salita" . Renato, che è persona cortese e pronta a compiacere gli altri, ha quindi cortesemente scalato un dente e dopo un ennesimo gentile saluto, si è alzato sui pedali e lo ha lasciato sul posto a morire felice.<br />
+<div>
+<br /></div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHQTWZVE537yE-PWhp7cyFkulo4w3J_N6yTM0bmibpaA6_u7yZtVFNvf4l2433DT4MAfOtOJLPZDVcycM5uQBmZBN0y39tN-rEfNQUrc_Wnzn4tZ6JS0IA7lgDTGsiU47-AEOy/s800/IMG_5686.jpg" height="640" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Inizia la parte dura : Renato si ricarica</td></tr>
+</tbody></table>
+&nbsp;Questo mi raccontava Renato dopo essere tornato a riprendermi mentre con grande concentrazione salivo in una bolla di fatica e quesiti esistenziali (perché io qui? perché in su e non in giù? perché loro in moto e io in bici?..e via così).<br />
+A questo punto, pensando di farmi un favore, inizia a parlarmi di lavoro. Il suo. Cortese pensiero, pensava di distrarmi dalla fatica e di rendere quindi più agevole la mia pedalata.<br />
+<br />
+In effetti potrebbe essere così parlando di lavoro con , che ne so, un esploratore, oppure uno scrittore di gialli, o magari un inventore o un cantante rock. Ma Renato fa il fiscalista. Chiaro quindi che parlare di lavoro con un fiscalista, per quanto mosso da nobile intenzione, non sia il massimo per alleggerirmi il pedale e scrollarmi l'incudine dalle braghe.<br />
+<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVJCe0d9rYr2sADd3qbHaDpPTYZ7cUr4LjvRsmQXZWgI5nVxqiCYEqS_zFUuuXodwgjJ6BQURjh1n1gzZBI-K7cfYGIbnRU0OC31kJXZRJZzwK8p-YoOyeY1Wh5DNMM47UP12P/s800/IMG_5699.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">La mitica Fonte Federica coi Bucaneve</td></tr>
+</tbody></table>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUPbKqgUkfHXY5Ym_tSTQm_e4w6tRxFo-HaOHhECoTJ1_mpA8HRMuF59Q18iaTpLbrN1QpatGjcWek17yaOeBUQ8Ds6Pyqt8DJxXLCK53S7ZFKDqTgyYi6xp2Q_Vn6dy89_gqg/s800/IMG_5700.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">FReschissima</td></tr>
+</tbody></table>
+<br />
+MA apprezzo lo sforzo, comunque , e a poco a poco siamo alla sbarra che segna l'inizio dell'ultima parte della salita : quella dura.<br />
+<br />
+La faccio breve, tanto lo si capisce dall'inizio : dopo aver esaurito ogni possibile argomento fiscale avendo ricavato da me solo pallide imitazioni del "nghnghnghffft" del tizio di prima, Renato si scusa e "aumenta un pochettino" come dice lui. Dopo mezzo minuto non lo vedo più.<br />
+<br />
+Così mi rimbocco le giberne, sistemo l'incudine e vado incontro alla mia sorte : il signor Motarùn mi presenta il conto del divertimento di ieri!<br />
+Ho iniziato a preoccuparmi quando ho visto che il Garmin ha iniziato a misurare la velocità in ettometri l'ora, ed era un numero ad una sola cifra. Ma riesco a stare in piedi e avanzo rubacchiando metro dopo metro a "sta bestiaccia di montagna.<br />
+<br />
+In cima lo spettacolo vale tutta la fatica, neve e cielo azzurro e in lontananza cime completamente imbiancate. Magnifico<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhN-NRuMvO0Y7vPw_0yUTvUgJus6T8OaZxHzU-2jt1aAHIjgLSjgKxxt3bBBFLb3sT94fOLUB7vacuTPAL9aYnZcpKJjZyElHui3MgdnOUGnrz_8F4JSxhNxdo3AR2NKG2Gxo4e/s800/IMG_5688.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Le due ragazze in cima</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqQlt70Zef0O62dclsE0k2Au7FGxlEG8EpOSw6rrp0eRSWjgVcverqoqR04Ifi29hc5fRd5xXH84M16ArjQ2uvBjw0sxHmb2u77bzww2PvkFLfPmNxW2Qr7g4OiKSLqbdFGOR1/s800/IMG_5691.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Dalla vetta</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1bfeix4wshVYT228MfbQdxQKqTqJWFqDeg6VnU3r7ZWvHJ4JMBsqChTVhDORnYRC0LhIQYQDfrqGP03kXx3jUiKRvQZXa8632J6bVM1JRMI7vb-oqXlN4O2wwmUvdMCI9cgKk/s800/IMG_5692.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Dalla vetta</td></tr>
+</tbody></table>
+<div class="separator" style="clear: both; text-align: left;">
+Dopo le foto di rito ci buttiamo in discesa e in poche decine di minuti siamo di nuovo a Gignese.</div>
+<div class="separator" style="clear: both; text-align: left;">
+Le gambe sono ormai completamente lignificate ma lo spettacolo delle ultime rampe salite in mezzo alla neve, bè, ......ne è proprio valsa la pena.</div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: left;">
+Alla fine chiudo il weekend con 1700+1360= 3060 m di dislivello e 92+58=150 km. Bene così.</div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJiESUZgvQXhhI0ifGFBgUbnMjIA8IvHtoeJ8LrPXTxQcmNcLFgGZ5RamdcsztrN-LQfFzfE9hW-i0tQf3n2sLpLp2so_ixRB57C6yTrNrTVeBa62vVb3p9DMZJ-TZrTfE9UTy/s800/foto-3.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Renato fiscalista veloce e chiacchierone (notare la totale assenza di giberne).</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJCkVnV1NNeht_YJLafPw0irgyYvvN1MteumvRt0pjueZXhgXezijmqzxuTVoMuTot54wiAczbrvN7AmbasssZwaKM_ACwLyBKjUnMeUwAvYb6Hy4a2FU2oPcSmHZYtmrSaPP7/s800/foto-4.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Gibernauta (sono riuscito ad abbandonare l'incudine ma le giberne sono lì che fan capolino)</td></tr>
+</tbody></table>
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiajPRQS57mno9SH6ofejoFTfpBHIJ3WSHYBxSRdgqREqTeajGb2GDjTQe05-3MY0Sjk3cKUwPAu7Ghn5L1PCeC3anKbB3Tp54Srd7KummoXaehYaCe5TqnHoO5tf9qqZi-fvSV/s800/IMG_5693.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">LAgo d'Orta</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqydEviriNs1E70jiHQRUoouD6BPCWBnPhkbuxoRHUm_WS-vXAl98HSIQQ0ii77kbcLjPQSYyBRioYYx3lrNrn0_hRbPCt79kI2qOlhg8FxgQYAIIwhGpNT8CaL3Vm5GMODDni/s800/IMG_5695.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">La discesa verso Armeno</td></tr>
+</tbody></table>
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhtD8KkPPt741VVf5cJ8_MnsDTKraqiQ8Opw1KaMzawM4844QYosqwfyAfsLqI6xVHDuhDWqrQK__tnzLW7ia1ddeTfIAbJlwyRQOwwMeideOGlHcJabkXQKcksMllCUogzp5dN/s800/Schermata+2014-04-06+alle+19.09.33.png" height="304" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Altimetria<br /><br /><br /></td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20140405_173.html">Tra Val Trebbia e Val Tidone</a>
+    <a class="next" href="20140413_175.html">In compagnia intorno al Caldarola : cacciatori e p</a>
+  </div>
+</div>
+
+</body>
+</html>

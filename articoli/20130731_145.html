@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A+A= Chiacchiere e Relax (e pensare che stavo per starmene a letto..) – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2013 &rsaquo; 31 luglio 2013
+  </p>
+  <h1 class="article-title">A+A= Chiacchiere e Relax (e pensare che stavo per starmene a letto..)</h1>
+  <p class="article-meta">31 luglio 2013</p>
+  <div class="article-body">
+    <div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhj_HC_tRdtOMMdgZ-ueEVR1SpeSwUSy3roZpTKcrEk6Er2rRvq9pUZL3yC6zERc8QICyncteCMR-zxXsGDgoDBpJZK4ma3FNvcC2Vj3byQvQOSqQhGCTL8QtTmcafrIYY2a-g2/s800/IMG_4160.jpg" height="640" width="480" /></div>
+<br />
+Serata attardata. Domattina quasi quasi bigio. Poi, chissà com'è, alle 550 l'occhio si appalla da solo. Due alternative : mi giro e ripiombo nel sonno, oppure colgo quell'attimo eroico e mi alzo. Ed è la seconda.<br />
+<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3C_dJFGvD4mtaymZvjYuNA3b8nHy0_4rzLkmah07LxtcmBpguI2l02kl4ctwnShnEu39aDMI3ZFgJ2HGUzvBEiUIVlaW4tv26lSlmzLgV5mXeUnF9WKYA5meJOP0iUyXXsBVY/s800/IMG_4161.jpg" height="640" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Dal punto di vista del Garmin</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiyG6DMOBUVyC4XB_nOtdiNG1RwUrRvyCRJZX6OYcWmqEhe3seDw-IkCuuSBxyjQZqO2h4Gckryj6DENQmMYInIV8MMkzadVfFMS7o960n1S2GVy7NtNXibt7Ls72LkcM929qLb/s800/IMG_4162.jpg" height="640" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Dinamismo mattutino</td></tr>
+</tbody></table>
+<div class="separator" style="clear: both; text-align: center;">
+<span style="text-align: start;"><br /></span></div>
+<div class="separator" style="clear: both; text-align: justify;">
+<span style="text-align: start;">Prime pedalate tra netturbini e piccioni assonnati. Snocciolamento di ruota libera, mi affianca Annibale. Al ponte ci raggiunge Ale. Partiamo. Già dopo pochi colpi di pedale la cadenza è rilassata, la luce bionda aiuta. Si chiacchiera, ed è un piacere dopo giri tirati col fiato in gola. Alessandro ha sempre qualcosa da raccontare &nbsp;(interesssante la descrizione di come è addobbata una sala riunioni di una azienda che produce intimo sexy femminile) e Annibale.......be', è Annibale (mitico l'elogio del pavè sconnesso, bagnato lucido e sdrucciolevole che dovrebbe evocare singulti poetici nel ciclista metropolitano).</span></div>
+<div class="separator" style="clear: both; text-align: justify;">
+<span style="text-align: start;"><br /></span></div>
+<div class="separator" style="clear: both; text-align: start;">
+Si va così, e si torna così. Alla fine saranno i soliti quasi 60 km a poco più di 31. Ma la media non conta : torniamo a casa con animo più leggero (e non dipende dalle borracce svuotate).</div>
+<div class="separator" style="clear: both; text-align: start;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: start;">
+E pensare che volevo starmene a letto. Cosa mi sarei perso. Basta parole : parlano le immagini.</div>
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhg8ugQ_mhsmXTFNVJqOhxQ6Ao46_lrImqTl1u2yT85jCHOYYi7YYZeSF-VnegCWyJNnVwsllwBoY7DPUEANlKBMjmV7OxoWcVmVD8JcVJuO0sAL_tTtNLiRAIMxmp5eWEFFxWB/s800/IMG_4164.jpg" height="640" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Riflessi metropolitani</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2AJv2lf9oWsn11QGSgWWoLCMz8GPzNWIiv3q4N7NGYsVkc3FYdSGMKJsVVakmoJcBr1dKWq_hnJkJtPTHdsIq3y6M84IvcZHESi1LNj_W2jc8tWZnfIV4LOwccPGD6CKaLWB3/s800/IMG_4166.jpg" height="640" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Rando-Annibale</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWE8bm5ZHC42koeuWRzdiZYLWKJu-A_hWN9RLzhw-sAr58qcBnhNjjsktV0t1sgigxKpPx4P38eiUHnV5aAbUrIB3tGcidE70lM-MRvabDQJ7S0dJmOlU1LhBgRrmx_vhf2nv0/s800/IMG_4170.jpg" height="640" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Don Alejandro Nostrils</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhaUQMPZtkHI7I2NNPDeirrvSJ5Yf7dKjaQ9k3bz0WqM1zfpqbaUDgEVlfyMC0C5jDgMglZKDadOdDHnd1uo77i4etyGFIUx_-V545flaqGBIkiqG_s7WCnujOBT3rrPwNgRTNQ/s800/IMG_4171.jpg" height="640" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Ombre lunghe sulla ciclabile</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipAPQN7jYyZroBERQpBKoixkQ2cBYEWDBUj7bSZNk5rChw2elBcOMh_maYgDBRN12C4K02iWlIKp_jS8m1SYh-DBlSOKh-LbouSAKMGexsCkzw8M7oW9O-HifDIsPq5kjK7v9l/s800/IMG_4172.jpg" height="640" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Verso Gaggiano</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9gPH-D_Zv1EgKFWz2lXWc8q56lkXQ50fWvrNUEcQU8exp2R1lq7MIY9LpjysCpxYZWxeV-CAP-d6ly7riNouA3mvcHn9HM_JSfq2uqtLGyZhucithOpSuLwNFHrPr3gIQyH21/s800/IMG_4173.jpg" height="640" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Annibale e le sue nuove MAVIC GIALLE!</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2exmejkNBzY2TSvTyA-RVcB86DFF5wi8iU35rd_4tHUK_JbC1yOv2z7v1mkXqYVr5uR_C5eqmYdNqsUlNHYBi-hwSQR3kiwv3Q-IF3tgBqB1g2vW0qfPKsMvaMaTPqkkwvbKx/s800/IMG_4175.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">foto in movimento = Orizzonti obliqui</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYM5dC0bJQ6Ss6rvYK2qou7J4Sku1P79kgMyxIhwd7frJzvq34speM1Gl5kvN4Y9PTUZVnzfLFZhbhunrCb2usu8Z_HZpCI77CWAq9Egk5hJli-F6d1hY0F6YuZ1TLqEThS4Qa/s800/IMG_4177.jpg" height="640" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Annibale nel bosco e mezzo/me (Maglia della Transalp!)</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpxkHYxc8cgXkNabTWDKx8r30sysHeK4vvcbPLW_pXMEFmgnKcQQyDj1NBZd0UX2yVDbVX8SegTEx80RAha7Av2U9900AgydLke_-27Rm_oc_q0Uj_1nBjJKnnIcYtMkvknmPh/s800/IMG_4178.jpg" height="640" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Nel fresco del bosco di Morimondo</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgczpFddkTt9GuirK-5pn7_UtW3a0ZvfKhwlML9ryuTO44pdadufTtmBt2CpHYHK4n6EO5BJqxRsDQs-vCgzfNRT75fkRX93GebMZ6edfh06dkqZtryjQhyUObLbpsnXxrH-ytJ/s800/IMG_4179.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">L'ombra del fotografo</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjkz4EpTH0EXQKFDQrkjrDuGhIU9u-hCkxwu9O4vLTwrW86TyiKG5b2K_zc8J9I59g0jSY8VSvpWz63q5m7NQeVICY9B22G2_5SvR2OOIWkkcRVyaMw8ofQx58UnlkL6TkibqzA/s800/IMG_4180.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Chiacchierando con Ale : uno dei rari momenti in cui non lo vedevo con una prospettiva posteriore</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgB3uJnZix0NPbcCRjlpc-kL0_55LZWVbacQgrZI1ItllU4dNhjtq6yicI9ExtCA6s_zZOSSTvtpoe8ayIJpQ-c-r4GmR0PDbglDtd2pxDnAGFxhRVwM5DvlOQ6PDSUe8c9WqkR/s800/IMG_4183.jpg" height="640" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Eccoci qua</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjk-tqS06OtzfANTtgicUNxrLU3Ii43NV9cGR_3OJIUCS4QZnwExRiJuTdod_oyueftj04vq1hGUpd95pEUM-r1BQP35AskUARaZDrfiB9uQgf2GgPgpcojyjUMoZwY8nwQHDpq/s800/IMG_4184.jpg" height="640" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Appunto, mancavo io con il sorriso un po' ebete...</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKfAb9_P2VH0Hz-erxqnmy1bOWujZW0xk_7wSW2xNSEJcAtXn4WCxmygzDnJmhHRr41pFcDSL_poSu7c0U0f-rvXySRJQMe9zeAeOB7YRzJsDEyVFsn0kaapXprRB5bWfS_FLR/s800/IMG_4187.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Verso Morimondo</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhwzEqjtKKbj0l61iv94WJHYbACcn96Oi8g_quU2srZaNZB39QJSgJh0lYMmaJbbwxyeS4nmKX_RWrNZPL1u-jEqJ6PjNxj4tEW0YrmnHFdoGMbxCJK8YPRIo4bbBiSem6UGFD3/s800/IMG_4188.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Mais</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggQL8_jbOkK6PjPXjn_BGm7kwZrrCfMmJwBrkWW5LsoZs0e48izuyhwwnCweO4uRzvfEe42In2ivOBPNLXGa8YnmTpuV7y-HULlYOc30V1X4Ywq4LfZQkIjI3Z6kqgRYbg0_I9/s800/IMG_4189.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Nell'ombrosa galleria di granturco</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8F37BDiqhdItDCMSI9PbFVy6L0RIwkp9p-7ECJ469_-EqOKyaOKseFUBgE3VwBtq00p0ZDHYe8mpTbs69C4Cls1Fd-UP55XRGIvxjhHO0DZA3hVUA3-bwxtuPW-GNz771_t4a/s800/IMG_4190.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Bosco e dislivello</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvx5RXrSbp_AlvzPaVSdPG6RjUFsWAkv3p6xjgkpB01y295fq8irC_5yD6Rf35vo3LDIp0Po-eTtO6GOsSj7Kxr3Wwwtu0iY_exBnUTJOrg_l7KHw3yVs_vwqy5VPBTW-qijhB/s800/IMG_4191.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Pedalando verso Fallavecchia</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiImLIqBx-Om68CO5lf1-bmail0AZEIAj1tSCDd1SmuUKCMchdVxdXR9VNYLA45FKA4fP1tDDwd6IU4_QhE5fK619_S88ctdD2JZlLq5wSluYa4vVevl66rv_2ebvOOdHxr38IC/s800/IMG_4192.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Raggi &nbsp;(di sole, non delle ruote)</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbW_h4b8VRXLTPx4aoBvTVCyNuNB_1Y7CRbuJG2Dt1Q9p3lO_u1nxI-Pd4SXir_Y0pdTfFh7xrq3G26s65zteKSv5CexY7G4MRvsVejrtcxJAc-Yaa1EIs84pOCMbqtf6Xr6V5/s800/IMG_4194.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Acqua, mais e cielo</td></tr>
+</tbody></table>
+<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifCZldFgmM5cs2D07mncjGSTSFvXigENBkw7re2kfKcIt-vtWjZxWZnS9oJrnjsoZq_o0Z0SDgTd5lUGW3hYCeI1-vtvEPPNZSPBsiu538Ofoc-08YUSeepOHJToaGxjHtk9e2/s800/IMG_4196.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Quiete</td></tr>
+</tbody></table>
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYiADS9BOHx2K7w_tKa5Wxx_2kVRdt66ucT4g0bE9rgdAhFU8DnIsuWxMNugFqe0NrPsHIQ0gy7p9As_dhP8MElIEMCuA1dOUgbXhD1BXan2G9eVBxsu7JRm46MCV4WmSfzQf2/s800/IMG_4195.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">La sigla di chiusura del giro di oggi...</td></tr>
+</tbody></table>
+<br />
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20130728_144.html">Weekend bollente</a>
+    <a class="next" href="20130801_146.html">Meglio tardi che mai</a>
+  </div>
+</div>
+
+</body>
+</html>

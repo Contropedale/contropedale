@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prima pioggia in Val Trebbia – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2013 &rsaquo; 8 settembre 2013
+  </p>
+  <h1 class="article-title">Prima pioggia in Val Trebbia</h1>
+  <p class="article-meta">8 settembre 2013</p>
+  <div class="article-body">
+    <div class="separator" style="clear: both; text-align: center;">
+<img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVFXbtNELIziNumgaMDkk5ak3MTBS-Jmwc0karFWOOWFlqeXE6GIEGsCfwbJDz_5hgJ8Uj6jx1yfjO6xxyzFTBP1PMpkySUR5AzHF7CUui6-XqcHsmqDfTLj8YlyZQDTm5-AV6/s800/IMG_4640.JPG" width="640" /></div>
+<br />
+Stavolta al Parcheggio di Travo siamo in 6 : Giovanni e Paola, Andrea e Nicoletta, Giorgio ed io (nessuna relazione tra le prime due coppie e l'accoppiata tra me e Giorgio..).<br />
+<br />
+Il cielo è plumbeo quando saliamo in sella. Programma forzatamente ridotto, e devo dire che dopo la ViaCrucettis di ieri non è che la cosa mi dispiaccia poi molto.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhpae74Rvom9tlc__de5PC1j-LvblLCXqQ5lq2GDJ2FRzzleyFjJg-iepoKm8fat2-2400VVjzEM5C4mHTBtf5_d6Emkz-2J9FK9FHQWhRJRyjafvFMf5IJnlpXmx4KoUZJ6Vkj/s800/IMG_4641.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Vigneti</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxBD_H8c_dDdjk8SU-mEoKkti2sCWBHQk8s2YrXwV0_dAAyhV8vYrfz9dS4pbWYnA9HSrOxh9Q5YLeVoXK3H2Y4dbK1HNgvty3bzlsX4Lfta3GWJE23Q1E-JnCnG7l-CXDXLe2/s800/IMG_4644.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Val Trebbia</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLcQ8Z9lfyE_MTUwQQH0n3OY_r16kvCi3xUeLKjlttCfTKCdMAO1fDv995Q48ZDdIMDO3bFMJK91HjpNyT3UoxHHFi-Ua6NMme_5PlRNDJk0SdeULajSQc7QULBw7oCT6Ch6qS/s800/IMG_4645.jpg" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Salendo verso Passo Caldarola</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCXrgQ-llD2Ipue_R2UARWHGhinYcJnxuU-CF4w89ciOAJoY2pxzvQzwGqB1prbSAj9JZFDXSJZnBo0txLI8-9jfCzB8MSIMbdyje24CFt6Yvw0CeBqdMhj5KrUic7kBNvl3l-/s800/IMG_4647.jpg" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Salendo verso passo Caldarola 2</td></tr>
+</tbody></table>
+Stavolta non c'e' l'avvio tutto sommato relativamente tranquillo di ieri. Si parte subito in salita verso il Passo Caldarola.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="314" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiSHUUs_-n3HQUx9tqMcBAe4lRrwKELDRtDX6bxqxX-ceYjMVPzWTN1h963mLv08UFnfXstOiJaL6EAdrekmFj980Rl54JrAXwLvXqk4stiVufbQQ96hfBhpNUXGXOsksRcCf6h/s800/12140.gif" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Passo Caldarola</td></tr>
+</tbody></table>
+<br />
+Da Travo arriveremo ai 747 metri del Passo in una quindicina di km. Si sale chiacchierando. C'e' tempo per scrutare il cielo minaccioso verso NORD OVEST. E' la prima vera giornata di autunno incombente.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjnh91WM2WUEJVuceNoq5S950K2QbX5pZhZRo2JOvEWCzzKxGH0UjeWa9OzktW0dgGO4NKl0UyM0bKRTZLrBCKaCLl5yZpllPHp4a_FdX8tboHSuAmlLochwkorI_DX_sbkqd5P/s800/IMG_4649.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Andrea</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_BlAaE6eNPrkPJt0KI5-mgDjWU5d5MiKGM1r1VC-Pd959o02euqsIKYPUn7PPylS8rDrFXnTgYtJzIhO5R-JGxEK01poZV5BeSzi_aQdYIhVbxJ_ygz_ejfWEETsgBqOiLeYy/s800/IMG_4650.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">La Pietra Parcellara</td></tr>
+</tbody></table>
+Poco a poco Andrea aumenta l'andatura. Niente di che, ma si alza sui pedali nei tornanti e , sempre chiacchierando, non cambia il dente quando si risiede. Giorgio, sornione, è sempre lì.<br />
+Superiamo un gruppetto di 3 ciclisti che se la contano allegramente. Dopo l'ennesimo tornantino compare davanti a noi una coppia di bei magri depilati. Uno è anche senza casco.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg4S-iC84p4O3JVARhVu_oohCUH3aH6B6byMGfvAqt3qhUDMCq7I1CePARovcLyQvpX2RttApGSWhFa1nI9axxFFQ7orecygtqP5vCA9jD1meWiwakS5w6H20N-XCRehNLDvTEc/s800/IMG_4652.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Nicoletta</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiikbdTQ3ad9y-tHV37sMdii1RPOIC0uPCmnEyBs3FUQbXBMSQPKSMK2Q34Xz7Rb5crRjHHgikeNVCYlLvUAe2Vshi-KCP_5M6UGgxvbbLG7Byo9I-Yb5O8TLaAlKseRkClw1sv/s800/IMG_4653.JPG" width="640" /></div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiSzVc5_-hsKh2MNbGR5jr-3LoK9VfP0mFyIt1ImkOJqYrU0MIeBJff_dIT9nvJotaXgYeh4X9ZbS3PfB407MKGvyiHkwjXmvoss45_MeTQKkC5gKrDKT1_2WT9osj21Zs9YHzK/s800/IMG_4654.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Giovanni</td></tr>
+</tbody></table>
+Ora, 'sta roba di chi gira senza casco in bici io non la capisco mica tanto. Sarà che io ho iniziato a usare la bici da corsa praticamente con il casco in testa, ma non riuscirei a salire in sella se non avessi una protezione per gli oramai pochi neuroni rimasti in attività.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDfnlgaUMt5HbM04LluK-XJD6kyiiYTWdtVBdIqFMNiAUIlIaND-jubDW0ar6rDogp823dzjCi54lEicSR9UcLHmLcaYf4F5855ufGex4t-yeNWdOJEYijpdhqS94E8Pwm7Kxn/s800/IMG_4655.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Giorgio medita lo scatto</td></tr>
+</tbody></table>
+Invece il "senza casco" va di moda tra quelli che pedalano da tanto tempo (quando non si usava il casco , i tempi di Lemond, per intenderci) &nbsp;o che si sentono molto forti (cioè tipo il Cipollini che negli allenamenti senza squadra aveva sempre la criniera al vento).<br />
+<br />
+Così vedendo uno senza casco dovevamo sospettare. Invece facciamo i ganassa e li superiamo dissimulando lo sforzo.<br />
+Loro stavano chiacchierando.<br />
+La strada aumenta un po' la pendenza e , poco dopo, sentiamo nuovamente le loro chiacchiere attaccate alle nostre posteriori.<br />
+Guardo Andrea che mi fa : " uhmmm mi sa che abbiamo fatto una cazzata...,forse era meglio non stuzzicarli.."<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg242wiFRM1YnyAK4FH7dubRWLXrDbRDcjBOkdXXe3vNmoJrOTatXjwX4zLhxQqh-ZzH73DX2Nqva4m5hBD0G6QlUAUQ99XoS71K_jFZX6hZgFbGq7zMZYFBPXh0gdyEWLtNrMu/s800/IMG_4656.jpg" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Foto classica.</td></tr>
+</tbody></table>
+E in effetti non mollano, io provo ad allungare su un ulteriore cambio di pendenza ma mi restano attaccati come se avessero lo scotch. Niente da fare, poi sul crinale ventoso verso il Passo rallento un po' e mi affiancano : uno rientra mentre l'altro mi invita a seguirlo a Schiavi (il testa-nuda) : uhu! la Via Crucettis! no grazie ho già dato ieri.Lo saluto cordialmente e accampando scuse mi fermo al Passo.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGM7qtkJNnuhpsbRTyNDt-J_gzDtNxB9iLvh4O4EzIpTCMtNHO5u_gh8VGxFR6TUGDHt4gvCUdl-ay0_AcMctv36Jxga0HJGw-0LD8VzcSUTvqUrruCulH8OB7sioyrG-3ZjvA/s800/IMG_4657.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Giorgio al passo</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbe1SORiL4IIbtrDilrDL1jjN3gc8mLoWGSreIGC1bQrm9OzR1nZW3EpGXldDqheqBPlk8wke7ybL3U-OpVRF0AAIO4ARjQm15aHdOYCTwMYWNVun9oqw-WYIWilFEw1XxuH6i/s800/IMG_4663.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Andrea al Passo</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhaWVPu0FQBwdPaPX18EjKGjio0sPbMIf_cCb-xoXrcUfMUWurR8S17c8xA9wVIArK-G-aZGrQSNWyHZFqWFVIHJGR9u82HplJ-IKjKYtQzeWVb746Fz9uD-2wVBVt1ZT7sUdOV/s800/IMG_4666.JPG" width="640" /></div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitUKvaBhKdmBbNhjqLKL_Bftb94LsZmtg4VcRLAjTIh2MxWd3hukUUFJvu7CXa4rjmfWkaW5oN1puwJZI2uh_a4ynwB4rtRkukU-CYJPW8GPiwaNkb2GNXkiDwKUpIUAnmW2jj/s800/IMG_4668.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Giovanni con un gregario ingaggiato per la salita</td></tr>
+</tbody></table>
+Giovanni arriva accompagnato da un gregario ingaggiato lì per lì : rispetto a ieri è molto più tonico (Giovanni, non il gregario) si vede che gli basta un solo giorno di allenamento per recuperare gli "ozi marini" (come li definisce Andrea). Paola (reduce anche lei dagli "ozi marini") ha scelto la giornata sbagliata per ricominciare a pedalare : più di 1000 m di dislivello come primo approccio senza allenamento potrebbero stendere chiunque. Ma lei pare non curarsene : impressive.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkrk4pB1LN4gP1ghcJCdP_qY5B-SidObZRDxbJYt9DkagIBZCx_UqIjycnoHUToZ6uqa86BeNsr2NIMn-TUpOvBCRPDS-IqmI_QfXdoUBQHjF20BNd1srhZ4rezmhiCd1XMXDd/s800/IMG_4675.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Nicoletta</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJM2SoxvUfEeEbqVBT25tqDp7bgpV_4_TeiLgJ2OesGG6OmgpU-47FyVnHY7l9ZDlTb_k2tMVZ0PwkpILWaOqtcru72RC1ePSofnoA9AGGXpWMYC9HjaKxrHAn1KUj4bSI8bL0/s800/IMG_4678.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Andrea e il Gibernauta</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEilVD37nrei5AcOwFwQHcHv1VItz9IqonQoKlb4Nady3FD7IWD75ACeF47WunZpJ9O22BFPR3izu8jzkC0cVy6ZbkygVQGK_08h7mOq3Kd_uKbsjylEP0kkK-Q5wBbH-jw2NMP7/s800/IMG_4680.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Da SX : Giovanni, Andrea, Nicoletta, Paola, Giorgio : il gibernauta fotografa</td></tr>
+</tbody></table>
+Dopo una sosta foto doverosa scendiamo verso Agazzano. discesa bellissima a cavallo della Val Tidone. Purtroppo il fondo stradale è pessimo e rischio una bella scivolata su un tratto sporco di ghiaia.<br />
+Comincia a cadere qualche goccia.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8xwhUkaDHfbbCHHeFZL3pj1FzXcUUiT0rdvgaBGJsIf97dKuEU18muw-KxZgbG0X_HcqHpdMlTNJQO2sovDkKOBpzzBv_GLxjiylT5i4NDRLyid6EisIrd5iYt7k466jGVxB8/s800/IMG_4681.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Meteo "non ottima..."</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjX-5fIdXW666UFTOFhhSr8P_m4G8uDBVqdnim9JDxK2iRBLgTbKE79TWxfCs-lO9AuNOUNS6lm0WuUk2SNqJeuqu4d7l3Zc0oZQQDagdxZJva8Sociv6Sp9SLoS7ZNOwH5DpUS/s800/IMG_4683.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Nica e Paola in planata</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxI0KlX9hbgxc1Wy1xO5nRKPI7W6z2BVtuOVaiPzjFv6lI5UCZelrhmqjPW3XFrczhv-8bUByAmanO0S0vg-xrITWAtdYX7afkEpUVfNFMcV2-fmut3YFYYgrH4uAIoLbplR2w/s800/IMG_4688.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Giovanni e Giorgio</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiOVuskdzNrEHKDj7AOdQHEg10hgRMtfHKEtit6YJNw5vSQPEfz9FAzGIN-uiCh3f9qABhT3pFrknHzhuYFzzNca10D7UOWSWeA-2HmpGwh67dgN0BYF25BxRBB8nezhlgQQVGQ/s800/IMG_4689.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Meteo? Sempre peggio..</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYwwAbIDkG6wTQEJjC0rIuGgAJktgALJT5FjJ7UhyWm2CqwI_Y0igcLNKgYP8KBEN9AmIO2CHrl2FnyY14Y8AyxsWO0IopidRDXtCVa-EDhbaIwUIwjQdsCvPjEkdNOzNK80ft/s800/IMG_4690.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Verso Agazzano</td></tr>
+</tbody></table>
+&nbsp;Da Agazzano si decide il da farsi : capitan Andrea sceglie la salita di Rezzanello per poi scendere di nuovo verso Travo.<br />
+<br />
+Anche questa salita ha la tipica caratteristica delle salite rognose della zona : parte tranquilla, spiana a metà e poi ti dà la legnata finale.<br />
+Saliamo in un gradevole clima di non belligeranza , Giorgio annuncia orgoglioso i suoi soli 126 battiti (io taccio per non denunciare i miei ben più alti..) e Andrea chiacchiera elencando le bellezze dei luoghi. Poi, ad un certo punto, Andrea si alza sui pedali e strappa furioso per 10 metri. C'è il cartello di Rezzanello. Lo passa per primo alzando entusiasta le braccia al cielo.La folla (io e Giorgio) lo applaude fragorosamente. La classifica a punti è sua.<br />
+<br />
+Acquisito il traguardo volante il ritmo torna tranquillo.&nbsp;Anche nel"punto legnata" si mantiene il clima di sana serenità : arriviamo insieme in cima sotto le prime gocce ora più robuste.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYuLXxmGHalVJSTHnmiGUG-F86HWzBPeHaWB5aud_VgALlVoD-OyziQSPoiClibMpaEnzstrnUmiLNepgq_a30QnCnoRO0d9SU4YW7AoRMLPGgNsV8OD1K5my0hFMuuTBgVet9/s800/IMG_4691.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Val Tidone&nbsp;</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgnWRzDGvp_vJx4FK8iYQwMg63IuBSIXfYI6iW7oPq3Jx4mXREAcI0XHuoMkBs5Gr4YZoCRCXRuMXqnwGN9y-wKE9R2IxF8bFB-h0pPHLGtobiu4LkWc450TpKUSfDnDdKZ7fWN/s800/IMG_4692.JPG" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Giorgio allegro...</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNT0uTvORP9j2g_1RqbhAsLHHCVeFKjhGAIv5ppyD5cpqSI2e23EOU1CfzlojT5LtupygyLGOKNrQFPMN_JumXV9hRnDEHbDJ97kzUDEBTFVR8I32RXwaDF_qlIwn33Oy-HsSG/s800/IMG_4694.jpg" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Giovanni si spreme le meningi</td></tr>
+</tbody></table>
+Dopo poco ci raggiunge Giovanni che, fermatosi, si esibisce in una sorta di spremimeningi : schiaccia il casco sul crapone provocando un ruscelletto di sudore invero un po' abominevole. Pare che nelle giornate più calde lo spremimeningi sai in grado di produrre corsi d'acqua di rilievo idrografico locale.<br />
+<div>
+<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhO_7DpeJvWHP5Fb03Krhufzzm0O2Ll_eNUiwMHy9zqyRgRSAM1DzpY_l5IZtgLo0s3SmfXUztN5l8lZi7NwcP26gbKjITN0hCSkSiI01KOEQzKlSyLw0Y-jTgYwUdOuW4feN5V/s800/IMG_4702.jpg" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Grandissima Paola alla fine dello strappo acido di Rezzanello</td></tr>
+</tbody></table>
+Paola ci raggiunge poco dopo: ha digerito anche la legnata di Rezzanello senza fiatare e , solo ora, si preoccupa della discesa bagnata che ci attende. Impressive.<br />
+<br />
+Lunga discesa verso la Val Trebbia con cielo sempre più plumbeo. Dal bivio prendiamo a destra verso Travo. Mancano 8km. Mi metto davanti a tirare con l'idea di rendermi utile. Poi, visto che sono lì, allungo all'ultimo leggero falsopiano.<br />
+<br />
+Alcuni dicono che a questo punto &nbsp;io ho lanciato una volata finendo lungo con Giorgio che mi ha bruciato prima del cartello di Travo.Ma non c'è documentazione fotografica..e quindi.....<br />
+<br />
+Torniamo al parcheggio di Travo con 57km e più di 1200 m di dislivello in carniere.<br />
+Viste le premesse meteo non entusiasmanti un risultato di tutto rispetto per chiudere il weekend in Val Trebbia.<br />
+<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" height="426" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkeaznWxChY_2B1iV6jPGpFsTh7Gw_RXQUwCDUMoJ15dN4v4i9Mu-KaOJeo2ySAB2_MMHE7o72Ehxyf1vndp9GfdnugExISjeCBVwSyc9pl6YlqsNR6oQerC04dmEic6L9Iuy9/s800/Schermata+2013-09-08+alle+16.09.40.png" width="640" /></div>
+<br /></div>
+
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20130907_155.html">La Crocetta ci crocifigge.</a>
+    <a class="next" href="20130919_157.html">Foschia mattutina e appuntamenti</a>
+  </div>
+</div>
+
+</body>
+</html>

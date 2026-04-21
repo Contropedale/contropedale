@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La legge dello smilzo – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2014 &rsaquo; 1 maggio 2014
+  </p>
+  <h1 class="article-title">La legge dello smilzo</h1>
+  <p class="article-meta">1 maggio 2014</p>
+  <div class="article-body">
+    <div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbhf14NkQ3r9D0_NVC50EnRS3KyWzpIs5z9vISTPntudOZsHAorjfR2HsHzwYB-AJkXIhBRyqp7eAo22s8T6BscwdMRoQFh0kqHdIucx6rHr_w54pGRO9qaoJla73ySd24bYh_/s800/IMG_6061.JPG" height="480" width="640" /></div>
+<br />
+Primo maggio : festa del lavoro. Sarà per questo che decido di festeggiarla lavorando come un mulo per tenere dietro alle ruote veloci in salita? Chissà.<br />
+<br />
+Fatto sta che alle 9 siamo al solito parcheggio di Travo per un giro offerto dalla nota Moroni Adventures.Graditi ospiti : spericolato-Martin, Ben Gugolmaps, Renato smilzoveloce e il sottoscritto gibernauta.<br />
+<br />
+Prima di partire da Milano ho fatto una cosa che non avevo mai fatto prima e che non rifarò : sono salito sulla bilancia. &nbsp;E quindi ora so quantificare con triste precisione le giberne che mi devo portare dietro. Per riportarmi sui livelli dei miei compagni di strada le alternative sono due : (1) ridurre le giberne o (2) ridurre il peso della bici. Esiste una regola più o meno corretta che ha a che fare con le bici da corsa : la riduzione di peso si misura in EUR a grammo risparmiato (cioè : una coppia di ruote da salita pesa diciamo 1500 g e costa un 600 EUR, se scelgo quelle in carbonio scendo a 1200 g e spendo 1600 EUR : morale 1000 EUR per 300 g di peso risparmiato) : tra i 2 o i 3 euro al grammo.<br />
+A occhio e croce dopo la pesata di stamattina deduco che per arrivare a livello dei miei compari con la alternativa (2) dovrei accendere un bel mutuo in banca. Resta l'alternativa carestia. Vedremo.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGk9wYxV_7PMJFq6xWEO3KNZBI8fSNuDK7QyrCAM6K0BckHi3IqGO7aFOHYvTZscEXVGl8hI3XCh6Psmo4ZPLuJTPRL0GZObOQLipowgIEQ4IaHe1sf721cM3ee1gmHEJ_C25I/s800/IMG_6063.jpg" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Martin e Renato</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhTOnvGxzO_VdorPA16wcUnGkH1IvACrV27CdIUzGfsA-0emYUOnZJd1tTvS-uqQsWyhkuQHhwtLFjJ0lFxjO1ijNZFGtXcG69OCT2C1ZH39s_lktkH5mUJqEFYOkD2wR_eKtcb/s800/IMG_6065.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Salendo al Cerro</td></tr>
+</tbody></table>
+&nbsp;Medito e pedalo alla volta di Perino. Ci guida Giorgio CEO che ha predisposto un bel giro ad 8 tra Val Trebbia e Val Nure. Cominciamo con la salita al Cerro. Qui Renato smilzoveloce si esprime : "ragazzi, allora oggi il tempo è bello, è la festa del lavoro, evitiamo fatiche inutili, saliamo in amicizia".<br />
+<br />
+Bello!<br />
+Non potrei essere più d'accordo e infatti apprezzo davvero molto questi primi tornanti del Cerro affrontati con ritmo allegro ma non troppo e con fiato a sufficienza per chiacchierare.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEx1Tib9xwaCOqmhiH3_vQR_77fxOKjOpYT6Uhz6w9wSVEKhsWImhNr-wX6V0pX0jboNfjduvo2FGHSbc_j34uxk8rW6zNhbMqzaFCciQzhEw-U3UDhl0sVEgPoGWyk6bzxP4Z/s800/IMG_6069.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Martin al passo (a sinistra, l'altro è un furbacchione infiltrato che la Moroni Adventures ha prontamente allontanato)</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLsy0mnQl0NlpL9eR_shbcnbLL41Umj9-y2mP3HjIt6CTNFlFIJIRF-oA-Ge6IwJ5_HmXzdMwavJX1EuKnfrq2CzTTzBCu-2gim16zm5IbL0tTFS2MQ6hboN846NV0L4OJEpFO/s800/IMG_6071.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Fino al passo ci ha accompagnato Lord Andrea : come sempre impeccabile, oggi intenta rossocrociata. Per la discesa si è dotato anche di uno stilosissimo cache-col : abbiamo tutti da imparare</td></tr>
+</tbody></table>
+&nbsp;Ma poteva durare? bè sì, se nessuno accende le polveri. Ci pensa quindi Martin che, impercettibilmente accelera. Alè, Renato si accoda e comincia una graduale progressione. A poco a poco le chiacchiere si spengono e si comincia a sbuffare. In poco tempo siamo già belli sparpagliati sulla salita e occorre dire chi sta tirando tutto? Lo smilzo, con Martin a ruota. Poi, con un'inesorabile accelerazione Renato si scrolla di dosso anche Martin e se ne va. Io arranco dietro i due e, quando arriva lo strappo poco prima del tratto di falsopiano che precede il passo, cerco di tenere dietro a Martin e infine lo affianco. Gli ultimi km prima dello scollinamento sono il mio terreno (salita leggera leggera) e tengo bene (si fa per dire, evito di scoppiare). Al passo Renato ci attende bello riposato &nbsp;allegro : "bella salita! si va su proprio bene facile, no?". &nbsp;Perplessità nel gruppo degli staccati.<br />
+<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnRUvJTUwDTUl7IRHJSjaMtVgOFuLVc9tAMr7SqQ-AhPNw6cKYXBaXS4uQpYgyMYK2ZyIunwPfS155nclPvZ_Pt4I-SU5RxNyK8NegETFk-uB6dYKpzJVIeicNk0qopUeY_Gsx/s800/IMG_6075.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Scendendo verso Bettola</td></tr>
+</tbody></table>
+&nbsp;Ora giu' verso Bettola per il solito caffettino in piazza. Martin in discesa è un vero spericolato : io stesso che quando la strada scende (almeno qui!) me la cavo, fatico a tenere dietro alle sue traiettorie. Anche perché a volte si butta tutto sulla sinistra : e il traffico non è mica chiuso. Non so se in queste circostanze prima preghi o ringrazi il cielo dopo : fatto sta che va come una moto.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvNeCLkS94zEDYcF6Az-IHD64On2UQ-rDEIjiwwmI1p4_7t402146gFoaN31pj1WDYFldnQ25r5MoldKK_KeBlH61msitf4o6y2B7fzdKQpd5WFQmCUEehQnlQ2cTEdfuAN10R/s800/IMG_6079.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">val Nure</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgP2OKG8hUcYxuucffXdMO-3MBfMSPyLkaz1O_0p3RvJh7fyUAlLT8ZcgY6DMCe6Njf-q7zhh0NkDNCpi-hBzp9TxwcN0KA8n_7p5fln8bc3PF-hK6ege8Kv0Fwwu_0Yx016nBZ/s800/IMG_6080.jpg" height="480" width="640" /></div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvTEs4sCY3igDI0uN9WlGDq4xO4gbfuEI6om-Ccw1srwPw_ChRMGx1S3jobQMNjZEFsUHxmv1qHYf2jpiU585Z1YJ-jp8Ji6lkxZx4t2aZE2VRQGixNit_haL6b6q_bB7yjUVn/s800/IMG_6082.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Val Nure</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhRsX0ezLiWpdqv9IGiGfdxDswskTRpneiZdYgr9CAugqeSiVyxSJr4gtfB8AVFh8E79gIGbN2CsCfkYknLTYAtjFLm6LuuOD2Q7SPR2oX8sthkv2VgnsYx_UoP6zADkxlVvmo/s800/IMG_6083.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Pausa caffettino</td></tr>
+</tbody></table>
+&nbsp;In piazza a Bettola Giorgio CEO con l'aiuto di Ben ci racconta il percorso che ci attende. Salita lunga e pedalabile fino a Prato Barbieri : si arriverà a sfiorare quota 1000 per poi scendere nuovamente a Bettola e decidere l'ultima parte in base al meteo. Alè, si va.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEheeq8ey8mVcuE6iBElN-zobNL44DE2gjbKaWAsfMI3MpbLXFPeajJm25kCAeEFdg8Z4pKyBuWSpYUJt2wIBA6MmJspXA1TLLkFA9jBwy4buYhOPadDfvrk7INRua3annwx9BPY/s800/IMG_6084.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Spettacolare fioritura salendo verso Prato Barbieri</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYnym8EYZ_tpr-60WteyVD2y2FJUc5AWdnXlICtDEoTASR8JCJLh6fLDTgQgVT7qnX2ZVjBT7ooXyqmjDGoFO1c5395m_VPBWhmMxfLw4khyEwCBW8pLpBvw8RK7xtaq2yw1k-/s800/IMG_6086.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Bettola dall'alto</td></tr>
+</tbody></table>
+Salendo verso Prato Barbieri è impossibile resistere alla tentazione di fermarsi a fare qualche foto. L'aria dopo la pioggia di ieri è tersa ed i colori sono lucidi e brillanti. I prati fioriti esplodono in nuvole di colore.<br />
+<br />
+Sono qui che faccio il poeta quando &nbsp;i cari amici hanno approfittato della mia pausa-foto per allungare il passo e mollarmi lì come un pirla. Fortunatamente Renato li richiama all'ordine :" dai ragazzi aspettiamo Frengo che fa le foto anche per noi.....non è carino scappare via, no?".<br />
+<br />
+Ecco, bravo. Così riesco a rientrare e a ricompattare i ranghi. Ecco, qualche altro bel tornante in scioltezza chiacchierando e poi Renato propone " bene così, quindi saliamo in amicizia.." Ussignùr...<br />
+L'amicizia no! E infatti eccolo lì che scala un dente e accelera il passo scomparendo poco a poco dietro una curva. Io e gli altri manco ci proviamo a tenergli dietro. Saliamo pero' belli allegrotti e abbiamo anche la soddisfazione di superare un terzetto di depilati tonici che osservano con stupore i nostri polpacci pelosi superarli senza un minimo di rispetto.<br />
+<br />
+LA strada sale dolcemente e verso quota 700 si apre su una vera e propria terrazza sulla pianura. Uno spettacolo entusiasmante. Questi sono i momenti in cui capisci "chi ce lo fa fare" : silenzio, fruscio delle ruote e del vento, colori e sguardi su lunghi orizzonti.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitF14eGOXbXRbQpXYHfGyEUcUqFeKHaef1-GJIr-d6Pe0BgEp4ox3X2gn34E5CVN3F2YvArdAqnu9VSfaqCRV47TDcd9Y5-B5ceH1Uju4kXaem-9T_6Pxi1yRHqNgFqx52_XAX/s800/IMG_6088.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Martin sale&nbsp;</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTpNFu6qcNpZxXLTJUUhGxOVWkU4Y_xUPqXRIwZ1Nk8GYfji0js3kj3RP-4V8V8BBvHK3xVp8h_iqV3aOI16Ot_WNcznYxiXP67V5IWfUQXiEvB1nvR0WMFiCkKGzeBU-xGOVo/s800/IMG_6089.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Si sale, eccome se si sale</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3EHX3KMaMKVXuOrrTNuxqodEt2ipf_N2OXfAuA6JsH3OyjMPYnwowAWWoT6X_HDswQroQBKAhNko3sOfZqk8VujSI4jmN1Y0raKkXqy5jYW_b0JqUIgE3TekVU8az0v_p74io/s800/IMG_6090.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Verso la pianura dai contrafforti verso Obolo</td></tr>
+</tbody></table>
+<br />
+Poi certo , arriva il tornante e &nbsp;la strada si impenna un po' : le gambe indolenzite ti risvegliano di colpo e le giberne impongono la loro legge. Ma in quei momenti di assoluta libertà, aria fresca nei polmoni e nella testa e colori negli occhi, si concentra il piacere della bici.<br />
+<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSkxg9cS5_DLxP73pi_Z6cqTyFweak-PwsO49FGjPmiwgM-GnRdYR1Rlyq-9PTVWSNAOt5Q8U5Puv2Qdsfd7qFaVCyrlY3HCi3c7R12BYkIDJUxlISPhqKtaDsM6fy8LN6RZPu/s800/IMG_6092.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">La pianura vista poco prima di Prato Barbieri</td></tr>
+</tbody></table>
+<br />
+&nbsp;Arrivo a prato Barbieri e come al solito Renato è lì bello arzillo e fresco. &nbsp;Tempo di rivestirsi e di 4 parole di elogio per la Moroni Adventures e siamo di nuovo in gruppo e si riparte verso il Bettola.<br />
+<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimrXByGbjwUWP9G5YWOyrdVQgbDgGpCd6aFA03qlZoUnwkjo5TJN1fRmI9Oy3nzPnBvLoC8o89t8nXoBhNX1T43YNLGy0rNjGb2jZzceN-OYkwvV5toc9s8hmy2MNA7_OLyTjZ/s800/IMG_6093.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Nuvoloni minacciosi in alta Val Nure</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhc1RATinDmUNDALhQ4A2EDo6ptcbumrefrCgSZFJ_EnIIXyFw-ctodsRBIgCWSsgClAO_QUchUFH5HhF8pzmo6TqXhasgYNq4RZlwqBGJ511ITZNF_ReOciWwH_mUoOaMFKH7e/s800/IMG_6094.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Pioggia anche oggi?</td></tr>
+</tbody></table>
+<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFYsiNam7bO5OHlUfoVmrPwBNCiIbNo3dLSktCstml1f2whlZU2_6uqsYvZBc3DjyK009-feaJgcb-viZ4LH94vP83YpInRofzM1YS4TUJgVph9b8fGrYq40LNI9cRrN6nQ-Dn/s800/IMG_6099.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Scendendo verso Bettola : forse sfuggiamo al temporale</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEis4ICyNjykZeYJytb8tkj9rj1NcJ4IalkoUtcxt2S4qboVuIiAFVIf2GLExtJGfG91CE4PASLZq2RbVRc9_1UVuIhyphenhyphenzSF75w9NZ_0anCgBmeRO6vFrcjrE_lBppNcrgFZs6SHW/s800/IMG_6101.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Colori brillanti</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3aGTZmDa6lLUig7c2z8JvYKwzkicCzETraH0zafK-1LLNJR75eT277xde31KepDwSsvaR5OW0AMZO6QrKzhC7sR-ZVqsxEO-mRWyTRmSpu1vy95CggOK6GB2pZjQfIaLeHwAa/s800/IMG_6107.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Smilzo in discesa</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzh-FeBEeAUezqBHg3qsLq4Xw5ffY23majIZrjVMh4w-KImNu1wUZqNCDxSf8amBUpUZeDMOapNoBrGDiED4eLrkkVks6ZHcsYeXBhbQbOEAZjH2WlkWt0qp4D1PD3QbwjFB4u/s800/IMG_6109.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">L'eleganza prima di tutto</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCchGSPx2-QRfsNILHk_7gkDkO9ika89D3eMc0Wf6pUkIsOd-tnuvX50i3TmvhqT54IMtQC1PZO8CysorCMK4NhaNguGV_7OLw0OONR7VGlEGW1CsKypxn6m40XRcyUpVTL2PC/s800/IMG_6110.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Concerto da non mancare</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEmaPen7kV_xXv20kRAYgLcYMlO-h4UFJuRw75NFa0CPqEi5ykjSWflsBAjYXrTbCGoF6E2qAVbpkRYMzijArZ-HA87vi-WyaY4ZeKzZj-938Piz-xJqKJPvx9Vue6kAmO8-uc/s800/IMG_6111.JPG" height="480" width="640" /></div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgf6POowU5Vi6JpxMi7hYpHEfFosoCWvtnu-Vg6SWIFHBO4NJPBLLf0TmlbbunJivaAjz0pEOfOvM0LwFYeU2SdvYv1qDzetK5ExaBjmH9sVHcUwJSL1yjPKImBMyzE87-hJvtp/s800/IMG_6112.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Bettola : butta male in alta valle, meglio puntare verso Ponte all'Olio</td></tr>
+</tbody></table>
+<br />
+&nbsp;Nuvole minacciose si addensano sui colli : meglio puntare verso il basso. Ben e Giorgio Ceo decidono di scendere verso San Pietro all'Olio lungo il Nure e poi, da qui, attaccare l'ultimo strappo di giornata : il Bagnolo.<br />
+<br />
+Ora, trattasi di saltella di circa 1,5 km al 10-11% : l'ideale per chi ha già una settantina di km e 1500 nelle gambe no? No! E' quindi con mestizia che a Ponte all'Olio attraverso il ponte sul Nure e prendo a sinistra.<br />
+<br />
+Oooooooplà : la strada si impenna all'improvviso e comincia l'ultima faticata. Renato, rimasto un po' in fondo, " bene, saliamo allora così in amicizia!" Essì, eccolo là : tengo duro contando sulla brevità dello strappo ma poi non ci riesco e poco prima del top Renato mi scavalca e se ne va. Ok, nessuna novità : il cardio del Garmin beeppa come un canarino balbuziente ma io me ne frego e spremo le ultime energie dalle gambe di legno.<br />
+<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmWgWWfvyZgNncGbs5hiyfP6oFTXFlznX8ECdciEBtzuYhVd4nv8hIbAAFr1AXTWF4TCK9XqUqhmy4P_Xuc6FNV4tPueHmtfVZAao2lWMDaK-aItpvbjpoyxlcEPI_KpvN7dTH/s800/IMG_6114.jpg" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Lungo i saliscendi verso Rallio</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJp6dNBc4eCL3bwXW7gfNQ55aHMDR3cWNSFRAW8mzEuKPhKekU4a7tnPGYmLygNCP7A7F76Q-J_Tur4e0HvOv4nNLVQF8ol7AUtQfuXLPvjPWROIot0lO4v4-ldcbsJr_nucbQ/s800/IMG_6117.jpg" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Lo smilzo scatta</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHlJSUcmxgasq31GLzBmqJ5fzMyfMI_6QLd4DPG3CakbrshamuJhrcYM6A8lAmWq43h1HeJqC6DzTw944HFX-RPq04OyRbhAz6o3vu6Xpwc0d2r7XmEu0D2UQadh1fpLtyOqVY/s800/IMG_6118.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Salendo a Rallio</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiq0AaRA2pFQkBUwvvPL86Xc2WzRj7mqA1_QAnEELZMV7eMukFoZhGwboH0lrK7aDRsIfe5LJCvlZKoW8iEARHHFd2vWikdR5mbFebatB8O4kBBrdGUejIDX-nHIS7NMQEbtlnO/s800/IMG_6120.JPG" height="360" width="640" /></div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNrZI9S2nZu5S7ZLUEPKivaRc5Mlz-JvPjdGUfu6UmSY62EFCOrDl-eSBKtKcQFSa9Zgp61FzS08V6zAnZ7cyCt_HWi3J-eDhtyYwE6Iy1dSe0_Y4D1wQrJJMIfIXkAWtpDLQe/s800/IMG_6122.jpg" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Ben, Gibernauta e Renato</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjubod9mNDF-rZLk2jpTPdkmnj1MGkmOInl9_d4TEqwY2OzhEhy-rJJXAe8sA5xOUk_IMz37Ys9FxOi1RFb6GzxSnDnuJo2R19ddjo1RideIUxGRm8GQdHMUfRXLNmHVxrQhoOL/s800/IMG_6125.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Ben osserva la sua valle&nbsp;</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFMCOYeOGXKhkm-CMPUSA7wIIUIv3LX-KzTtxQFxWYUhL44q23uGDdJZhIZ1g6w5gL-5uZU-xpCoujoM4sBm7XaDvn89cW8KW7aocooowvCWxkceY-DoXv6PvLPhO124zVdRX2/s800/IMG_6126.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Laggiù piove, come sabato scorso</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7K3sagBSs_5jp0Bus_h7mf5t2n103YDj2UEhpj8ReWnd5d2MLL8nzdHG4qSLuieNzfdy-2PYpdbpJr5XfLwvhXOmiSKoWJ-nNJjl33IMO1HZEC015yNnK_7KWp78G4jmuPEMG/s800/IMG_6127.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Pausa di ammirazione</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgKG7h-SuVICkC1c_zEJrkwWyEGbYhyQ81xnHPD6xK1nOPtQJSrThmATdJLSUx8gPKp7vNgs8FR6-GbVhgW5Rd7Yfdfil_VF19iR3OqBQ6Ucq66OoiB8H6Zm_4u6Z74JQp8S_m/s800/IMG_6129.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Ultimi sorsi prima della discesa finale su Travo</td></tr>
+</tbody></table>
+Da quassù sarà un lungo saliscendi (più scendi che sali, per fortuna) verso Travo. &nbsp;Ultima sosta borraccia per ammirare il panorama della Val Trebbia : Ben commosso abbraccia con lo sguardo la sua valle. C'e' il tempo per un altro strappo brevissimo e cattivo in cui Giorgio impone la sua legge e ci lascia tutti indietro : mette quindi il timbro finale della Moroni adventures &nbsp;su un bel giro di 83 km e 1600 m di salita.<br />
+Oggi non abbiamo beccato i temporali.<br />
+<br />
+Ultima riflessione condivisa a Bettola dopo la discesa da Prato Barbieri : ma sta storia di Renato Smilzo veloce che dice "saliamo in amicizia, ragazzi !" e poi mena come un fabbro sui pedali sfiancando uno a uno i compari di merenda? Cioè : ne vogliamo parlare? Ce lo &nbsp;immaginiamo tutti da bambino che avvicina i coetanei "ehi! ciao! vuoi che diventiamo amici? " : "sì dai.." e giù legnate sull'ingenuo malcapitato!<br />
+<br />
+Che ci vuoi fare : è la legge dello smilzo.<br />
+<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKejziHumdshlf16Y7wWnBXfqEsZhWVsNEq_BNejWuIRM4q06dWBRmyrpyJTX0kYaeXtdJAjKihxXfpMvEKtAXmGovH6YxFMq6YHGCTOtRA22kkAhRu103kcBj6IF_4bHqptXg/s800/Schermata+2014-05-01+alle+18.23.41.png" height="304" width="640" /></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6yXYqm2Jk2E0oCTTBxE2hpzsdt2WBg-wVnXRMXmGDf6wF105eAbiqtYmGrKVn814wxnNCvZX4SdMpdUGz92brVo67D5cBa_rce9j76gsAFjLATFVGV1YPyZzbvKbwqaWzNrMp/s800/Schermata+2014-05-01+alle+18.24.23.png" height="414" width="640" /></div>
+<br />
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20140427_180.html">In Val Trebbia fuggendo il temporale (senza riusci</a>
+    <a class="next" href="20140503_182.html">La bassa l'e' sempre la bassa..</a>
+  </div>
+</div>
+
+</body>
+</html>

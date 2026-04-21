@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Campo Cecina – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2013 &rsaquo; 12 agosto 2013
+  </p>
+  <h1 class="article-title">Campo Cecina</h1>
+  <p class="article-meta">12 agosto 2013</p>
+  <div class="article-body">
+    <div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGIN2ISuuK91jYtziTM_IsnOFQRNcKxdioPOYp3goK6E5_LM22RndMW3Wcdb-89_H60NQBCtP7Ni9na-ngK-5KnGRNNISZavSZEuh5edLXAAq5iDtEaftpEWgXS3FNMMGsIzUo/s800/IMG_4284.JPG" height="480" width="640" /></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: left;">
+La Versilia è una manna per il ciclista. Non c'e' solo il lungomare per testare le proprie doti di cronoman. Ci sono, per fortuna, le Apuane che offrono una ampia gamma di &nbsp;percorsi : tutti in salita ma di varie difficoltà.</div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhoZW5TAM68GIltKFtvZ_RX7UAzzB0o4bVmJ9Vn4ndAy1yY3IcLQ4-oIt53qz8oNg6N0-RgG8coWpQlj77vD8TxIEzUl0xBncD4Pz4La2rTIkTvFf1saCYDkIVSubOp7E2UdLj1/s800/Schermata+2013-08-12+alle+19.33.04.png" height="622" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Il giro di Campo Cecina<br /><br /></td></tr>
+</tbody></table>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjA2_O74QJtnn1_oNzwu5jZy6x1raN4C9xpg4V0ITLnERK01k9QJ8U6I9y_kx6Nrn-Ch0surtOrfhV__4i2azqv_WCr_VUTFXGRqw-XjaN59AOH8J9wUP0JjXTZO4DOlRC5nnVW/s800/Schermata+2013-08-12+alle+19.37.32.png" height="350" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Google earth</td></tr>
+</tbody></table>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiN5s5RYivAThsffnc89gj92kj7msSUxOU62r5W9kbipK8Oma9kv5qEEIfmsnVJVzwpr5gCIU6ydspdk3TGCskNww1qsMJxdtILeKB1Fdh7Ykixzkw5gZqfnclHqjVWu659k6Ce/s800/IMG_4286.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">La piana del Magra</td></tr>
+</tbody></table>
+&nbsp;Sabato con Alessandro, Matteo sua moglie Elena (forte, davvero forte) ci siamo trovati a Marina di Carrara per attaccare la salita più lunga del circondario : l'ascesa a Campo Cecina. Si parte dal mare si arriva a 1300 m slm su una terrazza che domina la Versilia.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgL8AAqMREIV8NLAY0ZEdxtcHUeSw5NmEf-m18Yy7ZVCShz2-3UCA6j9VMwpfdarKm20CyQXHJFZtJCx3akkzNW4Bxb7xKJeFFvab-4f-MRuGBzk6Lk1MIK3S_Z5FnfdF4Qw3yG/s800/IMG_4288.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Matteo sale a Vallecchia</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGbIka6Wpx8rEv8htjD_-Pt9BBNS3q2URZp2u95ZGsIkxcb5kIjDfBpPkG-6eyzxj-zH6R9zUWXPta9SsHfT2DKfQ65QlLIqIlskGXWAdocOh7wlA_Pkct_WRWOqHlOHPlTZH6/s800/IMG_4292.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Castello di Vallecchia</td></tr>
+</tbody></table>
+Per non farci mancare nulla abbiamo deciso di salire dal versante di Molicciara, che da Castelnuovo Magra si arrampica nel bosco passando per Vallecchia.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLqoajojhjZNWgVaqwU3fscpZL-4af8CBLMdBEYfbhTLyWg6PEEbwVjNxymyY-wtme6BdajCGqeSrk8lkMg_liwbrs2nbINdNapOqE8mB-ZONAOeAEVreszLeJMGrMOov2bXC7/s800/Cacecim.gif" height="379" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Altimetria della salita.</td></tr>
+</tbody></table>
+Complessivamente non è una salita dura, ma la lunghezza (poco meno di 24 km) e uno strappo deciso (con pendenze abbondantemente sopra il 15%) dopo Vallecchia suggeriscono rispetto.<br />
+<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRQoaSlfdZ5TRzEpSlR6ow5MCe6efmTydtAmTvp08HllijSDasCyYR6GljPFYsS7tSTAcXp1J2Wo3NBC_dUr9YNTOz1u4IekoOJmisSnacAcUdZaBjqmL8qgakhKaI_y2uWeW7/s800/Schermata+2013-08-12+alle+19.31.17.png" height="382" width="640" /></div>
+<br />
+<br />
+Siamo in 4 e io mi distinguo per scarsità di allenamento : Matteo e Elena sono reduci dalla Maratona delle Dolomiti e hanno alle spalle una stagione di grande allenamento, Alessandro con il suo fisico alla Tom Boonen non è avvantaggiato in salita ma una settimana fa è arrivato in Versilia da Milano in bici (più di 250 km con un mezzo la Cisa!..).<br />
+<br />
+Così attacchiamo l'ascesa a ritmo abbastanza allegro ma non "sparato". Saliamo regolari e con Matteo si riesce anche a chiacchierare : il fiato c'e'.<br />
+<div>
+<br /></div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFoxB2ePZxu2F0GEblYx3Fzk_iREcbw8b6CqTObCLKmL_MSjeztPgj8mjBYv6QXeIq1TT88gzdr8yuTnGhppNkbrgbrVhxvSp3TEmVzrEO8X-HuZff9oBch07pA3oAuu0pSY6l/s800/IMG_4295.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Cominciano i panorami</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBcXsmje_mYqJXLnqzOvWmKYZB7hUBQIwjUtCxgIzQyy8voNlxu9pQL-2zDwtOLtmv2hvi8TUt354bhmi5lILXhzEqXty8A5P8adystWp333Gr2Ugo14EKhAT6R_t2yXZypgoz/s800/IMG_4297.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Incontri nel bosco</td></tr>
+</tbody></table>
+<br />
+La salita si snoda inizialmente attraverso uliveti e poi, dopo Vallecchia, si infila nel bosco. Ombra e fresco : quello che ci vuole per agevolare la scalata.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLo67o9bIjwyxT54aQmC009FIvwglahujkkI2PR6gKWA9aOuGGnkvo-_oiMKqKbrGBaCkD8b1snPsAPKCJk6zBO7oJeD2WurDjDA6u9MnE2qmbznAGcBPSR6I33eYqsRgWkRwp/s800/IMG_4298.JPG" height="640" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Matteo</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjVZR2jVO3FxQP1mtFujUPFBs9TNPDh5Dx-Atd7sdEx9ChQAc3SbXM8mC5X0306EEWeANEZ7afBoVswuap-f2kF6kJbfLVU6t-MQXkSOi279ZzKqMZNKICXegg-drUcFTE92JK/s800/IMG_4300.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">MonteMArcello in mezzo agli alberi</td></tr>
+</tbody></table>
+&nbsp;Mano a mano che si sale il panorama sotto di noi si apre. Ad ogni squarcio di azzurro in mezzo agli alberi corrisponde una prospettiva diversa sulla costa, con una visuale sempre più ampia.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg46pWbC991-unpodpoMHr_SpnMRlFjQIiLQ6B5Ew-RLvThAcDPSFyMICOCsHpT8LtoaOYrHhpV4oRxBDTvTK5TIec5PtvuhJuOJ9PlENOeShqI6YA47QxJ8VRbJRSCWFlcCQCk/s800/IMG_4301.JPG" height="640" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Monte Marcello e dietro il golfo di La Spezia</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYHej-uGfl-HNrIlSisrPNaGuiAkODcmNT0acTFff3oscrZFQwbp62Hz-gZPzzRPdM-s6RG5B43FfDiM__fwH9qataJAkRSgOwO0SVC4YpGzUby1QmKp8s-2JbS6rEUF-BSrtu/s800/IMG_4303.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Verso Livorno</td></tr>
+</tbody></table>
+&nbsp;Superato l'abitato di Vallecchia la strada spiana un po' salvo riprendere a salire con decisione. Le pendenze non sono tremende ma sappiamo che a metà dovremo alzarci sui pedali.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3BR0YQXg0oZaaxRp4e0nJvP_eB8ZtqCZstDzvSahThtJZW3mLF6u3yVgiB5_1lxF0KLBW0kI3bpT67NKX69CrJZ8xzgdodQRVlZk8GJKUuDui6LnbCWd50kdnI7sxNJ81M6V-/s800/IMG_4304.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Monte Marcello, La Spezia e Porto Venere, laggiù</td></tr>
+</tbody></table>
+&nbsp;All'improvviso infatti la strada si impenna in mezzo al bosco : è un tratto abbastanza breve, ma decisamente spezzagambe, soprattutto perchè arriva quando ci sono già un pò di metri di dislivello in carniere. La pendenza? siamo ben oltre il 15%, e non ci sono punti per rifiatare.<br />
+Cerco di salire mantenendo una pedalata regolare : siamo in penombra, un bell'aiuto. Poi, all'improvviso così come all'inizio, lo strappo si conclude e la pendenza si addolcisce.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBM9yBbLJx1xdygoUpPy0dFMzeb0PUj5ALSYQIuFb7ebTuMwex6Lk_9pXUZv9azpRuHbJ0jZWUiM3HZtAjnGV0VQF-Q7bu3Ck8z2dfaSRPPrMR7aAymnV_l1CbC95zaKgyzglv/s800/IMG_4305.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Matteo allegro : certo eravamo quasi in cima!</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFZT1km3S4xYYvjGn8V-7iRQnt9VghKeyTIuV7uiOYsllThtfI-tNuli2Cs1QaQfPb9VTgwotrgEdE8szs6k75vNbnf13fSPxxd_1Y7ttro_ddj0WHi29a01IdxIdlIZbtuJyx/s800/IMG_4307.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Verso Livorno</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5rQTTl8yjHCqoeriak1YvGZLTWosww7rximPfAy4uVVBivrdb0JldP4HtLT1s7Ve9c4GsICLDddTn309UlOt0N95xBld3GINiOv3k-hjZqQkZSlYwQ5EibGJ_AWX68QVya7bL/s800/IMG_4309.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Ultime rampe</td></tr>
+</tbody></table>
+&nbsp;L'aspetto positivo di questi strappi macinagambe è che quando li hai superati poi le pendenze successive appaiono molto più agevoli, quasi da falsopiano. Un inganno perchè in realtà continuiamo a salire al 7-8%.<br />
+<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjx8bBfUAvadmnxsrZ-9T7K7INkhoF5tfkKQ7BzpIJqewVP2GxzloNEpNIUyLEbVlMyFaoI8gct8fSdwyCmH7G0_JqpBmxlSPQP_DVMYOtZMEFYP-q0mgleT5_dqRcn5J8sgv3I/s800/IMG_4310.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Versilia</td></tr>
+</tbody></table>
+&nbsp;Ogni tanto mi fermo per scattare qualche foto; certo, sarebbe meglio tirare dritto per testare ben bene la resistenza : ma come si fa a non riportare a casa un po' di queste immagini?<br />
+<br />
+Superato il passo della Gabelluccia a 900m la strada esce dal bosco e sale in panorami quasi alpini.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZpdfUOOOGJbCmtKVUNYn6GWk2hP1KuWfDnSwcv-U7k738DswQgwq_S1_u1xsQr1hQq5FZn6Z5neiPCWTufJGpkXEvd0JNIm6-QuAyPHt47rNAzJWxQj7hponmwhytZEuD6LLh/s800/IMG_4311.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Sbuca la prima cava</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVE-j8EdXwnks3mALBLU_befzMh54Hqj7cqyTQnx1WQ6y_Qh2gmqroJhNn5A0Yr6q92fDiO_uFHY9nmQEuXfcHWNaNh3HjiBbvvMdX9gDrmv9oqgb-qjX7wJEz8W_C4o8qPTZb/s800/IMG_4312.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">La costa ligure</td></tr>
+</tbody></table>
+&nbsp;Ad un tratto compare la prospettiva delle cave, in basso verso Carrara.<br />
+Un panorama impressionante, la montagna scavata con precisione chirurgica con lo zigzag dei percorsi camionabili che incidono i versanti bianchi degli scavi.<br />
+<div>
+<br /></div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhULqp8bEbsMRTHhCnooOqPBQvcqIg6tCvbTZKMpZmNiqpwEtKAWkHzAkcdxgeo0DxumOg4kFCXB74OSyaX4c0pD9YxuimeWXl7eQ-OgM6UsE2kNLIAQbYmya_OiTAdkOuVh8gK/s800/IMG_4314.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Le cave, enormi</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0p1TTcnnnHHqxRlY0NwSALm4_o2nUf6nFSRhv4-7L0MZA02K00_rQIhy9GvrUiQtdfstrUwmxRYGf2YhbKwapi7DFtaDbrwW25d51kczG4_7DkQFtmghyphenhyphen6cBcS4SiqAHwIcdC/s800/IMG_4316.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Le cave e il mare</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdYbdI2a3JnfZqwX5bumb9a3_FBiawrb5jWxiIsoNMg0V5VER5AWsEW7DAjSUndrHOLxMl87cr1RWIP4Xb2pt6Nzi5xysUdPpQ4MjTQQ2sn2Zkzw35qlFUBjTpuztAZ355R7nB/s800/IMG_4317.JPG" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Panorama su cave e Versilia</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWXpDXDYY1QvTC8Aa29S8aO2WWuTdrHvK3Niha63bMorD_-6VNPb5ad_vzE-P0u5MrZRhK2vsMZuvmJz0Q2i8SYbtDwFytG1oKvVrqHh1ZvGZtAYF-zq5s20zYMzFRnEVCXO0t/s800/IMG_4319.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Cave e Versilia</td></tr>
+</tbody></table>
+&nbsp;Dal Valico di Acquasparta mancano poco meno di 300 mi dislivello alla cima. Salire in mezzo a questi panorami è più facile e l'aria è ormai frizzante e fresca anche grazie all'altitudine.<br />
+<br />
+In cima raggiungiamo il rifugio/trattoria per un adeguato rifornimento : Matteo, vero atleta, sbuccia una poco appetibile barretta dai pochi grassi e dal perfetto equilibrio tra macronutrienti.<br />
+Io, tenendo fede alla mia natura di gibernauta, non resisto e ordino allergamente un bel panino con la coppa e una cocacola.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2F-iR4V2FVC2oIkWW_jL8Z3luRkk0qez5cvPEmMFPphb3QoZoAKRFQ5V0WH4eGTI9F8Y5SRk9JANrbHiBFnU23lEe9gHjTPdkMfEH2ZyfP0A2ljr0hNhOTNIOMolP88topwhW/s800/IMG_4320.JPG" height="640" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Il premio a fine salita : panino con la coppa e Coca Cola, altro che barrette!</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCmQiXLg9hiUl0FwBDR5DC0qkovu14EMrAD9mXn4BzAxYKToIgGfGGnflMMWhTs0q1gRqF-a4xYI2nfnwH8yNOHlX9i_W31uCXkIX20AdiibpAGgiEUu_jcfsznYvC8oZ-VBHk/s800/IMG_4324.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Cavalli a Campo Cecina</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJbjxV16VypBCVEuKclOk_Il2SIJeSRRqYKiZ4rAG8bo_V-YSjqEHNsnhyphenhyphenVAJk3L94KWrKlihRWjBUWpxLgF74ofHk2oqXdD1d4MHtdVi6QrY3et8KkUZ7OXeLFAUp_TFKAIF6/s800/IMG_4328.JPG" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Panoramica verso la costa ligure</td></tr>
+</tbody></table>
+Dopo poco arrrivano Alessandro e Elena. Alessandro (me ne accorgo solo ora) ha una caviglia grossa come un melone, ricordino di una partita di basket di un mese fa. Ed è salito come niente fosse. Stoico. Elena invece confessa candidamente che lei è "antisportiva". &nbsp;Mi permetto di farle notare che se una si è sciroppata questa salita con il relativo strappo al 15-20% e arriva alla fine dicendo "dura ma davvero bella", ecco, è difficile descriverla come "antisportiva". E per fortuna che è "antisportiva" : fosse stata "prosportiva" la avremmo vista a podio nel Tour.<br />
+<br />
+Ma nemmeno Alessando e Elena mi seguono lungo la mia strada di perdizione lipidica, così mi rumino il panino da solo annaffiandolo con la coca fresca.Be', come sempre il panino a fine salita è una vera goduria e questo non fa eccezione.<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiy6gwWhQshe4qahESbo61Zvl9UEfW-ubZRfUWK_j-rIOCI-uPepCCWE9tfOlzrrAYzQI6DVG-EuL86hAy_Kgd37NhZ3CPa15eVfzQshSHBbLl7l1D87T8RukEcIW6XcI9yrJBU/s800/IMG_4334.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Le cave e la Versilia</td></tr>
+</tbody></table>
+&nbsp;Purtroppo la strada qui si chiude e quindi non c'e' altro da fare che tornare indietro, perlomeno fino al bivio per Fosdinovo.<br />
+La discesa è davvero difficile : manto stradale pieno di buchi e ghiaia e, per di più, il controluce in mezzo al bosco richiede una attenzione totale.<br />
+<div>
+Peccato, dopo tanta fatica sarebbe bello poter lasciare correre un po' le ruote, ma qui no : si rischia.&nbsp;</div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgT2-PKrZ4AOk4KoVShQKDqOVHG0lLrrJAbarNF-9ToY9I_efCMMObh_AGutmayCPHBPwSLqMNNE53Ys0XmvQ48gqWNDPLGWVatYhjcHuvobe6rnn_dLFnSjQqDzUxupS6yJmgf/s800/IMG_4335.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Matteo in discesa</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgr4whR2IlmRrrPzIl5tCuABusGDZgzURzGCpmkpGP5cCXw4cC2-K9L14kE4E-DxiHCyL4vZeHMs3GL9YDrgJCOzqcjdJAG6-8Alz8U0oF4eztArXfiXXehBtujM40-M5U692Fv/s800/IMG_4340.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Alessandro e Elena</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgs2jvedILwbEg-0ZHrAo3RPwzOBkjVEmlqhlRAXuLeH45kcxspltld8rr8Am4g9ZKwwJcP7INwBGDKeGbbydzyoRR48GK3RvXwxA2f7Xtgf03kCh1WIgSNM6iuzAgXypuKslUd/s800/IMG_4341.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Elena</td></tr>
+</tbody></table>
+&nbsp;Decidiamo di non tornare da Castelnuovo Magra ma di prendere verso Sud sbucando a Carrara. Dopo il bivio per fortuna il fondo migliora e da qui è una divertente planata fino a Carrara.<br />
+<br />
+Chiudiamo il giro (un'ottantina di &nbsp;km con 1300 m di dislivello) con il lungo tratto di Lungomare e Matteo decide di accompagnarmi fino Marina di Pietrasanta. A dire il vero Matteo e Ale volevano fare anche la salitina della Foce, ma, per mia fortuna, hanno sbagliato strada : per oggi di salite ne ho abbastanza.<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhOU3CMmb5BOK99aW5EfPYK4R9oAHOQXCwkIkgjq8hRD2Uu7JmzWxTv1KmgvFpJ4FCdWihknQbMen1yit-w5x02e8mvIKq6VHHbg2ZnahFDJ0pWFY7sZJ4N4x-zBa3XmQEucqfV/s800/IMG_4343.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Pietrasanta</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZXcbUFb3KJvBRtQHKfiyBF29Ws7MfDinJICnAaRPE2j0AmZVTKMtRWyMMvQWe_3wa-eXuBLYR19hNpurPmCcXpAy1NyhRiOvN58Wk2z5suJBD5FtswNcwHfrpHxKsQMsiA3F8/s800/IMG_4344.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">La statua di Zidane e Materazzi a Pietrasanta :<span style="background-color: white; color: #222222; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 22px; text-align: left;">"</span><span style="background-color: white; color: #222222; font-family: Arial, Helvetica, sans-serif; line-height: 22px; text-align: left;"><span style="font-size: x-small;">Coup de tête" alta 5 metri!</span></span></td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgB9YGFX2QxWO7oOf8cM2S9C5x72uTSbjcd82-WzAPWw3huRrWQgGfgyCdEaxk557c7UoeeLclUPLVHTd32ILyO4A6xNINVcc5qS7LBwMMnUiD2M7nIHI6evAUwv7U9f2TbXz8v/s800/IMG_4345.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Tramonto da Monte Marcello</td></tr>
+</tbody></table>
+<br />
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20130806_136.html">Con Ale al caldo</a>
+    <a class="next" href="20130821_138.html">Dalla Versilia al Bleggio</a>
+  </div>
+</div>
+
+</body>
+</html>

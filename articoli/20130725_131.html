@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Foto, velocità e cambio gomme. – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2013 &rsaquo; 25 luglio 2013
+  </p>
+  <h1 class="article-title">Foto, velocità e cambio gomme.</h1>
+  <p class="article-meta">25 luglio 2013</p>
+  <div class="article-body">
+    <div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsxAaxHZl759jez8bIB3ezAeAFxbAzOACzgX84DjxAu_cogaZkWPQce1dpLpwG-jO87m3p4VsHi7qNGqYdhGVHp5uOUir8-XGipbrylndBAm2yIxRNNoC0g2Rknh34Z0CCNu6p/s800/Ancora.png" height="440" width="640" /></div>
+<br />
+Stesso posto, stesso giro. Stavolta partiamo in 5 : &nbsp;Annibale, Luca (triathleta con preoccupante bici da crono),Martin, Paolo (triathleta) ed io.<br />
+Solita partenza sorniona ma dopo 2 km siamo già sopra i 35.Ho già capito che oggi non ci sarà spazio per le foto o per le chiacchierate. Insomma sembra una cronosquadre. I su e giù e le curve ghiaiose di Morimondo &nbsp;sono un bel test per i riflessi.<br />
+<br />
+Sento una strisciata sulla ruota posteriore : è Martin. Dietro Luca pianta una frenata e BUM! gli scoppia il tubolare.<br />
+Ora, io ho sempre avuto la tentazione di prendere ruote coi tubolari. Pare siano comodissime e poi fanno davvero "figo". Ma sono sempre rimasto frenato dallo stress (dicono) della sostituzione in caso di foratura. Luca sgancia la ruota e oplà! in un attimo in vecchio tubolare è sfilato. Urca! Tutto qui? Bello! penso proprio che allora prima o poi me le prenderò. Poi Luca afferra il tubolare nuovo e fa : "ecco ora viene il difficile..." Questo bastardo tubo circolare di gomma è di fatto molto più piccolo del cerchio, pero' non te lo dicono. Per montarlo abbiamo dovuto faticare come muli in 3! Da solo mi parrebbe impresa impossibile. Ok, ho capito : il tubolare non fa per me. In un attimo accantono l'idea accarezzata solo per un breve minutino.<br />
+<br />
+Si riparte con la sgradevole sensazione di dover recuperare il tempo perduto : Paolo ha avuto la malaugurata idea di dire che doveva essere di ritorno entro le 8:20 : così sarà. In mezzo alle risaie dietro il lago Boscaccio si fila come treni.<br />
+Alla fine niente foto (pero' una del cambio tubolare potevo farla.....mannaggia non mi è venuto in mente) ma una rispettabilissima (per me impressionante) media di 34 kmh.<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgnpvlArTuhhLYvTu9cV4zTOyxiQc7kjq3dUDjkrAiIWpDcZZPKwVj7yvH-HgITd3NnQSuJaxRRvwibEhDFwt4hhBuwVnsriHvTneNeyJmm7luoLw836VlecqcJ8fdRQeGMgeN5/s800/veloce.png" height="232" width="640" /></div>
+<br />
+<br />
+<br />
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20130723_130.html">In sei dopo le sei..</a>
+    <a class="next" href="20130728_132.html">Weekend bollente</a>
+  </div>
+</div>
+
+</body>
+</html>

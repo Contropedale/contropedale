@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vendemmia in Oltrepo, ovvero l'apoteosi del succhiaruota. – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2013 &rsaquo; 22 settembre 2013
+  </p>
+  <h1 class="article-title">Vendemmia in Oltrepo, ovvero l'apoteosi del succhiaruota.</h1>
+  <p class="article-meta">22 settembre 2013</p>
+  <div class="article-body">
+    <div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIr-xDIoDzP5O3r9nh3ZVlMHyP4QTFfhvky_QFty8P9ESWkGNnzprSlJj6yR62SzpieRnkCQeTKitK_baEUsgQf7jiEsXSQC29ddEMMGK103gurKC8nrZYQsomGAj70UaJN_Vc/s800/Schermata+2013-09-22+alle+15.28.26.png" height="632" width="640" /></div>
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: left;">
+Un bel giretto, visto che siamo a MIlano. Questo era il programma previsto da aleLokomotiv quando ci siamo sentiti venerdì sera.</div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: left;">
+Alla conca fallata ci ritroviamo in 4 alle 830 di sabato mattina : Ale, IronEnrico, Matteo ed io. Allora tanto per chiarire : io ero il più vecchio fra tutti, quello meno allenato, quello meno forte e, soprattutto l'unico dotato di giberne d'ordinanza.Cioè : abbastanza per stare preoccupato, no?</div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhpKMlI1G9JGsA6icbVF-I_5XEDIwy7PS00Jn763xHo54F7onfPfWjgWWIHfKtRr2Jqq7r4ejPt6hB3NoUjmmhB4OOKlv0oba8w6GDPJh4xTet1jDsm8BnpdMrZlLcj4Ydu2zOn/s800/Schermata+2013-09-22+alle+15.37.57.png" height="278" width="640" /></div>
+<br />
+<br />
+La tentazione di salutare la compagnia e dedicarmi ad un più tranquillo giretto nella bassa è stata forte. Ma non ho fatto in tempo ad accampare una scusa credibile che eravamo già partiti.<br />
+I primi colpi di pedale sono abbastanza tranquilli : si va poco sopra i 30 e io ho già acquisito la posizione che caratterizzerà la mia giornata di sella : sto a ruota.<br />
+<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi4UqaUI5wdPXB1wJAgOU4rYKcSIsILkHWPkzn21dhdeTH11IPadvXPSa_J7pUNNolTyi9hYLYsc_S5MevK5P03KMvqn7TTg7B65P8CAYzebfRbcOZjTOD_aZorTkMqYkKkaY-g/s800/IMG_4747.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Pedalando verso Pavia : da sinistra Ironenrico, Ale e Matteo</td></tr>
+</tbody></table>
+&nbsp;Non importa di chi o di cosa : io comunque sto dietro.Aria ZERO (ove possibile : Matteo dal fisico cancellariano offre buono schermo, Ale in stile Andy Schleck invece copre poco e IronEnrico infine è ancora più secco : muscoli longilinei e ossa offron poco riparo dal vento).<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-y1pDES4L_Uvv1G-YASeBNrQ2J9RbqIXO_ZZp_SZlpjBuW0Jk1RKegrqUi8xO8Mv_CiFoLfKReVm04g_fFOZlkTXGeBVdILg78WLLy2RTbAgkFAkK8viDUyT_-dXuzI_lNtnD/s800/IMG_4754.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Lì davanti si chiacchiera e si ride : uno dei rari momenti in cui non sono a ruota (sto fotografando)</td></tr>
+</tbody></table>
+&nbsp;I due davanti (Ale e Matteo) se la contano a 35 kmh e chi sono io per interromperli? Nessuno. E infatti me ne sto acquattato dietro la ruota di Matteo e penso con preoccupazione a cio' che mi aspetta.<br />
+Dopo 30km &nbsp;di Naviglio siamo a Pavia. Ale ci guida sicuro verso la statale che ci porterà a Broni.<br />
+<br />
+Ora, qui si pone un problemino perchè incontriamo un paio di altri ciclisti che tenderebbero a non farsi superare, quando invece la nostra locomotiva si sa mal sopporta "materiale umano" di fronte alla ruota anteriore. <br />
+Così senza accorgercene (cioè io me ne sono accorto eccome) maciniamo i 20 km verso Broni a media crescente ma sempre oscillante tra i 35 e i 38/40. Io sto a ruota e rimugino inquieto.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1aN-jSudvU7YX44sr8ZFG9XlgYmkOsltGN0tys8FvrrYXqhOWDI0hTJMtdXO5sAIDgQUEvm8eIu_1pcSCPiCdfGxkmmKrBdaZUQIh5YPka4ofY1-55xwERV_ejy0X15727Vi4/s800/IMG_4755.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Primo carteggio : ne seguiranno altri "vigliacco Oltrepo"</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi4FLAWga0zmme6qirmjQ9ZB_zGohXgO3RUmDXv3GrO7A3NdPqwWGrHsdASAm9MxcSXEVO-RVLG0DdUlh7B-BN1XYOSyme5A6ROnGvyKAwWsfJ3Cvss7HVxLXrsqY8CZSHrsGkv/s800/IMG_4761.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">La sosta di fronte alla Farmacia è casuale e Enrico non sta mostrando le nuove fiale di EPO...</td></tr>
+</tbody></table>
+&nbsp;In un attimo siamo a Broni. Qui io mi raccomando tanto ad Ale: "per favore occhio a quello che facciamo; qui è un attimo perdersi e doversi sciroppare un bel po' di colli. Io vorrei tornare a casa dai miei cari e già ora so che mi mancano, adesso, 60 km. Quindi : per favore un giretto in collina e via!" Ale mi guarda e fa : "no se preocùpe!"<br />
+Yo me preocùpe invece.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjtUCrgzs-FOFR0utssBNt3TIRyMtZeA71zxKP4Tl2X2HZCgUF6PZ0ihvlcJtATaC0aNFUfcItYKnS3dZfj2frJEQTGjkFmLqR3y2Y8UM9yK5x3kPQixXQZSFmc_A0ld3-h1Rf/s800/IMG_4765.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Primi colli</td></tr>
+</tbody></table>
+Ma sarà stato il tanto stare a ruota o non so che, fatto sta che in salita vado abbastanza. Senza forzare cerco di tenere dietro ai miei forti compagni di pedale portando le giberne in cima ai colli.<br />
+E ce la faccio abbastanza bene.<br />
+Il resto lo fa il panorama che, come sempre in questa stagione è magico. A parte un po' di nebbiolina arrivando a Pavia il resto della giornata è limpido e con quell'aria settembrina che rinfranca.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi95MbxTD0zSrJiB9XswvQmZ5i1xtyCEjMGBrE3Map9by-E_tV-VYNLdtYro30d0cA8OK9hNThyphenhyphenmtDMuyaULHGXCzjDFutPgRWgIH-7FhGDMlgomAy8f0fpLwThCAJF33sRrTTJ/s800/IMG_4766.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Salendo verso &nbsp;San Damiano al Colle: son tutti già lassù!</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiy5eLVWVV3XTBXWcCa_tX8ev4Gle82o8mWsbX4C_TRgEFcs3sNPDrFIVZpyeYMWLxrIMv8ydtzqMBthBCXmJP5ND0tnpfOp895hy-yoglK40bsi4g2lo7RbG0qvMrHrvUeDZPg/s800/IMG_4770.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Fine salita intermedia</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3HvmOscsMo6Q2L-Zgp3CPURNMEYv0UNm9fDUZJZ6iKaRgtHD4cEb1PeVKmaM5onBreNaz_yfFPcX6Di0UAA3rr_Vlour0qjQ2brggi4-vhqQgGCbQLotibX3hBPGfOwtnQ2ag/s800/IMG_4774.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Profili dei colli dell'Oltrepo</td></tr>
+</tbody></table>
+Su e giù per colli tra le vigne in paesini dai nomi più buffi (Maccarone dei Frati, Montù Beccaria, Scorzoletta Molino, Michelazza, Montecalvo Versiggia) : siamo passati anche da Boffalora (gemellata con Boffalora Ticino?) e da Francia (volevo fotografare il cartello per fingermi vicino al confine...)<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjN7K3MFo3mqVQnW_at7oJVpl0FPyFseZSWpjBOeGM3twnARXZgbOGkZ6ZXu-33zAScXAfDjhrgyQ40BU1YJyxgOF5M7EVvAsOgyPn2fsQ5n_Fqq8NaPcGm0Oo9ThxYckeHgfla/s800/IMG_4776.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Vigne ancora cariche</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGqn1uOg-y4nGrgIEaNcg9KLEOtIQwyGvzhyphenhyphenI6eZYlptKJRcH8P5JNnvi8Yf-nCqpd4PKltmLMS-rREVmYc2jlbif8zJ1UTi84xBMrTXaZKqSmzrD2yZvhn2NFkm-BXkjNRZdo/s800/IMG_4777.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Il giardino dell'ottimista</td></tr>
+</tbody></table>
+&nbsp;La vendemmia per alcuni è già finita mentre per altri deve ancora cominciare. Fatto sta che ogni tanto pedaliamo immersi in un inebriante profumo di mosto. Roba che ce ci facevano l'etilometro a fine Oltrepo ci sequestravano le bici.<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_aUImSofJd9Sgn7tmdnXWFn8Fjti6dBSA351hS6nqnEaipHvbgvShI4SbmPzKP3A9k2jY7GTZAGZEgeFBAz7lgzPHfIqijkmK-VIihiBdgNBT6n6BF_XGsKl7t_WV8PB6TM5B/s800/IMG_4778.JPG" height="480" width="640" /></div>
+<br />
+Scivoliamo su e giù per questi colli morbidi con i vigneti che cominciano a chiazzarsi di arancione e amaranto. Va bene c'è anche qualche salita : cioè, per ogni discesa c'è una salita. Ma come si fa a non amare la bici in questo ambiente?<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgRJwomrb49smo2Hx1z_JKhT4ZLA2sWP0dreCvsfivwJ75wWp8zlCj4o0GA6kW8nrIsGhHEm3FproVujbp6tMFrTNebEcRnKhpCdBiyF2b0kAnSEu22WZkVVxnzbRYPsujZ2BC/s800/IMG_4779.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Salita in fuorisella 1</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5OcmZfBWf6u1L6k73wAYD71YxBDa2mw_e1wA90vehR6O893v6wWMaKNwM712zb_aHq_ZSTEycGPnbEB-Z9scsOCDu7fLJKkmDyWkmLir9qW5GE6CWo2giu3XEhYzQYkYm6_tS/s800/IMG_4781.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Salita in fuorisella 2</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjOm5swApdPXwistyRWfPyUcHQ6JEeKpaUfezSYKRoq8MJfiI9yfKli8_uyyzZ7xYN2atVeusEMNEE6MNkwdd-jcqT5dUDOYByVm4DGh3vsGA-52KqydqqjwN-4YrNFBgCefiXz/s800/IMG_4782.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Salita in fuorisella 3</td></tr>
+</tbody></table>
+&nbsp;Ad ogni bivio il nostro sicuro Cicerone Ale ci indica perentorio : "di qua!" "di là!" finchè.... Finchè arriviamo in questo paesino che non era dove doveva essere. O meglio , lui, il paesino, era dove doveva essere, eravamo noi che non dovevamo essere lì! Perlomeno secondo il carteggio della nostra guida.<br />
+<br />Ale decide quindi di chiedere ad alcune persone ferme alla fermata di un bus che pero' non sono di grande aiuto salvo proporgli di prendere il bus e vedere dove arrivava.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpG8z7p3y3mEVQ-u53pwzuQha7p4EyYT7UU92uaDK9RL27sikP0P6htgs4RtPp2fS3u56UyinOLYjfF4bg69V-Al2du9LEg47clf5RyQibMHmZEIeQ5PhR287la-u6EvYFqfAw/s800/IMG_4786.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">San Damiano al Colle : Ale chiede informazioni ai passeggeri in attesa del BUS</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBRtaxUEDQjiOEj5-nI16qYM_VnLw9mo-H2QKUywMwjy8fGVM3OAmo22DRDWbgt4P3M09loLl24rmwsb1jMPty3mSTSSWnw7WEq3evlYvFV-fOX9uWxRshqrx0qAW2HqLHamKi/s800/IMG_4788.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Enrico chiede aiuto cartografico a impiegati comunali locali</td></tr>
+</tbody></table>
+&nbsp;Fortunatamente Enrico nel frattempo interpella un locale dipendente pubblico che, gentilissimo, provvede a indicargli la strada. Ad un certo punto da lontano li abbiamo visti inginocchiati sul vialetto del giardino "oh, guarda là, avranno perso una lente a contatto.." invece era il dipendente comunale che tracciava una minimappa per terra con un gessetto. Una sorta di GoogleMaps on demand ante litteram!<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_fOdgKYKRpubbmYvH9kqUWwtvRAXoYLZBTWE0uf2-3IkrPkdBl5BZT5-FBszYLdyCpCcdHUUV2uSs87W7QDtdMQwoFN-L_B1P2tw5h3-UnMDS-kHcZxAsV5ECLkO_7OYwIqBR/s800/IMG_4790.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">"dunque, pensavo che fossimo qui....invece siamo.....qui. No, forse qui..... Ah! no qui, qui. No , nemmeno qui....ma vigliacco Oltrepo!"</td></tr>
+</tbody></table>
+<br />
+Ci rimettiamo in sella e stavolta seguendo IronEnrico puntiamo verso Santa Maria della Versa. E qui il gibernauta (che poi sarei io) si produce in una eroica tirata di ben 1,8 km (forse 2) in leggerissima salita : sì, me ne sto lì davanti e tiro il gruppo. Poi, arrivati a Santa Maria la versa dichiaro convinto :" oh, ragazzi, io ho tirato e ho fatto la mia parte. Adesso tocca a voi riportarmi a casa." La faccia come il culo in certi casi è fondamentale.<br />
+<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgg-eXJT36IWP6HOmKiD225PGhpbXmBZyKHEmA2nC3m6yr-4mNe8hnqCU1wu4_pzVuwRg3GSfQB2T_lpXktlDutUJbA-LlND0ikK2k7v0Oi4i6djUXVDpKSWT2o4uismKgSa8hZ/s800/IMG_4792.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Appunto....</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-a7PHTU5PxDKXCjxYBiZFl90fJeL5aoqzB0OI32du4pesmhA4_mD2-GbowB8_lInB3pa0EqRJ2RiVe7ynwqgOrfDujBh6yNduhvIDebqkMLX2P89eX4t-d4cCTdFN4HXCQHqL/s800/IMG_4793.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Vigneti</td></tr>
+</tbody></table>
+Manca ancora la salitella a Crocetta che, tanto per gradire, maciniamo a 1000 di VAM (io, gli altri anche di più). Da qui si comincia la lunga trenatona verso Milano.<br />
+Qui devo dire ammiro senza riserve i miei compagni : cambi lunghi ma regolari, velocità costante tra i 32 e i 38 (più verso i 38, però). E io me ne sto dietro a ruota ben coperto. Cioè tanto per chiarire : avevamo già 100 km sul Garmin e io finora avevo fatto uscite al massimo di 70 km :roba che potevo cascare dalla bici da un momento all'altro.D'altro canto io sono un teorico degli allenamenti pianificati e regolari.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGxzv7aAJxokfTMeSeENB1jiENUv6Rd_Yw2qI8ufFBl4wGEDAqjDK-6k7Pq8I85zVmkegOfu9rRTRt5YyW04J-sTWsL_7atMXcs5TM_TV8TUvfUBKR97SUGakiKq37TzogQQvy/s800/IMG_4796.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Po dal ponte della Becca</td></tr>
+</tbody></table>
+Invece riesco a stare a ruota e si va che è una bellezza finchè ci capita una combinazione di sfavorevoli circostanze (english understatement) : Matteo Buca. E questo ci puo' stare in un giro in bici. Purtroppo Matteo ha i tubolari (che sono rognosi come so da precedente esperienza). Inoltre Matteo buca nel punto peggiore di tutti i 150 km del giro : in MEZZO al ponte della BECCA. &nbsp;Spazio ristrettissimo e poche alternative se non riparare la ruota lì. Prima Matteo prova invano con la schiuma. Il foro non si è aggiustato, in compenso se avesse voluto avrebbe potuto fare una barba perfetta alla ruota. Ho preferito evitare di offrirgli il dopobarba per il cerchio.<br />
+<br />
+A questo punto Matteo sfodera un tubolare nuovo e con l'aiuto di Enrico (io ero incaricato di reggere il telaio senza ruota posteriore e di avvisare eventuali stiramenti di chiappe da parte della auto che sferragliavano sul ponte) inizia il montaggio.<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqUlsJwPg2ZJRKBRju8WlT6NKEXHdK8KLEHAiXM-2lm-4ns9BweTxLng5VDOcUhetc7tVn-Ov0abR-sossaLxOJLQ9rMr-ZFW0e5zg8XGr42mdtDBSPzlYdyFIdtOp3wM_0PrA/s800/IMG_4799.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Laggiù, piccolino a bordo strada c'e' Matteo appiedato. Fra un po' lo raggiungeremo per il pit stop tubolare più veloce dell'anno.&nbsp;</td></tr>
+</tbody></table>
+E qui tra me e me (memore di quanto avevo visto fare in una uscita mattutina durante la quale , per un cambio tubolare, ho imparato dal compagni di avventura del caso una quantità sorprendente di nuove e articolate imprecazioni emiliane) mi dico " Ahia....arriviamo a casa per cena, se non siamo prima costretti ad un salto nel Po da un passaggio di un pullman ". E invece si fa il miracolo! Matteo abbraccia la ruota (forse la bacia anche per convincerla a miti consigli) e in un attimo il tubolare è montato. Via!<div>
+Si riparte.</div>
+<div>
+<br /></div>
+<div>
+I successivi 40 km sono per gli altri una sorta di defaticamento per me una sorta di graduale annientamento. Alla fine sognavo panini e birrette : grazie al cielo i tre se ne accorgono e riducono di un cicinìn il ritmo. Mai le periferia di Milano mi è sembrata più bella. Forse, un pò troppo estesa per chi ormai aveva finito le energie.</div>
+<div>
+<br /></div>
+<div>
+Alla fine poco meno di 150 km con poco meno di 1000 m di dislivello macinati a poco meno di 30 kmh di media.&nbsp;</div>
+<div>
+Vendemmia di un'ottima annata.</div>
+<div>
+<br /></div>
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizelNEiJPcJcfMG-XSTnMKSSd_33GskOtjqKPDT9wdXhMdN4AfuIAlTbEW3c46QU_MGkU4KsVbiH6qDMWQFTpk_5_oAAFp9TPHsqM_0f3sxWwsK_-bSc0N-954lAsB2Vq34C85/s800/Schermata+2013-09-22+alle+16.48.48.png" height="312" width="640" /></div>
+<div>
+<br /></div>
+<div>
+<br /><br /></div>
+
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20130919_157.html">Foschia mattutina e appuntamenti</a>
+    <a class="next" href="20130929_159.html">Sul Mottarone ci ho lasciato un polmone...</a>
+  </div>
+</div>
+
+</body>
+</html>

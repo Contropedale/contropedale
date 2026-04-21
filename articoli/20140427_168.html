@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>In Val Trebbia fuggendo il temporale (senza riuscirci) – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2014 &rsaquo; 27 aprile 2014
+  </p>
+  <h1 class="article-title">In Val Trebbia fuggendo il temporale (senza riuscirci)</h1>
+  <p class="article-meta">27 aprile 2014</p>
+  <div class="article-body">
+    <table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2wOetnW4J5tK4PjtgoZS5Q4kEPDo13G0tJZmPdx3Y9DppVoEN1sQUDlnAe4sD3wHn7k1sT0uE3zLSkllSWzMs_rCxNKzebwjkm8-7boWS4eWwREbHbXpWOUdlbjb_Hvn9f6e0/s800/IMG_5973.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Splendida mattinata a Travo</td></tr>
+</tbody></table>
+&nbsp;In effetti arrivando in auto in Val Trebbia avevo sentito che le previsioni meteo segnalavano il rischio di temporali nel pomeriggio sui rilievi al centro nord. Ma vai a sapere che si riferivano proprio a me.<br />
+<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbHTDZB0qCtNFhgvE1mlYFjWyLBtZFmAAm74ib_km-awb5X_mK3ywxKoNtOGwVSlsSmNXi4yVoffIiZevLEPWePgwOUF0Ixc0eJoPoBnzeNY0j2FWDAqrmLJXEEnVfMfi4E1i0/s800/IMG_5974.jpg" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Giorgio CEO &nbsp;a ruota in salita</td></tr>
+</tbody></table>
+&nbsp;Così quando partiamo dal parcheggio di Travo alla volta del Cerro l'ultima preoccupazione era quella di portarsi dietro la giacca pesante. Male!<br />
+<br />
+Me ne accorgerò, dopo, intanto dopo aver raggiunto Perino abbiamo iniziato la salita al passo del Cerro chiacchierando in gruppo.<br />
+Siamo in tanti :&nbsp;Nica, Capitan Andrea,&nbsp;Guido "the predator", Jenna, Ben Googlemaps, Lorena , Giovanni, Luca e Giorgio CEO della Moroni Adventures.<br />
+<br />
+Giorgio CEO ricorda che qualche anno fa avevamo beccato un temporalone lungo la discesa dal Cerro (ecco qua il <a href="http://contropedale.blogspot.it/2008/06/un-giro-in-valtrebbia-fuggendo-i.html" target="_blank">resoconto</a> era il giugno 2008) scruta il cielo e sentenzia :" ma oggi non dovrebbe esserci pericolo, &nbsp;basta arrivare prima del pomeriggio.."<br />
+Peccato che a volte il pomeriggio comincia alle 13 (ma questo lo scopriremo dopo).<br />
+<br />
+Si chiacchiera amabilmente, anche se, come sempre quando si va in salita, basterebbe un nonnulla per scatenare la bagarre tipica dei giri "in amicizia".<br />
+<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQewYiDZJTKazp34KH7yBTo1x84JL4nXJIenPdes79a3kVHsazwMSpZU2u8Gc1MHfUJQFp70-q6rELHwivnZ87JOic0GMqgEiPa9YFoBLI0G9ZXQmtIQOW92TogLSt1hewcnei/s800/IMG_5975.jpg" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Gruppo in salita</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNdliKeCPAx4aG2r98xCCnutDvLvkoyz2QQ7rKYdxxIxcBfUltt0LxEgTektFAL2AuAwZ3j1OXA5e6Cv3oToprXgxHILt_o1QeyGL0GcOkGx4we5_S7T_hyeVg6N01tmlT9KAV/s800/IMG_5979.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Capitan Andrea sempre allegro</td></tr>
+</tbody></table>
+&nbsp;E l'occasione arriva quando un signore bello tonico e pelato ci supera in gran tromba senza nemmeno salutare. Che si fa? bè, io consulto le giberne che mi consigliano di ignorare la provocazione. Ma Guido &nbsp;the predator resiste solo qualche minuto. Poi, improvvisamente alza il ritmo e all'insegna del "vabè ma così non si fa" decide di andare a prendere il pelato irrispettoso.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2Ini9tuTOc9hxJWzLwKbqoJkOefkgz_fV-q63KDKjfDT8tRY8d08_e-hV1DFepDu-NtSRhpwyDnQo-6ZILJFwAKyO0e6HQiAtbxpwXWGiRJc4MxaLC-XVnQ6IgUjq32IvowCJ/s800/IMG_5980.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Nica e Ben&nbsp;</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhM4PK2E6MevFHw9TMOCv32W1UFmYwkmCeXE1o30sRBmX2mxLP2GTgANultHaJ-F4_g_7-S8UQUWZnybrVcH3-Z9MAQw9WBpkf7P_7er9QJyHCUcDtkYm02xDKMocC35FUHIHFQ/s800/IMG_5982.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Giorgio CEO informa Luca sul programma di giornata</td></tr>
+</tbody></table>
+Io dò retta alle giberne che mi consigliano prudenza, ma dopo un pò prevale lo spirito suicida e mi butto anch'io all'inseguimento. A poco a poco recupero terreno e mi aggancio al duo di testa. Il pelato irrispettoso macina un bel 43X21 e Guido lo segue molto sornione e con l'aria di non far proprio fatica.<br />
+<br />
+Non si puo' dire che la salita al Cerro sia difficile, ma ha uno o due brevi strappi ben sopra il 10% che spezzano il ritmo. E proprio lì il pelato irrispettoso aumenta il passo. Guido gli resta appiccicato senza manco fare un plissè; io di plissè ne faccio un paio di centinaia e ciononostante resto indietro di qualche metro. Fortunatamente arriva l'ultimo tratto prima del passo che è poco più che un falsopiano : recupero il duo di testa, e con grande nonchalance affianco il pelato per chiedergli notizie del suo itinerario. Continuerà fino a Fiorenzuola, noi invece ci fermiamo al passo, punto di ritrovo del gruppo. Guido mi fa : "sì il pelato saliva abbastanza, ma si vedeva che era affannato e molto sudato..quindi sai l'ho preso facile". Noto con malinconia che lui non ha una stilla di sudore mentre io, anche se &nbsp;cerco di nasconderlo, sembro appena uscito dalla doccia (tutto vestito pero').<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOa8U80SvEjilEaXxhHZrkmpeTGeZsNkBQ-6eeLGiiP8fbNDwRUO5YWrPOM6lcbcRRPVoXIr720yLKe-DrJCjfhEk0TTWEpOJy1qdm2a69RbEcnCStNfsW5eKVRw1diZLsWNHx/s800/IMG_5983.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Giovanni guida il gruppo</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiULDRAKkdkd4MjLmAt3rbErqJdD7gtwxEukuS74T0MGjbF0Y5EBA40w5iV66_csBGM948pg01CbxKw4XLSQVPAOuJVE2JqlLpeHM-_7ohyphenhyphenrATyoOvt7Yc9JKJsc4YVnQYet-19/s800/IMG_5985.JPG" height="480" width="640" /></div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiUC8bdV3qhChOvj8l-Pi220uieCUrSG3PhdrUNAtSsa8dmhsmRwPu4S3Hn0jS9cBhykhEonWsJFLL70PWILBsuKu5qt9Q5JeKEMGxnFn-9XCa3OPttzGtQ8f5hffal4_oZyIs/s800/IMG_5987.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Nica scollina</td></tr>
+</tbody></table>
+La discesa dal Passo è su una strada bella larga che consente belle velocità, purtroppo il fondo stradale paga il dazio del duro inverno. Buche e crepe ovunque e su una di queste incappa la ruota anteriore del CEO Giorgio che "sbam!" buca poco prima di Bettola. Ci fermiamo in tre per aiutarlo a sostituire e gonfiare la gomma e dopo un po' di battaglie con bombolette impazzite a causa della valvola ciofeca del CEO ripartiamo verso Bettola.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEheQVP5LGwMnrbTo9WgYS4FUm9q-voS-PhLRZK4FCiuK_PDqoOJVR6zbmDAjPHQKNRQqVW3XNS4HixR0vfB350jy_In0t-8ic8_Oh8GRkrH9-qGUEV8l_Z6Sb4lW8oab92ZGG48/s800/IMG_5988.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Salendo verso il Cerro</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizpYz8Npgg219tboNoDAWxDEFTJi4vmK4UCJbTKyz87KpkWOh-qF6yZf0dtt4ag9kMkyObyhaxWIHDX48qWNbeSiwSZtrAI2SvtunpqiWI4OOHfjmeDEqs1rkqpLjVP6asBEIA/s800/IMG_5989.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Spettacolare fioritura</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHkSuBwv2Oal83LKC0aG0TqhD7YGRPJE7RlfPfK-3V49M3S4I5gs6DRXV8pJaloNyELduDNoJQHt69edhswfRe16xNmOSSGWwjxP62dLLsyc10Ub_rE3JfRHUCQZT4b6EhyphenhyphenFKD/s800/IMG_5994.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Guido&nbsp;</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyZaBlhnIf3PVcGIiWjfl0E0v_goEecTwnrlAYL27sJVW8pe2TSK2HvNAi1JuvOB40DlJ3Sc6AHQ_C6S467j_5rP_fc7k9xpgOIukBqXLBchEhK8Rb3nQHvJYjScHdnGkb2Un0/s800/IMG_5996.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Il CEO poco prima del fattaccio</td></tr>
+</tbody></table>
+&nbsp;A Bettola si impone un caffettino in piazza al sole, prima di affrontare il falsopiano fino a Farini e da lì l'ascesa al Cappelletta.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsCpXj5jYg7tzrSdy0NtaRdSBJw7BGDX-iLA8FUsPrReX3YZYPmc_9TAJtwPkAHWg-M_N5RyPuPD8sTYvvxKvHi4bfTJUIb2bfVOMbhNY-kWacJPqFt_fa6FOz4toh5j6x0VTP/s800/IMG_5997.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Bettola : nessuna traccia di Bersani</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQKjwOIiAxV15bQdaumVx01o2OgvzgfPCIoY2EBx5tLNgaRd6yjKP-nIG6eyG-oh81vWGvMcoio8RBWLZHOqC1t8hqRmgNgtNdjk0LCyv56iUYiW4EwSHelDcsHVbtNycLs_uW/s800/IMG_5998.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Relax prima del Cappelletta</td></tr>
+</tbody></table>
+<br />
+Giorgio CEO ne approfitta per sollecitare un intervento sulla ruota anteriore da parte di alcuni suoi clienti : i quali si affannano operosi al capezzale del mezzo. Il CEO osserva perplesso. Poi decide di rivolgersi ad un centro agricolo e si presenta brandendo trionfante una pompa da carriola "ragazzi vi ho risolto il problema!" (notare il "vi", come se il problema fosse dei "ragazzi"). La affida agli operosi che cercano inutilmente di spingere aria a 8 atmosfere dentro una ruota con una pompa che ha una tenuta massima di 4. Il CEO osserva un po' infastidito l'incompetenza degli operosi.<br />
+Finalmente compare un'altra magica bomboletta e, non senza qualche sfiato eccessivo, la ruota del CEO torna in piena forma.<br />
+<br />
+Il CEO accetta di buon grado il peraltro scarso servizio offertogli dagli operosi. Vale solo la pena di notare che alla fine la ruota anteriore del CEO si è divorata 4 bombolette, una pompa da carriola (restituita ormai sfiancata al negozio agricolo di cui sopra) e circa 8mila calorie di 4-5 operosi aiutanti.<br />
+<div>
+<br /></div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjfurGTh9FmnzGKN0y_PtTvdZ3CdWBK0FkI6BfqLucW5s8qZBac21-z_MI8eYvKIaoBpxyqlQNf8FlwsZgVY0qQ2lf57TYHoYGcldTxs-Po1GlZ44sdqbIkzC481qJMdrzui1F/s800/IMG_6001.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Consulto al capezzale della bici del CEO</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDRuoTGM-AOpovVFxoeahv0i8zYYdCsrVHJJPLne6-if5i_-eCQDW5PrwL-HoqT_ji6Saz1Dc6yDaSOE9Cz8MX77dw5UU-gwURxHN9bqd6-vY6nfARzzwvpQ9vY0_drCR-9DWY/s800/IMG_6003.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Il CEO sovrintende i lavori sul suo mezzo</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNPerdGJFFbULNqUHK1__oVOcnjL9WYF8CfiFn4PmOkwFJqto7AVxeutQv5P-chZFCZlVFfSQFWtyp8Dvgr03-bnoaRoRAmr-sloLRyab2iXRNdAmvfr_o6mKOxTlwRlLxj1lg/s800/IMG_6007.jpg" height="640" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Il CEO controlla il mezzo con aria critica :"avete fatto un buon lavoro vero?" Accetta di buon grado offerte votive da parte degli operosi ancorchè incapaci aiutanti. Sullo sfondo cadaveri di bombolette e la pompa da carriola ormai agonizzante.</td></tr>
+</tbody></table>
+&nbsp;Qualche nuvola comincia a fare capolino : si parte e io osservo un po' inquieto il saggio Ben e capitan Andrea che si scambiano opinioni sulla meteo incombente. Lo sguardo di entrambi è preoccupatino e in effetti il cielo comincia a farsi davvero grigio.<br />
+Arriviamo a Farini e da qui attacca la salita al Cappelletta. Sono circa 550 m di dislivello, che ci porteranno ai 1030 m. del passo.<br />
+<br />
+Il sole ormai si nasconde dietro le nuvole ma in salita va bene, almeno andiamo su col fresco.<br />
+A poco a poco Guido allunga e se ne va. Il CEO, capitan Andrea ed io restiamo e ci lasciamo sfilare. Ma quanto so resistere io al mio istinto suicida? Poco, ed infatti parto alla caccia del predatore con un prepotente allungo su uno strappo a metà salita.<br />
+<br />
+Ora : sia Andrea che Giorgio quando mi hanno visto partire a 20 all'ora sullo strappo si sono detti "ma quest chi l'è mat" Ed infatti avevano perfettamente ragione, e il bello è che lo sapevo benissimo anche io che era una sparata del tutto inutile e assurda e che di lì a poco la &nbsp;salita mi avrebbe presentato il conto. Ma che ci posso fare? Come nella favola della rana e dello scorpione : lo scorpione dopo aver punto &nbsp;la rana che lo trasportava al di là del fiume, condannando entrambi a morte certa , alla domanda "ma perchè lo hai fatto?" risponde "è la mia natura".<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmMXh8NQK0ezy9KvmnmVG9EtnGQSFbPa5dO11hIU_aQRuFVJwJONYqhBNFIzNI_oCJtkBuZ9-9AmZ0pW65VQpGvmchnYyXk7FFiqFwx1P1xM0g11bhlmu2gzi0WdqoCqwcuZV0/s800/IMG_6010.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Fuori piove, speriamo duri poco</td></tr>
+</tbody></table>
+&nbsp;Aggancio Guido solo per poco poi, su uno strappetto su un tornante lui decide di scrollarsi di dosso questo ansante fardello : si alza sui pedali e se ne va.<br />
+<br />
+Arriviamo al passo che ha cominciato a piovere : prima qualche gocciolone e poi l'acqua vien giù decisa. Ci rifugiamo nel ristorante-bar &nbsp;completamente vuoto (d'altro canto chi è il pirla che arriva fin quassù con questo tempo?) con l'idea di aspettare che spiova. Ma non spiove per niente, anzi, ad un certo punta comincia &nbsp;a cadere una fitta grandine. Divoriamo panini con la coppa, chinotti e coca, ma anche qui fa davvero freddino, con la roba bagnata addosso poi..... Ed infatti veniamo invitati del gentilissimo proprietario ad accomodarci nell'attiguo salottino di casa sua dove c'e', fortunatamente la stufa accesa.<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiq_xlMKytjyrIOkWEPIFafrIkCxyL5SRqL7mpWZSGrIiEXYpeNI9Xul1NBanwjYLjaa3gzwwlPTGfloZLPmY6IyTSP4b_LC7c6R5TYS6iTwjlckF_IX1Xj72L4c85HSImetXep/s800/IMG_6017.jpg" height="640" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Giovanni si esibisce nel suo strizza-casco</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivTvFXGwaNKxZEvytaEpVBHPGOyvKgvccY186YuXZIQjD_w2dUlMCyRsJZsaKs4XLe9xxU5v_oD6UB7iqCSJvzl5oeH4kNlLLBjTOIaYz-i0z48NVkLFcM8YeI-IehJUkQaTv3/s800/IMG_6019.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Piove al Cappelletta</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjiDck0oRvtQwEwOPqJloUllP-pQHK8oJ2_g5XStTzKLEhL56XBncYc7YhIbjJ3sr6ehtOb9oTVmptDlGRa0vebYUemid-pCQPFj8faPB6K6ygCm1h1XVTGR6R3HJ5hu30ddGE/s800/IMG_6020.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Grandina al Cappelletta</td></tr>
+</tbody></table>
+&nbsp;Qui si scatena un improbabile spogliarello collettivo con conseguente battaglia per conquistare le migliori posizioni per la biancheria bagnata vicino alla stufa.<br />
+In questi momenti di relax, con l'euforia del dopo salita, rifocillato e in via di asciugatura, il ciclista dà il peggio di sè : il simpatico ristoratore e soprattutto la sua gentilissima signora temo ricorderanno a lungo l'inguardabile strip di Giovanni, che tolta la maglia e il gilet, sotto sfoggia una elegante pelliccia non sintetica (vedi foto).<br />
+<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgClWmtUtsCuMr0BzZNo6qFbDeTdxF4BU53f6J8-pbwxkqzojHXtDvRbO_B42wpRyds0Dmsdu5qAMgBP24qYjBS7Um2i_r7Oe4sENfXxOJmHA08W8PjYmdc2jviKOHlgm8YV7qt/s800/IMG_6026.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Foto di gruppo con ristoratori accanto alla stufa : inquietanti presenze accanto alla signora che infatti sfodera un sorriso un po' tirato.&nbsp;</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_8EDBuSOrADtDdwAJTT6e9OWhK2YpPgi90WEOFS5mzA1BDo0PQHHF1v93p1XDf1UzQl70bUiKjMkvF6kiVZ5QBEK9RXdv7o_xg2l22MbqaQn7BSiupHMBDt6XpMKzhrqrVjPz/s800/IMG_6036.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Lavori di asciugatura intorno alla stufa</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiipH6ASWvL1M6YhNrZit_s0suv9EOBGzZzHdHnN8PqrYeju6NcezwcnCbh4rIt0DgNIryZlUcpCtHBzHH_o3KkqbgSdyaA-l7J57twMABjrjyy1JGHH5ZH5lzLKmiS2dC17gND/s800/IMG_6037.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Jenna osserva stupita e si scalda con un tè</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEix8fdXzsm6EXetFOnFMCBpqiDf4kc9dzW2enI7ETiPBubNPlefaFczU4mZkW0zo44vRbKNqHGseBGmBXjU8_2c1NkpIsF68u9feuXvbuXnpI0X0EYMeZ9Ki_ya3RPVhyCqORDu/s800/IMG_6039.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">CEO e Capitan Andrea a riposo</td></tr>
+</tbody></table>
+Stiamo lì al calduccio sempre più umido per circa mezz'oretta. Io, rabbonite le giberne urlanti con un panino alla coppa, mi sono accaparrato una poltrona e sento arrivare un abbiocco potente. Poi Ben, acuto scrutatore del cielo, &nbsp;all'improvviso fa : "ragazzi, ha smesso, si va!"<br />
+<br />
+Pronti, via : con l'abbiocco ancora appiccicato mi ritrovo in sella in discesa. Il cielo è plumbeo e fa un freddo cane. Altro che mitica giacca Gabba, &nbsp;un piumone ci vorrebbe qui! Arrivo perfino a benedire un piccolo tratto in salita che, giocoforza, riduce la velocità e ci impone un po' di riscaldamento. Batto letteralmente i denti e anche gli altri non è che se la passino molto meglio, tra l'altro ha ricominciato a diluviare e ci toccano più di 600m di dislivello in discesa.<br />
+<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjnmwVaBa-1VAn80IKHS3SZ3fy7O_PxW73G1n3V9E0yFOxCQtE6JTsYA9-BeUNsn-dIgsbsEz8COiN_q1df2fdqDCs2baLRqwnerci1dDg-t12Wvv5JEqRQ3tQrjOC1orRM6FK/s800/IMG_6040.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Forse ha smesso di piovere....</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJy1mjNPq3XiPbM3PgKnxqtxX76bRRR8iDx1eYhj0gNns7-S4Xr7Ng5MMiPpI_n-j2m831i5YvWgTv9Ct7iRpgzOr0laHsMFQrK5t1SIyLnT7GJSPGRLzG1MXTM7dccJtBQGi-/s800/IMG_6043.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Si forse ha smesso, scendendo verso Aglio</td></tr>
+</tbody></table>
+Io ho davvero un freddo becco e tremo come una foglia, tanto che fatico a tenere il manubrio. Sembra impossibile che solo qualche ora fa stessi cercando qualche spazio d'ombra salendo il Cerro.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHUjYU62AcaMZY8Tc7R4SE-k4qEZkTP-EP7SM-cQVp_odT_uEciy8Mv3UtJPr3l2qQQbFPaHXffYrCAHBB1ubzOiyNIZz3X_gKbJo72Rb4Sx1k5WJi-MHGTJHfRNOokfYaJUkW/s800/IMG_6049.jpg" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Non ha smesso per niente! Freddo becco in discesa verso Perino</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3hwEQlACpJkP-0q_4ipLTrT2U7wxshc6kPET0sWKky6_WV3XnP4_4QsBJ4uzaSY21jUFNhQFlkjhGnL4FVxPEVN1AOZII7_6JyfN3hJFhbZPAyHBUHPMuWNu9YrPn4q7v9h3k/s800/IMG_6050.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Cascata dorata sulla strada</td></tr>
+</tbody></table>
+Fortunatamente quasi a fondovalle smette di piovere. Incrocio qualche ciclista che sta salendo al Passo che , vedendomi bagnato come un pulcino e con la faccia livida, si fa qualche comprensibile domanda sulla necessità del &nbsp;suo programma &nbsp;di giornata. Temo di essere stato causa di molti cambiamenti di programma.<br />
+<br />
+Noi invece alla fine ci siamo sciroppati un bel 80 km con poco meno di 1700 m di dislivello.<br />
+<br />
+Arrivo alla macchina e parto alla volta di Milano. Sono appena entrato in autostrada sotto un sole luminoso e il termometro dell'auto segna inesorabile e beffardo : 28 gradi.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmG0aPXh-asfFPachOG9YA19wg0ePMMHDzdAKmVab7-cT-5SkgG5zFX-5e0g2RJNwcqmVs3cv7A1cH8USMcPiMm9pisduK0oLuzLlVOsyZ6tHuA4BXHiBtsl_-TX8ZCGW5SBMK/s800/Schermata+2014-04-27+alle+10.57.15.png" height="48" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Il grafico della temperatura del giro di oggi : max 27; min. 8!&nbsp;</td></tr>
+</tbody></table>
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+Quanto avrei voluto solo un pochettino di questo calore solo mezz'ora fa.<br />
+<br />
+&nbsp;Ma va bene così.<br />
+&nbsp;In fondo solo grazie alla pioggia gelata e alla fuga nella sala con stufa del ristorante ho potuto assistere a scene che mi possono far dire : "ho visto cose che voi umani....."<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhh1ZVdjXrjtgkjMBqKfqhGWHEJRGtKvxt4KfQvtqgcDJsnQuCK8QMW-PvYe4aBJlj1RfoGE2rUVhRneFHVJm7JS30LaZ_RFa1lzFPbs5dDfvAMbxQdv8BNW8NDnFMmartTL46Q/s800/IMG_6053.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Solo pochi minuti fa tremavo letteralmente dal freddo e adesso......</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifqp6rhYHXkRw5PXCyQq1HPfwMp27FU7IhVgo9A-KJxI79ENiHEn_qeQiL2ctM_9CDWCSIOKX8k-UBsRud0jrEJsrRupPKvH5R5kpGJ0CsbmlG0kZxSI_7kZ6RRvuzUxAizpah/s800/Schermata+2014-04-26+alle+19.07.40.png" height="300" width="640" /></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2UZtMF3R7LNrdKD0A_NM6YzQEuHRstvZaZtoPWfwUjWwSN7eDCDTX16hxHpqdNMflFmlKRriFwP8BUJLZWMoModu3cMflmH8PrQw7UKZ90BVa13yEu_khuRwUaWjFFDSzPX95/s800/Schermata+2014-04-26+alle+19.08.06.png" height="410" width="640" /></div>
+<br />
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20140425_167.html">Fiori e piccolo Stelvio : un bel 25 aprile</a>
+    <a class="next" href="20140501_169.html">La legge dello smilzo</a>
+  </div>
+</div>
+
+</body>
+</html>

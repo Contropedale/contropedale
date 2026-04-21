@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Che ci faccio qui? – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2013 &rsaquo; 16 novembre 2013
+  </p>
+  <h1 class="article-title">Che ci faccio qui?</h1>
+  <p class="article-meta">16 novembre 2013</p>
+  <div class="article-body">
+    <br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhErMt1-YVZ3DGsQO-rrZDUShWeI-SrsfnToFxsGBJmy6phg_oOEbTEn-x7WtE3hapZnYDTSb7dvsjfE7OakpAFhB1bY6bu5QSNM2JxzpLNIKsipLw8nZsCDdFkBdvo2zryeskx/s800/IMG_5167.JPG" height="480" width="640" /></div>
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: justify;">
+No non è il titolo del libro di Bruce Chatwin.</div>
+<div class="separator" style="clear: both; text-align: justify;">
+E' quello che mi domandavo ai primi colpi di pedale quando ho realizzato che da Bereguardo eravamo partiti in 3 : Andrea, Alessandro ed io. Ora, Andrea è un forte triatleta reduce , la scorsa settimana, da un primo (primo! cioè nessuno davanti, ecco) posto in una podistica di 10 km. Alessandro, be' ..allegramente ha festeggiato oggi i 2500km in bici dal 5 settembre. Che sarebbe come dire un ritmo da 10mila km l'anno in sella.</div>
+<div class="separator" style="clear: both; text-align: justify;">
+Superfluo dire che entrambi hanno vinto (in anni diversi, ovvio) la mitica cronoscalata del Mottarone con tempi che il mio, al confronto, c'e' da chiedersi se sono salito in triciclo.</div>
+<div class="separator" style="clear: both; text-align: justify;">
+<br /></div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUerv09q-KBbzQn-h0eKPsjN097ckpehq2BiDoW2NWHHt_9aj4GjuOfx-MaRiv0zYbtyVgaOzOXjZfEFJRfR2ThCtsw8rIIHMpB246426Virf7KmyMTSyrogwpZfcTpuXlwTEK/s800/IMG_5128.jpg" height="640" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Da sx : Andrea e Alessandro alla partenza.</td></tr>
+</tbody></table>
+<div class="separator" style="clear: both; text-align: justify;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: justify;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: justify;">
+Eh sì ma adesso come si fa? Mica posso esclamare "oh! ragazzi, mi son dimenticato che avevo l'appuntamento dal parrucchiere!, oppure " scusate ma devo portare dal veterinario il cane con la sindrome bipolare.."&nbsp;</div>
+<div class="separator" style="clear: both; text-align: justify;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: justify;">
+Cioè ormai son qui e devo cercare di arrivar sino in fondo. Al massimo posso cercare di muoverli a pietà e ogni tanto fingere guai meccanici che esigono brevi pause.</div>
+<div class="separator" style="clear: both; text-align: justify;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgj6AG-CoDp_8_RqcwXrlesu3_VG4FTsoR18zEqgi_UigGQ34zLKuKgBG5Fxe5VVrDN3i3znU7lpPgSoHAcdb24mLqFAn7mKmfbhUv27KOjg82YrO0wDXsRur0QdYVhZgjbGLOx/s800/Schermata+2013-11-16+alle+18.57.31.png" height="345" width="640" /></div>
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: justify;">
+Insomma rimuginavo così nei primi km da Bereguardo (raggiunta in macchina) e Pavia lungo il Ticino attraverso Torre d'Isola.</div>
+<div class="separator" style="clear: both; text-align: justify;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: justify;">
+Si preparava un meteo sorprendentemente favorevole; dopo una settimana di brutto il sole ci avrebbe accompagnato tutta la mattinata.</div>
+<div class="separator" style="clear: both; text-align: justify;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: justify;">
+Il lungo Ticino verso Pavia è l'ideale per cominciare un giro : strada sinuosa, poco trafficata in mezzo alla campagna.</div>
+<div class="separator" style="clear: both; text-align: justify;">
+<br /></div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyGaK9-bVjjMRPj33IpimfDMnAAuAhb6Lnn-9tocyS7pvgs0ygw_2rrZjTgwYOyfPJoRU6KgtreRLoHWmp5dGzPmu2SpHBH14XzBHM_CNmDv2GhCxfpDbAOyh4ahR9a4tOdo8B/s800/IMG_5129.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Verso Pavia e, ovviamente, io son già indietro.</td></tr>
+</tbody></table>
+<br />Dopo un po' di chiacchiere Alessandro, che non ama perder tempo (della serie :"siam qui a pedalare no?, ecco allora pedaliamo") si piazza davanti e comincia a tirare a 34-35 kmh. Ok, fine ricreazione e io comincio a praticare la sottile arte del succhiaruota. 1,5 cm tra la mia ruota anteriore e quella posteriore di Ale, massima attenzione a non prendere un filo d'aria. Insomma ogni joule non consumato ora è uno che potrò' usare quando verso la fine del giro i nodi verranno al pettine.<div>
+<br /><div>
+<br /></div>
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1L8XHdZNam7_TTEjvspSywDGPRlSBVXHn9vFBCKJUJDUZXFKuibcj8QMyy2s1XXwxeCEXo73mku3Vo_2Pm7lf1RIKpyp4MqrMBtKXNLCKye0HwsAMcJjQnn7_xaJC54GT4Bcd/s800/IMG_5131.JPG" height="480" width="640" /></div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxEC2WIov4FQ41LSRJYfy1G7bK8JDnmUw2W2P-wWxdegbXgH3hve4QixY8Mvhd8Ry_EasQLZmpXg79P8CuBthVzXotpmchKDnBBF9xQ-jTlSlopVWzxKD7PJjeB0jeJQdk0jgg/s800/IMG_5134.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Campagna pavese verso il Ticino</td></tr>
+</tbody></table>
+<div>
+Arriviamo a Pavia che il sole ha ormai bucato la foschia e ci godiamo il lungo Ticino cittadino prima di infilarci nel lungo piattone verso Broni.&nbsp;</div>
+<div>
+<br /></div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhN8tEsQL_Ghj7DRM7KLFFy34tQ5Eycmbu-pO6CEtyJ4AGC7RuZNf3mVzR2mRBrP5mG-FF5djD-6dv4Wg8MZkjBoVF53kbfx6Im1sZV2Zoqr7WaAOPanlPLJFN-DenARbmBw8R9/s800/IMG_5146.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Pavia : il ponte sul Ticino</td></tr>
+</tbody></table>
+<div>
+<br /><div class="separator" style="clear: both; text-align: justify;">
+Fuori Pavia infatti la formazione a tre diventa d'attacco : giù la testa e mulinare le gambe. Io mi guardo bene dallo stare davanti e lascio il compito ai forti compagni di sella. Si fila belli allegri e in un attimo arriva il ponte della Becca, ultimo trampolino verso Broni. Qui si impone una sosta di pianificazione percorso (benedette soste, finora siamo qui con 32,5 km percorsi in molto meno di un'ora..). Dopo troppo poco tempo (per me) Ale parte alla volta di Canneto.</div>
+<div class="separator" style="clear: both; text-align: justify;">
+<br /></div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRfIRImHSQsl-Lqd4JQJplQjeFHGgusxbMaltvBc2KsW6S4K9SeKh6Ur04kq20DDAy801xtC7e0MQfUY4QGTS6MgBPCgS13TZaZZ2_jXIIgRz9H236HyGuwDvx7wHpLYBNGuYO/s800/IMG_5154.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Ecco, sono già lassu', ovviamente io ansimo qui dietro....</td></tr>
+</tbody></table>
+<div class="separator" style="clear: both; text-align: justify;">
+La prima salita di giornata i due A (Ale+Andre) la affrontano allegri. Allegri in duplice senso : 1) sono allegri e chiacchierano amabilmente;2) van su come motociclisti. Io invece me ne sto dietro e arranco triste : 1) triste perché fatico come un mulo e sbuffo come un mantice mentre sento le loro "risate argentine" 2) triste perché so che è solo l'inizio.</div>
+<div class="separator" style="clear: both; text-align: justify;">
+<br /></div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIu1Ck2uyHy6p226EFbWGWwk3NRbi54dFDHw6i9kwfh9PG6-3mDi07_r8eCNV_L_kswjjocXpoClkvXbt-2-qLpUMxz9nk9SKT-E4E1q_oOdeP7ZGDWrvJ_GcdRcgvoOg73MmL/s800/IMG_5150.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Montalto<br /></td></tr>
+</tbody></table>
+<div class="separator" style="clear: both; text-align: justify;">
+Ma il bello dell'Oltrepo è che le salite sono brevi, e quindi anche se A+A sono di un'altra categoria io arrivo in cima &nbsp;prima che loro abbiano il tempo per preoccuparsi chiedendosi se ho avuto un infarto o se ho sbagliato strada.</div>
+<div class="separator" style="clear: both; text-align: justify;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: justify;">
+Ecco, quindi son sempre dietro, ma un dietro ragionevole e su questi saliscendi devo dire che anch'io mi godo la giornata di sole spettacolare.</div>
+<div class="separator" style="clear: both; text-align: justify;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: justify;">
+Il cielo è limpidissimo sopra la foschia della pianura. I colli sono al sole e laggiù la bassa giace sotto &nbsp;una coltre &nbsp;di bruma grigiastra : all'orizzonte si staglia la sagoma imponente del Monte Rosa innevato.</div>
+<div class="separator" style="clear: both; text-align: justify;">
+Splendida giornata di autunno.</div>
+<div class="separator" style="clear: both; text-align: justify;">
+<br /></div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2rIu5nac8Dn2rWFtbv3RChySCN4l15HKHMy2TcU5XeGoflllUe8LhZe_oG1rp6qjfFUojKTUqV_8PtBLegtLq-1qEcUuXbo32rcp1ICuGkn1MQ8gA1Fgf2FFTVS9kGcasHlfo/s800/IMG_5156.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Colori autunnali</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgG1Jo_u0xh1UqP26YkdsymLeNRVpjCN6YDa0PxFAzIUwjkaj2XOWaQOrw65Mvb9uwn_0nVx02j6uZ5ZHU7_E4C_59I_3_sd9zGsmhtTwKdLTbHThpY_bHiqlI9gy6UPw9TZOp_/s800/IMG_5158.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Laggiù il Rosa</td></tr>
+</tbody></table>
+<div class="separator" style="clear: both; text-align: justify;">
+Alessandro ci fa da Cicerone : da lontano vediamo la sagoma del forte di Montalto e decidiamo di puntare lì.</div>
+<div class="separator" style="clear: both; text-align: justify;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: justify;">
+La salita dalla provinciale è pedalabile e godibile, l'aria ormai è tiepida e io mi sono abituato a vedere i due compari che molto gentilmente a inizio salita mi aspettano per 50m e poi piano piano allungano e scompaiono dietro il &nbsp;primo tornante. Ci rivedremo in cima.</div>
+<div class="separator" style="clear: both; text-align: justify;">
+<br /></div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu3uQmtLkE4oehzP1s2ahT4hWkgVMGxlxYnpEuLDzbf-a1NI5DOxqt0nwPX90uqKqsH-0U82oi229wiRUS2hGcPGtc77NaAbZVBTcXBou7Emd_uFbta7MIDFsmbV8J15yU4K81/s800/IMG_5160.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Andrea, Ale e il Rosa</td></tr>
+</tbody></table>
+<div class="separator" style="clear: both; text-align: justify;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: justify;">
+Da Montalto scendiamo &nbsp;per risalire nuovamente in Paese dal lato più rognosetto : 3-4 km con pendenze intorno al'8/10%. Ormai ci sono 65 km in saccoccia e è ora di puntare la prua verso il traguardo.&nbsp;</div>
+<div class="separator" style="clear: both; text-align: justify;">
+<br /></div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUS076d8VuzT4GNgCFTBepGm9OIFfHVKudTZVhhKhPkM5WeV4v3VuYR6vQhfJQpTHABR2uuefQc_cK2kmNLokg4o2sbWnE0fUztSvlwWlEozJ616-HvLCBipyt_Uf_tm_eXZXq/s800/IMG_5162.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">MOntalto e il Rosa</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFD248zV-6o0I5aEN-JD67YFzO2hCtCQMn4D3JljZGFR6eBebQBx2w3znKH60PmN9fNs8LSgeuAdHkkGVmNj0EFHVrGG44J-dPxDtOQqktguT5UQpF9Lm6T7P558p5zQk8OOsF/s800/IMG_5164.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Prato fiorito : in novembre!</td></tr>
+</tbody></table>
+<div class="separator" style="clear: both; text-align: justify;">
+La lunga planata in saliscendi verso Broni è guidata da Ale che tira il gruppetto a più di 35. Da Broni comincia il bello, cioè per me il brutto.&nbsp;</div>
+<div class="separator" style="clear: both; text-align: justify;">
+Mancano ancora 34 km , sono piattoni ma abbiamo già percorso 80 km e 1000 m di salita. Non ho alternative : e quindi mi metto in modalità "succhiaruota" e spero che non ci sia vento laterale (che invece, bastardo, compare quasi subito..). Pero' faccio davvero fatica e ogni tanto devo chiedere pietà al battistrada. Finalmente arriva Pavia e qui faccio la scelta che mi salverà : impongo ai due A+A una sosta in un Bar in cui mi scolo una lattina di CocaCola.</div>
+<div class="separator" style="clear: both; text-align: justify;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: justify;">
+Via, si riparte. Mancano ancora una dozzina di km, gli ultimi, ma siamo già oltre il centinaio. Dopo un paio di rutti (cioè un po' più di un paio, ogni tanto Ale si girava con la faccia di chi si aspetta di vedersi inseguito da un trattore) la caffeina e lo zucchero cominciano il loro sporco lavoro e senza volerlo mi trovo a pedalare a fianco di Ale. Uhu...che ci faccio io qui?</div>
+<div class="separator" style="clear: both; text-align: justify;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: justify;">
+Insomma, siccome ho un po' di orgoglio e di riconoscenza decido di immolarmi in una trenata da apripista fino a Bereguardo. E così faccio! Sorprendente come una lattina rossa mi faccia pedalare tranquillo davanti a 34-36 kmh. E dietro infatti .." oh..ma la prossima volta la CocaCola la voglio anch'io!" Ehehehe ..doping made in Atlanta.</div>
+<div class="separator" style="clear: both; text-align: justify;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: justify;">
+Ultimi colpi di pedale e siamo di nuovo alle macchine dopo 115 km e 1000 m di dislivello chiusi a 27 di media. Mica male, per una magnifica giornata di autunno.Ah!, e non sono mica stato sempre a ruota....!</div>
+<div class="separator" style="clear: both; text-align: justify;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: justify;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmAohWAPYs7RqP_EecUkE9Vg3euG9Ps_CkmYOmCJ9Qx7aom9DA4mc2n9IVAjfMIMKA_wAcsLLa_Ytb5ezkL2MA1hGqaZYD5K1XEGIDzrsyorD5UHuIU693Dwoo68owAubbjdbm/s800/IMG_5165.JPG" height="480" width="640" /></div>
+<div class="separator" style="clear: both; text-align: justify;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: justify;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: justify;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: justify;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<div class="separator" style="clear: both; text-align: justify;">
+<br /></div>
+<br /></div>
+</div>
+
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20131110_151.html">La fortuna aiuta gli audaci....</a>
+    <a class="next" href="20140113_153.html">Cogliere l'attimo (nel senso : la nebbia ora c'e',</a>
+  </div>
+</div>
+
+</body>
+</html>

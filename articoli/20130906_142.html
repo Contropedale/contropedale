@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Autunno, cadono le foglie, tornano le auto.. – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2013 &rsaquo; 6 settembre 2013
+  </p>
+  <h1 class="article-title">Autunno, cadono le foglie, tornano le auto..</h1>
+  <p class="article-meta">6 settembre 2013</p>
+  <div class="article-body">
+    <div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8tLuEwvYiuL-3wep4LSDYE4yZMHPPy8yNZ_egpkbHXP-zr2SAxqD4rkHeZOOMAN7IWNMSsPNFhc3XtrjtapNpqluJjNCJZ77jsC66Y7Sp5y88dVUML7j73cCudz2jhN9fwAnf/s800/IMG_4565.JPG" height="480" width="640" /></div>
+<br />
+<br />
+Ore 6:40 di fronte alla chiesa di San Cristoforo. Due ciclisti emergono dalla penombra : Annibale ed io pedaliamo di buona lena diretti verso sud-est.<br />
+Manca ancora qualcosa all'alba.<br />
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir2C35_hpdv6OLnPMJNG6AsS75FznYOCEWmSu7d4nzo9Nrjss9aIuTPpU0f5_7V7cKk7LDwmtPLR7p_AWdYVGqH3bRt-HIBJyKy9LxA7HheMXRujYIe5gJeFLXDRxN-jF58eYz/s800/IMG_4566.JPG" height="480" width="640" /></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi4CAUtSztreggDCfoLVjdS_NEQ59qZZ5rqxac8vOtj054sogBH_B2S48DdqK8Act48G8_znfCIV1T1ttijvmP_CnQhRPiGiZMW7Py0gc93BI0mDQexxu74n4z7MVOcp92-An98/s800/IMG_4567.JPG" height="640" width="480" /></div>
+<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGAebHyZ1ynqS20aiQQvsrvu4QRy3Jk0NebDFatYpUAj9vVnNU9XYCJlDhX07-kLQKD2IzuYQBPB0F2c1mbSMK5YmjXPs_uPq5qVz8ct7jnG2Ot42_WwyO3LsBdGij9EsLUORK/s800/IMG_4569.JPG" height="480" width="640" /></div>
+<br />
+Chiacchieriamo e già dall'inizio si capisce che &nbsp;oggi il ritmo sarà tranquillo. A Gaggiano il sole appare dietro un semaforo.<br />
+<div>
+<br /></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYr_pVKebqF8nS9a_9_hvDD17dO9pSUUAXsXsdfvdKeFNkJJ3m-mrGzydOXJPVg-HAAxs1sI8obNWHlSydrKY5lihECA7XL3ZH9En1Dwwt7RlQA5Jet2DJaEMt-bVicRTDKARo/s800/IMG_4570.JPG" height="480" width="640" /></div>
+<br />
+Ritorno tutto controvento, si pedala contro un muro d'aria solido : fatica poco remunerativa.<br />
+In città siamo accolti per la prima volta da un traffico di quelli incazzosi. Slalom e smog. Ma noi, prima, pedalavamo tra gli aironi.
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20130903_141.html">Ancora, o forse già, buio</a>
+    <a class="next" href="20130907_143.html">La Crocetta ci crocifigge.</a>
+  </div>
+</div>
+
+</body>
+</html>

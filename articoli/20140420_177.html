@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Uovo con sorpresa – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2014 &rsaquo; 20 aprile 2014
+  </p>
+  <h1 class="article-title">Uovo con sorpresa</h1>
+  <p class="article-meta">20 aprile 2014</p>
+  <div class="article-body">
+    <div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBc4-lSniBgMVPhKe4DAoM42jUTTc0DDD4pAX_oymW0MP1zFnI_WL9jdZ4k9ya5fGe594JHLb7_JAEnTuW1BGr3AcMRwyPC0UCe2MkgOW8bB8-XOhy2FTqhqYGhyMwXjeHk0rz/s800/IMG_5824.jpg" height="640" width="480" /></div>
+<br />
+Lo sapevo. Avrei dovuto restarmene a dormire. Ma quando ti svegli e vedi il cielo azzurro terso e le cime delle montagne innovate come fai a resistere?<div>
+<br /></div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhef_mzQY6XoeV-Pt-WQW1abP41Gre6qDbpJlU00DY1hvKg6qExnLTt6dOzelKzf8WPb_wIC0uDTkFu3E0lqZdU8pkQSsr5c3050703ODpX2T2qdKagf18tLO2hILgs1IRKvClS/s800/IMG_5821.jpg" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Salendo verso Tenno</td></tr>
+</tbody></table>
+&nbsp;E quindi sono in sella e sto salendo verso Tenno con alla ruota Renato, solitamente smilzo e solitamente veloce.<br />
+<br />
+La salita è il primo tratto verso il Passo Durone. Si arriva a Tenno salendo lungo una strada ampia e con larghi tornanti, che sale sotto il sole tiepido e apre spettacolari panorami sul lago.<br />
+<br />
+Dopo questo primo pezzo abbastanza abbordabile la strada scende un pochettino prima di uno strappo rognoso verso il passo Ballino. Da lì nuova discesa su Fiavè e ultimi chilometri di salita fino al passo Durone. In tutto una ventina di km di salita per un po' più di 1200 m di dislivello.<br />
+<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSntFa_UoDBQW_7WZDpB88PFLH47VrNCHjADNgb7VqbLkIcY8zkLTID0774AgeM1HR3oQ-Z2mW20d3j8zGflL3zMt-CwUEJ3OrGwAOozZHOWlMMFppV-L37DLWtPRxc1E_V0fK/s800/IMG_5823.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">La valle di Riva salendo verso Tenno, ultima foto prima di rischiare il colpo apoplettico</td></tr>
+</tbody></table>
+Siccome sono molto previdente adotto la tecnica classica : sparo tutte le mie cartucce all'inizio e poi striscio come un verme fino a fine salita.<div>
+<br /></div>
+<div>
+Ed infatti eccomi lì davanti a tirare, col gatto sornione Renato francobollato a ruota. Incontriamo pochi ciclisti mattutini come noi, ma li passiamo tutti in tromba!</div>
+<div>
+<br />Io tiro forte, almeno mi pare, finché Renato non mi affianca e mi fa..:" dai saliamo regolari fino al paesino e poi li si rifiata.." .<br />
+<br />
+Regolare? ma cazz……..regolare un kaiser, io qui di regolare ho solo il cardio fisso sopra i 180.<br />
+<br />
+Vabbè, mi lascio sfilare e cerco di non scoppiare del tutto, perlomeno di evitare di cominciare a scivolare inesorabilmente verso valle.<br />
+<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBUlbnMZ3-d4TBqx9kd7EpCo2UUuma0eCcC32EptZ5NQKkYaKQNG448mUoUGXcPGnjBCbOQaJCf1nbpcwfmK2Vp9Z0a-actM9e0uaM7tcH-vhepKtkdzOocTBoBRUa-sJdegdy/s800/IMG_5825.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Neve poco sopra di noi</td></tr>
+</tbody></table>
+A Tenno, proprio sopra il laghetto c'e' il tempo per rifiatare un pochino. Io opto anche per una strategica pausa intestinale al bar dell'albergo e lì, seduto sul water, medito se sia il caso di rientrare…ma decido di no e di continuare a ritmo per me più umano. "Cazzate!" direbbe il signor Wolf di Pulp Fiction.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinhfHVyxo_dqLcJtsml5DOVrcOKD92xvL2J3J3MUUcIR9y4wD7N8YxnavRMdj3WAIkeloTwAw3xF2hHclp2tl4YbknIbVB71j3jqZ6Zpz-IZLUpm3-rq5ed7ya55JHzln98IFt/s800/IMG_5826.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Arrivo al GPM di passo Durone</td></tr>
+</tbody></table>
+&nbsp;Ripartiamo un po' più tranquilli. Qui ci aspetta un tratto in falsopiano che precede uno strappaccio maledetto con un rettilineo finale prima di Ballino. Renato aumenta gradualmente e io cerco di tenere. Scala un dente e si alza sui pedali, io scalo mezzo polmone e mi pianto sul sellino. Ma sono lì.<br />
+<br />
+Ed ecco che spunta Ballino. Manca ormai meno di un centinaio di metri e io faccio la classica uscita "bene io rallento un pochino" (che significa "ok, adesso tregua tanto vai di più.."). Non lo avessi mai detto : Renato si alza sui pedali e mi lascia lì come un baccalà. Non solo, superato Ballino c'e' un lungo falsopiano di un chilometro e mezzo prima del passo. E lì lui allunga di brutto e in breve è già distante.<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgfQMnu24J3mFb4Ki4r4TfFxqKUUdBT1r2HFe1vtTNMOszUusIDi8ywG8A6vQQMkSz6KzmBvNQDYHWV6NY1iaQJ8VrdD3TomHF_aZgqXjzqQ5kBoh7BqIqf9fFF7DB0yew-fzwL/s800/IMG_5828.JPG" height="480" width="640" /></div>
+<br />
+Lo vedo sparire a poco a poco verso il passo e poi fermarsi al cartello per mettersi il gilet. Da qui infatti c'e' un tratto in discesa che porta a Fiavè, prima di attaccare l'ultimo tratto di salita al Durone.<br />
+<br />
+Così non ci penso su molto : quando arrivo al cartello del Passo manco lo saluto e tiro dritto a tutta manetta lungo la discesa. Sorpresa! Uovo di Pasqua con sorpresa bastarda. Via! Zooooooooommmm…Con la coda dell'occhio vedo Renato che mi guarda con sguardo basito della serie " ma che fa?"<br />
+<br />
+Ma ormai sono in discesa : la &nbsp;strada ha un fondo magnifico e si scende davvero a manetta. Vedo davanti a me due tizi e in breve li aggancio.<br />
+<br />
+Loro dopo un po' sentono che c'e' qualcuno dietro e fanno quello che farebbe chiunque al loro posto : "giù' il crapone e via…sganciamoci questa piattola dalla ruota".<br />
+<br />
+Io tengo duro e mi faccio trascinare lungo le prime rampe della salita. Poi, porca miseria, loro girano verso sinistra e io mi trovo solo a salire verso il passo. Suona il telefono : Renato "oh! ma dove sei finito? io ti aspettavo…." e io : "io no..gnhgnhgnhpfftpfft…..".<br />
+<br />
+Da qui al Passo è una salita bellissima e molto scenografica : la valle a sinistra e le cime innevate poco sopra di noi. Aria tersa e colori lucenti.<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7NqL32tQWNGsi6StDZSniwqR_yIXOqXC63So4_GOWsiFvh10Js68lGdk4M4aKPIwX8jvtDhn7zXgS9-roWBTEmbYXXKKY-4BhIxxmpmzxahqkkFGWyqeqkgZeJqOsmCp2XgqM/s800/IMG_5829.JPG" height="480" width="640" /></div>
+<br />
+<br />
+Il passo arriva prima del previsto : sono salito davvero veloce per i miei standard e l'aria fresca ha certo aiutato. Quassù c'è il tempo per una barretta e per un sorso d'acqua, giacca Gabba addosso e qualche foto in zona. Dopo un po' arriva Renato : ha tirato anche lui gli ultimi chilometri e ora ci resta da goderci una discesa ideale : pendenze dolci, curve morbide e asfalto stile biliardo. Si sfiorano i 70 kmh senza far fatica.<br />
+<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9QfeRf8dIlBLrcQUGf_pcB9RR16kkKjbPcu2icTh50FFiUuYoUj9XOWa7pF25tCQ7JBQ7gaWI_IpA55EYaczBV7LYSpRRaNYNlmfZjhVKfKciZUWNSpBwBWGKdDoUWlGycqZi/s800/IMG_5834.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Renato al GPM del Durone</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXr-GM7SilqXBFCJ_M5Z8Ej0vpQ92ivC_Twg1oaeIU7hyMNnDCVnJ7XaRu0Iej38m0Org3HFjyD5rTyJIkEscnwgzYy_30HlJZpnP3yShv-KEwIU5cWRx3Vpp6bXMbsP7iIgY8/s800/IMG_5836.jpg" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Scendendo al ritorno verso Fiavè</td></tr>
+</tbody></table>
+Che goduria! C'e' solo quel piccolo fastidioso dentino in salita tra Fiavè e Ballino. Qui rinfoderiamo le spade e saliamo affiancati chiacchierando sapendo che da lì in poi ci si tuffa verso il lago, prima il lago di Tenno e poi il lago di Garda : 700m più in basso.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJI7F4cdd29MiIQJmrckztcmgUuiOIstQ60G0GxBqzYI9LP2K1cfZRp9HlFlwBXHyGR4hUlMPN_cYE8qiR6ordFFgy0luD3RXwNpqd709e5YjaJJz2Y8ZyKI9asGVUC0vULOSC/s800/IMG_5838.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Discesa magnifica no?</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwYnFYAejqBd33UfhuQcZ3s908TXI-dVDkhCISM4anmJb-EizaGCY4zX1qoykBDjF22-VInf3y312IZ-z7r-n_nn5O05H8MnqYiz0RP524hG0dZMdyM2duvZG10ST7mYgIBsZb/s800/IMG_5839.jpg" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Selfie pericoloso in discesa</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgclpC1OZayIpGbxRABNr9fNzaqUS864gbGOH53pq5bfu9QAkM1Ruc8nnjzNVWgj2qGK1DG-c2zssjt0tcAQe7oIJ4WAme-NQsWpocahXcP_hompUdKTZkG7yRg-ivxobFQa4o6/s800/IMG_5844.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Legname : ho pensato di mollare lì anche le mie gambe di legno prima di rientrare</td></tr>
+</tbody></table>
+&nbsp;E qui le giberne danno davvero il meglio di sé . In breve siamo di nuovo a Riva, proprio quando le prime nuvolone si fanno davvero minacciose.<br />
+<br />
+Con la &nbsp;gamba legnosissima saluto Renato (che si deve sciroppare un altro po' di KM verso Torbole) e archivio anche questi divertentissimi 50 km con 1300 m di salita.<br />
+<br />
+Buona Pasqua.<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdmac_G_wPCv5HlUw0oyLh1SIInu5Zg4G_raY2y064Bj-V76rYogeSjJEHZk0vzFi0Kz-GY0xuALq4Rzb5wV-oBDvhl7SJN8q-D4AdF_3QA8xEDmrl42HU9q-e84587YCfkf1m/s800/IMG_5849.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Fioritura a Fiavè</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQRN29KSaRZvvCesjAO0Pe-bB9UcmT_qJoJcB3DpEMHO4OqmMmNKrGmQtIlXDDq1OLDz5ngwFk-GSTtHU2UKk-HDIBbiG5njNnANhELe4qdtcjH1b_O41BmNJMQanysIaUx5ec/s800/IMG_5855.jpg" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Falsopiano a Fiavè</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJPG20YRChec98uRrxGFBpGtazpXF9BmoptKBS-fzLJERkQKfKfposE9Pcw4VuKNZb2E9SVNYLToEStIntdgTqwrtsQc1xichqi7jCvLvKhdM_bIXW8ql9I_fwx0aVBTYj6obB/s800/IMG_5856.jpg" height="640" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Lago di Tenno pieno d'acqua</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiQptZ8kHQ7em78ajq9Fg2gNSYn3JEtt2hNGuPNnEstW8lgE7q_GKu0cAwClyK0dwdXSC2gJ70ubDisOABM-ORkoJeb5cGr8wp2d9g3pZxcQ9_kn0WuNW1tUZ2i9j-3RJoTJKYQ/s800/Schermata+2014-04-20+alle+16.18.03.png" height="368" width="640" /></div>
+<div>
+<br /></div>
+</div>
+
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20140420_176.html">Natale con i tuoi e….vigilia di Pasqua con lo smil</a>
+    <a class="next" href="20140424_178.html">Bici e Alto Garda : prof e gibernauti (appunti fot</a>
+  </div>
+</div>
+
+</body>
+</html>

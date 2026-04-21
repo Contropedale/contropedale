@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Le parole non servono...(Con Andrea alla Sella dei generali) – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2014 &rsaquo; 4 maggio 2014
+  </p>
+  <h1 class="article-title">Le parole non servono...(Con Andrea alla Sella dei generali)</h1>
+  <p class="article-meta">4 maggio 2014</p>
+  <div class="article-body">
+    <div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikIwfFah9zxWcUQnlaQln5KLrXKNVPf3vdFcchALq99LxbjAboYUb22MTi702NaL1knduhsktMi894CRYwOetJ7p4R8Mzt835aCRfvD-p4aCrcWbUEotjHK1HJK5k8NB81JbRT/s800/IMG_6167.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Da Travo a Perino..il tempo si mette al bello</td></tr>
+</tbody></table>
+&nbsp;A volte le parole sono superflue. Le immagini parlano da sole. E questa è una di quelle volte. Potrei usarne molte, di parole, per descrivere il giro di oggi con Andrea, l'elegante Capitano.<br />
+Potrei dire delle chiacchiere divertenti mentre salivamo i tornanti verso Aglio.<br />
+Potrei raccontare della sensazione di luminosità cristallina dell'aria dopo la pioggia di ieri.<br />
+Potrei raccontare del signore anzianotto che abbiamo incontrato in bici, vestito di tutto punto per la messa, sulle rampe più dure della salita da Aglio a Pradovera e che ci ha detto che ogni domenica lui va a messa pedalando da Aglio a Pradovera (circa 400m di dislivello in pochi km, durissima)...e di me che gli ho detto &nbsp;questo impegno varrà bene almeno un paio di pateravegloria di sconto.<br />
+Potrei provare a descrivere l'orizzonte ampio da Pradovera, da dove con uno sguardo abbracci quasi tutto l'arco Alpino.<br />
+Potrei raccontare del saluto al mitico Angelone e dell'arrivo alla Sella dei Generali e del bosco che lascia all'improvviso spazio agli alpeggi e a laghetti di montagna, e della tramontana fredda che ci ha gelato nonostante il sole.<br />
+Potrei raccontare della discesa entusiasmante su Coli , una roba che sembra di essere su una pista da bob lanciati in mezzo ai prati fioriti.<br />
+Potrei dire della chiesa di San Medardo che pare una bolla medioevale che domina la valle appoggiata sulla cima di un ripido colletto. Potrei parlare della risalita a Loagobisione, dove tutto c'e' fuorché un lago. Potrei raccontare della mia azzardata scalata sulle rampe del nastro verticale (più' del 20% di pendenza) di asfalto che parte da Perino e aggancia Filippazzi. Un breve ma duro tormento (per il quale Andrea ha ovviamente prenotato lo Smilzo Veloce alla sua prossima calata in valle). Potrei raccontare degli ultimi ventosi km verso Travo. Potrei dire che abbiamo pedalato per 73 km e siamo saliti per 1650m.<br />
+<br />
+Ma non serve.<br />
+<br />
+Bastano le immagini per descriverlo.<br />
+<br />
+Oggi nell'aria fresca e limpida, con i colori luminosi e sotto un cielo azzurro intenso Andrea ed io abbiamo chiacchierato, faticato, riso, sbuffato e sudato. Ma soprattutto abbiamo respirato aria e colori puri: con i polmoni ma anche con gli occhi.<br />
+<br />
+E si sta così bene..<br />
+<br />
+<br />
+Grazie Andrea e grazie bici.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgaNphNYr9apWHrfK6I4neLzNlrWhMeZrLcvB4PMMfRoXw1hAala7eA5nxkZgsgrRavb4MxlL4g4e3QaYG5MdAH6KL5fRc1il3fxGm6X5qKevqgL_Fgxbn7-Fcc0S1rZvX2zJmO/s800/IMG_6169.jpg" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Verso Donceto chiacchierando</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdg2lBJav7lJU70U8-DvDxFESlC6SfW4wy36w0okgAIyot6i3pTTJLHfs9KckYyZbIDhEUUUl5LaAhJJuZH80CRVdH9plJ_pDdforXg7k96fCdhbi2K7wa8Vsh6K1WcLXMheJU/s800/IMG_6173.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Andrea racconta il nubifragio di questa notte</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEik3c81IxPZY81XEQmbSYNuUT1i-HaeLkVc6a18KCLeD0TDDd2IghnCln8eq4tqmJkE7Q29HJiHQbvO3oOdbB-0HFCvZp_qaFjxq7-Ij_3NTcfI56UOTddv-Lqt4ozgzv5evmMk/s800/IMG_6178.JPG" height="480" width="640" /></div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_TW5duWsPcvuvX3l38AgNc8f_cbHSuY3xF16RHSAr7DQL4B9B5W1Z6lpvxJ1oxKeG7RoOELETaT8YiQ9_QQspRhkPdUtBSFU9rhTF4Gy0L8W6atYMnoR4vFeZy0ht92NtjS8z/s800/IMG_6179.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">L'Aglio gonfio d'acqua. Di solito è in secca.</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFtAS6yaPuqQmJJLTCsy-PZUdxMu-JNsPI7_8-6Zdz38YuFfSCghDYtIyUopcPBwYWxF85l0wmoDcZyQE74b2UVjYH4D-mC7oSPLzq7pZTn6qkLa4t2MZshf7CWuPC8_xig_DZ/s800/IMG_6182.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Saliamo verso Aglio</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiboQPVPHG3c_7HSq6Qce6drVm11Pfm-rN4FwBHgME1DnQQyKQRzerGYsN9-sanVOEgFpNA2XPqZ6TjkYq93E5Y_jX8zpWtqOk0vf3brb0p9J20BQ8vK7PfHmP3pdGV5Yd1-sXY/s800/IMG_6184.JPG" height="480" width="640" /></div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8OoI9WjBvUFJsI3iPwactSZjruP26cQ9ZZkckij8oixa-Ch11_FjHUxLvMRMc1kFQZslMk-FO20wWBsYnWHWOMel2k2lFoOPdksmnfCRoI9xIrXP4Ih50LMsHis4crYCI40gi/s800/IMG_6186.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">La salita si fa più dolce</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh76ouYJnF75AA7BkeIK3y3i-30lTcLXtR-yS8UWuooNK_6ICVq_o6RRg6-P2R-S1boMTWFXzoaT_llL1itczJw02LUDf_eEZD7-lwUa9c5v0rYupEleMucWqV13hGY3IIrAY1T/s800/IMG_6189.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Salire tra i fiori.</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9G44jtkUF4N7DzoNhBJerjLuE1zpVWahfNJrtdgupr3ax4rKrJ2QLEQm1_1xA0dyux-ovfLHPLT754JjaStVRc1W7NcXOrRUy6336W3VBRL_4-kEtbqYYRFQbWxzAEUrudUb4/s800/IMG_6190.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">La Valle dell'Aglio</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibKzXfyd27pELH6cHRnxnv9mtYZ9onGvj0TWjbX1Fpzi34kLdijSL0gPHKyAjXr1j02nRiCidY8ubwl4VWt9-ZnZi4HVxhBdXFA-jUg4gxGg7kItROAMGQ9ao6QD5Uatj7AC82/s800/IMG_6191.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Aglio? Una metropoli!</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjuRqlE4WCR9gHJ6IvoYFwtxdcJoKm900zh6kAG-XyDlgKFpxtRetvQuxj_DDF_Lmms9e2TZXo3Jhn0xkN0OcNteKav_o7zDkrg1S8pA6Z85IPMqt3jcn_0e3UkIOiG2GcocSnG/s800/IMG_6193.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Aglio</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhTJkq4LVZjch8Zut1TgMWfiRYYf9mWJgqG60K2OXjl6yDIMN5yUZJ4VvmpZcd8f7eQkL0vYmQ97Ka68i-0OkkpTT-D_pNT57fFpN8NTg4ZW-rGfB0V7vZ8zFC2ev-k3KA6-0AK/s800/IMG_6194.jpg" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">In Salita</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiTwiIpK_Fsx8Eefhs7mlXOVaOY089_kjmU2i53NPW_MuXHJYZKezINlmiUo0dT9v2JYugymjmS1lo8emPxqPnEV0bTZtEayzwVPMTPkr0-uDrJEJ1oZUNl5WwalLIqqrbnon3a/s800/IMG_6195.JPG" height="480" width="640" /></div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgB50TKbYFkQx_3m9l59Wo16PS15uOYb8-eJ0S73Kf4UsVb_66mD1M7yfJESNN8XXttavxvHBoBAxt7vmKfNyvJ-MRe8q3jK2klkpJvrLN_Or1TAgfUTltXaT3I4QkROWHRoPMA/s800/IMG_6196.jpg" height="640" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Torrente e melo in fiore</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOtWBbc0_TCxFs1JuR40vSZ97t7zh6dCKtoUWgVnruyz0SHrdsGHbD8kB6GPD9wirJD05rLm7XpQycFdNBGDruEm7JoyTKLj-Siy2xvh-3nLi_5kwNvcyt8Ne1Kr9U63AdsEyQ/s800/IMG_6197.jpg" height="480" width="640" /></div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjvSFeIJFODaXBNTJDL3kSho-CXA9gRXpP2Tt2Hozu0JEaghMP3avO9UmEWZQmPH8-4yOMi1HxuWh-Exng-Zb4pWe5bO3JR75zm2eRkzVJp6BHSlgBq0OPz8diZ6SsIwdbe7jcp/s800/IMG_6201.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Pradovera si avvicina</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEyOscuX5H3OIZo0RYktlrYLaym8oD_0DL9lCPFPm_KyyiwbbQPDrf8Lf-1Cpnief17c1id0FFRPW3Pjc_AoRk7a1Lsa0etoDbz2sprq0rU6bD43YgPTScDXS5Y8pmiSKgRrpU/s800/IMG_6202.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Salendo a Pradovera</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj59oPPX8hjlquAoa0tCrCPoNa6M7rXgNGZls5DJ7LugdOc02su3i9wtrmYzmeUL3_p-qRV1k4wSZomgmVOx7OQ0mC-lzBBA3Yj_yjnePZzYwWzeZS5-Ep0f6CdIAkxrzz_jzce/s800/IMG_6203.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Luce e colori</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4Vx9UBiUJCStDiAc-u9KSWVL9KofatdY9a4X7wztqFqFxlV6d7GkSLdeowNIYHVR_qTPzA8b91JXxzeE6jVxjGF8Euw3Xew8YqHg3Hl1dk1GxeAnDiIDryAT2NIMGCxl1tHVH/s800/IMG_6205.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Laggiù la corona delle Alpi</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiitG8dmQsp4DU-g5Qf5R10pkpno6Bn1fGIx6B-GRd5TIqVdFluJJDV5uDYnredxHsBUMeQV6pzmcB8dVv0N6LRYW-qqocqopvCOFyrEJeWVpAKtfrFMt6Dfehy1CQQNJu0q2A0/s800/IMG_6206.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Svizzera? No : Val Trebbia</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMUsY7NQZR_E_cwPVuhHWa2acP-ajEU_zEMWQxpbQnnUARC2CZRXLDv4Y7PUxS88Tko3o4k2dcPixG5I5cwnRdSFKVTTrQ5xlUILyMZURRHcQf3YgV3nqomlg2DvoaEotUJWxL/s800/IMG_6207.JPG" height="138" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Colori di primavera</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgzngHBwQ7KWEpEY8n92_9x2p4A-gk9nDMZNX6b6uir2U8SThgDkBr28Ws9UZs-0IdPsLvpzgnSj5aWjxtfEahmYGhvN_0YDGuXiCKo-CG-O9EU42yRDKMhEKQxpC9VepFC9gAj/s800/IMG_6210.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Il primo passo di giornata</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1a0rSn0B5soCRns5rJQeujloPtjMTsrLvvL5njqG2ww09pjwVNL9LKUMqIcX57kYfNgF65emVOIL_M4SUnWj8RRm3ZC39kLZUQ620-D-V4ZCAqARXHPbg1Li0xdJBzuajJL6Z/s800/IMG_6213.jpg" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Mitico Angelone</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj9rQbK9Z3lMh1o-oIA-sbb_ENhyphenhyphenDDlifJISmchj-58b1g4XlJmsJ_EUAaYS5v_YKDb2BjD4dHhtViSPVls_E0q1w3t1-IZHZRKZGb06Yf8u_w_FRx8E-khG96u6HUqB3cviCRX/s800/IMG_6215.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Andrea in spinta</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijY7cf_whZCqraaIKUVq5LDyIgism8ffsmO7k8V5s3Iofya1t04UOMN6c2DRRocIfwOtZHK1yaBRCBt7bXrrAYl1ZpwFwpgx6mbCB72fGhXVodNIaqYy8gH-cTWSwZAAOwMRdZ/s800/IMG_6217.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Saliamo, siamo già oltre 1000</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZnWzppJXfg5BUC4OfYtEEmM3cVKqfU-OgoNj2ve2YaWR9P_p_aCwik31jx2V20tAfuyoPw-H63Q4rDlYMXitKlkIWmlrM_jJFdD4Vazr5-yJtgOOLjLuN6vftkQOCT7VqzN_2/s800/IMG_6220.JPG" height="640" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Si apre il panorama verso la Sella</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhjMh6ONrl_XydmfLyL7TPQjLmL91r6Hm3PuJSbi1ZMc2uth5k-1wMqbAFB0NIckxxR1a91wXE3nyqg3w3Vun4dN2RzYuy5wqq-ukA4dfHQcjKdvwEg38Ko4nUIDpmvOgMN7X88/s800/IMG_6221.JPG" height="640" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Ultimi strappi prima della Sella</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjuXAUOhDjl6CBb8EGN5ZePfba0wBu42RjKqHR2Wedu_vzECMg1Lp5Eb-dSSpXLRfAuwAB5o7swlMtFmYHFnH3Q13uj-bQSFMAQDe51l527xjogyzuyWcA8q2rzMW5TloGArAeb/s800/IMG_6223.JPG" height="640" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Paesaggio alpino</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWNrTG-k2BizmF_nv3SDOc31-g3lczH-PP1EFp88ZgCl7QhrjejX1Hhua08lt70kXSaD-rJ65bVTYFFSClfXnZ2vv314UiZt_cUuQmzuJjexw41WTPYa2BbfbUPkoi_H8x_DBF/s800/IMG_6224.JPG" height="640" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Riflessi alla Sella&nbsp;</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEBCkKdoZc_o0TEWBBsB3k6NL1ZBY34cDlRH7duBXjKbZ1dQcywUXgNAcydIo66iJWomMWzztnZ2K2kMkPnUxCff6t5kcttuur-wATcm61keMOuWeO8AXkX7RhsJCE0n7F0U9c/s800/IMG_6226.jpg" height="640" width="640" /></div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjt82wZ_5b4nLm6xmzvkPvomQQWsTTIykkOTRzbAvUyesWkrCeR0F4rWYjk6vIFD2kYHCbt2PhhJ0u6CnCwEMLCyE8tocT0i55I9esBtjad-_qvhri7uKsKjWhM3lfotDDwVB80/s800/IMG_6229.jpg" height="640" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Verso la Val Trebbia</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEioVBOCnQs_U1G_NRL7xiR1IZvDqtU9V-Yb1Fe82JbOZmO6qk7_Sk9wTjBHQ28eqHWBZ4IWhE6VGPJPzeoY_BTqLJoqCQAbJSSVAEIFKRNvp2J3f_RrHBkBW0Jg59nWJ8iEjobp/s800/IMG_6230.JPG" height="640" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Val Trebbia in basso</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-2_0hw26A56Wq7oqJIHwaAF7o7yF8-JzcrL4ZNGNH88VKcSJTeBHZuGofsPnj0UerHzVcC4SMwfccQMAMcTtM78jWzVzfxSrCyhuAjinjS0mfGt0A_Zlugngt8M9D3VN5x-3a/s800/IMG_6232.JPG" height="640" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Peli : la chiesa di San Medardo</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiyomDyNWeAgWMJdfN0Ko3uu3nyxSkenQ4pgJWGeflKHZ7ykmy-CgeyRjqpB1T0VdgpA4_N6BeaFo_kMUrEs59dMxPVdT7ItuESicQgujzTHxj05YJF0JnYdN8WHBMz1sjSvXMq/s800/IMG_6234.JPG" height="640" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Il Trebbia gonfio d'acqua</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3hcI-l_8WukWICoZXm6f3Yp9gcBGyRLVQqnxiCkDls1awr0UiAyEmu-IzZpYSfOrNrvVmh18z4LAzQkDJUYIYG1CCb6Go-HVYnKawZdtZ3YhFPpkVQGyZmtWUojy9qCoAmXrl/s800/IMG_6239.JPG" height="640" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Coli, sopra Bobbio</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEOrdZgA6e40B1Vgbhw22hoXqL1xPT1CtPZ8LCPFzxo9KIGFvwlkZ2msaa6TecE2Sx0dP30Mn1Euz9EH0FsUcGhnjfZfuG5xj3HzD0BToWk5wbtoYOCCjeNu1LXI_MmG0l9Wo7/s800/IMG_6241.JPG" height="640" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Salendo in souplesse verso Lagobisione</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPy6T3OymOdnT7Kg7_vNeBqVFjBG1Nns7i45bHnPO8lWWg4e7V4wyxtOI0nkBQHkDVSF2VnPfK_oVsBIjc4ssTw97bb0L_Rnwrsu3TjuWnolgL_UvfjRhEYqsx28YHXIi_W8E/s800/IMG_6243.jpg" height="640" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">L'attacco della feroce arrampicata verso la strada di Filippazzi : 20%! (per la cronaca 100m di dislivello in 500m)</td></tr>
+</tbody></table>
+<br />
+<div>
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEglrkB4YZL6TvFv3CXFkeYel0Y_zBhEbsr6nn77imr59LPW1ZylweWIdTgQyA3yoEvEJmoWk5wiXzw7t-4HlYJRGVmglc5fpiIORFeTcju4I5IeGd3fY_UCt6Be4h5tn3BaOadL/s800/Generai+2.png" height="542" width="640" /></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgfo5KPaOEB92MZ8Jq0UkLH9bmmIwbR8R-KShBtf-_FDmyYq1OiUNqFedlhbuOu1LmkdfvZvYco6hITelyEFTo-W4khx9wajnfdvW6xp1h8QdgGoqCJLZsmIaEwsCsarmuLLxMT/s800/Generali.png" height="304" width="640" /></div>
+<br /></div>
+
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20140503_170.html">La bassa l'e' sempre la bassa..</a>
+    <a class="next" href="20140506_172.html">Giro mattutino intermodale : bici-treno</a>
+  </div>
+</div>
+
+</body>
+</html>

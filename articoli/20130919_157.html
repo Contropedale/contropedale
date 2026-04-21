@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Foschia mattutina e appuntamenti – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2013 &rsaquo; 19 settembre 2013
+  </p>
+  <h1 class="article-title">Foschia mattutina e appuntamenti</h1>
+  <p class="article-meta">19 settembre 2013</p>
+  <div class="article-body">
+    <table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQ-flHi_PLU4tbZFLd-x1zgDTbMZQuKtHrPAxeAeIypHCKQSneeFD06xxOyhq7T77meaULc63hXcSlTatDsGW9iM9Ygl2WLDvfh38juVq0znpy7lg0jC-7SXbtW726c5o9W10G/s800/IMG_4713.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Pesca nella DArsena</td></tr>
+</tbody></table>
+&nbsp;Una delle ultime uscite antelucane del 2013.Partiamo in 3 da San Cristoforo : &nbsp;mancan 10 minuti alle sette.<br />
+<br />
+Prima non si puo' : anche adesso è ancora buio. Arriviamo a Gaggiano che il sole spunta a malapena.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi89foGsibXGrTUTC-SeUFnN9W60qKX863c9fTqPqgGf0K0aoJazelG-t11wTtb_pxBErDEmsl2ldIsG-R2AhZ8807B3s0kaPI6NvTh7fWLijwo8ZQj0-kW45ttxDYqNO_PTTdO/s800/IMG_4717.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Verso Abbiategrasso</td></tr>
+</tbody></table>
+&nbsp;Da Gaggiano ad Abbiategrasso abbiamo il primo vero assaggio di autunno : la foschia si alza dai campi e dal Naviglio.<br />
+<br />
+Dato che la compagnia è di tutto rispetto (AleLokomotiv e IronEnriquez) opto per una strategia sperimentata : mi incarico di controllare che i ruotismi dei cambi dei due compari funzionino a dovere. Ovvio che questo compito va svolto stando dietro di loro.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAF5oBtdmZ3N6dh1vD8J4AIN1Bz-0gVO3ABSSSCq4tSeaFEmb-ThQ6vrQerghjfQoqTiP8SwXwe_IACel9PH8d_jIPsFWdAkiA1nm7Ywn7A7MTXJvFgtmcqLFq6UQyiTpfjQzD/s800/IMG_4719.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">IronEnriquez&nbsp;</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivaQCYgbbyRGS59o2v4t2ENzlXdO_7H0UzACX_xTgvRcL4p7zIdOfXeqLprh_j_3_48Cqxa9Zmy5RgXJNjETdm1XMZ_EAF5blycjqkBIMAhAGF-u5f9DeC8-HfmQPajfoFDiXj/s800/IMG_4720.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Panorami da bassa padana</td></tr>
+</tbody></table>
+&nbsp;I due chiacchierano amabilmente. Io , da dietro, sento tutto ma per intervenire devo gridare. Mica è elegante gridare in bici. Ecco : un altro buon motivo per star dietro bello tranquillo risparmiando il fiato.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7ymIZ_y2GzgadtiEWvFBDbPJO8M0aPSgyP5BnwVYHQfSdasXv4wGvpqQ9PdPMCLEF3pBPSS0l2avmN3uv5oyBl84T04htshfLUsI68je5QFw9pNQleN3KEEckteGrXXB-lX0p/s800/IMG_4721.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Panorami da bassa padana 2</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjv2KEZzOt7pYu5H8xx71izGbmDD_YEw7zdHDToyNJ7e63QZFTuXD1kexjcMVcXneW4uWf0DfYi87InN_7e6442qP1B56N9N8MbIQPpOBWViDqWb6vwGdiGXTIbmsM6gfjaqNSL/s800/IMG_4722.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Ale a Robecco : che si fa? si torna? ORARIO?</td></tr>
+</tbody></table>
+&nbsp;Enrico ha commesso un tragico errore (perlomeno ai miei occhi) : ha detto ad Ale che doveva essere di ritorno a San Cristoforo entro le 830.<br />
+Ale è un amico, è una bravissima persona, è uno che prende gli impegni molto sul serio, è uno che di solito arriva in anticipo agli appuntamenti &nbsp;ed è uno che molto volentieri aiuta gli amici.<br />
+<br />
+Così quando a Robecco ci invita al dietro-front e chiede l'ora ad Enrico comincio a capire che butta male : "dai ragazzi che allora saremo a San Cristoforo entro le 830".Ecco là.<br />
+<br />
+Si mette davanti, si ingobbisce un pochino &nbsp;e comincia a tirare a 36/38.<br />
+<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjOEfhax3548OUApJWvuMMcTXkwpjjErPu6_GqGvcVyVBlLhhurFpfkB8Ybqa2O7mXfZh3GGuhveWA9DwYlojs8oDImC0qpKbzgc3MV8f-NUeEHko1jdIadn_4Kb7ejZGTQWhoe/s800/IMG_4724.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Robecco</td></tr>
+</tbody></table>
+<br />
+Che poi anche 'sta storia degli appuntamenti la mattina con rientro obbligato, insomma ci puo' essere un po' di elasticità no? Non per Ale che giustamente intende rispettare gli orari previsti.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjarGSjBGA_vVAN8-mvXDwtYJwWCV7YrU7G0F3mrY4uTGrKpkVIjiCgwAGAxdU6g1I25l2C0soOK-vkhMvcE7yrMx4chWN0ix-ONGXIPBuHN7ULpTC-Cpok9Rx3J_KFSZ98l-oo/s800/IMG_4725.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Ale con la Assos della mitica "cassanata" pronto per il ritorno "in orario"</td></tr>
+</tbody></table>
+Il rettilineone da Abbiategrasso a Gaggiano è macinato a 38; breve pausa per attraversare Gaggiano e poi giu' la testa e di nuovo a manetta.<br />
+Mi pare che anche lo stesso Enrico si sia un pochino pentito di avere condiviso il suo impegno. Io mi limito a restare faticosamente agganciato alla ruota del nostro.<br />
+<br />
+Alla fine siamo a San Cristoforo alle 820 : Ale tutto allegro fa &nbsp;"ecco visto? siamo anche in anticipo!". Non ho fiato per rispondergli : adesso mi servirà tutta la giornata per recuperare.<br />
+<br />
+<br />
+<br />
+<br />
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20130908_156.html">Prima pioggia in Val Trebbia</a>
+    <a class="next" href="20130922_158.html">Vendemmia in Oltrepo, ovvero l'apoteosi del succhi</a>
+  </div>
+</div>
+
+</body>
+</html>

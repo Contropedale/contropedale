@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dalla Versilia al Bleggio – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2013 &rsaquo; 21 agosto 2013
+  </p>
+  <h1 class="article-title">Dalla Versilia al Bleggio</h1>
+  <p class="article-meta">21 agosto 2013</p>
+  <div class="article-body">
+    <div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQ1twtaLJjsqzpXvjuySdcayph13oDy3wKeM_PCSzd5yd3HihsbSB2P8o5n2VpToGEr0bZQlqIXGao6IiqRFoZ__LG1RfIy1uytYDdOqQq57_HgXYPaBgo1oPsEa4bKWmnj_pz/s800/blogger-image-1485650683.jpg"></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">Un lungo weekend in Versilia va sfruttato. Ciclisticamente parlando, si intende. Due uscite, quindi, entrambe accomunate dalla prima parte della salita del Cipollaio.&nbsp;</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZM5tvAd5wbjclkW0XzRe84tH19ZlAGk9TTvTaFatsx4ZZrb6gwkPKSKj6OL_ufqIdPJvH_QIB687DCtrmlq7Md2LixsVrz00m6wx_3fMMcIuEL7aq6YlSVDu8u2ejerxoHDyX/s800/blogger-image-170232445.jpg"></div><div class="separator" style="clear: both;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Salendo verso il Cipollaio</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">La prima pedalata mi porta con Alberto oltre il Cipollaio in Garfagnana. Dopo la galleria si scende gradualmente verso Castelnuovo ma a metà si prende a sinistra la ripida salita verso Careggine.</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRcbGsUz_Fod04IlAB_SWURPBO1JW_3o4W2lLe4gqwEmBzuvR7If4d-1Tzu_NX572u-5OcxQvbf5ne158HXf54x-G2u31EOgaIBfgycn7sY-yFmJ1F04gxFZx-GMgo7TqTeky-/s800/blogger-image--1983317293.jpg"></div><div class="separator" style="clear: both;">&nbsp; La vista da capanne di Careggine</div></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">Saliamo all'ombra e raggiunto il paesino di Capanne giriamo le bici e puntiamo nuovamente verso il mare. C'è giusto il tempo di un breve stop prima di Arni nel paesaggio lunare delle cave.</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjqBj0FhU9hpjeSffws2Ng4dn18jielBpjmUoFNcRW2Syjq_D0GlUnoI9-0RNmtvYPNlvYTRNQISdmcc_yptuLAXTOLi-AiFzRev2AKVvNrGDCoXRet1vZ3Lda_ldzQnbu9o3Gg/s800/blogger-image-1879578394.jpg">&nbsp;<div class="separator" style="clear: both;">Le cave presso Arni.</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">Rientriamo in Versilia dopo una settantina di km con poco più di 1000 m di dislivello.</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">Il giorno dopo sono di nuovo lungo la salita verso il Cipollaio, stavolta con Silvio. All'inizio della salita ci affianca un tipo bello tonico e tirato che ci propone di salire con lui al Passo Croce. Una salita che non ho mai fatto e che quindi mi incuriosisce.&nbsp;</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9h2UM_mSGav_BGUyuiEd9K0tD9aaEDANkPFpTIHWahi2psteUKsK08WtxwZq6I-HR5Eh8L80V0uVQ43VxHkMu3EJySrlH7e0Cm3pLWPN_XVKb2au7d4XpLHu62h2OVXgcAHxj/s800/blogger-image-1642536605.jpg"></div><div class="separator" style="clear: both;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; La salita verso il passo Croce. 10% anche se non sembra.</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">A 600m di quota prendiamo una strada che si stacca dalla principale e che si arrampica con pendenze ben più impegnative del facile cipollaio. Da qui sono infatti circa 550m di dislivello in 6km. Un bel test!</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfRWmBYZR3WhPqbJSqbbPMIwgEU-yZpDX7BbJMKKCUb6sp7VAuJNpEsqW3iQi61DscwxHxuzWjJB5aNK52CK0micMKgxlMf5Wgu1j5AphAlW3a35R7rr0F9JwaLMn8zEP_JbNf/s800/blogger-image--2019676670.jpg"></div><div class="separator" style="clear: both;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Dal passo verso le Apuane</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8C54TmLH5yDnvWoZm4q5GukJ4pLaCI8AET38P4Q5SNesuWpQtbtjV2lIYLG4eMPTbPubzpsdyHHUOygp1_dJBmcCfvrE7ujbh5_nrkFmZ25uOIVllxIdVI0h_tRsC3MPz9wXm/s800/blogger-image-1483901366.jpg"></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhAc_VpffpMIEdTOI3eanZAQonOa6uZFANFZtmJn_QZU71VYA4kUnummECi-hFGCz2yfMs-5Mx-fvmN4MnJG4HCurc4-dWyo0EfEAwy2ovmukSVYFjpJpivhPrcZnvkdPJ2uLNE/s800/blogger-image-279765106.jpg"></div><div class="separator" style="clear: both;">&nbsp; &nbsp;In posa al passo Croce</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">La salita è dura ma regolare e l'arrivo al passo regala panorami spettacolari sull'anfiteatro delle Apuane.</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-szLh-tDo5CSIuumgnCEG5NJdAnoQ0N_Y5289da5s1_yY70LZ4XtZOEOUtnKSPr1mZ1zJ167tqHVzYiYuuPa1nY7O1gS-51icdhKIQjmRJ12PgUl4Us7D7Fe60MEKvw4VasJ9/s800/blogger-image--12941669.jpg"></div><div class="separator" style="clear: both;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Dal passo</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">Torniamo in Versilia continua carniere 62km e circa 1200m di salita.</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">Ma non c'è solo il weekend toscano. Dopo un paio di giorni sto infatti pedalando lungo la strada che porta al lago di Tenno partendo da Riva del garda.</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEglT1_Kc_UOJiyDpt0FTj1niqV4vFTQcFGxlDNX0y5SUNJtNw6W92XaHssvVzA9UTZQZZtpL9kcGEdv6t0MPlE1Ork4sa5p3MMgcuAmUl2QkEsdZJoCoASIiSqoUVVXTAZ2nLbx/s800/blogger-image-1000736464.jpg"></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">Questo è davvero il paradiso del ciclista. Strade poco trafficate, salite per ogni esigenza, asfalto perfetto come un biliardo.</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">Pesnavo di fermarmi all'altezza del lago di Tenno dopo una ascesa graduale di circa 600m.</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbtMC8dFmvNg05wMbLpTiuv42bNCJXdXngaVIDfp8tWDP8b_FvKLeTzxXG5iEdtcB0OCTSGSCccbCO-vZBzqxSYJ3m63ujAdApquhyphenhyphenAsds3HlIH0jmqEGyQrzchVEgXhGXA4vf/s800/blogger-image-2081975768.jpg"></div><div class="separator" style="clear: both;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Il lago di Tenno</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">Ma poi, una volta qui come si fa &nbsp;a non spingerai fino al passo Ballino? Sono pochi km in mezzo al bosco salendo verso la valle di Fiavè.</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhsSJORpyaWrEKXmL01mmimuDvzEXVS8OGw3fAXiOx4X5QE5GrsIdfP5AR09LCSg68FBEhQhxU0Rqa6A6zW_xnBNu3A1d1Zaf73Vh8CY6JJENUXyO3evr7KbGFD4mJ3RFY8PwMm/s800/blogger-image--1123170657.jpg"></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">Da qui si può rientrare , in fondo un po' di salita è fatta. Ma la gamba c'è e da qui arrivare al Passo Durone è quasi obbligatorio. Prima si plana in val di Fiavè e da qui inizia la breve salita verso il Passo.Pedalo nella zona del Bleggio, tra paesini ordinati e pulitissimi e boschi di noci e castagni.</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJsBKAVrFzGamFMCPGCEiC14VWD7moZzjtU9yNnD7KZyJpeAQ_uz9m1WrWzoLgrBQVgRw_ICBc-A3McYLoplS1Ijmb8eICpQtdUpEwDSl3N3ehc0S04Q3Jah20yT-iJRHo9rQ5/s800/blogger-image-304365975.jpg"></div><div class="separator" style="clear: both;">&nbsp; &nbsp; &nbsp; &nbsp;Dal passo Ballino verso Fiavè&nbsp;</div><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJLX0p7wzQ7RkMVrQOVQsr9yceiObCklldq4yxY2dUtWJieseCMVmR4YN_ln1zNUxCUK3fR7o8x5USbx5CqQKfxNkWWLvv5sAkeDXMRtd4FdsXchazpJgWWzIP_kNQh9cU0kYr/s800/blogger-image-1278945890.jpg"></div><div class="separator" style="clear: both;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Altimetria della salita</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">La salita al passo Durone è una delle più divertenti della zona. Si sale con gradualità ma decisione : l'aria è fresca e a poco a poco la quota apre il panorama sull'altopiano di Fiavè.</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZP1ZxZzN7flFt8yXKooiVwZAtt4RywS-A2-MojBhCRjRORK12YEe3Gw6Fuko4-aw-7U6oyDCzfpf1nvMz7BPe6JTZOv6MteCdDnw9c-k8KOkwBx-raWgtueVymOml1uUT0mW6/s800/blogger-image--997593388.jpg"></div><div class="separator" style="clear: both;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Il Passo Durone da Fiavè&nbsp;</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLU8aFQJEULbJxrcGOIfZJk-CWgpWXX2p0la9AftTpBSb6e1yx7w15WH5beGm8YYMIRvp5197CmfhTfP-r-yUmWVchs0Z8-OANgVcKcEyaqV72XRQk0YYN0BuAlw9eWAqYh-AP/s800/blogger-image--1618190949.jpg"></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSFJem7N4i8dVt-qVVCUCqKlt58pU5XnqjMRkFvlAot80bJ0af5B4Axl85aoqui5D0x1W7ujSpaSd4wQx335KmI6OCVU7fIil7gXv4fb8fPfJQuTDP2agu8ulw0tnzHHmeYnIO/s800/blogger-image--1844978328.jpg"></div><div class="separator" style="clear: both;">&nbsp; &nbsp; &nbsp;Scendendo dal passo.</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgX-DaSRpGuRxCI6Y5K5GGDim2CWSCs_vAKy4LzvNEZLcBE3zarGhJYROI3emdp4lGMMJJCho_TjjRMftarI2cYhf7gh_193c8W16JJoqJCNicFWg01_Ge5n-hhCk5RsIx72iDH/s800/blogger-image-20089440.jpg"></div><div class="separator" style="clear: both;">&nbsp; &nbsp; &nbsp; &nbsp;Riva del Garda&nbsp;</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;">La discesa è una vera goduria. C'è solo un breve pezzetto di risalita verso il passo Ballino, ma, a parte questo piccolo dente arcigno, è una planata di 20 km verso il lago.</div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><div class="separator" style="clear: both;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi4O-wnBtj_4SI6DhbMKvNdcs5NmA5PhZ-xbMmghS0Lotg9m4DLwGSXDzYzOFe_FemFKVAsNefMvtwkiozswIUz2yXT-xDD5IisYdJsioTJfHvBIswo0xV8Npo5dg-LFtogVNH_/s800/blogger-image--1420242331.jpg"></div><div class="separator" style="clear: both;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Tenno&nbsp;</div><div class="separator" style="clear: both;">Chiudo la splendida uscita nel paradiso del ciclista dopo circa 52km e 1300m di dislivello.</div><div class="separator" style="clear: both;"><br></div></div></div></div></div></div><div class="separator" style="clear: both;">La descrizione del giro :&nbsp;<span style="font-family: Helvetica; font-size: medium; -webkit-tap-highlight-color: rgba(26, 26, 26, 0.292969); -webkit-composition-fill-color: rgba(175, 192, 227, 0.230469); -webkit-composition-frame-color: rgba(77, 128, 180, 0.230469); -webkit-text-size-adjust: auto; ">http://www.strava.com/activities/76154079%23</span></div><div class="separator" style="clear: both;"><span style="font-family: Helvetica; font-size: medium; -webkit-tap-highlight-color: rgba(26, 26, 26, 0.292969); -webkit-composition-fill-color: rgba(175, 192, 227, 0.230469); -webkit-composition-frame-color: rgba(77, 128, 180, 0.230469); -webkit-text-size-adjust: auto; "><br></span></div><div class="separator" style="clear: both;"><br></div><br></div></div><br></div><div class="separator" style="clear: both;"><br></div><br></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><br></div><div class="separator" style="clear: both;"><br></div><br></div><br></div><br></div><br></div><br></div><br></div><br></div></div><br></div><br></div>
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20130812_149.html">Campo Cecina</a>
+    <a class="next" href="20130828_151.html">34x28 fisso : la salita ai Prati di Nago</a>
+  </div>
+</div>
+
+</body>
+</html>

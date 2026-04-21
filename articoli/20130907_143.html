@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La Crocetta ci crocifigge. – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2013 &rsaquo; 7 settembre 2013
+  </p>
+  <h1 class="article-title">La Crocetta ci crocifigge.</h1>
+  <p class="article-meta">7 settembre 2013</p>
+  <div class="article-body">
+    <div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjc5LaPuzojuUCJOx22O-fnBOg056HV_eMObP42vcWZqNx7JfwIAjN5YFoAeRrZ-IPKeWwWtRGUcKQajobFo3PvcN-ZLFvtCEXNwx_T_ekXFclPF2r5ivESovybeVOj-rW6qPvb/s800/Schermata+2013-09-07+alle+18.26.56.png" height="478" width="640" /></div>
+<br />
+Dopo annieannieannieanni mi ritrovo al parcheggio di Travo per una pedalata in Val Trebbia.<br />
+Formazione d'assalto : Nicoletta, Andrea, Giorgio, Giovanni ed io.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisRErfaj4GBn6g5-BSxL31JE1AznOxJfuRyMuwfH0a5MFsC5YG5BhNn0FL-4XmMnT9EySPZp4hvHOxwcTvSIqooH3MzhcVE03FR-MnUYl-yrHvTjgQCzfTzwI3wb3YyhFBtNv8/s800/IMG_4576.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Andrea e davanti Giorgio sui saliscendi verso Perino</td></tr>
+</tbody></table>
+<br />
+<br />
+<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIycc-Lrh4hnq_TKl1bRx-oCipMURu0VUuz0ZPX6ReKeh1hXnreiYTmgVio4DBR0Q4jRsLD0YevyEYgYWbQyzQu334A0kqfF8pJWrD5JWY7aYLFSKnfk8HB99L5p-tb6KK2vAj/s800/IMG_4577.JPG" height="480" width="640" /></div>
+<br />
+<br />
+Programma di giornata : "Franco, vogliamo farti vedere una nuova salita che ha scovato Andrea...vedrai che bella!"&nbsp;Ci sarebbe da preoccuparsi, ma sono fra amici, quindi.....mi devo preoccupare.Avvicinamento lungo i saliscendi verso Perino e Mezzano Scotti, che già da soli bastano a dare una bella ripassatina alla gamba.<br />
+<br />
+&nbsp;<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhpiWpcYRAibX1P_eV88kwTeUbONbgB4qZnw90qZSAMw9oqx75b7Qnoh5Kun6BTWtxAeL0XyrPbV2_d7gMWEOKSvU1zFGLhDMLpa_OHB83F1wo0j_1sfrP_9ywhJDVXPMdU7EXg/s800/IMG_4579.jpg" height="640" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Autoscatto con aureola : prima della via Crucis di Crocetta</td></tr>
+</tbody></table>
+<br />
+Poi da Mezzano Scotti &nbsp;si prende a sinistra e le pendenze iniziano a farsi impegnative.<br />
+Si sale in mezzo ai campi, ogni tanto qualche albero copre il sole che sta cominciando a farsi sentire.<br />
+<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8OT63UXVY_XtFyw5LaRZK2QtVCI82N6zFIbj5IBCZfNXHaWcxtEhtB4PIi4BKzuvpVcgdbdgQZunyjzP4HI4Gn8TqD0oSKUh29baj_a8786zSfGdlh873C3IikbdFoF63B_aT/s800/IMG_4582.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Nicoletta</td></tr>
+</tbody></table>
+<br />
+Vabbe', salita duretta (saremo sul 7/8%) ma non impossibile, dico fra me e me.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1sTR4Ouu78Lx1d_Ndu9dyDmZS8w7WvJEhQIXVOVI50b6Gu2crrnIc5qIlX05oH23B-mz4YcIUlXjvVK6HFxsURd6y_YETCsuKpMjcbQu0oCH0XsYgSqkkYHSK7JKKjFzTvj0s/s800/IMG_4583.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Giovanni</td></tr>
+</tbody></table>
+<br />
+Poi, proprio mentre mi sto quasi tranquillizzando Giorgio mi fa : "ecco, quello lì è il tornante di cui ti parlavo...". Davanti a me un tornante a sinistra che minacciosamente scompare dietro un cespuglio di more.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4Vs1yOS2v6TGxaMoafgS6o67l4n8b35wzUgVeq7ZTsUzKU6KWdi-jAZo_tPA6fV89352Iz6Rzm9QjIuG9mggmMNrTswPzIoOJMiAFK3CKI_5Uf-9cvOAAmoYFDyWd9FUdF4KW/s800/IMG_4584.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Giovanni e Nicoletta all'assalto della Via Crucettis</td></tr>
+</tbody></table>
+<br />
+Dietro il cespuglio "PAM!" la strada si impenna ripidissima. Siamo ben oltre il 12%, forse più vicini al 15%. Si procede così a strappi per 4km, una vera via crucis.<br />
+<br />
+&nbsp;D'altro canto si chiama Crocetta? E quindi....Salgo regolare (si fa per dire) ma sbanfo come un mantice. Tengo sotto controllo i battiti : nel senso che cerco di evitare che superino il limite finale di scala del Garmin..<br />
+<br />
+Unica consolazione : è dura per tutti. Sudore e fatica : il bello della bici, no?Poi arriva un tratto in mezzo al bosco e insieme all'ombra arriva anche una spianata : il tratto durissimo è finito e si scende per incrociare la strada che da Bobbio sale al PAsso Penice.<br />
+<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVKqhUwiKAAAXOLzLeai_sWGCl5n_jy0pWpEkL0bLg7ph2A74odooJ5MMLLCEz_aMk3XqBGYOBmOTrv6koyBuv8u3J1ZyoJmaqCLZ-tynMIN686WTJo9aBwLbjn_YZYHlG_V4c/s800/IMG_4586.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Sosta acqua dopo la micidiale Crocetta.</td></tr>
+</tbody></table>
+<br />
+<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiTyzs5APTXGYdZciZ7nmntjkdCnXc4Gl03rCwYKhvPs-T6c4reLSuwDmb9MSOPvjn1R16HrIx5UPysokauun46g77CHb9xmr2sGoBtOUy4ue1XF3WiF_YY2uMfOe_eTjLnx4vJ/s800/IMG_4588.JPG" height="480" width="640" /></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNJNoWxa1gOnMRpUicylSuCte4j_r72IHPH5mwWKIF0Wemy5yUGNQxqkrPgsiphAdoDFFh-czEEdtyMfyfyyYYM3yv7y6wdF5jm9WvsO7KY01LwtqPrit34JKMndMLmAq_tHz5/s800/IMG_4590.JPG" height="480" width="640" /></div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiEHFp-b9i2i3ThekGxCkuLkV3bwScSW1Gs2wZ81JHcjBX_MA_7xULTroMhtJgq6ZF7D43ZuEJaivOs7Y5Sew2Z8lKjfqeaUkw8gDE-6rRJd-qQbkaBDz0LWWVmFDXso7q8e2m/s800/IMG_4593.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Scendendo verso la strada Bobbio-Penice</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWKMgioBlhwPW7TC40uP1C5a6metlHZSU8abi-aT2uTNZ-22D9eloOOxRtz7g81vvzH2JoeOz3ThUfGDj3xHqQk8vhpbUrC_HpdmEOyH1MrJV3ksXAdKzYPl2jLjFSK-LxRV_e/s800/IMG_4594.JPG" height="480" width="640" /></div>
+<br />
+&nbsp;Siamo a poco meno di 5km dal Passo del Penice. Nulla di trascendentale, ma con la Via Crucettis nelle gambe bè, è davvero dura. Qui la pendenza è meno aspra, ma le gambe sono appesantite e vedo come una liberazione i segni di -500,-400,-300,-200,-100, Passo Penice!<br />
+<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcfAdS5rtET52ogRHDLTGp3XKIi_w4WgGq77NuJsTN80m2dNaZAbulRvJaN7CoRwQxJyE-zbt6NuKgPawn_EUYrZDxIp1p9l6XCZhRYAx2vnGzzxSDJiJNG93mI2Ad4CVO3euj/s800/IMG_4597.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Giorgio al Passo Penice : splendidamente riposato</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUzZXUqhvXTrol1yGuK3EXmKJ5jm8xQl2cdAlHHakZxJ_GJdZZaFRLnKl5-ID1HxW4hxdptxXaMg8tXW4_ujKoZAc0HbRpPqrxpIHXmhZ9JJxqmFFAwEzJ6qkI09kjF1pupyHE/s800/IMG_4602.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Andrea al Passo : sempre sciolto</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbSuCB0tdSbgRj-Sf-IsxzshAy9dWln6BwscpQ91SCh90Ame6U4rOS4goJDGAo_WaULqaHWIc_huM4bnjsQqKQ5rIQiZG-77RmXW6Bq5ZOZEyIScPyVjHv5sa1xu1GtOUBBIkh/s800/IMG_4606.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Nicoletta al Passo : sempre sorridente</td></tr>
+</tbody></table>
+<br />
+Da quassù il panorama sulla Val Tidone è sempre bello. Tra l'altro notiamo con piacere che lo skilift del Passo annuncia che sarà aperto anche di notte in questa stagione. Davos Sankt Moritz e Veil tremano di fronte a questo futuro concorrente.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqJXbihNA7-iU1NhVT0rTDPsv0imqBhctd7Xokgesuv9KYWUZf8Uvjr4DqGSQ2Kvq5_7Dlj33K2ibFAT6ojHXL42lnIM2qjq3aR11cYDwux-9D_zj8esGCLNYCmOqFDPSID3sa/s800/IMG_4607.jpg" height="640" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Giorgio perplesso : "che ci faccio io qui?"</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhtNu96qQKn_Som4PzDJKnTjavm8gYWCdG94Bd-Vhx2n8nPxvYv09ogzbg22C3z_KucZlxnGLmS7j8MSwAGV0r8mssOeAjc4YZPAgLjTIpBtErvs8dODM-yUaGFuhIKbPon-VEd/s800/IMG_4608.jpg" height="640" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Andrea sfodera viveri e generi di conforto</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhtYPGgZItzIMht5-ORs5smEFBEfikQfCHGsEc34wnUYxgpZVQ6wcFOc_Y1GfsADsJRjC8qYfCQBfblferErQI2PF9AETg804QldB9WIif3o8ZrBgMzEAsLFkaJBe8E2DCHL6p5/s800/IMG_4609.JPG" height="480" width="640" /></div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjL7D1Ua3-i3PiNhw1vfB646UTlj6BZ__pL_m6gg1YyNhLnsAQRdH4nN6BwpIs5fg_jhwtdarBnG_0X6roE8hRLleK-HIssUPQ3uNoxfJZMSCMHCAqi7tD_O3LFC6dIVH_B7Bnr/s800/IMG_4610+2.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">L'impianto aperto anche in notturna e la Val Tidone</td></tr>
+</tbody></table>
+<br />
+La discesa dal Passo è una goduria : strada larga e asfalto complessivamente buono. Bisogna solo fare attenzione alle moto per evitare di finire spiaccicati sul casco di qualche sedicenteValentino.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-V0IuFb7Udf23eyQTb-8unWl7TsF19BmkH1W1HbaX2qxpmZPgadbzNtyI2pWMJvyCS4tFcdDHuwefTgnhkOnd6x-SvQ0N-EhaT-wf8WRBVSa4H9Z0t9f3sqfl5zaNqbPEiDyo/s800/IMG_4613.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Andrea</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhAstr91mdbDZA6Pgfda8y_wJ4UuvIklsXCJQQv5QOiL9ffNK9DaBHtsYYblQgdIdxbTw4_2CQiivK0onqebFtx1UFFbaMbL8EYU6hoy5Q5NBStqXj3_IV6ui4gUoZaTbskq76m/s800/IMG_4614.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Val Trebbia</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEha1enFsdliKfaBYPBaXZXo5OzRi-7bFKlqgFuA9zON9aSI5bN7l1A8h-e_7KokWFFVWnmcj4CHIAuvdhghGd3mitg3Amu5krZAPvdvCuWCQnoa-c9ZFq3GOb8kNmGDnI5rnBiz/s800/IMG_4617.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Nicoletta</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTKBxsjNVpNKe-eUGvbq5bOdGiLOJ4Y1RCLVy2vAQYlvk4GqXJREWDg_bWniwuQX9LSvxwitJig8PcMMfv4qbAKm753G3gb-Hz3uydL5E8Pj-fegaNC5O9etw5HVjDbQ6UI9sr/s800/IMG_4618.JPG" height="480" width="640" /></div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjbYojGfqoHxCzuW4h4O-PD5VVMWI81dZu6HLzE2R1gJ114uIHVXvn9WGtsmRpAfXl7EDOw-2f6Qcm8Vz9nVnTo2zbRnf_XfzEz7Yo0mcqj4tiJh2HvK8LF9rcOXysCzy4-5l_/s800/IMG_4624.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Giorgio</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRITrmSBGGnk7gvtHCxdDEGTTip_962txlNJ1ugkk9y3c3YnYq_-ldXAnxXRwpmMRw2VN0Rz8NrjTUoK9fWudWx9cLmqsdwHmkQyIoblP2aJzvpH3azCDg4u6qb3z70SxFNdTe/s800/IMG_4625.JPG" height="480" width="640" /></div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpkNFMiDR2y7MrR3x4FBws4WHxXt2Y9kCT2D4h6PAEDoVA4qgkerAhHG2dcewma_GSTTJlsonPrNTtjxUCAuVj-fU2bXEX6YDE_t5cNsuLpjFVvGgkOGSDvlALmsLlKJLJZCXi/s800/IMG_4628.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Scendendo verso Bobbio</td></tr>
+</tbody></table>
+<br />
+Ultimo tratto da Bobbio e Travo con deviazione interna prima di Perino per godersi la vista rinfrescante delle anse del Trebbia. Resistere alla tentazione di un tuffo è stata davvero dura anche perchè adesso comincia a far caldo.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjqz_Fkmrn6GXJ0c6GqH5sy1VtHpV7VY9bdZzq3B9xUMQ-SATNCnviHaToUwaaLWvRjyPbxcJRayw58dBUdnZ90vRlEBia6qSaNJ9pi_rG_w_LKBVyrCd23-X2yKUTHTfyY9FOI/s800/IMG_4630.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Trebbia</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEglynCarQ3rwqOtqbJtmsmIUfitxA7lC6K7sZ1qPSPdHj56xpz2CTk0JNKZKUKt2xct7b-QpxnwO20iLjhrXnA4is9_P4aA40uGZdbB-N9I9kWgoqws9BCPsaUojGXsNp6d1xKh/s800/IMG_4631.jpg" height="640" width="480" /></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnkZ0LS8mgDkwarJf-kdaph8HLgQYdULx2sQuqodhYpfvZQvuTFJjONtsxHMoTuGvnzqFYFneJP1VcgVG2kfF9Ao7W8MhjZkVLKy0dxk5GXZWhM4yAQRggSvM_HCv-Vs_pewas/s800/IMG_4633.JPG" height="480" width="640" /></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_m69WWZ_2IXNjUVv-4ZGikwdIWffKSJmqcflLUrt1HbATlTROG-_aPTDpcVupbaT9QCs_DbyPlPHdY-yvmSmbCkg4oRJo2k9BnG0kqbBDs9hnoeVa_wQCKXIc6FunxIBM25wL/s800/IMG_4634.jpg" height="640" width="480" /></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4QJL96lR7k-SdF5HOu6rJN2Li8XN6zJ_cl6emm-vN5Jgj9VR1IgOR6O-8O7h3rBSrDh6ErL-_Z0NQ6RaRwOvxjoqeeTOj8SRkoahbwCazt5Zz5xsgp5Qyj1W-G3gwRSxdyUEI/s800/IMG_4635.jpg" height="640" width="480" /></div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_K3ofvNrWDZ8LQcjTg3ToM23Psf_21yI9H7q5vaCuZ8QYZwNZ_rQbcMfvqF8xw2DonYwcWaIfL9uWXbvJQGLPN48tY64DQFh-ijepgudpKfj8ssfWJWp6nMGDhzZoGoiHNzqr/s800/IMG_4637.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Nicoletta e Andrea</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGv-19N6O94D7-IJAzqZNKJYqY92NqV0L060z3_ncRnJwZsk-PL_WI2yB2rzTVwJP7vqIbASLVvOndJaGvqpGH18l_Q5BbMlHCLA1MmbTOhfxUVrOLN3PYInjZDxHPkPzMUQnE/s800/IMG_4638.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Giorgio e Nicoletta</td></tr>
+</tbody></table>
+<br />
+Ultimi km tirati controvento per chiudere a Travo un giro di 68km con 1280 m di dislivello.<br />
+Val Trebbia : mi sei mancata!<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8EVhswrifehqjrdqiBP00tZdqV4q72EQELFSklJRfCh-bDZrC3LoZoTwUnOmIZ-OzC1t1Bz4swLKJ9nwFNffoimkYSnhWF0SVdpHs5nm7LF2qX7sZiFhK2-Xhys5k8yWMgJD1/s800/Schermata+2013-09-07+alle+18.26.56.png" height="478" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">In giallo la Via Crucettis</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhW3YyvcvLbiCXgH59tIVz5J9FCZqwszh7vxztR-O4jsKnfqhD0GrYMD43lsfSPSA04U9AOtSLNql7i991lRJFJXaZ-POnEUcwxBDmdfBn81OTAn1EzMxvwvrxBBCq5fGT8n7Mp/s800/Schermata+2013-09-07+alle+18.32.04.png" height="400" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Altimetria</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhoHkVWHboMS6fiS6G2SHL74Vx8yBxRQDwHugJgZax2E4JdIwgST9SBwPb-dnNEtzxLkMcUgolpFL2aRtC2OvhZET2X4-qFkslUXWQGbgh_a9F9PTd4ZZu-EKNm7h39Q6ieqrU7/s800/Schermata+2013-09-07+alle+18.48.22.png" height="400" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Altimetria della Via Crucettis : notare la pendenza media e VAM 936!</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiyIH7wBnrgPJZn61TbqsZza22GLc9ewQggCcB6bMo3gPcuK_i-X-wBgtNLHA6CCg6UUEy0sP1ubjvMONKxaRsi0b9qM4PiR5am2yM4i_e5XFwDtgvzUp7JlmeVYHKWv_ykPasu/s800/Schermata+2013-09-07+alle+18.50.21.png" height="398" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">L'ultima parte della salita al Penice da Bobbio : VAM più loffia ma sempre sopra 900.</td></tr>
+</tbody></table>
+<br />
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20130906_142.html">Autunno, cadono le foglie, tornano le auto..</a>
+    <a class="next" href="20130908_144.html">Prima pioggia in Val Trebbia</a>
+  </div>
+</div>
+
+</body>
+</html>

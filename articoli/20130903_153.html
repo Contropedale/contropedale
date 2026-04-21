@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ancora, o forse già, buio – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2013 &rsaquo; 3 settembre 2013
+  </p>
+  <h1 class="article-title">Ancora, o forse già, buio</h1>
+  <p class="article-meta">3 settembre 2013</p>
+  <div class="article-body">
+    <div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEChhnhV8M8QINwndhLBnfqMTdW1d1v4jFjmPFXHcfUygSgfDrK1NqPja5d1rtK78ObJk1Ta6RaohsPgwGGv_PtGUWbUwue44Do_DEi3ayx0NVm7qhuJlb1OYCEcfG9ZXNAr24/s800/IMG_4546.JPG" height="480" width="640" /></div>
+<br />
+Prima uscita mattutina dopo le vacanze. Appuntamento alle 630. Il solito.<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjuVIvVTapTME6egN94OEp8p6-68fKgU-92eVKJsVeHIOA5H1twb0gCXCCzRqioday2-lGmxQiT-W6GPqaTcUv9_edlgXYAikb9OUFYH01RY9QQFRkSE3_I4lkQS2pfQ2QIa0Zn/s800/IMG_4547.JPG" height="480" width="640" /></div>
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+&nbsp;Esco di casa alle 615 : è BUIO! Cioè è ancora buio, o meglio è già buio. Insomma, tra poco per uscire a quest'ora ci vorranno i fari.<br />
+<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh79eZmD6fxZs4XeMm5ROB3g19EeDSgh8B-H53htruImr732VIYSoviE-nnZHlpOERhMAKgucnz8S2OCJW02hLz-CmNIptWC3mBpb8EReDRvI9Mnb1tLqxWD20wRY5SUNK6fLov/s800/IMG_4549.JPG" height="480" width="640" /></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLpFTtV-gkeMV2cdIDQ4Qk4XnHhQMfxFUxEsFzqu8m93ExdDKz_EAYpCnLW1gu7gLItdsvCc4eK30E4iGxFgfv6KGfbNrDHJ2VEbBCcIGXYAQgssFrh2Rqb9osDZpZWWdV9OOL/s800/IMG_4552.JPG" height="640" width="480" /></div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiT47x5QcqKTwirwxwHCnOywZzqgSGwJHGPNxkVrKcidlA97c8maKTfttHLhyphenhyphen8-2KSDViWspt4KUtzDVJh2DXmvlE5I7pqZHpZoqYlntd3dgYlMXoIhNB6ArbEkxXnoAJlyi-sY/s800/IMG_4554.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Alba a Gaggiano</td></tr>
+</tbody></table>
+<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZbgRUl_SjjBXLhNBrNT08a4_4xJTT-DTRbM3CglaMYPOBbLfnG7p6OiwAugmp1W0gXacw_TyK1yMmTKrd9IjNjbAC0s9RLuwsuKoAbqHfgXheCQ4u-mgSHTkKeqMZlgVyHDeB/s800/IMG_4556.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Ale : come al solito davanti a tirare</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiN2XYotf1ir5EhEcProh0_NF43W1Sdt1q-OHE92uJKOoKtZKQ8UdgslTQNQAGL92EMoUexlzd8U7ViHE247ckVPf8I7QOCMdkHvx4glQKpO05LXZRHUpTCfYt7DcGfpJ1Pc653/s800/IMG_4559.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Airone in decollo : trovalo!</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgeExfKaXzb3Aizu1GzBVBbEX5hb1dNLBtJ065o7nxlSFfLVuQTIu7ZuWFClKBmpB10I0CUwwjC762TPohyUZKK0JQ-b-3eB7o5JNVT2MpD0VZB_iEQ1W_pLw8N6Peyaz8Dv7qT/s800/IMG_4562.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Nebbiolina a mezz'asta</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEj-iJxG78RgVAxLR84KSXpGbr07KUMcfyobYzfVi93K1stZ8m9sNnm8zHghoK9nCo2kR2T7PSVkN_5wQF27JlKgODRmIncW8YydphnQSf7xU3YM6XDhbmLa8b4LRwAVyfBw9n/s800/IMG_4564.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Foschia a Fallavecchia</td></tr>
+</tbody></table>
+Alla fine maciniamo i soliti 55 km ad una dignitosa media di poco più di 30emmmezzo. Tutto grazie ad Ale perchè, dopo le uscitine in salita del Trentino, a me in pianura pare di essere a cavallo di un ferro da stiro al posto della bici.<br />
+<br />
+Siamo a pochi km dalla Cano quando Ale mi fa :" che ore sono?" e io "le 8 e venti". "urca : sono in ritardo!".<br />
+Giu' il crapone e comincia a mulinare le gambe. Io cerco di restare agganciato, a fatica. Oltre la massicciata passa il treno Milano-Pavia : fischia a lungo. Ale fa un cenno con la testa. Si sa : fra treni si salutano.<br />
+E qui c'e' la mappina (vabbè ma è sempre la solita)&nbsp;<span style="background-color: white; color: #666666; font-family: helvetica, arial, sans-serif; font-size: 13px; white-space: nowrap;">http://connect.garmin.com/activity/369793015</span><br />
+<span style="background-color: white; color: #666666; font-family: helvetica, arial, sans-serif; font-size: 13px; white-space: nowrap;"><br /></span>
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20130901_152.html">Lungo la valle del Sarca</a>
+    <a class="next" href="20130906_154.html">Autunno, cadono le foglie, tornano le auto..</a>
+  </div>
+</div>
+
+</body>
+</html>

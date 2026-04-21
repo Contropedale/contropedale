@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tre puledri e un vecchio ronzino – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2014 &rsaquo; 29 marzo 2014
+  </p>
+  <h1 class="article-title">Tre puledri e un vecchio ronzino</h1>
+  <p class="article-meta">29 marzo 2014</p>
+  <div class="article-body">
+    <div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+&nbsp;<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjttnyDrKnhrd680RQuu-21vGVl2REwgeGBWiMjq6FCuraYo3J_WTt4kDL5ylHntO5JTCI7ya25UTxoBtXE8Nup45oP6n7i9Jmjn-XSdGcnr2Zb3zNXprk7Nkjlt2LxK5_R3M63/s800/post-624-1133215041.jpg" height="480" width="640" /></div>
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+&nbsp;Quando proponi un bel giro in bici e uno ti risponde :"Bello! ci troviamo alle 830 al cimitero di Broni!" , tu che fai?<br />
+Bè è chiaro che c'è un messaggio (poi mica tanto nascosto) no? Quindi ti ritiri. E invece io no.<br />
+Così eccomi qua, al cimitero di Broni alle 830 di sabato e con crescente inquietudine scruto i fisici lustri e agili dei 3 puledri (Ale, Corrado e Renato) con cui mi accompagnerò oggi alla scalata del Penice.<br />
+<br />
+Insomma.....mi sa che al cimitero ci tornerò di sicuro, e non è detto che sia per riprendere la macchina .<br />
+Tant'è : partiamo chi allegro (loro) e chi preoccupato (io).<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiXbL-FZ2jubvKeTBsOzJ4EL4eGTxiOqbUe1xAi6kKn7x4Y3OlpjJn12_NjRXyx5LNV1AmvzPyPmHV1risQZVOMlyC9IFzJe3Qm8lp9uJE3iwcX0sUkITGrn4ZZ2jrL7S7Vwa98/s800/IMG_5580.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">I tre puledri in preparazione : massa grassa..cos'è? Io rimiro sconfortato le giberne. L'unica foto in cui compare Ale : da allora in poi lo ho visto solo di sfuggita : le sue foto sarebbero venute tutte mosse, molto mosse.</td></tr>
+</tbody></table>
+Un po' di fondovalle verso Vallescuropasso per "scaldare la gamba". La mia, all'attacco della salita verso Montecalvo Versiggia è già fusa, altro che scaldata. Speravo che Renato, che ha poco allenamento ciclistico, soffrisse un po' la sella. Invece la soffrirà ma per altre ragioni, non atletiche. Sulle prime rampe i tre partono come razzi e io me ne sto lì, quasi fermo al confronto, in solitaria ricerca del mio io interiore mentre pedalo con fatica.<br />
+<br />
+Poi di colpo, poco prima di Santa Maria la Versa (raggiunta dopo già un bel 300 m di dislivello..) di colpo il reggisella di Renato patatrac! si apre e la sella casca per terra insieme a varia ferramenta.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0wpQuaRGSc502wygxm3GoFLhZJGcIeZCjISTvdlA_-Z9lspEhmb2iBNRor0zxfzKIx-tbpYObesHrz-bUhxswLC0-tXy2oAeMEOuwTCO4m5gxSlU8oaSWkLM_mfV56YvDEk53/s800/reglogic.jpg" height="640" width="436" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Magari fosse stato così semplice il reggisella Time...</td></tr>
+</tbody></table>
+Aaalt! Fermi tutti e tutti e 3 al capezzale del ferito (il telaio). Renato scarta subito l'ipotesi (caldeggiata da tutti noi) di continuare il giro senza sella appoggiandosi con delicatezza sul tubo in carbonio. Chissà perché..Allora io lancio l'idea :" dai raga si torna indietro e per oggi basta così, in fondo abbiamo già pedalato un po' no?" Vengo incenerito dai tre.<div>
+Allora mi tocca sfoderare l'armamentario meccanico e in in un ehmm..battibaleno (circa 25 minuti..) la sella è di nuovo montata, anche se con un'inclinazione preoccupante.</div>
+<div>
+<br /></div>
+<div>
+Ripartiamo a buon ritmo e dopo pochi metri Renato con voce in falsetto fa "oh, la sella è così inclinata che mi schiaccia un po' gli zebedei.." Risposta unanime "evvai di fuorisella!".</div>
+<div>
+<br /></div>
+<div>
+Così non posso che prendermela con me stesso quando i tre puledri sulla salita che parte da Santa Maria la Versa si alzano sui pedali e scompaiono due tornanti più in su. Me la sono cercata.</div>
+<div>
+<br /></div>
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<div>
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_tcHVuZ1csDgqXcaI4qtFmXY61yKRt_5PeD5pGxUCK49UkzXbJ8bpmhJ_ZupbT0rrXAQxmln04gd73Qsyk1v1A-6xZeuJ5E2j7IP2NQClm173tbLFn9q56TDA-KRXEEgSEwt8/s800/Schermata+2014-03-29+alle+17.52.29.png" height="304" width="640" /></div>
+<br />
+Se non altro hanno il buon cuore di aspettarmi in cima al primo strappo, per poi risuperarmi in allegria quando la strada ricomincia a salire. E la va così fino al Carmine e devo dire che per me è un bell'esercizio di meditazione zen ciclistica.<br />
+<br />
+La discesa del Carmine è tecnica e riesco a tenere il passo, ma poi comincia il lungo falsopiano fino a Romagnese da cui si attacca la salita vera al Penice. Forse potrei provare a tirare di più ma poi temo che non riuscirei a arrivare in cima così li lascio andare leggeri e allegri.<br />
+<br />
+A Romagnese c'è un rettilineo in salita con due cagnetti che bloccano i tre timidi puledri che si fermano timorosi e titubanti. Io (che di cani a casa ne ho tre) li raggiungo e li supero disinvolto dicendo "ma valà che sono due cuccioli paurosi". E infatti i due poveri cuccioletti se la danno a gambe. Io nel frattempo ho acquisito un minimo margine di vantaggio e ora le pendenze si fan più sensibili. Dopo poco mi affianca Ale che mi saluta e se ne va. Dopo un altro po' mi affianca Corrado che mi saluta e se ne va. Dopo un po' mi affianca Renato...cioè no. Non mi affianca.<br />
+<br />
+Io continuo col mio ritmo ("adagio molto" sarebbe se fosse un movimento di una sonata) e a poco a poco arrivo a Casamatti (bel nome no?) alla base dell'ultimo strappetto di 200 m di salita prima del passo. Ale e Corrado sono lì che aspettano alla fontana. Io li saluto e con la scusa che "ciò il ritmo" non mi fermo e continuo la graduale ascesa. Così, tra un sorpasso e l'altro di Ale (che fa un po' come i cani pastori quando fan su e giù per il gregge per recuperare i pecoroni stanchi) arrivo sulla spianata che porta al Passo. Qui siamo in mezzo alla neve e fa un freddo becco.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmlz89DQiZujHQcwF6YgvFPtFXrJ7kIy5q5Mwm7Vzn6M-9FVWlj2RItu4aX0Va6pcIgkPUHRXMN1RC-anLo_ZRN7Y9i-WVzB_aseR6vaWdq9hy6FYCmdp2gfygfzaz-GN64ond/s800/IMG_5582.jpg" height="640" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Ultimi colpi di pedale prima del passo</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizmkY4iO2GphT2DlMRVSYqC4nb84lLKeotZdZm3_sd6dOVgMmh9QbgRZexMmyNiV4fkJ1dEZwORpYeIF0sjDRX8XmW9mHPs7cqY0Dxy6hXXOz5uwPWF_ZzfeK1zX1nEzjF4w91/s800/IMG_5584.jpg" height="640" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Passo in vista, neve al lati, chiappe gelate</td></tr>
+</tbody></table>
+&nbsp;Arrivo al Passo e mi copro subito, dopo poco arriva Corrado e dopo un altro pochino Ale e Renato. Renato fa "Colpa della carta di credito : bè, a Romagnese &nbsp;è arrivato un signore che cortesemente, dopo i miei scatti in salita a inizio giro, mi ha presentato il conto. Non accettava carte di credito!".<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3lqapxxxSchG2ZIZlacsY0EKcEoFwUOTw6IVLiMMrrFMgd6cM0simn_ikKQMwEGuBqeCAJcviWB7vCY6M2Y6M17rqNgQcrkNDSffZRklRW27YppWSiSzOYkFEztGVrJ9lDrYi/s800/IMG_5585.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Corrado preoccupato del ritardo</td></tr>
+</tbody></table>
+<br />
+Sosta al bar e rifocillata generale e poi, belli coperti, via verso il basso.<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiQyLU-qXroGNfsIQ11gaIhemHtS3rDQ9NcU5G_bjXVxqAftFsy7S-TFrLOgbH2F2nW4oF55sGxZLHciqfCXNqnA-pZZHQ63euDPp_YeAsM3cTQxCWEGvly4i0k87KoAn5vnOTx/s800/IMG_5587.jpg" height="640" width="480" /></div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj67jKJfcXK3m7CWSiN3mBxyDV-RhSJR0ku15228IqlI-cWy2hP-f6IReCuAOHT4t3I8QEnJYwXzvGOBPyv26BSO2ZnfO4ImWwbM6RQQImQZ-cHpkNjsIp4lYf0X20i3c4vMdt3/s800/IMG_5588.jpg" height="640" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Tentazione Scarpone<br /><br /></td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8tPYcnTt48l3cDvXt8t0uou3hkVoAEu7fdjlyFj0aVDZP-IW-X9m2pcEZKjgpLFKfcxisoWV84CGX3ZFBIpoF94L1WGelH75gImFm_0PymzAT8mNCNKSCGSXC4JHJdUbNT6Tl/s800/IMG_5589.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Stile Brooks e neve</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEic0yKmlOV5bWuzhNcFRFZ6gH08AMjQwlqSXg5zqKH-MSEks072fxteljoP9MApu2VLxdoDyWNRgJmwAYjpvIPYr-j-RktO7zGghC-LEWZkDu55IM3ILaYL0eCNgn8kGX5mZo2d/s800/IMG_5590.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">La val Tidone dal Passo</td></tr>
+</tbody></table>
+Corrado è molto preoccupato : è in ritardo e la famiglia lo attende per partire per la montagna. A occhio e croce arriverà con un paio d'ore in più rispetto al promesso : la situazione gli mette benzina avional nelle gambe e peperoncino jalapeno in un altro posto.<br />
+<br />
+Così ci buttiamo in discesa e in un attimo siamo all'attacco del Carmine. Ale e Corrado partono al loro passo assurdo. Io e Renato siamo dietro. Per poco : dopo pochi colpi di pedale Renato, rifocillato da coca (cola, mica altro..forse) e 4 pacchetti di wafer e constatino e kinderbueno presi al passo, si alza sui pedali (maledetta sella inclinata) e se ne va.<br />
+<br />
+Io scuoto il crapone e mi rimetto a salire in modalità Osvaldo Soriano: triste, solitario y final.<br />
+Dalla cima del Carmine Ale scende per sostenermi psicologicamente in questo momento di grande commozione e così a poco a poco arrivo anch'io in cima.<br />
+<br />
+Dei chilometri da qua all'arrivo ho solo ricordi confusi : velocità dietro i puledri, Corrado che con il timore del ritardo pare abbia una turbina di un 747 nel sedere, fondo sconnesso e culo vibrante, folate di vento contrario e scatti per non perdere la scia. Alla fine, dopo 102 km e 1800 m di dislivello siamo di nuovo al cimitero. Il posto giusto per me, mentre i puledri scalpitano allegri ancora pieni di energie.<br />
+<br />
+Bel giro, ma la prossima volta mi cerco una bella mandria di ronzini.<br />
+<br /></div>
+
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20140320_158.html">"no..dai che vi rallento.."</a>
+    <a class="next" href="20140330_160.html">Lungo la via francigena</a>
+  </div>
+</div>
+
+</body>
+</html>

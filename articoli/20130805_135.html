@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La memoria selettiva – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2013 &rsaquo; 5 agosto 2013
+  </p>
+  <h1 class="article-title">La memoria selettiva</h1>
+  <p class="article-meta">5 agosto 2013</p>
+  <div class="article-body">
+    <div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiiXnvld7yg1Po7Id0pz1hHjbV5mWrOWs-bYoosh9D523ZahhzEvIuQhiLzLlmJphc3LtFs-e0vNUeYXohhbB5R2mToR3eIMnuLYZw5IJ6Lz7wEm8u5flmTZtRyEkXZsjcWk_A4/s800/IMG_4242.JPG" height="138" width="640" /></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: justify;">
+E' proprio vero che la memoria è selettiva : tende a depurare i ricordi dalle componenti spiacevoli.</div>
+<div class="separator" style="clear: both; text-align: justify;">
+Avrei dovuto ricordarmelo quando domenica, partito dalla Versilia, &nbsp;ho infilato la breve salitella verso Seravezza per attaccare l'anello che comprende la Galleria del Cipollaio e il Passo del Vestito : Versilia-Garfagnana-Versilia.</div>
+<div class="separator" style="clear: both; text-align: justify;">
+<br /></div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDbY9oH_I6yMhkiffRLUzYWQuGnY9HPU9rmQ8-kcmCECWsfaJOAhf45AVS-9FlyumGbxQwFg-qFFUQGrFvuqDocHUSbVGrGzYfZdRKuDGkYfMuL0CHMyhyphenhyphen9YiAVq6npPwgfXGo/s800/IMG_4218.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Salendo verso il Cipollaio</td></tr>
+</tbody></table>
+&nbsp;E' il versante più facile di questo giro che in passato (ma ormai son tanti anni fa) avevo percorso molte volte.<br />
+La galleria del Cipollaio è stata per lungo tempo uno spauracchio per i ciclisti : 1200m a dorso d'asino, non illuminata e con fondo tremendo. Dopo pochi metri pedalavi nel buio totale e su fondo pieno di buche e sassi.<br />
+<br />
+Ora è stata risistemata : ben illuminata e con asfalto perfetto. La si incontra alla fine della prima parte della salita : 15 km pedalabilissimi in mezzo al bosco e con squarci di Apuane.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhseEu03Pbdn4tScFFuWpdW0HbDGPr9BhqmCJhnhvzKK61Bynu3mKKZjW4drBKBA5TrGJDb3OoBdpS5pzYjWpopc4SXdoDB1AbiSalHRq6OrXDwNDpAPn7rFAodKUa3s9Q3o1pH/s800/IMG_4219.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Dopo il Cipollaio verso Arni</td></tr>
+</tbody></table>
+&nbsp;Da qui, siamo a quota 800, si scende verso Arni in una valle stretta circondata dai colli appuntiti delle Apuane bianchi di marmi.<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5GiC4EFk_baN10rZUTN96jrY7IqvKHLKt55SobflUtuyyg_n6660grsEzaR5l18qucIkNN1xfakhYbB_WZl6EycW5MU8wed4Q-cKewza8sTZnvBsAb1Qfk9fE6lCxE5afobcs/s800/IMG_4222.JPG" height="640" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Verso Arni</td></tr>
+</tbody></table>
+La salita dopo Arni si fa più arcigna, un po' per la pendenza e un po' per il caldo : qui non c'è più il bosco..Mancano altri 300 ma di salita al Passo del Vestito.&nbsp;Mi ricordavo che c'erano un paio di altre gallerie Ma nulla, (mi pareva) al confronto con Cipollaio.<div>
+Mi sbagliavo. La prima galleria, di circa 500m, è buia e stretta, ma il fondo è tutto sommato ragionevole. Invece la galleria al Passo è brutta : buia e piena di buche, sassi e pozze scivolose. La piccola lampada di cui mi sono dotato serve a poco. Sono minuti di vera strizza.</div>
+<div>
+<br /><br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhonIBV6CM3KnzVyg7wXKrx-eSQaVdzvjC35yjmNCPkRQd7ISE3gRwLCxiSWdrhgk_98H_qaKZ-L6xPEO-qmR15_qI5PobkDd0sfd09AXi7M-AXBiYlzjwpZizRZi4Kkvecv1Dm/s800/IMG_4223.JPG" height="640" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">La galleria al Passo</td></tr>
+</tbody></table>
+&nbsp;Fortunatamente supero indenne la prova e vengo premiato dai panorami spettacolari che si aprono di colpo dal passo verso il mare più di 1000m più in basso. Sono squarci spettacolari.<br />
+Da qui è tutta discesa fino in Versilia, chiudendo un anello di 67 km e 1150 m di dislivello. Un anello "molto remunerativo" direbbero in Ediciclo (Collana : Passi e valli in bicicletta).<br />
+<br />
+Sì ma la prossima volta mi porto una unità fotoelettrica dei pompieri.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDey_WbHUufe_sWl9M3PzEduyeoXPNbs5WZAVNBd4_p40OtxYDSyTnSQCWLTzYMA6EEt6n30IqReUZeMHyJ6MiWyPzkMmf1L8EHzauyrBqjBOA67ud8xrx8p_7onmq0wqEe3t0/s800/IMG_4227.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Dal Passo del Vestito</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMUn_QCwnjIk6aNAlTGO4xE53uGx0o4NK1MG4bquZwjnQGtFiBTzrLABmDlLuXuds6k0kwXhFmv9i2bwtF9DGlMOQBKAeSSwZxklew0kcdyqX47n1ULr9n-HiOMQhvnFgw0BlD/s800/IMG_4229.JPG" height="480" width="640" /></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiSCItk0I1qPGoWYOBvpKObmvdV74Ducj1Rcag-QUzxaS_IAIczzWRQrE2XuVkjFU2Ihx8uG-lRMrl68mmTiiy4ly1iI3iUk82umX68yGpbfT4ZW_3nj7MNTAf6U_sEW5fFKOCl/s800/IMG_4234.JPG" height="138" width="640" /></div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZp_DunUsJFOjaoteXH3hcB0-2MOM_D7xj_Abck-ShHAXGrvMAOXloSupcYVZ68fOdhsVX17xNXXBBS5uyX_rNRJQVeMawDFN3PyCIsJcbde-BJLUstofo2ieL4MI8dbL2-srR/s800/IMG_4237.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">In discesa verso Antona</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKCGuPOqo5QyMeXxliUcccIVZxLT8lsbjxKG7zC_0vmIIlET5BzkIEwfNuqEiHVSPyAxK4bjFz_OgrGTDmbZJX79cj9ErDUsrkM7TPFicGAYll8q3RWHY2JedeaJs-poOta_IJ/s800/IMG_4238.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Apuane</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjetrBSET5fWM0a72RoYXGfT7eF9fOYIvrmV2Uwbajwb9Fnb7ySy9uxbcEEX12M4fBfbJJB_-K08a7PY4ojlVLS7oKWF-h_5KNNLJ6RTFdSGOyPhlYcYJUb3nHsCtwqXwB87Irf/s800/IMG_4241.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Sopra Antona, verso il mare</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhPTQqYfVyGVHhCFqLam3yVAI99xyNCBupNFF2YYixaHpGBA3zTKhjt7By25RJJ0-I1RwIRPf669j7YuvnV9g5KFqE2UMdgcFgydfgYToco-1jEkBQqeXbxwTNbZKnBgI0zb9s8/s800/IMG_4243.JPG" height="640" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Antona</td></tr>
+</tbody></table>
+<br /></div>
+
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20130801_134.html">Meglio tardi che mai</a>
+    <a class="next" href="20130806_136.html">Con Ale al caldo</a>
+  </div>
+</div>
+
+</body>
+</html>

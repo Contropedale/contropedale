@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ritorno sul Motarùn.... – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2013 &rsaquo; 20 ottobre 2013
+  </p>
+  <h1 class="article-title">Ritorno sul Motarùn....</h1>
+  <p class="article-meta">20 ottobre 2013</p>
+  <div class="article-body">
+    <div class="separator" style="clear: both; text-align: center;">
+<img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1YWDDnzcw7z3SE2jZPKSav9pz4q6Z8LeXyOVqS9XtEjgUQ-9jmVxXefKlII1goZeazeOR81yvosu2KpUktFo7HXdoM4c0D2t3HjUEAHWZmxhs8N8YznKHluLFVrxlXdBu2Gta/s800/IMG4894a.jpg" width="640" /></div>
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+&nbsp;Previsioni per sabato : coperto ma senza precipitazioni. Vai, si va in bici. Venerdì scatta quindi un vortice di email, sms, messaggi con piccione : alla fine pero' tutti questi scambi di informazioni richiedono un elemento essenziale : che qualcuno le acquisisca in tempo e risponda. E quindi alla fine ci siamo trovati a pedalare sparpagliati per la Lombardia. Giorgio ed io abbiamo costituito la squadra "Missione Alto Vergante".<br />
+<br />
+Partiamo quindi da Pisano, poco sopra Meina, con l'idea di fare un giretto intorno al Mottarone lungo i mitici mangiae bevi dell'alto Vergante.<br />
+Trattasi di mangiaebevi molto mangia e poco bevi che prevedono strappetti segagambe e rognosi quanto imprevedibili falsopiani.<br />
+<br />
+<table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: right; margin-left: 1em; text-align: right;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhwicIbj2WS68yEwvVPaZwNYX4CQgg5rq_kt1kIawZi90LyQlwlyG8_5vxkEJT129b2vvH6R2NMnVeeQsBPnktiFFkpBJayreMoVkG2zqB9m6EE1LaWp9LZn0CZ5nCSGASK8lhc/s800/IMG_0019.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Giorgio pedala verso Armeno</td></tr>
+</tbody></table>
+&nbsp;<br />
+<br />
+<table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiibiMF0hw035jwE2WCjO3Q65Nb53BnBt8hqY02RFFHksEE_O-qUWtr0mriDEdKcQ9irJbbovDpQs_o0VbvTUZkBG78EGORuNxHe3x1rMHP21nLC825zwo-0lqRL2qokJyXAc9O/s800/IMG_4852.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Sempre Giorgio, sempre Armeno<br /></td></tr>
+</tbody></table>
+<br />&nbsp;Io 'sta storia del mangiaebevi me la ricordavo e , siccome preferisco le salite regolari propongo di attaccare il Mottarone dal lato ovest, da Orta.<br />
+<br />
+Giorgio, ceo della MoroniAdventures, ci mette poco a definire un percorso ideale e così sgroppiamo allegri alla volta di Armeno.<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+Da dove abbiamo lasciato la macchina sono una quindicina di &nbsp; km che hanno pero' le caratteristiche tipiche del mangiaebevi dell'Alto Vergante. Quindi quando arriviamo ad Armeno ci sono già circa 250m di dislivello in ascesa segnati sul Garmin.<br />
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhC3fZwj41DfMznVC8wy6e1mucTAJ1Aqo50n0s1B0BRBBFZVCB3yazla2IMbbtDT7LLU6rgyEPSNyJpacYDvJ-MS5x_GtPXSJlyS8Zwx3H6df9-0-QIB0yVXur8d4oU3uqsIEU/s800/IMG_0017.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Armeno e il lago d'Orta salendo verso il Motarùn</td></tr>
+</tbody></table>
+<br />
+<table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg54KT8_s5PmVHZlswmIu0PyCdXYokBnvuDPBXV19Uf0kmJrcyZqUpY6dkD2zh08MgTFh2gJduv2zEiwnggLHeQXoWWl1jmi3AsXlhAo_PbrB1ZIhr-2WP37K40uMxMQb6IemaR/s800/IMG_0023.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Armeno e in basso in fondo il lago d'Ora</td></tr>
+</tbody></table>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKYdUo2_0OX_tathw49mIfcD7C8rF7HLiVk0CC1B_48hgotM_1J9_AICnkMTZZM6JAjH1tSxird81CpIOU_bSymMIDD0pLQj7kqhY8donajv6lOKd7Q0zsyQk92IFT3LsAeGxB/s800/IMG_0018.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Ingiustificata e ingenua allegria prima dell'attacco della salita da Armeno</td></tr>
+</tbody></table>
+<br />Mentre pedalavamo avvicinandoci ad Armeno, &nbsp;Giorgio mi metteva in guardia : "allora occhio che questo lato della salita al Motarùn è caratterizzato dai primi 2-3 km dopo Armeno che sono MOLTO duri..poi spiana e si sale bene".<div>
+<br /></div>
+<div>
+Ok, ricevuto : primi km da fare in piena conserva per evitare di scoppiare prima di metà salita.</div>
+<div>
+<br /></div>
+<div>
+Ad Armeno facciamo appena in tempo a vedere il centro del paese : quasi subito la strada con l'indicazione Mottarone si stacca sulla sinistra e ZAC..si impenna.</div>
+<div>
+<br /></div>
+<div>
+Orpo, speriamo sia uno strappo dentro il paese! In effetti pare così e dopo poche centinaia di metri spiana.</div>
+<div>
+<br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBm6Q-UgWgMGXTw7OdOlpW-OGEfw-O_FuLkKXgIsy2tOES_Fp0bmy-CjD-SDhJ-wf6ZxoOsKo9SKiRaE-0VXYo4SrJk6hhu6QBlky2KmqSJPDqiFJEfoOqjoe96JepkvMJOWMk/s800/IMG_0016.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Pausa odorosa ma salutare</td></tr>
+</tbody></table>
+&nbsp;Vabè ma allora ...tutto qui? No. Non era tutto lì : dopo un piccolo tornantino mi trovo davanti un muro. Salgo davvero a fatica : qui le pendenze sono abbondantemente a due cifre. Altro tornantino che non fa respirare e ZAC, &nbsp;un bel piano inclinato (definizione di Giorgio) che non fa ben sperare, anzi! Fatica e fatica, gambe che bruciano e fame d'aria.<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: right; margin-left: 1em; text-align: right;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDpK3JAVqh5FK_1eJZ8VI_XJrBmI9UzSVnfLc7QNJjiHPqiACpXgRcV8gmiViM5DJNA2mbxl1-AsZvzeYSM5oe4p7Osa-rGTe7ZqngoGErNkyeEDo_f29oR0-OESqdXk2pakva/s800/IMG_0013.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">La chiesetta a metà della salita&nbsp;</td></tr>
+</tbody></table>
+<table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgptewZU99dfu5-zzRYKKsaqYFScju2c8cYyX8uroIyTOzvREvEgk9lIK7Uuyen6LvOe-TkDbIfzYkxtQNhpSuoy7Nyx6thFTBOjj8U8VU8SMlPAsirjZt3WI0wvyC_I35a1Qa2/s800/IMG_0012.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Giorgio in mezzo a boschi autunnali</td></tr>
+</tbody></table>
+&nbsp;Non riesco a pedalare in fuorisella perchè la ruota scivola. Mi tocca spingere da seduto e anche con il 34x28 si va su di vera potenza (la mia : poca e inadeguata al peso delle giberne lipidiche)<br />
+<br />
+Poi, dopo circa 2,5 km di questo vero inferno la strada improvvisamente spiana. Cioè, la pendenza torna ad una cifra e per di più, grazie al cielo, ci troviamo davanti una piccola mandria di vacche e capre che sta percorrendo proprio la nostra strada. Di superarle non se ne parla e quindi bisogna star dietro. Qui dietro l'aria è tiepida e un po', come si dice...viziata ('sta storia dell'effetto serra per il metano prodotto dalle vacche DEVE essere proprio vera!), ma almeno si va piano.<br />
+<br />
+Che bello ..... mi pregusto una salita tranquilla tranquilla al calduccio cullato dal suono rilassante dei campanacci quando da davanti un grido "ouh!....vhutà la hula che la gijura!" Io non capisco una mazza ma il cane che segue la mandria sì e .... ooooplà &nbsp;la mandria viene spinta docilmente suun piccolo sentierino a destra.&nbsp;<br />
+<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjekH-QcUY3ti4kNGRfUV_AAfoLuVT-m5G9SfqxvIqfcU4WcL-slYKK73eH3ri7n6HUirhkDzzi6ndI0B924OAAJ_qAHl7If5c6a-_CLBfSAKBMul_-iwO3SQzxDCWLb1jiPkj/s800/IMG_4869.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Neve nel fosso a lato strada!</td></tr>
+</tbody></table>
+&nbsp;Ok, fine del gas e fine del calduccio : si torna a faticare. Ma qui si sale abbastanza bene : il Mottarone da Armeno ci ha già assestato la sua mazzata più tosta e abbiamo resistito. Adesso si va su senza grandi difficoltà fino all'ultimo strappo.<br />
+Saliamo prima in mezzo a boschi dagli spettacolari colori autunnali : altro che Maine! l'autunno va visto &nbsp;salendo sul Mottarone.<br />
+<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqdkP-oP0SEQA6eey1AHX0INtP8TEfPG5OCCN-M_2Ci_eL671Dx3hmNoXYEyuYy1xcTj8khDZHKB0Q0GCUiuPBxwhbBP-KmeN9QntsFKJfFCf6KeVxlR3Uu-LWh2VqHhHghGWG/s800/IMG_4870.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Quota 1250 e ancora nuvole e freddino</td></tr>
+</tbody></table>
+Poi quando&nbsp;&nbsp;gli alberi si diradano, oltre i 1000 m&nbsp;di quota, si sale in mezzo alle nuvole umide e fredde. Ad un certo punto nel fosso a lato strada si cominciano a vedere delle chiazze di neve. Neve già ad ottobre!<br />
+<br />
+Siamo ormai verso i 1300 m, mancano poco più di 100 m di salita e, proprio quando ci stiamo preparando all'ultimo strappo della salita (quello che è in comune con la salita da Stresa) PLUF! usciamo sopra le nuvole.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiw8oNpBN04_DxeaIqNu5aSpJxmOP4PeXBawxNJsgFkl5I-6uhIQS3C97PFpQJXODr4MK6EPvEV9RX0LL398mRqi94Asj_08W9_suVfY3cgqzuADP3ygmDlTfS8sxWePZ3PhWFr/s800/IMG_4876.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Sopra le nuvole....</td></tr>
+</tbody></table>
+E sopra le nuvole c'e' un sole spettacolare. Da &nbsp;quassù (siamo a 1450m) si vedono sbucare dalle coltri di nubi basse le Alpi e le Prealpi. Non riusciamo a vedere, ovviamente, i mitici sette laghi, ma lo spettacolo del Rosa è comunque bellissimo.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3ShSi1g6LACvf8wHC_nOc8UKFz3BTt0fiExEsfzrj15uq5nRasMMBjf0g-md67_L42h_XGLwEnUK-jDbWOVVUgy1kA_YeIuBuH7omok6SXmcxdMevv7qEqxnKKO7eaxIzDpIw/s800/IMG_4879.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Il Rosa</td></tr>
+</tbody></table>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiuUcLFSUWMa04tp86TNeO58ZsYkHW5nHKWsuYMtfmP7b_HcAslFWcW_gHZJqSrqsq-sirdbexcnLK9ol5ZmdK2XtpF6uhdenIk4Sz0qCRTEX0aZRkqwlaNerWKFQE-1FIkVDPW/s800/IMG-4894.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Guardando a Est</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgadgJAL3nFulbKJ_hPcdYFoFvyafhC6BYlNqOY2RYaHlHxsjAu59wzu2VVQQoCX0PuaKuY8iahvYUPXnHeVFVxqQWnDlvwaejiGCtkpoDSaE1B9JWgR1jEx36v3DbLDyoSLGoe/s800/IMG_4881.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Il Rosa dalla vetta.</td></tr>
+</tbody></table>
+&nbsp;Tra l'altro quassù al sole fa anche un bel calduccio e quindi non ci mettiamo certo fretta quando si tratta di fare un po' di foto e prepararsi per la discesa. si sta così bene...<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEje6XpsROHZKOHBZ8aGn4cgdVBkDkSIkhBWOCnq4jrgCl249O72o48sN19RsJGB6OODjn7Lq2DGGr5s0atJTNfvf2UHFWUW6Ojxjfnm86QJ0plxcWWxrlZS65mQwV2S7xYC8tTD/s800/IMG_4888.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Dalla vetta del Mottarone : quota 1450</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgd0zPoh2ex-2a6bzdWXOzZBIyn3ZjlQFZi1PTLiE4838-5tkxfA1mW-DHyRm6-VAip7UQvC_MhuUny6QTkkMdfDgK7X1girAsnGWrwaK6hGQpWREb2gz5HtICQ_3agnikM0X_M/s800/IMG_4890.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Il versante Ovest</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgR8j8W94MUp_aj-RFrONIXW5lJuzE8yTPe6-miGIWe08_-XPOW5Vuz8Xstw4eIRKMj_ZM8x61M1OlyuC-HpZO0NjLcmRFCZt-2LRtesiOMayAVUKPU9Vxwg-GS6ysUE7BFNQEK/s800/IMG_4891.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Là sotto c'e' il Lago d'Ora</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjOZ3lgDw-DXbhrig4YxyWVJDSuj29PAifxSaBAJpVpgQarqodpHflD8EdpqZlvNZn2khhD3gZMkLoxSxnavEHLaNprVr8D-_ZSTnuHjWVzZlG4nsjcn3aD4XxRU6DwX_Ncvupi/s800/IMG_4892.jpg" width="640" /></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi4053mExBFtI4zF0eq-mUrPs-g9V-c9_rvkj8Z4mkUt-_LDkpL9kZktxPthI_j3bOxa3wRyZzCV9NdOrtE0jA9i5LP1PdaPeBk-uFwH_k1eHyobxRZ5hxEgX_X1C2f6gdkQJLX/s800/IMG_4893a.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Giorgio in vetta</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-_HnI5ubF_6GadZ55Ixpb26gvGtvBV1r89TwypSh_SGZBIkkrUqC0vbQZGL_N6j3Y6DMTSMjdooHhve_hNL3CgPXKudj4-8SIdo9NDLpkrV_V5Uh5wgZwGWh02YE1LzJDz9bK/s800/IMG_4895.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Gibernauta e Monte Rosa</td></tr>
+</tbody></table>
+&nbsp;Ad un certo punto, dopo aver fotografato tutto, anche i bidoni dell'immondizia, a malincuore ci avviamo verso la discesa. I primi 2 km al sole sono piacevoli ma non appena ci si rituffa nelle nuvole la temperatura scende di colpo. Orpo, Giorgio ha fatto bene a mettere i guanti invernali io ho le mani congelate! Medito di infilarmele sotto le ascelle, ma poi, realizzando che sono in bici in discesa e viaggio sui 60-70 kmh con le curve un po' bagnate decido che forse non è molto saggio.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="480" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8wmCQlFB1M9_AyGl8rRT4ahXThLS-O8DCZ3UTeifujaEtCMn2WPCdYfdRpaxqTaZJ6ndP48NzKtT3Rf8QXTNNLmL3HHYFcwaXKrBwAeHwKiJcugsnkiencQp3jcPdgmwARaqO/s800/IMG_4896.jpg" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Ci prepariamo a scendere</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3nFcm8MjjiXGUMU2_hGz9Eyb9PjhpP8WT24HvN64HrMcLPM5E-zx229i_a8zehYeJlTUeeb8b-N8JO8mnK5qBn5OUC520G6F8zywItgYy-4gKyfIy8UU71-TvEWKDgKJtjfPM/s800/IMG_4897.jpg" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Pronti a rituffarsi tra le nuvole..</td></tr>
+</tbody></table>
+A parte il freddo la discesa è davvero bella con un asfalto perfetto, e in un attimo siamo di nuovo ad Armeno. Qui la MoroniAdventures propone un giro circolare che abbraccia l'intero massiccio del Mottarone &nbsp;riportandoci alla macchina con qualche piccolo e trascurabile dossettino. Ottimo perchè io sarà la salita dura, sarà l'effetto serra in scia-vacche insomma sono davvero un po' stanchino......come diceva FG.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="312" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgINwWxLCxr_Xtka2_QNHoiH8c97SQTE9Ft6r1bAH_wVuUVrNjhF0hXDV5OzVst4V933Ao-uthCHHPTq6yTIlKJyOut9eXzv0nMn705-6z1B-O9d4Ap4RLkC1OIcgAoI4f_q-2D/s800/Schermata+2013-10-20+alle+14.38.43.png" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Altimetria</td></tr>
+</tbody></table>
+Ci si può quindi facilmente immaginare la gioia con la quale ho accolto la salita che ci ha riportato a Dagnente e , poi, lo strappetto di Brovello Carpugnino e infine il muretto prima di Tapigliano. Ma porc......ad ogni strappo chiedevo a Giorgio : "oh! ma non dovevano essere finite le salite? " e lui Serafico "sì infatti è solo un mangia-e-bevi.." Ma porc...'sto mangiaebevi mi ha davvero rotto!. Poi, dopo l'ennesimo rettilineo in salita ..sbuca il cartello che indica Meina e compare il nostro parcheggio.<br />
+<br />
+Allora, grazie al "mangiaebevi" finale chiudiamo la giornata con 65 km e 1600 m di dislivello. Un bottino rispettabile se si pensa che siamo partiti con l'idea di fare un giretto non impegnativo.<br />
+<br />
+Certo, stavolta la Moroni-adventures non ha deluso come itinerario (spettacolare la vista dalla vetta), ma protesterò con la direzione per la non corretta interpretazione del concetto di mangia-e-bevi. Nel mangiaebevi si deve anche bere..mica solo mangiare.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" height="434" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiOcPph_zGIn5gJiTYqZ4cDQb2T4VlFEAQ3ljsHv1CBHmewbOZlZadYfBbfnDAPAmJM6OiRzpsG6o3ZaEjaScIpRcF3xJ4Acj9GcW6143yWgtxgiwArAIQn9aYF6tDPTLyntB8P/s800/Schermata+2013-10-20+alle+14.40.05.png" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Mappa</td></tr>
+</tbody></table>
+<br /></div>
+
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20130929_159.html">Sul Mottarone ci ho lasciato un polmone...</a>
+    <a class="next" href="20131027_161.html">Autunno tra Piemonte e Lombardia...</a>
+  </div>
+</div>
+
+</body>
+</html>

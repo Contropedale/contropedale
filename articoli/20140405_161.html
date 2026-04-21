@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tra Val Trebbia e Val Tidone – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2014 &rsaquo; 5 aprile 2014
+  </p>
+  <h1 class="article-title">Tra Val Trebbia e Val Tidone</h1>
+  <p class="article-meta">5 aprile 2014</p>
+  <div class="article-body">
+    <div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2sWv7Ep8lb2AQb6wSDQhD-9JydJn3QvZveotp75Twh7bUkWsPFEuVnsrc3U0YsGOtpRn8ZY5zFExvZMF7PFAcMjbID_aImz4CmmElK0zaa8-jEMa01LsCcqTaFwfnD1zIxNUj/s800/Schermata+2014-04-05+alle+19.37.16.png" height="566" width="640" /></div>
+<br />
+Stavolta ci avvicineremo al Penice dalla destra orografica della Val Tidone, partendo dalla Val Trebbia.<br />
+<br />
+In questa impresa mi affido alle esperte mani della Moroni Adventures che mi accoglie a Travo nella persona del suo CEO Giorgio, che farà da battistrada.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFki7Uc8bNyb5gzIQXUbJiiieKRir-yXfGPi4pIuQS1YnKxBfSAXrSSYpSF7KYgoRK1hUQ5LVNRRsOfg-9jZh3H741mK1Gttoj6PnbYR1sjUfFEydO2vraFteprEgxYbDB-ncP/s800/IMG_5632.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Da Travo la Pietra Parcellara</td></tr>
+</tbody></table>
+&nbsp;Attacchiamo subito la salita che porta al Passo Caldarola.<br />
+E' una salita di circa 14 km, molto graduale e dolce, con pezzi che consentono un buon recupero e , soprattutto, assolutamente senza macchine.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6OP7asWY_Qx5pVQOMF6pg7HXWCKDlfE7G43-7HZto8qG0t-7MYi63YTBj5mAKLFUC1zkDKRcOXVzcpGVUFGykbjngqGG9otAkLbWVAo_gGoBa0mdZb-yWFD-QQV776RX22HvR/s800/IMG_5634.jpg" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Il CEO mi guida da dietro</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1_CnmMjce2gQ6uVvJcak6_OKGKvTsGePH-3PmPScSRdHpKQUm4Hqj3Fy3VQkZAWUpctmTCsG6iUDyVD5YmFHf703oTg-ZkDs2V4cbk5p8CH1mLlKsJuTXndTwPLboGrjdPGsM/s800/IMG_5636.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Colori lucidati dalla pioggia.</td></tr>
+</tbody></table>
+Ha smesso di piovere in nottata e i colori dei prati sono smaglianti. Aria fresca e frizzante : l'ideale per salire chiacchierando.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBlVJFBrWqAu6mZTcadFQD-i8j6bMpb-cmz2ZBMGlQ7prs89YXntWTCzESuhNd2icboec1fW6M5v8dRp8y6b5sbtgAM_M5FcgvnvobGrlNggkYXyNoV2nTBC5CyXrl_aFkkxRS/s800/IMG_5637.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Salendo verso il Passo</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjICTHSz_t-Hbol3bCQ3mFKOMol2rSjfYI3fW7ewz4l-SIWOv7K-oARHdvbWQbpHMnJFT1hGuzcebubn4JbOFgbjXrrZLJW-osB6yKNkm4ulTx_si7nnkDXCSwfd4rkxX0h8EnG/s800/IMG_5638.JPG" height="480" width="640" /></div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAOKqJQBIgac3dBUIMFwa6GdL3nWzM5Zv_W2rmIDQoWC3jgpOlsL61varnCZdw5u26PwBd67QqZ_uNSIpEsDXkYmRlPsXqHOqv6jA80w2n70EavRdIyCX9ZECK0ywcTsTO-d7i/s800/IMG_5639.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Dal Passo verso la Val Trebbia</td></tr>
+</tbody></table>
+&nbsp;Non è una salita impegnativa, le pendenze non superano quasi mai il 6/7% , ma la lunghezza si può' far sentire : quando scolliniamo al Passo Caldarola abbiamo già accumulato un bel 600 m di dislivello . Ottimo inizio.<br />
+<br />
+Come faccio sempre prima di un giro in bici ho fatto i compiti a casa (la Merkel sarebbe fiera di me, altro che Renzi). Mi sono studiato l'itinerario su gugolmeps e ho fatto tutti i calcolini di rito usando la comoda funzione "Crea itinerario". Fieramente annuncio al CEO che oggi chiuderemo con circa 72,7 - 72,9 km. Il CEO mi guarda ammirato. Purtroppo scoprirò solo dopo che non avrei dovuto usare la funzione "Crea itinerario" , ma la funzione facilitata "Crea itinerario, ma quello giusto, pirla!". Ma per il momento faccio orgoglioso sfoggio della mia competenza geoturistica.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBvIcAHkyAg64iDGXpGPwlNCP5xP_sunJwEafQ7cwXVSWC1VK1B2hbpQhEnrLKfioJlFQBTXWJbdzmPku8SQkUNkMcpBa1P_bxJexcz7j_Wo3ziJ9l4sJQiguuq1lxBTBiaq0w/s800/IMG_5641.jpg" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Selfie al passo</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhOI164ioxlTr86PT0PgCnxxKwV8IkWhcG7nejUv0K5Z12I18aSEkgmQZqQ8T0xuRCd2NpOMhnIMU_GJ1duAgnBM82INt5FGDpqN9Jh8yGe_7Y9-6QPQZHBR_iqKEg_Ln3Ojgj0/s800/IMG_5642.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Planando in Val Tidone</td></tr>
+</tbody></table>
+&nbsp;Scavalcato il Passo si scende lungo una strada vallonata e avvitata che sembra una pista da bob. Bellissima, se non fosse per le frane che hanno martoriato l'intero territorio sia qui che in Val Trebbia.<br />
+All'occhio, quindi : buche e ghiaia sono in agguato.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyDiZKRLRZdcrc6kqi0z-7RmD-XAQloeFX5Dtc4RsNeCLXKPMYdD8MqJKb6f_0y7L5uUdL8vrjkk5TIkRXyaXwPg5Kw9XStSZTVbTQy_grt_hGOrbUzfV_eOk6ph8v1qA7asw4/s800/IMG_5654.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Si sale verso Pecorara</td></tr>
+</tbody></table>
+Dal fondo della Val Tidone sono pochi chilometri di pianura per raggiungere Pianello e da qui si va verso Nibbiano per prendere il bivio per Pecoraia. Il CEO mi indica di volta in volta le possibili alternative turistiche ma io lo seguo poco, tanto so già che strada faremo e quanto manca.<br />
+Arrivati a Nibbiano ecco l'indicazione: Bobbio : 30 km. Eh? Guardo il garmin : segna 39 km fatti fin qui. Da Bobbio a Travo sono 20 Km. E quindi i 72,7 km da dove sbucano? Ma soprattutto, io che sono partito convinto di fare un giro tutto sommato non impegnativo come è che ora mi tocca pedalare per più di 90 km? E quanta salita manca? Avevo previsto circa 1200 m ma ora le mie certezze vacillano. Guardo il CEO : sornione come un gatto sorride e fa " in effetti mi parevano pochini i tuoi chilometri stimati.." E si avvia verso la salita.<br />
+<br />
+Anche questa è una salita davvero godibile, &nbsp;lunga (sono circa 20 km) ma molto leggera e, anche in questo caso, siamo praticamente in totale solitaria.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvepaWUxzd0axLpGeb4cGJisugXuRS1q723fp8h495h2vpqoiKfD0B6WNfpWwrsACSocLIZwa0enJ1mWeUMtUT-4FEA8vbkyQWBlH5pXBn1DsONDMVi9jJJmBhmoCYx6kgjnPm/s800/IMG_5658.jpg" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Salgo preoccupato di quel che mi aspetta : l'ignoto.</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgF7TNsARpY0IWIQZqbCoVzCOoBsU7MFhKp5ZGOOL2mMJ2s72UcsFaFU44kPj_g4cSvOkKZ5Gd4bfrYAigS2byiKa0o557WHBIODIv6XsiFtnHMpkdLt7Gt4MmGKFIJ610TXj_n/s800/IMG_5660.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Salendo verso Pecorara</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjuPgU_9Hr4WCsQw6fBABqEfB1bICVItjupc7pBnIz_HnqNJ7CCjN6zTy93e3JDYksvP3y2H9lY4qCCrSGKpWYIMnBQ1TARe_zWDJxB9MAqDVqTglKFoy_oZmk3_mIlnw1alXTC/s800/IMG_5662.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Sosta fontana</td></tr>
+</tbody></table>
+All'inizio si pedala tra boschi e prati, poi, mano a mano che si guadagna quota, compaiono gli abeti e l'aria si raffredda anche perché il cielo si è fatto davvero minaccioso.<br />
+Il CEO mi aveva pronosticato uno scollinamento a 750 m, invece saranno più di 850 e questo aggiunge dislivello al programma, come non bastassero i km.<br />
+<br />
+Dopo un ultimo piccolo strappo raggiungiamo il culmine e scendiamo verso l'incrocio con la strada Bobbio-Penice dove avevamo previsto di incontrare Andrea e Nica.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_V0pT89fNKQeNH5wUOhi-FnQDt4MSbs4ooJ1wHgbUn2943JDfG6SboUcjDOobgT_kv8X9Yc30gqzbbKjbzSm0Cm3BWcG6m958l7Bm7MEjKRbEPTrDTfYgV4_AqBAQJJjdWOxh/s800/IMG_5664.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">da SX . il CEO, Nica e Andrea</td></tr>
+</tbody></table>
+&nbsp;Ed infatti dopo pochi tornanti li incontriamo, li agganciamo e scendiamo verso Bobbio.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjs_ATzsw7tod9Vxkd6feeNFmj2cAyCrLbLb1N1SYvFww9kb7Ag5LAu3S3IkxAwcBOcjMqwuLqfvwaRkl-cnCdeBOPu8JfsF38GMOaGfBTkWK7KW791m0S3ovQEysyWXIYGkHav/s800/IMG_5665.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Mercato di Bobbio</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEilmc61lF3lM23SQB32D2P9nvPIvxROZQ3ub52MtMufhQrtsUePI_XuDlyEUkbOj4-o5C7RD3J_hnC2KszpZv1oPFFHr1m5Z7tbhSKlRyvRhIeIRm1x1EAVxX8cN2N94jLK-AdE/s800/IMG_5666.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Il CEO e Andrea seri mi preparano uno scherzetto : ancora salita!</td></tr>
+</tbody></table>
+&nbsp;Da Bobbio (ormai sono 70 km e 1500 m di salita macinata) dovremmo sciropparci i 20 km di fondovalle verso Travo. Ma i due malefici CEO e Andrea hanno in serbo una sorpresina : "dai passiamo per Lagobisiano, tanto sono solo meno di due km di salitina leggera leggera".<br />
+<br />
+Non riesco a commuoverli e quindi, lasciato Bobbio, prima di tornare sulla statale prendiamo una strada che sale a sinistra.<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbOhwdVWFYjd4VBnUqheRnsjwdld404-CbHOEsgI_aKKPDtdrC3ZJUhv1rTqPqWjLV5ZrRnnSUTt9lqqYT64vNI9-QV_YtVjXe-KUAPff6OKF3p5rHmvvgtPcb0xlx8tyeODLu/s800/IMG_5667.jpg" height="400" width="300" /></div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAgU85UBDiPFMzSE1Rd1Lj0QdGAkvNZjGWOYlXpVbWOfpuASXN9fHEcMo04Jb8y-fpK2G8YR7Ncieoy_8Jmkg7oCcWf1Fdlvw6MGFwYnOctWexxtmPMcxoPu_6cOdyfAQiHpqD/s800/IMG_5669.jpg" height="400" width="300" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Giorgio-CEO e Andrea : ghignano soddisfatti</td></tr>
+</tbody></table>
+&nbsp;A dire il vero la salita non è poi così leggera. Anzi. Il CEO fa allegro : "tranquillo, tra poco spiana"..Ma non spiana. Dopo un bel paio di KM abbondanti il CEO ansima : "ma me la ricordavo più corta sta salitella...". Io taccio per risparmiare energie , tanto c'e' Andrea che chiacchiera per tutti e tre.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVK0xcwi9Ykk1KoHghVOO4m8fe6t7L5k8JMi087n-PaUNFgJyZlMlI54sL8SoF1OrCa6TD4verRotwrEOLRvRAX2V6f-0dquON9MkUppt0rASnDoSllpUe0CK0douOJ2q_W33F/s800/IMG_5671.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Sosta itinerario</td></tr>
+</tbody></table>
+&nbsp;Finalmente arriviamo ad un bivio che indica in discesa MezzanoScotti, tappa verso Travo .<br />
+<br />
+Andrea, bello allegro, dice che non è mica convinto e che dovremo salire ancora. Nica ed io siamo invece molto convinti : dobbiamo andare a MezzanoScotti? E allora si scende!<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigOaJaXr5PDV4NZlWogX_NoB8oiAXho8oFX-y7pCTUINTWTx1YgXPIZQhLBejWykgpjitc8IsoIRVgVIbXvNxR13upEguK8iAo2l1hzxizey0hKqqHSMbE_h8418RmbcCsFH2f/s800/IMG_5673.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Scavalca-frana</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSBYM7sEp_dEJCYnb1V3Uc3LSdC_rFlfd2h5geIq6UANBV4wlbUvHELDvDmNQN65T8efNQXPZSCvozZa5QoNay9jZyWMOhx5hfg_alufuw-D_IclMP10ucfLV6H3mr3rT4I4XX/s800/IMG_5674.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Cielo plumbeo sulla Val Trebbia</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcRgylq2K14SFZEVpxwThYDniNZrSVtLPgOSGQ4jhw4WJZEFZkbiNj2ha5AAeuCVVDETHZi55XuV4zj4SCJTAsLDcdi3FDAy1Mje3lfxVJK3xTPrx5SgyxIUpfvEcw6XAgN-Gj/s800/IMG_5676.jpg" height="400" width="300" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Stavo pulendo il telefono e mi è partito un selfie</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizW0eqj01GS8HxH6m-FBK0yC4ivYaILrs008sVXlGaXf6FBNUDRKeHpZamqWoaHUgpUUIejnFHaETA6IMpWoGEf1aaj8skGQOKNiibN_uVhjE48jCU7oHzYZbpIC58feVHEufH/s800/IMG_5677.jpg" height="640" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Indicazioni per me utili dopo il giro di oggi : prima l'uno (il defibrillatore) e poi l'altra (la chiesa, se necessario)</td></tr>
+</tbody></table>
+&nbsp;Da Mezzano Scotti a Travo passando per Perino è un lungo falsopiano in fondovalle accanto al Trebbia gonfio d'acqua. Il CEO tiene fede alla sua fama di grande organizzatore di gite e si piazza in testa a beccarsi tutto il gradevole controvento.<br />
+<br />
+Devo dire che accolgo con gioia il bivio per Travo? Ovvio che sì, se si pensa che alla fine ho fatto 20km e 400 m di salita in più rispetto a quanto mi attendevo.<br />
+<br />
+Ma la Moroni Adventures non ha tradito nemmeno stavolta : giro magnifico, grandi panorami e strade vuote. Il meglio della val Trebbia.<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAy8XZLU7unDsH-S4Iy-hqvNSY-yFGRqlM_-XudDdRB30TddwiVz6gh9Ojex35xmBCk5PW2oAGV0t3GvFPg6HXGqFwgmmUxbghPQj_-HRAjD9VDuLwnxpu6BakL7migLv2ursa/s800/IMG_5679.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Il Trebbia a Travo</td></tr>
+</tbody></table>
+<br />
+
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20140330_160.html">Lungo la via francigena</a>
+    <a class="next" href="20140406_162.html">El Motarùn presenta il conto.</a>
+  </div>
+</div>
+
+</body>
+</html>

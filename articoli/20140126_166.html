@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Illusione e disillusione – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2014 &rsaquo; 26 gennaio 2014
+  </p>
+  <h1 class="article-title">Illusione e disillusione</h1>
+  <p class="article-meta">26 gennaio 2014</p>
+  <div class="article-body">
+    <table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgnXSqfQtD7wJBg3PH6vU-n54QZTn0fA1tFyDhP09oLei4pTDEtdTPpiNQTYTI6RpsSnxnd0SvBg0hOQzzgMSArw8dnOQf2TEkLdeIBqt4U87m5akCTHyl5HzehEc1a4MtyMshy/s800/IMG_5464.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Feriolo</td></tr>
+</tbody></table>
+Mai illudersi, la bici ti riporta subito alla dura realtà.<br />
+L'ho imparato a mie spese in questo weekend di tempo splendido. Programma : sabato in Oltrepo e domenica in Alto Vergante e Lago Maggiore. Tramontana e cieli azzurri : aria limpida come capita solo in certe giornate invernali.<br />
+<br />
+Sabato mattina sono in sella alle 9 a Stradella. Fa freddo, porca miseria. Ci sarà ben un motivo se non incontro nemmeno un ciclista.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbor47afU6vn4Do3fMJs0ZxQJ16fC4ytvuvpeVRroGtTjok92CSZc7u7WXg3FjHsrVUNVXyjIsHr8yrXdKSj4tZ1BOKjIlrjYTABY9Zl7jOSjO0vZ3NGS9fAzmDbf0yJZ4bVWa/s800/IMG_5448.jpg" height="400" width="300" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Ghiaccio la mattina di sabato</td></tr>
+</tbody></table>
+Mi scaldo un pochino sul lungo falsopiano verso Santa Maria la Versa. &nbsp;Tengo un ritmo decente (almeno mi pare) e in breve sono all'attacco della prima salita di giornata. Qui finalmente c'e' il sole che scalda un po', &nbsp;e mi aiuta a puntare il naso verso l'alto. E' una slitta breve e regolare, un paio di centinaia di metri di dislivello, ma è l'ideale per affrontare il lungo tratto in costa e saliscendi che mi porterà al Passo del Carmine.<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjF5kULEdrwdZcRvFbByC_J3ZJF3T_wQvZWjFWELMLvv2Cxppn1T_wcgViVa9Ho_92gHKqqVD5uwxc7isDLj73of7dyCqp6xF1VGG8HF-UU9iExQ9bhe9YUbEBQoCvJirxeRQ1V/s800/Schermata+2014-01-26+alle+16.06.37.png" height="312" width="640" /></div>
+<br />
+Superata la prima ascesa dopo qualche km compare la chiesetta di Canevino abbarbicata sul colle sopra il paese. Decido di fare una puntata lassù : è una deviazione breve ma uno strappo rognosissimo con pendenze ben oltre il 15%. Qui l'importante è non scivolare con il posteriore : ripartire è impossibile. Ma dalla cima il panorama è uno spettacolo.<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgckVZblvGDuV-YxrlQ597KNjcL9Ld9z2wi1MjL0bYq4qUy3JNOaKsF1W510Xx_q9MyWIydHABiGyZ_fHu7pMj6U-BKjmLbA0qUqECzAfwwIWf380NYcK5o3YLCmIS5lklyJQ1q/s800/IMG_5433.JPG" height="480" width="640" /></div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8m3CqIGi8tV0f7iquu_7ZFrw7dq4IYk-7DU3i8fm1ninBzNDNyNE75jY-AzOMoAToeZ9XMvmy83v30Ib74x4uMQUBlI4gzE11OyNGuE4OJg0bm1yjeHamGMXuFeZZ6t1muPJl/s800/IMG_5434.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">L'intero arco alpino</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhydO8oE1Wv805QIOT6PMJp2gAxkOm2sZzSc5Gq8A0VYYvt54KHg-5Ou3n3kHfWRCMIYCkDWt5500NQOIWtQ74-cO_1gjILtrhZ2yOeuvbnj0NG6fQkj0-AzmAE7z4mVA1LLs1o/s800/IMG_5446.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Comoda Brooks</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgW5JPMvb_4Unu8oqCQsSw2e3NwTT2VJJDoC3z3mA_4-Cu0xQTtMKW8JGjmq_dEEoaVWYp1BvbTl3eZdhUEIHxdK-k-CAYHDVBjcp9mJUQDUJ4OIavzbepmRtnic5Bl8imn4lg/s800/IMG_5450.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">La chiesa di Canevino lassù in cima al bosco.</td></tr>
+</tbody></table>
+&nbsp;Dopo un po' di foto mi rimetto in marcia verso la cima Coppi di giornata : passo del Carmine. Ci arrivo dopo poco meno di 25 km : anche da qui lo spettacolo è bellissimo, si domina l'intera Val Tidone e laggiù spunta il Penice.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKYNQ-XaNgiw6Q31870AEUqf-GYwWmkZGlDnjcac3i_Hi2sb504C85W6n4yBej08YY7exf8rxPGFG_Omumg6X1dK4mrMiWfCmIzcm38irmV2erL6HB4-60E-cUTUq8Nn3nURbE/s800/IMG_5451.JPG" height="138" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Dal carmine</td></tr>
+</tbody></table>
+&nbsp;Fin qui tutto bene, direi : anzi, oltre le mie previsioni! Le giberne invernali (si sa, il gibernauta ama coltivare le giberne, specie durante le vacanze natalizie) non sembrano pesare un granché e la gamba "gira bene" come s'usa dire.<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHK8iCRnG4uW15-E-oKgfYJfWYm4xih9M9rtAQTvkvSdGbXzW4aTYGBNJ78D9mFne4nieHaYf8ziAm3J0qjC0Hk_XwtEKBxnpf9ued40PWKTiohpbrT9iUVlnCPSacUDh8DcQ7/s800/IMG_5452.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">La Val Tidone laggiù a sinistra.&nbsp;</td></tr>
+</tbody></table>
+Mi butto giù dalla discesa del Carmine con grande circospezione : ogni tanto ci sono strisce ghiacciate e qualche smottamento ha aperto lunghe crepe sull'asfalto. Dal fondovalle punto verso Zavattarello che sarà la mia boa di rientro. Anche qui la salita è graduale e progressiva, ideale per questo inizio stagione : per di più il sole adesso sta facendo il suo lavoro e le orecchie ricominciano ad assumere un colore umano.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHNvqYUmeDBJGdXFiwnOAaJ8CYo23CKustnJYUYSSeEr3h5xOZ9DqXVzNG4i77VK_Czow0ODuQNDbNuYa9vn31T5sUlXiUsL5a9RhlyKeSk9SzIjlEPoQsPzb2L3gk6dtWkGoi/s800/IMG_5454.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Castello di Zavattarello marcondirondirondello</td></tr>
+</tbody></table>
+A Zavattarello c'e' giusto il tempo di una barretta e sono di nuovo in sella in direzione del Carmine, stavolta da fare in salita. Il Garmin segna già 800m di dislivello ma devo dire che, con mia sorpresa, le gambe stanno benone. Affronto i tornati del Carmine a buon ritmo-Toh! sbuca qualche ciclista bello bardato che mi incrocia : furbamente, ha deciso di sfruttare le ore centrali della giornata. <br />
+<br />
+Dalla cima del Carmine il percorso in costa in senso inverso è in graduale discesa con qualche morbido strappetto. Giu' di nuovo verso Santa Maria la Versa e dopo gli ultimi km in falsopiano arrivo a Stradella dopo 62 km e poco meno di 1200 m di dislivello. E la gamba ha un grado di legnosità accettabile : visto che era la prima uscita con salita del 2014 sono entusiasta.<br />
+<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZqgNWi_R1xLOrhEPF8qp_JjbZbR7-r2w0ul5dWMUA0rXAK6JZ3moW6jtY54TTSnKPLWR82bkls6LuXhUu0AMzKe8AqhEB9q2b_3sXZQbLr1OEZjrD9syNI5Nrc7DuVfLc1Vg1/s800/Schermata+2014-01-26+alle+16.06.17.png" height="312" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Altimetria di domenica : insidiosa!<br /></td></tr>
+</tbody></table>
+Ecco quindi che domenica mattina affronto con allegra incoscienza il programma che Giorgio (ceo della Moroni Adevntures) ha preparato. Partenza da Meina, qualche mangia-e-bevi , discesa su Stresa, giro del lago di Mergozzo , risalita a Comnago e rientro su Meina : poco più di 70 km e poco più di 700 m di dislivello. E che sarà? Dopo sabato mi sento Froome. Errore. Errore grave.<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8ptBWyfBktZNSd7rb4sucyav6ISF3Ic3tMH58vy5evEOXzv3BohX2K5r_OGNPT5PHg85cdGk6HqDbz7uhNo9Z41aokliodVWC53FCXLwId1Gx4N7Nhw_BXPTIyc9KnSuZiKVo/s800/IMG_5457.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Laggiù : Maccagno e a sinistra Locarno</td></tr>
+</tbody></table>
+Affronto con passo allegro i primi mangia-e-bevi dell'Alto Vergante. Gamba bella tonica e cadenza allegra. Ottimo! Ma già al secondo strappetto il ritmo si intristisce un po' e anche la gamba si appesantisce . Oibò? E Froome? Mah...non ho tempo per pensarci il CEO Giorgio pedala spedito e se rallento a pensare mi molla lì.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjc4imW0ZvlZJGxf-pUC3DboYWvZmIfTFnc9CJKq22MhX2pqwMdIXRDpeo8J11zzRSYDYDbBWICw_0AsV5Z7F60KlamWsKH2kgNkbpWf4DLccMxaOnQA-2CnFLztKaFPV8eVGCu/s800/IMG_5459.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Sopra Stresa</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjennjIv7kpDRZPOMsnqG-2Zf5NGVWXzYmRudzNE5f97I5sxEGMH4q-TTXQNmnYWHF_LYi4urLE_TVrV65NH1vt4hvS_1z8m7keO6OWJuhxy5BKmwED66szBYzz0v4BtSVCpz1v/s800/IMG_5460.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Le isole borromee<br /></td></tr>
+</tbody></table>
+Fortunatamente arriva la discesa su Stresa : panorama spettacolare e, soprattutto, posso recuperare un pochino. Sul lungolago il sole scalda il CEO che parte di buona lena : io fatico a tenere la ruota. Ogni tanto mi vien voglia di richiamare il CEO alla sua missione chiedendo informazioni sul paesaggio sperando di distrarlo : ma lui niente, risponde rapido e ricomincia subito a mulinare.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNn3o8rx0sAZg5bcxoxZjVLYVLG_uKLefkCaZIl0uS36-KzwLiFaJdYEfSyLiHXD9TK9rCl1Yx3Q5slPqjLJfNAlAYSy3zE2fUB85Klq_kyZsLUkTglP0PvjxyfqpXnUI1onZM/s800/IMG_5464.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Feriolo</td></tr>
+</tbody></table>
+Grazie al cielo Feriolo è l'occasione per un'altra pausa foto. Quando mi rimetto in sella ho una sola cosa in testa : dove potrò fermare l'assatanato CEO con la scusa di un'altra foto? Lui è li davanti che spinge : gli chiedo : "ma scusa hai un appuntamento?" e lui "no, perché?" e giù di nuovo il crapone a pedalare. Mi tocca sorbirmi &nbsp;metà giro del Lago di Mergozzo prima di poter fingere un'altra necessità documentativa che frena l'impaziente Giorgione.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjz_tdeMxo9kxEspgiLUJn6d-5GMMQD5zYyQ6IA3-RtbXGQ-4ynawgY6oMm0SA2FQYSJ4AjF24YpCm7DK91iVLGbAvQfhKPE_6rsiesaaXqnOFpV7q2FpgXq1FETsunbAmsDUKe/s800/IMG_5466.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Mergozzo, altra sosta-foto di &nbsp;riposo.</td></tr>
+</tbody></table>
+<br />
+Certo il posto e la giornata limpidissima meritano, pero' il CEO ormai sospetta qualcosa : mica pensava di essere uscito in bici con una specie di scatenato paparazzo.<br />
+E così non si fa più fregare e dopo Mergozzo si produce in una lunga tirata lungo il lago fino alla base della salita che ci riporterà in quota Alto Vergante. Qui, fortunatamente riesco a convincerlo che ci vuole un cafferino. Al Bar a Lesa decido di ricorrere alla mitica Cocacola che in passato aveva già prodotto su di me effetti dopanti sorprendenti.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiA0KnfccxAClK3yf7DTEEFlVky9nrz4LaldV1O0Uav0SpuIKYHovPALQOp8V1DZjWjBAnZ5fIx47evpbiFn7HC68HgEbMec11o-Bq8ADRbaw3Q2WELO6rlR3WDvWipkvQt7wGG/s800/IMG_5471.jpg" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Giorgio (CEO) a sx e gibernauta (a DX)</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_UrEJHw5bmx0vrmsRiH4LIaFAbwzGC6sqRKYK8fXZCpDR-yBF-33WU0Iouw5K4XJZtQhaZ4Q3npVsZbKAPReUmc4bTjDReTCLIdYHhsG0_443yWuyEdaTw9-9cHpPlKtnTesh/s800/IMG_5473.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Cinelli e Tommasini</td></tr>
+</tbody></table>
+<br />
+Quindi affronto i primi tornanti della salita verso Comnago in attesa della "botta dopante da Cocacola". La strada sale ma .....niente! Porca miseria l'effetto dopante non compare, tanto valeva che mi prendevo un bordino. Giorgio nel frattempo affianca un altro ciclista e cominciano a chiacchierare amabilmente. Io , dietro, fatico come un mulo. Poi, finalmente, un tornante con un bel panorama : "Giorgio Fotoooo!"<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrGscAgVHDQymXeDeznL_V9PBBRFDCLv1Ip63l3J_RxoF19hl0ETpOY7D5fhZhFsHSiJWgmAo4nS1kkJKFub7oKOcM5cCCW7UF16vUmNPZFd0YjBmaAvVzGUEk2hxInblKY-yf/s800/IMG_5474.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Il Lago verso SUD</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0rkG3eXS1xUIdalXg0oD08__f16k5owWhh_uWa9CwUEhV8SiGwvkGR-au6mVQoVIp__wcwz4hRbn71QaoRw5wTzONhzfAH79tl2HirfMifjywqcJvYn_Eav4u74bC_IEcFczn/s800/IMG_5477.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Lago e Alto Vergante</td></tr>
+</tbody></table>
+<br />
+Da Comnago comincia per me una vera via crucis. So che non ci sarà più l'occasione di pause foto e mancano ancora una quindicina di KM con il micidiale mangia-e-bevi dell'Alto Vergante. Le gambe sono ormai di puro palissandro e ad ogni strappetto il CEO mi molla lì.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgfj8mKyAaIKEFk0TeqJHNSk8OrlNXzR8-ZN_UqB59bj-KS6PKUjZJMkJkPZ0WnlByE5mQRMPZoh7cmuXjndEKGFUH48fcI6qA_EMm_6fS6DApTvKtnIhdFBWDbakMW8bZsZ8S6/s800/IMG_5476.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">In mezzo ai boschi i micidiali mangia-e-bevi dell'Alto Vergante</td></tr>
+</tbody></table>
+Sbuffo e arranco e dopo l'ennesimo dosso il CEO mi fa "tranquillo era l'ultimo". Notizia grandiosa. Ora dovrebbe essere discesa fino a Meina. Mi faccio prendere da un incosciente entusiasmo e provo anche un allunghino in un tratto di falsopiano. Ecco qua l'ultima curva ecco.....ma ORPO! un altro strappo, lungo e ripido! Mi pianto miseramente e Giorgio mi sfila allegramente a sinistra "ops, scusa questo non me lo ricordavo.." E scompare felice oltre la cima...<br />
+Siamo di nuovo alla macchina dopo 72 km e 700 m di dislivello. Io arrivo e quasi casco letteralmente dalla bici. Giorgio sogghigna e mi fa "magari volevi fare un giro più lungo con più salita?" &nbsp;Ma porca vacca. A volte questi della Moroni adventures sono dei veri bastardi. La prossima volta mi sa che mi rivolgo ad un'altra agenzia.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4OUwXCsJmuBJaC8rIEnQzxtcU5qZHj99y4LoVVqjpTFjCt-MsxEVIcnMCJkcQjt_SJFxDyvbkqIAdD7EvtzqBYLdVu6q_3bIB8YePRPpJp4dw4tcda_Aee8LsBvK5h79eIsSn/s800/Schermata+2014-01-26+alle+16.07.03.png" height="586" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Sabato : l'illusione.</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhn6jEcwXRLE10QP995LjoMOc91H7MXg_TUbvK4wq1SU_RqLBmRYweJlPynAWy1YB8TUWhOlm8SpgUwr4w2z03FrjzshcOXk2642QZo3Bc4e9lx-Mz4VWC0aWRZAvKE3O4JW7nQ/s800/Schermata+2014-01-26+alle+16.07.19.png" height="456" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Domenica : il brusco risveglio a cura della "Moroni adventures"</td></tr>
+</tbody></table>
+<br />
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20140113_165.html">Cogliere l'attimo (nel senso : la nebbia ora c'e',</a>
+    <a class="next" href="20140305_167.html">Prima uscita mattutina dell'anno</a>
+  </div>
+</div>
+
+</body>
+</html>

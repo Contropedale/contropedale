@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fiori e piccolo Stelvio : un bel 25 aprile – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2014 &rsaquo; 25 aprile 2014
+  </p>
+  <h1 class="article-title">Fiori e piccolo Stelvio : un bel 25 aprile</h1>
+  <p class="article-meta">25 aprile 2014</p>
+  <div class="article-body">
+    <div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinnCHZZhyP6jseaII0mHHuqT1c8OnlDDIs7ulLyh2fBfCPC5i76t1BRZXYMcKPCHHRd6OlqPt17RtWRRB9NEqOemKnA6a03Z0N6yCvWfVRbH_YzgocwVsd1o5aWclXDrERdnpo/s800/IMG_5932.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">A Santa Maria della Versa : come invidiavo il calessino!</td></tr>
+</tbody></table>
+<br />Sono le 9 e siamo appena saliti in sella. Santa Maria della Versa : un gibernauta e uno smilzo veloce partono per un giro tra val Tidone, Val Trebbia e Penice. Aria fresca (davvero!) e cielo solo leggermente velato.<div>
+<br /></div>
+<div>
+Alla partenza incrociamo un calessino che passa veloce : quanto avrei invidiato i fortunati passeggeri lungo le ultime rampe del piccolo Stelvio.</div>
+<div>
+<br /></div>
+<div>
+Ma andiamo con ordine. Partenza come dicevo da Santa Maria, e subito le prime curve in salita verso Crocetta. Stavolta Renato, smilzo veloce, decide di non tirarmi il collo come ad un cappone e affronta la salita a passo per lui lento e per me velocissimo.</div>
+<div>
+In breve siamo sui contrafforti che accompagnano il lungo saliscendi verso il passo del Carmine.</div>
+<div>
+<br /></div>
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgnn82kFBcHvxg7IirexIQEiqAy-mYSCUcjtZ-jeHgrdJ-fdnirRwj6NJGdC_mB6PGAVCveMpk7l5qASk1qJuhm31EiAOMguq0e5K3qILHEGO4g-IdwFTxl2ejCFGGGRN0ZZsW2/s800/Schermata+2014-04-25+alle+15.47.42.png" height="308" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Altimetria di giornata</td></tr>
+</tbody></table>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0mjhys31BpWkfHZG3XTdu2qsHN3ZX0T3HZUa1731yf64cUgrlMhqHfYWBvH7MrwAkAyEdvycl_scjQDaSCiQ2nEEhlRN2TkgXW-KQiJAoYesabkqyLrHrEM1fnM4OZqRAbtJK/s800/foto-2.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Gibernauta reporter al lavoro per foto di fiori al Penice</td></tr>
+</tbody></table>
+<div>
+<br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGx9J5xSXxjl9-YP1L6giGPfrcUOgDw6YyTYfKdmKikGsk-y2GRiilrn9I_NMC1jGxEfyk8UoTsa07F3L-pPa105ZGkBTOBiHDNtTyI-xoTE8wk-MzFkpqY1eSE8zxlX0x_I5a/s800/IMG_5938.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Fioritura in Oltrepo</td></tr>
+</tbody></table>
+&nbsp;Ma oggi non arriveremo fino al Carmine. Anche se puntiamo comunque al Penice ho deciso un itinerario diverso. Dalle parti di Pometo gireremo verso sinistra per scendere lungo il piccolo Stelvio fino a Nibbiano e da lì scaleremo il Penice dal versante di Pecorara : sulla destra orogafica della val Tidone.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbMu_3FEShlZeGXofNfbBBLgY4fHKgb7tcibGdKrDJDvjfQ1eB37gwgcv5ov6ZkDBaW4A6oKd3B0EcFnUTIat2Kyj_h3WcvImJpkbZzD4R4VPLfwnjS4VwBWPcO18VLahT-XUX/s800/IMG_5940.jpg" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Il saliscendi in costa verso Pometo</td></tr>
+</tbody></table>
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+Tutto bene fino a Pometo e qui pero' a scanso di equivoci decido di chiedere indicazioni. Scelgo un signore che stava tagliando l'erba del suo giardino. Un improbabile tizio di una sessantina d'anni con capigliatura corvina alla Razzi (quello della foto del matrimonio) , tshirt nera, jeans e collane d'oro al collo. Non l'ideale per fornire indicazioni a dei ciclisti. Ed infatti prima ci manda indietro, poi dice che ci ha pensato e che sì si va invece di là....no, forse di lì..pero' è lunga...comunque non puoi sbagliare. Insomma dopo pochi metri sfodero iPhone e grazie Google maps scopro che stiamo andando dalla parte sbagliata. Dietro front e, all'altezza del cimitero di Pometo prendiamo a sinistra verso Caminata.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYqCpYuVqs1WDp1TgY25jVVSjVCutU8IEOyxe_9_ggwT_7UYa3Oi0JR6BTlFpkdPQOcEX3Vn34jGGQlkBG7LZ6D4Q9Gt5MJkDbm3rWL-HWKqE6txPPV_UTXYzosbAV1mh6ounu/s800/IMG_5942.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Scendendo da Pometo</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxGpt4_mJjDw-_UtcWfd8qrH9ZJU_CUmUQI0tUs9fURIZbPukIWOKCR7qwDX8N9c2M9tHDDMBSLf37U11pzX83LiNI181-XK-9WqLuPUmlycrfJwM598rzN3B7sCNpuhdwCt8n/s800/IMG_5944.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">I tornanti del piccolo Stelvio</td></tr>
+</tbody></table>
+&nbsp;Da qui comincia la discesa del piccolo Stelvio. Una vera goduria, scivoliamo via silenziosi in mezzo a prati fioriti e con una serie di tornanti che sembrano un vero toboga. Aria fresca, profumi di campagna e il lago della diga di Molato. Bellissimo!<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHLM6yvDQ4ErQ1frSLiKIJDB73zNIOsr85iNajN3k_uj_g5-x96hHIFeWdNshNgoqo-KO5l49Cnwo5lxaYqeQpNUbjIBYIiCvhEYOdOOliGLYDlNJTJHNcr1N6KAaHX-XHPbcW/s800/IMG_5945.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Anche lo smilzo veloce si ferma ogni tanto a rimirare il panorama.</td></tr>
+</tbody></table>
+&nbsp;Alla fine della discesa prendiamo verso Nibbiano. Sono pochi km lungo la statale della val Tidone, in breve attraversiamo il paese che è stato completamente risistemato ed è davvero piacevole. Da qui parte la salita che con una lunga tirata ci porterà ad agganciare la salita da Bobbio al Penice.<br />
+<br />
+La strada sale dolcemente, tanto dolcemente che Renato (uomo a suo stesso dire "on-off" che non ammette vie di mezzo) si trova spiazzato : ma è la salita o no? Ci mettiamo in modalità salita o no?<br />
+Io e le mie giberne apprezziamo questi pezzi in cui si guadagna quota molto lentamente. Le giberne soprattutto sono molto felici perché non devono lottare troppo con la forza di gravità. Cerco di distrarre Renato dai suoi amletici dubbi ("si sale? Non si sale? E' falsopiano? E' salita?) chiacchierando, questa volta non si parla di tasse, per fortuna.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiiCkwc8pfb6KbPzqmO-B4I9Gis6cAf97_lmshBd2sCO4i94jKWuHJJuJyEKxvIpROCqyczBhEDPX_R1RzzUCZK-UZz5MO2Pq2CfyuZwaPTO43TLy3MFi07Va7ef3B9bfy0i81/s800/IMG_5947.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Fioritura</td></tr>
+</tbody></table>
+Ogni tanto ci sorpassa qualche motociclista che crede di essere al Tourist Trophy. Certo non sarà l'isola di Man ma il panorama a destra e a sinistra è confortante. Prati, boschi e colline verdissime. Saliamo gradualmente e sembra (sottolineo sembra) di non far fatica.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjTlEH9C5y8pAL4dFrOzhgA2IL8yMzbLkhrlnkQXouZN8XGu4xFPjVJVoY-tlQezT8nufkwhnzbwlnxdoVsJeaRAPMYUMfWu5ytwAmoVALCfTuUvM3NkGcgZ9E1wyw-xjY-IF6/s800/IMG_5948.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Salendo verso Pecorara</td></tr>
+</tbody></table>
+Passiamo Pecorara e Caprile (chiaro sintomo della specifica vocazione &nbsp;degli allevatori della zona) e ci &nbsp;dirigiamo verso Cicogni (qui non mi è chiara l'etimologia, non ho visto paesi tipo Gallini o Tacchineto...solo Cicogni. Mah...forse paese di persone moto prolifiche?).<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgc8lS17a66barytC9Qkcydy0w39QwsGS4g82qj0_aU0qfFZsBP8iez_mAWaEyUDxvob4XbX3uXUwtBD2ck8URFmR2N5arAZxsTHsWwFR2lPPcezD7KTObIJstBRauDW4k4Bguv/s800/IMG_5950.jpg" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Renato a ruote : "si sale? o non si sale?"</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDns6hI3dyA3B6e4T7USQPdXgT2BR4LFDb1KhWYlq8S2ojYjSCHsuUVpjrDQ9R_VA9ji5p2gfA1k2HZbnwbNOc2EiVWt7UWpiePIrue3wsrzdRz6dEZ-Y8sRBzQF5XS98304RN/s800/IMG_5952.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Si sale...</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1lxqvNuXUZn301UhyZCFmyisd23yFK-m2ftjhT09lDgoOgCaVsIDb8645BujP7wfe31fbN5DsgIGiatHkI4mUOXrKxYqw1wsPRDqip1mgGk2y1J3i2MOOxJ0ry9kcY3bZAduK/s800/IMG_5956.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Non si sale.</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhjmVtYx6HLtCohBVdIbUELOAlgt7oRvrns5I-NTQl8iuk5_UdYDNHFw67kL7f-VoBMTT1R_dDBKs4tDYaVluqcjourKww4hbKA6MOu4IFdO0x9luYWdiRM7-TI3XMiQVcYaMWB/s800/IMG_5957.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Cicogni, nascosto tra i boschi.</td></tr>
+</tbody></table>
+Poco dopo Cicogni dietro una curva ci imbattiamo in uno dei Tourist Tropher che deve aver preso male un tornante e se ne sta disteso per terra con la moto nel fosso. E' assistito da un paio di compagni e sta bene (chiacchiera). Per sensibilità evitiamo di riferirgli gli accidenti che gli abbiamo tirato quando ci ha superato, e tirem innanz.<br />
+&nbsp;<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg1L5Dan8_45gwpg1oj6ivDakQOFMjBJ3sh8tjLrIiEMcOQFePJqEa4mue_CaaqyUclp0QZEtnjFWC5WBdipgEP-_hn_y4T8r8l2zJJ321xnBp5rcQrSixBdpQ9da5JfN-ucR2Q/s800/IMG_5960.JPG" height="480" width="640" /></div>
+<br />
+Siamo quasi a 850 m di quota e qui mi ricordavo che la strada spianava per scendere poi in Val Trebbia. Ecco il bosco di lecci che avevo preso come punto di riferimento. Da qui si scende, vai di giubbottino e manicotti! &nbsp;Dopo la breve sosta ripartiamo ma .....la strada non scende un cacchio! Io mi ero già preparato col 50 e invece mi tocca alzarmi sui pedali per spingere il rapportone da discesa su una serie di strappetti malvagi. Ma come? Poi, all'improvviso, la discesa arriva e finalmente la gamba può' rifiatare.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1EDRRJqetFUnQBqZa6eLBBdi2vXZO2L5CkoVqEWSjekmt0Xt9aV94fjSAjg4xJo4Pf4GzFNFhD4qHjhU7CplpgBJJiddT56ywrrtzZMsFr292jMXeFg0k6G3QXAvAsqCKBFLL/s800/IMG_5961.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Rifornimento</td></tr>
+</tbody></table>
+&nbsp;Dopo una breve sosta di rifornimento incrociamo la strada che da Bobbio sale al Penice. OK, mettiamoci in modalità salita. Qui Renato non ha dubbi : si va solo su e le pendenze sono tutte tra l'8 e il 10%. Ed infatti a poco a poco lui alza il ritmo e lo vedo che un centimetro alla volta si allontana. Ma porca miseria....il Garmin segna già più di 1000 m di dislivello e la gamba è ormai di legno (una, l'altra è di pietra).<br />
+<br />
+Mi accomodo nella mia bolla di sofferenza solitaria y final e mi avvio lungo il patibolo. Poi, all'improvviso ecco apparire lassù delle prede. Sì, un gruppetto di 3 ciclisti che sale ad un ritmo evidentemente meno allegro di quello imposto da Mr.Smilzo. Renato, che mi conosce, fa :" bene, ora saliamo belli regolari.." . Io, che non mi conosco, dico "sì certo gngngngnpfffffft" e intanto mi alzo sui pedali per beccare i malcapitati.<br />
+In pochi metri li agganciamo e li superiamo. Io come al solito uso la tecnica del dissimulatore bastardo. Poco prima di superarli prendo un bel respiro e, quando li affianco, li saluto con un espansivo e polmonare "Ciao! bella salita no?" con aria disinvolta.<br />
+I tre salutano e mi guardano con stupore (della serie "ma era un polmone quello che gli pendeva dal labbro inferiore?"), ma non fanno in tempo a ironizzare : io sono già dietro il successivo tornante e cerco di convincere il cuore a tornare sotto la zona di fibrillazione parossistica.<br />
+Renato mi guarda sghignazzando ." il solito gibernauta rilassato!"...<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhb61u4La6iCikp5HfUBT9zg3TrBE0zidIMEr6dcbsg-EtPkuh9eufo4Es8ARn6fStXohlMuxTLLNoiEnyROgn-tBrLgq78HOx5OH2mRv0nJCKbOC7oa-Ygj6BCkEKhGBpj5mEq/s800/IMG_5962.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Primule al passo</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEji8B5mB7asEgmXjajnGO9zgGECcwzfDqskxSQW-R3oD_ss8VUg8Pz4WzHwRDBv-BlAPy569bqTAoPaM7Wf64LOycO_Dw_RsFF49rvR7M-deKSqjTokzkzvs1VsyVFbKiOi3HAL/s800/IMG_5963.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Meli al passo</td></tr>
+</tbody></table>
+<br />Al passo c'e il tempo per un panino e una coca e poi ci buttiamo lungo la lunga discesa verso la Val Tidone.<br />
+Se non fosse per il fondo stradale molto rovinato sarebbe una discesa godibilissima, 700m di quota persi in circa 15 km non sono mica poca roba. Arrivati al bivio per il Carmine tiriamo dritti verso Nibbiano per affrontare in salita il piccolo Stelvio. A destra si apre qualche scorcio sul lago formato dalla diga di Molato, e, come al solito gli ultimi km di piano sono accompagnati da un cortese e simpatico vento contrario.<br />
+Vabbe' ma si sa come va no? Anche i ciclisti che incrociamo paiono avere il vento a sfavore, chissà com'e' sta storia del vento del ciclista. Mai capìta.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqLtmxlcFVxUPr-UILmjXguwqArlMiMKmyOAuNkWPI7E60o3Y3qZDwAyVZpooAthwteG9wjFzxjWZ4Vv_1GTL3IQIAjuh-stuJBAa6WReT_MKuI1j4uFXrkgjIeeq_L0eW7v3w/s800/IMG_5966.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Lago della diga di Molato</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhphzNg35D2elzmE4QFuxOIlR9A4Q8PBP6owFQ7zTeoEtwUgoeUHkpCWkr3EF2kNTltg-p7DVyvs1yH6eFdKF1NP1KJLFTadi9DLNi55H38UzrrEgu3ixz04agpiqmHKmQYCOCU/s800/IMG_5967.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">lago della diga di Molato</td></tr>
+</tbody></table>
+All'attacco del piccolo Stelvio Renato mi fa capire che ha la gamba bella tonica e in fibrillazione. Io, dal canto mio, sono bello bollito e ho seri dubbi sulla mia capacità di arrivare in cima sano.Così sguinzaglio il giovane puledro che parte come un razzo. Io me la prendo più comoda e scalo a poco a poco i numerosi tornanti della salita verso Pometo. Poi, quando ormai stavo raschiando il fondo del barile delle energie (a dire il vero lo stavo quasi bucando quel fondo, a furia di raschiare) vedo un'altra preda lassù prima di un tornantino.<br />
+<br />
+Evvai : c'e' ancora qualche caloria da spendere per fare il figo (si fa per dire), anche se lo smilzo-veloce è ormai fuori vista. Rimbocco le giberne e affianco il collega sofferente, lo degno a malapena di uno sguardo, scalo un dente e lo saluto con affannata cortesia. Alè, fuori un altro! E ora vedo la cima dopo l'ultimo tornante. Renato mi aspetta là : "be' " fa "bellissimo questo piccolo Stelvio! sembra il parco giochi del ciclista!" Parco giochi un cacchio, mi viene da dire...a me sembra progettato da un ciclista salitomane malvagio! Pero' devo mostrare la preda e dico "hai visto che ho passato in tromba quello che saliva?" e lui " ma chi? quello lì più in basso? ma avrà avuto ottant'anni!". Be' :un vero motivatore questo smilzo.<br />
+<br />
+Poi, a mente fresca, mentre scendevamo verso Crocetta, mi accorgo che forse Renato ha ragione.Non sull'ottantenne ma sul piccolo Stelvio. &nbsp;Certo, dal suo punto di vista di veloce scalatore le cose sono un po' diverse, ma anche un gibernauta come me lungo i dolci tornanti del piccolo Stelvio si puo' davvero divertire. Ed anche se arrivano dopo più di 80km e 1500m di dislivello.<br />
+<br />
+Per la cronaca : alla macchina saranno 90km e 1680m di salita. Ottimo 25 aprile. Buona Liberazione.<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAWt7-8Ygao2nfxy_xJa5G-mhw7IAhAI9-eBp5AAd-oJ75tWO5-xpf_ur5WjrashlIS50DYwXgH73Z1jLMmq-uzAvmonVW8ji056IR9p01wPfXTFSgEJP6UDx0MwQYq7W5gDdL/s800/Schermata+2014-04-25+alle+15.46.26.png" height="414" width="640" /></div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi11kF3BwC5ejWqembC0SplWArdTwRIRCG4NcRqGJiLJpYn26wYFrsQtIrChbmh5XZhCaWl1xQeaFHuH4fy208qjuCSBv1SbDO1vRsY39dYZf_lP6iGesWVq-mYk0eODk1v83XS/s800/Schermata+2014-04-25+alle+15.47.05.png" height="410" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Il piccolo Stelvio</td></tr>
+</tbody></table>
+<br /><br /><br /></div>
+
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20140424_178.html">Bici e Alto Garda : prof e gibernauti (appunti fot</a>
+    <a class="next" href="20140427_180.html">In Val Trebbia fuggendo il temporale (senza riusci</a>
+  </div>
+</div>
+
+</body>
+</html>

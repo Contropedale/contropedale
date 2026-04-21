@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Autunno tra Piemonte e Lombardia... – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2013 &rsaquo; 27 ottobre 2013
+  </p>
+  <h1 class="article-title">Autunno tra Piemonte e Lombardia...</h1>
+  <p class="article-meta">27 ottobre 2013</p>
+  <div class="article-body">
+    <table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmto4HQ3TeDQCNqIsp5XtecAbJ-UT0DU2cOW3LUsvWOhuyaCaJVk4XfWJSsVGQej-jgye6KEyekQT0aQQpc2zYkCx3ksTePVNBaSxwI6jWa-mOv1z24qSXAGIXdCK3G0Yb_QSa/s800/IMG_4924.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;"><br /></td></tr>
+</tbody></table>
+<br />
+Dopo una settimana di foschia uggiosa si rivede il sole. Ottimo.<br />
+<br />
+Sabato : abbiamo un invito a colazione da Alessandra a Somma Lombardo. Ovviamente io che faccio? ci vado in bici!<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZcL9bZJllTzz0TfVjZsH3s6cuoH0BNKuafYk9P5ZDS-uIVDEovXNXqy0_08685VTFQ-lSDAHrvr0Xn0oojTMdWSaq1WLQGETrsihjNcvvIfGEap2fZuvVD2MIprT5E0hLVulc/s800/IMG_4928.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Corbetta</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvWB6mLhIb-q8nYMVZTQQjqnHz3nx1CDXdY27UlL7zTB4SRbRkT4kbiK4YWC9d8kyfKvmjP8J_hZBeDCyl6ij_GjCPBy6DC5eq_dEJI-S9S0lhvIswx4emyDF39iIr5odaU9nC/s800/IMG_4929.jpg" height="640" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Pedalando verso Pontevecchio di Magenta</td></tr>
+</tbody></table>
+&nbsp;Saranno sì e no una settantina di km, e poi ci aggiungo un giro a Corbetta arriviamo in zona 80. E così faccio.<br />
+<br />
+I primi km fino ad Abbiategrasso sono nella foschia umida. Ma da lì la nebbia si dirada e riappare il cielo.<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgxfKVvzvMjhR5BmADuKqJJf6ZGNP8LACNZxWS8q9XWobS2bXmSW-GP6j3m7JLTCuqxmQYEDiNzF8mNjdSvFVgRN4WD5yJNKdxrNa7hCxr87AHvBNB17gBpPtUg3hKLZADX3hR/s800/IMG_4930.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Dalle parti di Pontevecchio</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizPa0W1ybHTbw29m3_ujOX3odPANGnea8HgfMy8UFrFdEOPuoWjpNzwA-MgHigrEF9TziA1wSwBwglDpD_ICdwI-j3gHA7m-U5R2eF0yN1cdIu210TBd0tG136v-zXTEnH8iin/s800/IMG_4936.jpg" height="640" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">La centrale di Turbigo</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifQEIQZS-z_V3sxHONw2xLfsGQsiby08zlEeYdj-P_ZQ4fdCRv7R5Z7-__lZuKvJSs4Xcq0-wTyE3aS6nszbh-vshQow2B6pSh-S6iRMY82JTLU2mwwovC-YouAMI67SpUh9XT/s800/IMG_4938.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Turbigo</td></tr>
+</tbody></table>
+Tutta ciclabile, lungo il Naviglio fino a Turbigo e da lì ancora verso Ovest puntando verso il Ticino.<br />
+Fino a pochi km dopo Turbigo l'asfalto è abbastanza a posto, se si escludono i bozzi dovuti alle radici.<br />
+<br />
+In teoria dopoTurbigo si puo' abbandonare il Naviglio e proseguire sulla ciclabile asfaltata lungo il Canale Villoresi. Io pero' preferisco continuare lungo il Naviglio che qui si trasforma in una sorta di delta lussureggiante, sulla ciclabile sterrata, bagnata e coperta di foglie e fango.<br />
+<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgI-uG89lk41WI5cBoPYICLavmyNNRy-2uCcOv3QLiiM9QZItyUn4B_EmChIc5-5mR3_yIecXNZllDGX2FoQy500KL8hsUdq-SwlP1l7CRQ7LfVYwtqN1AKH9K9YpW6J1PgKoCB/s800/IMG_4939.JPG" height="480" width="640" /></div>
+<br />
+<br />
+<br />
+<table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrkPRY5hjFXvKThWqDMKfLvxIZEh3KdOZVPLv-i2p6A4hLxEF-Inwx4oR545irmZkP84MjcbYcdBL0ucmieqICnxDggqufwLeLLRMsl-eO3EP-p7qYlL_LOkGvbB6-0EYTP3dk/s800/foto+2.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">A sinistra scivoli d'acqua presso la chiusa di Vizzola Ticino</td></tr>
+</tbody></table>
+<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><br />
+<div style="text-align: justify;">
+Era da molto tempo che non pedalavo su lunghi sterrati con la bici da corsa. I primi colpi di pedale sono stati un po' circospetti, con la fifa di scivolare su ghiaia e fango. Ma poi, presa confidenza, la velocità è aumentata e il divertimento è cominciato : vibrazioni, schizzi, scivolate sul fango e guadi di pozzangherone &nbsp;a quasi 30 all'ora. Una vera goduria!</div>
+<div style="text-align: justify;">
+<br /></div>
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEio4EogubVon1HQyjOxM8pTscdr97LjZ5sOnXjZ97UJuDRU3cpZ4ytDCUXWFCJvVcoABez7DLPbI-3MdX9bkWkd86ieYyYL8nPGMOlpmqswSkeKoE-F-eFegWUFi8Gm3VbV75SZ/s800/IMG_4940.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Autunno</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><br />
+<img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLwV3aKyauiuXvOQLqpa3Hi0eDReOXbaxFKT1KYHuR6__2HJNqP2znbI6qhSwDVVNE49H_iwmiNJgCQPDj0c8Ot_BK8mSw-qeNDo2leila1RdOdWc4DbdfUPniU65Kt9kbY6LM/s800/IMG_4942.jpg" height="640" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Pedalando su sterrato e pozze d'acqua..</td></tr>
+</tbody></table>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEHzseIwv1ktzvNXTmfdGji9d8Cj8aG8FJZ0Rtq3foyUlcqMyKtywLE0smxV5XLrpQDc2SotjPh3w28Qzwx64pLWiMh31EQmkPtSchIosDYBd1vD4Xt7z8cZQt3UW8Rqag1Zbo/s800/IMG_4943.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">La ciclabile sterrata verso Somma</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwG8cQO3X_j4sV9dPJqjLIKt508FV4My6UUyhizGJ4sDpGfkp5-eEOwTrS0Mx99DADQq1426jdfvX0b2v8yWTZFYe8Z3XQT4r7MtZauPDCS9CAx9GjpTB6uv6gqrwHXl-uRCuv/s800/IMG_4955.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Chiuse leonardesche</td></tr>
+</tbody></table>
+&nbsp;Dopo la chiusa di Vizzola si riprende l'asfalto (peccato!) per gli ultimi km prima di svoltare da Maddalena verso Somma. Qualche metro di salita e si guadagna una splendida terrazza sul Ticino, le chiuse Leonardesche , i boschi tra Lombardia e Piemonte. Uno spettacolo annacquato solo un po' dalla foschia che impediva il panorama fino al Rosa.<br />
+<br />
+Non è certo stato un grande allenamento, una settantina di km poco più che piatti e a velocità "tranquilla"; per di più la bici è coperta di fango e anch'io non sono proprio pulito....ma che divertimento!<br />
+<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEif7bbV0zh5Wcv59QqjQdSQ6MjM20PHUC6WhesKahh2H4Ehky2ATjJD75uycTMwVipIbDAvKql3-TkLaA5paB6uAP1hfL0MMw1C35bup5Hol5zTHUj7cIO3Vd5DL4xqUVAEpYtb/s800/IMG_4947.jpg" height="640" width="480" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Concentrato..</td></tr>
+</tbody></table>
+<br />
+<br />
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2cyiKcPvhISGYFaYfB4jD0sLfwijDPbVFZkxEO7NB3YixvpJOvcCoLW_WLBxEWAoKArqkBycSSlQ-9wFBgNXoKRUFaa1kX7pYHD8hIO5mkai5VELkQO-3inhyphenhyphenT2Mv6uBG917P/s800/IMG_4956.JPG" height="480" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Le chiuse Leonardesche sul Ticino da Somma</td></tr>
+</tbody></table>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGJKBUVl9UYQJFLyLcN-ImzfzmOwygIEKVJOszFwFHRue9mMvxgV5Sbs97Voio6w0j9w-i3wVtKeWG4In4b8YbB0wjBgzoKMavfZfp2x1PJtM0BZkvS-VvKwTd3RiKS6HqjDHs/s800/Schermata+2013-10-27+alle+14.21.52.png" height="296" width="640" /></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Giretto</td></tr>
+</tbody></table>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20131020_160.html">Ritorno sul Motarùn....</a>
+    <a class="next" href="20131103_162.html">Novembre</a>
+  </div>
+</div>
+
+</body>
+</html>
