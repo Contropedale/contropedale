@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Un'altra Randonnee : la 200 km di Cascina Costa ; stavolta ci sono anc… – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2009 &rsaquo; 22 marzo 2009
+  </p>
+  <h1 class="article-title">Un'altra Randonnee : la 200 km di Cascina Costa ; stavolta ci sono anc…</h1>
+  <p class="article-meta">22 marzo 2009</p>
+  <div class="article-body">
+    <img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 290px; height: 320px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUCUghywZpmZ2N6aeS1dVFnsWghCXaCfLgWRxpv-RVuR-ZG-h-3V7GRnFHUaoRjFwPFvlQntgEV5Vbx3uXoRPuMoMsFlrmbXtYkcMXwRBvLldp-B7Xa7_slqid8dMMfsum74ld/s800/Immagine+2.png" alt="" id="BLOGGER_PHOTO_ID_5316114003519738066" border="0" /><br /><span style="font-weight: bold;"><span class="Apple-style-span"  style="font-size:large;">Un'altra Randonnee : la 200 km di Cascina Costa ; stavolta ci sono anche le salite!<br /><br /></span></span>Dopo la felice (ma bagnata) esperienza della 200km del parco del Ticino mi sono lasciato facilmente convincere a tentarne un'altra. E cosi' sono nel parcheggio dietro la sede dell'Agusta a Samarate e sto cercando di fare mente locale per vedere se non mi sono dimenticato nulla e se l'abbigliamento e' adeguato. Siamo partiti da Milano alle 7 in 3 : Paolo, Annibale ed io. Paolo e Annibale esperti randonneur, io invece vera matricola. La mia matricolaggine e' emersa con prepotenza la vigilia della gara all'insegna del dilemma : come mi vestiro'? Visto che erano previsti 2 gradi in partenza e 15 gradi a meta' giornata e visto che avremmo fatto salite e discese, quale sarebbe stata la combinazione migliore di gilet-manicotti-maniche lunghe-guanti-soprascarpe etc etc?<br /><br />Alla fine opto per maglia a maniche lunghe gilet leggero e giacca a vento leggera. La combinazione si rivelera' ottimale. Sbrigate le formalita' di rito (e stavolta riesco a essere regolarmente iscritto) partiamo con calma, ma  subito la velocita' si attesta sui 35.<br />La strada scorre intorno all'aereoporto e in seguito lungo il Naviglio, per un tratto non breve con un fondo degno della Roubaix. Sara' per questo che non appena si presenta il primo vero retillineone da fare in gruppo mi accorgo con orrore che ho bucato.<br />La peggiore delle forature, quella che ti lascia con la gomma che si sgonfia a poco a poco e con il timore che dentro il copertone si annidi la scheggia che forera' anche la camera d'aria sostitutiva.<br />Ci fermiamo e dopo una sostituzione  rapida mi metto a gonfiare con veemenza. Raggiunta una pressione adeguata tolgo la pompa e PAFFFFFFFFFFFF la valvola schizza via come un proiettile.Sconcerto e rabbia. A questo punto la camera d'aria nuova e' la seconda. Non ne ho altre. I prossimi 10 km saranno all'insegna del timoroso scrutare la ruota col timore di vedere segni di afflosciamento. Ma va tutto bene.<br /><div style="text-align: center;"><br />Il San Carlone<br /></div><br /><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 110px; height: 128px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgg3Nz0_261jkKGGLPWsioynccQaBeMF6OKots5cdmTQ12kJWH9QPa1mR2oqoFsuyEZUo49R-zFO9e-sCGGDAHUpZWbgRUXMBrels91RWmd4QQ92ah2jq-WkUr73hDF8YPrHKaP/s800/san+carlone.jpg" alt="" id="BLOGGER_PHOTO_ID_5316280082366431698" border="0" /><br />Dopo aver passato lo strappo del San Carlone pedaliamo lungo l'Alto Vergante. Una strada bellissima con spunti panoramici spettacolari e con paesi spesso sorprendenti.<br /><br /><div style="text-align: center;"> La chiesa di Dagnente<br /></div><br /><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 91px; height: 122px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimNJ8ZHRKkJmxeUbeqRj1QgQzb4-2IegfJaRdrIt9mMUfycHx8tcR96KvrQMtRfAu_TtV96f_SDfACAl3yPpHQG-nxt_OSC5YNS5ExgzYMrpMXWqrabPjVpkPVi8FOhexDrvih/s800/dagnente.jpg" alt="" id="BLOGGER_PHOTO_ID_5316280084815092306" border="0" /><br />Ma e' una strada impegnativa, e me la ricordavo bene, perche' ricca di strappi e strappetti.<br />Lecita la preoccupazione del ciclista quando passa per un paese che  e' sede del "museo dell'ombrello" ma per fortuna il tempo e' splendido , la temperatura e' ideale e non si vede una nuvola all'orizzonte.<br />Dopo una coregrafica picchiata su Stresa con lo spettacolare scenario delle isole Borromee e delle cime innevate sullo sfondo, affrontiamo il lungolago verso il fondo Toce.<br /><br /><div style="text-align: center;">Isole Borromee<br /><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 176px; height: 114px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg1TdlCPIj87wLO_whnhaxnY_R_grw5ak9wBisCfWtxTo1IYz1vb933dWGvZXqDVY529bcPVe2DaB-aVoruRobtSuNvcohqov7AbDWuj1l7plUaqgZPODfUaHLTx0s0j0wCgFJj/s800/borromee.jpg" alt="" id="BLOGGER_PHOTO_ID_5316280085881252450" border="0" /><br /></div>Costeggiato il lago d'Orta la salita alla Cesara e' dolce e con un bel fondo stradale, ma ormai i chilometri nelle gambe sono piu' di 100 e si fanno sentire. E' il momento di "salire regolari".<br /><br /><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 279px; height: 187px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdnwqFGk1yFzHJjnhfxzyBXo_laCrW1KuT6Gpqv1UvkJE0nFx7P-uNbmL3EuC1TYpHXU0-ltsj9iVcMEBsGrVJmCZ0hDqGcZYPPNmqAeDA_CIOi1fewqjJkeeKOxgsdddW4FA8/s800/Immagine+1.png" alt="" id="BLOGGER_PHOTO_ID_5316114020563907010" border="0" /><br />Secondo controllo, ristoro e via, in lunga discesa verso la pianura. Qui ci accoglie il solito vento del ciclista.<br />La fisica del ciclista prevede due leggi specifiche e delle quali non so farmi ancora ragione. La prima legge (Legge di Pantani o delle pendenze asimmetriche): Se una gara parte e arriva in uno stesso punto le salite sono sempre molto piu' numerose lunghe e ripide delle discese. E la seconda legge (Legge di venturi o del vento circolare): lungo un percorso circolare in pianura il ciclista pedalera' sempre controvento (o, al massimo, con vento laterale).<br />Le risaie novaresi ci hanno accolto rispettando in pieno la seconda legge.<br />Anche dopo curve ad angolo retto il vento era sempre contrario.Qui stare in gruppo e' fondamentale, purtroppo abbiamo trovato un gruppo molto volenteroso ma che era piu' convinto di noi della fondamentale importanza dello stare coperti. Cosi' a tirare eravamo sempre noi tre.<br />Faticosi, chilometri faticosi , anche perche' dopo i 150 l'occhio va sempre al contachilometri e ogni volta e' una delusione vedere che la cifra totale sale cosi' lentamente.<br />Qualche altro saliscendi e ci ritroviamo di nuovo lungo il Naviglio affrontato con lo slalom tra le famigliole in passeggiata. Chiaro che qui la velocita' viene limitata dagli ostacoli semoventi lungo il percorso, ma si tratta di 10 km e devo dire che non sono stati un peso, anzi! La ciliegina sulla torta arriva al 192mo km : uno strappo breve (poche centinaia di metri) ma secco e con pendenza a due cifre. Roba da piede a terra. Ma le unghie mi hanno portato in cima e da li' gli ultimi colpi di pedale verso il traguardo di Samarate sono stati davvero una goduria.<br />Alla fine penne all'arrabbiata e una grande Menabrea offerta da Paolo.<br /><br />I numeri ? Eccoli : <span class="Apple-style-span" style="font-weight: bold;">201 km e 1750m di dislivello (non pochi!) sciroppati in 7h59' di tempo totale che comprende anche la sosta con doppia foratura e 3 controlli ristori. Media senza soste : 27,5 km/h.<br /><br /></span><span class="Apple-style-span"><span style="font-weight: bold;">Per la cronaca tecnica</span> : gara corsa con la nuova Tommasini in acciaio. Ho rischiato perche' non avevo mai fatto piu' di 120 km sul nuovo cavallo, ma la scelta e' stata azzeccata : a parte che  in mezzo a futuristiche opere in carbonio tutti ammiravano la bici dicendo "ma che bella!" (e questo per il "ciclista-feticista" e' gia' un risultato degno di nota), ma poi ho pedalato comodamente e alla fine non avevo nemmeno un dolorino. Da questo punto di vista promozione a pieni voti anche per la sella Brooks swallow e i pantaloni medi Rapha (fondello super!). Rapporti 50/34 + 11/27 e il 34/27 nell'ultimo strappo e' stato provvidenziale. <span style="font-weight: bold;"><br /><br />Consumi </span>: 6 paninetti morbidi al prosciutto e burro (fondamentali) + 5 barrette + 2 banane + 2 crostatine + circa 3 litri di liquidi.<br /></span><div><br /></div><div>Il file GoogleEarth e' <a href="http://files.me.com/franco.paternollo/2c72gn">QUI</a><br /><br /><br /><br /><span style="font-weight: bold;"></span></div>
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20090302_047.html">200 km del Parco del Ticino : 7 ore sotto l'acqua.</a>
+    <a class="next" href="20090329_049.html">Sfidando Giove Pluvio sui colli Tortonesi Le previ</a>
+  </div>
+</div>
+
+</body>
+</html>

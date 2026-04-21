@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Milano centro: ore 13.30, tempo limpido e temperatura mite. – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2005 &rsaquo; 26 settembre 2005
+  </p>
+  <h1 class="article-title">Milano centro: ore 13.30, tempo limpido e temperatura mite.</h1>
+  <p class="article-meta">26 settembre 2005</p>
+  <div class="article-body">
+    Milano centro: ore 13.30, tempo limpido e temperatura mite. È il momento di un buon allenamento. Dopo due rapide stirate mi avvio verso la zona di partenza, e intanto penso, oggi che si fa? Guardo l'orologio. Il tempo è poco e decido per un programma rapido: un po' di variazioni di ritmo sui 500 metri alternando 500 metri a 4 minuti e 500 metri a 5 minuti.<br />Iniziamo con un breve riscaldamento di un paio di chilometri. Vicino a me corricchia una signora di una certa età bassa e un po' tracagnotta, che procede in totale souplesse come se stesse camminando ascoltando musica.<br />Alla fine di 1500 metri parto per il primo 500. Buone sensazioni, la gamba gira bene e il fiato c'è. Finisco il primo 500 veloce e rallento fino a 5 minuti al chilometro. Mi giro e ...la signora è ancora lì, mi è stata a fianco durante tutto il 500 senza che me ne accorgessi. Non ho tempo di pensarci, devo di nuovo ripartire. Sono concentrato, cerco di sciogliere le gambe e le braccia, di procedere elastico.<br />Via... un altro 500 è fatto, rallento di nuovo. Prendo al volo la borraccia e bevo un sorso. Con la coda dell'occhio percepisco un movimento vicino a me. È ancora la signora che anche stavolta non si è fatta staccare. E non dà segni di stanchezza. La cosa comincia ad innervosirmi. E così decido che è il momento di farle vedere che io sono un runner e che lei è una signora tracagnotta. I successivi sei mezzi chilometri li faccio in totale concentrazione cercando la massima disinvoltura di movimento e la completa armonia del passo. Non mi faccio distrarre dall'obiettivo competitivo né da chi passa davanti a me. Devo solo correre, correre, cercando di scivolare nell'aria che mi sembra ferma. Fa caldo, sono madido di sudore e i battiti ormai non calano più molto nella fase di recupero. La signora non l'ho superata, o perlomeno non me ne sono accorto. Alla fine dell'ottavo 500 lento però non resisto alla curiosità e mi giro. È ancora lì. Non ha una stilla di sudore, solo due ombre sotto le ascelle cicciotte. È rilassata, sorride anche se ha riposto il walkman. È vero che la corsa attenua le differenze e che non bisogna mai giudicare un runner dall'aspetto, ma mi sento umiliato e questo mi dà la spinta necessaria.<br />Parto per il nono 500 metri e decido che invece sarà un 2000. Un 2000 che voglio fare a 3.50, e poi vediamo. È dura, è dura... Il sudore mi acceca ogni tanto e devo socchiudere gli occhi. Il cuore pulsa regolare ma in fretta. L'aria è immobile, calda e umida. Ma la mia falcata si allunga bene e chiudo il 2000 in accelerazione. Rallento di botto e mi giro. È lì. È lì vicino a me e mi è stata vicina durante tutti questi due lunghi chilometri. Ma non ha sofferto, per nulla. Io sono un mantice mentre faccio un po' di defaticamento. Lei respira tranquilla nel suo procedere un po' traballante a passi piccoli e ravvicinati. Non ce l'ho fatta a staccarla. E io che mi credevo un runner. Non ho potuto staccare una signora che avrà la mia età più quella dei miei figli e che avrà il mio peso distribuito su due terzi della mia altezza. In questi ultimi metri lei ha uno sguardo serafico e rilassato mentre io ho la faccia stravolta, paonazza e madida di sudore. Chapeau, cara signora.<br />Bevo un sorso dalla borraccia, la guardo, mi sorride e lei mi fa: "Certo che lei corre davvero veloce, caro giovanotto. Io invece vengo qui per passeggiare...". Io non ho ancora il fiato per rispondere e poi non saprei cosa dire. Così annuisco. Rallento. Mi fermo e si ferma anche lei. Insieme scendiamo dai nostri tapis roulant e ci avviamo verso l'uscita della palestra. Si volta tranquilla e mi saluta.<br />Vita da criceti.
+  </div>
+  <div class="article-nav">
+    
+    <a class="next" href="20051109_001.html">La lunga Blue Line -------------------------------</a>
+  </div>
+</div>
+
+</body>
+</html>
