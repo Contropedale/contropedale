@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La salita alla baita d'Orimento Domenica con Renato volevamo pedalare… – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2009 &rsaquo; 12 luglio 2009
+  </p>
+  <h1 class="article-title">La salita alla baita d'Orimento Domenica con Renato volevamo pedalare…</h1>
+  <p class="article-meta">12 luglio 2009</p>
+  <div class="article-body">
+    <img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 320px; height: 273px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiXbfUDc2CpLuYK5NgDxhlgH7cBygIsm-3V-920vgJiUc5qHPkX5SzFFGJ_gr35e5j2cdszC9nuNS4hORhld998ooeynz2pErQoyLeeFq0cNtOQLFPJl1n4OghNr3EcKRAA2oxw/s800/Immagine+2.png" border="0" alt="" id="BLOGGER_PHOTO_ID_5357585086499456018" /><span class="Apple-style-span" style="font-weight: bold; "><br /></span><div><span class="Apple-style-span" style="font-weight: bold; "><span class="Apple-style-span" style="font-size: large;">La salita alla baita d'Orimento</span></span><br /><div><br /></div><div><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 320px; height: 201px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMzprMJEbvcgpsm2B8WnIl6RTJMFqQ0OnYz9l6TwPy_ln3tPlBWji-F7cYrTJoxdEbfGS2t18oWNUoyL2IbxTxHG_2lVi1lLJx6pLCH5SgASi-jtdJ4MAHTa_oUu2__90dm6D-/s800/Immagine+3.png" border="0" alt="" id="BLOGGER_PHOTO_ID_5357585085803225810" /><div><b><span class="Apple-style-span" style="font-weight: normal;"><br /></span></b></div><div> Domenica con Renato volevamo pedalare un po' in salita, ma senza doverci sobbarcare una lunga trasferta in auto. E cosi' mi e' subito venuta in mente la bella salitona alla baita d'Orimento.La prima volta mi ci ha portato una settimana fa Annibale, esperto conoscitore delle zone montane del lago di Como. E devo dire che il giro mi era davvero piaciuto.</div><div><br /></div><div><br /></div><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 240px; height: 320px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyBLDcmfQ4vByncLcFUwa05AYr6YJpuK5GoJegkhUzrNvt_5B87KDkJbBP3WlNCePu83GKD-VIWYwAoZCkuIfntgSsmHmskxRpOARTadJfFh1s0cGCisVOKRntyFgWEsKyyDQj/s800/IMG_0392.jpg" border="0" alt="" id="BLOGGER_PHOTO_ID_5357574575809170962" /><div style="text-align: center;">In bilico sul ponte in via di ricostruzione tra Schignano e Cerano</div><div><br /></div><div><br /><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 240px; height: 320px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBwpR6-shtFmGPv9HR-F3wCQSKaN5fnGDJp8f8wnVZyJ6cYNb6KC1ygL-KEqKtf005Joacw3dn2N7hmbTBqyV5YZYJRYXCpDOtlg6ejLqeFiO7KZXvrKNI43whO7BJRT3UZFoo/s800/IMG_0390.jpg" border="0" alt="" id="BLOGGER_PHOTO_ID_5357574568661078994" /><div style="text-align: center;">Renato sopra Casasco col lago sullo sfondo</div><div style="text-align: center;"><br /></div><div style="text-align: left;">Si parte da Cernobbio dopo avere lasciato la macchina al Bennet di Como. Il lungolago tra i paesini e' un piacevole saliscendi. Gli ultimi chilometri sono pero' sulla provinciale e bisogna sopportare un po' di traffico. Ma e' l'unico tratto problematico. Poco prima di Argegno si prende a sinistra per Casasco e ci si puo' assestare sulla sella : inizia la salita, ed e' una lunga, lunga salita. Una salita con cui non conviene scherzare.</div><div style="text-align: left;"><br /></div><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 240px; height: 320px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhg9p9HObPAhqVpWYM1sQ12DSsXSgBcIvv38zsTaYwBBBN9uRFJKhz7JJn41eAo8aHuBierTocKEJw-P7zGjgxRfEdR195jhJVof2OuehilMaGYNsqzYAm9CDO-C3kRltwyiZxA/s800/IMG_0389.jpg" border="0" alt="" id="BLOGGER_PHOTO_ID_5357574566235952578" /><div style="text-align: center;">Salendo verso Casasco (notare il vezzoso cappellino CondorCycles sotto il casco; porcavacca come glielo invidiavo....)</div><div style="text-align: center;"><br /></div><div style="text-align: left;">La strada si arrampica  tra tornanti abbastanza ripidi a picco sul lago e in pochi chilometri il panorama si allarga fino a comprendere l'intera sponda occidentale del lago di Como verso Nord.</div><div style="text-align: left;">Si sale con lunghi tratti ombreggiati fino a Schignano dove un falsopiano abbastanza lungo consente di recuperare. Siamo saliti di 300m circa dal livello del lago (200slm+300=500m slm)</div><div style="text-align: left;"><br /></div></div><div><br /><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 240px; height: 320px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKOOvrYdp5itF-6Z2xo6Im0LhVrSpADXa0q9WuLMGm2AVPWh8E5LJOioX1HEHc9mcuxMDcQSs0vR-0eT164i-n2hbQrhyS4ohKOIkCbFHLpkq_zxl3J5t4D8PV1QoTAug93QGc/s800/IMG_0387.jpg" border="0" alt="" id="BLOGGER_PHOTO_ID_5357574562820698130" /><div style="text-align: center;">Uno spicchio di lago</div><div style="text-align: center;"><br /></div></div><div>Dopo aver superato una interruzione stradale per i lavori di rifacimento di un ponte, la strada attraversa Giuslino e Cerano e ricomincia a salire gradualmente con larghi tornanti.</div><div>Saliamo in mezzo ai prati e ai boschi ed e' la seconda fase della salita che ci portera' fino a Casasco d'Intelvi. </div><div>Sono altri 350m di dislivello fino alla fontana di Casasco. Qui la sosta e' d'obbligo, non solo per il rifornimento, ma per ammirare il lago in fondo alla valle che si apre come un sipario nell'aria limpida.</div><div><br /><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 320px; height: 240px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEii-R1Bp-UT6G1VCrvcM3kKNXY7Azva-vJj_NkaSTcYZ2RIFa0UO6FxA3fiTAxZSQ0N8lsEGjzG7Y8XWJMBQ8AXuJITi5z0Jp9E-dzj4B_C5MDxf7THUIv1v58JJpzuSbYBePhD/s800/IMG_0378.JPG" border="0" alt="" id="BLOGGER_PHOTO_ID_5357574219689289666" /><div style="text-align: center;">I prati dalla baita</div><div style="text-align: center;"><br /></div><div style="text-align: left;">Da Casasco parte l'ultimo tratto della salita alla baita : sono circa 400m impegnativi di dislivello, con pendenze quasi sempre superiori all'8%-9%. Gli ultimi 2 chilometri sono davvero duri: dopo un tratto nel bosco la strada sale ripida in mezzo ai pascoli stretta e tignosa, con un fondo irregolare che rende la pedalata ancora piu' faticosa,  ma e' fondamentale  per completare il processo di "lignizzazione" della gamba. </div><div style="text-align: left;"><br /></div><div style="text-align: left;"><br /></div><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 320px; height: 240px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0voWeoaEIyeBg75MjB4paPeAd9W9Wi-sVEKbM_FxEM6eVXIIm8ZV_9O-veuxKysx2LI9Lj_t8PB7ZLEiqN95yVw48LWtjOTmqUFIKjy8fFdvOCaaB_8DZSV5ZBRfOdltWbf1U/s800/IMG_0375.JPG" border="0" alt="" id="BLOGGER_PHOTO_ID_5357574214546583794" /><div style="text-align: center;">Panorama verso est</div><div style="text-align: center;"><br /></div></div><div>Un breve falsopiano nel bosco precede l'arrivo alla baita che sta abbarbicata su una sella della montagna e domina la valle sottostante. Siamo arrivati in cima dopo ben 25 km di salita e 1080 m di dislivello.</div><div><br /><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 320px; height: 240px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizWAXum4Slcz9Lhyphenhyphen1ue8RMotZtNg442KQZh6ejQhyphenhyphenhwfxIe_7z_Uo92TQLYFKkcfPRpcSas7H4udTyJoRso0NLhgOvWXhTfQ2-C111gIGvzJrHPWmc6eyWiP9qg4z8W2bi6yJ_/s800/IMG_0374.JPG" border="0" alt="" id="BLOGGER_PHOTO_ID_5357574210629258034" /><div style="text-align: center;">Laggiu' la strada che abbiamo fatto per salire le ultime rampe</div><div style="text-align: left;"><br /></div><div style="text-align: center;"><br /></div><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 320px; height: 240px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFxxS1_L6328mdGQG57_oZSM8ADO4HtqyvhsxXfgY7QONEbO_ZnmNtmxKgXNff8r_H4krLGLe5_Gjt9S2IKTxtIKE7fgBa1HK6jxuu7X7zSsD1-e5bJGXXLt_RSbI2N5KRcxzw/s800/IMG_0372.JPG" border="0" alt="" id="BLOGGER_PHOTO_ID_5357574203054903874" /><div style="text-align: center;">La val d'Intelvi</div><div style="text-align: center;"><br /></div><div style="text-align: center;"><br /></div><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 320px; height: 240px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjra8DcOe74oCAvTSA7Sw1Zlkm0XKTF8TftXaXoRuV_OGw1q6JPs_RSL-mtsOH5fYgQ0dFcU2ApoMHZdyWgFDkNcKhNuCE8E3-1WnheYdSiO-TzsaDjL7nKnml8yRhpzpDm3UWI/s800/IMG_0370.JPG" border="0" alt="" id="BLOGGER_PHOTO_ID_5357574198437957746" /><div style="text-align: center;">Scendendo : il lago da Cerano</div><div style="text-align: center;"><br /></div><div style="text-align: left;">C'e' tutto il tempo per un robusto panino al salame e coca cola prima di risalire in sella e puntare con decisione verso il basso. Si possono fare giri circolari da qui, ma noi optiamo per un ritorno lungo lo stesso itinerario dell'andata (cosi' almeno  siamo sicuri di tornare a casa, visto il mio scarso senso dell'orientamento).</div><div style="text-align: left;"><br /></div><div style="text-align: left;"> </div><div style="text-align: left;">Certo i giri in bici "a bastone" (cioe' con stesso percorso tra andata e ritorno) non sono l'ideale. Ma in questo caso la discesa ci apre scorci e prospettive nuove, che la direzione opposta e la fatica della salita ci avevano nascosto.</div><div style="text-align: left;">Il ritorno sul lungolago e' veloce e divertente e completa  un giro impegnativo di 78 km con 1500m di dislivello.</div><div style="text-align: left;"><br /></div><div style="text-align: left;">La salita alla baita d'Orimento (24km per 1100 m di dislivello) e' molto piu' impegnativa di quel che sembra e il voto della bibbiaweb del salitomane (il sito www.salite.ch) secondo me la sottostima di molto. Il lungo falsopiano centrale e' utile per recuperare, ma maschera la pendenza media che e' di tutto rispetto e che diventa davvero dura soprattutto nel tratto finale, quando si e' piu' stanchi.</div><div style="text-align: left;"><br /></div><div style="text-align: left;"><br /></div></div></div></div>
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20090628_060.html">Dreilander 2009 quarta tappa : Livigno - Scuol / F</a>
+    <a class="next" href="20090821_062.html">La salita ai Prati di Nago : 34X28 e dimenticarsi </a>
+  </div>
+</div>
+
+</body>
+</html>

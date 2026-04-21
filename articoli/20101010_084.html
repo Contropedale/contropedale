@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A spasso in Oltrepo&#39; – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2010 &rsaquo; 10 ottobre 2010
+  </p>
+  <h1 class="article-title">A spasso in Oltrepo&#39;</h1>
+  <p class="article-meta">10 ottobre 2010</p>
+  <div class="article-body">
+    <p><img style="display: block; margin-left: auto; margin-right: auto;" title="Schermata 2010-10-10 a 15.43.34.png" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjasmlhgZ4ioWAxDgh2AhcnrWhrUK142yNwCmxWwq6CGh5nXDfXSdys5Ed4Xau92j8d5qRG_D6izABo4nFB4fRsHbR0gGbp1vLjY-wrSuoKS9kVmlj88_Bd8mNnp66fV8XiSrcV/?imgmax=800" border="0" alt="Schermata 2010-10-10 a 15.43.34.png" width="800" height="470" /></p><p>L'idea di partenza non era male. Il "Milani Group", guidato dal Diablo, si sarebbe trovato in zona Borgo Priolo (per la precisione in localita' Torrazzetta) per una pedalata di una sessantina di km. Io, Alessandro, Alessandro (si', un altro Alessandro, ce n'erano quindi 2 su 4 nel nostro gruppetto. Superfluo notare che questa configurazione era molto adatta alla zona in cui ci muovevamo, ai confini con l'alessandrino) e Mattia li avremmo agganciati  partendo invece da Casei Gerola, aggiungendo quindi un totale di circa  quarantina di km al loro percorso.</p><p><img style="display: block; margin-left: auto; margin-right: auto;" title="Schermata 2010-10-10 a 15.15.25.png" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj9wm0T_4mneJKbZs6UEbZV_wT41ZAJGfkhEmVj_44zxgmNiznzoRCHbkE-_C_p3fdiC6bGICzk-EQCYP8in493iPUk4P1t8v8ipXiOoJoVYkexBF3eGgE36_GwnyzdsGrodAe7/?imgmax=800" border="0" alt="Schermata 2010-10-10 a 15.15.25.png" width="800" height="415" /></p><p style="text-align: center;">Il nostro giro, notare la rognosa, piccola e soprattutto inutile appendice di Mondondone</p><p style="text-align: justify;">Organizzare il percorso per l'incontro sarebbe stata impresa ﻿per me impossibile. Ma avevamo in gruppo Alessandro "TomTom" Narici : un uomo - una mappa. Uno che da' uno sguardo alla cartina della Brianza e in pochi minuti e' capace di elaborare un percorso per strade secondarie del quale stima con precisione decimetrica la lunghezza e il dislivello. Insomma, una garanzia, se si conta che poi queste sono le sue zone. Cosi' parcheggiamo la macchina poco dopo l'uscita di Casei Gerola, scarichiamo le "belve"  e ci avviamo ad andatura allegra dietro il nostro battistrada.</p><p style="text-align: justify;"><img style="display: block; margin-left: auto; margin-right: auto;" title="IMG_1058.JPG" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjq99lAhUG5oQOm9TX3ds_hxlSgPHgW8xwYhZzBotCE-7-j4lDgxQ2XKlo8sToTvE-M4L_D-ihQLOVNP1CrMPdB2kGP5gJO_ABeco5_Gy8hQzpUyd3-AU2cBBWLDrgJ_Nb2w5Os/?imgmax=800" border="0" alt="IMG_1058.JPG" width="600" height="448" /></p><p style="text-align: center;">Alessandro TomTom</p><p style="text-align: justify;">Non avevamo pero' fatto i conti con due elementi : la nebbia e la patologica topografia dei luoghi. La nebbia e' una brutta bestia per chiunque. Sfigura i paesaggi e rende irriconoscibili anche le strade di casa propria. La topografia dell'Oltrepo',poi, e' micidiale. Ad ogni incrocio c'e' un'indicazione per il luogo che vuoi raggiungere. Infatti in Oltrepo' ogni agglomerato edificato e' raggiungibile da ogni altro  agglomerato edificato. Peccato che in nessuna indicazione stradale si dia conto anche dell'altimetria. Insomma cosa ci vuole a fare cartelli del tipo "Rocca de Giorgi : 14 km disl 250m."? Cioe'  si parla tanto dei progetti verdi e delle piste ciclabili ma cosa ci vuole a fare, prima di questo , le indicazioni ciclabili? Indicazioni che non ti sbattano inevitabilmente sulle strade di maggior traffico e che ti diano anche un minimo di informazione in piu' su cosa ti aspetta : un lungo piatto rettilineo o una micragnosa e annodata stradina in salita e discesa?</p><p style="text-align: justify;"> </p><p style="text-align: justify;"><img style="display: block; margin-left: auto; margin-right: auto;" title="IMG_1059.JPG" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhawGNdvPmffL5QDOhOiR3RLnwww39S5fUSNzGwDMv3C-65qce31BPWGttiVe9rgPw5EeiD91SBun7g2Glar_ZV_UWPwBIyOurwW34P8F6Sr8hpSjlx0D0AZ4GPAKTOpFP3YgkM/?imgmax=800" border="0" alt="IMG_1059.JPG" width="600" height="448" /></p><p style="text-align: center;">Tornanti in discesa</p><p style="text-align: justify;">Altrimenti e' ovvio che ti capita un Mondondone, no? Lo si vede dalla cartina qui sopra, Mondondone,  e' quella specie di scarabocchio verso il basso della linea rossa del percorso, quasi che il topografo si fosse momentaneamente assopito con la penna sulla carta dopo Codevilla. Lui si sara' assopito, noi no. Eravamo proprio a Codevilla, appena usciti dalla nebbia brumosa della bassa, e cercavamo di raggiungere in tempo Torrazzetta per aggiungerci al "gruppo Milani".</p><p style="text-align: justify;">Dopo "downtown Codevilla" Alessandro punta con decisione verso sinistra : la strada scende un po'. Bello!...Ma poi comincia a salire e piu' sale piu' si stringe , piu' sale piu' si stringe e piu' si irripidisce. Non si puo' pedalare seduti perche' la bici si impenna e se ci si alza in piedi la ruota slitta.Insomm﻿a, un'agonia. Ad un certo punto ci aggrappiamo al parcheggio di un agriturismo poco prima del paesino per cercare la risposta ad una domanda fondamentale : ma dopo il paesino la strada (o meglio il segmento verticale di asfalto) continua o finisce li'? Non lo sapremo mai. Infatti decidiamo che ne abbiamo abbastanza di questa fatica ridicola a torniamo in direzione Codevilla per chiedere informazioni. Scopriamo che la strada migliore passa per il cimitero o forse il misericordioso pedone ci indica questa direzione notando le nostre condizioni dopo il fallito attacco a Mondondone.</p><p style="text-align: justify;"> </p><p><img style="display: block; margin-left: auto; margin-right: auto;" title="Mondondone.png" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHhfG_1E2fTmoNPuD-oiJ2vReeNcNlJSYF1KNhKwnAYjYjAiv0ejsE0wosUbVRGJ1XXYRc3ncwTIGrdJKYqFW4QD1-eJED_SBHUmYCwwfPyOd7fBiy1YPc9UxRx6ctCvj8DVbJ/?imgmax=800" border="0" alt="Mondondone.png" width="600" height="441" /></p><p style="text-align: center;">La salita con picchi al 18%</p><p style="text-align: justify;">Fatto sta che ormai siamo in ritardo per l'appuntamento con gli altri : ci troveremo a Montalto Pavese. Qui commetto un errore imperdonabile. Dico ad Alessandro (TomTom) " loro partono e ci han detto di raggiungerli a Montalto Pavese". Ahia...Vedo accendersi una luce nei suoi occhi : " allora dobbiamo fare in fretta.." Che io interpreto subito nel modo giusto : gli ho dato  una scusa per imprimere un ritmo forsennato alla nostra "gita". E cosi' e' . Da qui a Montalto Pavese (che in effetti, raggiunto da Fornacette e' proprio una salitella bastarda mica male) e' una tirata unica : nel falsopiano in approccio alla salita si pedala a oltre 27 kmh e la salita viene affrontata ad una allegra velocita' di 14 kmh.  Io sbuffo e sbanfo e maledico una volta di piu' le giberne d'ordinanza che si riveleranno tra breve completamente inutili.</p><p style="text-align: justify;">A Montalto non c'e' nessuno e, ovviamente, non c'e' nemmeno la copertura di rete per contattare i fuggitivi. Cosi' optiamo per un percorso alternativo : si va fino al Carmine e poi si rientra. E' uscito il sole, finalmente, e in questa stagione le strade dell'Oltrepo' sono uno spettacolo : sciorinano tutti i colori dell'autunno.Da Montalto e' una lunga discesa che si snoda tra le colline. Ci si diverte davvero a pennellare le curve anche se il fondo stradale e' davvero impietoso con i forcellini ma, soprattutto, con i nostri sederi.</p><p style="text-align: justify;">Giunti a fondovalle si risale verso il Carmine.  La strada prima sale dolcemente, poi, gradualmente, le pendenze si fanno piu' serie. All'inzio chiacchieriamo allegri in 4, poi a poco a poco una dopo l'altra 3 voci si spengono e alla fine resta solo Alessandro a commentare in solitaria la salita. Noi ascoltiamo con grande attenzione e con grande sensibilita' evitiamo di disturbare il suo soliloquio semmai sottolineando con qualche pesante sospiro le fasi piu' dialettiche.</p><p style="text-align: justify;">Io , poi, sono in drammatica riserva. Sara' lo scarso allenamento, sara' la scarsa colazione, insomma sogno panini imbottiti. In questo frangente uno si immagina possano entrare in gioco le mitiche giberne. ERRORE! Le giberne, quando servono, NON SERVONO. Niente da fare, continuo a pensare a vettovaglie d'ogni tipo. Ma quando sono arrivato a immaginare la caponata con le verze ho capito che era davvero il caso di fare una sosta. Come un miraggio appare il bar in cima al passo (che non arriva mai....nelle mie condizioni). Un panino con coca mi rimette in sella.</p><p style="text-align: justify;"><img style="display: block; margin-left: auto; margin-right: auto;" title="IMG_1055.JPG" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjhSBf_UBD3vhzBsCIwvTMIeO5Lgq_YlfTcq7xs4Srh98PMX1LvRF3dqi2EQ0SLeuZGGfouAeNczK64lWOAy5PzyK36RCaukNP0zjqVcvxiOw5lTq9ElZfZdn2DiSPYopB3crN/?imgmax=800" border="0" alt="IMG_1055.JPG" width="750" height="560" /></p><p style="text-align: center;">da Costa Cavalieri la discesa verso Fortunago e Godiasco</p><p>Da qui decidiamo che e' ora di puntare la prua verso l'auto, in direzione Casei Gerola. Il programma prevede quindi : discesa un po' (speriamo poco) vallonata fino a Godiasco e da li' picchiata in statale in leggera discesa fino all'auto. Fino a Godiasco tutto bene : ci sono solo un paio di colletti di troppo, ma tutto sommato la fatica e' relativa. Da Godiasco invece, comincia il divertimento. Il mitico vento del ciclista, quello che ce l'hai sempre in faccia, ci accoglie con gioia non appena la strada spiana.</p><p><img style="display: block; margin-left: auto; margin-right: auto;" title="Schermata 2010-10-10 a 15.14.24.png" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgci6Nt7M3RVYpISrigXf56JJ_7GQRc4zTRCQT54wA5AesqwI6WIhwtDiqIgx2Jf1UEYvbmqH1AB-YFNJ37q3wcKDg8faoUlQoZEhIMEolaMCbh0BSI_vUYTEyi0ia4p4yEswHb/?imgmax=800" border="0" alt="Schermata 2010-10-10 a 15.14.24.png" width="750" height="325" /></p><p style="text-align: center;">Il tragitto in Oltrepo'</p><p style="text-align: justify;">Ormai abbiamo superato la soglia dei 90 km e le mie riserve di energia sono davvero quasi esaurite. Me ne sto quatto quatto dietro il battistrada, e quando sarebbe il momento di dare il cambio colgo l'occasione per dare una distratta controllata alla ruota dietro e faccio un segno di assenso serioso e convinto a chi mi precede facendo cenno come per dire "vai tranquillo ,continua pure tu" ;  e mi lascio sfilare. Insomma il vero ciclista simpatico. E per fortuna che faccio cosi' perche' ad un certo punto lungo questo dedalo di stradine di campagna che svoltano ogni 200m e hanno comunque sempre il vento contro, Alessandro 2, il passista di razza, comincia a tirare una trenata a 36-37 kmh. Controvento. Io ho solo la forza di gridare "ue'...ma sei matto?" prima di venire inesorabilmente staccato. Per fortuna Alessandro 1, l'altro, ha pieta' di me e induce il passista ad un ritmo piu' umano. Dopo la solita sequela di cartelli stradali bastardi ("Casei gerola  5" ...e dopo un po' : "Casei gerola 7 " e cosi' via) finalmente avvisto la macchina.</p><p style="text-align: justify;">Torniamo a Milano con <em><strong>117 km e 1350m di dislivello</strong></em> nel carniere, alla rispettabile media di quasi 27 kmh. Purtroppo la topografia bastarda dell'Oltrepo' ci ha impedito l'aggancio al gruppo Milani. Alla prossima.</p>
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20101003_083.html">Clodiò et le Sgibernotà</a>
+    <a class="next" href="20110116_085.html">Ma allora il sole esiste ancora!</a>
+  </div>
+</div>
+
+</body>
+</html>

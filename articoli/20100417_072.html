@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Intorno al Mottarone Previsioni meteo incerte, nuvolosita' irregolare,… – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2010 &rsaquo; 17 aprile 2010
+  </p>
+  <h1 class="article-title">Intorno al Mottarone Previsioni meteo incerte, nuvolosita' irregolare,…</h1>
+  <p class="article-meta">17 aprile 2010</p>
+  <div class="article-body">
+    <img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 320px; height: 240px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj93djYOfMxp8y-HQIG4_THHnWYLTLqwa4DiC2Ay2Mo0Yz7-ZrABzLFZ5k671tfxT4cbZOhNsB0mWByCESUGW55w0XQa0wIAY6OusOwPrUbcozVzOWH0uI4NOa1jijjc4NjMxem/s800/IMG_0818.JPG" border="0" alt="" id="BLOGGER_PHOTO_ID_5461137464482860162" /><b><div style="text-align: center;"><span class="Apple-style-span"  style=" ;font-size:large;">Intorno al Mottarone</span></div><div style="text-align: center;"><span class="Apple-style-span"  style="font-size:large;"><br /></span></div><div style="text-align: left;"><span class="Apple-style-span" style="font-weight: normal;"><span class="Apple-style-span"  style="font-size:medium;">Previsioni meteo incerte, nuvolosita' irregolare, scarsa conoscenza dei luoghi, nube vulcanica incombente : la situazione ideale per affidarsi alla Moroni Adventures, l'unica agenzia in grado di organizzare in meno di poche ore un giro ciclistico su misura dei partecipanti.</span></span></div><div style="text-align: left;"><span class="Apple-style-span"  style=" font-weight: normal;font-size:medium;"><br /></span></div></b><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 320px; height: 240px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwCfMhtvDWSohxrm73JQwCPPifA1TASg2Cj305oyh8d0O8WjPBPq6_USWZvJjvtxvO2WSVsJIXycfGMhKqlikjYksz-7aEgfNRinMNUw71F3bsx02TLM8kVNCVzwvadhNZLx73/s800/IMG_0816.JPG" border="0" alt="" id="BLOGGER_PHOTO_ID_5461137459975260482" /><div style="text-align: center;">da sinistra : Paolo, Giorgio, Fabio, Stefano, Edo, Gabriella, Antonio.</div><div style="text-align: center;">Il giro e' appena iniziato : sono tutti sorridenti (ancora)</div><div style="text-align: center;"><br /></div><div>Cosi', in questo sabato mattina a ora vergognosamente antelucana sto seduto nella macchina del CEO  della Moroni Adventures diretto verso il punto di ritrovo : il distributore della Esso prima (o forse dopo?) il casello della Milano Laghi. Mentre stiamo arrivando al casello il CEO mi domanda serafico : "magari forse era uno  Shell, e magari era  molto dopo il casello, o magari era il secondo distributore....mah...vediamo......"</div><div>Cominciamo bene.</div><div><br /></div><div>Invece era Esso e era poco dopo il casello. Miracolosamente ci troviamo tutti qui alle 8 e, fatte le presentazioni mancanti e stabilita la "autorita' di guida" del CEO ci si avvia all'insegna di : "tutti dietro l'auto della Moroni adventures". Dopo pochi minuti dietro di noi non c'e' piu' nessuno.</div><div>Poco male, ci si trova ad Invorio, nel parcheggio approntato allo scopo dalla MorAdvent.</div><div>I preparativi per la partenza sono l'occasione per studiare i compagni di avventura. Il CEO lo conosco, Antonio e Gabriella anche, ma non aveva mai pedalato con Stefano Paolo, Fabio e Edo.</div><div>Stefano ha un fisico imponente una sorta di TomBoonen, ma piu' grande. Ideale da avere davanti in pianura. Gli altri hanno il classico aspetto dello scalatore versatile, a parte Paolo che in salita deve andare davvero forte, come dice anche il cognome.</div><div>Si va. I primi km sono in saliscendi prima di affrontare il primo strappo di giornata che ci porta sulla terrazza panoramica virtuale di Comnago.</div><div><br /><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 320px; height: 186px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEEms-MH3B30fKIpxgVKsEPLJ_Rc5YEjrrHan-MSreDMqsACp_7jz81Ibq6zHeCjLFylkD5uMEUvVzihq7XBrBla9pH31CdCN2JOBHKCr9HoTiGZtmsKDE8NQHWKFIHKD25ukG/s800/Schermata+2010-04-17+a+17.41.31.png" border="0" alt="" id="BLOGGER_PHOTO_ID_5461137452667841090" /><div style="text-align: center;">Altimetria di Giornata</div><div style="text-align: center;"><br /></div><div style="text-align: left;">Panorama mozzafiato e io mi offro di documentare fotograficamente il luogo e la compagnia. Adesione entusiasta e sorridente. Poi, mentre io stavo per rimettermi l'iPhone sotto uno dei multistrati di vestiario tutti gli amici molto cortesemente mi hanno salutato calorosamente e sono partiti in tromba lasciandomi solo. Al primo bivio in discesa adocchio una strada che sale bella in piedi e mi ci tuffo, al contrario. La M.A. ama questo genere di scherzi ai partecipanti e quindi devono essere andati di qui. Ma dopo un po' di salita il dubbio mi viene e quindi telefono.Ho sbagliato, gli altri sono a Lena, sul lago. Li raggiungo con in mente una certezza : "ho fatto anche della salita gratis :per oggi basta foto".</div><div style="text-align: left;"><br /></div><div style="text-align: center;"><br /></div><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 320px; height: 246px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYecE9GHuuxIPClPMjyANI3nRUqpU1sukeRSM9sMKXXstUbj5PmJzOwAeLDiL7GYWfgF_7853rVTSTcvlIRFpGQ7sKUOJ2gWKoCKluTz0CAaW9ZOpHJ2QLIvJVtRpzJ3sMsTe3/s800/Schermata+2010-04-17+a+17.53.25.png" border="0" alt="" id="BLOGGER_PHOTO_ID_5461137433718602274" /><div style="text-align: center;">Il giro da Sud EST</div><div style="text-align: center;"><br /></div><div style="text-align: left;">Il lungolago verso Baveno e' bellissimo con l'Isola dei pescatori che sembra a pochi passi da noi. Davanti a noi tira invece Stefano, in tutta scioltezza a 37 km/h controvento. Ad un certo punto si stufa del ritmo lento e accelera ben oltre i 40. Io con grande eleganza e correttezza  mi guardo bene dal prendere anche un minimo d'aria, tanto fatico come un mulo anche stando coperto.</div><div style="text-align: left;">A BAveno comincia la salita verso il Mottarone. Sono rampe rognose con pendenza sempre superiore al 7-8% che sgranano inevitabilmente il gruppo. Primo stop a Levo. Decidiamo di evitare la vetta optando per raggiungere la sbarra a 900 m e da li' scendere per poi fare l'anello di Coiromonte.Scendiamo dal lato dell'Alpino, frenando sugli  strappi del 12-14% che ancora mi ricordo : l'anno scorso grazie ad un altro sciagurato errore di percorso me li sono goduti tutti in salita. Che culo.</div><div style="text-align: left; ">Il solito mangiaebevi (pochissimo il "bevi") ci porta dall'altro lato del Mottarone, verso Orta e Armeno, sul piano Gabriella si produce in un forcing aggressivo e chiude tutti i "buchi" dietro Stefano. Chapeau. Ma dobbiamo ancora affrontare la salita a Coiromonte.</div><div style="text-align: center;"><br /></div><div style="text-align: center;"><br /></div><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 320px; height: 230px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhd_R_W6BrmcN6hwiaUnxItfOrMT0oeJ3VBU416oYpjSts-bRYI4TtvPLX2f_QkxYqZszhK0GeFSzOuFvpSeBTCV_AAeV0XpEBloNS3i5JzXHq9U7zY1qt6zsKIrHAm4ZKAJX50/s800/Schermata+2010-04-17+a+17.51.21.png" border="0" alt="" id="BLOGGER_PHOTO_ID_5461137409673019650" /><div style="text-align: center;">Il giro da EST</div><div style="text-align: center;"><br /></div><div style="text-align: left;">La salita a Coiromonte e' un piatto forte della MorAdv. Un strada stretta e senza traffico che si avvita nel bosco. Bellissima, da fare in moto. Peccato che noi siamo in bici. Tant'e'. Si arriva in cima alla spicciolata. Stefano durante la salita ha invocato tutti i Santi del calendario dato che non aveva con se' nemmeno una barretta o un gel. In quelle occasioni uno puo' uccidere per un piatto di pasta.  Infatti lo sguardo in cima alla salita, col casco sulle ventitre' e' davvero assassino. Si infila in un ristorante e ne esce dopo un po' con un panino. Non si sa cosa abbia ingurgitato mentre era all'interno. Abbiamo sentito grida concitate provenire dalle cucine. Ripartiamo alla volta di Invorio, che si raggiunge "in discesa, tranquilli" fa il CEO della MorAdv. Siamo tutti molto felici quando ci si para davanti dopo un tornante in contropendenza un bello strappo in rettilineo. E ancora piu' felici quando , dopo il cartello con l'indicazione "Invorio" (cioe' eravamo nel territorio comunale ma deve essere ampio 80 kmq) ci attende una salitella bastarda prima della discesa al parcheggio. Le gambe ringraziano.</div><div style="text-align: left;">Saluti rapidi e riparto ospite del CEO. In auto mi fa : "se non ti spiace ti lascio a casa mia, e vai a casa in bici". Io "no problem, purche' non piova". "ma va....cosa dici, non piove di sicuro". Arrivati a casa del CEO salgo in sella e mi avvio. Dopo due colpi di pedale cominciano le prime robuste  gocciolone. Son soddisfazioni...</div><div style="text-align: left;"><br /></div><div style="text-align: left;">Qui il link al file <a href="http://files.me.com/franco.paternollo/zqfwsv">GoogleEarth</a></div><div style="text-align: left;"><br /></div><div style="text-align: left;">E qui le (poche) <a href="http://www.me.com/gallery/#100155">immagini</a></div><div style="text-align: left;"><br /></div></div>
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20100411_071.html">L'altimetria di 100 km e 1700 m di dislivello : da</a>
+    <a class="next" href="20100425_073.html">VALCAVA ovvero IL GIBERNAUTA CHE NON TI ASPETTI Il</a>
+  </div>
+</div>
+
+</body>
+</html>

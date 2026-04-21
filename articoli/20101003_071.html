@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clodiò et le Sgibernotà – Contropedale</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf8f5;
+       color: #222; line-height: 1.7; }
+a { color: #c0392b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* HEADER */
+header { background: #1a1a1a; color: #fff; padding: 2rem 2rem 1.5rem; }
+header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+header h1 span { color: #c0392b; }
+header p { font-style: italic; color: #aaa; margin-top: 0.3rem; font-size: 0.95rem; }
+nav { margin-top: 1rem; }
+nav a { color: #ddd; font-size: 0.9rem; margin-right: 1.2rem; font-family: Arial, sans-serif; }
+nav a:hover { color: #fff; }
+
+/* SEARCH BAR */
+.search-wrap { background: #2c2c2c; padding: 1rem 2rem; }
+#search { width: 100%; max-width: 600px; padding: 0.6rem 1rem;
+          font-size: 1rem; border: none; border-radius: 4px;
+          background: #fff; color: #222; }
+
+/* LAYOUT */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+/* YEAR HEADERS */
+.year-header { font-size: 1.8rem; font-weight: bold; color: #c0392b;
+               border-bottom: 2px solid #c0392b; padding-bottom: 0.3rem;
+               margin: 2.5rem 0 1.2rem; font-family: Arial, sans-serif; }
+
+/* ARTICLE CARDS */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+         gap: 1.2rem; }
+.card { background: #fff; border: 1px solid #e8e0d0; border-radius: 6px;
+        padding: 1.2rem; transition: box-shadow 0.2s; cursor: pointer; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+.card-date { font-size: 0.78rem; color: #999; font-family: Arial, sans-serif;
+             margin-bottom: 0.4rem; }
+.card-title { font-size: 1rem; font-weight: bold; color: #1a1a1a;
+              margin-bottom: 0.5rem; line-height: 1.4; }
+.card-snippet { font-size: 0.85rem; color: #666; line-height: 1.5; }
+.card.hidden { display: none; }
+
+/* ARTICLE PAGE */
+.article-wrap { max-width: 780px; margin: 0 auto; padding: 2rem 1.5rem; }
+.article-meta { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+                margin-bottom: 1.5rem; }
+.article-meta a { color: #c0392b; }
+.article-title { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; color: #1a1a1a; }
+.article-body { font-size: 1.05rem; line-height: 1.8; }
+.article-body img { max-width: 100%; height: auto; border-radius: 4px;
+                    margin: 1rem 0; display: block; border: 1px solid #e8e0d0; }
+.article-body p { margin-bottom: 1rem; }
+.article-body table { width: auto; max-width: 100%; margin: 1rem auto; }
+
+/* NAVIGAZIONE ARTICOLO */
+.article-nav { display: flex; justify-content: space-between; margin-top: 3rem;
+               padding-top: 1.5rem; border-top: 1px solid #e8e0d0;
+               font-family: Arial, sans-serif; font-size: 0.9rem; }
+.article-nav a { max-width: 45%; }
+.article-nav .prev::before { content: '← '; }
+.article-nav .next::after  { content: ' →'; }
+
+/* NO RESULTS */
+#no-results { display: none; padding: 2rem; color: #999;
+              font-style: italic; text-align: center; }
+
+/* STATS BAR */
+.stats { font-size: 0.85rem; color: #999; font-family: Arial, sans-serif;
+         padding: 0.5rem 2rem; background: #f0ece5;
+         border-bottom: 1px solid #e0d8cc; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+  .cards { grid-template-columns: 1fr; }
+  .article-title { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>C</span>ontropedale</h1>
+  <p>Diari di un Gibernauta</p>
+  <nav>
+    <a href="../index.html">← Indice</a>
+    <a href="https://contropedale.blogspot.com" target="_blank">Blog originale</a>
+  </nav>
+</header>
+
+<div class="article-wrap">
+  <p class="article-meta">
+    <a href="../index.html">Indice</a> &rsaquo; 2010 &rsaquo; 3 ottobre 2010
+  </p>
+  <h1 class="article-title">Clodiò et le Sgibernotà</h1>
+  <p class="article-meta">3 ottobre 2010</p>
+  <div class="article-body">
+    <p> </p><p><img style="display: block; margin-left: auto; margin-right: auto;" title="Schermata 2010-10-03 a 11.19.58.png" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhA13l7CX0mwaRTktD6sbrjBtx0EaXGCsaIuxAkgvfUrNgEziL6EAi7Eh2QGRNZ8DcHlg_hvUpkZDW-7mDo5fgveyV0v2p9Caf59ayMiVWcPj7Jdbix6e0WtruTfl1r7UKouRUl/?imgmax=800" border="0" alt="Schermata 2010-10-03 a 11.19.58.png" width="600" height="291" /></p><p>"Ma chi e' quel ciclista tonico e capellone che pedala a fianco del Gibernauta?"..questo si chiedevano nei pressi di Angera in questo umido sabato mattina di ottobre. Ma forse, no. Forse invece la domanda giusta era  "ma chi e' quel ciclista sovrappeso che sbanfa penosamente pedalando vicino a Chiappucci?". ecco, forse questa era la domanda giusta. La domanda che riconduce il Gibernauta al suo stato e peraltro testimonia una mattinata speciale.</p><p>Sabato, grazie agli auspici organizzativo-finanziari di Claudio (neociclista e per questo nel pieno dell'ardore passionale per le due ruote) e al supporto della Milani Cicli, il Gibernauta insieme a altri ben piu' aggressivi pedalatori ha potuto affiancare le sue ruote a quelle di un vero mito del ciclismo : Claudio Chiappucci.</p><p><img style="display: block; margin-left: auto; margin-right: auto;" title="_MG_1048.JPG" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGnhRc7pci1zqOFAQnXw_AGgPxtImIjMpAlhQyW3pcgkPvco66IonAEW4KoBtIQAV6IoOk53FfWHm1vuANYfdIxWEUrSNwD64DbBnCnRW83FW7tA2aZ7mxtMu9hKs_RQBw-caz/?imgmax=800" border="0" alt="_MG_1048.JPG" width="400" height="600" /></p><p style="text-align: center;">El Diablo</p><p>E' facile immaginare l'emozione di poter scambiare 4 parole in sella con uno che in Francia, grazie alla sue imprese al Tour, e' piu' noto di Petrarca e Cavour e lo chiamano Clodiò Sciapussì.</p><p>Ma andiamo con ordine. Ritrovo in quel di Capronno , vicino ad Angera, alle 10 del primo sabato di ottobre.</p><p><img style="display: block; margin-left: auto; margin-right: auto;" title="Schermata 2010-10-03 a 11.17.08.png" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5Lb1p-bNy56FEyNBu89SFgMMELL0NJCufXC0GVAKRWbNre4LQTtSC-lHjzSVMm4WRS5KMOODo_SfcggngYpH6AyHGPETkzwEhb2PE9yRi19fkFn6xg0JLxoYlrFDasn-E9k7A/?imgmax=800" border="0" alt="Schermata 2010-10-03 a 11.17.08.png" width="600" height="352" /></p><p> </p><p>Il tempo e' bigio, ha appena smesso di piovere e le strade sono piu' che umide, davvero bagnate. Ci si trova in una ventina : ci sono gambe toniche e rodate e ci sono anche le dotazioni di ordinanza del Gibernauta che servono a tenere alto il peso medio dei partecipanti.</p><p><img style="display: block; margin-left: auto; margin-right: auto;" title="_MG_1068.jpg" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6I_xOyXmYjc4Tsur1mxSsOYYdHa9iACKVLMdnDJzJkC3r264HnmDC6yNDpCV18RJPL_EqVN2E4hW9KJMpi1MK1733VNceJogmIzODfZzE0clHU3pzauwrOTTS4GF47nxLuzC4/?imgmax=800" border="0" alt="_MG_1068.jpg" width="600" height="400" /></p><p style="text-align: center;">Briefing prima della partenza</p><p>Grande sfoggio di bici Milani, carbonio a piu' non posso e geometrie aggressive. Chiappucci ha il tono dei giorni migliori : 47 anni e ne dimostra 10 di meno.Non e' certo l'ex-prof imbolsito relegato ai commenti radio televisivi. Direi che non sara' una passeggiatina.</p><p>La mattinata prevede un circuito di una ventina di km ﻿ con un paio di centinaia di metri di dislivello da completare 2 o 3 volte﻿</p><p>Dopo un veloce  briefing di Milani, si parte in gruppo con in testa uno che, tanto per dire,  ha vinto tappe al Tour de France, al Giro d'italia, ha vinto un Giro del Piemonte e' arrivato secondo al Tour, era famoso perche' non si tirava mai indietro e attaccava SEMPRE, altro che gli Schleck sparagnini d'oggidi'.Insomma un monumento.</p><p>Discesina verso Angera e poi un po' di falsopiano. Fin qui tutto bene, il gruppo procede compatto. Poi, pero', dopo una curva, si comincia la prima salita verso Taino.</p><p>Ora, l'onore e' l'onore, anche per un gibernauta, e l'onore del gibernauta non ha razionalita'. E così mi ritrovo (mio malgrado) a spingere sui pedali a fianco del battistrada ex professionista, che sale in assoluto relax.</p><p>Ad un certo punto una voce da dietro fa "... Claudio...ma a questo ritmo tu che cardio hai?"..e il Clodiò, serafico, "..mah.... saro' intorno ai 100..brucio grassi".</p><p>Io , che di grassi da bruciare ne ho le giberne piene, lancio un rapido sguardo al mio, di cardio,sperando di vedere una cifra da metabolismo aerobico. Ma l'attrezzo infernale sentenzia impietosamente "182 beep beep ...". Per fortuna questi strappetti sono tutto sommato brevi e un'improvvisa curva a sinistra a Taino spiana la strada e mi salva dal colpo apoplettico imminente.</p><p>Dopo il paese le macchine si diradano, ci dirigiamo verso Lentate con una pendenza leggera che consente un minimo di recupero. Avendo dato fondo alle mie risorse aerobiche (dissimulando abilmente lo sforzo con un sorriso un po' tirato e un respiro nasale non molto rilassato) lascio ben volentieri il compito di gregario ad altri volenterosi e piu' attrezzati di me e mi rifugio nella pancia del gruppo che nel frattempo si e' un pochino sfilacciato.</p><p><img style="display: block; margin-left: auto; margin-right: auto;" title="NE6W0056.JPG" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiIPb1Zn36JfjZlGGCzMQj1qLLw3CKIZaIKGD1kuvmVOxwJNxFWRxOBSC-AR1miE6HZ2XW5lyMlAl1EZHpl5OLEKBldbxTJ29qegKjg8FV30jFTMBII9YFDzCOkuaCZVzzpk4AA/?imgmax=800" border="0" alt="NE6W0056.JPG" width="600" height="399" /></p><p style="text-align: center;">﻿Clodio' e un volenteroso gregario alla cui ruota sta attaccato il Gibernauta (sbuca solo il casco bianco in alto a destra..)</p><p style="text-align: justify;">﻿Torniamo nei pressi di Capronno per completare il primo giro. La facilita' con cui El diablo  pedala e' disarmante, insomma, lui fa un altro sport, e' una roba diversa. I movimenti sono molto piu' naturali e fluidi, la pedalata in fuorisella e' potente e equilibrata. D'altro canto El Diablo ci confessa che chiude l'anno con il contachilometri che segna 20mila e che, quando era prof, di km ne macinva ogni anno circa 50mila.</p><p style="text-align: justify;"> </p><p><img style="display: block; margin-left: auto; margin-right: auto;" title="chiappucci.jpg" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQeQQc-y6hWi9sNE2msWa_TbNem3ImHE0EXsLDPwurNls3aZ4ehE470JuqTMtceQEB2Wtygo-yylgL6slMaFROBkYGvuEdwliTN9WVvaGSO3V9iCEi44g6E31Rh7I-sHSd520_/?imgmax=800" border="0" alt="chiappucci.jpg" width="300" height="419" /></p><p style="text-align: center;">Clodiò vittorioso in cima al Sestriere</p><p> </p><p>Anch'io, ho pensato tra me, una volta ho fatto 50mila km. Pero' in macchina, e in piu' anni,.. e dopo la ho dovuta anche cambiare, la macchina, perche' era stanca.</p><p>Intanto pero' si pedala e a poco a poco si affronta per la seconda volta la salita di Taino. Clodiò procede allegro e tranquillo, i gentili ospiti al seguito si chiedono soffrendo perche' mai hanno accettato questo invito. Ma si va.</p><p>Il fondo stradale e' scivoloso e ci vuole davvero molta attenzione, soprattutto nella discesa prima dello strappetto che porta al cimitero di Capronno. Proprio su questo strappetto nel secondo giro, Chiappucci decide di far salire il cardio a 101-102 e parte alzandosi sui pedali piantando li' tutti. Io, spinto dallo spirito suicida del Gibernauta cerco di restargli attaccato (ovviamente invano) al pensiero "vabe', ....se poi schiatto in questo strappo il cimitero e' qua bello che pronto ..e poi tumulatemi qui, con l'epitaffio " Esalo' l'ultimo respiro rincorrendo la ruota di Chiappucci.."..in fondo trattasi di dipartita onorevole, mica bisogna scrivere anche che nel mentre Chiappucci chiacchierava pedalando senza mani in salita.."</p><p><img style="display: block; margin-left: auto; margin-right: auto;" title="_MG_1094.jpg" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_wzWhzTTvdK8-eR5OkiR9GeGJ6s6xFtN1Rl8p3DLBsJsYtT6ZCdPS1uaSxIgLnWm8gti6U06oTKd1QUao2U9VBT6MkrporbCyGv8R_SvHgfrtqFMzjEBS3UrpQ-IIqagnXxNi/?imgmax=800" border="0" alt="_MG_1094.jpg" width="400" height="600" /></p><p style="text-align: center;">Gibernauta concentrato</p><p>Pausa foto e partenza per il terzo giro. Qui alcuni cominciano a evidenziare una gioia un po' tirata. Lungo la prima discesina vedo Claudio (non Clodio', ma Claudio ospite-organizzatore) fermo a bordo strada per una foratura. Il Gibernauta deve avere riflessi pronti e pensieri rapidi ed infatti inchiodo: "ti aiuto io!" Claudio "ma no vai...faccio da solo". Troppo tardi. Avevo gia' squadernato il contenuto del mio pacchetto post foratura. E chi mi smuove adesso? Per cambiare una gomma ci metto una decina di minuti, cosi' mi riposo, e poi ovviamene non completeremo un altro giro altrimenti arriviamo tardi per il pranzo. Quindi risparmio anche una cinquina di km di fatica. Ottimo!</p><p>Dopo un po' di tentativi finalmente la ruota torna al suo posto e con Claudio ci dirigiamo nuovamente verso Taino, Lentate e Capronno.</p><p>Qui ci aspetta una doccia e, soprattutto, una tavola imbandita nel piu' classico degli schemi del ciclista amatoriale : la faticata in sella e' il necessario preambolo per la scorpacciata senza rimpianti.</p><p>C'e' anche il tempo per dare un'occhiata da vicino ad una nuova creatura di Milani. Il carbonio nelle sue forme estreme non mi entusiasma granche', ma qui non si tratta di carbonio bensi' di XCR l'acciaio inossidabile di Columbus. E il telaio e' una vera bellezza. Geometrie classiche, saldature precise e omogenee, colorazione sobria ma da gran colpo d'occhio. Mi e' piaciuta moltissimo.</p><p><img style="display: block; margin-left: auto; margin-right: auto;" title="_MG_1140.JPG" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNGRwGeTx6i90Rfe3XIffMrs716Ch8mJMZPfeOem_hl_yjETnGSmp7OKi328wfKz6XqmDrlPsI_OUs448487zKZOtGKyFhUTfZ0EloDGuGzgLYcILHsIm4pKUbF3R5ccjowLEy/?imgmax=800" border="0" alt="_MG_1140.JPG" width="400" height="600" /></p><p style="text-align: center;">Acciaio puro</p><p>Alla fine sono stati per me circa 68 km e circa 650 m di dislivello, alla sorprendente media di poco meno di 27 all'ora (e non c'era mica tanto da stare a ruota con un fondo cosi' scivoloso..). Ottima uscita e, in fondo, onorevole prestazione del Sgibernotà di fronte ad un mito delle due ruote. L'ottimo pranzo finale ha garantito inoltre la completa ricostituzione delle Giberne d'ordinanza.</p><p><img style="display: block; margin-left: auto; margin-right: auto;" title="Schermata 2010-10-03 a 18.13.00.png" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijheB9aKBbNlf-784jx3ty29H4F4O8qGblyAxt3zf1N7u9roGRMgznNWaqGnDWe5QtrKYyIRbYM13GNm027MboLT9TNgj6qyoLaNkVeDmQiL3xr-NPgnJKyx7SQiiIGGWiqlc7/?imgmax=800" border="0" alt="Schermata 2010-10-03 a 18.13.00.png" width="600" height="449" /></p><p> </p>
+  </div>
+  <div class="article-nav">
+    <a class="prev" href="20100905_070.html">Ritorno In Val Trebbia Fino a non molti anni fa i </a>
+    <a class="next" href="20101010_072.html">A spasso in Oltrepo&#39;</a>
+  </div>
+</div>
+
+</body>
+</html>
